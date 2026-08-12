@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Navy Background -->
+  <rect width="32" height="32" rx="6" fill="#0a0f1a"/>
+  <!-- Teal Jet / Paper Airplane Icon -->
+  <path d="M25 7L13 18L8 16.5L6.5 18L11 21L14 25.5L15.5 24L14 19L25 7Z" fill="#14b8a6"/>
+</svg>

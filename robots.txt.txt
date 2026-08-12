@@ -1,0 +1,9 @@
+# robots.txt for Skylinks Asia Aviation
+User-agent: *
+Allow: /
+
+# Block access to any local/system folders if you have them
+# Disallow: /local-assets/
+
+# Point to the Sitemap
+Sitemap: https://www.skylinks.asia/sitemap.xml
