@@ -115,8 +115,17 @@
 </head>
 <body class="bg-navy-950 text-white font-sans antialiased">
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 h-20 flex items-center px-6 transition-all duration-300" style="background: rgba(10,15,26,0.85); backdrop-filter: blur(12px);">
+  <!-- ===== TOP BAR & NAVIGATION ===== -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <div class="hidden md:flex justify-end items-center gap-8 px-6 h-10 bg-navy-950 border-b border-white/5 text-xs text-neutral-400">
+      <a href="https://wa.me/923205487700" target="_blank" class="flex items-center gap-2 hover:text-teal-500 transition-colors duration-150">
+        <span class="iconify" data-icon="mdi:whatsapp" data-width="14"></span> +92 320 5487700
+      </a>
+      <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors duration-150">
+        <span class="iconify" data-icon="lucide:mail" data-width="14"></span> charter@skylinks.asia
+      </a>
+    </div>
+    <nav id="navbar" class="h-20 flex items-center px-6 transition-all duration-300" style="background: rgba(10,15,26,0.85); backdrop-filter: blur(12px);">
     <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3">
         <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
@@ -141,6 +150,7 @@
       </button>
     </div>
   </nav>
+  </header>
 
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-navy-950/95" style="backdrop-filter: blur(12px);">
