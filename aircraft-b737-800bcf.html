@@ -11,7 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta property="og:title" content="Boeing 737-800BCF Charter | Narrowbody Freighter | Skylinks Asia Aviation">
     <meta property="og:description" content="Charter the Boeing 737-800BCF with Skylinks Asia. Ideal for e-commerce, express freight, and palletized cargo. Up to 23.9 tons payload with 5,400 km range.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2070&auto=format&fit=crop">
+    <meta property="og:image" content="hero-images/cargo-hero-images/b737-800f.webp">
     <meta property="og:url" content="https://www.skylinks.asia/build-b737-800bcf.html">
     <meta property="og:type" content="website">
 
@@ -116,15 +116,31 @@
             transition: transform 0.3s ease-in-out;
         }
     </style>
+<!-- Blur Override -->
+<style>.hero-img-blur { filter: none !important; }</style>
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
     <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
+    <header class="fixed top-0 left-0 right-0 z-50">
+      <div class="hidden md:flex justify-end items-center gap-8 px-6 h-10 bg-navy-950 border-b border-white/5 text-xs text-neutral-400">
+        <a href="https://wa.me/923205487700" target="_blank" class="flex items-center gap-2 hover:text-teal-500 transition-colors duration-150">
+          <iconify-icon icon="mdi:whatsapp" class="text-sm"></iconify-icon> +92 320 5487700
+        </a>
+        <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors duration-150">
+          <iconify-icon icon="lucide:mail" class="text-sm"></iconify-icon> charter@skylinks.asia
+        </a>
+      </div>
+      <div class="bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
         <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex flex-col leading-none">
-                <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
-                <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+                  <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+                    <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+                </div>
             </a>
             
             <ul class="hidden lg:flex items-center space-x-8">
@@ -132,7 +148,7 @@
                 <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
                 <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
                 <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
-                <li><a href="blog.html" class="hover:text-teal-500 transition-colors text-sm">Blog</a></li>
+                
                 <li><a href="contact.html" class="hover:text-teal-500 transition-colors text-sm">Contact</a></li>
                 <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
             </ul>
@@ -148,18 +164,18 @@
                 <li><a href="fleet.html" class="text-teal-500 font-semibold">Fleet</a></li>
                 <li><a href="index.html#how-it-works" class="hover:text-teal-500">How It Works</a></li>
                 <li><a href="about.html" class="hover:text-teal-500">About</a></li>
-                <li><a href="blog.html" class="hover:text-teal-500">Blog</a></li>
+                
                 <li><a href="contact.html" class="hover:text-teal-500">Contact</a></li>
                 <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto">Get a Quote</a></li>
             </ul>
         </div>
-    </header>
+      </div>
+  </header>
 
     <!-- Hero Section -->
-    <!-- Updated: min-h-screen with pt-28 pb-16 md:py-24 to fix mobile overlap -->
     <section class="relative min-h-screen pt-28 pb-16 md:py-24 flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2070&auto=format&fit=crop" alt="Boeing 737-800BCF Freighter taking off" class="w-full h-full object-cover hero-img-blur">
+            <img src="hero-images/cargo-hero-images/b737-800f.webp" alt="Boeing 737-800BCF Freighter taking off" class="w-full h-full object-cover hero-img-blur">
             <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-navy-950/50"></div>
         </div>
 
@@ -429,7 +445,7 @@
                         <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
                         <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
                         <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety & Compliance</a></li>
-                        <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Blog & Insights</a></li>
+                        <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
                         <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms & Conditions</a></li>
                         <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
                     </ul>
@@ -444,7 +460,7 @@
                         </li>
                         <li class="flex items-center gap-3">
                             <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
-                            <a href="tel:+92513097778000" class="hover:text-teal-500 transition">+92 51 309 777 8000</a>
+                            <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
                         </li>
                         <li class="flex items-center gap-3">
                             <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>

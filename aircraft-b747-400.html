@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boeing 747-400 Charter | Skylinks Asia Aviation</title>
+    <title>Boeing 747-400 Passenger Charter | Skylinks Asia Aviation</title>
+    <meta name="description" content="Charter the Boeing 747-400 for high-capacity, long-haul group travel. Accommodates up to 580 passengers with proven four-engine reliability for global intercontinental missions.">
+    <link rel="canonical" href="https://www.skylinks.asia/aircraft-b747-400.html">
+    
+    <!-- SEO & Social -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta property="og:title" content="Boeing 747-400 Passenger Charter | Skylinks Asia Aviation">
+    <meta property="og:description" content="Charter the Boeing 747-400 for high-capacity, long-haul group travel. Accommodates up to 580 passengers with proven four-engine reliability for global intercontinental missions.">
+    <meta property="og:image" content="https://www.skylinks.asia/hero-images/b747-400-hero.webp">
+    <meta property="og:url" content="https://www.skylinks.asia/aircraft-b747-400.html">
+    <meta property="og:type" content="website">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,15 +89,15 @@
                     },
                     fontFamily: {
                         'sans': ['Inter', 'sans-serif'],
-                        'playfair': ['Playfair Display', 'serif'],
+                        'display': ['Playfair Display', 'serif'],
                     }
                 }
             }
         }
     </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .font-playfair { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Inter', sans-serif; background-color: #0a0f1a; }
+        .font-display { font-family: 'Playfair Display', serif; }
         
         .hero-img-blur {
             filter: blur(8px);
@@ -108,74 +119,101 @@
             transition: transform 0.3s ease-in-out;
         }
     </style>
+    <!-- Zero Blur Rule -->
+    <style>.hero-img-blur { filter: none !important; }</style>
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
     <!-- Header / Navigation -->
     <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
+        <!-- Top Contact Bar -->
+        <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+            <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+                <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+                    <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
+                    <span>WhatsApp: +92 320 5487700</span>
+                </a>
+                <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+                    <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
+                    <span>charter@skylinks.asia</span>
+                </a>
+            </div>
+        </div>
+
         <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex flex-col leading-none">
-                <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
-                <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+                    <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+                    <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+                </div>
             </a>
             
             <ul class="hidden lg:flex items-center space-x-8">
-                <li><a href="index.html" class="hover:text-teal-500 transition-colors">Home</a></li>
-                <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
-                <li><a href="fleet.html" class="text-teal-500 font-semibold">Fleet</a></li>
-                <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Blog</a></li>
-                <li><a href="contact.html" class="hover:text-teal-500 transition-colors">Contact</a></li>
-                <li><a href="contact.html" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors">Get a Quote</a></li>
+                <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+                <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+                <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+                <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+                <li><a href="contact.html" class="hover:text-teal-500 transition-colors text-sm">Contact</a></li>
+                <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
             </ul>
 
             <button id="menu-toggle" class="lg:hidden text-white text-2xl">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+                <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
             </button>
         </nav>
 
         <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-40">
             <ul class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
-                <li><a href="index.html" class="hover:text-teal-500">Home</a></li>
-                <li><a href="about.html" class="hover:text-teal-500">About Us</a></li>
+                <li><a href="index.html#services" class="hover:text-teal-500">Services</a></li>
                 <li><a href="fleet.html" class="text-teal-500 font-semibold">Fleet</a></li>
-                <li><a href="blog.html" class="hover:text-teal-500">Blog</a></li>
+                <li><a href="index.html#how-it-works" class="hover:text-teal-500">How It Works</a></li>
+                <li><a href="about.html" class="hover:text-teal-500">About</a></li>
                 <li><a href="contact.html" class="hover:text-teal-500">Contact</a></li>
+                <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto">Get a Quote</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://picsum.photos/seed/b747-400-hero/1920/1080.jpg" alt="Boeing 747-400 in flight" class="w-full h-full object-cover hero-img-blur">
+    <!-- Hero Section (HARD PUSH DOWNWARDS & FIXED OVERFLOW) -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="hero-images/b747-400-hero.webp" alt="Boeing 747-400 in flight" class="w-full h-full object-cover hero-img-blur">
             <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-navy-950/50"></div>
         </div>
 
-        <div class="relative z-10 container mx-auto px-6 text-center">
+        <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
             <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6 fade-in">
                 Long-Haul Wide-Body Airliner
             </span>
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-playfair fade-in">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-display fade-in">
                 Boeing 747-400
             </h1>
             <p class="text-base md:text-xl text-gray-300 max-w-3xl mx-auto mb-8 fade-in">
                 The iconic "Jumbo Jet," offering unmatched seating capacity and proven four-engine reliability for high-capacity, long-haul intercontinental charter missions.
             </p>
-            <a href="#specs" class="inline-flex items-center gap-2 text-teal-500 hover:text-teal-400 transition-colors fade-in text-sm md:text-base">
-                View Specifications
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg>
-            </a>
+            <div class="fade-in flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#specs" class="inline-flex items-center justify-center gap-2 text-teal-500 hover:text-teal-400 transition-colors text-sm md:text-base border border-teal-500/30 px-6 py-3 w-full sm:w-auto">
+                    View Specifications
+                    <iconify-icon icon="lucide:chevron-down" class="text-base"></iconify-icon>
+                </a>
+                <a href="contact.html#contact-form" class="inline-flex items-center justify-center bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg shadow-teal-500/20 text-sm md:text-base w-full sm:w-auto">
+                    Charter This Aircraft
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Specs Bar -->
     <section id="specs" class="py-12 md:py-16 bg-navy-900 border-b border-navy-800">
-        <div class="container mx-auto px-6 max-w-7xl">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 text-center">
                 
                 <div class="fade-in">
                     <div class="w-12 h-12 md:w-14 md:h-14 mx-auto bg-navy-800 rounded-full flex items-center justify-center text-teal-500 mb-3 md:mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"></path></svg>
+                        <iconify-icon icon="lucide:users" class="text-2xl"></iconify-icon>
                     </div>
                     <p class="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Capacity</p>
                     <p class="text-xl md:text-2xl font-bold text-white">580 Pax</p>
@@ -183,7 +221,7 @@
                 
                 <div class="fade-in">
                     <div class="w-12 h-12 md:w-14 md:h-14 mx-auto bg-navy-800 rounded-full flex items-center justify-center text-teal-500 mb-3 md:mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"></path></svg>
+                        <iconify-icon icon="lucide:map" class="text-2xl"></iconify-icon>
                     </div>
                     <p class="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Range</p>
                     <p class="text-xl md:text-2xl font-bold text-white">14,200 km</p>
@@ -191,7 +229,7 @@
                 
                 <div class="fade-in">
                     <div class="w-12 h-12 md:w-14 md:h-14 mx-auto bg-navy-800 rounded-full flex items-center justify-center text-teal-500 mb-3 md:mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
+                        <iconify-icon icon="lucide:gauge" class="text-2xl"></iconify-icon>
                     </div>
                     <p class="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Cruise Speed</p>
                     <p class="text-xl md:text-2xl font-bold text-white">840 km/h</p>
@@ -199,7 +237,7 @@
                 
                 <div class="fade-in">
                     <div class="w-12 h-12 md:w-14 md:h-14 mx-auto bg-navy-800 rounded-full flex items-center justify-center text-teal-500 mb-3 md:mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"></path></svg>
+                        <iconify-icon icon="lucide:layout-grid" class="text-2xl"></iconify-icon>
                     </div>
                     <p class="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Layout</p>
                     <p class="text-lg md:text-2xl font-bold text-white">Wide-Body</p>
@@ -211,10 +249,10 @@
 
     <!-- Overview Section -->
     <section class="py-16 md:py-20 bg-navy-950">
-        <div class="container mx-auto px-6 max-w-4xl">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div class="fade-in">
                 <span class="text-teal-500 font-semibold text-sm uppercase tracking-wider">Overview</span>
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 mb-6 font-playfair text-white">Aircraft Profile</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 mb-6 font-display text-white">Aircraft Profile</h2>
                 <p class="text-gray-400 leading-relaxed mb-4 text-sm md:text-base">
                     The Boeing 747-400, famously known as the "Jumbo Jet," remains a premier choice for high-capacity long-haul charter. As a four-engined, intercontinental aircraft, it delivers exceptional reliability for large-scale operations. Ideal for sports travel, pilgrimage charters, and cruise line exchanges, this wide-body airliner accommodates up to 580 passengers in high-density configurations. 
                 </p>
@@ -227,17 +265,17 @@
 
     <!-- Key Features Grid -->
     <section class="py-16 md:py-20 bg-navy-900">
-        <div class="container mx-auto px-6 max-w-7xl">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div class="text-center mb-10 md:mb-12 fade-in">
                 <span class="text-teal-500 font-semibold text-sm uppercase tracking-wider">Key Features</span>
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 font-playfair text-white">Why Charter the B747-400?</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 font-display text-white">Why Charter the B747-400?</h2>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Feature 1 -->
                 <div class="bg-navy-800 p-6 md:p-8 rounded-2xl border border-navy-700 hover:border-teal-500 transition-all duration-300 group fade-in">
                     <div class="w-12 h-12 bg-navy-700 rounded-lg flex items-center justify-center text-teal-500 mb-5 group-hover:bg-teal-500 group-hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"></path></svg>
+                        <iconify-icon icon="lucide:users" class="text-2xl"></iconify-icon>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-white mb-3">Unmatched Seating Capacity</h3>
                     <p class="text-gray-400 text-sm md:text-base">Offers up to 580 seats, proudly standing as the highest capacity aircraft available in its category globally.</p>
@@ -246,7 +284,7 @@
                 <!-- Feature 2 -->
                 <div class="bg-navy-800 p-6 md:p-8 rounded-2xl border border-navy-700 hover:border-teal-500 transition-all duration-300 group fade-in">
                     <div class="w-12 h-12 bg-navy-700 rounded-lg flex items-center justify-center text-teal-500 mb-5 group-hover:bg-teal-500 group-hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
+                        <iconify-icon icon="lucide:globe" class="text-2xl"></iconify-icon>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-white mb-3">Extended Intercontinental Range</h3>
                     <p class="text-gray-400 text-sm md:text-base">A significant 14,200 km reach enables seamless non-stop travel across major global hubs without restriction.</p>
@@ -255,7 +293,7 @@
                 <!-- Feature 3 -->
                 <div class="bg-navy-800 p-6 md:p-8 rounded-2xl border border-navy-700 hover:border-teal-500 transition-all duration-300 group fade-in">
                     <div class="w-12 h-12 bg-navy-700 rounded-lg flex items-center justify-center text-teal-500 mb-5 group-hover:bg-teal-500 group-hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"></path></svg>
+                        <iconify-icon icon="lucide:shield-check" class="text-2xl"></iconify-icon>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-white mb-3">Four-Engine Reliability</h3>
                     <p class="text-gray-400 text-sm md:text-base">As the best-selling model of the 747 family, it provides superior performance and redundancy for heavy-lift missions.</p>
@@ -264,7 +302,7 @@
                 <!-- Feature 4 -->
                 <div class="bg-navy-800 p-6 md:p-8 rounded-2xl border border-navy-700 hover:border-teal-500 transition-all duration-300 group fade-in">
                     <div class="w-12 h-12 bg-navy-700 rounded-lg flex items-center justify-center text-teal-500 mb-5 group-hover:bg-teal-500 group-hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.073a2.25 2.25 0 01-1.632 2.163l-1.32.377a9.99 9.99 0 01-4.598 0l-1.32-.377a2.25 2.25 0 01-1.632-2.163V14.15M12 6.75c0-1.006.622-1.88 1.5-2.25M12 6.75c0 1.006.622 1.88 1.5 2.25M12 6.75c-1.006 0-1.88-.622-2.25-1.5M12 6.75c1.006 0 1.88.622 2.25 1.5M21 18.75v-3.375c0-.621-.504-1.125-1.125-1.125h-3.375a1.125 1.125 0 00-1.125 1.125v3.375c0 .621.504 1.125 1.125 1.125h3.375c.621 0 1.125-.504 1.125-1.125z"></path></svg>
+                        <iconify-icon icon="lucide:briefcase" class="text-2xl"></iconify-icon>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-white mb-3">Versatile Charter Solutions</h3>
                     <p class="text-gray-400 text-sm md:text-base">Perfectly suited for specialized industries including military movements, automotive launches, and global sports travel.</p>
@@ -273,7 +311,7 @@
                 <!-- Feature 5 -->
                 <div class="bg-navy-800 p-6 md:p-8 rounded-2xl border border-navy-700 hover:border-teal-500 transition-all duration-300 group fade-in">
                     <div class="w-12 h-12 bg-navy-700 rounded-lg flex items-center justify-center text-teal-500 mb-5 group-hover:bg-teal-500 group-hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"></path></svg>
+                        <iconify-icon icon="lucide:sparkles" class="text-2xl"></iconify-icon>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-white mb-3">Iconic Wide-Body Design</h3>
                     <p class="text-gray-400 text-sm md:text-base">Features the world-renowned "Jumbo Jet" profile with a high-density cabin engineered for maximum operational efficiency.</p>
@@ -282,7 +320,7 @@
                 <!-- Feature 6 -->
                 <div class="bg-navy-800 p-6 md:p-8 rounded-2xl border border-navy-700 hover:border-teal-500 transition-all duration-300 group fade-in">
                     <div class="w-12 h-12 bg-navy-700 rounded-lg flex items-center justify-center text-teal-500 mb-5 group-hover:bg-teal-500 group-hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <iconify-icon icon="lucide:clock" class="text-2xl"></iconify-icon>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-white mb-3">15-Hour Endurance</h3>
                     <p class="text-gray-400 text-sm md:text-base">Capable of executing ultra-long-haul missions lasting up to 15 hours, perfect for complex global itineraries.</p>
@@ -293,17 +331,17 @@
 
     <!-- FAQ Section (Static & Guaranteed Visible) -->
     <section class="py-16 md:py-20 bg-navy-950">
-        <div class="container mx-auto px-6 max-w-4xl">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div class="text-center mb-10 md:mb-12 fade-in">
                 <span class="text-teal-500 font-semibold text-sm uppercase tracking-wider">Frequently Asked Questions</span>
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 font-playfair text-white">B747-400 Charter Queries</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-2 font-display text-white">B747-400 Charter Queries</h2>
             </div>
 
             <div class="space-y-8 fade-in">
                 <!-- FAQ 1 -->
                 <div class="border-b border-navy-700 pb-6">
                     <h3 class="text-lg md:text-xl font-semibold text-white mb-3 flex items-start gap-3">
-                        <svg class="w-5 h-5 text-teal-500 mt-1 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"></path></svg>
+                        <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
                         How many passengers can the Boeing 747-400 accommodate?
                     </h3>
                     <p class="text-gray-400 pl-8 text-sm md:text-base">
@@ -314,7 +352,7 @@
                 <!-- FAQ 2 -->
                 <div class="border-b border-navy-700 pb-6">
                     <h3 class="text-lg md:text-xl font-semibold text-white mb-3 flex items-start gap-3">
-                        <svg class="w-5 h-5 text-teal-500 mt-1 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"></path></svg>
+                        <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
                         What is the maximum flight range and endurance of the Boeing 747-400?
                     </h3>
                     <p class="text-gray-400 pl-8 text-sm md:text-base">
@@ -325,7 +363,7 @@
                 <!-- FAQ 3 -->
                 <div class="border-b border-navy-700 pb-6">
                     <h3 class="text-lg md:text-xl font-semibold text-white mb-3 flex items-start gap-3">
-                        <svg class="w-5 h-5 text-teal-500 mt-1 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"></path></svg>
+                        <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
                         What is the cruise speed of the Boeing 747-400?
                     </h3>
                     <p class="text-gray-400 pl-8 text-sm md:text-base">
@@ -336,7 +374,7 @@
                 <!-- FAQ 4 -->
                 <div class="border-b border-navy-700 pb-6">
                     <h3 class="text-lg md:text-xl font-semibold text-white mb-3 flex items-start gap-3">
-                        <svg class="w-5 h-5 text-teal-500 mt-1 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"></path></svg>
+                        <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
                         Why is the Boeing 747-400 preferred for large-scale global charter operations?
                     </h3>
                     <p class="text-gray-400 pl-8 text-sm md:text-base">
@@ -347,7 +385,7 @@
                 <!-- FAQ 5 -->
                 <div>
                     <h3 class="text-lg md:text-xl font-semibold text-white mb-3 flex items-start gap-3">
-                        <svg class="w-5 h-5 text-teal-500 mt-1 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"></path></svg>
+                        <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
                         What types of charter missions is the Boeing 747-400 best suited for?
                     </h3>
                     <p class="text-gray-400 pl-8 text-sm md:text-base">
@@ -360,16 +398,16 @@
 
     <!-- CTA Section -->
     <section class="py-16 md:py-20 bg-navy-900 relative overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://picsum.photos/seed/b747-400-cta-bg/1920/1080.jpg" alt="Sky background" class="w-full h-full object-cover hero-img-blur opacity-30">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?q=80&w=2070&auto=format&fit=crop" alt="Sky background" class="w-full h-full object-cover hero-img-blur opacity-30">
             <div class="absolute inset-0 bg-gradient-to-r from-navy-950 to-navy-950/80"></div>
         </div>
         
-        <div class="relative z-10 container mx-auto px-6 text-center max-w-3xl fade-in">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 font-playfair">Ready to Charter the B747-400?</h2>
+        <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl fade-in">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 font-display">Ready to Charter the B747-400?</h2>
             <p class="text-gray-300 mb-8 text-sm md:text-base">Contact our 24/7 operations team to get a customized quote for your upcoming group or corporate travel needs.</p>
             
-            <a href="contact.html" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg transition-colors duration-300 shadow-lg shadow-teal-500/20 text-sm md:text-base">
+            <a href="contact.html#contact-form" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg transition-colors duration-300 shadow-lg shadow-teal-500/20 text-sm md:text-base w-full sm:w-auto">
                 CHARTER THIS AIRCRAFT
             </a>
         </div>
@@ -377,36 +415,44 @@
 
     <!-- Footer -->
     <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
-        <div class="container mx-auto px-6 max-w-7xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 mb-12">
                 
                 <div>
-                    <a href="index.html" class="flex flex-col leading-none mb-4">
-                        <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
-                        <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+                    <a href="index.html" class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+                          <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+                        </div>
+                        <div class="flex flex-col leading-none">
+                            <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+                            <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+                        </div>
                     </a>
                     <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
                 </div>
 
                 <div>
-                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="index.html" class="hover:text-teal-500 transition-colors">Home</a></li>
-                        <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
-                        <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Fleet</a></li>
-                        <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety & Compliance</a></li>
-                        <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Blog</a></li>
+                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="index.html#services" class="hover:text-teal-500 transition-colors">Passenger Charter Flights</a></li>
+                        <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo Aircraft Charter</a></li>
+                        <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+                        <li><a href="hajj-umrah-charter.html" class="hover:text-teal-500 transition-colors">Hajj & Umrah Charter</a></li>
+                        <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
+                        <li><a href="group-corporate.html" class="hover:text-teal-500 transition-colors">Group & Corporate Travel</a></li>
+                        <li><a href="dg-cargo.html" class="hover:text-teal-500 transition-colors">Dangerous Goods DGR Cargo</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Services</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Urgent Cargo</a></li>
-                        <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Logistics</a></li>
-                        <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Hajj & Umrah Charter</a></li>
-                        <li><a href="air-ambulance.html" class="hover:text-teal-500 transition-colors">Air Ambulance</a></li>
-                        <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI Lease</a></li>
+                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+                        <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+                        <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety & Compliance</a></li>
+                        <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+                        <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -414,31 +460,28 @@
                     <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
                     <ul class="space-y-4 text-gray-400 text-sm">
                         <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-teal-500 mt-1 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path></svg>
+                            <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
                             <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"></path></svg>
-                            <a href="tel:+92513097778000" class="hover:text-teal-500">+92 51 309 777 8000</a>
+                            <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                            <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path></svg>
-                            <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500">charter@skylinks.asia</a>
+                            <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                            <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                            <a href="https://wa.me/923205487700" target="_blank" class="hover:text-teal-500">+92 320 548 7700</a>
+                            <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                            <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-gray-500 text-sm">© 2023 Skylinks Asia Aviation. All rights reserved.</p>
-                <div class="flex gap-6">
-                    <a href="terms.html" class="text-gray-500 hover:text-teal-500 text-sm transition-colors">Terms & Conditions</a>
-                    <a href="privacy.html" class="text-gray-500 hover:text-teal-500 text-sm transition-colors">Privacy Policy</a>
-                </div>
+            <!-- Cleaned up bottom bar: Dynamic Year & Centered Text -->
+            <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+                <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
             </div>
         </div>
     </footer>
@@ -454,9 +497,11 @@
             if (isMenuOpen) {
                 mobileMenu.classList.remove('translate-x-full');
                 mobileMenu.classList.add('translate-x-0');
+                document.body.style.overflow = 'hidden';
             } else {
                 mobileMenu.classList.add('translate-x-full');
                 mobileMenu.classList.remove('translate-x-0');
+                document.body.style.overflow = '';
             }
         });
 
@@ -470,6 +515,9 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Dynamic Year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -16,11 +16,11 @@
   <meta property="og:description" content="Charter an aircraft for urgent and time-critical air freight. AOG support, emergency supply chain, and next-flight-out cargo charter across Asia, Middle East & Africa.">
   <meta property="og:url" content="https://www.skylinks.asia/urgent-cargo.html">
   <meta property="og:site_name" content="Skylinks Asia Aviation">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556388275-3a82430a8d6c?q=80&w=2070&auto=format&fit=crop">
+  <meta property="og:image" content="https://www.skylinks.asia/hero-images/urgentcargo-hero.webp">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -29,7 +29,7 @@
             navy: { 950: '#0a0f1a', 900: '#0f172a', 800: '#1e293b', 700: '#334155' },
             teal: { 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e', 400: '#2dd4bf', 300: '#5eead4' }
           },
-          fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Playfair Display', 'serif'] }
         }
       }
     }
@@ -40,94 +40,108 @@
     ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
     html { scroll-behavior: smooth; }
-    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
-    .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
-    .delay-100 { animation-delay: 0.1s; } .delay-200 { animation-delay: 0.2s; } .delay-300 { animation-delay: 0.3s; } .delay-400 { animation-delay: 0.4s; } .delay-500 { animation-delay: 0.5s; } .delay-600 { animation-delay: 0.6s; }
     .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
     .card-hover { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
     .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
     .toast { animation: fadeInUp 0.4s ease-out forwards; }
-    .mobile-menu { transform: translateX(100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-    .mobile-menu.open { transform: translateX(0); }
     .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
-  </style>
-</head>
-<body class="bg-navy-950 text-white font-sans antialiased">
+    .hero-img-blur { filter: blur(4px); transform: scale(1.1); }
+    
+    /* Standard Fade-In Animation */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
-  <!-- ===== TOP BAR & NAVIGATION ===== -->
-  <header class="fixed top-0 left-0 right-0 z-50">
-    <div class="hidden md:flex justify-end items-center gap-8 px-6 h-10 bg-navy-950 border-b border-white/5 text-xs text-neutral-400">
-      <a href="https://wa.me/923205487700" target="_blank" class="flex items-center gap-2 hover:text-teal-500 transition-colors duration-150">
-        <span class="iconify" data-icon="mdi:whatsapp" data-width="14"></span> +92 320 5487700
-      </a>
-      <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors duration-150">
-        <span class="iconify" data-icon="lucide:mail" data-width="14"></span> charter@skylinks.asia
-      </a>
-    </div>
-    <nav id="navbar" class="h-20 flex items-center px-6 transition-all duration-300" style="background: rgba(10,15,26,0.85); backdrop-filter: blur(12px);">
-    <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
-          <span class="iconify text-teal-500" data-icon="lucide:plane" data-width="20"></span>
-        </div>
-        <div>
-          <span class="text-lg font-semibold tracking-tight">SKYLINKS ASIA</span>
-          <span class="text-teal-500 text-xs font-medium tracking-[0.2em] block -mt-1">AVIATION</span>
-        </div>
-      </a>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="index.html#services" class="text-sm font-medium tracking-wide uppercase text-neutral-400 hover:text-white transition-colors duration-150">Services</a>
-        <a href="fleet.html" class="text-sm font-medium tracking-wide uppercase text-neutral-400 hover:text-white transition-colors duration-150">Fleet</a>
-        <a href="index.html#how-it-works" class="text-sm font-medium tracking-wide uppercase text-neutral-400 hover:text-white transition-colors duration-150">How It Works</a>
-        <a href="about.html" class="text-sm font-medium tracking-wide uppercase text-neutral-400 hover:text-white transition-colors duration-150">About</a>
-        <a href="contact.html" class="text-sm font-medium tracking-wide uppercase text-neutral-400 hover:text-white transition-colors duration-150">Contact</a>
-        <a href="contact.html" class="bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide px-6 py-3 hover:bg-teal-600 transition-all duration-150">REQUEST QUOTE</a>
+    /* Mobile Menu Transition */
+    #mobile-menu { transition: transform 0.3s ease-in-out; }
+    .font-display { font-family: 'Playfair Display', serif; }
+
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  <!-- Zero Blur Rule -->
+  <style>.hero-img-blur { filter: none !important; }</style>
+</head>
+<body class="bg-navy-950 text-gray-300 overflow-x-hidden">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
+      <!-- Top Contact Bar -->
+      <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+          <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+                  <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
+                  <span>WhatsApp: +92 320 5487700</span>
+              </a>
+              <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+                  <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
+                  <span>charter@skylinks.asia</span>
+              </a>
+          </div>
       </div>
-      <button id="menuBtn" class="md:hidden text-white" onclick="toggleMenu()">
-        <span class="iconify" data-icon="lucide:menu" data-width="24"></span>
-      </button>
-    </div>
-  </nav>
+
+      <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+          <a href="index.html" class="flex items-center gap-3">
+              <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+                  <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+              </div>
+              <div class="flex flex-col leading-none">
+                  <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+                  <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+              </div>
+          </a>
+          
+          <ul class="hidden lg:flex items-center space-x-8">
+              <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+              <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+              <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+              <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+              <li><a href="contact.html" class="hover:text-teal-500 transition-colors text-sm">Contact</a></li>
+              <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
+          </ul>
+
+          <button id="menu-toggle" class="lg:hidden text-white text-2xl">
+              <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+          </button>
+      </nav>
+
+      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-40">
+          <ul class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
+              <li><a href="index.html#services" class="hover:text-teal-500">Services</a></li>
+              <li><a href="fleet.html" class="text-teal-500 font-semibold">Fleet</a></li>
+              <li><a href="index.html#how-it-works" class="hover:text-teal-500">How It Works</a></li>
+              <li><a href="about.html" class="hover:text-teal-500">About</a></li>
+              <li><a href="contact.html" class="hover:text-teal-500">Contact</a></li>
+              <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto">Get a Quote</a></li>
+          </ul>
+      </div>
   </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-navy-950/95" style="backdrop-filter: blur(12px);">
-    <div class="flex justify-end p-6">
-      <button onclick="toggleMenu()" class="text-white"><span class="iconify" data-icon="lucide:x" data-width="24"></span></button>
-    </div>
-    <div class="flex flex-col items-center gap-8 mt-12">
-      <a href="index.html#services" onclick="toggleMenu()" class="text-2xl font-light tracking-wide text-neutral-300 hover:text-teal-500 transition-colors">Services</a>
-      <a href="fleet.html" onclick="toggleMenu()" class="text-2xl font-light tracking-wide text-neutral-300 hover:text-teal-500 transition-colors">Fleet</a>
-      <a href="index.html#how-it-works" onclick="toggleMenu()" class="text-2xl font-light tracking-wide text-neutral-300 hover:text-teal-500 transition-colors">How It Works</a>
-      <a href="about.html" onclick="toggleMenu()" class="text-2xl font-light tracking-wide text-neutral-300 hover:text-teal-500 transition-colors">About</a>
-      <a href="contact.html" onclick="toggleMenu()" class="text-2xl font-light tracking-wide text-neutral-300 hover:text-teal-500 transition-colors">Contact</a>
-      <a href="contact.html" onclick="toggleMenu()" class="bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 mt-4">REQUEST QUOTE</a>
-    </div>
-  </div>
-
-  <!-- ===== HERO (FIXED FOR MOBILE) ===== -->
-  <!-- Changed h-screen to min-h-screen and adjusted padding to pt-28 pb-16 so buttons never overlap -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-16 md:py-24">
-    <div class="absolute inset-0 z-0">
-      <img src="https://images.unsplash.com/photo-1556388275-3a82430a8d6c?q=80&w=2070&auto=format&fit=crop" alt="Urgent Cargo Charter Flight" class="w-full h-full object-cover" />
+  <!-- ===== HERO (HARD PUSH DOWNWARDS & FIXED OVERFLOW) ===== -->
+  <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img src="hero-images/urgentcargo-hero.webp" alt="Urgent Cargo Charter Flight" class="w-full h-full object-cover hero-img-blur" />
       <div class="absolute inset-0 hero-bg"></div>
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
-    <div class="relative z-10 max-w-4xl mx-auto text-center px-6 w-full">
-      <div class="opacity-0 animate-fade-in-up">
-        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Time-Critical Air Freight Solutions</span>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 w-full">
+      <div class="fade-in">
+        <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Time-Critical Air Freight Solutions</span>
       </div>
-      <h1 class="text-4xl md:text-7xl font-serif font-normal leading-tight tracking-tight mt-6 opacity-0 animate-fade-in-up delay-100">
+      <h1 class="text-4xl sm:text-5xl md:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
         Urgent & Time-Critical<br>
         <span class="gradient-text">Air Freight Charter</span>
       </h1>
-      <p class="text-base md:text-lg font-light leading-relaxed text-neutral-400 mt-8 max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-200">
+      <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto fade-in">
         When hours cost millions, Skylinks Asia Aviation provides rapid-response cargo aircraft charter. We secure next-flight-out options, AOG support, and emergency supply chain freighters across Asia, Middle East & Africa.
       </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 opacity-0 animate-fade-in-up delay-300">
+      <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
         <a href="#quote" class="bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
           GET URGENT QUOTE
         </a>
@@ -139,51 +153,51 @@
   </section>
 
   <!-- ===== INTRO ===== -->
-  <section class="py-24">
-    <div class="max-w-4xl mx-auto px-6 text-center">
+  <section class="py-24 bg-navy-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Next Flight Out Charter</span>
-      <h2 class="text-3xl md:text-4xl font-serif tracking-tight mt-4">When Scheduled Freight Isn't Fast Enough</h2>
-      <p class="text-sm md:text-base font-light text-neutral-400 mt-6 leading-relaxed">
+      <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">When Scheduled Freight Isn't Fast Enough</h2>
+      <p class="text-sm md:text-base font-light text-gray-400 mt-6 leading-relaxed fade-in">
         Grounded passenger planes, missed connections, and production line shutdowns require immediate action. Our 24/7 charter desk mobilizes freighter aircraft within hours. From small turboprops for regional cross-border transport to widebody freighters for intercontinental supply chain emergencies, we bypass standard cargo schedules to deliver your critical freight directly to its destination.
       </p>
     </div>
   </section>
 
-  <!-- ===== SCENARIOS (H2/H3 Structure) ===== -->
-  <section id="scenarios" class="py-24 bg-navy-800">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
+  <!-- ===== SCENARIOS ===== -->
+  <section id="scenarios" class="py-24 bg-navy-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Use Cases</span>
-        <h2 class="text-3xl md:text-4xl font-serif tracking-tight mt-4">When to Book Time-Critical Air Charter</h2>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">When to Book Time-Critical Air Charter</h2>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Item 1 -->
-        <div class="card-hover border border-white/5 bg-navy-700 p-8">
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
           <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
-            <span class="iconify text-teal-500" data-icon="lucide:wrench" data-width="22"></span>
+            <iconify-icon icon="lucide:wrench" class="text-teal-500 text-xl"></iconify-icon>
           </div>
-          <h3 class="text-xl font-serif tracking-tight">AOG (Aircraft on Ground) Support</h3>
-          <p class="text-sm font-light text-neutral-400 leading-relaxed mt-4">
+          <h3 class="text-xl font-display tracking-tight text-white">AOG (Aircraft on Ground) Support</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">
             A grounded aircraft costs millions per day. We source freighters to dispatch critical spare parts, engines, and tooling to remote airfields globally, getting your aircraft back in the sky.
           </p>
         </div>
         <!-- Item 2 -->
-        <div class="card-hover border border-white/5 bg-navy-700 p-8">
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
           <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
-            <span class="iconify text-teal-500" data-icon="lucide:factory" data-width="22"></span>
+            <iconify-icon icon="lucide:factory" class="text-teal-500 text-xl"></iconify-icon>
           </div>
-          <h3 class="text-xl font-serif tracking-tight">Production Line Resupply</h3>
-          <p class="text-sm font-light text-neutral-400 leading-relaxed mt-4">
+          <h3 class="text-xl font-display tracking-tight text-white">Production Line Resupply</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">
             Avoid costly manufacturing shutdowns. If your supply chain experiences a bottleneck, we charter dedicated cargo flights to transport automotive, tech, or manufacturing components immediately.
           </p>
         </div>
         <!-- Item 3 -->
-        <div class="card-hover border border-white/5 bg-navy-700 p-8">
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
           <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
-            <span class="iconify text-teal-500" data-icon="lucide:zap" data-width="22"></span>
+            <iconify-icon icon="lucide:zap" class="text-teal-500 text-xl"></iconify-icon>
           </div>
-          <h3 class="text-xl font-serif tracking-tight">Emergency Energy Logistics</h3>
-          <p class="text-sm font-light text-neutral-400 leading-relaxed mt-4">
+          <h3 class="text-xl font-display tracking-tight text-white">Emergency Energy Logistics</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">
             Power plant failures require instant action. We transport heavy transformers, generators, and grid components directly to the site, ensuring rapid restoration of energy infrastructure.
           </p>
         </div>
@@ -192,32 +206,32 @@
   </section>
 
   <!-- ===== QUOTE FORM (NETLIFY READY) ===== -->
-  <section id="quote" class="py-24">
-    <div class="max-w-7xl mx-auto px-6">
+  <section id="quote" class="py-24 bg-navy-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-5 gap-12">
         <!-- Left Info -->
-        <div class="lg:col-span-2">
+        <div class="lg:col-span-2 fade-in">
           <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Rapid Response</span>
-          <h2 class="text-3xl md:text-4xl font-serif tracking-tight mt-4">Get an Urgent<br>Charter Quote</h2>
-          <p class="text-sm font-light text-neutral-400 leading-relaxed mt-6">
+          <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Get an Urgent<br>Charter Quote</h2>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-6">
             Time is critical. Submit your requirement below, and our charter desk will contact you with available aircraft options within 2 hours. For extreme emergencies, call our 24/7 hotline.
           </p>
           <div class="mt-10 space-y-6">
             <div class="flex items-center gap-4">
               <div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0">
-                <span class="iconify text-teal-500" data-icon="lucide:phone" data-width="16"></span>
+                <iconify-icon icon="lucide:phone" class="text-teal-500 text-lg"></iconify-icon>
               </div>
               <div>
-                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500">24/7 Emergency Desk</div>
-                <div class="text-sm text-white mt-0.5">+92 51 309 777 8000</div>
+                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">24/7 Emergency Desk</div>
+                <div class="text-sm text-white mt-0.5">+92 309 777 8000</div>
               </div>
             </div>
             <div class="flex items-center gap-4">
               <div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0">
-                <span class="iconify text-teal-500" data-icon="lucide:mail" data-width="16"></span>
+                <iconify-icon icon="lucide:mail" class="text-teal-500 text-lg"></iconify-icon>
               </div>
               <div>
-                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500">Urgent Email</div>
+                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">Urgent Email</div>
                 <div class="text-sm text-white mt-0.5">charter@skylinks.asia</div>
               </div>
             </div>
@@ -225,53 +239,53 @@
         </div>
 
         <!-- Right Form -->
-        <div class="lg:col-span-3">
-          <form id="quoteForm" name="urgent-cargo-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="border border-white/5 bg-navy-700 p-8 space-y-6">
+        <div class="lg:col-span-3 fade-in">
+          <form id="quoteForm" name="urgent-cargo-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
             <input type="hidden" name="form-name" value="urgent-cargo-quote" />
             <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
             
             <div class="grid md:grid-cols-2 gap-6">
               <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Full Name *</label>
-                <input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-neutral-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Full Name *</label>
+                <input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
               </div>
               <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Company</label>
-                <input type="text" name="company" placeholder="Company name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-neutral-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Email *</label>
-                <input type="email" name="email" required placeholder="your@email.com" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-neutral-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Phone / WhatsApp *</label>
-                <input type="tel" name="phone" placeholder="+92 xxx xxx xxxx" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-neutral-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Company</label>
+                <input type="text" name="company" placeholder="Company name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
               </div>
             </div>
             <div class="grid md:grid-cols-2 gap-6">
               <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Departure Airport *</label>
-                <input type="text" name="departure" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-neutral-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Email *</label>
+                <input type="email" name="email" required placeholder="your@email.com" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
               </div>
               <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Destination Airport *</label>
-                <input type="text" name="destination" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-neutral-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Phone / WhatsApp *</label>
+                <input type="tel" name="phone" placeholder="+92 xxx xxx xxxx" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
               </div>
             </div>
             <div class="grid md:grid-cols-2 gap-6">
               <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Required Date *</label>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Departure Airport *</label>
+                <input type="text" name="departure" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Destination Airport *</label>
+                <input type="text" name="destination" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Required Date *</label>
                 <input type="date" name="flightDate" required class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
               </div>
               <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Cargo Weight / Dimensions *</label>
-                <input type="text" name="details" required placeholder="e.g. 5 tons / 100x50x50 cm" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-neutral-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Cargo Weight / Dimensions *</label>
+                <input type="text" name="details" required placeholder="e.g. 5 tons / 100x50x50 cm" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
               </div>
             </div>
             <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Urgency Level</label>
+              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Urgency Level</label>
               <select name="urgency" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150">
                 <option value="standard">Standard (48h+)</option>
                 <option value="urgent">Urgent (24h)</option>
@@ -279,8 +293,8 @@
               </select>
             </div>
             <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 block mb-2">Cargo Description</label>
-              <textarea name="notes" rows="3" placeholder="Describe the time-critical cargo, handling requirements, etc." class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-neutral-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea>
+              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Cargo Description</label>
+              <textarea name="notes" rows="3" placeholder="Describe the time-critical cargo, handling requirements, etc." class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea>
             </div>
             <button type="submit" class="w-full bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">
               SUBMIT URGENT ENQUIRY
@@ -292,90 +306,76 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer id="contact" class="pt-24 pb-12 bg-navy-950 border-t border-navy-800">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-        <!-- Brand -->
-        <div class="lg:col-span-1">
-          <a href="index.html" class="flex items-center gap-3 mb-6">
-            <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
-              <span class="iconify text-teal-500" data-icon="lucide:plane" data-width="20"></span>
-            </div>
-            <div>
-              <span class="text-lg font-semibold tracking-tight">SKYLINKS ASIA</span>
-              <span class="text-teal-500 text-xs font-medium tracking-[0.2em] block -mt-1">AVIATION</span>
-            </div>
-          </a>
-          <p class="text-sm font-light text-neutral-400 leading-relaxed">
-            Aircraft charter brokerage for passenger and cargo flights across Asia, the Middle East & Africa. Connecting you with certified operators.
-          </p>
-          <div class="flex items-center gap-4 mt-6">
-            <a href="#" class="w-9 h-9 border border-white/10 flex items-center justify-center hover:border-teal-500 hover:text-teal-500 transition-colors duration-150 text-neutral-400">
-              <span class="iconify" data-icon="lucide:linkedin" data-width="16"></span>
-            </a>
-            <a href="#" class="w-9 h-9 border border-white/10 flex items-center justify-center hover:border-teal-500 hover:text-teal-500 transition-colors duration-150 text-neutral-400">
-              <span class="iconify" data-icon="lucide:instagram" data-width="16"></span>
-            </a>
-            <a href="#" class="w-9 h-9 border border-white/10 flex items-center justify-center hover:border-teal-500 hover:text-teal-500 transition-colors duration-150 text-neutral-400">
-              <span class="iconify" data-icon="lucide:twitter" data-width="16"></span>
-            </a>
+  <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 mb-12">
+              
+              <div>
+                  <a href="index.html" class="flex items-center gap-3 mb-6">
+                      <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+                        <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+                      </div>
+                      <div class="flex flex-col leading-none">
+                          <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+                          <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+                      </div>
+                  </a>
+                  <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
+              </div>
+
+              <div>
+                  <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+                  <ul class="space-y-3 text-gray-400 text-sm">
+                      <li><a href="index.html#services" class="hover:text-teal-500 transition-colors">Passenger Charter Flights</a></li>
+                      <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo Aircraft Charter</a></li>
+                      <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+                      <li><a href="hajj-umrah-charter.html" class="hover:text-teal-500 transition-colors">Hajj & Umrah Charter</a></li>
+                      <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
+                      <li><a href="group-corporate.html" class="hover:text-teal-500 transition-colors">Group & Corporate Travel</a></li>
+                      <li><a href="dg-cargo.html" class="hover:text-teal-500 transition-colors">Dangerous Goods DGR Cargo</a></li>
+                  </ul>
+              </div>
+
+              <div>
+                  <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+                  <ul class="space-y-3 text-gray-400 text-sm">
+                      <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+                      <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+                      <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety & Compliance</a></li>
+                      <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+                      <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms & Conditions</a></li>
+                      <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
+                  </ul>
+              </div>
+
+              <div>
+                  <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+                  <ul class="space-y-4 text-gray-400 text-sm">
+                      <li class="flex items-start gap-3">
+                          <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
+                          <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
+                      </li>
+                      <li class="flex items-center gap-3">
+                          <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                          <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
+                      </li>
+                      <li class="flex items-center gap-3">
+                          <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                          <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
+                      </li>
+                      <li class="flex items-center gap-3">
+                          <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                          <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </div>
 
-        <!-- Charter Services -->
-        <div>
-          <h4 class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">Charter Services</h4>
-          <ul class="space-y-3">
-            <li><a href="urgent-cargo.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">Urgent & Time-Critical Cargo</a></li>
-            <li><a href="oil-gas.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">Oil & Gas Equipment Transport</a></li>
-            <li><a href="hajj-umrah.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">Hajj & Umrah Pilgrim Charter</a></li>
-            <li><a href="acmi-wet-lease.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">ACMI / Wet Lease</a></li>
-            <li><a href="air-ambulance.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">Air Ambulance & Relief</a></li>
-          </ul>
-        </div>
-
-        <!-- Company -->
-        <div>
-          <h4 class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">Company</h4>
-          <ul class="space-y-3">
-            <li><a href="about.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">About Us</a></li>
-            <li><a href="fleet.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">Charter Fleet</a></li>
-            <li><a href="safety.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">Safety & Compliance</a></li>
-            <li><a href="blog.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">Aviation Insights</a></li>
-            <li><a href="terms.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">Terms & Conditions</a></li>
-            <li><a href="privacy.html" class="text-sm text-neutral-400 hover:text-white transition-colors duration-150">Privacy Policy</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div>
-          <h4 class="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">Contact</h4>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <span class="iconify text-teal-500/60 mt-0.5" data-icon="lucide:map-pin" data-width="14"></span>
-              <span class="text-sm text-neutral-400">1-C Mohammadi Plaza, Jinnah Ave.<br>Islamabad, Pakistan</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="iconify text-teal-500/60 mt-0.5" data-icon="lucide:phone" data-width="14"></span>
-              <a href="tel:+92513097778000" class="text-sm text-neutral-400 hover:text-teal-500">+92 51 309 777 8000</a>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="iconify text-teal-500/60 mt-0.5" data-icon="lucide:mail" data-width="14"></span>
-              <a href="mailto:charter@skylinks.asia" class="text-sm text-neutral-400 hover:text-teal-500">charter@skylinks.asia</a>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="iconify text-teal-500/60 mt-0.5" data-icon="lucide:message-circle" data-width="14"></span>
-              <a href="https://wa.me/923205487700" target="_blank" class="text-sm text-neutral-400 hover:text-teal-500">+92 320 548 7700</a>
-            </li>
-          </ul>
-        </div>
+          <!-- Cleaned up bottom bar: Dynamic Year & Centered Text -->
+          <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+              <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+          </div>
       </div>
-
-      <div class="border-t border-white/5 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-[10px] text-neutral-600">© 2024 Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
-        <p class="text-[10px] text-neutral-600">Flights operated by certified Part 121/135/EU-OPS carriers under their AOC.</p>
-      </div>
-    </div>
   </footer>
 
   <!-- ===== TOAST CONTAINER ===== -->
@@ -383,21 +383,22 @@
 
   <!-- ===== JAVASCRIPT ===== -->
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('open');
-      document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
-    }
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isMenuOpen = false;
 
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(10,15,26,0.95)';
-        navbar.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
-      } else {
-        navbar.style.background = 'rgba(10,15,26,0.85)';
-        navbar.style.borderBottom = 'none';
-      }
+    menuToggle.addEventListener('click', () => {
+        isMenuOpen = !isMenuOpen;
+        if (isMenuOpen) {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenu.classList.remove('translate-x-0');
+            document.body.style.overflow = '';
+        }
     });
 
     function showToast(message, type = 'success') {
@@ -407,7 +408,7 @@
       const textColor = type === 'success' ? 'text-teal-500' : 'text-red-400';
       const icon = type === 'success' ? 'lucide:check-circle' : 'lucide:alert-circle';
       toast.className = `toast border ${bgColor} backdrop-blur-sm px-6 py-4 flex items-center gap-3 max-w-sm`;
-      toast.innerHTML = `<span class="iconify ${textColor}" data-icon="${icon}" data-width="18"></span><span class="text-sm ${textColor}">${message}</span>`;
+      toast.innerHTML = `<iconify-icon icon="${icon}" class="${textColor} text-lg"></iconify-icon><span class="text-sm ${textColor}">${message}</span>`;
       container.appendChild(toast);
       setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateY(10px)'; toast.style.transition = 'all 0.3s ease'; setTimeout(() => toast.remove(), 300); }, 4000);
     }
@@ -430,20 +431,19 @@
       // If valid, Netlify will naturally handle the form submission
     });
 
-    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    // Scroll Animation Observer
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)';
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-    document.querySelectorAll('section > div').forEach(el => {
-      el.style.opacity = '0'; el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
-      observer.observe(el);
-    });
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Dynamic Year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
