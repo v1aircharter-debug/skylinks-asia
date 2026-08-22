@@ -2,145 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Core Pages -->
     <url>
-        <loc>https://www.skylinks.asia/build-1-skyvault.html</loc>
-        <lastmod>2023-10-27</lastmod>
+        <loc>https://www.skylinks.asia/index.html</loc>
+        <lastmod>2024-08-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.skylinks.asia/build-13-about.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/build-14-contact.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/build-15-fleet.html</loc>
-        <lastmod>2023-10-27</lastmod>
+        <loc>https://www.skylinks.asia/fleet.html</loc>
+        <lastmod>2024-08-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.skylinks.asia/build-16-safety.html</loc>
-        <lastmod>2023-10-27</lastmod>
+        <loc>https://www.skylinks.asia/about.html</loc>
+        <lastmod>2024-08-20</lastmod>
         <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.skylinks.asia/contact.html</loc>
+        <lastmod>2024-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.skylinks.asia/blog.html</loc>
+        <lastmod>2024-08-20</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.skylinks.asia/build-19-blog.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://www.skylinks.asia/safety.html</loc>
+        <lastmod>2024-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.skylinks.asia/build-17-terms.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/build-18-privacy.html</loc>
-        <lastmod>2023-10-27</lastmod>
+        <loc>https://www.skylinks.asia/terms.html</loc>
+        <lastmod>2024-08-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
 
-    <!-- SEO Service Pages -->
-    <url>
-        <loc>https://www.skylinks.asia/build-2-urgent-cargo.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/build-4-oil-gas.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/build-8-hajj.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/build-9-acmi.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/build-12-air-ambulance.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
+    <!-- Service Pages -->
+    <url><loc>https://www.skylinks.asia/urgent-cargo.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.skylinks.asia/acmi-wet-lease.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.skylinks.asia/hajj-umrah-charter.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.skylinks.asia/humanitarian-cargo.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.skylinks.asia/group-corporate.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.skylinks.asia/dg-cargo.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.skylinks.asia/oil-gas.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.skylinks.asia/air-ambulance.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.skylinks.asia/perishable-pharma-cold-chain.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.skylinks.asia/repatriation-government.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-    <!-- Cargo Aircraft Fleet -->
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-b777f.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-b737-800bcf.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-b737-400f.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-b757-200f.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-a330-200f.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-b767-300f.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-b737-300f.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-b747-200f.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-il-76.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skylinks.asia/aircraft-mi-26.html</loc>
-        <lastmod>2023-10-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+    <!-- Aircraft Pages -->
+    <url><loc>https://www.skylinks.asia/aircraft-a319.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-a320.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-a330-200.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-a340-300.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b737-400.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b737-400f.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b737-800.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b737-800bcf.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b747-200f.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b757-200f.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b767-300f.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b777-200.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b777-300.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b777.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b787-8.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-b787-9.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.skylinks.asia/aircraft-il-76.html</loc><lastmod>2024-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
