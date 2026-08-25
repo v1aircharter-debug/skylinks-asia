@@ -762,16 +762,7 @@
     }
 
     // Form Validation (Netlify handles the actual submission)
-    document.getElementById('quoteForm').addEventListener('submit', function(e) {
-      const data = Object.fromEntries(new FormData(this).entries());
-      const required = ['charterType','fullName','email','departure','destination','flightDate','details'];
-      let valid = true;
-      required.forEach(field => {
-        const input = this.querySelector(`[name="${field}"]`);
-        if (!data[field] || data[field].trim() === '') { 
-          input.style.borderColor='rgba(239,68,68,0.5)'; valid=false; setTimeout(()=>{input.style.borderColor='';},3000); 
-        }
-      });
+    
       if (!valid) { 
         e.preventDefault(); // Stop Netlify submit if invalid
         showToast('Please fill in all required fields.','error'); 

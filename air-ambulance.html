@@ -426,20 +426,7 @@
       setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateY(10px)'; toast.style.transition = 'all 0.3s ease'; setTimeout(() => toast.remove(), 300); }, 4000);
     }
 
-    document.getElementById('quoteForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(this);
-      const data = Object.fromEntries(formData.entries());
-      
-      const requiredFields = Array.from(this.querySelectorAll('[required]')).map(el => el.name);
-      let valid = true;
-      requiredFields.forEach(field => {
-        const input = this.querySelector('[name="' + field + '"]');
-        if (!data[field] || data[field].trim() === '') {
-          input.style.borderColor = 'rgba(239,68,68,0.5)'; valid = false;
-          setTimeout(() => { input.style.borderColor = ''; }, 3000);
-        }
-      });
+    
 
       if (!valid) { showToast('Please fill in all required fields.', 'error'); return; }
       
