@@ -11,7 +11,8 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta property="og:title" content="Contact Us | Charter Desk & General Inquiries | Skylinks Asia Aviation">
   <meta property="og:description" content="Contact Skylinks Asia Aviation for aircraft charter inquiries, ACMI leases, and general logistics. Reach our 24/7 charter desk in Islamabad today.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1599815034604-5858004f86d8?q=80&w=2070&auto=format&fit=crop">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1599815034604-5858004f86d8?q=80&w=2070&auto=format&fit=crop"
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1599815034604-5858004f86d8?q=80&w=2070&auto=format&fit=crop">>
   <meta property="og:url" content="https://www.skylinks.asia/contact.html">
   <meta property="og:type" content="website">
 
@@ -393,23 +394,41 @@
       e.preventDefault();
       const formData = new FormData(this);
       const data = Object.fromEntries(formData.entries());
-      const required = ['fullName', 'email', 'phone', 'subject', 'notes'];
+      
+      const requiredFields = Array.from(this.querySelectorAll('[required]')).map(el => el.name);
       let valid = true;
-      required.forEach(field => {
-        const input = this.querySelector(`[name="${field}"]`);
+      requiredFields.forEach(field => {
+        const input = this.querySelector('[name="' + field + '"]');
         if (!data[field] || data[field].trim() === '') {
           input.style.borderColor = 'rgba(239,68,68,0.5)'; valid = false;
           setTimeout(() => { input.style.borderColor = ''; }, 3000);
         }
       });
+
       if (!valid) { showToast('Please fill in all required fields.', 'error'); return; }
+      
       const btn = this.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
-      btn.textContent = 'SENDING...'; btn.disabled = true; btn.style.opacity = '0.6';
-      setTimeout(() => {
-        showToast('Message sent! Our team will contact you shortly.');
-        this.reset(); btn.textContent = originalText; btn.disabled = false; btn.style.opacity = '1';
-      }, 1500);
+      btn.textContent = 'SUBMITTING...'; btn.disabled = true; btn.style.opacity = '0.6';
+      
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        showToast('Enquiry submitted successfully! Our team will contact you ASAP.');
+        this.reset(); 
+        btn.textContent = originalText; 
+        btn.disabled = false; 
+        btn.style.opacity = '1';
+      })
+      .catch((error) => {
+        showToast('Submission failed. Please email us directly.', 'error');
+        btn.textContent = originalText; 
+        btn.disabled = false; 
+        btn.style.opacity = '1';
+      });
     });
 
     // Scroll Animation Observer

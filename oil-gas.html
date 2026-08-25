@@ -16,7 +16,8 @@
   <meta property="og:description" content="Charter aircraft for oil and gas equipment transport. Heavy lift, rig moves, and time-critical energy logistics across Asia, Middle East & Africa.">
   <meta property="og:url" content="https://www.skylinks.asia/oil-gas.html">
   <meta property="og:site_name" content="Skylinks Asia Aviation">
-  <meta property="og:image" content="https://www.skylinks.asia/hero-images/oilandgas-hero.webp">
+  <meta property="og:image" content="https://www.skylinks.asia/hero-images/oilandgas-hero.webp"
+  <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/oilandgas-hero.webp">>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -419,26 +420,41 @@
       e.preventDefault();
       const formData = new FormData(this);
       const data = Object.fromEntries(formData.entries());
-      const required = ['fullName', 'company', 'email', 'departure', 'destination', 'flightDate', 'details'];
+      
+      const requiredFields = Array.from(this.querySelectorAll('[required]')).map(el => el.name);
       let valid = true;
-      required.forEach(field => {
-        const input = this.querySelector(`[name="${field}"]`);
+      requiredFields.forEach(field => {
+        const input = this.querySelector('[name="' + field + '"]');
         if (!data[field] || data[field].trim() === '') {
           input.style.borderColor = 'rgba(239,68,68,0.5)'; valid = false;
           setTimeout(() => { input.style.borderColor = ''; }, 3000);
         }
       });
-      if (!valid) { 
-        showToast('Please fill in all required fields.', 'error'); 
-        return; 
-      }
+
+      if (!valid) { showToast('Please fill in all required fields.', 'error'); return; }
+      
       const btn = this.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
       btn.textContent = 'SUBMITTING...'; btn.disabled = true; btn.style.opacity = '0.6';
-      setTimeout(() => {
-        showToast('Equipment enquiry submitted! Our logistics desk will contact you ASAP.');
-        this.reset(); btn.textContent = originalText; btn.disabled = false; btn.style.opacity = '1';
-      }, 1500);
+      
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        showToast('Enquiry submitted successfully! Our team will contact you ASAP.');
+        this.reset(); 
+        btn.textContent = originalText; 
+        btn.disabled = false; 
+        btn.style.opacity = '1';
+      })
+      .catch((error) => {
+        showToast('Submission failed. Please email us directly.', 'error');
+        btn.textContent = originalText; 
+        btn.disabled = false; 
+        btn.style.opacity = '1';
+      });
     });
 
     // Scroll Animation Observer
