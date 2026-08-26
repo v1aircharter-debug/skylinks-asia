@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Core Pages -->
     <url><loc>https://www.skylinks.asia/index.html</loc><lastmod>2026-08-22</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
@@ -41,4 +41,7 @@
     <url><loc>https://www.skylinks.asia/aircraft-b787-8.html</loc><lastmod>2026-08-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
     <url><loc>https://www.skylinks.asia/aircraft-b787-9.html</loc><lastmod>2026-08-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
     <url><loc>https://www.skylinks.asia/aircraft-il-76.html</loc><lastmod>2026-08-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://www.skylinks.asia/hajj-umrah-charter-guide.html</loc>
+  </url>
 </urlset>
