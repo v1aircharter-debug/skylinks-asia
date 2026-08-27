@@ -1,85 +1,368 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Future of <span class="gradient-text">Cold Chain Pharma</span> Logistics | Skylinks Asia</title>
+  <title>The Future of Cold Chain Pharma Logistics | Skylinks Asia</title>
+  <meta name="description" content="Exploring the future of cold chain pharma logistics. How active cool containers and dedicated cargo charter flights save lives.">
+  <meta name="keywords" content="cold chain pharma logistics, active cool container air cargo, temperature controlled cargo charter, pharma air freight, Envirotainer charter">
   <link rel="canonical" href="https://www.skylinks.asia/cold-chain-pharma-logistics.html">
+  
+  <!-- SEO & Social -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="The Future of Cold Chain Pharma Logistics">
+  <meta property="og:description" content="Exploring the future of cold chain pharma logistics. How active cool containers and dedicated cargo charter flights save lives.">
   <meta property="og:image" content="https://www.skylinks.asia/hero-images/cold-chain-pharma.webp">
+  <meta property="og:url" content="https://www.skylinks.asia/cold-chain-pharma-logistics.html">
+  <meta property="og:type" content="article">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config = { theme: { extend: { colors: { navy: { 950:'#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' }, teal: { 500:'#14b8a6', 600:'#0d9488' } }, fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] } } } }</script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#0a0f1a', 900: '#0f172a', 800: '#1e293b', 700: '#334155' },
+            teal: { 500: '#14b8a6', 600: '#0d9488' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+        }
+      }
+    }
+  </script>
+
+  <!-- Iconify -->
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!-- Google tag (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-4KQLDXBT24');</script>
-  <style>body{font-family:'Inter',sans-serif;background-color:#0a0f1a}.font-display{font-family:'Playfair Display',serif}.fade-in{opacity:0;transform:translateY(30px);transition:opacity .8s ease-out,transform .8s ease-out}.fade-in.visible{opacity:1;transform:translateY(0)}#mobile-menu{transition:transform .3s ease-in-out}.teal-glow{box-shadow:0 0 20px rgba(20,184,166,.15)}.hero-bg{background:linear-gradient(135deg,rgba(10,15,26,.8) 0%,rgba(10,15,26,.5) 50%,rgba(10,15,26,.8) 100%)}.gradient-text{background:linear-gradient(135deg,#14b8a6,#5eead4,#14b8a6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}</style>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0a0f1a; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    
+    .hero-img-blur {
+        filter: blur(8px);
+        transform: scale(1.1);
+        opacity: 0.6;
+    }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #mobile-menu {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
+    .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
+    .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
+    .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
+    .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  </style>
+  <!-- Zero Blur Rule -->
   <style>.hero-img-blur { filter: none !important; opacity: 0.8 !important; }</style>
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
+
+  <!-- Header / Navigation -->
   <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
-    <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
-      <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
-        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500"><iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon><span>WhatsApp: +92 320 5487700</span></a>
-        <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500"><iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon><span>charter@skylinks.asia</span></a>
+      <!-- Top Contact Bar -->
+      <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+          <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+                  <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
+                  <span>WhatsApp: +92 320 5487700</span>
+              </a>
+              <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+                  <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
+                  <span>charter@skylinks.asia</span>
+              </a>
+          </div>
       </div>
-    </div>
-    <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-      <a href="index.html" class="flex items-center gap-3"><div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center"><iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon></div><div class="flex flex-col leading-none"><span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span><span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span></div></a>
-      <ul class="hidden lg:flex items-center space-x-8">
-        <li><a href="index.html#services" class="hover:text-teal-500 text-sm">Services</a></li><li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li><li><a href="index.html#how-it-works" class="hover:text-teal-500 text-sm">How It Works</a></li><li><a href="about.html" class="hover:text-teal-500 text-sm">About</a></li><li><a href="blog.html" class="hover:text-teal-500 text-sm">Aviation Insights</a></li><li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold text-sm">Get a Quote</a></li>
-      </ul>
-      <button id="menu-toggle" class="lg:hidden text-white text-2xl"><iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon></button>
-    </nav>
-    <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-40">
-      <ul class="flex flex-col items-center justify-center h-full space-y-8 text-xl"><li><a href="index.html#services" class="hover:text-teal-500">Services</a></li><li><a href="fleet.html" class="text-teal-500 font-semibold">Fleet</a></li><li><a href="index.html#how-it-works" class="hover:text-teal-500">How It Works</a></li><li><a href="about.html" class="hover:text-teal-500">About</a></li><li><a href="blog.html" class="hover:text-teal-500">Aviation Insights</a></li><li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto">Get a Quote</a></li></ul>
-    </div>
+
+      <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+          <a href="index.html" class="flex items-center gap-3">
+              <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+                  <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+              </div>
+              <div class="flex flex-col leading-none">
+                  <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+                  <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+              </div>
+          </a>
+          
+          <ul class="hidden lg:flex items-center space-x-8">
+              <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+              <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+              <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+              <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+              <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
+              <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
+          </ul>
+
+          <button id="menu-toggle" class="lg:hidden text-white text-2xl">
+              <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+          </button>
+      </nav>
+
+      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-40">
+          <ul class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
+              <li><a href="index.html#services" class="hover:text-teal-500">Services</a></li>
+              <li><a href="fleet.html" class="text-teal-500 font-semibold">Fleet</a></li>
+              <li><a href="index.html#how-it-works" class="hover:text-teal-500">How It Works</a></li>
+              <li><a href="about.html" class="hover:text-teal-500">About</a></li>
+              <li><a href="index.html#faq" class="hover:text-teal-500">FAQ</a></li>
+              <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto">Get a Quote</a></li>
+          </ul>
+      </div>
   </header>
 
+  <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="hero-images/cold-chain-pharma.webp" alt="The Future of <span class="gradient-text">Cold Chain Pharma</span> Logistics" class="w-full h-full object-cover hero-img-blur" />
+      <img src="hero-images/cold-chain-pharma.webp" alt="Cold Chain Pharma Cargo Charter" class="w-full h-full object-cover hero-img-blur" />
       <div class="absolute inset-0 hero-bg"></div>
-      <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a 10%, rgba(10,15,26,0.4) 60%, rgba(10,15,26,0.3) 100%);"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
-    <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
-      <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6 fade-in">Aviation Insights</span>
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white mb-6">The Future of <span class="gradient-text">Cold Chain Pharma</span> Logistics</h1>
-      <div class="flex items-center justify-center text-gray-400 fade-in mt-8"><iconify-icon icon="lucide:calendar" class="mr-2 text-teal-500"></iconify-icon><span>August 2024</span><span class="mx-3">•</span><iconify-icon icon="lucide:user" class="mr-2 text-teal-500"></iconify-icon><span>Skylinks Asia Team</span></div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 w-full">
+      <div class="fade-in">
+        <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Aviation Insights · Pharmaceutical Logistics</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+        The Future of <span class="gradient-text">Cold Chain Pharma</span> Logistics
+      </h1>
+      <div class="flex items-center justify-center text-gray-400 fade-in mt-8">
+          <iconify-icon icon="lucide:calendar" class="mr-2 text-teal-500"></iconify-icon>
+          <span>August 2024</span>
+          <span class="mx-3">•</span>
+          <iconify-icon icon="lucide:user" class="mr-2 text-teal-500"></iconify-icon>
+          <span>Skylinks Asia Team</span>
+      </div>
     </div>
   </section>
 
+  <!-- ===== BLOG CONTENT ===== -->
   <section class="py-24 bg-navy-950">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="space-y-12 text-lg leading-relaxed text-gray-400 fade-in">
-        <p>As biopharma demand grows, maintaining the unbroken cold chain is vital for temperature-sensitive vaccines and biologics. Any deviation in temperature can ruin a multi-million dollar shipment. Air cargo charter provides the fastest, most controlled environment for pharma logistics.</p><h2 class='text-3xl md:text-4xl font-display tracking-tight text-white mb-6 border-l-4 border-teal-500 pl-4'>The Risks of Pharma Cold Chain Breaks</h2><p>Exposure to heat or freezing temperatures can degrade the efficacy of pharmaceuticals. Active cool containers, which use battery-powered temperature control, are essential for maintaining the cold chain during transit.</p><h2 class='text-3xl md:text-4xl font-display tracking-tight text-white mb-6 mt-12 border-l-4 border-teal-500 pl-4'>Why Use a Cargo Charter for Pharma?</h2><p>Commercial freight networks can be unpredictable. A dedicated cargo charter allows pharma companies to bypass congested hubs, minimizing tarmac exposure time and ensuring the cargo moves directly from factory to destination.</p><h2 class='text-3xl md:text-4xl font-display tracking-tight text-white mb-6 mt-12 border-l-4 border-teal-500 pl-4'>Active vs Passive Cooling Systems</h2><p>While passive systems use dry ice and insulation, active containers (like Envirotainer) provide real-time temperature monitoring and adjustment. We explore how charter flights integrate with these systems to save lives.</p>
-        <div class="mt-12 bg-navy-800 border border-teal-500/30 rounded-2xl p-8 md:p-12 text-center">
-          <h3 class="text-2xl md:text-3xl font-display font-bold text-white mb-4">Need Expert Aviation Advice?</h3>
-          <p class="text-gray-400 mb-8 max-w-2xl mx-auto text-sm md:text-base">Our 24/7 operations team is ready to assist with your specific charter requirement.</p>
-          <a href="contact.html#contact-form" class="inline-flex items-center justify-center bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 shadow-lg shadow-teal-500/20 text-sm md:text-base">Contact Our Charter Desk<iconify-icon icon="lucide:arrow-right" class="ml-2"></iconify-icon></a>
+
+        <p>
+          The global pharmaceutical industry is undergoing a biological revolution. The rise of mRNA vaccines, monoclonal antibodies, and advanced biologics has transformed modern medicine. However, these life-saving therapeutics are highly sensitive to temperature fluctuations. A deviation of just a few degrees can irreversibly degrade the efficacy of a multi-million dollar shipment. As biopharma demand grows, maintaining the unbroken cold chain is vital. Air cargo charter provides the fastest, most controlled environment for pharma logistics, bypassing the vulnerabilities of commercial freight networks.
+        </p>
+
+        <div class="border-l-4 border-teal-500 pl-4">
+          <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white mb-6">The Physics of the Cold Chain</h2>
         </div>
+        
+        <p>
+          Cold chain logistics is the transport and storage of temperature-sensitive products along an unbroken, documented supply chain. In aviation pharma logistics, cargo must be maintained within strictly controlled temperature bands, typically:
+        </p>
+        <ul class="space-y-4 pl-4 list-disc marker:text-teal-500">
+          <li><strong class="text-gray-200">CRT (Controlled Room Temperature):</strong> +15°C to +25°C</li>
+          <li><strong class="text-gray-200">Chilled/Cold Chain:</strong> +2°C to +8°C (Standard for most vaccines and insulin)</li>
+          <li><strong class="text-gray-200">Frozen:</strong> -15°C to -25°C (For plasma and certain biologics)</li>
+          <li><strong class="text-gray-200">Deep Frozen:</strong> -60°C to -90°C (Required for ultra-sensitive mRNA vaccines like Pfizer/BioNTech)</li>
+        </ul>
+        <p>
+          The danger lies in the "temperature excursion." If a shipment of vaccines sits on a hot tarmac in Dubai or Singapore for 45 minutes, the internal temperature can breach the +8°C threshold. Once proteins denature due to heat, they cannot be reconstituted. The entire shipment must be destroyed, resulting in catastrophic financial loss and, more importantly, a delay in life-saving medication reaching patients.
+        </p>
+
+        <div class="border-l-4 border-teal-500 pl-4 pt-8">
+          <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white mb-6">Active vs. Passive Cooling Systems</h2>
+        </div>
+
+        <p>
+          To combat temperature excursions, pharmaceutical shippers utilize two primary types of air cargo containers: passive and active.
+        </p>
+        <p>
+          <strong class="text-gray-200">Passive Systems (e.g., Csafe RKN):</strong> These rely on phase-change materials (PCM) or dry ice, enclosed within heavy thermal insulation panels. They do not require an external power source. While cost-effective for short regional hops, they have a finite cooling capacity. Once the dry ice sublimates or the PCM warms up, the container loses its protective envelope. They are also heavy, eating into the aircraft's payload capacity.
+        </p>
+        <p>
+          <strong class="text-gray-200">Active Systems (e.g., Envirotainer RAP e2):</strong> These are the gold standard for international cold chain logistics. Active containers are essentially self-contained refrigerators with their own battery-powered compressor system. They feature real-time temperature and humidity dataloggers. More importantly, they can be plugged directly into the aircraft's main deck power supply (110V/220V), ensuring the compressor runs continuously during the flight. They can maintain a +2°C to +8°C environment for days, regardless of external ambient temperatures.
+        </p>
+
+        <div class="border-l-4 border-teal-500 pl-4 pt-8">
+          <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white mb-6">The Vulnerabilities of Commercial Freight</h2>
+        </div>
+
+        <p>
+          Commercial passenger and cargo airlines route freight through massive, automated hub-and-spoke systems. A shipment of pharma flying from Mumbai to London might transit through Dubai or Frankfurt. At these mega-hubs, cargo is offloaded from one aircraft, moved by tug to a warehouse, sorted, and then reloaded onto another aircraft.
+        </p>
+        <p>
+          This "tarmac exposure time" is the Achilles' heel of commercial pharma logistics. Even if the container is active, a 4-hour delay on the tarmac waiting for customs clearance can drain the battery below safe levels. Furthermore, commercial freight networks prioritize high-volume e-commerce mail and general cargo; they cannot prioritize a single pharma pallet without massive surcharges. When supply chains demand urgency, commercial freight fails to deliver.
+        </p>
+
+        <div class="border-l-4 border-teal-500 pl-4 pt-8">
+          <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white mb-6">The Solution: Dedicated Pharma Cargo Charter</h2>
+        </div>
+
+        <p>
+          For high-volume, high-value, or time-critical pharmaceutical shipments, a dedicated cargo aircraft charter is the ultimate safeguard. By chartering a freighter (such as a Boeing 777F or A330-200F), pharma companies take complete control of the supply chain.
+        </p>
+        <ul class="space-y-4 pl-4 list-disc marker:text-teal-500">
+          <li><strong class="text-gray-200">Direct Routing:</strong> The cargo flies directly from the manufacturing facility to the destination airport, bypassing transit hubs and minimizing tarmac exposure to minutes instead of days.</li>
+          <li><strong class="text-gray-200">Main Deck Power:</strong> Dedicated freighters can guarantee main deck electrical receptacles, allowing active Envirotainer units to be plugged in and monitored from the cockpit throughout the flight.</li>
+          <li><strong class="text-gray-200">GDP Compliance:</strong> Good Distribution Practice (GDP) regulations require meticulous documentation of the supply chain. Charter flights offer a single, unbroken chain of custody, simplifying regulatory audits.</li>
+          <li><strong class="text-gray-200">Speed to Market:</strong> For a new vaccine rollout or an urgent clinical trial supply, a charter can be airborne within 6-12 hours, saving days compared to commercial booking windows.</li>
+        </ul>
+
+        <div class="border-l-4 border-teal-500 pl-4 pt-8">
+          <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white mb-6">The Skylinks Asia Advantage in Pharma Logistics</h2>
+        </div>
+
+        <p>
+          As an independent aircraft charter broker, Skylinks Asia is your strategic partner in life-saving logistics. We do not own aircraft or containers; we manage the intelligence. We know exactly which licensed AOC holders across Asia, the Middle East, and Africa operate freighters equipped with active cooling infrastructure.
+        </p>
+        <p>
+          We handle the sourcing of the aircraft, the negotiation of charter rates, the acquisition of overflight permits, and the coordination of GDP-compliant ground handling. From the moment your pharmaceutical cargo leaves the cold storage warehouse to the moment it touches down at its destination, our team ensures an unbroken, zero-blur, fully transparent cold chain. Because when the cargo is a life-saving vaccine, failure is not an option.
+        </p>
+
+        <!-- CTA SECTION -->
+        <div class="mt-12 bg-navy-800 border border-teal-500/30 rounded-2xl p-8 md:p-12 text-center">
+            <h3 class="text-2xl md:text-3xl font-display font-bold text-white mb-4">Need to Move Temperature-Sensitive Pharma?</h3>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto text-sm md:text-base">Our 24/7 operations team is ready to source the nearest GDP-compliant freighter for your critical cargo. Contact us today.</p>
+            <a href="contact.html#contact-form" class="inline-flex items-center justify-center bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 shadow-lg shadow-teal-500/20 text-sm md:text-base">
+                Contact Our Charter Desk
+                <iconify-icon icon="lucide:arrow-right" class="ml-2"></iconify-icon>
+            </a>
+        </div>
+        
+        <!-- SIMILAR POSTS (CROSS-LINKING) -->
+        <div class="mt-16 pt-12 border-t border-navy-800">
+            <h3 class="text-2xl font-display tracking-tight text-white mb-8">Similar Aviation Insights</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="shipping-lithium-batteries-air.html" class="group block bg-navy-800 border border-navy-700 rounded-lg p-6 hover:border-teal-500 transition-all duration-300">
+                    <h4 class="text-lg font-display text-white group-hover:text-teal-500 transition-colors mb-2">Shipping Lithium Batteries by Air</h4>
+                    <p class="text-sm text-gray-400">A comprehensive guide to IATA Class 9 dangerous goods logistics and DGR cargo charter.</p>
+                </a>
+                <a href="remote-airstrips-africa-mining.html" class="group block bg-navy-800 border border-navy-700 rounded-lg p-6 hover:border-teal-500 transition-all duration-300">
+                    <h4 class="text-lg font-display text-white group-hover:text-teal-500 transition-colors mb-2">Top 5 Remote Airstrips in Africa for Mining</h4>
+                    <p class="text-sm text-gray-400">Moving heavy earthmoving equipment to unimproved dirt strips requires specialized ramp-loading aircraft.</p>
+                </a>
+            </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 mb-12">
-        <div><a href="index.html" class="flex items-center gap-3 mb-6"><div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center"><iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon></div><div class="flex flex-col leading-none"><span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span><span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span></div></a><p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions.</p></div>
-        <div><h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4><ul class="space-y-3 text-gray-400 text-sm"><li><a href="index.html#services" class="hover:text-teal-500">Passenger Charter Flights</a></li><li><a href="urgent-cargo.html" class="hover:text-teal-500">Cargo Aircraft Charter</a></li><li><a href="acmi-wet-lease.html" class="hover:text-teal-500">ACMI / Wet Lease</a></li><li><a href="hajj-umrah.html" class="hover:text-teal-500">Hajj & Umrah Charter</a></li></ul></div>
-        <div><h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4><ul class="space-y-3 text-gray-400 text-sm"><li><a href="about.html" class="hover:text-teal-500">About Us</a></li><li><a href="fleet.html" class="hover:text-teal-500">Charter Fleet</a></li><li><a href="blog.html" class="hover:text-teal-500">Aviation Insights</a></li></ul></div>
-        <div><h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4><ul class="space-y-4 text-gray-400 text-sm"><li class="flex items-center gap-3"><iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon><a href="tel:+923097778000" class="hover:text-teal-500">+92 309 777 8000</a></li><li class="flex items-center gap-3"><iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon><a href="mailto:charter@skylinks.asia" class="hover:text-teal-500">charter@skylinks.asia</a></li></ul></div>
-      </div>
-      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4"><p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p></div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 mb-12">
+            <div>
+                <a href="index.html" class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+                      <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+                    </div>
+                    <div class="flex flex-col leading-none">
+                        <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+                        <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+                    </div>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="index.html#services" class="hover:text-teal-500 transition-colors">Passenger Charter Flights</a></li>
+                    <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo Aircraft Charter</a></li>
+                    <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+                    <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Hajj & Umrah Charter</a></li>
+                    <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
+                    <li><a href="group-corporate.html" class="hover:text-teal-500 transition-colors">Group & Corporate Travel</a></li>
+                    <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods DGR Cargo</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+                    <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+                    <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety & Compliance</a></li>
+                    <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+                    <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms & Conditions</a></li>
+                    <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3">
+                        <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
+                        <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                        <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                        <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+            <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        </div>
     </div>
   </footer>
 
+  <!-- ===== JAVASCRIPT ===== -->
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-    menuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('translate-x-full'); mobileMenu.classList.toggle('translate-x-0'); document.body.style.overflow = mobileMenu.classList.contains('translate-x-0') ? 'hidden' : ''; });
-    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    let isMenuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+        isMenuOpen = !isMenuOpen;
+        if (isMenuOpen) {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenu.classList.remove('translate-x-0');
+            document.body.style.overflow = '';
+        }
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 </body>
