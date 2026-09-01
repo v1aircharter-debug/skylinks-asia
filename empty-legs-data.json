@@ -1,0 +1,43 @@
+{
+  "legs": [
+    {
+      "date": "15 Oct 2024",
+      "dep_code": "DXB",
+      "dep_city": "Dubai",
+      "arr_code": "IST",
+      "arr_city": "Istanbul",
+      "aircraft": "Challenger 350",
+      "pax": "Up to 8 Pax",
+      "duration": "4h 30m Duration",
+      "price_type": "Price From",
+      "price": "$18,500",
+      "on_request": false
+    },
+    {
+      "date": "22 Oct 2024",
+      "dep_code": "ISB",
+      "dep_city": "Islamabad",
+      "arr_code": "LTN",
+      "arr_city": "London",
+      "aircraft": "Global 6000",
+      "pax": "Up to 12 Pax",
+      "duration": "8h 15m Duration",
+      "price_type": "Price From",
+      "price": "$42,000",
+      "on_request": false
+    },
+    {
+      "date": "05 Nov 2024",
+      "dep_code": "BOM",
+      "dep_city": "Mumbai",
+      "arr_code": "DXB",
+      "arr_city": "Dubai",
+      "aircraft": "Phenom 300",
+      "pax": "Up to 6 Pax",
+      "duration": "3h 00m Duration",
+      "price_type": "Price",
+      "price": "",
+      "on_request": true
+    }
+  ]
+}

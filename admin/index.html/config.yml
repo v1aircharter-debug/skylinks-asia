@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: main
+site_url: https://www.skylinks.asia
+display_url: https://www.skylinks.asia
+logo_url: https://www.skylinks.asia/favicon.svg
+media_folder: "assets/images"
+public_folder: "/assets/images"
+collections:
+  - name: "empty_legs"
+    label: "Empty Legs"
+    label_singular: "Empty Leg"
+    description: "Add or remove active empty leg flights."
+    delete: true
+    create: true
+    files:
+      - file: "empty-legs-data.json"
+        name: "empty_legs_data"
+        label: "Empty Legs Data"
+        format: "json"
+        fields:
+          - name: "legs"
+            label: "Active Flights"
+            widget: "list"
+            summary: "{{fields.aircraft}} - {{fields.dep_code}} to {{fields.arr_code}}"
+            fields:
+              - {label: "Date", name: "date", widget: "string", default: "01 Jan 2024"}
+              - {label: "Departure Code", name: "dep_code", widget: "string", default: "DXB"}
+              - {label: "Departure City", name: "dep_city", widget: "string", default: "Dubai"}
+              - {label: "Arrival Code", name: "arr_code", widget: "string", default: "IST"}
+              - {label: "Arrival City", name: "arr_city", widget: "string", default: "Istanbul"}
+              - {label: "Aircraft", name: "aircraft", widget: "string", default: "Challenger 350"}
+              - {label: "Passengers", name: "pax", widget: "string", default: "Up to 8 Pax"}
+              - {label: "Duration", name: "duration", widget: "string", default: "4h 30m Duration"}
+              - {label: "Price Type", name: "price_type", widget: "select", options: ["Price From", "Price"], default: "Price From"}
+              - {label: "Price Amount", name: "price", widget: "string", default: "$18,500", required: false}
+              - {label: "On Request", name: "on_request", widget: "boolean", default: false}
