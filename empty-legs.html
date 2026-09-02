@@ -31,11 +31,7 @@
           colors: {
             navy: { 950:'#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' },
             teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
-            gold: { 
-              500:'#C8B283', /* Rich Metallic Gold */
-              600:'#B09668', /* Darker Antique Gold */
-              400:'#D9C89F'  /* Light Champagne */
-            }
+            gold: { 500:'#C8B283', 600:'#B09668', 400:'#D9C89F' }
           },
           fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] },
         }
@@ -204,7 +200,7 @@
     </div>
   </section>
 
-  <!-- ===== LISTINGS (3-COLUMN GRID & COMPACT CARDS) ===== -->
+  <!-- ===== LISTINGS (DYNAMICALLY LOADED FROM JSON) ===== -->
   <section class="py-24 bg-navy-950">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16 fade-in">
@@ -213,144 +209,16 @@
         <p class="text-sm font-light text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">These are live repositioning flights. Availability changes daily. If a flight matches your route, request it immediately before it's booked.</p>
       </div>
       
-      <!-- 3-Column Grid Container -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <!-- Listing 1: With Price -->
-        <div class="group card-hover border border-navy-700 bg-navy-800 p-5 fade-in flex flex-col">
-          <div class="flex justify-between items-center mb-4">
-            <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-[#C8B283]/10 px-2 py-1">Empty Leg</span>
-            <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-500 bg-navy-900 px-2 py-1">15 Oct 2024</span>
-          </div>
-          
-          <div class="flex items-center justify-between mb-5 pb-5 border-b border-navy-700">
-            <!-- Departure -->
-            <div class="text-center">
-              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
-              <div class="text-xl font-display text-white">DXB</div>
-              <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Dubai</div>
-            </div>
-            <!-- Center Path -->
-            <div class="flex-1 mx-3 h-px bg-navy-700 relative">
-               <iconify-icon icon="lucide:plane" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#C8B283] bg-navy-800 p-1"></iconify-icon>
-            </div>
-            <!-- Arrival -->
-            <div class="text-center">
-              <iconify-icon icon="ph:airplane-landing-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
-              <div class="text-xl font-display text-white">IST</div>
-              <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Istanbul</div>
-            </div>
-          </div>
-
-          <!-- Compact 2-Column Layout for Specs & Price -->
-          <div class="grid grid-cols-5 gap-4 flex-1 mb-2">
-            <div class="col-span-3 space-y-3 text-xs text-gray-400 flex flex-col justify-center">
-              <span class="flex items-center gap-2"><iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283]"></iconify-icon> Challenger 350</span>
-              <span class="flex items-center gap-2"><iconify-icon icon="ph:users-duotone" class="text-[#C8B283]"></iconify-icon> Up to 8 Pax</span>
-              <span class="flex items-center gap-2"><iconify-icon icon="ph:clock-duotone" class="text-[#C8B283]"></iconify-icon> 4h 30m Duration</span>
-            </div>
-            <div class="col-span-2 flex flex-col justify-between items-end text-right border-l border-navy-700 pl-4">
-              <div>
-                <div class="text-[10px] uppercase tracking-wider text-gray-500">Price From</div>
-                <div class="text-xl font-display text-[#C8B283] mt-1">$18,500</div>
-              </div>
-              <a href="private-jet-quote.html" class="w-full bg-[#C8B283] text-black text-[10px] font-bold tracking-wider py-2.5 mt-4 hover:bg-[#D9C89F] transition-all duration-150 text-center">REQUEST FLIGHT</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Listing 2: With Price -->
-        <div class="group card-hover border border-navy-700 bg-navy-800 p-5 fade-in flex flex-col">
-          <div class="flex justify-between items-center mb-4">
-            <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-[#C8B283]/10 px-2 py-1">Empty Leg</span>
-            <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-500 bg-navy-900 px-2 py-1">22 Oct 2024</span>
-          </div>
-          
-          <div class="flex items-center justify-between mb-5 pb-5 border-b border-navy-700">
-            <!-- Departure -->
-            <div class="text-center">
-              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
-              <div class="text-xl font-display text-white">ISB</div>
-              <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Islamabad</div>
-            </div>
-            <!-- Center Path -->
-            <div class="flex-1 mx-3 h-px bg-navy-700 relative">
-               <iconify-icon icon="lucide:plane" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#C8B283] bg-navy-800 p-1"></iconify-icon>
-            </div>
-            <!-- Arrival -->
-            <div class="text-center">
-              <iconify-icon icon="ph:airplane-landing-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
-              <div class="text-xl font-display text-white">LTN</div>
-              <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">London</div>
-            </div>
-          </div>
-
-          <!-- Compact 2-Column Layout for Specs & Price -->
-          <div class="grid grid-cols-5 gap-4 flex-1 mb-2">
-            <div class="col-span-3 space-y-3 text-xs text-gray-400 flex flex-col justify-center">
-              <span class="flex items-center gap-2"><iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283]"></iconify-icon> Global 6000</span>
-              <span class="flex items-center gap-2"><iconify-icon icon="ph:users-duotone" class="text-[#C8B283]"></iconify-icon> Up to 12 Pax</span>
-              <span class="flex items-center gap-2"><iconify-icon icon="ph:clock-duotone" class="text-[#C8B283]"></iconify-icon> 8h 15m Duration</span>
-            </div>
-            <div class="col-span-2 flex flex-col justify-between items-end text-right border-l border-navy-700 pl-4">
-              <div>
-                <div class="text-[10px] uppercase tracking-wider text-gray-500">Price From</div>
-                <div class="text-xl font-display text-[#C8B283] mt-1">$42,000</div>
-              </div>
-              <a href="private-jet-quote.html" class="w-full bg-[#C8B283] text-black text-[10px] font-bold tracking-wider py-2.5 mt-4 hover:bg-[#D9C89F] transition-all duration-150 text-center">REQUEST FLIGHT</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Listing 3: Price on Request -->
-        <div class="group card-hover border border-navy-700 bg-navy-800 p-5 fade-in flex flex-col">
-          <div class="flex justify-between items-center mb-4">
-            <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-[#C8B283]/10 px-2 py-1">Empty Leg</span>
-            <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-500 bg-navy-900 px-2 py-1">05 Nov 2024</span>
-          </div>
-          
-          <div class="flex items-center justify-between mb-5 pb-5 border-b border-navy-700">
-            <!-- Departure -->
-            <div class="text-center">
-              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
-              <div class="text-xl font-display text-white">BOM</div>
-              <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Mumbai</div>
-            </div>
-            <!-- Center Path -->
-            <div class="flex-1 mx-3 h-px bg-navy-700 relative">
-               <iconify-icon icon="lucide:plane" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#C8B283] bg-navy-800 p-1"></iconify-icon>
-            </div>
-            <!-- Arrival -->
-            <div class="text-center">
-              <iconify-icon icon="ph:airplane-landing-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
-              <div class="text-xl font-display text-white">DXB</div>
-              <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Dubai</div>
-            </div>
-          </div>
-
-          <!-- Compact 2-Column Layout for Specs & Price -->
-          <div class="grid grid-cols-5 gap-4 flex-1 mb-2">
-            <div class="col-span-3 space-y-3 text-xs text-gray-400 flex flex-col justify-center">
-              <span class="flex items-center gap-2"><iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283]"></iconify-icon> Phenom 300</span>
-              <span class="flex items-center gap-2"><iconify-icon icon="ph:users-duotone" class="text-[#C8B283]"></iconify-icon> Up to 6 Pax</span>
-              <span class="flex items-center gap-2"><iconify-icon icon="ph:clock-duotone" class="text-[#C8B283]"></iconify-icon> 3h 00m Duration</span>
-            </div>
-            <div class="col-span-2 flex flex-col justify-between items-end text-right border-l border-navy-700 pl-4">
-              <div>
-                <div class="text-[10px] uppercase tracking-wider text-gray-500">Price</div>
-                <div class="text-lg font-display text-gray-400 mt-1">On Request</div>
-              </div>
-              <a href="contact.html#contact-form" class="w-full border border-[#C8B283] text-[#C8B283] text-[10px] font-bold tracking-wider py-2.5 mt-4 hover:bg-[#C8B283] hover:text-black transition-all duration-150 text-center">GET A QUOTE</a>
-            </div>
-          </div>
-        </div>
-
+      <!-- 3-Column Grid Container (Populated by JS) -->
+      <div id="fleetGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Loading Skeleton -->
+        <div class="col-span-full text-center text-gray-500 py-12">Loading active flights...</div>
       </div>
 
-      <!-- Urgency Disclaimer -->
+      <!-- Urgency & Operational Disclaimer -->
       <div class="mt-10 text-center fade-in">
-        <p class="text-xs text-gray-500 max-w-2xl mx-auto leading-relaxed">
-          <span class="font-semibold text-[#C8B283]">Disclaimer:</span> Empty leg flights are highly sought after and strictly subject to prior sale. We recommend requesting your preferred flight immediately to secure availability.
+        <p class="text-xs text-gray-500 max-w-3xl mx-auto leading-relaxed">
+          <span class="font-semibold text-[#C8B283]">Disclaimer:</span> Empty leg flights are highly sought after and strictly subject to prior sale. We recommend requesting your preferred flight immediately to secure availability. Estimated flight durations and times are subject to change based on wind conditions, ATC routing, aircraft weight, climb/descent profiles, and specific airport procedures.
         </p>
       </div>
       
@@ -554,6 +422,60 @@
         const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
         waSend.href = 'https://wa.me/923205487700?text=' + msg;
     });
+
+    // Dynamic Empty Legs Loader
+    fetch('/empty-legs-data.json')
+      .then(response => response.json())
+      .then(data => {
+        const grid = document.getElementById('fleetGrid');
+        if (!data.legs || data.legs.length === 0) {
+          grid.innerHTML = '<div class="col-span-full text-center text-gray-500 py-12">No active empty legs at the moment. Please check back soon or register for alerts below.</div>';
+          return;
+        }
+        
+        grid.innerHTML = data.legs.map(leg => {
+          const priceBlock = leg.on_request 
+            ? `<div><div class="text-[10px] uppercase tracking-wider text-gray-500">Price</div><div class="text-lg font-display text-gray-400 mt-1">On Request</div></div><a href="contact.html#contact-form" class="w-full border border-[#C8B283] text-[#C8B283] text-[10px] font-bold tracking-wider py-2.5 mt-4 hover:bg-[#C8B283] hover:text-black transition-all duration-150 text-center">GET A QUOTE</a>`
+            : `<div><div class="text-[10px] uppercase tracking-wider text-gray-500">${leg.price_type}</div><div class="text-xl font-display text-[#C8B283] mt-1">${leg.price}</div></div><a href="private-jet-quote.html" class="w-full bg-[#C8B283] text-black text-[10px] font-bold tracking-wider py-2.5 mt-4 hover:bg-[#D9C89F] transition-all duration-150 text-center">REQUEST FLIGHT</a>`;
+
+          return `
+          <div class="group card-hover border border-navy-700 bg-navy-800 p-5 flex flex-col">
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-[#C8B283]/10 px-2 py-1">Empty Leg</span>
+              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-500 bg-navy-900 px-2 py-1">${leg.date}</span>
+            </div>
+            <div class="flex items-center justify-between mb-5 pb-5 border-b border-navy-700">
+              <div class="text-center">
+                <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
+                <div class="text-xl font-display text-white">${leg.dep_code}</div>
+                <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">${leg.dep_city}</div>
+              </div>
+              <div class="flex-1 mx-3 h-px bg-navy-700 relative">
+                 <iconify-icon icon="lucide:plane" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#C8B283] bg-navy-800 p-1"></iconify-icon>
+              </div>
+              <div class="text-center">
+                <iconify-icon icon="ph:airplane-landing-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
+                <div class="text-xl font-display text-white">${leg.arr_code}</div>
+                <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">${leg.arr_city}</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-5 gap-4 flex-1 mb-2">
+              <div class="col-span-3 space-y-3 text-xs text-gray-400 flex flex-col justify-center">
+                <span class="flex items-center gap-2"><iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283]"></iconify-icon> ${leg.aircraft}</span>
+                <span class="flex items-center gap-2"><iconify-icon icon="ph:users-duotone" class="text-[#C8B283]"></iconify-icon> ${leg.pax}</span>
+                <span class="flex items-center gap-2"><iconify-icon icon="ph:clock-duotone" class="text-[#C8B283]"></iconify-icon> ${leg.duration}</span>
+              </div>
+              <div class="col-span-2 flex flex-col justify-between items-end text-right border-l border-navy-700 pl-4">
+                ${priceBlock}
+              </div>
+            </div>
+          </div>
+          `;
+        }).join('');
+      }).catch(error => {
+        console.error('Error loading empty legs:', error);
+        document.getElementById('fleetGrid').innerHTML = '<div class="col-span-full text-center text-gray-500 py-12">Error loading flights. Please check back later.</div>';
+      });
   </script>
 </body>
 </html>
