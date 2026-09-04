@@ -222,30 +222,31 @@
               <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
           </ul>
 
-          <button id="menu-toggle" class="lg:hidden text-white text-2xl">
+          <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]">
               <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
           </button>
       </nav>
 
-      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-40 overflow-y-auto pb-10">
+      <!-- MOBILE MENU FIXED Z-INDEX TO 60 TO PREVENT OVERLAP -->
+      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
           <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
-              <li><a href="#services" class="hover:text-teal-500">Services</a></li>
-              <li><a href="#fleet" class="text-teal-500 font-semibold">Fleet</a></li>
-              <li><a href="#how-it-works" class="hover:text-teal-500">How It Works</a></li>
-              <li><a href="#about" class="hover:text-teal-500">About</a></li>
-              <li><a href="#faq" class="hover:text-teal-500">FAQ</a></li>
+              <li><a href="#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+              <li><a href="#fleet" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
+              <li><a href="#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+              <li><a href="#about" class="hover:text-teal-500 mobile-link">About</a></li>
+              <li><a href="#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
               
               <li class="w-full text-center mt-4">
                   <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
                   <div class="flex flex-col space-y-4 mt-4">
-                      <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg">Private Jet Charter</a>
-                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg">Empty Leg Flights</a>
-                      <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg">Private Jet Fleet</a>
-                      <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg">Private Jet Quote</a>
+                      <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+                      <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+                      <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
                   </div>
               </li>
               
-              <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto">Get a Quote</a></li>
+              <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
           </ul>
       </div>
   </header>
@@ -778,6 +779,13 @@
     const mobileMenu = document.getElementById('mobile-menu');
     let isMenuOpen = false;
 
+    function closeMenu() {
+        isMenuOpen = false;
+        mobileMenu.classList.add('translate-x-full');
+        mobileMenu.classList.remove('translate-x-0');
+        document.body.style.overflow = '';
+    }
+
     menuToggle.addEventListener('click', () => {
         isMenuOpen = !isMenuOpen;
         if (isMenuOpen) {
@@ -785,10 +793,16 @@
             mobileMenu.classList.add('translate-x-0');
             document.body.style.overflow = 'hidden';
         } else {
-            mobileMenu.classList.add('translate-x-full');
-            mobileMenu.classList.remove('translate-x-0');
-            document.body.style.overflow = '';
+            closeMenu();
         }
+    });
+
+    // Close menu when a link is clicked
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+        });
     });
 
     function filterFleet(type) {
