@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Urgent & Time-Critical Air Freight Charter | AOG & Next Flight Out | Skylinks Asia</title>
-  <meta name="description" content="Charter an aircraft for urgent and time-critical air freight. AOG support, emergency supply chain, and next-flight-out cargo charter across Asia, Middle East & Africa.">
-  <link rel="canonical" href="https://www.skylinks.asia/urgent-cargo.html">
+  <title>How Cargo Is Loaded on Aircraft: Full Guide</title>
+  <meta name="description" content="How aircraft cargo holds work, what all-cargo freighters are, and the step-by-step ULD process airlines use to load and secure freight.">
+  <link rel="canonical" href="https://www.skylinks.asia/how-cargo-is-loaded-on-aircraft.html">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
   <!-- Open Graph / Social -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Urgent & Time-Critical Air Freight Charter | Skylinks Asia">
-  <meta property="og:description" content="Charter an aircraft for urgent and time-critical air freight. AOG support, emergency supply chain, and next-flight-out cargo charter across Asia, Middle East & Africa.">
-  <meta property="og:url" content="https://www.skylinks.asia/urgent-cargo.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How Cargo Is Loaded on Aircraft: Full Guide">
+  <meta property="og:description" content="How aircraft cargo holds work, what all-cargo freighters are, and the step-by-step ULD process airlines use to load and secure freight.">
+  <meta property="og:url" content="https://www.skylinks.asia/how-cargo-is-loaded-on-aircraft.html">
   <meta property="og:site_name" content="Skylinks Asia Aviation">
   <meta property="og:image" content="https://www.skylinks.asia/hero-images/urgentcargo-hero.webp">
   <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/urgentcargo-hero.webp">
@@ -43,45 +43,27 @@
     html { scroll-behavior: smooth; }
     .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
-    .card-hover { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
-    .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
-    .toast { animation: fadeInUp 0.4s ease-out forwards; }
     .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
     
-    /* Standard Fade-In Animation */
-    .fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-    /* Mobile Menu Transition */
     #mobile-menu { transition: transform 0.3s ease-in-out; }
     .font-display { font-family: 'Playfair Display', serif; }
-
-    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     
-    /* VIP Luxury Dropdown */
-    .dropdown-menu { 
-      opacity: 0; 
-      visibility: hidden; 
-      transform: translateY(10px);
-      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-    }
-    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { 
-      opacity: 1; 
-      visibility: visible; 
-      transform: translateY(0);
-    }
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
 
-    /* Date Picker Dark Mode Fix */
-    input[type="date"] { color-scheme: dark; }
+    /* Article Typography */
+    .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: #cbd5e1; font-weight: 300; }
+    .article-body h2 { font-size: 1.875rem; margin-top: 3rem; margin-bottom: 1.5rem; color: white; font-family: 'Playfair Display', serif; }
+    .article-body h3 { font-size: 1.25rem; margin-top: 2rem; margin-bottom: 1rem; color: #2dd4bf; font-weight: 600; }
+    .article-body ul { margin-bottom: 1.5rem; list-style-type: disc; padding-left: 1.5rem; }
+    .article-body li { margin-bottom: 0.5rem; color: #cbd5e1; font-weight: 300; }
+    .article-body a { color: #14b8a6; text-decoration: underline; transition: color 0.2s; }
+    .article-body a:hover { color: #5eead4; }
+    .article-body strong { color: white; font-weight: 600; }
   </style>
-  <!-- Zero Blur Rule -->
   <style>.hero-img-blur { filter: none !important; }</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
@@ -184,184 +166,94 @@
       </div>
   </header>
 
-  <!-- ===== HERO (HARD PUSH DOWNWARDS & FIXED OVERFLOW) ===== -->
-  <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
+  <!-- ===== HERO ===== -->
+  <section class="relative min-h-[70vh] flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="hero-images/urgentcargo-hero.webp" alt="Urgent Cargo Charter Flight" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
+      <img src="hero-images/urgentcargo-hero.webp" alt="Ground crew loading a unit load device (ULD) cargo container into the main deck of a freighter aircraft" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
       <div class="absolute inset-0 hero-bg"></div>
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
     <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 w-full">
       <div class="fade-in">
-        <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Time-Critical Air Freight Solutions</span>
+        <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Aviation Insights · Logistics Guide</span>
       </div>
-      <h1 class="text-4xl sm:text-5xl md:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
-        Urgent & Time-Critical<br>
-        <span class="gradient-text">Air Freight Charter</span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+        How Cargo Is Loaded on Aircraft:<br>
+        <span class="gradient-text">A Complete Guide to Air Freight</span>
       </h1>
       <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto fade-in">
-        When hours cost millions, Skylinks Asia Aviation provides rapid-response cargo aircraft charter. We secure next-flight-out options, AOG support, and emergency supply chain freighters across Asia, Middle East & Africa.
+        A complete guide to cargo holds, freighters, and the ULD process airlines use to load and secure freight.
       </p>
-      <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-        <a href="#quote" class="bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
-          GET URGENT QUOTE
-        </a>
-        <a href="#scenarios" class="border border-white/20 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-teal-500 hover:text-teal-500 transition-all duration-300 backdrop-blur-sm w-full sm:w-auto text-center">
-          LEARN MORE
-        </a>
-      </div>
     </div>
   </section>
 
-  <!-- ===== INTRO (WITH INTERLINKING) ===== -->
+  <!-- ===== ARTICLE BODY ===== -->
   <section class="py-24 bg-navy-950">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Next Flight Out Charter</span>
-      <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">When Scheduled Freight Isn't Fast Enough</h2>
-      <p class="text-sm md:text-base font-light text-gray-400 mt-6 leading-relaxed fade-in">
-        Grounded passenger planes, missed connections, and production line shutdowns require immediate action. Our 24/7 charter desk mobilizes <a href="fleet.html" class="text-teal-500 hover:underline">freighter aircraft</a> within hours. From small turboprops for regional cross-border transport to widebody freighters for intercontinental supply chain emergencies, we bypass standard cargo schedules to deliver your critical freight directly to its destination. If your time-critical freight involves hazardous materials, we are fully equipped for <a href="dangerous-goods.html" class="text-teal-500 hover:underline">Dangerous Goods (DGR) transport</a>, and for temperature-sensitive shipments, we offer <a href="cold-chain-pharma.html" class="text-teal-500 hover:underline">rapid cold-chain pharma logistics</a>.
-      </p>
-    </div>
-  </section>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+      <div class="article-body fade-in">
+        
+        <p><strong>Quick answer:</strong> Air cargo is packed into standardized containers or pallets called ULDs (Unit Load Devices), then loaded into an aircraft's cargo hold — the belly compartment on passenger jets, or both the main and lower decks on a dedicated freighter — using forklifts and roller-floor loaders, positioned according to a weight-and-balance load plan, and locked in place with rails, straps, or nets before takeoff.</p>
+        
+        <p>Every day, hundreds of thousands of tonnes of goods move around the world by air — much of it invisible to the passengers sitting a few feet above it. Whether it's a container of smartphones riding beneath a passenger cabin or a dedicated freighter hauling industrial machinery across an ocean, air cargo runs on a surprisingly precise, choreographed system. This guide answers the most common questions people ask about how it all works.</p>
 
-  <!-- ===== SCENARIOS (WITH INTERLINKING) ===== -->
-  <section id="scenarios" class="py-24 bg-navy-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16 fade-in">
-        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Use Cases</span>
-        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">When to Book Time-Critical Air Charter</h2>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Item 1 -->
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
-          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
-            <iconify-icon icon="lucide:wrench" class="text-teal-500 text-xl"></iconify-icon>
-          </div>
-          <h3 class="text-xl font-display tracking-tight text-white">AOG (Aircraft on Ground) Support</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">
-            A grounded aircraft costs millions per day. We source freighters to dispatch critical spare parts, engines, and tooling to remote airfields globally, getting your aircraft back in the sky. For stranded passenger groups, we also arrange <a href="group-corporate.html" class="text-teal-500 hover:underline">emergency group charter flights</a>.
-          </p>
-        </div>
-        <!-- Item 2 -->
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
-          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
-            <iconify-icon icon="lucide:factory" class="text-teal-500 text-xl"></iconify-icon>
-          </div>
-          <h3 class="text-xl font-display tracking-tight text-white">Production Line Resupply</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">
-            Avoid costly manufacturing shutdowns. If your supply chain experiences a bottleneck, we charter dedicated cargo flights to transport automotive, tech, or manufacturing components immediately, preventing cascading delays in the <a href="humanitarian-cargo.html" class="text-teal-500 hover:underline">relief supply chain</a>.
-          </p>
-        </div>
-        <!-- Item 3 -->
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
-          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
-            <iconify-icon icon="lucide:zap" class="text-teal-500 text-xl"></iconify-icon>
-          </div>
-          <h3 class="text-xl font-display tracking-tight text-white">Emergency Energy Logistics</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">
-            Power plant failures require instant action. We transport heavy transformers, generators, and grid components directly to the site, ensuring rapid restoration of energy infrastructure. Learn more about our comprehensive <a href="oil-gas.html" class="text-teal-500 hover:underline">oil and gas equipment transport</a> capabilities.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <h2>What Is a Cargo Aircraft?</h2>
+        <p>"Cargo aircraft" refers to any airplane used to transport goods rather than people. The term covers a spectrum, from ordinary passenger jets that carry freight in their belly holds alongside luggage, to purpose-built freighters that carry nothing but pallets and containers from nose to tail. In industry shorthand, a cargo aircraft is also called a freighter, freight aircraft, airlifter, or cargo jet — all describing a fixed-wing aircraft designed or converted specifically to move goods instead of passengers.</p>
+        <p>Cargo aircraft are the backbone of time-sensitive global trade. While the large majority of goods shipped internationally still travel by sea, air cargo carries a disproportionate share of high-value, urgent, or perishable freight — electronics, pharmaceuticals, fresh produce, and critical spare parts — because speed, not cost, is the priority.</p>
 
-  <!-- ===== QUOTE FORM (NETLIFY READY) ===== -->
-  <section id="quote" class="py-24 bg-navy-950">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-5 gap-12">
-        <!-- Left Info -->
-        <div class="lg:col-span-2 fade-in">
-          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Rapid Response</span>
-          <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Get an Urgent<br>Charter Quote</h2>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-6">
-            Time is critical. Submit your requirement below, and our charter desk will contact you with available aircraft options within 2 hours. For extreme emergencies, call our 24/7 hotline.
-          </p>
-          <div class="mt-10 space-y-6">
-            <div class="flex items-center gap-4">
-              <div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0">
-                <iconify-icon icon="lucide:phone" class="text-teal-500 text-lg"></iconify-icon>
-              </div>
-              <div>
-                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">24/7 Emergency Desk</div>
-                <div class="text-sm text-white mt-0.5">+92 309 777 8000</div>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0">
-                <iconify-icon icon="lucide:mail" class="text-teal-500 text-lg"></iconify-icon>
-              </div>
-              <div>
-                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">Urgent Email</div>
-                <div class="text-sm text-white mt-0.5">charter@skylinks.asia</div>
-              </div>
-            </div>
-          </div>
+        <h2>What Is an All-Cargo Aircraft?</h2>
+        <p>An all-cargo aircraft is a plane built or converted to carry freight exclusively, with no seating or amenities for passengers. Unlike a passenger jet that squeezes cargo into the belly hold beneath the floor, an all-cargo aircraft — often called a freighter — is filled with freight on both the main deck (where seats would normally be) and the lower deck.</p>
+        <p>These aircraft are stripped of everything passenger-related and instead feature reinforced floors, roller and ball-mat systems that let ground crews slide heavy loads into place, and large cargo doors — sometimes a full nose-door or side-door design — built for oversized items that would never fit through a standard passenger doorway.</p>
+        <p>There are generally three categories worth knowing:</p>
+        <ul>
+          <li><strong>Dedicated freighters</strong> — purpose-built or converted aircraft used solely for cargo, such as the <a href="aircraft-b747-200f.html">Boeing 747-200F</a>, 777F, and Airbus A330-200F. These form the core fleets of carriers like FedEx, UPS, and DHL.</li>
+          <li><strong>Combi aircraft</strong> — passenger planes modified to carry freight and passengers together, typically on the main deck, split in a rough 60:40 passenger-to-cargo ratio.</li>
+          <li><strong>Converted freighters</strong> — older passenger aircraft that have had their interiors stripped out and reinforced to carry freight once their passenger-carrying life is over. Common examples in charter fleets include the <a href="aircraft-b737-400f.html">Boeing 737-400F</a>, <a href="aircraft-b757-200f.html">Boeing 757-200F</a>, and <a href="aircraft-b767-300f.html">Boeing 767-300F</a>.</li>
+        </ul>
+        <p>Some of the largest all-cargo aircraft ever built, like the Antonov An-124, can carry loads well over 100 tonnes. A portion of the global fleet — mainly Russian-operated aircraft — has been grounded or stranded by sanctions since 2022, but Ukrainian-operated An-124s (Antonov Airlines) remain in active commercial service today for outsized charter work. For remote and unpaved airstrips, rugged heavy-lifters like the <a href="aircraft-il-76.html">Ilyushin IL-76</a> are frequently utilized.</p>
+
+        <h2>What Is a Cargo Hold in an Aircraft?</h2>
+        <p>A cargo hold is the enclosed compartment of an airplane set aside for freight and baggage rather than passengers. On a standard passenger aircraft, the cargo hold sits below the passenger cabin, beneath the floor — commonly split into a forward hold and an aft hold, with the main deck reserved entirely for people.</p>
+        <p>The size and shape of the hold varies by aircraft. On a wide-body jet, the lower hold is tall enough to accept standardized containers and pallets, generally with a height limit somewhere around 160 cm. On narrow-body aircraft, the hold is shorter and typically only accepts loose or "bulk" cargo rather than large containers, since there isn't enough clearance for palletized units.</p>
+        <p>On a dedicated freighter, by contrast, there effectively is no passenger cabin — the entire main deck functions as an additional, much larger cargo hold, on top of the lower-deck hold. That's what allows freighters to carry vastly more volume than a passenger aircraft's belly space alone.</p>
+        <p>Cargo holds are also climate- and pressure-controlled to protect sensitive freight, and on aircraft that carry live animals, the hold is heated and ventilated separately to keep conditions safe throughout the flight.</p>
+
+        <h2>Where Is Cargo Loaded in the Aircraft?</h2>
+        <p>Cargo location depends entirely on the type of aircraft:</p>
+        <ul>
+          <li><strong>On passenger aircraft:</strong> freight and checked baggage share the belly holds beneath the passenger floor — usually a forward hold ahead of the wings and an aft hold behind them. Only the lower deck carries cargo; the main deck is passengers only.</li>
+          <li><strong>On combi aircraft:</strong> cargo is loaded onto a dedicated section of the main deck, physically separated from the passenger seating area, in addition to whatever goes in the lower holds.</li>
+          <li><strong>On freighters:</strong> cargo fills both the main deck and the lower deck, loaded through oversized cargo doors on the side or nose of the aircraft using specialized loaders.</li>
+        </ul>
+        <p>Regardless of aircraft type, where a specific piece of cargo actually sits within the hold isn't arbitrary — it's dictated by a load plan built around the aircraft's weight-and-balance requirements. Heavier units generally go toward the center of gravity, and every position is calculated to keep the aircraft properly balanced from takeoff to landing.</p>
+
+        <h2>How Is Cargo Loaded on Aircraft?</h2>
+        <p>The process of loading air cargo is far more systematic than simply stacking boxes into a hold. Almost all commercial air freight — outside of small individual parcels — moves in <strong>Unit Load Devices (ULDs)</strong>: standardized containers or pallets that interface directly with an aircraft's cargo-handling and restraint systems. Here's the general sequence:</p>
+        
+        <p><strong>1. Cargo build-up.</strong> Before anything reaches the aircraft, freight is consolidated onto pallets or into containers at a ground facility. Heavier, bulkier items are generally placed at the bottom to form a stable base, with lighter, more delicate cargo stacked on top, and the whole unit is secured with straps, nets, or a rigid enclosure.</p>
+        <p><strong>2. Transport to the aircraft.</strong> Built-up ULDs are moved airside using specialized dollies and tugs, following a schedule tight enough to keep turnaround times short — airlines lose money for every extra minute an aircraft sits on the ground.</p>
+        <p><strong>3. Loading.</strong> Ground handling crews use forklifts and main-deck loaders to lift each ULD into the aircraft's cargo compartment. Inside, hold floors are lined with roller or ball-mat systems, letting heavy containers and pallets be slid into precise positions rather than lifted by hand.</p>
+        <p><strong>4. Positioning per the load plan.</strong> Each ULD goes exactly where the aircraft's loading plan specifies, based on the hold's shape, structural floor limits, and overall weight distribution. On freighters especially, this calculation is complex — cargo density and container mix can vary enormously from one flight to the next, so specialized load-control software works out the aircraft's center of gravity before ground crews finalize positions.</p>
+        <p><strong>5. Securing.</strong> Once positioned, each ULD is locked in place using straps, nets, or built-in rail-locking systems to prevent any movement during flight — critical not just for protecting the cargo but for the aircraft's structural safety, since a shifting load can affect controllability.</p>
+        <p><strong>6. Unloading on arrival.</strong> At the destination, the entire sequence runs in reverse: ULDs are unlocked, offloaded, and moved to a cargo warehouse for breakdown and distribution to the end recipient.</p>
+        
+        <p>This ULD-based system is what makes modern air freight possible at scale. Rather than airlines handling loose, individually shaped packages under time pressure, cargo is pre-built into standardized units on the ground, then loaded and locked into an aircraft in a fraction of the time it would otherwise take — all while keeping the aircraft's weight and balance within safe limits throughout the flight.</p>
+
+        <h2>Frequently Asked Questions</h2>
+        <p><strong>What is a cargo aircraft?</strong><br>A cargo aircraft is any airplane used to transport goods instead of passengers — ranging from passenger jets carrying freight in their belly holds to purpose-built freighters that carry nothing but cargo.</p>
+        <p><strong>What is an all-cargo aircraft?</strong><br>An all-cargo aircraft, or freighter, is a plane built or converted to carry freight exclusively, using both its main deck and lower deck for cargo rather than seating passengers.</p>
+        <p><strong>What is a cargo hold in an aircraft?</strong><br>A cargo hold is the compartment set aside for freight and baggage — typically the space beneath the passenger cabin on a standard aircraft, or the entire main and lower decks on a freighter.</p>
+        <p><strong>Where is cargo loaded in an aircraft?</strong><br>On passenger aircraft, cargo goes in the forward and aft belly holds beneath the floor. On combi aircraft, it also occupies part of the main deck. On freighters, cargo fills both the main and lower decks entirely.</p>
+        <p><strong>How is cargo loaded onto an aircraft?</strong><br>Cargo is built up into ULD containers or pallets on the ground, moved to the aircraft, lifted in with forklifts or main-deck loaders, positioned per a weight-and-balance load plan, and secured with straps, nets, or locking rails before departure.</p>
+        
+        <div class="mt-12 p-8 border border-teal-500/30 bg-navy-800 text-center rounded-lg">
+            <h3 class="text-2xl font-display text-white mb-4">Need to charter a dedicated freighter?</h3>
+            <p class="text-gray-400 mb-6 font-light">Our 24/7 charter desk can source the right cargo aircraft for your payload, whether it's a standard ULD move or oversized outsize cargo.</p>
+            <a href="contact.html#contact-form" class="inline-flex items-center gap-2 bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">
+                GET A CHARTER QUOTE <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+            </a>
         </div>
 
-        <!-- Right Form -->
-        <div class="lg:col-span-3 fade-in">
-          <form id="quoteForm" name="urgent-cargo-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
-            <input type="hidden" name="form-name" value="urgent-cargo-quote" />
-            <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Full Name *</label>
-                <input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Company</label>
-                <input type="text" name="company" placeholder="Company name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Email *</label>
-                <input type="email" name="email" required placeholder="your@email.com" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Phone / WhatsApp *</label>
-                <input type="tel" name="phone" placeholder="+92 xxx xxx xxxx" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Departure Airport *</label>
-                <input type="text" name="departure" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Destination Airport *</label>
-                <input type="text" name="destination" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Required Date *</label>
-                <input type="date" name="flightDate" required class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Cargo Weight / Dimensions *</label>
-                <input type="text" name="details" required placeholder="e.g. 5 tons / 100x50x50 cm" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-            </div>
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Urgency Level</label>
-              <select name="urgency" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150">
-                <option value="standard">Standard (48h+)</option>
-                <option value="urgent">Urgent (24h)</option>
-                <option value="emergency" selected>Emergency (ASAP / AOG)</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Cargo Description</label>
-              <textarea name="notes" rows="3" placeholder="Describe the time-critical cargo, handling requirements, etc." class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">
-              SUBMIT URGENT ENQUIRY
-            </button>
-          </form>
-        </div>
       </div>
     </div>
   </section>
@@ -479,18 +371,6 @@
             closeMenu();
         });
     });
-
-    function showToast(message, type = 'success') {
-      const container = document.getElementById('toastContainer');
-      const toast = document.createElement('div');
-      const bgColor = type === 'success' ? 'bg-teal-500/10 border-teal-500/30' : 'bg-red-500/10 border-red-500/30';
-      const textColor = type === 'success' ? 'text-teal-500' : 'text-red-400';
-      const icon = type === 'success' ? 'lucide:check-circle' : 'lucide:alert-circle';
-      toast.className = `toast border ${bgColor} backdrop-blur-sm px-6 py-4 flex items-center gap-3 max-w-sm`;
-      toast.innerHTML = `<iconify-icon icon="${icon}" class="${textColor} text-lg"></iconify-icon><span class="text-sm ${textColor}">${message}</span>`;
-      container.appendChild(toast);
-      setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateY(10px)'; toast.style.transition = 'all 0.3s ease'; setTimeout(() => toast.remove(), 300); }, 4000);
-    }
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

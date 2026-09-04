@@ -254,7 +254,7 @@
   <!-- ===== HERO (HARD PUSH DOWNWARDS & FIXED OVERFLOW) ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="hero-images/home-page.webp" alt="Cargo Aircraft on Runway" class="w-full h-full object-cover hero-img-blur" />
+      <img src="hero-images/home-page.webp" alt="Cargo Aircraft on Runway" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
       <div class="absolute inset-0 hero-bg"></div>
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
@@ -303,7 +303,7 @@
         <!-- Passenger Charter -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-64 overflow-hidden">
-            <img src="images/a330-300.webp" alt="Passenger Charter Flight" class="w-full h-full object-cover aircraft-img" />
+            <img src="images/a330-300.webp" alt="Passenger Charter Flight" class="w-full h-full object-cover aircraft-img" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-80"></div>
             <div class="absolute bottom-6 left-6"><span class="text-xs font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Passenger</span></div>
           </div>
@@ -323,7 +323,7 @@
         <!-- Cargo Charter -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-64 overflow-hidden">
-            <img src="hero-images/charter-services-section-cargo.webp" alt="Cargo Charter Flight" class="w-full h-full object-cover aircraft-img" />
+            <img src="hero-images/charter-services-section-cargo.webp" alt="Cargo Charter Flight" class="w-full h-full object-cover aircraft-img" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-80"></div>
             <div class="absolute bottom-6 left-6"><span class="text-xs font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
           </div>
@@ -360,7 +360,7 @@
       <div id="fleetGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- 1st Card: B737-400 PAX -->
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="pax">
-          <div class="relative h-48 overflow-hidden"><img src="hero-images/b737-400-hero.webp" alt="Boeing 737-400 Charter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="relative h-48 overflow-hidden"><img src="hero-images/b737-400-hero.webp" alt="Boeing 737-400 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
           <div class="p-6">
             <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 737-400</h3>
             <p class="text-xs text-gray-500 mt-1">Narrowbody · Cost-effective group travel</p>
@@ -375,7 +375,7 @@
         
         <!-- 2nd Card: B737-800 PAX -->
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="pax">
-          <div class="relative h-48 overflow-hidden"><img src="hero-images/b737-800-hero.webp" alt="Boeing 737-800 Charter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="relative h-48 overflow-hidden"><img src="hero-images/b737-800-hero.webp" alt="Boeing 737-800 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
           <div class="p-6">
             <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 737-800</h3>
             <p class="text-xs text-gray-500 mt-1">Narrowbody · Sub-charter & Hajj flights</p>
@@ -390,7 +390,7 @@
         
         <!-- 3rd Card: A330-200 PAX -->
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="pax">
-          <div class="relative h-48 overflow-hidden"><img src="images/a330-200-pax.webp" alt="Airbus A330-200 Charter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="relative h-48 overflow-hidden"><img src="images/a330-200-pax.webp" alt="Airbus A330-200 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
           <div class="p-6">
             <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A330-200</h3>
             <p class="text-xs text-gray-500 mt-1">Widebody · Hajj, Umrah & long-haul group charter</p>
@@ -405,7 +405,7 @@
         
         <!-- 4th Card: B777F Cargo -->
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="cargo">
-          <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b777f.webp" alt="Boeing 777 Freighter Charter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b777f.webp" alt="Boeing 777 Freighter Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
           <div class="p-6">
             <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 777F</h3>
             <p class="text-xs text-gray-500 mt-1">Twin-Aisle Freighter · Heavy express cargo</p>
@@ -420,7 +420,7 @@
         
         <!-- 5th Card: B737-800BCF Cargo -->
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="cargo">
-          <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b737-800f.webp" alt="Boeing 737-800BCF Charter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b737-800f.webp" alt="Boeing 737-800BCF Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
           <div class="p-6">
             <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 737-800BCF</h3>
             <p class="text-xs text-gray-500 mt-1">Narrowbody Freighter · E-commerce cargo across Middle East</p>
@@ -435,7 +435,7 @@
         
         <!-- 6th Card: B747-200F Cargo -->
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="cargo">
-          <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b747-200f.webp" alt="Boeing 747-200 Freighter Charter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b747-200f.webp" alt="Boeing 747-200 Freighter Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
           <div class="p-6">
             <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 747-200F</h3>
             <p class="text-xs text-gray-500 mt-1">Heavy Freighter · Oversize, oil & gas, mining equipment</p>
@@ -479,7 +479,7 @@
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
         <div class="relative fade-in">
-          <img src="hero-images/image-whyskylinks-section.webp" alt="Charter Operations" class="w-full h-[500px] object-cover" />
+          <img src="hero-images/image-whyskylinks-section.webp" alt="Charter Operations" class="w-full h-[500px] object-cover" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-r from-navy-900/80 to-transparent"></div>
           <div class="absolute bottom-6 left-6 bg-navy-950/80 backdrop-blur-sm border border-teal-500/30 p-6"><div class="text-3xl font-display text-teal-500">15+</div><div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mt-1">Years in Aviation</div></div>
         </div>
@@ -540,7 +540,7 @@
         <!-- Blog Post 1: Hajj -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden">
-            <img src="hero-images/hajj-charter-feature.webp" alt="Hajj pilgrims boarding a private charter flight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <img src="hero-images/hajj-charter-feature.webp" alt="Hajj pilgrims boarding a private charter flight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
           </div>
           <div class="p-6">
             <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Charter Guide</span>
@@ -552,7 +552,7 @@
         <!-- Blog Post 2: Cargo Africa -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden">
-            <img src="hero-images/cargo-africa.webp" alt="The Rise of Cargo Charter in Africa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <img src="hero-images/cargo-africa.webp" alt="The Rise of Cargo Charter in Africa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
           </div>
           <div class="p-6">
             <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Industry News</span>
@@ -564,7 +564,7 @@
         <!-- Blog Post 3: ACMI vs Dry Lease -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden">
-            <img src="hero-images/acmi-vs-dry-lease.webp" alt="ACMI vs Dry Lease" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <img src="hero-images/acmi-vs-dry-lease.webp" alt="ACMI vs Dry Lease" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
           </div>
           <div class="p-6">
             <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">ACMI Wet Lease</span>
