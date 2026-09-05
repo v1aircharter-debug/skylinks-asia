@@ -1,41 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Commercial Pages -->
-  <url><loc>https://www.skylinks.asia/</loc><lastmod>2024-05-24</lastmod><priority>1.00</priority></url>
-  <url><loc>https://www.skylinks.asia/fleet.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/about.html</loc><lastmod>2024-05-24</lastmod><priority>0.70</priority></url>
-  <url><loc>https://www.skylinks.asia/safety.html</loc><lastmod>2024-05-24</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.skylinks.asia/contact.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/terms.html</loc><lastmod>2024-05-24</lastmod><priority>0.30</priority></url>
-  <url><loc>https://www.skylinks.asia/privacy.html</loc><lastmod>2024-05-24</lastmod><priority>0.30</priority></url>
-  
-  <!-- Blog Hub -->
-  <url><loc>https://www.skylinks.asia/blog.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-
-  <!-- Service Pages -->
-  <url><loc>https://www.skylinks.asia/hajj-umrah.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/urgent-cargo.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/acmi-wet-lease.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/oil-gas.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/humanitarian-cargo.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/dangerous-goods.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/cold-chain-pharma.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/group-corporate.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/repatriation-government.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-
-  <!-- VIP Private Jets Segment -->
-  <url><loc>https://www.skylinks.asia/private-jet-charter.html</loc><lastmod>2024-05-24</lastmod><priority>0.90</priority></url>
-  <url><loc>https://www.skylinks.asia/empty-legs.html</loc><lastmod>2024-05-24</lastmod><priority>0.90</priority></url>
-  <url><loc>https://www.skylinks.asia/private-jet-fleet.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.skylinks.asia/private-jet-quote.html</loc><lastmod>2024-05-24</lastmod><priority>0.80</priority></url>
-
-  <!-- Blog Articles -->
-  <url><loc>https://www.skylinks.asia/hajj-umrah-charter-guide.html</loc><lastmod>2024-05-24</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.skylinks.asia/shipping-lithium-batteries-air.html</loc><lastmod>2024-05-24</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.skylinks.asia/acmi-wet-lease-seasonal-demand.html</loc><lastmod>2024-05-24</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.skylinks.asia/remote-airstrips-africa-mining.html</loc><lastmod>2024-05-24</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.skylinks.asia/international-medical-evacuation-guide.html</loc><lastmod>2024-05-24</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.skylinks.asia/cold-chain-pharma-logistics.html</loc><lastmod>2024-05-24</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.skylinks.asia/rise-of-cargo-charter-africa.html</loc><lastmod>2024-05-24</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.skylinks.asia/acmi-vs-dry-lease.html</loc><lastmod>2024-05-24</lastmod><priority>0.60</priority></url>
+<!--  Core Commercial Pages  -->
+<url>
+<loc>https://www.skylinks.asia/</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/fleet.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/about.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/safety.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/contact.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/terms.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.30</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/privacy.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.30</priority>
+</url>
+<!--  Blog Hub  -->
+<url>
+<loc>https://www.skylinks.asia/blog.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<!--  Service Pages  -->
+<url>
+<loc>https://www.skylinks.asia/hajj-umrah.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/urgent-cargo.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/acmi-wet-lease.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/oil-gas.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/humanitarian-cargo.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/dangerous-goods.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/cold-chain-pharma.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/group-corporate.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/repatriation-government.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<!--  VIP Private Jets Segment  -->
+<url>
+<loc>https://www.skylinks.asia/private-jet-charter.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/empty-legs.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/private-jet-fleet.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/private-jet-quote.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.80</priority>
+</url>
+<!--  Blog Articles  -->
+<url>
+<loc>https://www.skylinks.asia/cargo-aircraft-charter-guide-asia-africa-middle-east.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/how-cargo-is-loaded-on-aircraft.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.70</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/hajj-umrah-charter-guide.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/shipping-lithium-batteries-air.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/acmi-wet-lease-seasonal-demand.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/remote-airstrips-africa-mining.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/international-medical-evacuation-guide.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/cold-chain-pharma-logistics.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/rise-of-cargo-charter-africa.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.60</priority>
+</url>
+<url>
+<loc>https://www.skylinks.asia/acmi-vs-dry-lease.html</loc>
+<lastmod>2026-09-18</lastmod>
+<priority>0.60</priority>
+</url>
 </urlset>
