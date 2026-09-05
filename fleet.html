@@ -9,8 +9,8 @@
     
     <!-- SEO & Social -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <meta property="og:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
-  <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
+    <meta property="og:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
+    <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
     <meta property="og:title" content="Charter Fleet | Skylinks Asia Aviation">
     <meta property="og:description" content="Explore the Skylinks Asia charter fleet. From narrowbody passenger jets and regional freighters to widebody long-haul airliners.">
     <meta property="og:url" content="https://www.skylinks.asia/fleet.html">
@@ -29,7 +29,8 @@
                 extend: {
                     colors: {
                         navy: { 950: '#0a0f1a', 900: '#0f172a', 800: '#1e293b', 700: '#334155' },
-                        teal: { 500: '#14b8a6', 600: '#0d9488' }
+                        teal: { 500: '#14b8a6', 600: '#0d9488' },
+                        gold: { 500: '#C8B283', 400: '#D9C89F', 600: '#B09668' }
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -46,12 +47,12 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0a0f1a; }
         .font-display { font-family: 'Playfair Display', serif; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0f1a; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
         
-        .hero-img-blur {
-            filter: blur(8px);
-            transform: scale(1.1);
-            opacity: 0.6;
-        }
+        .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
 
         .fade-in {
             opacity: 0;
@@ -63,25 +64,37 @@
             transform: translateY(0);
         }
 
-        #mobile-menu {
-            transition: transform 0.3s ease-in-out;
-        }
+        #mobile-menu { transition: transform 0.3s ease-in-out; }
         
         .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
         .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
         .aircraft-img { transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); }
         .group:hover .aircraft-img { transform: scale(1.05); }
+
+        /* VIP Luxury Dropdown */
+        .dropdown-menu { 
+          opacity: 0; 
+          visibility: hidden; 
+          transform: translateY(10px);
+          transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+        }
+        .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { 
+          opacity: 1; 
+          visibility: visible; 
+          transform: translateY(0);
+        }
+
+        /* Date Picker Dark Mode Fix */
+        input[type="date"] { color-scheme: dark; }
     </style>
-    <!-- Zero Blur Rule -->
-    <style>.hero-img-blur { filter: none !important; }</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4KQLDXBT24');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4KQLDXBT24');
+    </script>
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
@@ -117,23 +130,62 @@
                 <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
                 <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
                 <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
-                <li><a href="contact.html" class="hover:text-teal-500 transition-colors text-sm">Contact</a></li>
+                <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
+                
+                <li class="relative dropdown">
+                    <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1">
+                        Private Jets 
+                        <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
+                    </button>
+                    <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
+                        <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
+                        <a href="private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                            <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                            Private Jet Charter
+                        </a>
+                        <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                            <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                            Empty Leg Flights
+                        </a>
+                        <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                            <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                            Private Jet Fleet
+                        </a>
+                        <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                            <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                            Private Jet Quote
+                        </a>
+                    </div>
+                </li>
+
                 <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
             </ul>
 
-            <button id="menu-toggle" class="lg:hidden text-white text-2xl">
+            <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]">
                 <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
             </button>
         </nav>
 
-        <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-40">
-            <ul class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
-                <li><a href="index.html#services" class="hover:text-teal-500">Services</a></li>
-                <li><a href="fleet.html" class="text-teal-500 font-semibold">Fleet</a></li>
-                <li><a href="index.html#how-it-works" class="hover:text-teal-500">How It Works</a></li>
-                <li><a href="about.html" class="hover:text-teal-500">About</a></li>
-                <li><a href="contact.html" class="hover:text-teal-500">Contact</a></li>
-                <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto">Get a Quote</a></li>
+        <!-- MOBILE MENU FIXED Z-INDEX TO 60 TO PREVENT OVERLAP -->
+        <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
+            <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
+                <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+                <li><a href="fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
+                <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+                <li><a href="about.html" class="hover:text-teal-500 mobile-link">About</a></li>
+                <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
+                
+                <li class="w-full text-center mt-4">
+                    <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
+                    <div class="flex flex-col space-y-4 mt-4">
+                        <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+                        <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+                        <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+                        <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
+                    </div>
+                </li>
+                
+                <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
             </ul>
         </div>
     </header>
@@ -141,7 +193,7 @@
     <!-- Hero Section -->
     <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
         <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="hero-images/home-page.webp" alt="Skylinks Asia Aircraft Fleet" class="w-full h-full object-cover hero-img-blur">
+            <img src="hero-images/home-page.webp" alt="Skylinks Asia Aircraft Fleet" class="w-full h-full object-cover hero-img-blur" fetchpriority="high">
             <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/60"></div>
         </div>
 
@@ -175,7 +227,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- B757-200F -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b757-f.webp" alt="Boeing 757-200 Freighter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b757-f.webp" alt="Boeing 757-200 Freighter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 757-200F</h3>
                         <p class="text-xs text-gray-500 mt-1">Narrowbody Freighter · Heavy express & e-commerce</p>
@@ -190,7 +242,7 @@
 
                 <!-- A319 -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="images/a319-pax.webp" alt="Airbus A319 Passenger" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="images/a319-pax.webp" alt="Airbus A319 Passenger" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A319</h3>
                         <p class="text-xs text-gray-500 mt-1">Narrowbody · Corporate & sports team travel</p>
@@ -205,7 +257,7 @@
 
                 <!-- A320 -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="images/a320-pax.webp" alt="Airbus A320 Passenger/Cargo" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax/Cargo</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="images/a320-pax.webp" alt="Airbus A320 Passenger/Cargo" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax/Cargo</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A320</h3>
                         <p class="text-xs text-gray-500 mt-1">Narrowbody · Group travel & P2F Freighter</p>
@@ -220,7 +272,7 @@
 
                 <!-- B737-400F -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b737-400f.webp" alt="Boeing 737-400 Freighter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b737-400f.webp" alt="Boeing 737-400 Freighter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 737-400F</h3>
                         <p class="text-xs text-gray-500 mt-1">Narrowbody Freighter · Regional logistics</p>
@@ -235,7 +287,7 @@
 
                 <!-- IL-76 -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/il-76f.webp" alt="Ilyushin Il-76 Freighter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/il-76f.webp" alt="Ilyushin Il-76 Freighter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Ilyushin Il-76 / Il-76TD</h3>
                         <p class="text-xs text-gray-500 mt-1">Heavy Freighter · Unpaved & remote strips</p>
@@ -263,9 +315,24 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Antonov An-124 -->
+                <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/antonov-cargo.webp" alt="Antonov An-124 Ruslan Freighter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Antonov An-124 Ruslan</h3>
+                        <p class="text-xs text-gray-500 mt-1">Heavy Freighter · Outsize & ultra-heavy cargo</p>
+                        <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+                            <div><div class="text-sm font-medium text-white">150,000 kg</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
+                            <div><div class="text-sm font-medium text-white">4,800 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+                            <div><div class="text-sm font-medium text-white">865 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+                        </div>
+                        <a href="aircraft-an-124.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+                    </div>
+                </div>
+
                 <!-- B767-300F -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b767-300f.webp" alt="Boeing 767-300 Freighter" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b767-300f.webp" alt="Boeing 767-300 Freighter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 767-300F</h3>
                         <p class="text-xs text-gray-500 mt-1">Widebody Freighter · Express integrator choice</p>
@@ -278,9 +345,24 @@
                     </div>
                 </div>
 
+                <!-- A330-200F -->
+                <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+                    <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/a330-200f.webp" alt="Airbus A330-200 Freighter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A330-200F</h3>
+                        <p class="text-xs text-gray-500 mt-1">Widebody Freighter · Intercontinental cargo</p>
+                        <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+                            <div><div class="text-sm font-medium text-white">70,000 kg</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
+                            <div><div class="text-sm font-medium text-white">7,400 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+                            <div><div class="text-sm font-medium text-white">871 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+                        </div>
+                        <a href="aircraft-a330-200f.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+                    </div>
+                </div>
+
                 <!-- A340-300 -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="images/A340-300.webp" alt="Airbus A340-300 Passenger" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="images/A340-300.webp" alt="Airbus A340-300 Passenger" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A340-300</h3>
                         <p class="text-xs text-gray-500 mt-1">Widebody · Long-haul intercontinental groups</p>
@@ -295,7 +377,7 @@
 
                 <!-- B787-8 -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="images/b787-8.webp" alt="Boeing 787-8 Dreamliner" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="images/b787-8.webp" alt="Boeing 787-8 Dreamliner" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 787-8 Dreamliner</h3>
                         <p class="text-xs text-gray-500 mt-1">Widebody · Ultra-long-haul & VIP convertible</p>
@@ -310,7 +392,7 @@
 
                 <!-- B787-9 -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="images/b787-9.webp" alt="Boeing 787-9 Dreamliner" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="images/b787-9.webp" alt="Boeing 787-9 Dreamliner" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 787-9 Dreamliner</h3>
                         <p class="text-xs text-gray-500 mt-1">Widebody · High-comfort long-haul groups</p>
@@ -325,7 +407,7 @@
 
                 <!-- B777-200 -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="images/b777-200-pax.webp" alt="Boeing 777-200 Passenger" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="images/b777-200-pax.webp" alt="Boeing 777-200 Passenger" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 777-200</h3>
                         <p class="text-xs text-gray-500 mt-1">Widebody · Twin-aisle efficiency & range</p>
@@ -340,7 +422,7 @@
 
                 <!-- B777-300 -->
                 <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-                    <div class="relative h-48 overflow-hidden"><img src="images/b777_300-pax.webp" alt="Boeing 777-300 Passenger" class="w-full h-full object-cover aircraft-img" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+                    <div class="relative h-48 overflow-hidden"><img src="images/b777_300-pax.webp" alt="Boeing 777-300 Passenger" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
                     <div class="p-6">
                         <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 777-300</h3>
                         <p class="text-xs text-gray-500 mt-1">Widebody · Maximum high-capacity groups</p>
@@ -359,7 +441,7 @@
     <!-- CTA Section -->
     <section class="py-16 md:py-20 bg-navy-950 relative overflow-hidden">
         <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?q=80&w=2070&auto=format&fit=crop" alt="Sky background" class="w-full h-full object-cover hero-img-blur opacity-30">
+            <img src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?q=80&w=2070&auto=format&fit=crop" alt="Sky background" class="w-full h-full object-cover hero-img-blur opacity-30" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-r from-navy-950 to-navy-950/80"></div>
         </div>
         
@@ -376,9 +458,9 @@
     <!-- Footer -->
     <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
                 
-                <div>
+                <div class="md:col-span-2 lg:col-span-1">
                     <a href="index.html" class="flex items-center gap-3 mb-6">
                         <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
                           <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
@@ -394,13 +476,23 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
                     <ul class="space-y-3 text-gray-400 text-sm">
-                        <li><a href="index.html#services" class="hover:text-teal-500 transition-colors">Passenger Charter Flights</a></li>
-                        <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo Aircraft Charter</a></li>
+                        <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger & Pilgrim Charter</a></li>
+                        <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo & Freight Charter</a></li>
                         <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
-                        <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Hajj & Umrah Charter</a></li>
+                        <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Crew Rotation</a></li>
                         <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
-                        <li><a href="group-corporate.html" class="hover:text-teal-500 transition-colors">Group & Corporate Travel</a></li>
-                        <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods DGR Cargo</a></li>
+                        <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma & Cold Chain</a></li>
+                        <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
+                        <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
+                        <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
+                        <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
                     </ul>
                 </div>
 
@@ -439,18 +531,49 @@
                 </div>
             </div>
 
-            <!-- Cleaned up bottom bar: Dynamic Year & Centered Text -->
             <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
                 <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
             </div>
         </div>
     </footer>
 
+    <!-- WhatsApp Floating Chat Widget -->
+    <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+        <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+            <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold text-lg">Chat with us</h3>
+                    <p class="text-xs opacity-90">Typically replies instantly</p>
+                </div>
+                <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
+                    <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+                </button>
+            </div>
+            <div class="p-4 bg-navy-900">
+                <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+                <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+                <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+                    <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+                </a>
+            </div>
+        </div>
+    </div>
+    <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
+        <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+    </button>
+
     <script>
         // Mobile Menu Toggle
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         let isMenuOpen = false;
+
+        function closeMenu() {
+            isMenuOpen = false;
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenu.classList.remove('translate-x-0');
+            document.body.style.overflow = '';
+        }
 
         menuToggle.addEventListener('click', () => {
             isMenuOpen = !isMenuOpen;
@@ -459,10 +582,36 @@
                 mobileMenu.classList.add('translate-x-0');
                 document.body.style.overflow = 'hidden';
             } else {
-                mobileMenu.classList.add('translate-x-full');
-                mobileMenu.classList.remove('translate-x-0');
-                document.body.style.overflow = '';
+                closeMenu();
             }
+        });
+
+        // Close menu when a link is clicked
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+
+        // WhatsApp Widget Logic
+        const waWidget = document.getElementById('wa-widget');
+        const waToggle = document.getElementById('wa-toggle');
+        const waClose = document.getElementById('wa-close');
+        const waMessage = document.getElementById('wa-message');
+        const waSend = document.getElementById('wa-send');
+        
+        waToggle.addEventListener('click', () => {
+            waWidget.classList.toggle('hidden');
+            waToggle.classList.toggle('hidden');
+        });
+        waClose.addEventListener('click', () => {
+            waWidget.classList.add('hidden');
+            waToggle.classList.remove('hidden');
+        });
+        waMessage.addEventListener('input', () => {
+            const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
+            waSend.href = 'https://wa.me/923205487700?text=' + msg;
         });
 
         // Scroll Animation Observer
@@ -479,85 +628,5 @@
         // Dynamic Year
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
-<!-- WhatsApp Floating Chat Widget -->
-<div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
-    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
-        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
-            <div>
-                <h3 class="font-bold text-lg">Chat with us</h3>
-                <p class="text-xs opacity-90">Typically replies instantly</p>
-            </div>
-            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
-                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-            </button>
-        </div>
-        <div class="p-4 bg-navy-900">
-            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
-            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
-            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
-                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
-            </a>
-        </div>
-    </div>
-</div>
-<button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
-    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
-</button>
-<script>
-    const waWidget = document.getElementById('wa-widget');
-    const waToggle = document.getElementById('wa-toggle');
-    const waClose = document.getElementById('wa-close');
-    const waMessage = document.getElementById('wa-message');
-    const waSend = document.getElementById('wa-send');
-    
-    waToggle.addEventListener('click', () => {
-        waWidget.classList.toggle('hidden');
-        waToggle.classList.toggle('hidden');
-    });
-    waClose.addEventListener('click', () => {
-        waWidget.classList.add('hidden');
-        waToggle.classList.remove('hidden');
-    });
-    waMessage.addEventListener('input', () => {
-        const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
-        waSend.href = 'https://wa.me/923205487700?text=' + msg;
-    });
-</script>
-<!-- Emergency JS Fix -->
-<script>
-    // Mobile Menu Toggle (Standard)
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('translate-x-full');
-            mobileMenu.classList.toggle('translate-x-0');
-            document.body.style.overflow = mobileMenu.classList.contains('translate-x-0') ? 'hidden' : '';
-        });
-    }
-
-    // Mobile Menu Toggle (Legacy)
-    function toggleMenu() {
-        const menu = document.getElementById('mobileMenu');
-        if (menu) {
-            menu.classList.toggle('open');
-            document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
-        }
-    }
-
-    // Scroll Animation Observer (Restores visibility)
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-    // Dynamic Year
-    const yearEl = document.getElementById('current-year');
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
