@@ -15,7 +15,7 @@
   <!-- ===== FAVICON ===== -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <!-- ===== NETLIFY IDENTITY WIDGET (For password resets & login redirects) ===== -->
+  <!-- ===== NETLIFY IDENTITY WIDGET ===== -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   <!-- ===== GEO TARGETING ===== -->
@@ -537,7 +537,19 @@
         <p class="text-sm font-light text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">Industry news, charter guides, and updates from the world of aviation across Asia, Middle East & Africa.</p>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- Blog Post 1: Cargo Aircraft Charter Guide (NEWEST) -->
+        <!-- Blog Post 1: Empty Leg Flights Explained (NEWEST) -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden">
+            <img src="hero-images/bombardier_global_7500.webp" alt="Empty Leg Private Jet Charter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          </div>
+          <div class="p-6">
+            <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C8B283]">VIP Private Jets</span>
+            <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">Empty Leg Flights Explained: How They Work & Real Cost Saving</h3>
+            <p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">Discover how empty leg flights work, safety standards, and how to save 25-75% on private jet charter.</p>
+            <a href="empty-leg-flights-explained.html" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read More <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+          </div>
+        </div>
+        <!-- Blog Post 2: Cargo Aircraft Charter Guide -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden">
             <img src="hero-images/cargo-africa.webp" alt="Cargo Aircraft Charter Guide Asia Africa Middle East" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
@@ -549,7 +561,7 @@
             <a href="cargo-aircraft-charter-guide-asia-africa-middle-east.html" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read More <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
           </div>
         </div>
-        <!-- Blog Post 2: How Cargo Is Loaded (NEW) -->
+        <!-- Blog Post 3: How Cargo Is Loaded -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden">
             <img src="hero-images/urgentcargo-hero.webp" alt="Ground crew loading cargo aircraft" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
@@ -559,18 +571,6 @@
             <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">How Cargo Is Loaded on Aircraft: Full Guide</h3>
             <p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">How aircraft cargo holds work and the step-by-step ULD process airlines use to load freight.</p>
             <a href="how-cargo-is-loaded-on-aircraft.html" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read More <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
-          </div>
-        </div>
-        <!-- Blog Post 3: International Medical Evacuation Guide -->
-        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-          <div class="relative h-48 overflow-hidden">
-            <img src="hero-images/urgentcargo-hero.webp" alt="International Medical Evacuation Flight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Medical Evacuation</span>
-            <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">International Medical Evacuation Guide</h3>
-            <p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">Everything you need to know about medical evacuation flights and air ambulance charter across three continents.</p>
-            <a href="international-medical-evacuation-guide.html" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read More <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
           </div>
         </div>
       </div>
@@ -657,7 +657,7 @@
         </div>
         <div class="lg:col-span-3 fade-in">
           <!-- Netlify Form Config -->
-          <form id="quoteForm" name="charter-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
+          <form id="quoteForm" name="charter-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
             <input type="hidden" name="form-name" value="charter-quote" />
             <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
             
@@ -797,7 +797,6 @@
         }
     });
 
-    // Close menu when a link is clicked
     const mobileLinks = document.querySelectorAll('.mobile-link');
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {

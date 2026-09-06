@@ -90,6 +90,11 @@
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
+  <!-- Embedded JSON Data for Local Viewing & Production Fallback -->
+  <script type="application/json" id="empty-legs-data">
+  {"legs":[{"region":"Asia","dep_code":"RJGG","dep_city":"Nagoya","arr_code":"RCTP","arr_city":"Taipei","date":"10 Sep 2026","aircraft":"VIP Airliner (BBJ737)","price":"$6,000","on_request":false},{"region":"Asia","dep_code":"RJGG","dep_city":"Nagoya","arr_code":"RKPK","arr_city":"Busan","date":"15 Sep 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"RKSI","dep_city":"Seoul","arr_code":"RJTT","arr_city":"Tokyo","date":"19 Sep 2026","aircraft":"Light Jet (Citation CJ3+)","price":"$63,000","on_request":false},{"region":"Asia","dep_code":"VHHH","dep_city":"Hong Kong","arr_code":"ZBAA","arr_city":"Beijing","date":"19 Sep 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$28,000","on_request":false},{"region":"Asia","dep_code":"RKSI","dep_city":"Seoul","arr_code":"RCTP","arr_city":"Taipei","date":"19 Sep 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$29,000","on_request":false},{"region":"Asia","dep_code":"RJTT","dep_city":"Tokyo","arr_code":"VHHH","arr_city":"Hong Kong","date":"25 Sep 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$27,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RJBB","arr_city":"Osaka","date":"26 Sep 2026","aircraft":"Ultra Long Range (Global 6000)","price":"$51,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RKPK","arr_city":"Busan","date":"27 Sep 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$32,000","on_request":false},{"region":"Asia","dep_code":"RJGG","dep_city":"Nagoya","arr_code":"RCTP","arr_city":"Taipei","date":"30 Sep 2026","aircraft":"Heavy Jet (Gulfstream G450)","price":"$12,000","on_request":false},{"region":"Asia","dep_code":"VHHH","dep_city":"Hong Kong","arr_code":"RKSI","arr_city":"Seoul","date":"01 Oct 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"","on_request":true},{"region":"Asia","dep_code":"RCTP","dep_city":"Taipei","arr_code":"VHHH","arr_city":"Hong Kong","date":"07 Oct 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$41,000","on_request":false},{"region":"Asia","dep_code":"ZGGG","dep_city":"Guangzhou","arr_code":"RKSI","arr_city":"Seoul","date":"10 Oct 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$19,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RJGG","arr_city":"Nagoya","date":"23 Oct 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"RJBB","dep_city":"Osaka","arr_code":"ZGGG","arr_city":"Guangzhou","date":"25 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"","on_request":true},{"region":"Asia","dep_code":"ZSPD","dep_city":"Shanghai","arr_code":"RKPK","arr_city":"Busan","date":"03 Nov 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"ZSPD","dep_city":"Shanghai","arr_code":"RKPK","arr_city":"Busan","date":"09 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"VHHH","dep_city":"Hong Kong","arr_code":"RJBB","arr_city":"Osaka","date":"18 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"$54,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RJGG","arr_city":"Nagoya","date":"08 Dec 2026","aircraft":"Ultra Long Range (Global 6000)","price":"$11,000","on_request":false},{"region":"Asia","dep_code":"ZSPD","dep_city":"Shanghai","arr_code":"RCTP","arr_city":"Taipei","date":"08 Dec 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$12,000","on_request":false},{"region":"Asia","dep_code":"RKPK","dep_city":"Busan","arr_code":"VHHH","arr_city":"Hong Kong","date":"17 Dec 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$39,000","on_request":false},{"region":"Asia","dep_code":"RJBB","dep_city":"Osaka","arr_code":"RKPK","arr_city":"Busan","date":"31 Dec 2026","aircraft":"Midsize Jet (Learjet 60)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"RJTT","dep_city":"Tokyo","arr_code":"ZBAA","arr_city":"Beijing","date":"02 Jan 2027","aircraft":"Light Jet (Learjet 75)","price":"$25,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"VHHH","arr_city":"Hong Kong","date":"02 Jan 2027","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RJGG","arr_city":"Nagoya","date":"05 Jan 2027","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RCTP","arr_city":"Taipei","date":"06 Jan 2027","aircraft":"Ultra Long Range (Falcon 7X)","price":"$36,000","on_request":false},{"region":"Asia","dep_code":"RJTT","dep_city":"Tokyo","arr_code":"ZBAA","arr_city":"Beijing","date":"07 Jan 2027","aircraft":"Turbo Prop (King Air 350i)","price":"$42,000","on_request":false},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"06 Sep 2026","aircraft":"Light Jet (Phenom 300)","price":"$50,000","on_request":false},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"RPLL","arr_city":"Manila","date":"08 Sep 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$63,000","on_request":false},{"region":"Asia","dep_code":"WSSS","dep_city":"Singapore","arr_code":"VTBS","arr_city":"Bangkok","date":"10 Sep 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$39,000","on_request":false},{"region":"Asia","dep_code":"VYYY","dep_city":"Yangon","arr_code":"WIII","arr_city":"Jakarta","date":"13 Sep 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"RPLL","dep_city":"Manila","arr_code":"WIII","arr_city":"Jakarta","date":"20 Sep 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$59,000","on_request":false},{"region":"Asia","dep_code":"WIII","dep_city":"Jakarta","arr_code":"VYYY","arr_city":"Yangon","date":"20 Sep 2026","aircraft":"VIP Airliner (BBJ737)","price":"$8,000","on_request":false},{"region":"Asia","dep_code":"RPLL","dep_city":"Manila","arr_code":"VVNB","arr_city":"Hanoi","date":"25 Sep 2026","aircraft":"VIP Airliner (ACJ319)","price":"$11,000","on_request":false},{"region":"Asia","dep_code":"WSSS","dep_city":"Singapore","arr_code":"VDPP","arr_city":"Phnom Penh","date":"26 Sep 2026","aircraft":"Midsize Jet (Learjet 60)","price":"$35,000","on_request":false},{"region":"Asia","dep_code":"WSSS","dep_city":"Singapore","arr_code":"VYYY","arr_city":"Yangon","date":"02 Oct 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$46,000","on_request":false},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"VVNB","arr_city":"Hanoi","date":"10 Oct 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$52,000","on_request":false},{"region":"Asia","dep_code":"WIII","dep_city":"Jakarta","arr_code":"VTBS","arr_city":"Bangkok","date":"11 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"$60,000","on_request":false},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"12 Oct 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"WSSS","arr_city":"Singapore","date":"13 Oct 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$21,000","on_request":false},{"region":"Asia","dep_code":"WIII","dep_city":"Jakarta","arr_code":"WADD","arr_city":"Bali","date":"29 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"$55,000","on_request":false},{"region":"Asia","dep_code":"VVTS","dep_city":"Ho Chi Minh","arr_code":"WADD","arr_city":"Bali","date":"31 Oct 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"","on_request":true},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"02 Nov 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$24,000","on_request":false},{"region":"Asia","dep_code":"WADD","dep_city":"Bali","arr_code":"RPLL","arr_city":"Manila","date":"09 Nov 2026","aircraft":"Ultra Long Range (Global 6000)","price":"$15,000","on_request":false},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"RPLL","arr_city":"Manila","date":"21 Nov 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$55,000","on_request":false},{"region":"Asia","dep_code":"VVNB","dep_city":"Hanoi","arr_code":"VYYY","arr_city":"Yangon","date":"23 Nov 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"","on_request":true},{"region":"Asia","dep_code":"VYYY","dep_city":"Yangon","arr_code":"VTBS","arr_city":"Bangkok","date":"03 Dec 2026","aircraft":"VIP Airliner (ACJ319)","price":"$62,000","on_request":false},{"region":"Asia","dep_code":"VYYY","dep_city":"Yangon","arr_code":"VDPP","arr_city":"Phnom Penh","date":"12 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"WMKK","dep_city":"Kuala Lumpur","arr_code":"VTBS","arr_city":"Bangkok","date":"18 Dec 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"20 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$39,000","on_request":false},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"23 Dec 2026","aircraft":"Light Jet (Learjet 75)","price":"$39,000","on_request":false},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"RPLL","arr_city":"Manila","date":"24 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$28,000","on_request":false},{"region":"Asia","dep_code":"WMKK","dep_city":"Kuala Lumpur","arr_code":"WIII","arr_city":"Jakarta","date":"02 Jan 2027","aircraft":"Midsize Jet (Learjet 60)","price":"$38,000","on_request":false},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OJAI","arr_city":"Amman","date":"11 Sep 2026","aircraft":"Heavy Jet (Challenger 605)","price":"","on_request":true},{"region":"Middle East","dep_code":"OEJN","dep_city":"Jeddah","arr_code":"OOMS","arr_city":"Muscat","date":"17 Sep 2026","aircraft":"Turbo Prop (King Air 350i)","price":"","on_request":true},{"region":"Middle East","dep_code":"OOMS","dep_city":"Muscat","arr_code":"OTHH","arr_city":"Doha","date":"20 Sep 2026","aircraft":"Light Jet (Phenom 300)","price":"$48,000","on_request":false},{"region":"Middle East","dep_code":"OLBA","dep_city":"Beirut","arr_code":"OEJN","arr_city":"Jeddah","date":"24 Sep 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"","on_request":true},{"region":"Middle East","dep_code":"OOMS","dep_city":"Muscat","arr_code":"OMAA","arr_city":"Abu Dhabi","date":"04 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"","on_request":true},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OBBI","arr_city":"Bahrain","date":"07 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$42,000","on_request":false},{"region":"Middle East","dep_code":"OTHH","dep_city":"Doha","arr_code":"OKBK","arr_city":"Kuwait","date":"17 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$13,000","on_request":false},{"region":"Middle East","dep_code":"OJAI","dep_city":"Amman","arr_code":"OLBA","arr_city":"Beirut","date":"27 Oct 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$17,000","on_request":false},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OLBA","arr_city":"Beirut","date":"04 Nov 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$13,000","on_request":false},{"region":"Middle East","dep_code":"OMDB","dep_city":"Dubai","arr_code":"OKBK","arr_city":"Kuwait","date":"05 Nov 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$23,000","on_request":false},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OMDB","arr_city":"Dubai","date":"11 Nov 2026","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true},{"region":"Middle East","dep_code":"OERK","dep_city":"Riyadh","arr_code":"OOMS","arr_city":"Muscat","date":"16 Nov 2026","aircraft":"Light Jet (Citation CJ3+)","price":"$53,000","on_request":false},{"region":"Middle East","dep_code":"OKBK","dep_city":"Kuwait","arr_code":"OTHH","arr_city":"Doha","date":"18 Nov 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$64,000","on_request":false},{"region":"Middle East","dep_code":"OLBA","dep_city":"Beirut","arr_code":"OEJN","arr_city":"Jeddah","date":"20 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"$52,000","on_request":false},{"region":"Middle East","dep_code":"OOMS","dep_city":"Muscat","arr_code":"OMAA","arr_city":"Abu Dhabi","date":"23 Nov 2026","aircraft":"VIP Airliner (ACJ319)","price":"$64,000","on_request":false},{"region":"Middle East","dep_code":"OJAI","dep_city":"Amman","arr_code":"OLBA","arr_city":"Beirut","date":"04 Dec 2026","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true},{"region":"Middle East","dep_code":"OTHH","dep_city":"Doha","arr_code":"OERK","arr_city":"Riyadh","date":"07 Dec 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$49,000","on_request":false},{"region":"Middle East","dep_code":"OJAI","dep_city":"Amman","arr_code":"OLBA","arr_city":"Beirut","date":"12 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$53,000","on_request":false},{"region":"Middle East","dep_code":"OBBI","dep_city":"Bahrain","arr_code":"OJAI","arr_city":"Amman","date":"15 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$57,000","on_request":false},{"region":"Middle East","dep_code":"OEJN","dep_city":"Jeddah","arr_code":"OLBA","arr_city":"Beirut","date":"21 Dec 2026","aircraft":"Heavy Jet (Gulfstream G450)","price":"","on_request":true},{"region":"Middle East","dep_code":"OMDB","dep_city":"Dubai","arr_code":"OEJN","arr_city":"Jeddah","date":"23 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"","on_request":true},{"region":"Middle East","dep_code":"OBBI","dep_city":"Bahrain","arr_code":"OMAA","arr_city":"Abu Dhabi","date":"31 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"","on_request":true},{"region":"Middle East","dep_code":"OERK","dep_city":"Riyadh","arr_code":"OKBK","arr_city":"Kuwait","date":"05 Jan 2027","aircraft":"Light Jet (Phenom 300)","price":"$35,000","on_request":false},{"region":"Middle East","dep_code":"OEJN","dep_city":"Jeddah","arr_code":"OOMS","arr_city":"Muscat","date":"08 Jan 2027","aircraft":"Light Jet (Learjet 75)","price":"$41,000","on_request":false},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OERK","arr_city":"Riyadh","date":"15 Jan 2027","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$6,000","on_request":false},{"region":"Middle East","dep_code":"OERK","dep_city":"Riyadh","arr_code":"OEJN","arr_city":"Jeddah","date":"15 Jan 2027","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"VIDP","dep_city":"Delhi","arr_code":"VOHY","arr_city":"Hyderabad","date":"07 Sep 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"","on_request":true},{"region":"Asia","dep_code":"VIDP","dep_city":"Delhi","arr_code":"OPKC","arr_city":"Karachi","date":"17 Sep 2026","aircraft":"Light Jet (Citation CJ3+)","price":"$26,000","on_request":false},{"region":"Asia","dep_code":"VABB","dep_city":"Mumbai","arr_code":"VNKT","arr_city":"Kathmandu","date":"20 Sep 2026","aircraft":"Light Jet (Citation CJ3+)","price":"$62,000","on_request":false},{"region":"Asia","dep_code":"VABB","dep_city":"Mumbai","arr_code":"VGZR","arr_city":"Dhaka","date":"21 Sep 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$24,000","on_request":false},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"VCBI","arr_city":"Colombo","date":"25 Sep 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$53,000","on_request":false},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"VABB","arr_city":"Mumbai","date":"28 Sep 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"","on_request":true},{"region":"Asia","dep_code":"VRMM","dep_city":"Male","arr_code":"VOBL","arr_city":"Bangalore","date":"08 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"$10,000","on_request":false},{"region":"Asia","dep_code":"VABB","dep_city":"Mumbai","arr_code":"OPKC","arr_city":"Karachi","date":"15 Oct 2026","aircraft":"Light Jet (Citation CJ3+)","price":"","on_request":true},{"region":"Asia","dep_code":"VRMM","dep_city":"Male","arr_code":"VIDP","arr_city":"Delhi","date":"16 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$38,000","on_request":false},{"region":"Asia","dep_code":"VOHY","dep_city":"Hyderabad","arr_code":"VCBI","arr_city":"Colombo","date":"26 Oct 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$47,000","on_request":false},{"region":"Asia","dep_code":"VOHY","dep_city":"Hyderabad","arr_code":"VOBL","arr_city":"Bangalore","date":"28 Oct 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$25,000","on_request":false},{"region":"Asia","dep_code":"OPKC","dep_city":"Karachi","arr_code":"VOHY","arr_city":"Hyderabad","date":"05 Nov 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"VRMM","dep_city":"Male","arr_code":"VCBI","arr_city":"Colombo","date":"16 Nov 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$13,000","on_request":false},{"region":"Asia","dep_code":"VABB","dep_city":"Mumbai","arr_code":"VGZR","arr_city":"Dhaka","date":"16 Nov 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$46,000","on_request":false},{"region":"Asia","dep_code":"VCBI","dep_city":"Colombo","arr_code":"VIDP","arr_city":"Delhi","date":"19 Nov 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$54,000","on_request":false},{"region":"Asia","dep_code":"VNKT","dep_city":"Kathmandu","arr_code":"VGZR","arr_city":"Dhaka","date":"20 Nov 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"OPKC","arr_city":"Karachi","date":"21 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"$23,000","on_request":false},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"VCBI","arr_city":"Colombo","date":"13 Dec 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"VOHY","dep_city":"Hyderabad","arr_code":"VRMM","arr_city":"Male","date":"15 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$12,000","on_request":false},{"region":"Asia","dep_code":"VRMM","dep_city":"Male","arr_code":"VABB","arr_city":"Mumbai","date":"17 Dec 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$60,000","on_request":false},{"region":"Asia","dep_code":"VIDP","dep_city":"Delhi","arr_code":"VABB","arr_city":"Mumbai","date":"22 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"","on_request":true},{"region":"Asia","dep_code":"VNKT","dep_city":"Kathmandu","arr_code":"VOHY","arr_city":"Hyderabad","date":"23 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$29,000","on_request":false},{"region":"Asia","dep_code":"VOHY","dep_city":"Hyderabad","arr_code":"VCBI","arr_city":"Colombo","date":"27 Dec 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$10,000","on_request":false},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"OPKC","arr_city":"Karachi","date":"01 Jan 2027","aircraft":"Turbo Prop (King Air 350i)","price":"","on_request":true},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"VRMM","arr_city":"Male","date":"18 Jan 2027","aircraft":"Light Jet (Phenom 300)","price":"$44,000","on_request":false},{"region":"Asia","dep_code":"VNKT","dep_city":"Kathmandu","arr_code":"VIDP","arr_city":"Delhi","date":"20 Jan 2027","aircraft":"Light Jet (Phenom 300)","price":"$15,000","on_request":false},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UAAA","arr_city":"Almaty","date":"07 Sep 2026","aircraft":"VIP Airliner (ACJ319)","price":"","on_request":true},{"region":"Asia","dep_code":"UDYZ","dep_city":"Yerevan","arr_code":"UGTB","arr_city":"Tbilisi","date":"14 Sep 2026","aircraft":"Ultra Long Range (Global 6000)","price":"$21,000","on_request":false},{"region":"Asia","dep_code":"UAAA","dep_city":"Almaty","arr_code":"UTTT","arr_city":"Tashkent","date":"18 Sep 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$22,000","on_request":false},{"region":"Asia","dep_code":"UDYZ","dep_city":"Yerevan","arr_code":"UTAA","arr_city":"Ashgabat","date":"04 Oct 2026","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"UTDD","dep_city":"Dushanbe","arr_code":"UTTT","arr_city":"Tashkent","date":"14 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$20,000","on_request":false},{"region":"Asia","dep_code":"UTAA","dep_city":"Ashgabat","arr_code":"UGTB","arr_city":"Tbilisi","date":"24 Oct 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"UACC","dep_city":"Astana","arr_code":"UGTB","arr_city":"Tbilisi","date":"05 Nov 2026","aircraft":"Turbo Prop (King Air 350i)","price":"","on_request":true},{"region":"Asia","dep_code":"UDYZ","dep_city":"Yerevan","arr_code":"UGTB","arr_city":"Tbilisi","date":"12 Nov 2026","aircraft":"Light Jet (Citation CJ3+)","price":"","on_request":true},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UTAA","arr_city":"Ashgabat","date":"17 Nov 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"","on_request":true},{"region":"Asia","dep_code":"UAAA","dep_city":"Almaty","arr_code":"UTAA","arr_city":"Ashgabat","date":"17 Nov 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"UTDD","dep_city":"Dushanbe","arr_code":"UBBB","arr_city":"Baku","date":"19 Nov 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"","on_request":true},{"region":"Asia","dep_code":"UTTT","dep_city":"Tashkent","arr_code":"UTDD","arr_city":"Dushanbe","date":"20 Nov 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"","on_request":true},{"region":"Asia","dep_code":"UAAA","dep_city":"Almaty","arr_code":"UBBB","arr_city":"Baku","date":"21 Nov 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$29,000","on_request":false},{"region":"Asia","dep_code":"UGTB","dep_city":"Tbilisi","arr_code":"UBBB","arr_city":"Baku","date":"03 Dec 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$58,000","on_request":false},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UTDD","arr_city":"Dushanbe","date":"04 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"UDYZ","dep_city":"Yerevan","arr_code":"UBBB","arr_city":"Baku","date":"06 Dec 2026","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"UAAA","dep_city":"Almaty","arr_code":"UAFM","arr_city":"Bishkek","date":"12 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"","on_request":true},{"region":"Asia","dep_code":"UTAA","dep_city":"Ashgabat","arr_code":"UACC","arr_city":"Astana","date":"13 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"","on_request":true},{"region":"Asia","dep_code":"UTDD","dep_city":"Dushanbe","arr_code":"UAFM","arr_city":"Bishkek","date":"22 Dec 2026","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true},{"region":"Asia","dep_code":"UACC","dep_city":"Astana","arr_code":"UATE","arr_city":"Aktau","date":"23 Dec 2026","aircraft":"Light Jet (Citation CJ3+)","price":"","on_request":true},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UGTB","arr_city":"Tbilisi","date":"25 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"","on_request":true},{"region":"Asia","dep_code":"UAFM","dep_city":"Bishkek","arr_code":"UTTT","arr_city":"Tashkent","date":"27 Dec 2026","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UAFM","arr_city":"Bishkek","date":"15 Jan 2027","aircraft":"Heavy Jet (Gulfstream G450)","price":"$34,000","on_request":false},{"region":"Asia","dep_code":"UGTB","dep_city":"Tbilisi","arr_code":"UACC","arr_city":"Astana","date":"16 Jan 2027","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UTDD","arr_city":"Dushanbe","date":"16 Jan 2027","aircraft":"Turbo Prop (King Air 350i)","price":"$11,000","on_request":false},{"region":"Africa","dep_code":"HECA","dep_city":"Cairo","arr_code":"HKJK","arr_city":"Nairobi","date":"09 Sep 2026","aircraft":"VIP Airliner (BBJ737)","price":"$64,000","on_request":false},{"region":"Africa","dep_code":"FAOR","dep_city":"Johannesburg","arr_code":"DNMM","arr_city":"Lagos","date":"11 Sep 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$39,000","on_request":false},{"region":"Africa","dep_code":"DNMM","dep_city":"Lagos","arr_code":"FACT","arr_city":"Cape Town","date":"12 Sep 2026","aircraft":"Light Jet (Phenom 300)","price":"$10,000","on_request":false},{"region":"Africa","dep_code":"GMMN","dep_city":"Casablanca","arr_code":"HECA","arr_city":"Cairo","date":"15 Sep 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$44,000","on_request":false},{"region":"Africa","dep_code":"FNLU","dep_city":"Luanda","arr_code":"FACT","arr_city":"Cape Town","date":"24 Sep 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$36,000","on_request":false},{"region":"Africa","dep_code":"FACT","dep_city":"Cape Town","arr_code":"FAOR","arr_city":"Johannesburg","date":"04 Oct 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"","on_request":true},{"region":"Africa","dep_code":"FAOR","dep_city":"Johannesburg","arr_code":"HKJK","arr_city":"Nairobi","date":"08 Oct 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$41,000","on_request":false},{"region":"Africa","dep_code":"HKJK","dep_city":"Nairobi","arr_code":"HAAB","arr_city":"Addis Ababa","date":"09 Oct 2026","aircraft":"VIP Airliner (BBJ737)","price":"$62,000","on_request":false},{"region":"Africa","dep_code":"FNLU","dep_city":"Luanda","arr_code":"FAOR","arr_city":"Johannesburg","date":"12 Oct 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Africa","dep_code":"HAAB","dep_city":"Addis Ababa","arr_code":"FACT","arr_city":"Cape Town","date":"30 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"$25,000","on_request":false},{"region":"Africa","dep_code":"DNMM","dep_city":"Lagos","arr_code":"DGAA","arr_city":"Accra","date":"07 Nov 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$59,000","on_request":false},{"region":"Africa","dep_code":"HTDA","dep_city":"Dar es Salaam","arr_code":"FAOR","arr_city":"Johannesburg","date":"13 Nov 2026","aircraft":"Midsize Jet (Learjet 60)","price":"$9,000","on_request":false},{"region":"Africa","dep_code":"FNLU","dep_city":"Luanda","arr_code":"DNMM","arr_city":"Lagos","date":"18 Nov 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$39,000","on_request":false},{"region":"Africa","dep_code":"GMMN","dep_city":"Casablanca","arr_code":"FAOR","arr_city":"Johannesburg","date":"23 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"$12,000","on_request":false},{"region":"Africa","dep_code":"DNMM","dep_city":"Lagos","arr_code":"HAAB","arr_city":"Addis Ababa","date":"10 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$29,000","on_request":false},{"region":"Africa","dep_code":"GMMN","dep_city":"Casablanca","arr_code":"DGAA","arr_city":"Accra","date":"15 Dec 2026","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Africa","dep_code":"FACT","dep_city":"Cape Town","arr_code":"HTDA","arr_city":"Dar es Salaam","date":"18 Dec 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$22,000","on_request":false},{"region":"Africa","dep_code":"FAOR","dep_city":"Johannesburg","arr_code":"DNMM","arr_city":"Lagos","date":"29 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$55,000","on_request":false},{"region":"Africa","dep_code":"DGAA","dep_city":"Accra","arr_code":"FAOR","arr_city":"Johannesburg","date":"02 Jan 2027","aircraft":"Ultra Long Range (Global 6000)","price":"$39,000","on_request":false},{"region":"Africa","dep_code":"HTDA","dep_city":"Dar es Salaam","arr_code":"DGAA","arr_city":"Accra","date":"04 Jan 2027","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Africa","dep_code":"GMMN","dep_city":"Casablanca","arr_code":"HECA","arr_city":"Cairo","date":"05 Jan 2027","aircraft":"Turbo Prop (King Air 350i)","price":"$16,000","on_request":false},{"region":"Africa","dep_code":"HECA","dep_city":"Cairo","arr_code":"DNMM","arr_city":"Lagos","date":"07 Jan 2027","aircraft":"Midsize Jet (Hawker 900XP)","price":"$24,000","on_request":false},{"region":"Africa","dep_code":"FACT","dep_city":"Cape Town","arr_code":"FNLU","arr_city":"Luanda","date":"08 Jan 2027","aircraft":"Midsize Jet (Citation XLS+)","price":"$65,000","on_request":false},{"region":"Africa","dep_code":"HTDA","dep_city":"Dar es Salaam","arr_code":"HAAB","arr_city":"Addis Ababa","date":"12 Jan 2027","aircraft":"Midsize Jet (Learjet 60)","price":"$59,000","on_request":false},{"region":"Africa","dep_code":"FNLU","dep_city":"Luanda","arr_code":"HTDA","arr_city":"Dar es Salaam","date":"18 Jan 2027","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true}]}
+  </script>
+
   <!-- Header / Navigation -->
   <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
       <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
@@ -152,30 +157,30 @@
               <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
           </ul>
 
-          <button id="menu-toggle" class="lg:hidden text-white text-2xl">
+          <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]">
               <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
           </button>
       </nav>
 
-      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-40 overflow-y-auto pb-10">
+      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
           <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
-              <li><a href="index.html#services" class="hover:text-teal-500">Services</a></li>
-              <li><a href="index.html#fleet" class="hover:text-teal-500">Fleet</a></li>
-              <li><a href="index.html#how-it-works" class="hover:text-teal-500">How It Works</a></li>
-              <li><a href="index.html#about" class="hover:text-teal-500">About</a></li>
-              <li><a href="index.html#faq" class="hover:text-teal-500">FAQ</a></li>
+              <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+              <li><a href="index.html#fleet" class="hover:text-teal-500 mobile-link">Fleet</a></li>
+              <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+              <li><a href="index.html#about" class="hover:text-teal-500 mobile-link">About</a></li>
+              <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
               
               <li class="w-full text-center mt-4">
                   <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
                   <div class="flex flex-col space-y-4 mt-4">
-                      <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg">Private Jet Charter</a>
-                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg">Empty Leg Flights</a>
-                      <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg">Private Jet Fleet</a>
-                      <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg">Private Jet Quote</a>
+                      <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+                      <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+                      <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
                   </div>
               </li>
               
-              <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto">Get a Quote</a></li>
+              <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
           </ul>
       </div>
   </header>
@@ -183,7 +188,7 @@
   <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="hero-images/empty-legs-hero.webp" alt="Private Jet Empty Leg Flight" class="w-full h-full object-cover hero-img-blur" />
+      <img src="hero-images/empty-legs-hero.webp" alt="Private Jet Empty Leg Flight" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
       <div class="absolute inset-0 hero-bg"></div>
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
@@ -200,7 +205,7 @@
     </div>
   </section>
 
-  <!-- ===== LISTINGS (DYNAMICALLY LOADED FROM JSON) ===== -->
+  <!-- ===== LISTINGS (TABBED LAYOUT) ===== -->
   <section class="py-24 bg-navy-950">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16 fade-in">
@@ -209,6 +214,14 @@
         <p class="text-sm font-light text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">These are live repositioning flights. Availability changes daily. If a flight matches your route, request it immediately before it's booked.</p>
       </div>
       
+      <!-- Region Tabs -->
+      <div class="flex items-center justify-center gap-4 mb-12 fade-in">
+        <button onclick="filterRegion('Asia')" class="region-tab active text-xs font-semibold tracking-[0.2em] uppercase px-6 py-3 border border-[#C8B283] text-[#C8B283] bg-[#C8B283]/10 transition-all duration-150">Asia</button>
+        <button onclick="filterRegion('Middle East')" class="region-tab text-xs font-semibold tracking-[0.2em] uppercase px-6 py-3 border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] transition-all duration-150">Middle East</button>
+        <button onclick="filterRegion('Africa')" class="region-tab text-xs font-semibold tracking-[0.2em] uppercase px-6 py-3 border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] transition-all duration-150">Africa</button>
+        <button onclick="filterRegion('Europe')" class="region-tab text-xs font-semibold tracking-[0.2em] uppercase px-6 py-3 border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] transition-all duration-150">Europe</button>
+      </div>
+
       <!-- 3-Column Grid Container (Populated by JS) -->
       <div id="fleetGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Loading Skeleton -->
@@ -251,7 +264,7 @@
           </div>
         </div>
         <div class="lg:col-span-3 fade-in">
-          <form id="emptyLegAlertForm" name="empty-leg-alert" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="border border-[#C8B283]/30 bg-navy-800 p-8 space-y-6">
+          <form id="emptyLegAlertForm" name="empty-leg-alert" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="border border-[#C8B283]/30 bg-navy-800 p-8 space-y-6">
             <input type="hidden" name="form-name" value="empty-leg-alert" />
             <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
             
@@ -380,6 +393,14 @@
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     let isMenuOpen = false;
+
+    function closeMenu() {
+        isMenuOpen = false;
+        mobileMenu.classList.add('translate-x-full');
+        mobileMenu.classList.remove('translate-x-0');
+        document.body.style.overflow = '';
+    }
+
     menuToggle.addEventListener('click', () => {
         isMenuOpen = !isMenuOpen;
         if (isMenuOpen) {
@@ -387,10 +408,15 @@
             mobileMenu.classList.add('translate-x-0');
             document.body.style.overflow = 'hidden';
         } else {
-            mobileMenu.classList.add('translate-x-full');
-            mobileMenu.classList.remove('translate-x-0');
-            document.body.style.overflow = '';
+            closeMenu();
         }
+    });
+
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+        });
     });
 
     const observer = new IntersectionObserver((entries) => {
@@ -423,10 +449,53 @@
         waSend.href = 'https://wa.me/923205487700?text=' + msg;
     });
 
-    // Dynamic Empty Legs Loader
-    fetch('/empty-legs-data.json')
-      .then(response => response.json())
-      .then(data => {
+    // Region Tab Filter Logic
+    function filterRegion(region) {
+      const tabs = document.querySelectorAll('.region-tab');
+      tabs.forEach(tab => {
+        if (tab.textContent.trim() === region) {
+           tab.classList.add('border-[#C8B283]', 'text-[#C8B283]', 'bg-[#C8B283]/10');
+           tab.classList.remove('border-white/10', 'text-gray-400');
+        } else {
+           tab.classList.remove('border-[#C8B283]', 'text-[#C8B283]', 'bg-[#C8B283]/10');
+           tab.classList.add('border-white/10', 'text-gray-400');
+        }
+      });
+      
+      const cards = document.querySelectorAll('.leg-card');
+      let visibleCount = 0;
+      cards.forEach(card => {
+        if (region === 'All' || card.dataset.region === region) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      
+      const grid = document.getElementById('fleetGrid');
+      const emptyMsg = document.getElementById('empty-msg');
+      if (visibleCount === 0 && !emptyMsg) {
+          grid.innerHTML += '<div id="empty-msg" class="col-span-full text-center text-gray-500 py-12">No active empty legs in ' + region + ' at the moment. Please register for alerts below.</div>';
+      } else if (visibleCount > 0 && emptyMsg) {
+          emptyMsg.remove();
+      }
+    }
+
+    // Dynamic Empty Legs Loader (Reads embedded JSON for local viewing, falls back to fetch for production)
+    function loadEmptyLegs() {
+        const embeddedData = document.getElementById('empty-legs-data');
+        if (embeddedData && embeddedData.textContent.trim().length > 0) {
+            try {
+                return Promise.resolve(JSON.parse(embeddedData.textContent));
+            } catch(e) {
+                console.error("Error parsing embedded JSON:", e);
+            }
+        }
+        return fetch('/empty-legs-data.json').then(r => r.json());
+    }
+    
+    loadEmptyLegs().then(data => {
         const grid = document.getElementById('fleetGrid');
         if (!data.legs || data.legs.length === 0) {
           grid.innerHTML = '<div class="col-span-full text-center text-gray-500 py-12">No active empty legs at the moment. Please check back soon or register for alerts below.</div>';
@@ -434,12 +503,15 @@
         }
         
         grid.innerHTML = data.legs.map(leg => {
-          const priceBlock = leg.on_request 
-            ? `<div><div class="text-[10px] uppercase tracking-wider text-gray-500">Price</div><div class="text-lg font-display text-gray-400 mt-1">On Request</div></div><a href="contact.html#contact-form" class="w-full border border-[#C8B283] text-[#C8B283] text-[10px] font-bold tracking-wider py-2.5 mt-4 hover:bg-[#C8B283] hover:text-black transition-all duration-150 text-center">GET A QUOTE</a>`
-            : `<div><div class="text-[10px] uppercase tracking-wider text-gray-500">${leg.price_type}</div><div class="text-xl font-display text-[#C8B283] mt-1">${leg.price}</div></div><a href="private-jet-quote.html" class="w-full bg-[#C8B283] text-black text-[10px] font-bold tracking-wider py-2.5 mt-4 hover:bg-[#D9C89F] transition-all duration-150 text-center">REQUEST FLIGHT</a>`;
+          const priceText = leg.on_request ? 'On Request' : leg.price;
+          const btnClass = leg.on_request 
+            ? 'border border-[#C8B283] text-[#C8B283] hover:bg-[#C8B283] hover:text-black'
+            : 'bg-[#C8B283] text-black hover:bg-[#D9C89F]';
+          const btnText = leg.on_request ? 'GET QUOTE' : 'REQUEST FLIGHT';
+          const btnLink = leg.on_request ? 'contact.html#contact-form' : 'private-jet-quote.html';
 
           return `
-          <div class="group card-hover border border-navy-700 bg-navy-800 p-5 flex flex-col">
+          <div class="leg-card group card-hover border border-navy-700 bg-navy-800 p-5 flex flex-col" data-region="${leg.region}" style="display: flex;">
             <div class="flex justify-between items-center mb-4">
               <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-[#C8B283]/10 px-2 py-1">Empty Leg</span>
               <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-500 bg-navy-900 px-2 py-1">${leg.date}</span>
@@ -459,23 +531,30 @@
                 <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">${leg.arr_city}</div>
               </div>
             </div>
-            <div class="grid grid-cols-5 gap-4 flex-1 mb-2">
-              <div class="col-span-3 space-y-3 text-xs text-gray-400 flex flex-col justify-center">
-                <span class="flex items-center gap-2"><iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283]"></iconify-icon> ${leg.aircraft}</span>
-                <span class="flex items-center gap-2"><iconify-icon icon="ph:users-duotone" class="text-[#C8B283]"></iconify-icon> ${leg.pax}</span>
-                <span class="flex items-center gap-2"><iconify-icon icon="ph:clock-duotone" class="text-[#C8B283]"></iconify-icon> ${leg.duration}</span>
+            <div class="flex-1 flex flex-col justify-between">
+              <div class="text-xs text-gray-400 flex items-center gap-2">
+                <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283]"></iconify-icon> ${leg.aircraft}
               </div>
-              <div class="col-span-2 flex flex-col justify-between items-end text-right border-l border-navy-700 pl-4">
-                ${priceBlock}
+              <div class="flex justify-between items-end mt-4 pt-4 border-t border-navy-700/50">
+                <div>
+                  <div class="text-[10px] uppercase tracking-wider text-gray-500">Price</div>
+                  <div class="text-lg font-display text-[#C8B283] mt-1">${priceText}</div>
+                </div>
+                <a href="${btnLink}" class="${btnClass} text-[10px] font-bold tracking-wider px-4 py-2 transition-all duration-150 text-center">
+                  ${btnText}
+                </a>
               </div>
             </div>
           </div>
           `;
         }).join('');
-      }).catch(error => {
+        
+        // Trigger initial filter
+        filterRegion('Asia');
+    }).catch(error => {
         console.error('Error loading empty legs:', error);
         document.getElementById('fleetGrid').innerHTML = '<div class="col-span-full text-center text-gray-500 py-12">Error loading flights. Please check back later.</div>';
-      });
+    });
   </script>
 </body>
 </html>
