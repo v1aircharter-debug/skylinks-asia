@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact SkyLinks Asia | 24/7 Charter Desk | Asia · Middle East · Africa</title>
-    <meta name="description" content="Contact SkyLinks Asia 24/7 for commercial passenger and cargo aircraft charter, ACMI wet lease, and VIP private jet flights across Asia, Middle East & Africa.">
+    <meta name="description" content="Contact Skylinks Asia 24/7 for commercial passenger and cargo aircraft charter, ACMI wet lease, and VIP private jet flights across Asia, Middle East & Africa.">
     
     <!-- SEO & Social -->
     <link rel="canonical" href="https://www.skylinks.asia/contact.html">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta property="og:title" content="Contact SkyLinks Asia | 24/7 Charter Desk">
-    <meta property="og:description" content="Contact SkyLinks Asia 24/7 for commercial passenger and cargo aircraft charter, ACMI wet lease, and VIP private jet flights across Asia, Middle East & Africa.">
+    <meta property="og:description" content="Contact Skylinks Asia 24/7 for commercial passenger and cargo aircraft charter, ACMI wet lease, and VIP private jet flights across Asia, Middle East & Africa.">
     <meta property="og:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
     <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
     <meta property="og:url" content="https://www.skylinks.asia/contact.html">
@@ -28,8 +28,9 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: { 950: '#0a0f1a', 900: '#0f172a', 800: '#1e293b', 700: '#334155' },
-                        teal: { 500: '#14b8a6', 600: '#0d9488' }
+                        navy: { 950: '#0a0f1a', 900: '#111827', 800: '#1e293b', 700: '#334155' },
+                        teal: { 500: '#14b8a6', 600: '#0d9488' },
+                        gold: { 500: '#C8B283', 600: '#B09668', 400: '#D9C89F' }
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -73,7 +74,7 @@
         .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
         .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
     </style>
-    <!-- Zero Blur Rule -->
+    <!-- Zero Blur Rule & Hero Visibility -->
     <style>.hero-img-blur { filter: none !important; opacity: 0.8 !important; }</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
@@ -328,8 +329,34 @@
     </div>
   </footer>
 
-  <!-- Scripts (Cleaned: No duplicate blocks, no broken AJAX) -->
+  <!-- WhatsApp Floating Chat Widget -->
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+      <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+          <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+              <div>
+                  <h3 class="font-bold text-lg">Chat with us</h3>
+                  <p class="text-xs opacity-90">Typically replies instantly</p>
+              </div>
+              <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
+                  <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+              </button>
+          </div>
+          <div class="p-4 bg-navy-900">
+              <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+              <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+              <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+                  <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+              </a>
+          </div>
+      </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
+      <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
+
+  <!-- SINGLE CLEAN SCRIPT BLOCK (No Duplicates, No Broken AJAX) -->
   <script>
+    // Mobile Menu Logic
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     let isMenuOpen = false;
@@ -352,13 +379,13 @@
         }
     });
 
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-    mobileLinks.forEach(link => {
+    document.querySelectorAll('.mobile-link').forEach(link => {
         link.addEventListener('click', () => {
             closeMenu();
         });
     });
 
+    // Intersection Observer for Fade-In
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -368,34 +395,11 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    
+    // Dynamic Year
     document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
 
-<!-- WhatsApp Floating Chat Widget -->
-<div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
-    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
-        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
-            <div>
-                <h3 class="font-bold text-lg">Chat with us</h3>
-                <p class="text-xs opacity-90">Typically replies instantly</p>
-            </div>
-            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
-                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-            </button>
-        </div>
-        <div class="p-4 bg-navy-900">
-            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
-            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
-            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
-                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
-            </a>
-        </div>
-    </div>
-</div>
-<button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
-    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
-</button>
-<script>
+    // WhatsApp Widget Logic
     const waWidget = document.getElementById('wa-widget');
     const waToggle = document.getElementById('wa-toggle');
     const waClose = document.getElementById('wa-close');
@@ -414,6 +418,6 @@
         const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
         waSend.href = 'https://wa.me/923205487700?text=' + msg;
     });
-</script>
+  </script>
 </body>
 </html>

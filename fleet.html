@@ -28,8 +28,9 @@
       theme: {
         extend: {
           colors: {
-            navy: { 950: '#0a0f1a', 900: '#0f172a', 800: '#1e293b', 700:'#334155' },
-            teal: { 500:'#14b8a6', 600:'#0d9488' }
+            navy: { 950: '#0a0f1a', 900: '#111827', 800: '#1e293b', 700:'#334155' },
+            teal: { 500:'#14b8a6', 600:'#0d9488' },
+            gold: { 500: '#C8B283', 600: '#B09668', 400: '#D9C89F' }
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
@@ -187,7 +188,7 @@
         <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Aircraft Available</span>
       </div>
       <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
-        Charter <span class="text-teal-500">Fleet</span>
+        Available <span class="text-teal-500">Aircraft Fleet</span>
       </h1>
       <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto fade-in">
         We charter aircraft from regional turboprops to widebody freighters through our operator network across Asia, the Middle East & Africa.
@@ -199,14 +200,15 @@
   <section class="py-24 bg-navy-950">
     <div class="max-w-7xl mx-auto px-6">
       
+      <!-- Passenger Jets -->
       <div class="text-center mb-12 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Available Aircraft</span>
-        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Passenger & Cargo Jets</h2>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Passenger Jets</h2>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
         
-        <!-- 1st Card: B737-400 PAX -->
+        <!-- B737-400 PAX -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden"><img src="hero-images/b737-400-hero.webp" alt="Boeing 737-400 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
           <div class="p-6">
@@ -221,7 +223,7 @@
           </div>
         </div>
         
-        <!-- 2nd Card: B737-800 PAX -->
+        <!-- B737-800 PAX -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden"><img src="hero-images/b737-800-hero.webp" alt="Boeing 737-800 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
           <div class="p-6">
@@ -236,7 +238,37 @@
           </div>
         </div>
         
-        <!-- 3rd Card: A330-200 PAX -->
+        <!-- A319 PAX -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/a319.webp" alt="Airbus A319 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A319</h3>
+            <p class="text-xs text-gray-500 mt-1">Narrowbody · VIP & Executive transport</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">150</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
+              <div><div class="text-sm font-medium text-white">6,700 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">828 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-a319.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- A320 PAX -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/a320.webp" alt="Airbus A320 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A320</h3>
+            <p class="text-xs text-gray-500 mt-1">Narrowbody · Short to medium-haul group charter</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">180</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
+              <div><div class="text-sm font-medium text-white">6,100 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">828 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-a320.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- A330-200 PAX -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden"><img src="images/a330-200-pax.webp" alt="Airbus A330-200 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
           <div class="p-6">
@@ -250,8 +282,153 @@
             <a href="aircraft-a330-200.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
           </div>
         </div>
+
+        <!-- A340-300 PAX -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/a340-300.webp" alt="Airbus A340-300 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A340-300</h3>
+            <p class="text-xs text-gray-500 mt-1">Widebody · Ultra long-haul group charter</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">335</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
+              <div><div class="text-sm font-medium text-white">13,700 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">880 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-a340-300.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- B747-400 PAX -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/b747-400.webp" alt="Boeing 747-400 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 747-400</h3>
+            <p class="text-xs text-gray-500 mt-1">Widebody · High-capacity long-haul flights</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">416</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
+              <div><div class="text-sm font-medium text-white">13,450 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">910 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-b747-400.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- B777-200 PAX -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/b777-200.webp" alt="Boeing 777-200 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 777-200</h3>
+            <p class="text-xs text-gray-500 mt-1">Widebody · Long-range group travel</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">314</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
+              <div><div class="text-sm font-medium text-white">9,700 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">905 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-b777-200.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- B777-300 PAX -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/b777-300.webp" alt="Boeing 777-300 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 777-300</h3>
+            <p class="text-xs text-gray-500 mt-1">Widebody · Extended long-range capacity</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">396</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
+              <div><div class="text-sm font-medium text-white">11,165 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">905 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-b777-300.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- B787-8 PAX -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/b787-8.webp" alt="Boeing 787-8 Dreamliner Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 787-8</h3>
+            <p class="text-xs text-gray-500 mt-1">Widebody · Ultra-efficient long-haul</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">242</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
+              <div><div class="text-sm font-medium text-white">13,530 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">903 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-b787-8.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- B787-9 PAX -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/b787-9.webp" alt="Boeing 787-9 Dreamliner Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 787-9</h3>
+            <p class="text-xs text-gray-500 mt-1">Widebody · Extended range group transport</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">296</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
+              <div><div class="text-sm font-medium text-white">14,140 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">903 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-b787-9.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Cargo & Freighter Aircraft -->
+      <div class="text-center mb-12 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Heavy-Lift & Express</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Cargo & Freighter Aircraft</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- 4th Card: B777F Cargo -->
+        <!-- AN-124 Cargo -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/an-124.webp" alt="Antonov AN-124 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Antonov AN-124</h3>
+            <p class="text-xs text-gray-500 mt-1">Heavy Freighter · Oversize & outsize cargo</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">120 t</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
+              <div><div class="text-sm font-medium text-white">4,800 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">800 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-an-124.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- IL-76 Cargo -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/il-76.webp" alt="Ilyushin IL-76 Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Ilyushin IL-76</h3>
+            <p class="text-xs text-gray-500 mt-1">Strategic Airlifter · Heavy machinery to austere runways</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">50 t</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
+              <div><div class="text-sm font-medium text-white">4,200 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">780 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-il-76.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- B747-200F Cargo -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b747-200f.webp" alt="Boeing 747-200 Freighter Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 747-200F</h3>
+            <p class="text-xs text-gray-500 mt-1">Heavy Freighter · Oversize, oil & gas, mining equipment</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">113 t</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
+              <div><div class="text-sm font-medium text-white">8,300 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">900 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-b747-200f.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- B777F Cargo -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b777f.webp" alt="Boeing 777 Freighter Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
           <div class="p-6">
@@ -265,8 +442,53 @@
             <a href="aircraft-b777.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
           </div>
         </div>
-        
-        <!-- 5th Card: B737-800BCF Cargo -->
+
+        <!-- B767-300F Cargo -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/b767-300f.webp" alt="Boeing 767-300F Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 767-300F</h3>
+            <p class="text-xs text-gray-500 mt-1">Widebody Freighter · Express cargo & e-commerce</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">52 t</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
+              <div><div class="text-sm font-medium text-white">6,025 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">851 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-b767-300f.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- A330-200F Cargo -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/a330-200f.webp" alt="Airbus A330-200F Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A330-200F</h3>
+            <p class="text-xs text-gray-500 mt-1">Versatile Freighter · Intercontinental cargo ranges</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">70 t</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
+              <div><div class="text-sm font-medium text-white">7,400 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">871 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-a330-200f.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- B757-200F Cargo -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden"><img src="images/b757-200f.webp" alt="Boeing 757-200F Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="p-6">
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 757-200F</h3>
+            <p class="text-xs text-gray-500 mt-1">Narrowbody Freighter · High-density short-haul routes</p>
+            <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">39 t</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
+              <div><div class="text-sm font-medium text-white">5,800 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">854 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+            </div>
+            <a href="aircraft-b757-200f.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- B737-800BCF Cargo -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b737-800f.webp" alt="Boeing 737-800BCF Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
           <div class="p-6">
@@ -280,19 +502,19 @@
             <a href="aircraft-b737-800bcf.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
           </div>
         </div>
-        
-        <!-- 6th Card: B747-200F Cargo -->
+
+        <!-- B737-400F Cargo -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-          <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b747-200f.webp" alt="Boeing 747-200 Freighter Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
+          <div class="relative h-48 overflow-hidden"><img src="images/b737-400f.webp" alt="Boeing 737-400F Charter" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
           <div class="p-6">
-            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 747-200F</h3>
-            <p class="text-xs text-gray-500 mt-1">Heavy Freighter · Oversize, oil & gas, mining equipment</p>
+            <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 737-400F</h3>
+            <p class="text-xs text-gray-500 mt-1">Narrowbody Freighter · Regional express delivery</p>
             <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
-              <div><div class="text-sm font-medium text-white">113 t</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
-              <div><div class="text-sm font-medium text-white">8,300 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
-              <div><div class="text-sm font-medium text-white">900 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
+              <div><div class="text-sm font-medium text-white">20 t</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
+              <div><div class="text-sm font-medium text-white">4,000 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">840 km/h</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Cruise</div></div>
             </div>
-            <a href="aircraft-b747-200f.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
+            <a href="aircraft-b737-400f.html" class="mt-5 inline-flex items-center text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">View Details <iconify-icon icon="lucide:arrow-right" class="ml-1"></iconify-icon></a>
           </div>
         </div>
 
@@ -381,8 +603,34 @@
     </div>
   </footer>
 
-  <!-- Scripts (Cleaned: No duplicate blocks) -->
+  <!-- WhatsApp Floating Chat Widget -->
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+      <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+          <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+              <div>
+                  <h3 class="font-bold text-lg">Chat with us</h3>
+                  <p class="text-xs opacity-90">Typically replies instantly</p>
+              </div>
+              <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
+                  <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+              </button>
+          </div>
+          <div class="p-4 bg-navy-900">
+              <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+              <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+              <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+                  <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+              </a>
+          </div>
+      </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
+      <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
+
+  <!-- SINGLE CLEAN SCRIPT BLOCK (No Duplicates, No Broken AJAX) -->
   <script>
+    // Mobile Menu Logic
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     let isMenuOpen = false;
@@ -405,13 +653,13 @@
         }
     });
 
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-    mobileLinks.forEach(link => {
+    document.querySelectorAll('.mobile-link').forEach(link => {
         link.addEventListener('click', () => {
             closeMenu();
         });
     });
 
+    // Intersection Observer for Fade-In
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -421,34 +669,11 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    
+    // Dynamic Year
     document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
 
-<!-- WhatsApp Floating Chat Widget -->
-<div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
-    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
-        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
-            <div>
-                <h3 class="font-bold text-lg">Chat with us</h3>
-                <p class="text-xs opacity-90">Typically replies instantly</p>
-            </div>
-            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
-                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-            </button>
-        </div>
-        <div class="p-4 bg-navy-900">
-            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
-            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
-            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
-                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
-            </a>
-        </div>
-    </div>
-</div>
-<button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
-    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
-</button>
-<script>
+    // WhatsApp Widget Logic
     const waWidget = document.getElementById('wa-widget');
     const waToggle = document.getElementById('wa-toggle');
     const waClose = document.getElementById('wa-close');
@@ -467,6 +692,6 @@
         const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
         waSend.href = 'https://wa.me/923205487700?text=' + msg;
     });
-</script>
+  </script>
 </body>
 </html>
