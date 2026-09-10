@@ -19,7 +19,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -28,8 +28,9 @@
       theme: {
         extend: {
           colors: {
-            navy: { 950: '#0a0f1a', 900: '#0f172a', 800: '#1e293b', 700: '#334155' },
-            teal: { 500: '#14b8a6', 600: '#0d9488' }
+            navy: { 950: '#0a0f1a', 900: '#111827', 800: '#1e293b', 700: '#334155' },
+            teal: { 500: '#14b8a6', 600: '#0d9488' },
+            gold: { 500: '#C8B283', 600: '#B09668', 400: '#D9C89F' }
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
@@ -103,7 +104,7 @@
     .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
   </style>
   <!-- Zero Blur Rule -->
-  <style>.hero-img-blur { filter: none !important; }</style>
+  <style>.hero-img-blur { filter: none !important; opacity: 0.8 !important; }</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
 <script>
@@ -177,7 +178,7 @@
               <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
           </ul>
 
-          <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]">
+          <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]" aria-label="Open mobile menu">
               <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
           </button>
       </nav>
@@ -235,7 +236,7 @@
           <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-2 text-white">Featured Articles</h2>
         </div>
         <div class="hidden md:block">
-          <span class="text-sm font-medium text-gray-400">Total Posts: <span class="text-teal-500 font-bold text-base">11</span></span>
+          <span class="text-sm font-medium text-gray-400">Total Posts: <span class="text-teal-500 font-bold text-base">12</span></span>
         </div>
       </div>
 
@@ -244,13 +245,33 @@
         <!-- Blog Post 1 (NEWEST) -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
+            <img src="hero-images/blog-gulf-india-turkey.webp" alt="Private Jet parked on tarmac at sunset" class="w-full h-full object-cover blog-img" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div>
+            <span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Industry</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 10, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 8 min read</span>
+            </div>
+            <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">Where Is Private Aviation Growing Fastest? Gulf, India & Turkey (2026)</h3>
+            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+              Private aviation is surging in Saudi Arabia, India, and Turkey. Explore 2026 traffic data and discover the best routes for empty leg flights.
+            </p>
+            <a href="gulf-india-turkey-business-aviation.html" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read Article <iconify-icon icon="lucide:arrow-right" class="text-sm"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
+          <div class="relative h-52 overflow-hidden">
             <img src="hero-images/bombardier_global_7500.webp" alt="Bombardier Global 7500 Private Jet" class="w-full h-full object-cover blog-img" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div>
             <span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-navy-950/70 px-3 py-1 backdrop-blur-sm">VIP Jets</span>
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Oct 02, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 06, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 6 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">Empty Leg Flights Explained: How They Work & Real Cost Saving</h3>
@@ -261,7 +282,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 2 -->
+        <!-- Blog Post 3 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-africa.webp" alt="Cargo Aircraft Charter Guide" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -270,7 +291,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 18, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 02, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 10 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">Cargo Aircraft Charter Guide: Asia, Africa & Middle East</h3>
@@ -281,7 +302,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 3 -->
+        <!-- Blog Post 4 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/urgentcargo-hero.webp" alt="Ground crew loading cargo aircraft" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -290,7 +311,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 12, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 29, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 8 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">How Cargo Is Loaded on Aircraft: Full Guide</h3>
@@ -301,7 +322,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 4 -->
+        <!-- Blog Post 5 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/urgentcargo-hero.webp" alt="Medical Evacuation Flight" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -310,7 +331,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 05, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 25, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 7 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">International Medical Evacuation Guide</h3>
@@ -321,7 +342,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 5 -->
+        <!-- Blog Post 6 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/hajj-charter-feature.webp" alt="Hajj pilgrims boarding a private charter flight" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -330,7 +351,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 28, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 21, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 5 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">Navigating the Complexities of Hajj Charter Flights</h3>
@@ -341,7 +362,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 6 -->
+        <!-- Blog Post 7 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/lithium-battery-cargo.webp" alt="Lithium Battery DGR Cargo Charter" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -350,7 +371,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 20, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 17, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 7 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">The Ultimate Guide to Shipping Lithium Batteries by Air</h3>
@@ -361,7 +382,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 7 -->
+        <!-- Blog Post 8 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/acmi-wet-lease.webp" alt="ACMI Wet Lease Aircraft" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -370,7 +391,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 10, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 13, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 6 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">Why ACMI Wet Leasing is the Best Solution for Seasonal Demand</h3>
@@ -381,7 +402,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 8 -->
+        <!-- Blog Post 9 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/mining-africa-airstrip.webp" alt="Mining Cargo Charter in Africa" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -390,7 +411,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 02, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 09, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 8 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">Top 5 Remote Airstrips in Africa for Mining Logistics</h3>
@@ -401,7 +422,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 9 -->
+        <!-- Blog Post 10 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/charter-services-section-cargo.webp" alt="Pharma Cold Chain Cargo" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -410,7 +431,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Jul 25, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 05, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 6 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">Cold Chain Pharma Logistics: Active vs Passive Cooling</h3>
@@ -421,7 +442,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 10 -->
+        <!-- Blog Post 11 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-africa.webp" alt="The Rise of Cargo Charter in Africa" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -430,7 +451,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Jul 15, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Aug 01, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 5 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">The Rise of Cargo Charter in Africa</h3>
@@ -441,7 +462,7 @@
           </div>
         </div>
 
-        <!-- Blog Post 11 -->
+        <!-- Blog Post 12 -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/acmi-vs-dry-lease.webp" alt="ACMI vs Dry Lease" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -450,7 +471,7 @@
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Jul 05, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Jul 28, 2026</span>
               <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 4 min read</span>
             </div>
             <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">ACMI vs Dry Lease: Which is Right for Your Airline?</h3>
