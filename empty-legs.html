@@ -29,7 +29,7 @@
       theme: {
         extend: {
           colors: {
-            navy: { 950:'#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' },
+            navy: { 950:'#0a0f1a', 900:'#111827', 800:'#1e293b', 700:'#334155' },
             teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
             gold: { 500:'#C8B283', 600:'#B09668', 400:'#D9C89F' }
           },
@@ -77,6 +77,10 @@
     
     /* Global Dark Mode Fix for Date Inputs */
     input[type="date"] { color-scheme: dark; }
+
+    /* Fade-In Observer */
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
   </style>
   <style>.hero-img-blur { filter: none !important; opacity: 0.9 !important; }</style>
 <!-- Google tag (gtag.js) -->
@@ -129,7 +133,7 @@
               <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
               
               <li class="relative dropdown">
-                  <button class="text-[#C8B283] transition-colors text-sm flex items-center gap-1 font-semibold">
+                  <button class="text-[#C8B283] hover:text-[#D9C89F] transition-colors text-sm flex items-center gap-1 font-semibold">
                       Private Jets 
                       <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
                   </button>
@@ -142,6 +146,18 @@
                       <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
                           <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
                           Empty Leg Flights
+                      </a>
+                      <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                          <iconify-icon icon="ph:globe-hemisphere-east-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                          Empty Legs Asia
+                      </a>
+                      <a href="empty-legs/middle-east.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                          <iconify-icon icon="ph:globe-hemisphere-west-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                          Empty Legs Middle East
+                      </a>
+                      <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                          <iconify-icon icon="ph:globe-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                          Empty Legs Africa
                       </a>
                       <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
                           <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
@@ -171,10 +187,13 @@
               <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
               
               <li class="w-full text-center mt-4">
-                  <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
+                  <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Private Jets</span>
                   <div class="flex flex-col space-y-4 mt-4">
                       <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
                       <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-base mobile-link">- Empty Legs Asia</a>
+                      <a href="empty-legs/middle-east.html" class="hover:text-[#C8B283] text-base mobile-link">- Empty Legs Middle East</a>
+                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-base mobile-link">- Empty Legs Africa</a>
                       <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
                       <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
                   </div>
@@ -188,7 +207,7 @@
   <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="hero-images/empty-legs-hero.webp" alt="Private Jet Empty Leg Flight" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
+      <img src="hero-images/empty-legs-hero.webp" alt="Private Jet Empty Leg Flight" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
       <div class="absolute inset-0 hero-bg"></div>
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
@@ -241,50 +260,15 @@
             <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
             <iconify-icon icon="ph:bell-ringing-duotone" class="text-[#C8B283] text-4xl mb-5"></iconify-icon>
             <h3 class="text-2xl md:text-3xl font-display text-white mb-4">Don't See Your Route?</h3>
-            <p class="text-sm font-light text-gray-400 leading-relaxed max-w-xl mx-auto">
-                We source empty legs daily. Register your preferred routes below to be notified instantly when a match becomes available.
+            <p class="text-sm font-light text-gray-400 leading-relaxed max-w-xl mx-auto mb-8">
+                We source empty legs daily. Register your preferred routes on our secure portal to be notified instantly when a match becomes available.
             </p>
+            <a href="empty-leg-alerts.html" class="inline-flex items-center justify-center bg-[#C8B283] text-black text-sm font-bold tracking-wide px-8 py-4 hover:bg-[#D9C89F] transition-all duration-150 gold-glow">
+                REGISTER FOR EMPTY LEG ALERTS <iconify-icon icon="lucide:arrow-right" class="ml-2"></iconify-icon>
+            </a>
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- ===== EMPTY LEG ALERT FORM ===== -->
-  <section id="alert-form" class="py-24 bg-navy-900">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid lg:grid-cols-5 gap-12">
-        <div class="lg:col-span-2 fade-in">
-          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Proprietary Database</span>
-          <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Register for<br>Empty Leg Alerts</h2>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-6">Tell us your frequent routes. When an empty leg matches your criteria, our concierge team contacts you directly before the flight is listed publicly.</p>
-          <div class="mt-10 space-y-6">
-            <div class="flex items-center gap-4"><div class="w-10 h-10 border border-[#C8B283]/40 flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:bell" class="text-[#C8B283] text-lg"></iconify-icon></div><div><div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">Instant Alerts</div><div class="text-sm text-white mt-0.5">Direct to WhatsApp & Email</div></div></div>
-            <div class="flex items-center gap-4"><div class="w-10 h-10 border border-[#C8B283]/40 flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:shield" class="text-[#C8B283] text-lg"></iconify-icon></div><div><div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">No Spam</div><div class="text-sm text-white mt-0.5">Only contacted for matching routes</div></div></div>
-          </div>
-        </div>
-        <div class="lg:col-span-3 fade-in">
-          <form id="emptyLegAlertForm" name="empty-leg-alert" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="border border-[#C8B283]/30 bg-navy-800 p-8 space-y-6">
-            <input type="hidden" name="form-name" value="empty-leg-alert" />
-            <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-              <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Full Name *</label><input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-[#C8B283] focus:outline-none transition-colors duration-150" /></div>
-              <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Phone / WhatsApp *</label><input type="tel" name="phone" required placeholder="+92 xxx xxx xxxx" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-[#C8B283] focus:outline-none transition-colors duration-150" /></div>
-            </div>
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Email *</label><input type="email" name="email" required placeholder="your@email.com" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-[#C8B283] focus:outline-none transition-colors duration-150" /></div>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-              <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Frequent Departure City *</label><input type="text" name="depCity" required placeholder="e.g. Dubai" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-[#C8B283] focus:outline-none transition-colors duration-150" /></div>
-              <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Frequent Destination City *</label><input type="text" name="destCity" required placeholder="e.g. London" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-[#C8B283] focus:outline-none transition-colors duration-150" /></div>
-            </div>
-            
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Travel Frequency</label><select name="frequency" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-[#C8B283] focus:outline-none transition-colors duration-150"><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="quarterly">Quarterly / Occasionally</option></select></div>
-            
-            <button type="submit" class="w-full bg-[#C8B283] text-black text-sm font-semibold tracking-wide py-4 hover:bg-[#B09668] transition-all duration-150 gold-glow">REGISTER FOR ALERTS</button>
-          </form>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -317,12 +301,18 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+                <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
                 <ul class="space-y-3 text-gray-400 text-sm">
                     <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
                     <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
                     <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
                     <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
+                </ul>
+                <h4 class="text-teal-500 font-semibold mt-6 mb-4 uppercase text-sm tracking-wider">Regional Empty Legs</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+                    <li><a href="empty-legs/middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+                    <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Africa</a></li>
                 </ul>
             </div>
             <div>

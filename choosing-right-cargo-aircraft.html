@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cargo Aircraft Guide: Choosing the Right Charter Fleet</title>
+  <meta name="description" content="From feeder turboprops to outsize freighters — a practical guide to matching your cargo to the right charter aircraft, plus a 737 vs A321 comparison.">
+  <link rel="canonical" href="https://www.skylinks.asia/choosing-right-cargo-aircraft.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Cargo Aircraft Guide: Choosing the Right Charter Fleet">
+  <meta property="og:description" content="From feeder turboprops to outsize freighters — a practical guide to matching your cargo to the right charter aircraft.">
+  <meta property="og:url" content="https://www.skylinks.asia/choosing-right-cargo-aircraft.html">
+  <meta property="og:image" content="https://www.skylinks.asia/hero-images/cargo-hero-images/blog-cargo-aircraft-guide.webp">
+  <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/cargo-hero-images/blog-cargo-aircraft-guide.webp">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How much does it cost to charter a cargo plane?", "acceptedAnswer": { "@type": "Answer", "text": "Cost depends on aircraft size, distance, payload weight, and route availability. Short-haul regional turboprops typically run in the low thousands to mid-teens of thousands of dollars per sector; single-aisle narrow-body jets run into the tens of thousands; heavy widebody freighters on long-haul routes can run into the hundreds of thousands." } },
+      { "@type": "Question", "name": "What is the difference between scheduled air freight and a dedicated cargo charter?", "acceptedAnswer": { "@type": "Answer", "text": "Scheduled air freight moves goods on pre-set airline timetables and routes. A dedicated charter reserves the whole aircraft for your shipment, letting you set the departure schedule, choose a direct routing, and bypass standard commercial congestion." } },
+      { "@type": "Question", "name": "How fast can a cargo charter be dispatched for an AOG or emergency shipment?", "acceptedAnswer": { "@type": "Answer", "text": "For time-critical AOG, automotive, or humanitarian shipments, rapid-dispatch charters can often be airborne within a few hours of contract confirmation, depending on aircraft positioning, landing permits, and slot approvals." } },
+      { "@type": "Question", "name": "What factors determine an air cargo charter quote?", "acceptedAnswer": { "@type": "Answer", "text": "Primary cost drivers include the aircraft's hourly or sector rate, fuel consumption, distance, any positioning (ferry) flight needed, landing fees, overflight permits, and specialized ground handling for dangerous goods, cold chain, or heavy-lift equipment." } },
+      { "@type": "Question", "name": "When should I charter a regional turboprop instead of a narrow-body jet?", "acceptedAnswer": { "@type": "Answer", "text": "Turboprops suit short-haul routes under roughly 1,500 km, lighter payloads under about 8 tonnes, and short or unpaved runways. Narrow-body jets suit higher payloads of roughly 15 to 28 tonnes and medium-range cross-border trade." } },
+      { "@type": "Question", "name": "What's the main operational difference between a Boeing 737-800BCF and an Airbus A321P2F freighter?", "acceptedAnswer": { "@type": "Answer", "text": "Both are single-aisle freighters with very similar range at full payload. The A321P2F offers roughly 45% more usable volume and a fully containerized lower hold, making it stronger for high-volume, lightweight e-commerce freight. The 737-800BCF carries a somewhat denser payload for its volume and is more widely available across regional operator fleets." } },
+      { "@type": "Question", "name": "Why use an air cargo charter broker instead of booking directly with an airline?", "acceptedAnswer": { "@type": "Answer", "text": "An independent broker has access to aircraft across hundreds of operators rather than one airline's fleet, sourcing the most cost-effective option for a specific cargo profile while managing permits, ground handling, and monitoring." } },
+      { "@type": "Question", "name": "Can charter handle dangerous goods, temperature-sensitive, or oversized cargo?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Charter can be arranged for IATA-compliant dangerous goods (DG/HAZMAT), temperature-controlled pharmaceutical cold-chain cargo, heavy industrial machinery, and outsize aerospace equipment, with the appropriate regulatory clearances and handling protocols." } }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#0a0f1a', 900: '#111827', 800: '#1e293b', 700: '#334155' },
+            teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
+            gold: { 500: '#C8B283', 600: '#B09668', 400: '#D9C89F' }
+          },
+          fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0f1a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
+    html { scroll-behavior: smooth; }
+    .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
+    .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
+    input[type="date"] { color-scheme: dark; }
+    
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    #mobile-menu { transition: transform 0.3s ease-in-out; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+
+    .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: #cbd5e1; font-weight: 300; }
+    .article-body h2 { font-size: 1.875rem; margin-top: 3rem; margin-bottom: 1.5rem; color: white; font-family: 'Playfair Display', serif; }
+    .article-body h3 { font-size: 1.25rem; margin-top: 2rem; margin-bottom: 1rem; color: #2dd4bf; font-weight: 600; }
+    .article-body ul { margin-bottom: 1.5rem; list-style-type: disc; padding-left: 1.5rem; }
+    .article-body li { margin-bottom: 0.5rem; color: #cbd5e1; font-weight: 300; }
+    .article-body a { color: #14b8a6; text-decoration: underline; transition: color 0.2s; }
+    .article-body a:hover { color: #5eead4; }
+    .article-body strong { color: white; font-weight: 600; }
+    .article-body table { width: 100%; margin: 2rem 0; border-collapse: collapse; }
+    .article-body th, .article-body td { border: 1px solid #334155; padding: 0.75rem; text-align: left; font-size: 0.875rem; color: #cbd5e1; }
+    .article-body th { background-color: #1e293b; color: white; font-weight: 600; }
+
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }
+    .faq-item.open .faq-answer { max-height: 400px; padding-top: 16px; padding-bottom: 16px; }
+    .faq-item .faq-chevron { transition: transform 0.3s ease; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+  </style>
+  <style>.hero-img-blur { filter: none !important; opacity: 0.8 !important; }</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4KQLDXBT24');
+</script>
+</head>
+<body class="bg-navy-950 text-gray-300 overflow-x-hidden">
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
+      <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+          <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors"><iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon><span>WhatsApp: +92 320 5487700</span></a>
+              <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors"><iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon><span>charter@skylinks.asia</span></a>
+          </div>
+      </div>
+      <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+          <a href="index.html" class="flex items-center gap-3">
+              <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center"><iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon></div>
+              <div class="flex flex-col leading-none"><span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span><span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span></div>
+          </a>
+          <ul class="hidden lg:flex items-center space-x-8">
+              <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+              <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+              <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+              <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+              <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
+              <li class="relative dropdown">
+                  <button class="text-[#C8B283] hover:text-[#D9C89F] transition-colors text-sm flex items-center gap-1 font-semibold">Private Jets <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon></button>
+                  <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
+                      <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
+                      <a href="private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors"><iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>Private Jet Charter</a>
+                      <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors"><iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>Empty Leg Flights</a>
+                      <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors"><iconify-icon icon="ph:globe-hemisphere-east-duotone" class="text-[#C8B283] text-lg"></iconify-icon>Empty Legs Asia</a>
+                      <a href="empty-legs/middle-east.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors"><iconify-icon icon="ph:globe-hemisphere-west-duotone" class="text-[#C8B283] text-lg"></iconify-icon>Empty Legs Middle East</a>
+                      <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors"><iconify-icon icon="ph:globe-duotone" class="text-[#C8B283] text-lg"></iconify-icon>Empty Legs Africa</a>
+                      <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors"><iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>Private Jet Fleet</a>
+                      <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors"><iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>Private Jet Quote</a>
+                  </div>
+              </li>
+              <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
+          </ul>
+          <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]"><iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon></button>
+      </nav>
+      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
+          <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
+              <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+              <li><a href="fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
+              <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+              <li><a href="about.html" class="hover:text-teal-500 mobile-link">About</a></li>
+              <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
+              <li class="w-full text-center mt-4">
+                  <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Private Jets</span>
+                  <div class="flex flex-col space-y-4 mt-4">
+                      <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-base mobile-link">- Empty Legs Asia</a>
+                      <a href="empty-legs/middle-east.html" class="hover:text-[#C8B283] text-base mobile-link">- Empty Legs Middle East</a>
+                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-base mobile-link">- Empty Legs Africa</a>
+                      <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+                      <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
+                  </div>
+              </li>
+              <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
+          </ul>
+      </div>
+  </header>
+
+  <section class="relative min-h-[70vh] flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img src="hero-images/cargo-hero-images/blog-cargo-aircraft-guide.webp" alt="Fleet of cargo aircraft from turboprop to widebody freighter lined up on the tarmac" class="w-full h-full object-cover hero-img-blur" width="1600" height="900" fetchpriority="high" />
+      <div class="absolute inset-0 hero-bg"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 w-full">
+      <div class="fade-in">
+        <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Aviation Insights · Cargo Logistics</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+        Choosing the Right Cargo Aircraft<br>
+        <span class="gradient-text">for Your Regional and Global Freight</span>
+      </h1>
+      <div class="flex items-center justify-center gap-4 text-xs uppercase tracking-wider text-gray-500 mt-8 fade-in">
+          <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 12, 2026</span>
+          <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 12 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-navy-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="article-body">
+        <p>Quick answer: The right cargo aircraft depends on three things — how much your shipment weighs, how much space it takes up, and where it needs to land. Feeder turboprops handle remote and unpaved airstrips under roughly 8 tonnes; narrow-body freighters like the Boeing 737-800BCF and Airbus A321P2F cover regional and cross-border routes up to about 28 tonnes; widebody freighters carry heavy or high-volume freight on intercontinental trunk routes; and outsize aircraft like the Antonov An-124 handle cargo too large or heavy for anything else.</p>
+        <p>Choosing the right aircraft for a <a href="urgent-cargo.html">cargo charter</a> comes down to balancing three variables: how much your shipment weighs, how much physical space it takes up, and how urgently it needs to move. Get that match wrong and you either pay for capacity you don't use or find out mid-negotiation that your preferred aircraft can't actually reach the airfield you need. This guide walks through Skylinks Asia's charter fleet by category, then takes a closer look at the two aircraft clients ask about most: the Boeing 737-800BCF and the Airbus A321P2F.</p>
+        
+        <h2>Our Fleet, by Category</h2>
+        <p><strong>Regional feeder turboprops (roughly 600 kg–8,000 kg payload):</strong> Cessna 208B Super Cargomaster, Pilatus PC-12, ATR 42/72, Saab 340, Dornier 228, Shorts 360. These aircraft exist for one reason: reaching places jets can't. Short or unpaved runways, island chains, and remote strips are all within reach thanks to short takeoff and landing (STOL) capability. They're also the fastest option to mobilize for urgent, lower-volume shipments — AOG aircraft parts, emergency medical supplies, or high-value components that can't wait for the next scheduled connection.</p>
+        <p><strong>Standard and high-volume narrow-body jets (roughly 10–28 tonnes payload):</strong> Boeing 737-400F/800BCF, Airbus A320P2F/A321P2F, BAe 146-200F. This is the workhorse category for high-frequency express and regional cross-border trade — the step up once your cargo outgrows turboprop capacity but doesn't need a widebody's volume.</p>
+        <p><strong>Mid-sized and heavy widebody freighters (roughly 35–140+ tonnes payload):</strong> Boeing 757-200F, 767-300SF, Airbus A330P2F, Boeing 777F, 747-8F. These cover intercontinental trunk routes, heavy industrial equipment, and cold-chain freight that needs both volume and range.</p>
+        <p><strong>Outsize and special-mission transporters:</strong> Antonov An-124, Airbus BelugaXL. Reserved for aerospace components, energy-sector equipment, and <a href="humanitarian-cargo.html">humanitarian relief cargo</a> too large or heavy for any standard freighter. Worth noting: sourcing an An-124 today generally means the Ukrainian-operated Antonov Airlines fleet — most Russian-operated examples have been grounded or stranded by sanctions since 2022, so availability and lead time can vary more than with other aircraft types.</p>
+        <p>Across all four categories, we lean heavily on modern passenger-to-freighter (P2F/BCF) conversions — aircraft that combine single-aisle fuel efficiency with modernized main-deck cargo doors and reinforced floors, giving flexible capacity on regional trade lanes without the cost of a purpose-built freighter.</p>
+
+        <h2>Regional Feeder Charters: Connecting Short-Haul and Remote Corridors</h2>
+        <p>Standard cargo jets face real physical and operational limits at smaller regional airports — runway length, surface type, and ground handling infrastructure all narrow the field. Skylinks Asia bridges that gap between major hubs and secondary destinations across Asia, the Middle East, and Africa with a versatile feeder fleet, typically flowing freight from a remote airstrip or island airport into a regional hub, then onward by narrow-body jet to its final destination.</p>
+        
+        <div class="my-8 fade-in">
+            <img src="hero-images/cargo-hero-images/blog-cargo-aircraft-guide-body.webp" alt="Regional turboprop cargo aircraft loading freight on a remote runway" class="w-full h-auto rounded-lg border border-navy-700" width="800" height="450" loading="lazy" />
+        </div>
+
+        <h3>Why clients choose feeder charter:</h3>
+        <ul>
+          <li><strong>Access to restricted airfields.</strong> High-wing turboprops with STOL capability reach short, narrow, or unpaved runways that are simply off-limits to jet aircraft.</li>
+          <li><strong>Rapid "go-now" response.</strong> For urgent AOG components, emergency medical supplies, or time-critical automotive parts, feeder charters solve delays that a scheduled network can't.</li>
+          <li><strong>Hub-and-spoke efficiency.</strong> Feeder aircraft collect freight from manufacturing nodes or island chains and feed it directly into primary international sorting gateways.</li>
+        </ul>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Aircraft</th>
+              <th>Max Payload</th>
+              <th>Typical Range</th>
+              <th>Cargo Volume</th>
+              <th>Notable Feature</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Cessna 208B Super Cargomaster</td><td>~1.6–1.8 t</td><td>~800 nm</td><td>~330 cu ft</td><td>Single-engine; remote unpaved strips</td></tr>
+            <tr><td>Pilatus PC-12 NG</td><td>~1.2–1.3 t</td><td>~1,700 nm</td><td>~330 cu ft</td><td>High-speed; wide rear cargo door</td></tr>
+            <tr><td>Dornier 228</td><td>~1.9–2.0 t</td><td>~700 nm</td><td>~270 cu ft</td><td>STOL design for rugged runways</td></tr>
+            <tr><td>Saab 340AQC</td><td>~3.8 t</td><td>~1,000 nm</td><td>~1,100 cu ft</td><td>Reliable twin-turboprop feeder</td></tr>
+            <tr><td>Shorts 360</td><td>~3.2 t</td><td>~800 nm</td><td>~1,100 cu ft</td><td>Boxy hold maximizing volumetric load</td></tr>
+            <tr><td>ATR 42-300F / 72-500F</td><td>~5.4–8.2 t</td><td>~700–840 nm</td><td>Up to ~1,800 cu ft</td><td>Large cargo doors for palletized freight</td></tr>
+          </tbody>
+        </table>
+        <p><em>Figures above are typical published values and vary by specific airframe, configuration, and operator — we confirm exact numbers against your cargo profile before quoting.</em></p>
+
+        <h2>Single-Aisle and Narrow-Body Freighters</h2>
+        <p>Once cargo volumes exceed turboprop capacity, Skylinks Asia charters high-performance narrow-body freighters for intra-regional and cross-border trade:</p>
+        <ul>
+          <li><strong>ATR 72-500F/600F</strong> — up to ~8.2 tonnes payload, ideal for high-volume regional and island connectivity.</li>
+          <li><strong>BAe 146-200F</strong> — up to ~10 tonnes payload; four quiet jet engines allow late-night operations at noise-restricted urban airports.</li>
+          <li><strong>Boeing 737-800BCF</strong> — up to ~23.9 tonnes payload, roughly 3,700 km range at full payload; a proven, widely available workhorse for regional cross-border freight.</li>
+          <li><strong>Airbus A321P2F</strong> — up to ~28 tonnes payload, roughly 3,800 km range at full payload; the current benchmark for high-volume, containerized narrow-body freight.</li>
+          <li><strong>Boeing 757-200F</strong> — roughly 39–40 tonnes payload; strong hot-and-high airfield performance for heavier narrow-body loads.</li>
+          <li><strong>Boeing 767-300ER-SF / Airbus A330P2F</strong> — roughly 50–65+ tonnes payload with 24 main-deck pallet positions; the practical step up to heavy regional and intercontinental freight.</li>
+        </ul>
+
+        <div class="my-8 grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+            <div class="p-4 bg-navy-900 border border-navy-700 rounded-lg">
+                <img src="hero-images/cargo-hero-images/blog-cargo-aircraft-guide-737-400.webp" alt="Boeing 737-400F narrowbody freighter being loaded" class="w-full h-auto rounded-md mb-3" width="600" height="400" loading="lazy" />
+                <h4 class="text-white font-semibold text-sm text-center">Boeing 737-400F</h4>
+                <p class="text-gray-500 text-xs text-center mt-1">Workhorse narrow-body freighter</p>
+            </div>
+            <div class="p-4 bg-navy-900 border border-navy-700 rounded-lg">
+                <img src="hero-images/cargo-hero-images/blog-cargo-aircraft-guide-757.webp" alt="Boeing 757-200F cargo aircraft on tarmac" class="w-full h-auto rounded-md mb-3" width="600" height="400" loading="lazy" />
+                <h4 class="text-white font-semibold text-sm text-center">Boeing 757-200F</h4>
+                <p class="text-gray-500 text-xs text-center mt-1">Heavy narrow-body capability</p>
+            </div>
+        </div>
+
+        <h2>Head-to-Head: Boeing 737-800BCF vs. Airbus A321P2F</h2>
+        <p>These two aircraft dominate single-aisle freighter conversations, and clients often assume one has a clear edge over the other. The honest answer: it's closer than it looks, and the decision usually comes down to what your freight actually needs.</p>
+
+        <div class="my-8 fade-in">
+            <img src="hero-images/cargo-hero-images/blog-cargo-aircraft-guide-737-321.webp" alt="Comparison between Boeing 737-800BCF and Airbus A321P2F freighters" class="w-full h-auto rounded-lg border border-navy-700" width="800" height="450" loading="lazy" />
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Specification</th>
+              <th>Boeing 737-800BCF</th>
+              <th>Airbus A321P2F</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Max structural payload</td><td>~23.9 tonnes</td><td>~28 tonnes</td></tr>
+            <tr><td>Containerized volume</td><td>~141 m³</td><td>~208 m³</td></tr>
+            <tr><td>Main-deck positions</td><td>11–12 pallets</td><td>14 pallets</td></tr>
+            <tr><td>Lower deck</td><td>Loose/bulk loading</td><td>Fully containerized (LD3-45 ULDs)</td></tr>
+            <tr><td>Range at full payload</td><td>~2,000 nm / ~3,700 km</td><td>~2,050 nm / ~3,800 km</td></tr>
+            <tr><td>Cruise speed</td><td>~840 km/h</td><td>~840 km/h</td></tr>
+            <tr><td>Best suited for</td><td>Denser general cargo, wide operator availability</td><td>High-volume, lightweight e-commerce and containerized freight</td></tr>
+          </tbody>
+        </table>
+
+        <p>A correction worth flagging clearly: range is not the differentiator between these two types — at full structural payload, both aircraft cover almost exactly the same distance, with the A321P2F actually holding a very slight edge. The real trade-off is volume versus payload density. The A321P2F offers roughly 45% more usable cargo volume and a fully containerized lower hold, making it the stronger choice for high-volume, lightweight freight like e-commerce parcels. The 737-800BCF carries a somewhat heavier structural payload relative to its volume and remains the more widely available airframe in most regional markets, which can matter more than a spec-sheet edge when you need an aircraft on short notice.</p>
+
+        <h2>Why Fly With Skylinks Asia</h2>
+        <p>As an independent air cargo charter broker, Skylinks Asia provides impartial, expert guidance to secure the most cost-effective aircraft for your shipment — with a 24/7 flight desk, full-spectrum sourcing from light turboprops to heavy widebody freighters, and specialized handling for <a href="dangerous-goods.html">dangerous goods</a>, AOG emergencies, <a href="cold-chain-pharma.html">cold-chain pharmaceuticals</a>, and remote-destination access.</p>
+        <p>Ready to dispatch your cargo? Contact the Skylinks Asia 24/7 Charter Desk for instant aircraft availability, route feasibility assessments, and a competitive quote. WhatsApp: <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer">+92 320 5487700</a>.</p>
+      </div>
+
+      <div class="mt-12 bg-navy-800 border border-teal-500/30 rounded-2xl p-8 md:p-12 text-center fade-in">
+          <h3 class="text-2xl md:text-3xl font-display font-bold text-white mb-4">Need the Right Aircraft for Your Cargo?</h3>
+          <p class="text-gray-400 mb-8 max-w-2xl mx-auto text-sm md:text-base">Our 24/7 charter desk can source the exact freighter you need — from regional turboprops to heavy widebody jets — and have it airborne in hours.</p>
+          <a href="contact.html#contact-form" class="inline-flex items-center justify-center bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 shadow-lg shadow-teal-500/20 text-sm md:text-base no-underline">
+              Get a Cargo Charter Quote
+              <iconify-icon icon="lucide:arrow-right" class="ml-2"></iconify-icon>
+          </a>
+      </div>
+
+      <div class="mt-12">
+          <h3 class="text-2xl font-display tracking-tight text-white mb-8">Frequently Asked Questions</h3>
+          <div class="space-y-4">
+              <div class="faq-item border border-navy-700 bg-navy-800 fade-in">
+                  <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left"><span class="text-sm font-medium pr-4 text-white">How much does it cost to charter a cargo plane?</span><iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon></button>
+                  <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">Cost depends on aircraft size, distance, payload weight, and route availability. Short-haul regional turboprops typically run in the low thousands to mid-teens of thousands of dollars per sector; single-aisle narrow-body jets run into the tens of thousands; heavy widebody freighters on long-haul routes can run into the hundreds of thousands. Contact Skylinks Asia for a live quote.</div>
+              </div>
+              <div class="faq-item border border-navy-700 bg-navy-800 fade-in">
+                  <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left"><span class="text-sm font-medium pr-4 text-white">What is the difference between scheduled air freight and a dedicated cargo charter?</span><iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon></button>
+                  <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">Scheduled air freight moves goods on pre-set airline timetables and routes, which can mean transit delays or connection bottlenecks. A dedicated charter reserves the whole aircraft for your shipment, letting you set the departure schedule, choose a direct routing, and bypass standard commercial congestion.</div>
+              </div>
+              <div class="faq-item border border-navy-700 bg-navy-800 fade-in">
+                  <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left"><span class="text-sm font-medium pr-4 text-white">How fast can a cargo charter be dispatched for an AOG or emergency shipment?</span><iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon></button>
+                  <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">For time-critical AOG, automotive, or humanitarian shipments, rapid-dispatch charters can often be airborne within a few hours of contract confirmation, depending on aircraft positioning, landing permits, and slot approvals.</div>
+              </div>
+              <div class="faq-item border border-navy-700 bg-navy-800 fade-in">
+                  <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left"><span class="text-sm font-medium pr-4 text-white">When should I charter a regional turboprop instead of a narrow-body jet?</span><iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon></button>
+                  <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">Turboprops suit short-haul routes under roughly 1,500 km, lighter payloads under about 8 tonnes, and short or unpaved runways. Narrow-body jets suit higher payloads of roughly 15 to 28 tonnes and medium-range cross-border trade.</div>
+              </div>
+              <div class="faq-item border border-navy-700 bg-navy-800 fade-in">
+                  <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left"><span class="text-sm font-medium pr-4 text-white">What's the main operational difference between a Boeing 737-800BCF and an Airbus A321P2F freighter?</span><iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon></button>
+                  <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">Both are single-aisle freighters with very similar range at full payload. The A321P2F offers roughly 45% more usable volume and a fully containerized lower hold, making it stronger for high-volume, lightweight e-commerce freight. The 737-800BCF carries a somewhat denser payload for its volume and is more widely available across regional operator fleets.</div>
+              </div>
+              <div class="faq-item border border-navy-700 bg-navy-800 fade-in">
+                  <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left"><span class="text-sm font-medium pr-4 text-white">Why use an air cargo charter broker instead of booking directly with an airline?</span><iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon></button>
+                  <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">An independent broker has access to aircraft across hundreds of operators rather than one airline's fleet, sourcing the most cost-effective option for a specific cargo profile while managing permits, ground handling, and monitoring.</div>
+              </div>
+              <div class="faq-item border border-navy-700 bg-navy-800 fade-in">
+                  <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left"><span class="text-sm font-medium pr-4 text-white">Can charter handle dangerous goods, temperature-sensitive, or oversized cargo?</span><iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon></button>
+                  <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">Yes. Charter can be arranged for IATA-compliant dangerous goods (DG/HAZMAT), temperature-controlled pharmaceutical cold-chain cargo, heavy industrial machinery, and outsize aerospace equipment, with the appropriate regulatory clearances and handling protocols.</div>
+              </div>
+          </div>
+      </div>
+
+      <div class="mt-16 pt-12 border-t border-navy-800 fade-in">
+          <h3 class="text-2xl font-display tracking-tight text-white mb-8">Similar Aviation Insights</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+              <a href="how-cargo-is-loaded-on-aircraft.html" class="group block bg-navy-800 border border-navy-700 rounded-lg p-6 hover:border-teal-500 transition-all duration-300">
+                  <h4 class="text-lg font-display text-white group-hover:text-teal-500 transition-colors mb-2">How Cargo Is Loaded on Aircraft: Full Guide</h4>
+                  <p class="text-sm text-gray-400">How aircraft cargo holds work, what all-cargo freighters are, and the step-by-step ULD process airlines use.</p>
+              </a>
+              <a href="dangerous-goods-cao-charter.html" class="group block bg-navy-800 border border-navy-700 rounded-lg p-6 hover:border-teal-500 transition-all duration-300">
+                  <h4 class="text-lg font-display text-white group-hover:text-teal-500 transition-colors mb-2">Which Dangerous Goods Require Cargo-Aircraft-Only Charter?</h4>
+                  <p class="text-sm text-gray-400">A practical guide to which dangerous goods classes require Cargo Aircraft Only (CAO) shipment, and why charter capacity matters.</p>
+              </a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
+            <div class="md:col-span-2 lg:col-span-1">
+                <a href="index.html" class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center"><iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon></div>
+                    <div class="flex flex-col leading-none"><span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span><span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span></div>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger & Pilgrim Charter</a></li>
+                    <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo & Freight Charter</a></li>
+                    <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+                    <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Crew Rotation</a></li>
+                    <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
+                    <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma & Cold Chain</a></li>
+                    <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
+                    <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
+                    <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
+                    <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
+                </ul>
+                <h4 class="text-teal-500 font-semibold mt-6 mb-4 uppercase text-sm tracking-wider">Regional Empty Legs</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+                    <li><a href="empty-legs/middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+                    <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Africa</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+                    <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+                    <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety & Compliance</a></li>
+                    <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+                    <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms & Conditions</a></li>
+                    <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3"><iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon><span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span></li>
+                    <li class="flex items-center gap-3"><iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon><a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a></li>
+                    <li class="flex items-center gap-3"><iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon><a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a></li>
+                    <li class="flex items-center gap-3"><iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon><a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+            <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        </div>
+    </div>
+  </footer>
+
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+            <div><h3 class="font-bold text-lg">Chat with us</h3><p class="text-xs opacity-90">Typically replies instantly</p></div>
+            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors"><iconify-icon icon="lucide:x" class="text-xl"></iconify-icon></button>
+        </div>
+        <div class="p-4 bg-navy-900">
+            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2"><iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message</a>
+        </div>
+    </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110"><iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon></button>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isMenuOpen = false;
+    function closeMenu() { isMenuOpen = false; mobileMenu.classList.add('translate-x-full'); mobileMenu.classList.remove('translate-x-0'); document.body.style.overflow = ''; }
+    menuToggle.addEventListener('click', () => { isMenuOpen = !isMenuOpen; if (isMenuOpen) { mobileMenu.classList.remove('translate-x-full'); mobileMenu.classList.add('translate-x-0'); document.body.style.overflow = 'hidden'; } else { closeMenu(); } });
+    document.querySelectorAll('.mobile-link').forEach(link => { link.addEventListener('click', () => { closeMenu(); }); });
+
+    function toggleFaq(button) {
+      const item = button.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    }
+
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    const waWidget = document.getElementById('wa-widget'); const waToggle = document.getElementById('wa-toggle'); const waClose = document.getElementById('wa-close'); const waMessage = document.getElementById('wa-message'); const waSend = document.getElementById('wa-send');
+    waToggle.addEventListener('click', () => { waWidget.classList.toggle('hidden'); waToggle.classList.toggle('hidden'); });
+    waClose.addEventListener('click', () => { waWidget.classList.add('hidden'); waToggle.classList.remove('hidden'); });
+    waMessage.addEventListener('input', () => { const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.'); waSend.href = 'https://wa.me/923205487700?text=' + msg; });
+  </script>
+</body>
+</html>
