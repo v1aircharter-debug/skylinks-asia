@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dangerous Goods (DGR) Cargo Charter | Hazmat & Lithium Battery Air Freight | Skylinks Asia</title>
+  <title>Dangerous Goods (DGR) Cargo Charter | Hazmat &amp; Lithium Battery Air Freight | Skylinks Asia</title>
   <meta name="description" content="Charter aircraft for dangerous goods (DGR) cargo. IATA-compliant hazmat transport, explosives, and lithium battery air freight across Asia, Middle East & Africa.">
   <link rel="canonical" href="https://www.skylinks.asia/dangerous-goods.html">
   
@@ -18,6 +18,80 @@
   <meta property="og:site_name" content="Skylinks Asia Aviation">
   <meta property="og:image" content="https://www.skylinks.asia/hero-images/dgr-hero.webp">
   <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/dgr-hero.webp">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is IATA DGR and why does it matter for charter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The IATA Dangerous Goods Regulations (DGR) is the global standard governing how hazardous materials are classified, packaged, documented, and handled for air transport. Charter operators and ground handlers must be specifically approved to carry the DG class in question."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What documents are required to charter dangerous goods by air?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most DG shipments require a Shipper's Declaration for Dangerous Goods (DGD) and a properly completed Air Waybill, specifying the UN number, proper shipping name, hazard class, and packing group."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do commercial passenger airlines refuse certain dangerous goods shipments?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Passenger airlines carry strict quantity and packaging limits for DG cargo, and some classes or quantities are barred from passenger aircraft entirely for safety reasons. A dedicated cargo charter often remains the only legal option for these shipments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between DG charter in general and Cargo Aircraft Only (CAO) shipping?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DG charter covers any hazardous shipment moved by dedicated freighter. CAO is a specific designation for shipments that are legally barred from passenger aircraft but still permitted on cargo aircraft under stricter packaging and labeling rules."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Class 1 explosives be shipped by air charter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some can, under strict conditions. Most explosives divisions are either forbidden outright or restricted to Cargo Aircraft Only, with specialized security, segregation, and often government authorization required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is dangerous goods cargo packaged for air transport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Packaging must carry UN specification markings and meet performance standards including drop, stacking, vibration, and pressure testing, appropriate to the hazard class, packing group, and quantity being shipped."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far in advance should I book a dangerous goods charter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard DG shipments typically need a few days' lead time to confirm operator approval, permits, and ground handling for the specific hazard class, though genuinely urgent DG shipments can be prioritized."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do dangerous goods charter operators need special certification?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Operators and ground handling staff must hold specific approvals for the DG classes they carry, and IATA requires recurrent dangerous goods training for handling personnel on a fixed cycle rather than a one-time qualification."
+        }
+      }
+    ]
+  }
+  </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -80,17 +154,18 @@
 
     /* Date Picker Dark Mode Fix */
     input[type="date"] { color-scheme: dark; }
+
+    /* Hero Image Visibility Rule */
+    .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
   </style>
-  <!-- Zero Blur Rule -->
-  <style>.hero-img-blur { filter: none !important; }</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4KQLDXBT24');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
@@ -128,7 +203,7 @@
               <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
               
               <li class="relative dropdown">
-                  <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1">
+                  <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1 text-[#C8B283]">
                       Private Jets 
                       <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
                   </button>
@@ -148,8 +223,14 @@
                       </a>
                       <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
                           <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Quote
+                          VIP Jet Quote
                       </a>
+                      <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+                          <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
+                          <a href="empty-legs/middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
+                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Africa</a>
+                      </div>
                   </div>
               </li>
 
@@ -187,88 +268,226 @@
   <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="hero-images/dgr-hero.webp" alt="Dangerous Goods DGR Cargo Charter" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
+      <img src="hero-images/dgr-hero.webp" alt="Dangerous Goods DGR Cargo Charter" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
       <div class="absolute inset-0 hero-bg"></div>
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
-    <div class="relative z-10 max-w-4xl mx-auto text-center px-6 w-full">
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 w-full">
       <div class="fade-in">
         <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">IATA-Compliant Hazmat Air Logistics</span>
       </div>
-      <h1 class="text-4xl md:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+      <h1 class="text-4xl sm:text-5xl md:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
         Dangerous Goods (DGR)<br>
         <span class="gradient-text">Cargo Aircraft Charter</span>
       </h1>
       <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto fade-in">
         When commercial airlines refuse your cargo, Skylinks Asia Aviation provides the solution. We charter dedicated freighters qualified to transport dangerous goods, explosives, and hazmat safely across Asia, the Middle East & Africa.
       </p>
+      <p class="text-xs text-gray-500 mt-4 fade-in">By the Skylinks Asia Charter Desk · Reviewed by our Operations Team</p>
       <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-        <a href="#quote" class="bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
+        <a href="#quote" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
           GET DGR CHARTER QUOTE
         </a>
-        <a href="#capabilities" class="border border-white/20 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-teal-500 hover:text-teal-500 transition-all duration-300 backdrop-blur-sm w-full sm:w-auto text-center">
+        <a href="#capabilities" class="border border-white text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-teal-500 hover:text-teal-500 transition-all duration-300 w-full sm:w-auto text-center">
           OUR CAPABILITIES
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== INTRO (WITH INTERLINKING) ===== -->
+  <!-- ===== INTRO & QUICK ANSWER ===== -->
   <section class="py-24 bg-navy-950">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Certified Hazmat Transport</span>
-      <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Strict Compliance. Absolute Safety.</h2>
-      <p class="text-sm md:text-base font-light text-gray-400 mt-6 leading-relaxed fade-in">
-        Transporting hazardous materials by air requires rigorous compliance with IATA Dangerous Goods Regulations (DGR). We work only with certified cargo operators and ground handlers who are explicitly approved to carry specific DG classes. From Class 1 explosives for the mining sector to Class 9 lithium batteries for EV manufacturers, we ensure your cargo is documented, packed, and loaded with zero compromises on safety. If you need rapid transport for these critical goods, see our <a href="urgent-cargo.html" class="text-teal-500 hover:underline">urgent cargo charter</a> solutions.
-      </p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12 items-center">
+        <div class="lg:col-span-2 fade-in">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Certified Hazmat Transport</span>
+          <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Strict Compliance. Absolute Safety.</h2>
+          <p class="text-sm md:text-base font-light text-gray-400 mt-6 leading-relaxed">
+            Transporting hazardous materials by air requires rigorous compliance with IATA Dangerous Goods Regulations (DGR). We work only with certified cargo operators and ground handlers who are explicitly approved to carry specific DG classes. From Class 1 explosives for the mining sector to Class 9 lithium batteries for EV manufacturers, we ensure your cargo is documented, packed, and loaded with zero compromises on safety.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="urgent-cargo.html" class="inline-flex items-center gap-2 text-xs font-semibold tracking-wide px-4 py-2 border border-teal-500/40 text-teal-500 hover:bg-teal-500/10 transition-colors">
+              <iconify-icon icon="lucide:alert-octagon"></iconify-icon> Urgent Cargo Charter Solutions
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 fade-in">
+          <div class="border-l-2 border-teal-500 bg-navy-900 p-8">
+            <h3 class="text-sm font-semibold text-teal-500 tracking-[0.2em] uppercase mb-4">Quick Answer</h3>
+            <p class="text-sm text-gray-400 leading-relaxed font-light">
+              Dangerous goods (DGR) charter moves cargo that scheduled passenger airlines often can't or won't carry — explosives, flammable chemicals, corrosives, and Class 9 items like lithium-ion batteries — using IATA-certified freighters, trained handling staff, and the specific documentation (a Shipper's Declaration for Dangerous Goods and Air Waybill) every DG shipment requires.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ===== CAPABILITIES (WITH INTERLINKING) ===== -->
-  <section id="capabilities" class="py-24 bg-navy-900">
-    <div class="max-w-7xl mx-auto px-6">
+  <!-- ===== WHAT MAKES DG DIFFERENT ===== -->
+  <section class="py-24 bg-navy-900 border-y border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Regulatory Rigor</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">What Makes Dangerous Goods Charter Different?</h2>
+        <p class="text-sm font-light text-gray-400 mt-4 max-w-3xl mx-auto">Every DG shipment carries requirements standard freight doesn't, regardless of aircraft type.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="border border-navy-700 bg-navy-800 p-8 fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:file-text" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">Formal Documentation</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">A Shipper's Declaration for Dangerous Goods (DGD) and a properly completed Air Waybill are required for most classes, specifying the UN number, proper shipping name, hazard class, and packing group.</p>
+        </div>
+
+        <div class="border border-navy-700 bg-navy-800 p-8 fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:package" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">UN-Specification Packaging</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">Packaging must carry UN specification markings and pass performance testing — stacking, vibration, drop, and pressure — appropriate to the hazard class and quantity being shipped.</p>
+        </div>
+
+        <div class="border border-navy-700 bg-navy-800 p-8 fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:users" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">Certified, Recurrently Trained Personnel</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">IATA mandates recurrent dangerous goods training for handling staff on a fixed cycle, not a one-time certification — a detail worth confirming with any operator or handler before booking.</p>
+        </div>
+
+        <div class="border border-navy-700 bg-navy-800 p-8 fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:shield-check" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">Operator & Aircraft Approval</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">Not every cargo operator is approved to carry every DG class. A charter broker's job includes confirming the specific aircraft and operator hold approval for your cargo's classification, not just general cargo capability.</p>
+        </div>
+      </div>
+
+      <!-- IATA Table -->
+      <div class="mt-16 fade-in overflow-x-auto">
+        <h3 class="text-2xl md:text-3xl font-display tracking-tight text-white text-center mb-8">The 9 IATA Hazard Classes at a Glance</h3>
+        <table class="w-full text-sm text-left border border-navy-700">
+          <thead class="bg-navy-800 text-teal-500 uppercase text-xs tracking-wider">
+            <tr>
+              <th class="p-4 border-b border-navy-700">Class</th>
+              <th class="p-4 border-b border-navy-700">Category</th>
+              <th class="p-4 border-b border-navy-700">Common Examples</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-400 font-light">
+            <tr class="border-b border-navy-800"><td class="p-4 font-semibold text-white">1</td><td class="p-4">Explosives</td><td class="p-4">Detonators, blasting caps, mining explosives, fireworks</td></tr>
+            <tr class="border-b border-navy-800"><td class="p-4 font-semibold text-white">2</td><td class="p-4">Gases</td><td class="p-4">Compressed, liquefied, or dissolved gases (flammable, toxic, or non-toxic)</td></tr>
+            <tr class="border-b border-navy-800"><td class="p-4 font-semibold text-white">3</td><td class="p-4">Flammable liquids</td><td class="p-4">Industrial solvents, fuels, resins</td></tr>
+            <tr class="border-b border-navy-800"><td class="p-4 font-semibold text-white">4</td><td class="p-4">Flammable solids</td><td class="p-4">Certain metals, self-reactive substances</td></tr>
+            <tr class="border-b border-navy-800"><td class="p-4 font-semibold text-white">5</td><td class="p-4">Oxidizers & organic peroxides</td><td class="p-4">Industrial oxidizing agents</td></tr>
+            <tr class="border-b border-navy-800"><td class="p-4 font-semibold text-white">6</td><td class="p-4">Toxic & infectious substances</td><td class="p-4">Certain chemicals, medical/biological samples</td></tr>
+            <tr class="border-b border-navy-800"><td class="p-4 font-semibold text-white">7</td><td class="p-4">Radioactive material</td><td class="p-4">Medical isotopes, industrial radioactive sources</td></tr>
+            <tr class="border-b border-navy-800"><td class="p-4 font-semibold text-white">8</td><td class="p-4">Corrosives</td><td class="p-4">Acids, industrial cleaning agents</td></tr>
+            <tr><td class="p-4 font-semibold text-white">9</td><td class="p-4">Miscellaneous</td><td class="p-4">Lithium-ion and lithium metal batteries, dry ice, magnetized material</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CAO CTA Banner -->
+      <div class="mt-16 p-8 md:p-12 border border-teal-500/20 bg-navy-900 text-center fade-in">
+        <h3 class="text-2xl md:text-3xl font-display tracking-tight text-white">Understanding Cargo Aircraft Only (CAO) Restrictions</h3>
+        <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 max-w-2xl mx-auto">
+          Several of these hazard classes carry Cargo Aircraft Only restrictions depending on quantity and packaging. To understand exactly which dangerous goods are legally barred from passenger aircraft and require CAO charter, see our comprehensive companion guide.
+        </p>
+        <a href="dangerous-goods-cargo-aircraft-only-charter.html" class="mt-8 inline-flex items-center gap-2 bg-white text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-gray-200 transition-all duration-150">
+          VIEW CAO CHARTER GUIDE <iconify-icon icon="lucide:book-open"></iconify-icon>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CAPABILITIES ===== -->
+  <section id="capabilities" class="py-24 bg-navy-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Use Cases</span>
         <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Specialized DGR Charter Solutions</h2>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Item 1 -->
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in">
           <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
             <iconify-icon icon="lucide:flame" class="text-teal-500 text-xl"></iconify-icon>
           </div>
           <h3 class="text-xl font-display tracking-tight text-white">Flammable Liquids & Chemicals</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">
-            Class 3 flammable liquids, Class 8 corrosives, and Class 5 oxidizers. We arrange dedicated cargo flights for chemical manufacturers moving industrial solvents, resins, and acids globally, complementing our <a href="oil-gas.html" class="text-teal-500 hover:underline">oil and gas equipment transport</a> services.
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+            Class 3 flammable liquids, Class 8 corrosives, and Class 5 oxidizers. We arrange dedicated cargo flights for chemical manufacturers moving industrial solvents, resins, and acids globally.
           </p>
+          <a href="oil-gas.html" class="mt-6 inline-flex items-center gap-2 text-xs font-semibold tracking-wide px-4 py-2 border border-teal-500/40 text-teal-500 hover:bg-teal-500/10 transition-colors w-fit">
+            Oil & Gas Equipment Transport <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+          </a>
         </div>
         <!-- Item 2 -->
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in">
           <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
             <iconify-icon icon="lucide:battery-charging" class="text-teal-500 text-xl"></iconify-icon>
           </div>
           <h3 class="text-xl font-display tracking-tight text-white">Lithium Batteries & Tech Cargo</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
             Class 9 lithium-ion batteries pose severe fire risks on passenger aircraft. We source freighters for EV manufacturers and tech firms to transport bulk batteries safely and compliantly.
           </p>
         </div>
         <!-- Item 3 -->
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in">
           <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
             <iconify-icon icon="lucide:bomb" class="text-teal-500 text-xl"></iconify-icon>
           </div>
           <h3 class="text-xl font-display tracking-tight text-white">Explosives & Munitions (Class 1)</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">
-            Moving detonators, blasting caps, or mining explosives requires specialized security and segregation. We coordinate highly secure charter flights for defense and <a href="oil-gas.html" class="text-teal-500 hover:underline">mining logistics</a>.
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+            Moving detonators, blasting caps, or mining explosives requires specialized security and segregation. We coordinate highly secure charter flights for defense and mining logistics clients.
           </p>
+        </div>
+      </div>
+
+      <!-- ===== RELATED AVIATION INSIGHTS (BLOG CROSS-LINKS) ===== -->
+      <div class="mt-20 pt-12 border-t border-navy-800 fade-in">
+        <div class="text-center mb-12">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Knowledge Center</span>
+          <h3 class="text-2xl md:text-3xl font-display tracking-tight mt-4 text-white">Related Aviation Insights</h3>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <a href="https://www.skylinks.asia/dangerous-goods-cao-charter" class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col">
+            <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+              <iconify-icon icon="lucide:shield-alert" class="text-teal-500 text-xl"></iconify-icon>
+            </div>
+            <h4 class="text-xl font-display tracking-tight text-white">Dangerous Goods CAO Charter</h4>
+            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+              Understand exactly which dangerous goods are legally barred from passenger aircraft and require Cargo Aircraft Only (CAO) charter under stricter packaging and labeling rules.
+            </p>
+            <div class="mt-6 inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-teal-500">
+              READ ARTICLE <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+            </div>
+          </a>
+          <a href="https://www.skylinks.asia/shipping-lithium-batteries-air" class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col">
+            <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+              <iconify-icon icon="lucide:battery-charging" class="text-teal-500 text-xl"></iconify-icon>
+            </div>
+            <h4 class="text-xl font-display tracking-tight text-white">Shipping Lithium Batteries by Air</h4>
+            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+              A comprehensive guide on the IATA regulations, packaging requirements, and operational considerations for safely transporting Class 9 lithium-ion batteries by air.
+            </p>
+            <div class="mt-6 inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-teal-500">
+              READ ARTICLE <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== QUOTE FORM (NETLIFY READY) ===== -->
-  <section id="quote" class="py-24 bg-navy-950">
-    <div class="max-w-7xl mx-auto px-6">
+  <section id="quote" class="py-24 bg-navy-900 border-y border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-5 gap-12">
         <!-- Left Info -->
         <div class="lg:col-span-2 fade-in">
@@ -301,7 +520,7 @@
 
         <!-- Right Form -->
         <div class="lg:col-span-3 fade-in">
-          <form id="quoteForm" name="dgr-cargo-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
+          <form id="quoteForm" name="dgr-cargo-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
             <input type="hidden" name="form-name" value="dgr-cargo-quote" />
             <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
             
@@ -357,11 +576,64 @@
               <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">DG Class, UN Number & Packing Group</label>
               <textarea name="notes" rows="3" placeholder="e.g. Class 3, UN1263, Paint, PG II..." class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea>
             </div>
-            <button type="submit" class="w-full bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">
+            <button type="submit" class="w-full bg-teal-500 text-white text-sm font-semibold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">
               SUBMIT DGR ENQUIRY
             </button>
           </form>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="py-24 bg-navy-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Answers</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-6 fade-in">
+        
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What is IATA DGR and why does it matter for charter?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">The IATA Dangerous Goods Regulations (DGR) is the global standard governing how hazardous materials are classified, packaged, documented, and handled for air transport. Charter operators and ground handlers must be specifically approved to carry the DG class in question — general cargo capability isn't enough.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What documents are required to charter dangerous goods by air?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Most DG shipments require a Shipper's Declaration for Dangerous Goods (DGD) and a properly completed Air Waybill, specifying the UN number, proper shipping name, hazard class, and packing group. Some smaller, limited-quantity shipments have reduced documentation requirements.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Why do commercial passenger airlines refuse certain dangerous goods shipments?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Passenger airlines carry strict quantity and packaging limits for DG cargo, and some classes or quantities are barred from passenger aircraft entirely for safety reasons, regardless of how well they're packaged. A dedicated cargo charter often remains the only legal option for these shipments.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What's the difference between DG charter in general and Cargo Aircraft Only (CAO) shipping?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">DG charter covers any hazardous shipment moved by dedicated freighter. CAO is a specific designation for shipments that are legally barred from passenger aircraft but still permitted on cargo aircraft under stricter packaging and labeling rules — see our detailed CAO guide for which classes this applies to.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Can Class 1 explosives be shipped by air charter?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Some can, under strict conditions — most explosives divisions are either forbidden outright or restricted to Cargo Aircraft Only, with specialized security, segregation, and often government authorization required. Only a narrow subset is permitted on passenger aircraft at all.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How is dangerous goods cargo packaged for air transport?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Packaging must carry UN specification markings and meet performance standards — drop, stacking, vibration, and pressure testing — appropriate to the hazard class, packing group, and quantity. Combination packaging with inner receptacles and outer packaging is common for chemicals and liquids.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How far in advance should I book a dangerous goods charter?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Standard DG shipments typically need a few days' lead time to confirm operator approval, permits, and ground handling for the specific hazard class. Genuinely urgent DG shipments can be prioritized — see our urgent cargo charter page for how emergency dispatch works.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Do dangerous goods charter operators need special certification?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Yes. Operators and ground handling staff must hold specific approvals for the DG classes they carry, and IATA requires recurrent dangerous goods training for handling personnel on a fixed cycle rather than a one-time qualification.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -390,7 +662,7 @@
                     <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger & Pilgrim Charter</a></li>
                     <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo & Freight Charter</a></li>
                     <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
-                    <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Crew Rotation</a></li>
+                    <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Equipment Charter</a></li>
                     <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
                     <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma & Cold Chain</a></li>
                     <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
@@ -398,13 +670,21 @@
             </div>
 
             <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+                <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
                 <ul class="space-y-3 text-gray-400 text-sm">
                     <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
                     <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
                     <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
                     <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
                 </ul>
+                <div class="mt-6">
+                    <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+                        <li><a href="empty-legs/middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Africa</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div>
@@ -450,7 +730,32 @@
 
   <div id="toastContainer" class="fixed bottom-6 right-6 z-50 space-y-3"></div>
 
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-lg">Chat with us</h3>
+                <p class="text-xs opacity-90">Typically replies instantly</p>
+            </div>
+            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
+                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+            </button>
+        </div>
+        <div class="p-4 bg-navy-900">
+            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+            </a>
+        </div>
+    </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
+    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
+
   <script>
+    // Menu Logic
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     let isMenuOpen = false;
@@ -480,6 +785,20 @@
         });
     });
 
+    // Toast Logic
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      const bgColor = type === 'success' ? 'bg-teal-500/10 border-teal-500/30' : 'bg-red-500/10 border-red-500/30';
+      const textColor = type === 'success' ? 'text-teal-500' : 'text-red-400';
+      const icon = type === 'success' ? 'lucide:check-circle' : 'lucide:alert-circle';
+      toast.className = `toast border ${bgColor} backdrop-blur-sm px-6 py-4 flex items-center gap-3 max-w-sm`;
+      toast.innerHTML = `<iconify-icon icon="${icon}" class="${textColor} text-lg"></iconify-icon><span class="text-sm ${textColor}">${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateY(10px)'; toast.style.transition = 'all 0.3s ease'; setTimeout(() => toast.remove(), 300); }, 4000);
+    }
+
+    // Fade-in Observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -489,33 +808,11 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    
+    // Dynamic Year
     document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
 
-<div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
-    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
-        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
-            <div>
-                <h3 class="font-bold text-lg">Chat with us</h3>
-                <p class="text-xs opacity-90">Typically replies instantly</p>
-            </div>
-            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
-                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-            </button>
-        </div>
-        <div class="p-4 bg-navy-900">
-            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
-            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
-            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
-                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
-            </a>
-        </div>
-    </div>
-</div>
-<button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
-    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
-</button>
-<script>
+    // WhatsApp Widget Logic
     const waWidget = document.getElementById('wa-widget');
     const waToggle = document.getElementById('wa-toggle');
     const waClose = document.getElementById('wa-close');
@@ -534,6 +831,6 @@
         const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
         waSend.href = 'https://wa.me/923205487700?text=' + msg;
     });
-</script>
+  </script>
 </body>
 </html>

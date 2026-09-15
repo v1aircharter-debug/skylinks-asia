@@ -19,6 +19,72 @@
   <meta property="og:image" content="https://www.skylinks.asia/hero-images/urgentcargo-hero.webp">
   <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/urgentcargo-hero.webp">
 
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does AOG mean in aviation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AOG stands for Aircraft on Ground — an aircraft that's grounded and unable to fly until a specific technical, maintenance, or compliance issue is resolved. It's one of the most costly disruptions in aviation because the aircraft generates no revenue while it sits idle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast can an urgent or AOG cargo charter be arranged?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once aircraft availability and permits are confirmed, a dedicated charter can typically get critical freight door-to-tarmac within a matter of hours for regional routes, and generally under a day for intercontinental moves."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between next-flight-out (NFO) and a dedicated charter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NFO books a shipment onto the soonest available scheduled flight with cargo space. A dedicated charter reserves an entire aircraft flown on the client's own schedule, used when no scheduled flight fits the deadline, the shipment is oversized, or the destination isn't served by scheduled cargo at all."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an AOG situation actually cost an operator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Industry estimates commonly cite $10,000 to $150,000 in lost revenue per hour of aircraft downtime, depending on aircraft type and route, before factoring in cascading costs like missed connections, crew disruption, and contractual penalties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can urgent charter handle dangerous goods or hazardous aircraft parts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Many AOG parts, including batteries, hydraulic fluids, and certain avionics components, are classified as dangerous goods under IATA regulations. A qualified charter desk handles the classification and compliance requirements, including shipments that must move Cargo Aircraft Only."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries most commonly need urgent air charter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aerospace and airline operators needing AOG parts, automotive and electronics manufacturers facing production line resupply needs, and energy and utilities operators dealing with transformer or grid-component failures are the most consistent sources of urgent charter demand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can urgent charters be booked outside normal business hours?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A 24/7 charter desk exists specifically because AOG and production emergencies don't happen on a schedule, and emergency requests are typically actioned immediately regardless of time zone or time of day."
+        }
+      }
+    ]
+  }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -80,17 +146,18 @@
 
     /* Date Picker Dark Mode Fix */
     input[type="date"] { color-scheme: dark; }
+
+    /* Hero Image Visibility Rule */
+    .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
   </style>
-  <!-- Zero Blur Rule -->
-  <style>.hero-img-blur { filter: none !important; }</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4KQLDXBT24');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
@@ -128,7 +195,7 @@
               <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
               
               <li class="relative dropdown">
-                  <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1">
+                  <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1 text-[#C8B283]">
                       Private Jets 
                       <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
                   </button>
@@ -148,8 +215,14 @@
                       </a>
                       <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
                           <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Quote
+                          VIP Jet Quote
                       </a>
+                      <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+                          <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
+                          <a href="empty-legs/middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
+                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Africa</a>
+                      </div>
                   </div>
               </li>
 
@@ -184,10 +257,10 @@
       </div>
   </header>
 
-  <!-- ===== HERO (HARD PUSH DOWNWARDS & FIXED OVERFLOW) ===== -->
+  <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="hero-images/urgentcargo-hero.webp" alt="Urgent Cargo Charter Flight" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
+      <img src="hero-images/urgentcargo-hero.webp" alt="Urgent Cargo Charter Flight" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
       <div class="absolute inset-0 hero-bg"></div>
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
@@ -202,6 +275,7 @@
       <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto fade-in">
         When hours cost millions, Skylinks Asia Aviation provides rapid-response cargo aircraft charter. We secure next-flight-out options, AOG support, and emergency supply chain freighters across Asia, Middle East & Africa.
       </p>
+      <p class="text-xs text-gray-500 mt-4 fade-in">By the Skylinks Asia Charter Desk · Reviewed by our Operations Team</p>
       <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
         <a href="#quote" class="bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
           GET URGENT QUOTE
@@ -213,19 +287,57 @@
     </div>
   </section>
 
-  <!-- ===== INTRO (WITH INTERLINKING) ===== -->
+  <!-- ===== QUICK ANSWER & INTRO ===== -->
   <section class="py-24 bg-navy-950">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Next Flight Out Charter</span>
       <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">When Scheduled Freight Isn't Fast Enough</h2>
-      <p class="text-sm md:text-base font-light text-gray-400 mt-6 leading-relaxed fade-in">
+      <p class="text-sm md:text-base font-light text-gray-400 mt-6 leading-relaxed">
         Grounded passenger planes, missed connections, and production line shutdowns require immediate action. Our 24/7 charter desk mobilizes <a href="fleet.html" class="text-teal-500 hover:underline">freighter aircraft</a> within hours. From small turboprops for regional cross-border transport to widebody freighters for intercontinental supply chain emergencies, we bypass standard cargo schedules to deliver your critical freight directly to its destination. If your time-critical freight involves hazardous materials, we are fully equipped for <a href="dangerous-goods.html" class="text-teal-500 hover:underline">Dangerous Goods (DGR) transport</a>, and for temperature-sensitive shipments, we offer <a href="cold-chain-pharma.html" class="text-teal-500 hover:underline">rapid cold-chain pharma logistics</a>.
       </p>
+      
+      <div class="mt-12 p-6 border-l-2 border-teal-500 bg-navy-900/50 text-left fade-in">
+        <p class="text-sm md:text-base font-light text-gray-300 leading-relaxed">
+          <span class="font-semibold text-teal-500 block mb-2">Quick answer:</span>
+          For time-critical freight, you generally have two options — a next-flight-out (NFO) booking on the nearest available scheduled flight, or a dedicated cargo charter that flies on your timeline alone. AOG (Aircraft on Ground) situations, where a grounded aircraft is losing revenue every hour, are the most common trigger for urgent charter, alongside production line shutdowns and critical energy-infrastructure failures. A dedicated charter typically gets critical freight door-to-tarmac in a matter of hours once an aircraft is sourced, versus a day or more for standard freight routing.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- ===== SCENARIOS (WITH INTERLINKING) ===== -->
-  <section id="scenarios" class="py-24 bg-navy-900">
+  <!-- ===== AOG & NFO EXPLANATION ===== -->
+  <section class="py-24 bg-navy-900 border-y border-navy-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="fade-in">
+        <h2 class="text-2xl md:text-3xl font-display tracking-tight text-white mb-4">What Does "AOG" Actually Mean, and Why Does It Need a Charter?</h2>
+        <p class="text-sm md:text-base font-light text-gray-400 leading-relaxed">
+          AOG — Aircraft on Ground — is the term used across the industry when an aircraft is grounded and unable to fly until a specific technical issue is resolved, whether that's a missing part, a required repair, or a compliance hold. It's treated as an emergency because the cost compounds by the hour: industry estimates commonly cite $10,000 to $150,000 in lost revenue per hour of downtime, depending on aircraft type and route, before accounting for cascading effects like missed connections, crew disruption, and contractual penalties.
+        </p>
+        <p class="text-sm md:text-base font-light text-gray-400 leading-relaxed mt-4">
+          That cost structure is exactly why AOG situations justify paying a premium for speed. Waiting on standard freight routing to move a part that might sit in a warehouse for days isn't a realistic option when every hour of grounding has a five- or six-figure price tag attached.
+        </p>
+      </div>
+
+      <div class="fade-in">
+        <h2 class="text-2xl md:text-3xl font-display tracking-tight text-white mb-4">Next Flight Out vs. Dedicated Charter: Which Do You Need?</h2>
+        <p class="text-sm md:text-base font-light text-gray-400 leading-relaxed">
+          Not every urgent shipment needs a full aircraft charter. Two options typically apply, and knowing the difference helps you brief our desk faster:
+        </p>
+        <ul class="list-disc list-inside space-y-3 mt-4 text-sm md:text-base font-light text-gray-400 leading-relaxed">
+          <li><span class="font-semibold text-teal-500">Next Flight Out (NFO).</span> Your freight is booked onto the soonest available scheduled flight with cargo space, often the fastest option when a suitable flight already exists on your route within the next few hours.</li>
+          <li><span class="font-semibold text-teal-500">Dedicated cargo charter.</span> An entire aircraft is sourced and flown on your schedule alone — the right call when no scheduled flight lines up in time, when the shipment is oversized or irregular, or when the routing itself (a remote site, a non-hub airport) isn't served by scheduled cargo at all.</li>
+        </ul>
+        <p class="text-sm md:text-base font-light text-gray-400 leading-relaxed mt-4">
+          Our charter desk assesses both options in parallel the moment you call, rather than defaulting to whichever is easier to book — the goal is the fastest realistic option for your specific deadline, not just the first one available.
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ===== SCENARIOS ===== -->
+  <section id="scenarios" class="py-24 bg-navy-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Use Cases</span>
@@ -263,11 +375,14 @@
           </p>
         </div>
       </div>
+      <div class="text-center mt-12 fade-in">
+        <p class="text-sm text-gray-500">For a broader look at how freighter aircraft are categorized and selected more generally, see our full <a href="cargo-aircraft-charter-guide-asia-africa-middle-east.html" class="text-teal-500 hover:underline">cargo aircraft charter guide</a>.</p>
+      </div>
     </div>
   </section>
 
   <!-- ===== QUOTE FORM (NETLIFY READY) ===== -->
-  <section id="quote" class="py-24 bg-navy-950">
+  <section id="quote" class="py-24 bg-navy-900 border-y border-navy-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-5 gap-12">
         <!-- Left Info -->
@@ -301,7 +416,7 @@
 
         <!-- Right Form -->
         <div class="lg:col-span-3 fade-in">
-          <form id="quoteForm" name="urgent-cargo-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
+          <form id="quoteForm" name="urgent-cargo-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
             <input type="hidden" name="form-name" value="urgent-cargo-quote" />
             <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
             
@@ -366,6 +481,54 @@
     </div>
   </section>
 
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="py-24 bg-navy-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Answers</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-8 fade-in">
+        
+        <div class="border-b border-navy-800 pb-6">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What does AOG mean in aviation?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">AOG stands for Aircraft on Ground — an aircraft that's grounded and unable to fly until a specific technical, maintenance, or compliance issue is resolved. It's one of the most costly disruptions in aviation because the aircraft generates no revenue while it sits idle.</p>
+        </div>
+
+        <div class="border-b border-navy-800 pb-6">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How fast can an urgent or AOG cargo charter be arranged?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Once aircraft availability and permits are confirmed, a dedicated charter can typically get critical freight door-to-tarmac within a matter of hours for regional routes, and generally under a day for intercontinental moves — considerably faster than standard freight routing, which can take a day or more.</p>
+        </div>
+
+        <div class="border-b border-navy-800 pb-6">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What's the difference between next-flight-out (NFO) and a dedicated charter?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">NFO books your shipment onto the soonest available scheduled flight with cargo space — fast when a suitable flight already exists. A dedicated charter reserves an entire aircraft flown on your schedule alone, needed when no scheduled flight fits your deadline, the shipment is oversized, or the destination isn't served by scheduled cargo at all.</p>
+        </div>
+
+        <div class="border-b border-navy-800 pb-6">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How much does an AOG situation actually cost an operator?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Industry estimates commonly cite $10,000 to $150,000 in lost revenue per hour of aircraft downtime, depending on aircraft type and route, before factoring in cascading costs like missed connections, crew disruption, and contractual penalties — which is why urgent charter is priced at a premium but frequently pays for itself many times over.</p>
+        </div>
+
+        <div class="border-b border-navy-800 pb-6">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Can urgent charter handle dangerous goods or hazardous aircraft parts?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Yes. Many AOG parts — batteries, hydraulic fluids, and certain avionics components — are classified as dangerous goods under IATA regulations. Our charter desk handles the classification and compliance requirements, including shipments that must move Cargo Aircraft Only.</p>
+        </div>
+
+        <div class="border-b border-navy-800 pb-6">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What industries most commonly need urgent air charter?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Aerospace and airline operators (AOG parts), automotive and electronics manufacturers (production line resupply), and energy and utilities operators (transformer and grid-component failures) are the most consistent sources of urgent charter demand, alongside occasional emergency passenger group movements.</p>
+        </div>
+
+        <div class="pb-6">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Can I book an urgent charter outside normal business hours?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Yes — our charter desk operates 24/7 specifically because AOG and production emergencies don't happen on a schedule. Emergency requests are typically actioned immediately regardless of time zone or time of day.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ===== FOOTER ===== -->
   <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -398,13 +561,21 @@
             </div>
 
             <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+                <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
                 <ul class="space-y-3 text-gray-400 text-sm">
                     <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
                     <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
                     <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
                     <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
                 </ul>
+                <div class="mt-6">
+                    <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+                        <li><a href="empty-legs/middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Africa</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div>
@@ -450,7 +621,32 @@
 
   <div id="toastContainer" class="fixed bottom-6 right-6 z-50 space-y-3"></div>
 
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-lg">Chat with us</h3>
+                <p class="text-xs opacity-90">Typically replies instantly</p>
+            </div>
+            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
+                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+            </button>
+        </div>
+        <div class="p-4 bg-navy-900">
+            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+            </a>
+        </div>
+    </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
+    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
+
   <script>
+    // Menu Logic
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     let isMenuOpen = false;
@@ -480,6 +676,7 @@
         });
     });
 
+    // Toast Logic
     function showToast(message, type = 'success') {
       const container = document.getElementById('toastContainer');
       const toast = document.createElement('div');
@@ -492,6 +689,7 @@
       setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateY(10px)'; toast.style.transition = 'all 0.3s ease'; setTimeout(() => toast.remove(), 300); }, 4000);
     }
 
+    // Fade-in Observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -501,33 +699,11 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    
+    // Dynamic Year
     document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
 
-<div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
-    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
-        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
-            <div>
-                <h3 class="font-bold text-lg">Chat with us</h3>
-                <p class="text-xs opacity-90">Typically replies instantly</p>
-            </div>
-            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
-                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-            </button>
-        </div>
-        <div class="p-4 bg-navy-900">
-            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
-            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
-            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
-                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
-            </a>
-        </div>
-    </div>
-</div>
-<button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
-    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
-</button>
-<script>
+    // WhatsApp Widget Logic
     const waWidget = document.getElementById('wa-widget');
     const waToggle = document.getElementById('wa-toggle');
     const waClose = document.getElementById('wa-close');
@@ -546,6 +722,6 @@
         const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
         waSend.href = 'https://wa.me/923205487700?text=' + msg;
     });
-</script>
+  </script>
 </body>
 </html>
