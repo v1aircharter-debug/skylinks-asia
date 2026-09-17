@@ -3,104 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ===== PRIMARY META TAGS ===== -->
-  <title>Empty Leg Flights | Up to 50% Off Private Jet Charter | Skylinks Asia</title>
-  <meta name="description" content="Access exclusive private jet empty leg flights across Asia, Middle East & Africa. Fly VIP at up to 50% off standard charter rates. Register for empty leg alerts.">
-  <meta name="keywords" content="empty leg flights, empty leg charter, cheap private jet, discounted private jet Asia, empty leg Dubai, empty leg Islamabad">
-  <meta name="robots" content="index, follow">
+  <title>Empty Leg Flights | Private Jet Deals Worldwide | Skylinks Asia</title>
+  <meta name="description" content="Browse empty leg private jet flights across the Middle East, Asia, and Africa. Up to 75% off standard charter rates, updated regularly, subject to prior sale.">
   <link rel="canonical" href="https://www.skylinks.asia/empty-legs.html">
   
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <!-- ===== OPEN GRAPH / SOCIAL ===== -->
+  <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Empty Leg Flights | Up to 50% Off Private Jet Charter | Skylinks Asia">
-  <meta property="og:description" content="Access exclusive private jet empty leg flights across Asia, Middle East & Africa. Fly VIP at up to 50% off.">
+  <meta property="og:title" content="Empty Leg Flights | Private Jet Deals Worldwide | Skylinks Asia">
+  <meta property="og:description" content="Browse empty leg private jet flights across the Middle East, Asia, and Africa. Up to 75% off standard charter rates.">
   <meta property="og:url" content="https://www.skylinks.asia/empty-legs.html">
+  <meta property="og:site_name" content="Skylinks Asia Aviation">
   <meta property="og:image" content="https://www.skylinks.asia/hero-images/empty-legs-hero.webp">
+  <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/empty-legs-hero.webp">
 
-  <!-- ===== TECH / CSS ===== -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Combined Schema: BreadcrumbList + FAQPage + ItemList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.skylinks.asia/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Empty Legs",
+            "item": "https://www.skylinks.asia/empty-legs.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is an empty leg flight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An empty leg flight is a private jet flight repositioning after a one-way charter, sold at a discount instead of flying with an empty cabin. It's the same aircraft, crew, and service as a full-price charter."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much can I save on an empty leg flight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Empty leg flights typically list at 25–75% below the standard one-way charter rate for the same aircraft, depending on the route and how close to departure it is booked."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How last-minute are empty leg flights?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most are listed 48–72 hours before departure, with some appearing same-day, once the operator confirms the original charter's schedule."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is booking an empty leg flight safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Empty leg flights operate under the same certification and safety standards as any full-price private jet charter. The discount reflects repositioning economics, not reduced safety."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get notified when a new empty leg matches my route?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Register your frequent departure and destination cities with us, and our concierge team will alert you directly by WhatsApp or email the moment a match appears. See the contact page to get started."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Browse Empty Legs by Region",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Middle East Empty Legs",
+            "url": "https://www.skylinks.asia/empty-legs-middle-east.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Asia Empty Legs",
+            "url": "https://www.skylinks.asia/empty-legs-asia.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            navy: { 950:'#0a0f1a', 900:'#111827', 800:'#1e293b', 700:'#334155' },
-            teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
-            gold: { 500:'#C8B283', 600:'#B09668', 400:'#D9C89F' }
+            navy: { 950: '#0a0f1a', 900: '#111827', 800: '#1e293b', 700: '#334155' },
+            teal: { 500: '#14b8a6', 600: '#0d9488' },
+            gold: { 500: '#C8B283', 600: '#B09668', 400: '#D9C89F' }
           },
-          fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Playfair Display', 'serif']
+          }
         }
       }
     }
   </script>
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
   <style>
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #0a0f1a; }
-    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #C8B283; }
-    html { scroll-behavior: smooth; }
-
-    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    body { font-family: 'Inter', sans-serif; background-color: #0a0f1a; }
+    .font-display { font-family: 'Playfair Display', serif; }
     
-    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
-    .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
-    .delay-100 { animation-delay:0.1s; }
-    .delay-200 { animation-delay:0.2s; }
-    .delay-300 { animation-delay:0.3s; }
-    .delay-600 { animation-delay:0.6s; }
-
-    .gold-gradient-text {
-      background: linear-gradient(135deg, #D9C89F, #FFFFFF, #C8B283);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    /* Global CSS Fix for Dark Mode Date Picker */
+    input[type="date"] { color-scheme: dark; }
+    
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     }
-    .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #mobile-menu {
+        transition: transform 0.3s ease-in-out;
+    }
+    
     .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
     .card-hover:hover { border-color: rgba(200,178,131,0.3); transform: translateY(-4px); }
-    .gold-glow { box-shadow: 0 0 20px rgba(200,178,131,0.15); }
-
-    #mobile-menu { transition: transform 0.3s ease-in-out; }
-    .font-display { font-family: 'Playfair Display', serif; }
-
-    .dropdown-menu { 
-      opacity: 0; visibility: hidden; transform: translateY(10px);
-      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-    }
-    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { 
-      opacity: 1; visibility: visible; transform: translateY(0);
-    }
+    .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
+    .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
     
-    /* Global Dark Mode Fix for Date Inputs */
-    input[type="date"] { color-scheme: dark; }
+    /* VIP Luxury Dropdown */
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
 
-    /* Fade-In Observer */
-    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    /* Zero Blur Rule & Hero Visibility */
+    .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
   </style>
-  <style>.hero-img-blur { filter: none !important; opacity: 0.9 !important; }</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4KQLDXBT24');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
-  <!-- Embedded JSON Data for Local Viewing & Production Fallback -->
-  <script type="application/json" id="empty-legs-data">
-  {"legs":[{"region":"Asia","dep_code":"RJGG","dep_city":"Nagoya","arr_code":"RCTP","arr_city":"Taipei","date":"10 Sep 2026","aircraft":"VIP Airliner (BBJ737)","price":"$6,000","on_request":false},{"region":"Asia","dep_code":"RJGG","dep_city":"Nagoya","arr_code":"RKPK","arr_city":"Busan","date":"15 Sep 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"RKSI","dep_city":"Seoul","arr_code":"RJTT","arr_city":"Tokyo","date":"19 Sep 2026","aircraft":"Light Jet (Citation CJ3+)","price":"$63,000","on_request":false},{"region":"Asia","dep_code":"VHHH","dep_city":"Hong Kong","arr_code":"ZBAA","arr_city":"Beijing","date":"19 Sep 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$28,000","on_request":false},{"region":"Asia","dep_code":"RKSI","dep_city":"Seoul","arr_code":"RCTP","arr_city":"Taipei","date":"19 Sep 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$29,000","on_request":false},{"region":"Asia","dep_code":"RJTT","dep_city":"Tokyo","arr_code":"VHHH","arr_city":"Hong Kong","date":"25 Sep 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$27,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RJBB","arr_city":"Osaka","date":"26 Sep 2026","aircraft":"Ultra Long Range (Global 6000)","price":"$51,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RKPK","arr_city":"Busan","date":"27 Sep 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$32,000","on_request":false},{"region":"Asia","dep_code":"RJGG","dep_city":"Nagoya","arr_code":"RCTP","arr_city":"Taipei","date":"30 Sep 2026","aircraft":"Heavy Jet (Gulfstream G450)","price":"$12,000","on_request":false},{"region":"Asia","dep_code":"VHHH","dep_city":"Hong Kong","arr_code":"RKSI","arr_city":"Seoul","date":"01 Oct 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"","on_request":true},{"region":"Asia","dep_code":"RCTP","dep_city":"Taipei","arr_code":"VHHH","arr_city":"Hong Kong","date":"07 Oct 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$41,000","on_request":false},{"region":"Asia","dep_code":"ZGGG","dep_city":"Guangzhou","arr_code":"RKSI","arr_city":"Seoul","date":"10 Oct 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$19,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RJGG","arr_city":"Nagoya","date":"23 Oct 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"RJBB","dep_city":"Osaka","arr_code":"ZGGG","arr_city":"Guangzhou","date":"25 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"","on_request":true},{"region":"Asia","dep_code":"ZSPD","dep_city":"Shanghai","arr_code":"RKPK","arr_city":"Busan","date":"03 Nov 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"ZSPD","dep_city":"Shanghai","arr_code":"RKPK","arr_city":"Busan","date":"09 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"VHHH","dep_city":"Hong Kong","arr_code":"RJBB","arr_city":"Osaka","date":"18 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"$54,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RJGG","arr_city":"Nagoya","date":"08 Dec 2026","aircraft":"Ultra Long Range (Global 6000)","price":"$11,000","on_request":false},{"region":"Asia","dep_code":"ZSPD","dep_city":"Shanghai","arr_code":"RCTP","arr_city":"Taipei","date":"08 Dec 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$12,000","on_request":false},{"region":"Asia","dep_code":"RKPK","dep_city":"Busan","arr_code":"VHHH","arr_city":"Hong Kong","date":"17 Dec 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$39,000","on_request":false},{"region":"Asia","dep_code":"RJBB","dep_city":"Osaka","arr_code":"RKPK","arr_city":"Busan","date":"31 Dec 2026","aircraft":"Midsize Jet (Learjet 60)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"RJTT","dep_city":"Tokyo","arr_code":"ZBAA","arr_city":"Beijing","date":"02 Jan 2027","aircraft":"Light Jet (Learjet 75)","price":"$25,000","on_request":false},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"VHHH","arr_city":"Hong Kong","date":"02 Jan 2027","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RJGG","arr_city":"Nagoya","date":"05 Jan 2027","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"ZBAA","dep_city":"Beijing","arr_code":"RCTP","arr_city":"Taipei","date":"06 Jan 2027","aircraft":"Ultra Long Range (Falcon 7X)","price":"$36,000","on_request":false},{"region":"Asia","dep_code":"RJTT","dep_city":"Tokyo","arr_code":"ZBAA","arr_city":"Beijing","date":"07 Jan 2027","aircraft":"Turbo Prop (King Air 350i)","price":"$42,000","on_request":false},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"06 Sep 2026","aircraft":"Light Jet (Phenom 300)","price":"$50,000","on_request":false},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"RPLL","arr_city":"Manila","date":"08 Sep 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$63,000","on_request":false},{"region":"Asia","dep_code":"WSSS","dep_city":"Singapore","arr_code":"VTBS","arr_city":"Bangkok","date":"10 Sep 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$39,000","on_request":false},{"region":"Asia","dep_code":"VYYY","dep_city":"Yangon","arr_code":"WIII","arr_city":"Jakarta","date":"13 Sep 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"RPLL","dep_city":"Manila","arr_code":"WIII","arr_city":"Jakarta","date":"20 Sep 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$59,000","on_request":false},{"region":"Asia","dep_code":"WIII","dep_city":"Jakarta","arr_code":"VYYY","arr_city":"Yangon","date":"20 Sep 2026","aircraft":"VIP Airliner (BBJ737)","price":"$8,000","on_request":false},{"region":"Asia","dep_code":"RPLL","dep_city":"Manila","arr_code":"VVNB","arr_city":"Hanoi","date":"25 Sep 2026","aircraft":"VIP Airliner (ACJ319)","price":"$11,000","on_request":false},{"region":"Asia","dep_code":"WSSS","dep_city":"Singapore","arr_code":"VDPP","arr_city":"Phnom Penh","date":"26 Sep 2026","aircraft":"Midsize Jet (Learjet 60)","price":"$35,000","on_request":false},{"region":"Asia","dep_code":"WSSS","dep_city":"Singapore","arr_code":"VYYY","arr_city":"Yangon","date":"02 Oct 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$46,000","on_request":false},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"VVNB","arr_city":"Hanoi","date":"10 Oct 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$52,000","on_request":false},{"region":"Asia","dep_code":"WIII","dep_city":"Jakarta","arr_code":"VTBS","arr_city":"Bangkok","date":"11 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"$60,000","on_request":false},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"12 Oct 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"WSSS","arr_city":"Singapore","date":"13 Oct 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$21,000","on_request":false},{"region":"Asia","dep_code":"WIII","dep_city":"Jakarta","arr_code":"WADD","arr_city":"Bali","date":"29 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"$55,000","on_request":false},{"region":"Asia","dep_code":"VVTS","dep_city":"Ho Chi Minh","arr_code":"WADD","arr_city":"Bali","date":"31 Oct 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"","on_request":true},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"02 Nov 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$24,000","on_request":false},{"region":"Asia","dep_code":"WADD","dep_city":"Bali","arr_code":"RPLL","arr_city":"Manila","date":"09 Nov 2026","aircraft":"Ultra Long Range (Global 6000)","price":"$15,000","on_request":false},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"RPLL","arr_city":"Manila","date":"21 Nov 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$55,000","on_request":false},{"region":"Asia","dep_code":"VVNB","dep_city":"Hanoi","arr_code":"VYYY","arr_city":"Yangon","date":"23 Nov 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"","on_request":true},{"region":"Asia","dep_code":"VYYY","dep_city":"Yangon","arr_code":"VTBS","arr_city":"Bangkok","date":"03 Dec 2026","aircraft":"VIP Airliner (ACJ319)","price":"$62,000","on_request":false},{"region":"Asia","dep_code":"VYYY","dep_city":"Yangon","arr_code":"VDPP","arr_city":"Phnom Penh","date":"12 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"WMKK","dep_city":"Kuala Lumpur","arr_code":"VTBS","arr_city":"Bangkok","date":"18 Dec 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"VDPP","dep_city":"Phnom Penh","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"20 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$39,000","on_request":false},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"VVTS","arr_city":"Ho Chi Minh","date":"23 Dec 2026","aircraft":"Light Jet (Learjet 75)","price":"$39,000","on_request":false},{"region":"Asia","dep_code":"VTBS","dep_city":"Bangkok","arr_code":"RPLL","arr_city":"Manila","date":"24 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$28,000","on_request":false},{"region":"Asia","dep_code":"WMKK","dep_city":"Kuala Lumpur","arr_code":"WIII","arr_city":"Jakarta","date":"02 Jan 2027","aircraft":"Midsize Jet (Learjet 60)","price":"$38,000","on_request":false},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OJAI","arr_city":"Amman","date":"11 Sep 2026","aircraft":"Heavy Jet (Challenger 605)","price":"","on_request":true},{"region":"Middle East","dep_code":"OEJN","dep_city":"Jeddah","arr_code":"OOMS","arr_city":"Muscat","date":"17 Sep 2026","aircraft":"Turbo Prop (King Air 350i)","price":"","on_request":true},{"region":"Middle East","dep_code":"OOMS","dep_city":"Muscat","arr_code":"OTHH","arr_city":"Doha","date":"20 Sep 2026","aircraft":"Light Jet (Phenom 300)","price":"$48,000","on_request":false},{"region":"Middle East","dep_code":"OLBA","dep_city":"Beirut","arr_code":"OEJN","arr_city":"Jeddah","date":"24 Sep 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"","on_request":true},{"region":"Middle East","dep_code":"OOMS","dep_city":"Muscat","arr_code":"OMAA","arr_city":"Abu Dhabi","date":"04 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"","on_request":true},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OBBI","arr_city":"Bahrain","date":"07 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$42,000","on_request":false},{"region":"Middle East","dep_code":"OTHH","dep_city":"Doha","arr_code":"OKBK","arr_city":"Kuwait","date":"17 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$13,000","on_request":false},{"region":"Middle East","dep_code":"OJAI","dep_city":"Amman","arr_code":"OLBA","arr_city":"Beirut","date":"27 Oct 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$17,000","on_request":false},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OLBA","arr_city":"Beirut","date":"04 Nov 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$13,000","on_request":false},{"region":"Middle East","dep_code":"OMDB","dep_city":"Dubai","arr_code":"OKBK","arr_city":"Kuwait","date":"05 Nov 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$23,000","on_request":false},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OMDB","arr_city":"Dubai","date":"11 Nov 2026","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true},{"region":"Middle East","dep_code":"OERK","dep_city":"Riyadh","arr_code":"OOMS","arr_city":"Muscat","date":"16 Nov 2026","aircraft":"Light Jet (Citation CJ3+)","price":"$53,000","on_request":false},{"region":"Middle East","dep_code":"OKBK","dep_city":"Kuwait","arr_code":"OTHH","arr_city":"Doha","date":"18 Nov 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$64,000","on_request":false},{"region":"Middle East","dep_code":"OLBA","dep_city":"Beirut","arr_code":"OEJN","arr_city":"Jeddah","date":"20 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"$52,000","on_request":false},{"region":"Middle East","dep_code":"OOMS","dep_city":"Muscat","arr_code":"OMAA","arr_city":"Abu Dhabi","date":"23 Nov 2026","aircraft":"VIP Airliner (ACJ319)","price":"$64,000","on_request":false},{"region":"Middle East","dep_code":"OJAI","dep_city":"Amman","arr_code":"OLBA","arr_city":"Beirut","date":"04 Dec 2026","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true},{"region":"Middle East","dep_code":"OTHH","dep_city":"Doha","arr_code":"OERK","arr_city":"Riyadh","date":"07 Dec 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$49,000","on_request":false},{"region":"Middle East","dep_code":"OJAI","dep_city":"Amman","arr_code":"OLBA","arr_city":"Beirut","date":"12 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$53,000","on_request":false},{"region":"Middle East","dep_code":"OBBI","dep_city":"Bahrain","arr_code":"OJAI","arr_city":"Amman","date":"15 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$57,000","on_request":false},{"region":"Middle East","dep_code":"OEJN","dep_city":"Jeddah","arr_code":"OLBA","arr_city":"Beirut","date":"21 Dec 2026","aircraft":"Heavy Jet (Gulfstream G450)","price":"","on_request":true},{"region":"Middle East","dep_code":"OMDB","dep_city":"Dubai","arr_code":"OEJN","arr_city":"Jeddah","date":"23 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"","on_request":true},{"region":"Middle East","dep_code":"OBBI","dep_city":"Bahrain","arr_code":"OMAA","arr_city":"Abu Dhabi","date":"31 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"","on_request":true},{"region":"Middle East","dep_code":"OERK","dep_city":"Riyadh","arr_code":"OKBK","arr_city":"Kuwait","date":"05 Jan 2027","aircraft":"Light Jet (Phenom 300)","price":"$35,000","on_request":false},{"region":"Middle East","dep_code":"OEJN","dep_city":"Jeddah","arr_code":"OOMS","arr_city":"Muscat","date":"08 Jan 2027","aircraft":"Light Jet (Learjet 75)","price":"$41,000","on_request":false},{"region":"Middle East","dep_code":"OMAA","dep_city":"Abu Dhabi","arr_code":"OERK","arr_city":"Riyadh","date":"15 Jan 2027","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$6,000","on_request":false},{"region":"Middle East","dep_code":"OERK","dep_city":"Riyadh","arr_code":"OEJN","arr_city":"Jeddah","date":"15 Jan 2027","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"VIDP","dep_city":"Delhi","arr_code":"VOHY","arr_city":"Hyderabad","date":"07 Sep 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"","on_request":true},{"region":"Asia","dep_code":"VIDP","dep_city":"Delhi","arr_code":"OPKC","arr_city":"Karachi","date":"17 Sep 2026","aircraft":"Light Jet (Citation CJ3+)","price":"$26,000","on_request":false},{"region":"Asia","dep_code":"VABB","dep_city":"Mumbai","arr_code":"VNKT","arr_city":"Kathmandu","date":"20 Sep 2026","aircraft":"Light Jet (Citation CJ3+)","price":"$62,000","on_request":false},{"region":"Asia","dep_code":"VABB","dep_city":"Mumbai","arr_code":"VGZR","arr_city":"Dhaka","date":"21 Sep 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$24,000","on_request":false},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"VCBI","arr_city":"Colombo","date":"25 Sep 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$53,000","on_request":false},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"VABB","arr_city":"Mumbai","date":"28 Sep 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"","on_request":true},{"region":"Asia","dep_code":"VRMM","dep_city":"Male","arr_code":"VOBL","arr_city":"Bangalore","date":"08 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"$10,000","on_request":false},{"region":"Asia","dep_code":"VABB","dep_city":"Mumbai","arr_code":"OPKC","arr_city":"Karachi","date":"15 Oct 2026","aircraft":"Light Jet (Citation CJ3+)","price":"","on_request":true},{"region":"Asia","dep_code":"VRMM","dep_city":"Male","arr_code":"VIDP","arr_city":"Delhi","date":"16 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$38,000","on_request":false},{"region":"Asia","dep_code":"VOHY","dep_city":"Hyderabad","arr_code":"VCBI","arr_city":"Colombo","date":"26 Oct 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$47,000","on_request":false},{"region":"Asia","dep_code":"VOHY","dep_city":"Hyderabad","arr_code":"VOBL","arr_city":"Bangalore","date":"28 Oct 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$25,000","on_request":false},{"region":"Asia","dep_code":"OPKC","dep_city":"Karachi","arr_code":"VOHY","arr_city":"Hyderabad","date":"05 Nov 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"VRMM","dep_city":"Male","arr_code":"VCBI","arr_city":"Colombo","date":"16 Nov 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$13,000","on_request":false},{"region":"Asia","dep_code":"VABB","dep_city":"Mumbai","arr_code":"VGZR","arr_city":"Dhaka","date":"16 Nov 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$46,000","on_request":false},{"region":"Asia","dep_code":"VCBI","dep_city":"Colombo","arr_code":"VIDP","arr_city":"Delhi","date":"19 Nov 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$54,000","on_request":false},{"region":"Asia","dep_code":"VNKT","dep_city":"Kathmandu","arr_code":"VGZR","arr_city":"Dhaka","date":"20 Nov 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"OPKC","arr_city":"Karachi","date":"21 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"$23,000","on_request":false},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"VCBI","arr_city":"Colombo","date":"13 Dec 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Asia","dep_code":"VOHY","dep_city":"Hyderabad","arr_code":"VRMM","arr_city":"Male","date":"15 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$12,000","on_request":false},{"region":"Asia","dep_code":"VRMM","dep_city":"Male","arr_code":"VABB","arr_city":"Mumbai","date":"17 Dec 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$60,000","on_request":false},{"region":"Asia","dep_code":"VIDP","dep_city":"Delhi","arr_code":"VABB","arr_city":"Mumbai","date":"22 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"","on_request":true},{"region":"Asia","dep_code":"VNKT","dep_city":"Kathmandu","arr_code":"VOHY","arr_city":"Hyderabad","date":"23 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$29,000","on_request":false},{"region":"Asia","dep_code":"VOHY","dep_city":"Hyderabad","arr_code":"VCBI","arr_city":"Colombo","date":"27 Dec 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$10,000","on_request":false},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"OPKC","arr_city":"Karachi","date":"01 Jan 2027","aircraft":"Turbo Prop (King Air 350i)","price":"","on_request":true},{"region":"Asia","dep_code":"VGZR","dep_city":"Dhaka","arr_code":"VRMM","arr_city":"Male","date":"18 Jan 2027","aircraft":"Light Jet (Phenom 300)","price":"$44,000","on_request":false},{"region":"Asia","dep_code":"VNKT","dep_city":"Kathmandu","arr_code":"VIDP","arr_city":"Delhi","date":"20 Jan 2027","aircraft":"Light Jet (Phenom 300)","price":"$15,000","on_request":false},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UAAA","arr_city":"Almaty","date":"07 Sep 2026","aircraft":"VIP Airliner (ACJ319)","price":"","on_request":true},{"region":"Asia","dep_code":"UDYZ","dep_city":"Yerevan","arr_code":"UGTB","arr_city":"Tbilisi","date":"14 Sep 2026","aircraft":"Ultra Long Range (Global 6000)","price":"$21,000","on_request":false},{"region":"Asia","dep_code":"UAAA","dep_city":"Almaty","arr_code":"UTTT","arr_city":"Tashkent","date":"18 Sep 2026","aircraft":"Heavy Jet (Challenger 605)","price":"$22,000","on_request":false},{"region":"Asia","dep_code":"UDYZ","dep_city":"Yerevan","arr_code":"UTAA","arr_city":"Ashgabat","date":"04 Oct 2026","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"UTDD","dep_city":"Dushanbe","arr_code":"UTTT","arr_city":"Tashkent","date":"14 Oct 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$20,000","on_request":false},{"region":"Asia","dep_code":"UTAA","dep_city":"Ashgabat","arr_code":"UGTB","arr_city":"Tbilisi","date":"24 Oct 2026","aircraft":"Light Jet (Phenom 300)","price":"","on_request":true},{"region":"Asia","dep_code":"UACC","dep_city":"Astana","arr_code":"UGTB","arr_city":"Tbilisi","date":"05 Nov 2026","aircraft":"Turbo Prop (King Air 350i)","price":"","on_request":true},{"region":"Asia","dep_code":"UDYZ","dep_city":"Yerevan","arr_code":"UGTB","arr_city":"Tbilisi","date":"12 Nov 2026","aircraft":"Light Jet (Citation CJ3+)","price":"","on_request":true},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UTAA","arr_city":"Ashgabat","date":"17 Nov 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"","on_request":true},{"region":"Asia","dep_code":"UAAA","dep_city":"Almaty","arr_code":"UTAA","arr_city":"Ashgabat","date":"17 Nov 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"UTDD","dep_city":"Dushanbe","arr_code":"UBBB","arr_city":"Baku","date":"19 Nov 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"","on_request":true},{"region":"Asia","dep_code":"UTTT","dep_city":"Tashkent","arr_code":"UTDD","arr_city":"Dushanbe","date":"20 Nov 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"","on_request":true},{"region":"Asia","dep_code":"UAAA","dep_city":"Almaty","arr_code":"UBBB","arr_city":"Baku","date":"21 Nov 2026","aircraft":"Midsize Jet (Citation XLS+)","price":"$29,000","on_request":false},{"region":"Asia","dep_code":"UGTB","dep_city":"Tbilisi","arr_code":"UBBB","arr_city":"Baku","date":"03 Dec 2026","aircraft":"Heavy Jet (Falcon 2000)","price":"$58,000","on_request":false},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UTDD","arr_city":"Dushanbe","date":"04 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$33,000","on_request":false},{"region":"Asia","dep_code":"UDYZ","dep_city":"Yerevan","arr_code":"UBBB","arr_city":"Baku","date":"06 Dec 2026","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"UAAA","dep_city":"Almaty","arr_code":"UAFM","arr_city":"Bishkek","date":"12 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"","on_request":true},{"region":"Asia","dep_code":"UTAA","dep_city":"Ashgabat","arr_code":"UACC","arr_city":"Astana","date":"13 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"","on_request":true},{"region":"Asia","dep_code":"UTDD","dep_city":"Dushanbe","arr_code":"UAFM","arr_city":"Bishkek","date":"22 Dec 2026","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true},{"region":"Asia","dep_code":"UACC","dep_city":"Astana","arr_code":"UATE","arr_city":"Aktau","date":"23 Dec 2026","aircraft":"Light Jet (Citation CJ3+)","price":"","on_request":true},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UGTB","arr_city":"Tbilisi","date":"25 Dec 2026","aircraft":"Heavy Jet (Challenger 605)","price":"","on_request":true},{"region":"Asia","dep_code":"UAFM","dep_city":"Bishkek","arr_code":"UTTT","arr_city":"Tashkent","date":"27 Dec 2026","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UAFM","arr_city":"Bishkek","date":"15 Jan 2027","aircraft":"Heavy Jet (Gulfstream G450)","price":"$34,000","on_request":false},{"region":"Asia","dep_code":"UGTB","dep_city":"Tbilisi","arr_code":"UACC","arr_city":"Astana","date":"16 Jan 2027","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Asia","dep_code":"UATE","dep_city":"Aktau","arr_code":"UTDD","arr_city":"Dushanbe","date":"16 Jan 2027","aircraft":"Turbo Prop (King Air 350i)","price":"$11,000","on_request":false},{"region":"Africa","dep_code":"HECA","dep_city":"Cairo","arr_code":"HKJK","arr_city":"Nairobi","date":"09 Sep 2026","aircraft":"VIP Airliner (BBJ737)","price":"$64,000","on_request":false},{"region":"Africa","dep_code":"FAOR","dep_city":"Johannesburg","arr_code":"DNMM","arr_city":"Lagos","date":"11 Sep 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$39,000","on_request":false},{"region":"Africa","dep_code":"DNMM","dep_city":"Lagos","arr_code":"FACT","arr_city":"Cape Town","date":"12 Sep 2026","aircraft":"Light Jet (Phenom 300)","price":"$10,000","on_request":false},{"region":"Africa","dep_code":"GMMN","dep_city":"Casablanca","arr_code":"HECA","arr_city":"Cairo","date":"15 Sep 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$44,000","on_request":false},{"region":"Africa","dep_code":"FNLU","dep_city":"Luanda","arr_code":"FACT","arr_city":"Cape Town","date":"24 Sep 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$36,000","on_request":false},{"region":"Africa","dep_code":"FACT","dep_city":"Cape Town","arr_code":"FAOR","arr_city":"Johannesburg","date":"04 Oct 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"","on_request":true},{"region":"Africa","dep_code":"FAOR","dep_city":"Johannesburg","arr_code":"HKJK","arr_city":"Nairobi","date":"08 Oct 2026","aircraft":"Ultra Long Range (Gulfstream G650)","price":"$41,000","on_request":false},{"region":"Africa","dep_code":"HKJK","dep_city":"Nairobi","arr_code":"HAAB","arr_city":"Addis Ababa","date":"09 Oct 2026","aircraft":"VIP Airliner (BBJ737)","price":"$62,000","on_request":false},{"region":"Africa","dep_code":"FNLU","dep_city":"Luanda","arr_code":"FAOR","arr_city":"Johannesburg","date":"12 Oct 2026","aircraft":"Ultra Long Range (Global 6000)","price":"","on_request":true},{"region":"Africa","dep_code":"HAAB","dep_city":"Addis Ababa","arr_code":"FACT","arr_city":"Cape Town","date":"30 Oct 2026","aircraft":"VIP Airliner (ACJ319)","price":"$25,000","on_request":false},{"region":"Africa","dep_code":"DNMM","dep_city":"Lagos","arr_code":"DGAA","arr_city":"Accra","date":"07 Nov 2026","aircraft":"Turbo Prop (Pilatus PC-12)","price":"$59,000","on_request":false},{"region":"Africa","dep_code":"HTDA","dep_city":"Dar es Salaam","arr_code":"FAOR","arr_city":"Johannesburg","date":"13 Nov 2026","aircraft":"Midsize Jet (Learjet 60)","price":"$9,000","on_request":false},{"region":"Africa","dep_code":"FNLU","dep_city":"Luanda","arr_code":"DNMM","arr_city":"Lagos","date":"18 Nov 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$39,000","on_request":false},{"region":"Africa","dep_code":"GMMN","dep_city":"Casablanca","arr_code":"FAOR","arr_city":"Johannesburg","date":"23 Nov 2026","aircraft":"VIP Airliner (BBJ737)","price":"$12,000","on_request":false},{"region":"Africa","dep_code":"DNMM","dep_city":"Lagos","arr_code":"HAAB","arr_city":"Addis Ababa","date":"10 Dec 2026","aircraft":"Turbo Prop (King Air 350i)","price":"$29,000","on_request":false},{"region":"Africa","dep_code":"GMMN","dep_city":"Casablanca","arr_code":"DGAA","arr_city":"Accra","date":"15 Dec 2026","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Africa","dep_code":"FACT","dep_city":"Cape Town","arr_code":"HTDA","arr_city":"Dar es Salaam","date":"18 Dec 2026","aircraft":"Midsize Jet (Hawker 900XP)","price":"$22,000","on_request":false},{"region":"Africa","dep_code":"FAOR","dep_city":"Johannesburg","arr_code":"DNMM","arr_city":"Lagos","date":"29 Dec 2026","aircraft":"Ultra Long Range (Falcon 7X)","price":"$55,000","on_request":false},{"region":"Africa","dep_code":"DGAA","dep_city":"Accra","arr_code":"FAOR","arr_city":"Johannesburg","date":"02 Jan 2027","aircraft":"Ultra Long Range (Global 6000)","price":"$39,000","on_request":false},{"region":"Africa","dep_code":"HTDA","dep_city":"Dar es Salaam","arr_code":"DGAA","arr_city":"Accra","date":"04 Jan 2027","aircraft":"VIP Airliner (BBJ737)","price":"","on_request":true},{"region":"Africa","dep_code":"GMMN","dep_city":"Casablanca","arr_code":"HECA","arr_city":"Cairo","date":"05 Jan 2027","aircraft":"Turbo Prop (King Air 350i)","price":"$16,000","on_request":false},{"region":"Africa","dep_code":"HECA","dep_city":"Cairo","arr_code":"DNMM","arr_city":"Lagos","date":"07 Jan 2027","aircraft":"Midsize Jet (Hawker 900XP)","price":"$24,000","on_request":false},{"region":"Africa","dep_code":"FACT","dep_city":"Cape Town","arr_code":"FNLU","arr_city":"Luanda","date":"08 Jan 2027","aircraft":"Midsize Jet (Citation XLS+)","price":"$65,000","on_request":false},{"region":"Africa","dep_code":"HTDA","dep_city":"Dar es Salaam","arr_code":"HAAB","arr_city":"Addis Ababa","date":"12 Jan 2027","aircraft":"Midsize Jet (Learjet 60)","price":"$59,000","on_request":false},{"region":"Africa","dep_code":"FNLU","dep_city":"Luanda","arr_code":"HTDA","arr_city":"Dar es Salaam","date":"18 Jan 2027","aircraft":"Light Jet (Learjet 75)","price":"","on_request":true}]}
-  </script>
-
   <!-- Header / Navigation -->
   <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
+      <!-- Top Contact Bar -->
       <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
           <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
               <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
@@ -127,13 +209,13 @@
           
           <ul class="hidden lg:flex items-center space-x-8">
               <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
-              <li><a href="index.html#fleet" class="hover:text-teal-500 transition-colors text-sm">Fleet</a></li>
+              <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
               <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
-              <li><a href="index.html#about" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+              <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
               <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
               
               <li class="relative dropdown">
-                  <button class="text-[#C8B283] hover:text-[#D9C89F] transition-colors text-sm flex items-center gap-1 font-semibold">
+                  <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1 text-[#C8B283]">
                       Private Jets 
                       <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
                   </button>
@@ -147,26 +229,20 @@
                           <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
                           Empty Leg Flights
                       </a>
-                      <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:globe-hemisphere-east-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Empty Legs Asia
-                      </a>
-                      <a href="empty-legs/middle-east.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:globe-hemisphere-west-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Empty Legs Middle East
-                      </a>
-                      <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:globe-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Empty Legs Africa
-                      </a>
                       <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
                           <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
                           Private Jet Fleet
                       </a>
                       <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
                           <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Quote
+                          VIP Jet Quote
                       </a>
+                      <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+                          <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
+                          <a href="empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
+                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Africa</a>
+                      </div>
                   </div>
               </li>
 
@@ -181,19 +257,16 @@
       <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
           <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
               <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
-              <li><a href="index.html#fleet" class="hover:text-teal-500 mobile-link">Fleet</a></li>
+              <li><a href="fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
               <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
-              <li><a href="index.html#about" class="hover:text-teal-500 mobile-link">About</a></li>
+              <li><a href="about.html" class="hover:text-teal-500 mobile-link">About</a></li>
               <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
               
               <li class="w-full text-center mt-4">
-                  <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Private Jets</span>
+                  <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
                   <div class="flex flex-col space-y-4 mt-4">
                       <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
                       <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
-                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-base mobile-link">- Empty Legs Asia</a>
-                      <a href="empty-legs/middle-east.html" class="hover:text-[#C8B283] text-base mobile-link">- Empty Legs Middle East</a>
-                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-base mobile-link">- Empty Legs Africa</a>
                       <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
                       <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
                   </div>
@@ -207,68 +280,265 @@
   <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="hero-images/empty-legs-hero.webp" alt="Private Jet Empty Leg Flight" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
+      <img src="hero-images/empty-legs-hero.webp" alt="Empty Leg Private Jet Flights" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
       <div class="absolute inset-0 hero-bg"></div>
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
-    <div class="relative z-10 max-w-4xl mx-auto text-center px-6 w-full">
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 w-full">
       <div class="fade-in">
-        <span class="inline-block bg-[#C8B283]/10 border border-[#C8B283]/40 text-[#C8B283] px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Up to 50% Off Standard Charter Rates</span>
+        <span class="inline-block bg-[#C8B283]/10 border border-[#C8B283]/30 text-[#C8B283] px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">VIP & Executive Air Logistics</span>
       </div>
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
-        Empty Leg Flights.<br><span class="gold-gradient-text">Unrivaled Luxury. Exceptional Fares.</span>
+      <h1 class="text-4xl sm:text-5xl md:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+        Empty Leg Flights<br>
+        <span class="text-[#C8B283]">Unrivaled Luxury, Exceptional Fares</span>
       </h1>
       <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto fade-in">
-        When a private jet flies empty to reposition for its next charter, we offer those flights at a massive discount. Access luxury private jets across Asia, the Middle East & Africa at unprecedented rates.
+        Browse empty leg private jet flights across the Middle East, Asia, and Africa. Up to 75% off standard charter rates, updated regularly, subject to prior sale.
+      </p>
+      <p class="text-xs text-gray-500 mt-4 fade-in">By the Skylinks Asia Charter Desk · Reviewed by our Operations Team</p>
+      
+      <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+        <a href="#regions" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
+          BROWSE BY REGION
+        </a>
+        <a href="#latest" class="border border-white text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-[#C8B283] hover:text-[#C8B283] transition-all duration-300 w-full sm:w-auto text-center">
+          VIEW LATEST FLIGHTS
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVERGREEN INTRO (AEO) ===== -->
+  <section class="py-24 bg-navy-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">The Smart Way to Fly Private</span>
+      <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">What Is an Empty Leg Flight?</h2>
+      <p class="text-sm md:text-base font-light text-gray-400 mt-6 leading-relaxed fade-in">
+        An empty leg flight is a private jet flight repositioning after a one-way charter — flying the same route, on the same aircraft, with the same crew, but without the original paying passenger on board. Instead of flying that leg empty, operators list it at a significant discount, giving travelers a rare chance to fly private for a fraction of the standard charter cost. The trade-off is flexibility: you take the route, date, and time the aircraft is already flying, rather than setting your own.
+      </p>
+      
+      <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-12 text-white">How Do I Find One?</h2>
+      <p class="text-sm md:text-base font-light text-gray-400 mt-6 leading-relaxed fade-in">
+        The fastest way to catch an empty leg is to register your frequent routes with us — our concierge team alerts you directly by WhatsApp or email the moment a matching flight becomes available, often before it's listed publicly. You can also browse current availability by region below, or explore specific route pages for the corridors we cover most often.
       </p>
     </div>
   </section>
 
-  <!-- ===== LISTINGS (TABBED LAYOUT) ===== -->
-  <section class="py-24 bg-navy-950">
-    <div class="max-w-7xl mx-auto px-6">
+  <!-- ===== BROWSE BY REGION ===== -->
+  <section id="regions" class="py-24 bg-navy-900 border-y border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
-        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Current Availability</span>
-        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Active Empty Legs</h2>
-        <p class="text-sm font-light text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">These are live repositioning flights. Availability changes daily. If a flight matches your route, request it immediately before it's booked.</p>
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Regional Directory</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Browse Empty Legs by Region</h2>
       </div>
-      
-      <!-- Region Tabs -->
-      <div class="flex items-center justify-center gap-4 mb-12 fade-in">
-        <button onclick="filterRegion('Asia')" class="region-tab active text-xs font-semibold tracking-[0.2em] uppercase px-6 py-3 border border-[#C8B283] text-[#C8B283] bg-[#C8B283]/10 transition-all duration-150">Asia</button>
-        <button onclick="filterRegion('Middle East')" class="region-tab text-xs font-semibold tracking-[0.2em] uppercase px-6 py-3 border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] transition-all duration-150">Middle East</button>
-        <button onclick="filterRegion('Africa')" class="region-tab text-xs font-semibold tracking-[0.2em] uppercase px-6 py-3 border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] transition-all duration-150">Africa</button>
-        <button onclick="filterRegion('Europe')" class="region-tab text-xs font-semibold tracking-[0.2em] uppercase px-6 py-3 border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] transition-all duration-150">Europe</button>
-      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Middle East -->
+        <a href="empty-legs-middle-east.html" class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in group">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-display tracking-tight text-white">Middle East</h3>
+            <iconify-icon icon="lucide:arrow-right" class="text-[#C8B283] text-2xl group-hover:translate-x-2 transition-transform"></iconify-icon>
+          </div>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">
+            Saudi Arabia, UAE, and Qatar — our most active region, covering high-frequency corridors like Riyadh–Jeddah, Riyadh–Doha, Riyadh–Dubai, and Jeddah–Dubai.
+          </p>
+        </a>
 
-      <!-- 3-Column Grid Container (Populated by JS) -->
-      <div id="fleetGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Loading Skeleton -->
-        <div class="col-span-full text-center text-gray-500 py-12">Loading active flights...</div>
-      </div>
+        <!-- Asia -->
+        <a href="empty-legs-asia.html" class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in group">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-display tracking-tight text-white">Asia</h3>
+            <iconify-icon icon="lucide:arrow-right" class="text-[#C8B283] text-2xl group-hover:translate-x-2 transition-transform"></iconify-icon>
+          </div>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">
+            Pakistan and India, including our home base of Islamabad, Lahore, and Karachi, plus growing India–Gulf connectivity.
+          </p>
+        </a>
 
-      <!-- Urgency & Operational Disclaimer -->
-      <div class="mt-10 text-center fade-in">
-        <p class="text-xs text-gray-500 max-w-3xl mx-auto leading-relaxed">
-          <span class="font-semibold text-[#C8B283]">Disclaimer:</span> Empty leg flights are highly sought after and strictly subject to prior sale. We recommend requesting your preferred flight immediately to secure availability. Estimated flight durations and times are subject to change based on wind conditions, ATC routing, aircraft weight, climb/descent profiles, and specific airport procedures.
-        </p>
-      </div>
-      
-      <!-- Luxury CTA Box for Registration -->
-      <div class="mt-16 fade-in">
-        <div class="relative border border-[#C8B283]/30 bg-gradient-to-b from-navy-900 to-navy-800 p-8 md:p-12 text-center max-w-3xl mx-auto">
-            <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
-            <iconify-icon icon="ph:bell-ringing-duotone" class="text-[#C8B283] text-4xl mb-5"></iconify-icon>
-            <h3 class="text-2xl md:text-3xl font-display text-white mb-4">Don't See Your Route?</h3>
-            <p class="text-sm font-light text-gray-400 leading-relaxed max-w-xl mx-auto mb-8">
-                We source empty legs daily. Register your preferred routes on our secure portal to be notified instantly when a match becomes available.
-            </p>
-            <a href="empty-leg-alerts.html" class="inline-flex items-center justify-center bg-[#C8B283] text-black text-sm font-bold tracking-wide px-8 py-4 hover:bg-[#D9C89F] transition-all duration-150 gold-glow">
-                REGISTER FOR EMPTY LEG ALERTS <iconify-icon icon="lucide:arrow-right" class="ml-2"></iconify-icon>
-            </a>
+        <!-- Africa (Placeholder) -->
+        <div class="border border-dashed border-navy-700 bg-navy-800/50 p-8 flex flex-col fade-in opacity-60 cursor-not-allowed">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-display tracking-tight text-white">Africa</h3>
+            <span class="text-xs text-[#C8B283] border border-[#C8B283]/40 px-2 py-1 rounded">Coming Soon</span>
+          </div>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">
+            Coverage of major African charter hubs and their Gulf and European connections is in development.
+          </p>
         </div>
+
+        <!-- Europe (Placeholder) -->
+        <div class="border border-dashed border-navy-700 bg-navy-800/50 p-8 flex flex-col fade-in opacity-60 cursor-not-allowed">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-display tracking-tight text-white">Europe</h3>
+            <span class="text-xs text-[#C8B283] border border-[#C8B283]/40 px-2 py-1 rounded">Coming Soon</span>
+          </div>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">
+            Coverage of key European charter corridors and their connections to the Middle East and Asia is in development.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LATEST EMPTY LEGS (PLACEHOLDER FOR DEV) ===== -->
+  <section id="latest" class="py-24 bg-navy-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Live Inventory Preview</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Latest Empty Legs Across All Regions</h2>
+        <p class="text-xs text-gray-500 mt-4">Last updated: [DATE]</p>
       </div>
 
+      <!-- DEV NOTE: Populate with 6-9 soonest-departing flights globally. 
+           Link to Corridor Page if it exists, otherwise link to Regional Hub. -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
+        
+        <!-- Card 1 Example (Middle East) -->
+        <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <p class="text-white font-semibold text-lg">Riyadh → Jeddah</p>
+              <p class="text-gray-500 text-xs">Saudi Arabia · OERK → OEJN</p>
+            </div>
+            <span class="bg-[#C8B283]/10 text-[#C8B283] text-xs px-2 py-1 rounded font-medium">Gulfstream G650</span>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mt-4 pt-4 border-t border-navy-700">
+            <div>
+              <p class="text-gray-500 text-[10px] uppercase tracking-wider">Date</p>
+              <p class="text-gray-300 text-sm">Oct 12, 2026</p>
+            </div>
+            <div>
+              <p class="text-gray-500 text-[10px] uppercase tracking-wider">Capacity</p>
+              <p class="text-gray-300 text-sm">13 Seats</p>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-navy-700 flex justify-between items-center">
+            <span class="text-gray-400 text-xs">Departs in 2 days</span>
+            <!-- Links to Corridor Page if exists, else Regional Hub -->
+            <a href="empty-legs-middle-east.html" class="text-[#C8B283] text-xs font-semibold hover:underline">View Details →</a>
+          </div>
+        </div>
+
+        <!-- Card 2 Example (Asia) -->
+        <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <p class="text-white font-semibold text-lg">Islamabad → Karachi</p>
+              <p class="text-gray-500 text-xs">Pakistan · OPIS → OPKC</p>
+            </div>
+            <span class="bg-[#C8B283]/10 text-[#C8B283] text-xs px-2 py-1 rounded font-medium">Bombardier Global 6000</span>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mt-4 pt-4 border-t border-navy-700">
+            <div>
+              <p class="text-gray-500 text-[10px] uppercase tracking-wider">Date</p>
+              <p class="text-gray-300 text-sm">Oct 14, 2026</p>
+            </div>
+            <div>
+              <p class="text-gray-500 text-[10px] uppercase tracking-wider">Capacity</p>
+              <p class="text-gray-300 text-sm">8 Seats</p>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-navy-700 flex justify-between items-center">
+            <span class="text-gray-400 text-xs">Departs in 4 days</span>
+            <!-- Links to Corridor Page if exists, else Regional Hub -->
+            <a href="empty-legs-asia.html" class="text-[#C8B283] text-xs font-semibold hover:underline">View Details →</a>
+          </div>
+        </div>
+
+        <!-- Card 3 Example (Middle East) -->
+        <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <p class="text-white font-semibold text-lg">Dubai → Doha</p>
+              <p class="text-gray-500 text-xs">UAE / Qatar · OMDB → OTBD</p>
+            </div>
+            <span class="bg-[#C8B283]/10 text-[#C8B283] text-xs px-2 py-1 rounded font-medium">Cessna Citation X</span>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mt-4 pt-4 border-t border-navy-700">
+            <div>
+              <p class="text-gray-500 text-[10px] uppercase tracking-wider">Date</p>
+              <p class="text-gray-300 text-sm">Oct 15, 2026</p>
+            </div>
+            <div>
+              <p class="text-gray-500 text-[10px] uppercase tracking-wider">Capacity</p>
+              <p class="text-gray-300 text-sm">9 Seats</p>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-navy-700 flex justify-between items-center">
+            <span class="text-gray-400 text-xs">Departs in 5 days</span>
+            <!-- Links to Corridor Page if exists, else Regional Hub -->
+            <a href="empty-legs-middle-east.html" class="text-[#C8B283] text-xs font-semibold hover:underline">View Details →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center fade-in">
+        <a href="empty-legs-middle-east.html" class="inline-block bg-teal-500 text-white px-8 py-3 rounded-lg text-sm font-semibold hover:bg-teal-600 transition mr-4 mb-4">View all Middle East empty legs →</a>
+        <a href="empty-legs-asia.html" class="inline-block border border-white text-white px-8 py-3 rounded-lg text-sm font-semibold hover:bg-white hover:text-navy-950 transition mb-4">View all Asia empty legs →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LUXURY CTA: Don't See Your Route? ===== -->
+  <section class="py-24 bg-navy-900 border-t border-navy-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+      <div class="w-16 h-16 mx-auto border border-[#C8B283]/40 flex items-center justify-center mb-6 rounded-full">
+        <iconify-icon icon="lucide:bell" class="text-[#C8B283] text-3xl"></iconify-icon>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white">Don't See Your Route?</h2>
+      <p class="text-sm md:text-base font-light text-gray-400 mt-4 leading-relaxed max-w-2xl mx-auto">
+        Register your frequent routes with us, and our concierge team will alert you directly by WhatsApp or email the moment a matching flight becomes available.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="empty-leg-alerts.html" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
+          REGISTER YOUR ROUTES
+        </a>
+        <a href="contact.html#contact-form" class="border border-[#C8B283] text-[#C8B283] text-sm font-semibold tracking-wide px-8 py-4 hover:bg-[#C8B283] hover:text-navy-950 transition-all duration-300 w-full sm:w-auto text-center">
+          CONTACT CHARTER DESK
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="py-24 bg-navy-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Answers</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-6 fade-in">
+        
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What is an empty leg flight?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">An empty leg flight is a private jet flight repositioning after a one-way charter, sold at a discount instead of flying with an empty cabin. It's the same aircraft, crew, and service as a full-price charter.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How much can I save on an empty leg flight?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Empty leg flights typically list at 25–75% below the standard one-way charter rate for the same aircraft, depending on the route and how close to departure it is booked.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How last-minute are empty leg flights?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Most are listed 48–72 hours before departure, with some appearing same-day, once the operator confirms the original charter's schedule.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Is booking an empty leg flight safe?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Yes. Empty leg flights operate under the same certification and safety standards as any full-price private jet charter. The discount reflects repositioning economics, not reduced safety.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How do I get notified when a new empty leg matches my route?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Register your frequent departure and destination cities with us, and our concierge team will alert you directly by WhatsApp or email the moment a match appears — see the <a href="contact.html" class="text-[#C8B283] hover:underline">contact page</a> to get started.</p>
+        </div>
+
+        <p class="text-sm text-gray-500 italic text-center mt-8">For a full walkthrough of how empty legs work, see our <a href="blog/empty-leg-flights-explained.html" class="text-[#C8B283] hover:underline">complete guide</a>.</p>
+
+      </div>
     </div>
   </section>
 
@@ -276,6 +546,7 @@
   <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
+            
             <div class="md:col-span-2 lg:col-span-1">
                 <a href="index.html" class="flex items-center gap-3 mb-6">
                     <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
@@ -288,18 +559,20 @@
                 </a>
                 <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
             </div>
+
             <div>
                 <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
                 <ul class="space-y-3 text-gray-400 text-sm">
                     <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger & Pilgrim Charter</a></li>
                     <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo & Freight Charter</a></li>
                     <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
-                    <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Crew Rotation</a></li>
+                    <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Equipment Charter</a></li>
                     <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
                     <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma & Cold Chain</a></li>
                     <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
                 </ul>
             </div>
+
             <div>
                 <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
                 <ul class="space-y-3 text-gray-400 text-sm">
@@ -308,13 +581,16 @@
                     <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
                     <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
                 </ul>
-                <h4 class="text-teal-500 font-semibold mt-6 mb-4 uppercase text-sm tracking-wider">Regional Empty Legs</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
-                    <li><a href="empty-legs/middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
-                    <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Africa</a></li>
-                </ul>
+                <div class="mt-6">
+                    <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+                        <li><a href="empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Africa</a></li>
+                    </ul>
+                </div>
             </div>
+
             <div>
                 <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
                 <ul class="space-y-3 text-gray-400 text-sm">
@@ -326,6 +602,7 @@
                     <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
                 </ul>
             </div>
+
             <div>
                 <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
                 <ul class="space-y-4 text-gray-400 text-sm">
@@ -348,6 +625,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
             <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
         </div>
@@ -355,31 +633,33 @@
   </footer>
 
   <!-- WhatsApp Floating Chat Widget -->
-<div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
-    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
-        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
-            <div>
-                <h3 class="font-bold text-lg">Chat with us</h3>
-                <p class="text-xs opacity-90">Typically replies instantly</p>
-            </div>
-            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
-                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-            </button>
-        </div>
-        <div class="p-4 bg-navy-900">
-            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
-            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
-            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
-                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
-            </a>
-        </div>
-    </div>
-</div>
-<button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
-    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
-</button>
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+      <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+          <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+              <div>
+                  <h3 class="font-bold text-lg">Chat with us</h3>
+                  <p class="text-xs opacity-90">Typically replies instantly</p>
+              </div>
+              <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
+                  <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+              </button>
+          </div>
+          <div class="p-4 bg-navy-900">
+              <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+              <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+              <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+                  <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+              </a>
+          </div>
+      </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
+      <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
 
+  <!-- SINGLE CLEAN SCRIPT BLOCK -->
   <script>
+    // Mobile Menu Toggle
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     let isMenuOpen = false;
@@ -402,13 +682,13 @@
         }
     });
 
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-    mobileLinks.forEach(link => {
+    document.querySelectorAll('.mobile-link').forEach(link => {
         link.addEventListener('click', () => {
             closeMenu();
         });
     });
 
+    // Intersection Observer for Fade-In
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -418,8 +698,11 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    document.getElementById('current-year').textContent = new Date().getFullYear();
     
+    // Dynamic Year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // WhatsApp Widget Logic
     const waWidget = document.getElementById('wa-widget');
     const waToggle = document.getElementById('wa-toggle');
     const waClose = document.getElementById('wa-close');
@@ -437,113 +720,6 @@
     waMessage.addEventListener('input', () => {
         const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
         waSend.href = 'https://wa.me/923205487700?text=' + msg;
-    });
-
-    // Region Tab Filter Logic
-    function filterRegion(region) {
-      const tabs = document.querySelectorAll('.region-tab');
-      tabs.forEach(tab => {
-        if (tab.textContent.trim() === region) {
-           tab.classList.add('border-[#C8B283]', 'text-[#C8B283]', 'bg-[#C8B283]/10');
-           tab.classList.remove('border-white/10', 'text-gray-400');
-        } else {
-           tab.classList.remove('border-[#C8B283]', 'text-[#C8B283]', 'bg-[#C8B283]/10');
-           tab.classList.add('border-white/10', 'text-gray-400');
-        }
-      });
-      
-      const cards = document.querySelectorAll('.leg-card');
-      let visibleCount = 0;
-      cards.forEach(card => {
-        if (region === 'All' || card.dataset.region === region) {
-          card.style.display = 'flex';
-          visibleCount++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
-      
-      const grid = document.getElementById('fleetGrid');
-      const emptyMsg = document.getElementById('empty-msg');
-      if (visibleCount === 0 && !emptyMsg) {
-          grid.innerHTML += '<div id="empty-msg" class="col-span-full text-center text-gray-500 py-12">No active empty legs in ' + region + ' at the moment. Please register for alerts below.</div>';
-      } else if (visibleCount > 0 && emptyMsg) {
-          emptyMsg.remove();
-      }
-    }
-
-    // Dynamic Empty Legs Loader (Reads embedded JSON for local viewing, falls back to fetch for production)
-    function loadEmptyLegs() {
-        const embeddedData = document.getElementById('empty-legs-data');
-        if (embeddedData && embeddedData.textContent.trim().length > 0) {
-            try {
-                return Promise.resolve(JSON.parse(embeddedData.textContent));
-            } catch(e) {
-                console.error("Error parsing embedded JSON:", e);
-            }
-        }
-        return fetch('/empty-legs-data.json').then(r => r.json());
-    }
-    
-    loadEmptyLegs().then(data => {
-        const grid = document.getElementById('fleetGrid');
-        if (!data.legs || data.legs.length === 0) {
-          grid.innerHTML = '<div class="col-span-full text-center text-gray-500 py-12">No active empty legs at the moment. Please check back soon or register for alerts below.</div>';
-          return;
-        }
-        
-        grid.innerHTML = data.legs.map(leg => {
-          const priceText = leg.on_request ? 'On Request' : leg.price;
-          const btnClass = leg.on_request 
-            ? 'border border-[#C8B283] text-[#C8B283] hover:bg-[#C8B283] hover:text-black'
-            : 'bg-[#C8B283] text-black hover:bg-[#D9C89F]';
-          const btnText = leg.on_request ? 'GET QUOTE' : 'REQUEST FLIGHT';
-          const btnLink = leg.on_request ? 'contact.html#contact-form' : 'private-jet-quote.html';
-
-          return `
-          <div class="leg-card group card-hover border border-navy-700 bg-navy-800 p-5 flex flex-col" data-region="${leg.region}" style="display: flex;">
-            <div class="flex justify-between items-center mb-4">
-              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-[#C8B283]/10 px-2 py-1">Empty Leg</span>
-              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-500 bg-navy-900 px-2 py-1">${leg.date}</span>
-            </div>
-            <div class="flex items-center justify-between mb-5 pb-5 border-b border-navy-700">
-              <div class="text-center">
-                <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
-                <div class="text-xl font-display text-white">${leg.dep_code}</div>
-                <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">${leg.dep_city}</div>
-              </div>
-              <div class="flex-1 mx-3 h-px bg-navy-700 relative">
-                 <iconify-icon icon="lucide:plane" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#C8B283] bg-navy-800 p-1"></iconify-icon>
-              </div>
-              <div class="text-center">
-                <iconify-icon icon="ph:airplane-landing-duotone" class="text-[#C8B283] text-lg mb-1"></iconify-icon>
-                <div class="text-xl font-display text-white">${leg.arr_code}</div>
-                <div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">${leg.arr_city}</div>
-              </div>
-            </div>
-            <div class="flex-1 flex flex-col justify-between">
-              <div class="text-xs text-gray-400 flex items-center gap-2">
-                <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283]"></iconify-icon> ${leg.aircraft}
-              </div>
-              <div class="flex justify-between items-end mt-4 pt-4 border-t border-navy-700/50">
-                <div>
-                  <div class="text-[10px] uppercase tracking-wider text-gray-500">Price</div>
-                  <div class="text-lg font-display text-[#C8B283] mt-1">${priceText}</div>
-                </div>
-                <a href="${btnLink}" class="${btnClass} text-[10px] font-bold tracking-wider px-4 py-2 transition-all duration-150 text-center">
-                  ${btnText}
-                </a>
-              </div>
-            </div>
-          </div>
-          `;
-        }).join('');
-        
-        // Trigger initial filter
-        filterRegion('Asia');
-    }).catch(error => {
-        console.error('Error loading empty legs:', error);
-        document.getElementById('fleetGrid').innerHTML = '<div class="col-span-full text-center text-gray-500 py-12">Error loading flights. Please check back later.</div>';
     });
   </script>
 </body>
