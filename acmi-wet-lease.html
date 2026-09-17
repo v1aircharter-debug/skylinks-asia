@@ -1,89 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACMI Wet Lease Solutions | Skylinks Asia</title>
-    <meta name="description" content="Explore ACMI wet lease solutions with Skylinks Asia. Flexible aircraft leasing for seasonal demand, fleet expansion, and urgent capacity requirements.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACMI / Wet Lease Solutions | Aircraft, Crew, Maintenance & Insurance | Skylinks Asia</title>
+  <meta name="description" content="ACMI wet lease solutions for seasonal demand, AOG recovery, urgent capacity, and freighter operations across Asia, Middle East & Africa. Flexible terms from single flights to 18 months.">
+  <link rel="canonical" href="https://www.skylinks.asia/acmi-wet-lease.html">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ACMI / Wet Lease Solutions | Skylinks Asia Aviation">
+  <meta property="og:description" content="Flexible aircraft leasing for seasonal demand, fleet expansion, and urgent capacity requirements across Asia, Middle East, and Africa.">
+  <meta property="og:url" content="https://www.skylinks.asia/acmi-wet-lease.html">
+  <meta property="og:site_name" content="Skylinks Asia Aviation">
+  <meta property="og:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
+  <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does ACMI stand for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ACMI stands for Aircraft, Crew, Maintenance, and Insurance — the four elements the lessor provides under this arrangement, while the lessee covers fuel, airport fees, and other direct operating costs. It's also commonly called a wet lease."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between ACMI/wet lease and a dry lease?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Under ACMI, the lessor provides the aircraft, crew, maintenance, and insurance, and the aircraft operates on the lessor's Air Operator's Certificate. Under a dry lease, the lessor provides only the aircraft, and the lessee operates it on its own AOC, supplying crew, maintenance, and insurance themselves."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a typical ACMI lease last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ACMI leases are generally short-term, ranging from a single flight up to around 18 months. Dry leases, by comparison, typically run 6 to 12 years."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a damp lease, and how is it different from ACMI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A damp lease sits between wet and dry: the lessor provides the aircraft, flight crew, maintenance, and insurance, but the lessee supplies its own cabin crew, often chosen by larger airlines wanting more control over the in-flight passenger experience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who typically uses ACMI wet lease?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Airlines facing seasonal demand spikes, unexpected aircraft groundings, new route launches, or short-term capacity shortfalls are the most common users, alongside cargo operators needing additional freighter capacity during peak shipping periods."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the lessee need its own Air Operator's Certificate for an ACMI lease?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. One of the main advantages of ACMI over a dry lease is that the aircraft continues operating under the lessor's AOC, letting the lessee add capacity without the time and regulatory process a new AOC would require."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can ACMI be used for cargo and freighter capacity, not just passenger flights?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Freighter ACMI is a common way for cargo operators to add capacity during peak demand periods, such as e-commerce shipping seasons, without the cost and commitment of acquiring additional aircraft."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can an ACMI wet lease be arranged?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because the aircraft operates under the lessor's existing AOC rather than requiring new certification, ACMI arrangements can typically be put in place considerably faster than a dry lease, often within days for genuinely urgent capacity needs."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#0a0f1a', 900: '#0f172a', 800: '#1e293b', 700: '#334155' },
+            teal: { 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e', 400: '#2dd4bf', 300: '#5eead4' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0f1a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
+    html { scroll-behavior: smooth; }
+    .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
+    .card-hover { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
+    .toast { animation: fadeInUp 0.4s ease-out forwards; }
+    .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
     
-    <!-- SEO & Social -->
-    <link rel="canonical" href="https://www.skylinks.asia/acmi-wet-lease.html">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <meta property="og:title" content="ACMI Wet Lease Solutions | Skylinks Asia">
-    <meta property="og:description" content="Explore ACMI wet lease solutions with Skylinks Asia. Flexible aircraft leasing for seasonal demand, fleet expansion, and urgent capacity requirements.">
-    <meta property="og:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
-    <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/fleet-hero.webp">
-    <meta property="og:url" content="https://www.skylinks.asia/acmi-wet-lease.html">
-    <meta property="og:type" content="website">
+    /* Standard Fade-In Animation */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    /* Mobile Menu Transition */
+    #mobile-menu { transition: transform 0.3s ease-in-out; }
+    .font-display { font-family: 'Playfair Display', serif; }
+
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: { 950: '#0a0f1a', 900: '#111827', 800: '#1e293b', 700: '#334155' },
-                        teal: { 500: '#14b8a6', 600: '#0d9488' },
-                        gold: { 500: '#C8B283', 600: '#B09668', 400: '#D9C89F' }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Playfair Display', 'serif']
-                    }
-                }
-            }
-        }
-    </script>
+    /* VIP Luxury Dropdown */
+    .dropdown-menu { 
+      opacity: 0; 
+      visibility: hidden; 
+      transform: translateY(10px);
+      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { 
+      opacity: 1; 
+      visibility: visible; 
+      transform: translateY(0);
+    }
 
-    <!-- Iconify -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    /* Date Picker Dark Mode Fix */
+    input[type="date"] { color-scheme: dark; }
 
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0f1a; }
-        .font-display { font-family: 'Playfair Display', serif; }
-        
-        /* Global CSS Fix for Dark Mode Date Picker */
-        input[type="date"] { color-scheme: dark; }
-        
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        #mobile-menu {
-            transition: transform 0.3s ease-in-out;
-        }
-        
-        .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
-        .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
-        .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
-        .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
-        
-        /* VIP Luxury Dropdown */
-        .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
-        .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
-    </style>
-    <!-- Zero Blur Rule & Hero Visibility -->
-    <style>.hero-img-blur { filter: none !important; opacity: 0.8 !important; }</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4KQLDXBT24');
-</script>
+    /* Hero Image Visibility Rule */
+    .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
@@ -121,7 +203,7 @@
               <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
               
               <li class="relative dropdown">
-                  <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1">
+                  <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1 text-[#C8B283]">
                       Private Jets 
                       <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
                   </button>
@@ -141,8 +223,14 @@
                       </a>
                       <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
                           <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Quote
+                          VIP Jet Quote
                       </a>
+                      <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+                          <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
+                          <a href="empty-legs/middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
+                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Africa</a>
+                      </div>
                   </div>
               </li>
 
@@ -178,112 +266,448 @@
   </header>
 
   <!-- ===== HERO ===== -->
-  <section class="relative min-h-[60vh] flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
+  <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="hero-images/fleet-hero.webp" alt="Aircraft for wet lease" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
+      <img src="hero-images/fleet-hero.webp" alt="Aircraft available for ACMI wet lease" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
       <div class="absolute inset-0 hero-bg"></div>
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
-    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 w-full fade-in">
-      <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Aviation Leasing</span>
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-normal leading-tight tracking-tight text-white">
-        ACMI / <span class="text-teal-500">Wet Lease</span>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 w-full">
+      <div class="fade-in">
+        <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Aviation Leasing</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+        ACMI / <span class="gradient-text">Wet Lease</span>
       </h1>
-      <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto">
-        Flexible aircraft leasing for seasonal demand, fleet expansion, and urgent capacity requirements across Asia, Middle East, and Africa.
+      <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto fade-in">
+        Flexible aircraft leasing for seasonal demand, fleet expansion, and urgent capacity requirements across Asia, Middle East, and Africa. Aircraft, crew, maintenance, and insurance — supplied under a single wet lease structure.
       </p>
+      <p class="text-xs text-gray-500 mt-4 fade-in">By the Skylinks Asia Charter Desk · Reviewed by our Operations Team</p>
+      
+      <!-- STANDARD BUTTON LAYOUT (LOCKED DNA RULE) -->
+      <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+        <a href="#quote" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
+          GET ACMI QUOTE
+        </a>
+        <a href="#capabilities" class="border border-white text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-teal-500 hover:text-teal-500 transition-all duration-300 w-full sm:w-auto text-center">
+          OUR CAPABILITIES
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- ===== ARTICLE BODY (NO FADE-IN) ===== -->
+  <!-- ===== INTRO & QUICK ANSWER ===== -->
   <section class="py-24 bg-navy-950">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-300 leading-relaxed space-y-8">
-      
-      <h2 class="text-3xl font-display text-white mt-12 mb-6">What is ACMI?</h2>
-      <p>ACMI stands for Aircraft, Crew, Maintenance, and Insurance. It is a wet lease arrangement where the lessor provides the aircraft, a full flight crew, maintenance, and insurance. The lessee pays for the aircraft by the hour and covers fuel, airport fees, and other operational costs.</p>
-      
-      <h2 class="text-3xl font-display text-white mt-12 mb-6">Why Choose ACMI?</h2>
-      <ul class="space-y-4">
-        <li class="flex items-start gap-4"><iconify-icon icon="lucide:check-circle" class="text-teal-500 text-xl mt-1 shrink-0"></iconify-icon><span><strong class="text-white">Seasonal Demand:</strong> Quickly add capacity during peak seasons without long-term fleet commitments.</span></li>
-        <li class="flex items-start gap-4"><iconify-icon icon="lucide:check-circle" class="text-teal-500 text-xl mt-1 shrink-0"></iconify-icon><span><strong class="text-white">Urgent Capacity:</strong> Address sudden operational needs or aircraft grounding without delays.</span></li>
-        <li class="flex items-start gap-4"><iconify-icon icon="lucide:check-circle" class="text-teal-500 text-xl mt-1 shrink-0"></iconify-icon><span><strong class="text-white">Market Testing:</strong> Launch new routes with minimal risk before committing to aircraft acquisition.</span></li>
-      </ul>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12 items-center">
+        <div class="lg:col-span-2 fade-in">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Aviation Leasing Solutions</span>
+          <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Flexible Capacity, When You Need It</h2>
+          <p class="text-sm md:text-base font-light text-gray-400 mt-6 leading-relaxed">
+            ACMI (Aircraft, Crew, Maintenance, Insurance) — also called wet lease — is the structure of choice when an airline needs to add capacity quickly without the long-term commitment and regulatory overhead of aircraft acquisition. The lessor supplies the aircraft, flight and cabin crew, maintenance, and insurance; the lessee covers fuel, airport fees, and other operating costs, and flies the aircraft on their own schedule.
+          </p>
+          <p class="text-sm md:text-base font-light text-gray-400 mt-4 leading-relaxed">
+            It sits at the full-service end of a leasing spectrum that also includes damp lease and dry lease, and is the standard answer to seasonal demand spikes, AOG recovery, route testing, and urgent freighter capacity.
+          </p>
+        </div>
 
-      <!-- ACMI Request Form (Standard DNA Form) -->
-      <div class="mt-16 bg-navy-900 border border-navy-700 p-8 rounded-lg fade-in">
-        <h3 class="text-2xl font-display text-white mb-6">Request ACMI Quote</h3>
-        <form name="acmi-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="space-y-6">
-          <input type="hidden" name="form-name" value="acmi-quote" />
-          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
-          
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Charter Type *</label>
-              <select name="charterType" required class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150">
-                <option value="">Select type</option>
-                <option value="passenger">Passenger Charter</option>
-                <option value="cargo">Cargo Charter</option>
-                <option value="acmi">ACMI / Wet Lease</option>
-                <option value="vip">VIP Private Jet</option>
-                <option value="both">Both / Combined</option>
-              </select>
+        <div class="lg:col-span-1 fade-in">
+          <div class="border-l-2 border-teal-500 bg-navy-900 p-8">
+            <h3 class="text-sm font-semibold text-teal-500 tracking-[0.2em] uppercase mb-4">Quick Answer</h3>
+            <p class="text-sm text-gray-400 leading-relaxed font-light">
+              ACMI puts an aircraft, its flight and cabin crew, maintenance, and insurance under the lessee's schedule, while the lessee covers fuel, airport fees, and other operating costs. It sits at the "full-service" end of a leasing spectrum that also includes <span class="text-white font-medium">damp lease</span> (lessee supplies cabin crew) and <span class="text-white font-medium">dry lease</span> (lessee supplies everything except the aircraft itself, operating it on their own AOC).
+            </p>
+            <p class="text-sm text-gray-400 leading-relaxed font-light mt-4">
+              ACMI terms typically run from a single flight up to around 18 months — far shorter than a dry lease, which usually runs 6 to 12 years — making it the go-to structure for seasonal capacity, route testing, and sudden operational gaps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEASING SPECTRUM TABLE ===== -->
+  <section class="py-24 bg-navy-900 border-y border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">The Leasing Spectrum</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Wet, Damp, and Dry Lease Compared</h2>
+        <p class="text-sm font-light text-gray-400 mt-4 max-w-3xl mx-auto">"ACMI" and "wet lease" get used almost interchangeably, but the leasing world runs along a spectrum of how much the lessor provides versus the lessee.</p>
+      </div>
+
+      <!-- Desktop Table -->
+      <div class="hidden md:block overflow-x-auto fade-in">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b-2 border-teal-500">
+              <th class="py-4 px-4 text-teal-500 font-semibold text-xs uppercase tracking-[0.2em]">Lease Type</th>
+              <th class="py-4 px-4 text-teal-500 font-semibold text-xs uppercase tracking-[0.2em]">Lessor Provides</th>
+              <th class="py-4 px-4 text-teal-500 font-semibold text-xs uppercase tracking-[0.2em]">Lessee Provides</th>
+              <th class="py-4 px-4 text-teal-500 font-semibold text-xs uppercase tracking-[0.2em]">Typical Duration</th>
+              <th class="py-4 px-4 text-teal-500 font-semibold text-xs uppercase tracking-[0.2em]">Whose AOC</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-300">
+            <tr class="border-b border-navy-700 hover:bg-navy-800 transition-colors">
+              <td class="py-5 px-4 font-semibold text-white">ACMI / Wet Lease</td>
+              <td class="py-5 px-4 text-sm font-light">Aircraft, flight crew, cabin crew, maintenance, insurance</td>
+              <td class="py-5 px-4 text-sm font-light">Fuel, airport fees, operating costs</td>
+              <td class="py-5 px-4 text-sm font-light">Single flight to ~18 months</td>
+              <td class="py-5 px-4"><span class="bg-teal-500/10 border border-teal-500/30 text-teal-500 px-3 py-1 text-xs font-semibold tracking-wide">Lessor's</span></td>
+            </tr>
+            <tr class="border-b border-navy-700 hover:bg-navy-800 transition-colors">
+              <td class="py-5 px-4 font-semibold text-white">Damp Lease</td>
+              <td class="py-5 px-4 text-sm font-light">Aircraft, flight crew, maintenance, insurance</td>
+              <td class="py-5 px-4 text-sm font-light">Cabin crew, fuel, airport fees</td>
+              <td class="py-5 px-4 text-sm font-light">Weeks to months</td>
+              <td class="py-5 px-4"><span class="bg-teal-500/10 border border-teal-500/30 text-teal-500 px-3 py-1 text-xs font-semibold tracking-wide">Lessor's</span></td>
+            </tr>
+            <tr class="hover:bg-navy-800 transition-colors">
+              <td class="py-5 px-4 font-semibold text-white">Dry Lease</td>
+              <td class="py-5 px-4 text-sm font-light">Aircraft only</td>
+              <td class="py-5 px-4 text-sm font-light">Crew, maintenance, insurance, all operating costs</td>
+              <td class="py-5 px-4 text-sm font-light">6–12 years</td>
+              <td class="py-5 px-4"><span class="bg-navy-700 border border-navy-600 text-gray-400 px-3 py-1 text-xs font-semibold tracking-wide">Lessee's</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile Cards -->
+      <div class="md:hidden space-y-4 fade-in">
+        <div class="border border-navy-700 bg-navy-800 p-6">
+          <h3 class="text-lg font-display text-white mb-3">ACMI / Wet Lease</h3>
+          <p class="text-xs text-gray-500 mb-2"><span class="text-teal-500 font-semibold uppercase tracking-wide">Lessor:</span> Aircraft, flight crew, cabin crew, maintenance, insurance</p>
+          <p class="text-xs text-gray-500 mb-2"><span class="text-teal-500 font-semibold uppercase tracking-wide">Lessee:</span> Fuel, airport fees, operating costs</p>
+          <p class="text-xs text-gray-500 mb-2"><span class="text-teal-500 font-semibold uppercase tracking-wide">Duration:</span> Single flight to ~18 months</p>
+          <p class="text-xs text-gray-500"><span class="text-teal-500 font-semibold uppercase tracking-wide">AOC:</span> Lessor's</p>
+        </div>
+        <div class="border border-navy-700 bg-navy-800 p-6">
+          <h3 class="text-lg font-display text-white mb-3">Damp Lease</h3>
+          <p class="text-xs text-gray-500 mb-2"><span class="text-teal-500 font-semibold uppercase tracking-wide">Lessor:</span> Aircraft, flight crew, maintenance, insurance</p>
+          <p class="text-xs text-gray-500 mb-2"><span class="text-teal-500 font-semibold uppercase tracking-wide">Lessee:</span> Cabin crew, fuel, airport fees</p>
+          <p class="text-xs text-gray-500 mb-2"><span class="text-teal-500 font-semibold uppercase tracking-wide">Duration:</span> Weeks to months</p>
+          <p class="text-xs text-gray-500"><span class="text-teal-500 font-semibold uppercase tracking-wide">AOC:</span> Lessor's</p>
+        </div>
+        <div class="border border-navy-700 bg-navy-800 p-6">
+          <h3 class="text-lg font-display text-white mb-3">Dry Lease</h3>
+          <p class="text-xs text-gray-500 mb-2"><span class="text-teal-500 font-semibold uppercase tracking-wide">Lessor:</span> Aircraft only</p>
+          <p class="text-xs text-gray-500 mb-2"><span class="text-teal-500 font-semibold uppercase tracking-wide">Lessee:</span> Crew, maintenance, insurance, all operating costs</p>
+          <p class="text-xs text-gray-500 mb-2"><span class="text-teal-500 font-semibold uppercase tracking-wide">Duration:</span> 6–12 years</p>
+          <p class="text-xs text-gray-500"><span class="text-teal-500 font-semibold uppercase tracking-wide">AOC:</span> Lessee's</p>
+        </div>
+      </div>
+
+      <!-- Key Insight Box -->
+      <div class="mt-12 border-l-2 border-[#C8B283] bg-navy-800 p-8 fade-in">
+        <h3 class="text-lg font-display text-white mb-3">The Practical Distinction</h3>
+        <p class="text-sm font-light text-gray-400 leading-relaxed">
+          Wet and damp leases operate under the lessor's Air Operator's Certificate (AOC), which is what lets an airline add capacity almost immediately without regulatory delay. A dry lease requires the lessee to operate the aircraft on its own AOC, which takes considerably longer to arrange — a large part of why ACMI is the structure of choice when speed matters more than long-term cost efficiency.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CAPABILITIES / WHY CHOOSE ACMI ===== -->
+  <section id="capabilities" class="py-24 bg-navy-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Use Cases</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Why Airlines Choose ACMI</h2>
+        <p class="text-sm font-light text-gray-400 mt-4 max-w-3xl mx-auto">Five scenarios where ACMI wet leasing is the right operational answer.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:trending-up" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">Seasonal Demand</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+            Quickly add capacity during peak seasons without long-term fleet commitments — a classic example being airlines adding widebody capacity for the Hajj and Umrah pilgrimage season, when demand spikes sharply for a defined window.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:alert-triangle" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">AOG & Schedule Recovery</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+            When one of your own aircraft is grounded (AOG) or a maintenance event disrupts your schedule, an ACMI lease can plug the gap almost immediately, keeping your network running while the underlying issue is resolved.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:zap" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">Urgent Capacity</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+            Address sudden operational needs or unexpected demand spikes without the lead time a new aircraft purchase or dry lease would require. ACMI can often be arranged within days, depending on aircraft availability.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:map" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">Market Testing</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+            Launch new routes with minimal risk before committing to aircraft acquisition — if the route doesn't perform, you're not left holding a long-term asset. ACMI lets you prove demand before you commit capital.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:package" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">Cargo & Freighter Capacity</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+            ACMI isn't limited to passenger operations — freighter ACMI is a common way for cargo operators to add capacity during peak e-commerce or seasonal shipping demand without acquiring aircraft outright.
+          </p>
+        </div>
+
+        <!-- CTA Card -->
+        <div class="border border-teal-500/30 bg-navy-900 p-8 flex flex-col justify-center fade-in">
+          <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:book-open" class="text-teal-500 text-xl"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-display tracking-tight text-white">Need a Deeper Comparison?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+            Our ACMI vs. Dry Lease breakdown covers the cost, regulatory, and operational trade-offs in detail.
+          </p>
+          <a href="acmi-vs-dry-lease.html" class="mt-6 inline-flex items-center gap-2 text-xs font-semibold tracking-wide px-4 py-2 border border-teal-500/40 text-teal-500 hover:bg-teal-500/10 transition-colors w-fit">
+            Read the Breakdown <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA Banner: Seasonal Demand Guide -->
+      <div class="mt-16 p-8 md:p-12 border border-teal-500/20 bg-navy-900 text-center fade-in">
+        <h3 class="text-2xl md:text-3xl font-display tracking-tight text-white">Planning for Seasonal Capacity Spikes?</h3>
+        <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 max-w-2xl mx-auto">
+          Our ACMI seasonal demand guide covers block-hour planning, aircraft availability windows, and contract structures for peak periods like Hajj, Umrah, and year-end cargo surges.
+        </p>
+        <a href="acmi-wet-lease-seasonal-demand.html" class="mt-8 inline-flex items-center gap-2 bg-white text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-gray-200 transition-all duration-150">
+          VIEW SEASONAL DEMAND GUIDE <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUOTE FORM (NETLIFY READY) ===== -->
+  <section id="quote" class="py-24 bg-navy-900 border-y border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-5 gap-12">
+        <!-- Left Info -->
+        <div class="lg:col-span-2 fade-in">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Aviation Leasing Desk</span>
+          <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Request an<br>ACMI Quote</h2>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-6">
+            Tell us about your capacity requirements — aircraft type, lease duration, and route — and our operations team will respond within 2 hours with available aircraft and indicative block-hour pricing.
+          </p>
+          <div class="mt-10 space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0">
+                <iconify-icon icon="lucide:phone" class="text-teal-500 text-lg"></iconify-icon>
+              </div>
+              <div>
+                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">Operations Desk</div>
+                <div class="text-sm text-white mt-0.5">+92 309 777 8000</div>
+              </div>
             </div>
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Full Name *</label>
-              <input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0">
+                <iconify-icon icon="lucide:mail" class="text-teal-500 text-lg"></iconify-icon>
+              </div>
+              <div>
+                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">Leasing Coordination Email</div>
+                <div class="text-sm text-white mt-0.5">charter@skylinks.asia</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0">
+                <iconify-icon icon="lucide:clock" class="text-teal-500 text-lg"></iconify-icon>
+              </div>
+              <div>
+                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">Response Time</div>
+                <div class="text-sm text-white mt-0.5">Within 2 hours, 24/7</div>
+              </div>
             </div>
           </div>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Company</label>
-              <input type="text" name="company" placeholder="Company / Airline name" class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+        </div>
+
+        <!-- Right Form -->
+        <div class="lg:col-span-3 fade-in">
+          <form id="quoteForm" name="acmi-wet-lease-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
+            <input type="hidden" name="form-name" value="acmi-wet-lease-quote" />
+            <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Charter Type *</label>
+                <select name="charterType" required class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150">
+                  <option value="">Select type</option>
+                  <option value="passenger">Passenger Charter</option>
+                  <option value="cargo">Cargo Charter</option>
+                  <option value="acmi" selected>ACMI / Wet Lease</option>
+                  <option value="vip">VIP Private Jet</option>
+                  <option value="both">Both / Combined</option>
+                </select>
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Full Name *</label>
+                <input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Company / Airline</label>
+                <input type="text" name="company" placeholder="Company / Airline name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Email *</label>
+                <input type="email" name="email" required placeholder="your@email.com" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Phone / WhatsApp *</label>
+                <input type="tel" name="phone" required placeholder="+92 xxx xxx xxxx" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Urgency</label>
+                <select name="urgency" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150">
+                  <option value="standard">Standard (48h+)</option>
+                  <option value="urgent">Urgent (24h)</option>
+                  <option value="emergency">Emergency (ASAP)</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Aircraft Type Required</label>
+                <input type="text" name="aircraftType" placeholder="e.g. A320, B777-300ER, B737-800F" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Lease Duration</label>
+                <select name="leaseDuration" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150">
+                  <option value="">Select duration</option>
+                  <option value="single-flight">Single Flight</option>
+                  <option value="weeks">Weeks</option>
+                  <option value="1-3-months">1–3 Months</option>
+                  <option value="3-6-months">3–6 Months</option>
+                  <option value="6-12-months">6–12 Months</option>
+                  <option value="12-18-months">12–18 Months</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Base / Departure Airport *</label>
+                <input type="text" name="departure" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Route / Region</label>
+                <input type="text" name="region" placeholder="e.g. Asia–Middle East, Intra-Asia" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Start Date *</label>
+                <input type="date" name="flightDate" required class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Block Hours / Pax / Cargo *</label>
+                <input type="text" name="details" required placeholder="e.g. 300 block hours / 180 pax / 45 tonnes" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              </div>
             </div>
             <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Email *</label>
-              <input type="email" name="email" required placeholder="your@email.com" class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
+              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Additional Requirements</label>
+              <textarea name="notes" rows="3" placeholder="Aircraft preference, wet/damp/dry inquiry, special handling, AOG context, route details..." class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea>
             </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Phone / WhatsApp *</label>
-              <input type="tel" name="phone" required placeholder="+92 xxx xxx xxxx" class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-            </div>
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Urgency</label>
-              <select name="urgency" class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150">
-                <option value="standard">Standard (48h+)</option>
-                <option value="urgent">Urgent (24h)</option>
-                <option value="emergency">Emergency (ASAP)</option>
-              </select>
-            </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Departure Airport *</label>
-              <input type="text" name="departure" required placeholder="City / ICAO / IATA" class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-            </div>
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Destination Airport *</label>
-              <input type="text" name="destination" required placeholder="City / ICAO / IATA" class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-            </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Date *</label>
-              <input type="date" name="flightDate" required class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-            </div>
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Pax Count / Cargo Weight *</label>
-              <input type="text" name="details" required placeholder="e.g. 180 pax / 25 tons / 8 pallets" class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-            </div>
-          </div>
-          <div>
-            <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Additional Requirements</label>
-            <textarea name="notes" rows="3" placeholder="Cargo type, aircraft preference, one-way / return, budget range, special handling..." class="w-full bg-navy-950 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea>
-          </div>
-          <button type="submit" class="w-full bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">SUBMIT CHARTER ENQUIRY</button>
-          <p class="text-[10px] text-gray-600 text-center">We typically respond within 2 hours. Your information is treated as confidential.</p>
-        </form>
+            <button type="submit" class="w-full bg-teal-500 text-white text-sm font-semibold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">
+              SUBMIT ACMI ENQUIRY
+            </button>
+            <p class="text-[10px] text-gray-600 text-center">We typically respond within 2 hours. Your information is treated as confidential.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER: CARGO GUIDE ===== -->
+  <section class="py-24 bg-navy-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="p-8 md:p-12 border border-navy-700 bg-navy-900 text-center fade-in">
+        <h3 class="text-2xl md:text-3xl font-display tracking-tight text-white">Exploring Freighter ACMI?</h3>
+        <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 max-w-2xl mx-auto">
+          Our cargo aircraft charter guide covers how freighter sourcing works across Asia, Middle East, and Africa — including ACMI freighter structures, block-hour pricing, and aircraft selection by trade lane.
+        </p>
+        <a href="cargo-aircraft-charter-guide-asia-africa-middle-east.html" class="mt-8 inline-flex items-center gap-2 border border-white text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-teal-500 hover:text-teal-500 transition-all duration-300">
+          VIEW CARGO AIRCRAFT CHARTER GUIDE <iconify-icon icon="lucide:book-open"></iconify-icon>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="py-24 bg-navy-900 border-y border-navy-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Answers</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-6 fade-in">
+        
+        <div class="border border-navy-800 bg-navy-950 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What does ACMI stand for?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">ACMI stands for Aircraft, Crew, Maintenance, and Insurance — the four elements the lessor provides under this arrangement, while the lessee covers fuel, airport fees, and other direct operating costs. It's also commonly called a wet lease.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-950 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What's the difference between ACMI/wet lease and a dry lease?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Under ACMI, the lessor provides the aircraft, crew, maintenance, and insurance, and the aircraft operates on the lessor's Air Operator's Certificate. Under a dry lease, the lessor provides only the aircraft, and the lessee operates it on its own AOC, supplying crew, maintenance, and insurance themselves.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-950 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How long does a typical ACMI lease last?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">ACMI leases are generally short-term, ranging from a single flight up to around 18 months, making them suited to seasonal demand, route testing, or covering a temporary capacity gap. Dry leases, by comparison, typically run 6 to 12 years.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-950 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What is a damp lease, and how is it different from ACMI?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">A damp lease sits between wet and dry: the lessor provides the aircraft, flight crew, maintenance, and insurance, but the lessee supplies its own cabin crew — often chosen by larger airlines that want more control over the in-flight passenger experience and brand consistency.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-950 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Who typically uses ACMI wet lease?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Airlines facing seasonal demand spikes, unexpected aircraft groundings (AOG), new route launches, or short-term capacity shortfalls are the most common users, alongside cargo operators needing additional freighter capacity during peak shipping periods.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-950 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Does the lessee need its own Air Operator's Certificate for an ACMI lease?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">No. One of the main advantages of ACMI over a dry lease is that the aircraft continues operating under the lessor's AOC, letting the lessee add capacity without the time and regulatory process a new AOC would require.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-950 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Can ACMI be used for cargo and freighter capacity, not just passenger flights?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Yes. Freighter ACMI is a common way for cargo operators to add capacity during peak demand periods, such as e-commerce shipping seasons, without the cost and commitment of acquiring additional aircraft.</p>
+        </div>
+
+        <div class="border border-navy-800 bg-navy-950 p-6 md:p-8">
+          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How quickly can an ACMI wet lease be arranged?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Because the aircraft operates under the lessor's existing AOC rather than requiring new certification, ACMI arrangements can typically be put in place considerably faster than a dry lease — often within days for genuinely urgent capacity needs, depending on aircraft availability.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -312,7 +736,7 @@
                     <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger & Pilgrim Charter</a></li>
                     <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo & Freight Charter</a></li>
                     <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
-                    <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Crew Rotation</a></li>
+                    <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Equipment Charter</a></li>
                     <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
                     <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma & Cold Chain</a></li>
                     <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
@@ -320,13 +744,21 @@
             </div>
 
             <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+                <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
                 <ul class="space-y-3 text-gray-400 text-sm">
                     <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
                     <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
                     <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
                     <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
                 </ul>
+                <div class="mt-6">
+                    <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+                        <li><a href="empty-legs/middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Africa</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div>
@@ -370,34 +802,34 @@
     </div>
   </footer>
 
-  <!-- WhatsApp Floating Chat Widget -->
+  <div id="toastContainer" class="fixed bottom-6 right-6 z-50 space-y-3"></div>
+
   <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
-      <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
-          <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
-              <div>
-                  <h3 class="font-bold text-lg">Chat with us</h3>
-                  <p class="text-xs opacity-90">Typically replies instantly</p>
-              </div>
-              <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
-                  <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-              </button>
-          </div>
-          <div class="p-4 bg-navy-900">
-              <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
-              <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
-              <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
-                  <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
-              </a>
-          </div>
-      </div>
+    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-lg">Chat with us</h3>
+                <p class="text-xs opacity-90">Typically replies instantly</p>
+            </div>
+            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
+                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+            </button>
+        </div>
+        <div class="p-4 bg-navy-900">
+            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+            </a>
+        </div>
+    </div>
   </div>
   <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
-      <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
   </button>
 
-  <!-- SINGLE CLEAN SCRIPT BLOCK (No Duplicates, No Broken AJAX) -->
   <script>
-    // Mobile Menu Logic
+    // Menu Logic
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     let isMenuOpen = false;
@@ -420,13 +852,27 @@
         }
     });
 
-    document.querySelectorAll('.mobile-link').forEach(link => {
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
             closeMenu();
         });
     });
 
-    // Intersection Observer for Fade-In
+    // Toast Logic
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      const bgColor = type === 'success' ? 'bg-teal-500/10 border-teal-500/30' : 'bg-red-500/10 border-red-500/30';
+      const textColor = type === 'success' ? 'text-teal-500' : 'text-red-400';
+      const icon = type === 'success' ? 'lucide:check-circle' : 'lucide:alert-circle';
+      toast.className = `toast border ${bgColor} backdrop-blur-sm px-6 py-4 flex items-center gap-3 max-w-sm`;
+      toast.innerHTML = `<iconify-icon icon="${icon}" class="${textColor} text-lg"></iconify-icon><span class="text-sm ${textColor}">${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateY(10px)'; toast.style.transition = 'all 0.3s ease'; setTimeout(() => toast.remove(), 300); }, 4000);
+    }
+
+    // Fade-in Observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -437,8 +883,8 @@
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     
-    // Dynamic Year
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+    // Dynamic Year — Hardcoded to 2026 per Protocol
+    document.getElementById('current-year').textContent = '2026';
 
     // WhatsApp Widget Logic
     const waWidget = document.getElementById('wa-widget');
