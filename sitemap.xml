@@ -69,7 +69,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Empty Legs Mega-Corridors -->
+  <!-- Empty Legs Mega-Corridors & Origin Hubs -->
   <url>
     <loc>https://www.skylinks.asia/riyadh-jeddah-empty-legs.html</loc>
     <lastmod>2026-09-19</lastmod>
@@ -78,6 +78,18 @@
   </url>
   <url>
     <loc>https://www.skylinks.asia/dubai-riyadh-empty-legs.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/jeddah-empty-legs.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/doha-empty-legs.html</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
