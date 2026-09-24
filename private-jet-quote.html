@@ -133,9 +133,10 @@
                       </a>
                       <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
                           <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
-                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
-                          <a href="empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
-                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Africa</a>
+                          <a href="empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Middle East Hub</a>
+                          <a href="empty-legs-asia.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Asia Hub</a>
+                          <a href="dubai-empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Dubai Origin Hub</a>
+                          <a href="istanbul-empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Istanbul Origin Hub</a>
                       </div>
                   </div>
               </li>
@@ -287,9 +288,10 @@
                 <div class="mt-6">
                     <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
-                        <li><a href="empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
-                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Africa</a></li>
+                        <li><a href="empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Middle East Hub</a></li>
+                        <li><a href="empty-legs-asia.html" class="hover:text-teal-500 transition-colors">Asia Hub</a></li>
+                        <li><a href="dubai-empty-legs.html" class="hover:text-teal-500 transition-colors">Dubai Origin Hub</a></li>
+                        <li><a href="istanbul-empty-legs.html" class="hover:text-teal-500 transition-colors">Istanbul Origin Hub</a></li>
                     </ul>
                 </div>
             </div>
@@ -400,7 +402,7 @@
     // Dynamic Year — Hardcoded to 2026 per Protocol
     document.getElementById('current-year').textContent = '2026';
 
-    // Auto-Fill Form Fields from URL Parameters
+    // Auto-Fill Form Fields from URL Parameters (Empty Leg Pre-Fill Logic)
     const urlParams = new URLSearchParams(window.location.search);
     
     const departure = urlParams.get('departure');
