@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dangerous Goods (DGR) Cargo To and From Pakistan: A Shipper's Guide</title>
+  <meta name="description" content="How DG air cargo moves to/from Pakistan: PCAA oversight, key airports, common DG export categories, and when to charter an aircraft.">
+  <link rel="canonical" href="https://www.skylinks.asia/blog/dangerous-goods-cargo-pakistan.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="DGR Cargo To and From Pakistan: What Shippers Need to Know">
+  <meta property="og:description" content="A practical guide to shipping dangerous goods by air to and from Pakistan: regulations, gateways, DG categories, and charter options.">
+  <meta property="og:url" content="https://www.skylinks.asia/blog/dangerous-goods-cargo-pakistan.html">
+  <meta property="og:site_name" content="Skylinks Asia Aviation">
+  <meta property="og:image" content="https://www.skylinks.asia/hero-images/cargo-hero-images/dangerous-goods-cargo-pakistan.webp">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Pakistan follow international dangerous goods regulations, or does it have its own rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pakistan applies the ICAO Technical Instructions and IATA DGR framework used internationally, with the Pakistan Civil Aviation Authority (PCAA) responsible for national oversight and training approval. There isn't a separate, materially different Pakistani DG rulebook — practical differences come from individual carrier operator variations, not a distinct national standard."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Pakistani airports can handle dangerous goods air cargo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jinnah International (Karachi), Allama Iqbal International (Lahore), and Islamabad International all have dedicated cargo terminals with DG storage and DG-trained staff. Smaller domestic airports generally aren't set up for DG cargo acceptance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are lithium batteries allowed on flights out of Pakistan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, when properly classified, packed, and documented under IATA DGR — most commonly as UN3481 or UN3091 batteries packed with or contained in equipment. They remain dangerous goods even under the lighter Section II documentation requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do Pakistani passenger airlines accept dangerous goods cargo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some carriers accept a limited set of DG categories permitted on passenger aircraft under IATA DGR, such as certain lithium battery configurations and dry ice within quantity limits. Fully regulated dangerous goods require an all-cargo aircraft. Acceptance varies by carrier and UN number."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if dangerous goods are misdeclared or undeclared on a Pakistani shipment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Misdeclared or undeclared DG cargo is grounds for rejection at acceptance, and discovery after loading is treated as a safety incident with its own reporting requirements, consistent with international DGR practice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does dry ice matter for Pakistan's pharma exports specifically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pakistan's pharmaceutical and biologics exporters increasingly use dry ice as a passive cold-chain packaging medium. Because dry ice is Class 9 dangerous goods, any shipment using it needs DG documentation alongside the product's own export paperwork."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is leather-industry chemical cargo commonly shipped by air from or to Pakistan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most tanning-chemical volume moves by sea given typical quantities, but urgent or smaller specialty consignments — chrome salts, dyestuffs, and similar tanning inputs — do move by air and require DG classification as corrosive or oxidizing substances depending on formulation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When does it make sense to charter DG cargo instead of using scheduled service out of Pakistan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Charter is worth considering when a specific DG classification isn't accepted by scheduled carriers on the route, when the shipment is time-critical, when volume exceeds a single scheduled flight's capacity, or when the cargo can only move on an all-cargo aircraft and scheduled capacity is limited."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.skylinks.asia/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.skylinks.asia/blog/" },
+          { "@type": "ListItem", "position": 3, "name": "Dangerous Goods (DGR) Cargo To and From Pakistan", "item": "https://www.skylinks.asia/blog/dangerous-goods-cargo-pakistan.html" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#0a0f1a', 900: '#111827', 800: '#1e293b', 700: '#334155' },
+            teal: { 500: '#14b8a6', 600: '#0d9488' },
+            gold: { 500: '#C8B283', 600: '#B09668', 400: '#D9C89F' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Playfair Display', 'serif'] }
+        }
+      }
+    }
+  </script>
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0a0f1a; }
+    .font-display { font-family: 'Playfair Display', 'serif'; }
+    input[type="date"] { color-scheme: dark; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    #mobile-menu { transition: transform 0.3s ease-in-out; }
+    .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
+    .card-hover:hover { border-color: rgba(200,178,131,0.3); transform: translateY(-4px); }
+    .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
+    .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.85) 0%, rgba(10,15,26,0.6) 50%, rgba(10,15,26,0.85) 100%); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+    .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
+</head>
+<body class="bg-navy-950 text-gray-300 overflow-x-hidden">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
+      <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+          <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+                  <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
+                  <span>WhatsApp: +92 320 5487700</span>
+              </a>
+              <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+                  <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
+                  <span>charter@skylinks.asia</span>
+              </a>
+          </div>
+      </div>
+
+      <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+          <a href="../index.html" class="flex items-center gap-3">
+              <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+                  <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+              </div>
+              <div class="flex flex-col leading-none">
+                  <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+                  <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+              </div>
+          </a>
+          
+          <ul class="hidden lg:flex items-center space-x-8">
+              <li><a href="../index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+              <li><a href="../fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+              <li><a href="../index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+              <li><a href="../about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+              <li><a href="../index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
+              
+              <li class="relative dropdown">
+                  <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1 text-[#C8B283]">
+                      Private Jets 
+                      <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
+                  </button>
+                  <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
+                      <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
+                      <a href="../private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                          <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                          Private Jet Charter
+                      </a>
+                      <a href="../empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                          <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                          Empty Leg Flights
+                      </a>
+                      <a href="../private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                          <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                          Private Jet Fleet
+                      </a>
+                      <a href="../private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+                          <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+                          VIP Jet Quote
+                      </a>
+                      <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+                          <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+                          <a href="../empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Middle East Hub</a>
+                          <a href="../empty-legs-asia.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Asia Hub</a>
+                          <a href="../dubai-empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Dubai Origin Hub</a>
+                          <a href="../istanbul-empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Istanbul Origin Hub</a>
+                          <a href="../hong-kong-empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Hong Kong Origin Hub</a>
+                          <a href="../singapore-empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Singapore Origin Hub</a>
+                          <a href="../tokyo-empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Tokyo Origin Hub</a>
+                          <a href="../shanghai-empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Shanghai Origin Hub</a>
+                      </div>
+                  </div>
+              </li>
+
+              <li><a href="../contact.html" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
+          </ul>
+
+          <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]">
+              <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+          </button>
+      </nav>
+
+      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
+          <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
+              <li><a href="../index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+              <li><a href="../fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
+              <li><a href="../index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+              <li><a href="../about.html" class="hover:text-teal-500 mobile-link">About</a></li>
+              <li><a href="../index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
+              
+              <li class="w-full text-center mt-4">
+                  <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
+                  <div class="flex flex-col space-y-4 mt-4">
+                      <a href="../private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+                      <a href="../empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+                      <a href="../private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+                      <a href="../private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
+                  </div>
+              </li>
+              
+              <li><a href="../contact.html" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
+          </ul>
+      </div>
+  </header>
+
+  <!-- ===== BLOG HERO ===== -->
+  <section class="relative pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden bg-navy-950">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img src="../hero-images/cargo-hero-images/dangerous-goods-cargo-pakistan.webp" alt="Dangerous Goods Air Cargo Pakistan" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
+      <div class="absolute inset-0 hero-bg"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 w-full">
+      <div class="fade-in">
+        <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Aviation Insights & Cargo Guides</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+        Dangerous Goods (DGR) Cargo To and From Pakistan: A Shipper's Guide
+      </h1>
+      <p class="text-sm text-gray-500 mt-6 fade-in">By the Skylinks Asia Aviation Team, September 2026</p>
+    </div>
+  </section>
+
+  <!-- ===== BLOG BODY ===== -->
+  <section class="py-20 bg-navy-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="fade-in text-gray-300 leading-relaxed space-y-6 text-base md:text-lg font-light">
+        
+        <p><strong>Quick answer:</strong> Pakistan follows the IATA Dangerous Goods Regulations (DGR), built on the ICAO Technical Instructions, with the Pakistan Civil Aviation Authority (PCAA) as the national oversight body. In practice, DG cargo into and out of Pakistan moves through a small number of IOSA-registered carriers and DG-trained ground handlers, concentrated at Jinnah International (Karachi), Allama Iqbal International (Lahore), and Islamabad International. The categories that most often trigger DG classification on Pakistani air cargo are lithium batteries (e-commerce and sporting-goods electronics), leather-industry tanning chemicals, dry ice supporting pharma cold-chain exports, and general industrial chemicals. When scheduled belly space for DG is full, delayed, or the wrong class for a given route, charter becomes the practical alternative.</p>
+
+        <h2 class="text-2xl md:text-3xl font-display tracking-tight mt-12 mb-4 text-white">Why Pakistan-Specific DGR Guidance Matters</h2>
+        <p>Most DGR guidance online is generic — global classification rules, packing instructions, hazard classes. That's necessary but not sufficient for a shipper actually moving cargo through Pakistani airports. Two things are specific to Pakistan and worth knowing before you book: which gateways can actually accept your DG shipment, and which categories of Pakistani cargo run into DG classification more often than shippers expect. This guide covers both, then looks at when charter makes more sense than waiting on scheduled capacity.</p>
+        <p>For the underlying classification, packaging, and documentation rules themselves, see our <a href="../dangerous-goods.html" class="text-teal-500 hover:underline">dangerous goods charter guide</a> — this post assumes that baseline and focuses on the Pakistan-specific layer on top of it.</p>
+
+        <h2 class="text-2xl md:text-3xl font-display tracking-tight mt-12 mb-4 text-white">How Pakistan Regulates Dangerous Goods Air Cargo</h2>
+        <p>Pakistan is a signatory to the Chicago Convention, so its dangerous goods framework sits on the same foundation as most of the world's: the ICAO Technical Instructions for the Safe Transport of Dangerous Goods by Air, with airlines and freight forwarders operating to the more detailed, annually revised IATA DGR manual, since IATA's DGR is the version airlines and ground handlers actually work from day to day.</p>
+        <p>The Pakistan Civil Aviation Authority (PCAA) is the national body responsible for enforcing this framework — issuing and overseeing the dangerous goods training approvals that shippers, freight forwarders, and ground handling staff are required to hold before they can prepare, accept, or handle DG consignments. Pakistan-based DG training providers operate under PCAA supervision, delivering the IATA Category-based courses (from Category 6 shipper courses through the higher categories required for ground handling and acceptance staff) that keep personnel current with each year's DGR edition.</p>
+        
+        <p class="font-medium text-white mt-8">A few practical implications for shippers:</p>
+        <ul class="list-disc list-inside space-y-3 pl-4">
+          <li><strong>Carrier selection matters more for DG than for general cargo.</strong> Not every airline serving Pakistan accepts every DG class, and Pakistani carriers publish their own operator variations narrowing what IATA's baseline DGR would otherwise allow — the same way most international carriers do. Always confirm acceptance for your specific UN number and packing group before booking, not just the hazard class.</li>
+          <li><strong>IOSA registration is a useful filter.</strong> Carriers that hold IATA Operational Safety Audit registration have had their DG handling procedures independently audited against IOSA standards, which is a reasonable proxy for reliability when comparing options on a Pakistan route.</li>
+          <li><strong>DGR editions change annually,</strong> and recent editions have tightened requirements around lithium battery documentation specifically — including a firmer requirement that the Shipper's Declaration carry a 24-hour emergency contact number. A shipment prepared to last year's edition can be rejected at acceptance on a technicality that has nothing to do with the goods themselves.</li>
+        </ul>
+
+        <h2 class="text-2xl md:text-3xl font-display tracking-tight mt-12 mb-4 text-white">What Pakistani Cargo Commonly Needs DG Classification</h2>
+        <p>Most shippers don't set out to ship "dangerous goods" — they ship a product, and the product happens to contain or require something that IATA classifies as DG. In Pakistan's case, a handful of major export and import categories account for most of this.</p>
+        <ul class="list-disc list-inside space-y-4 pl-4">
+          <li><strong>Lithium batteries in e-commerce and sporting-goods electronics.</strong> Pakistan's e-commerce export volume and its electronics-adjacent sporting goods sector (fitness trackers, powered training equipment, battery-backed devices bundled with sports gear) both move lithium cells as a matter of course. Batteries packed with or contained in equipment typically ship under UN3481 (lithium ion) or UN3091 (lithium metal) via Section II of the relevant packing instruction, which carries lighter documentation requirements than a standalone battery shipment — but it is still dangerous goods, still needs a hazard label and watt-hour rating on the package, and is still routinely misdeclared industry-wide when shippers assume "packed with equipment" means "not DG."</li>
+          <li><strong>Leather-industry chemicals.</strong> Pakistan's tanning industry is one of the country's largest export sectors and runs on a steady supply of imported tanning inputs — chrome salts, synthetic dyestuffs, wetting and degreasing agents, biocides — several of which fall under DGR as corrosive (Class 8) or oxidizing substances depending on formulation. These typically move as sea freight given the volumes involved, but urgent replenishment shipments and smaller specialty-chemical consignments do move by air, and get classified accordingly.</li>
+          <li><strong>Dry ice supporting pharma cold-chain exports.</strong> As covered in our <a href="../cold-chain-pharma.html" class="text-teal-500 hover:underline">cold-chain pharma guide</a>, dry ice is Class 9 dangerous goods under IATA DGR because it releases carbon dioxide gas in an enclosed space. Any Pakistani pharmaceutical or biologics exporter using passive dry-ice packaging for temperature-sensitive shipments is, by definition, tendering DG cargo alongside their product — a detail that's easy to overlook when the focus is on temperature compliance rather than the packaging medium itself.</li>
+          <li><strong>General industrial and laboratory chemicals,</strong> moving in both directions to support Pakistan's manufacturing and textile sectors, round out the remaining volume — flammable liquids, corrosives, and the occasional oxidizer, mostly moving under standard IATA packing instructions rather than anything Pakistan-specific.</li>
+        </ul>
+
+        <h2 class="text-2xl md:text-3xl font-display tracking-tight mt-12 mb-4 text-white">Where DG Cargo Actually Moves Through Pakistan</h2>
+        <ul class="list-disc list-inside space-y-4 pl-4">
+          <li><strong>Jinnah International Airport (KHI), Karachi</strong> is Pakistan's largest cargo gateway and the country's main hub for Pakistan International Airlines and several private carriers. Karachi's cargo-handling infrastructure includes a dedicated GDP-certified pharma handling facility for temperature-sensitive cargo, run by a ground handler serving multiple airlines across several Pakistani airports — relevant directly to the dry-ice-and-pharma overlap above.</li>
+          <li><strong>Islamabad International and Allama Iqbal International (Lahore)</strong> both operate dedicated cargo terminals with designated dangerous-goods storage areas and DG-trained handling staff, alongside general import/export cargo sheds.</li>
+        </ul>
+        <p>The practical takeaway for shippers: not every airport with a runway and a cargo shed in Pakistan is set up to accept and store DG cargo. Confirm DG handling capability at both the origin and destination airport before committing to a routing, particularly for anything outside the three main gateways above.</p>
+
+        <h2 class="text-2xl md:text-3xl font-display tracking-tight mt-12 mb-4 text-white">When to Charter DG Cargo Instead of Waiting on Scheduled Space</h2>
+        <p>Scheduled belly cargo remains the default for most DG shipments out of Pakistan — it's cheaper and the infrastructure above exists specifically to support it. Charter becomes the more sensible option in a few recurring situations:</p>
+        <ul class="list-disc list-inside space-y-3 pl-4">
+          <li>The specific UN number or packing group isn't accepted on the scheduled carriers serving your route, but is acceptable on a cargo aircraft under a charter operator's variation.</li>
+          <li>Time-critical replenishment — a tannery or manufacturer waiting on a chemical input, or a pharma exporter with a cold-chain shipment that can't wait for the next scheduled DG-capable flight.</li>
+          <li>Volume exceeds what a single scheduled flight can carry, common with larger specialty-chemical or dry-ice-heavy pharma consignments.</li>
+          <li>Passenger-aircraft restrictions apply to a shipment that would otherwise need to move on an all-cargo aircraft only, narrowing the scheduled options further — see our guide on <a href="../dangerous-goods-cao-charter.html" class="text-teal-500 hover:underline">which dangerous goods require cargo-aircraft-only charter</a> for the classes this applies to.</li>
+        </ul>
+        <p>If you're weighing charter for a DG shipment to or from Pakistan, get in touch with the Skylinks Asia charter desk with your UN number, packing group, quantity, and routing, and we'll confirm operator acceptance and available capacity.</p>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mt-16 pt-12 border-t border-navy-800 fade-in">
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white mb-8">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          
+          <div class="bg-navy-900 rounded-lg border border-navy-800 overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-white font-medium">
+              Does Pakistan follow international dangerous goods regulations, or does it have its own rules?
+              <iconify-icon icon="lucide:plus" class="text-[#C8B283] text-xl"></iconify-icon>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-gray-400 font-light leading-relaxed">
+              Pakistan applies the ICAO Technical Instructions and IATA DGR framework used internationally, with the Pakistan Civil Aviation Authority (PCAA) responsible for national oversight and training approval. There isn't a separate, materially different Pakistani DG rulebook — practical differences come from individual carrier operator variations, not a distinct national standard.
+            </div>
+          </div>
+
+          <div class="bg-navy-900 rounded-lg border border-navy-800 overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-white font-medium">
+              Which Pakistani airports can handle dangerous goods air cargo?
+              <iconify-icon icon="lucide:plus" class="text-[#C8B283] text-xl"></iconify-icon>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-gray-400 font-light leading-relaxed">
+              Jinnah International (Karachi), Allama Iqbal International (Lahore), and Islamabad International all have dedicated cargo terminals with DG storage and DG-trained staff. Smaller domestic airports generally aren't set up for DG cargo acceptance.
+            </div>
+          </div>
+
+          <div class="bg-navy-900 rounded-lg border border-navy-800 overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-white font-medium">
+              Are lithium batteries allowed on flights out of Pakistan?
+              <iconify-icon icon="lucide:plus" class="text-[#C8B283] text-xl"></iconify-icon>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-gray-400 font-light leading-relaxed">
+              Yes, when properly classified, packed, and documented under IATA DGR — most commonly as UN3481 or UN3091 batteries packed with or contained in equipment. They remain dangerous goods even under the lighter Section II documentation requirements.
+            </div>
+          </div>
+
+          <div class="bg-navy-900 rounded-lg border border-navy-800 overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-white font-medium">
+              Do Pakistani passenger airlines accept dangerous goods cargo?
+              <iconify-icon icon="lucide:plus" class="text-[#C8B283] text-xl"></iconify-icon>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-gray-400 font-light leading-relaxed">
+              Some carriers accept a limited set of DG categories permitted on passenger aircraft under IATA DGR, such as certain lithium battery configurations and dry ice within quantity limits. Fully regulated dangerous goods require an all-cargo aircraft. Acceptance varies by carrier and UN number.
+            </div>
+          </div>
+
+          <div class="bg-navy-900 rounded-lg border border-navy-800 overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-white font-medium">
+              What happens if dangerous goods are misdeclared or undeclared on a Pakistani shipment?
+              <iconify-icon icon="lucide:plus" class="text-[#C8B283] text-xl"></iconify-icon>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-gray-400 font-light leading-relaxed">
+              Misdeclared or undeclared DG cargo is grounds for rejection at acceptance, and discovery after loading is treated as a safety incident with its own reporting requirements, consistent with international DGR practice.
+            </div>
+          </div>
+
+          <div class="bg-navy-900 rounded-lg border border-navy-800 overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-white font-medium">
+              Why does dry ice matter for Pakistan's pharma exports specifically?
+              <iconify-icon icon="lucide:plus" class="text-[#C8B283] text-xl"></iconify-icon>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-gray-400 font-light leading-relaxed">
+              Pakistan's pharmaceutical and biologics exporters increasingly use dry ice as a passive cold-chain packaging medium. Because dry ice is Class 9 dangerous goods, any shipment using it needs DG documentation alongside the product's own export paperwork.
+            </div>
+          </div>
+
+          <div class="bg-navy-900 rounded-lg border border-navy-800 overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-white font-medium">
+              Is leather-industry chemical cargo commonly shipped by air from or to Pakistan?
+              <iconify-icon icon="lucide:plus" class="text-[#C8B283] text-xl"></iconify-icon>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-gray-400 font-light leading-relaxed">
+              Most tanning-chemical volume moves by sea given typical quantities, but urgent or smaller specialty consignments — chrome salts, dyestuffs, and similar tanning inputs — do move by air and require DG classification as corrosive or oxidizing substances depending on formulation.
+            </div>
+          </div>
+
+          <div class="bg-navy-900 rounded-lg border border-navy-800 overflow-hidden">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-white font-medium">
+              When does it make sense to charter DG cargo instead of using scheduled service out of Pakistan?
+              <iconify-icon icon="lucide:plus" class="text-[#C8B283] text-xl"></iconify-icon>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-gray-400 font-light leading-relaxed">
+              Charter is worth considering when a specific DG classification isn't accepted by scheduled carriers on the route, when the shipment is time-critical, when volume exceeds a single scheduled flight's capacity, or when the cargo can only move on an all-cargo aircraft and scheduled capacity is limited.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== RELATED POSTS ===== -->
+  <section class="py-24 bg-navy-900 border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Continue Reading</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Related Aviation Insights</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <a href="../dangerous-goods-cao-charter.html" class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in group">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-display tracking-tight text-white">Dangerous Goods & CAO Charter</h3>
+            <iconify-icon icon="lucide:arrow-right" class="text-[#C8B283] text-2xl group-hover:translate-x-2 transition-transform"></iconify-icon>
+          </div>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Which dangerous goods require Cargo Aircraft Only (CAO) charter and why passenger aircraft restrictions apply.</p>
+        </a>
+
+        <a href="../cold-chain-pharma-logistics.html" class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in group">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-display tracking-tight text-white">Cold Chain Pharma Logistics</h3>
+            <iconify-icon icon="lucide:arrow-right" class="text-[#C8B283] text-2xl group-hover:translate-x-2 transition-transform"></iconify-icon>
+          </div>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">Understanding temperature-controlled logistics, passive cooling, and dry ice handling for pharmaceutical cargo.</p>
+        </a>
+
+        <a href="../choosing-right-cargo-aircraft.html" class="card-hover border border-navy-700 bg-navy-800 p-8 flex flex-col fade-in group">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-display tracking-tight text-white">Choosing the Right Cargo Aircraft</h3>
+            <iconify-icon icon="lucide:arrow-right" class="text-[#C8B283] text-2xl group-hover:translate-x-2 transition-transform"></iconify-icon>
+          </div>
+          <p class="text-sm font-light text-gray-400 leading-relaxed">A guide to selecting the right freighter aircraft based on payload, volume, and route requirements.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LUXURY CTA ===== -->
+  <section class="py-24 bg-navy-950 border-t border-navy-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+      <div class="w-16 h-16 mx-auto border border-[#C8B283]/40 flex items-center justify-center mb-6 rounded-full">
+        <iconify-icon icon="lucide:file-text" class="text-[#C8B283] text-3xl"></iconify-icon>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white">Need to Charter DG Cargo?</h2>
+      <p class="text-sm md:text-base font-light text-gray-400 mt-4 leading-relaxed max-w-2xl mx-auto">
+        If you're weighing charter for a DG shipment to or from Pakistan, get in touch with the Skylinks Asia charter desk with your UN number, packing group, quantity, and routing, and we'll confirm operator acceptance and available capacity.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="../urgent-cargo.html" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
+          VIEW CARGO CHARTER
+        </a>
+        <a href="../contact.html" class="border border-[#C8B283] text-[#C8B283] text-sm font-semibold tracking-wide px-8 py-4 hover:bg-[#C8B283] hover:text-navy-950 transition-all duration-300 w-full sm:w-auto text-center">
+          CONTACT CHARTER DESK
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
+            
+            <div class="md:col-span-2 lg:col-span-1">
+                <a href="../index.html" class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+                      <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+                    </div>
+                    <div class="flex flex-col leading-none">
+                        <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+                        <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+                    </div>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="../hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger & Pilgrim Charter</a></li>
+                    <li><a href="../urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo & Freight Charter</a></li>
+                    <li><a href="../acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+                    <li><a href="../oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Equipment Charter</a></li>
+                    <li><a href="../humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
+                    <li><a href="../cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma & Cold Chain</a></li>
+                    <li><a href="../dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="../private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
+                    <li><a href="../empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
+                    <li><a href="../private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
+                    <li><a href="../private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
+                </ul>
+                <div class="mt-6">
+                    <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="../empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Middle East Hub</a></li>
+                        <li><a href="../empty-legs-asia.html" class="hover:text-teal-500 transition-colors">Asia Hub</a></li>
+                        <li><a href="../dubai-empty-legs.html" class="hover:text-teal-500 transition-colors">Dubai Origin Hub</a></li>
+                        <li><a href="../istanbul-empty-legs.html" class="hover:text-teal-500 transition-colors">Istanbul Origin Hub</a></li>
+                        <li><a href="../hong-kong-empty-legs.html" class="hover:text-teal-500 transition-colors">Hong Kong Origin Hub</a></li>
+                        <li><a href="../singapore-empty-legs.html" class="hover:text-teal-500 transition-colors">Singapore Origin Hub</a></li>
+                        <li><a href="../tokyo-empty-legs.html" class="hover:text-teal-500 transition-colors">Tokyo Origin Hub</a></li>
+                        <li><a href="../shanghai-empty-legs.html" class="hover:text-teal-500 transition-colors">Shanghai Origin Hub</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="../about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+                    <li><a href="../fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+                    <li><a href="../safety.html" class="hover:text-teal-500 transition-colors">Safety & Compliance</a></li>
+                    <li><a href="../blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+                    <li><a href="../terms.html" class="hover:text-teal-500 transition-colors">Terms & Conditions</a></li>
+                    <li><a href="../privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3">
+                        <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
+                        <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                        <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                        <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+                        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+            <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Chat Widget -->
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+      <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+          <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+              <div>
+                  <h3 class="font-bold text-lg">Chat with us</h3>
+                  <p class="text-xs opacity-90">Typically replies instantly</p>
+              </div>
+              <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
+                  <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+              </button>
+          </div>
+          <div class="p-4 bg-navy-900">
+              <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+              <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+              <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+                  <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+              </a>
+          </div>
+      </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
+      <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
+
+  <!-- SINGLE CLEAN SCRIPT BLOCK -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isMenuOpen = false;
+
+    function closeMenu() {
+        isMenuOpen = false;
+        mobileMenu.classList.add('translate-x-full');
+        mobileMenu.classList.remove('translate-x-0');
+        document.body.style.overflow = '';
+    }
+
+    menuToggle.addEventListener('click', () => {
+        isMenuOpen = !isMenuOpen;
+        if (isMenuOpen) {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+            document.body.style.overflow = 'hidden';
+        } else {
+            closeMenu();
+        }
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+        });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    
+    // Dynamic Year — Hardcoded to 2026 per Protocol
+    document.getElementById('current-year').textContent = '2026';
+
+    // WhatsApp Widget Logic
+    const waWidget = document.getElementById('wa-widget');
+    const waToggle = document.getElementById('wa-toggle');
+    const waClose = document.getElementById('wa-close');
+    const waMessage = document.getElementById('wa-message');
+    const waSend = document.getElementById('wa-send');
+    
+    waToggle.addEventListener('click', () => {
+        waWidget.classList.toggle('hidden');
+        waToggle.classList.toggle('hidden');
+    });
+    waClose.addEventListener('click', () => {
+        waWidget.classList.add('hidden');
+        waToggle.classList.remove('hidden');
+    });
+    waMessage.addEventListener('input', () => {
+        const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
+        waSend.href = 'https://wa.me/923205487700?text=' + msg;
+    });
+
+    // FAQ Toggles
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('iconify-icon');
+            content.classList.toggle('hidden');
+            if (content.classList.contains('hidden')) {
+                icon.setAttribute('icon', 'lucide:plus');
+            } else {
+                icon.setAttribute('icon', 'lucide:minus');
+            }
+        });
+    });
+  </script>
+</body>
+</html>

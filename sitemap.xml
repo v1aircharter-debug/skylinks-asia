@@ -3,49 +3,49 @@
   <!-- Core Pages -->
   <url>
     <loc>https://www.skylinks.asia/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/about.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/fleet.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/contact.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/safety.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/terms.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/privacy.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/thank-you.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -53,55 +53,55 @@
   <!-- Charter Services -->
   <url>
     <loc>https://www.skylinks.asia/hajj-umrah.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/urgent-cargo.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/acmi-wet-lease.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/oil-gas.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/humanitarian-cargo.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/cold-chain-pharma.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/dangerous-goods.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/group-corporate.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/repatriation-government.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -109,75 +109,119 @@
   <!-- Private Jet & Empty Legs Hubs -->
   <url>
     <loc>https://www.skylinks.asia/private-jet-charter.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/private-jet-fleet.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/private-jet-quote.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/private-jet-contact.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/empty-legs-asia.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/empty-legs-middle-east.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Private Jet Aircraft Directory (Hubs & Spokes) -->
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/light-jets.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/hawker-400xp.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/learjet-45xr.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/citation-cj3.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/citation-ultra.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/phenom-300.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/citation-v.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Middle East Origin Hubs -->
   <url>
     <loc>https://www.skylinks.asia/dubai-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/istanbul-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/riyadh-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/jeddah-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/doha-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -185,37 +229,37 @@
   <!-- Middle East Corridors -->
   <url>
     <loc>https://www.skylinks.asia/dubai-riyadh-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/dubai-london-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/riyadh-jeddah-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/istanbul-bodrum-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/istanbul-ankara-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/istanbul-moscow-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -223,25 +267,25 @@
   <!-- Asia Origin Hubs -->
   <url>
     <loc>https://www.skylinks.asia/hong-kong-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/singapore-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/tokyo-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/shanghai-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -249,25 +293,25 @@
   <!-- Asia Corridors -->
   <url>
     <loc>https://www.skylinks.asia/hong-kong-singapore-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/tokyo-seoul-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/singapore-bali-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/shanghai-hong-kong-empty-legs.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -275,109 +319,115 @@
   <!-- Blog & Articles -->
   <url>
     <loc>https://www.skylinks.asia/blog.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.skylinks.asia/blog/dangerous-goods-cargo-pakistan.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.skylinks.asia/blog-2.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/acmi-vs-dry-lease.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/acmi-wet-lease-seasonal-demand.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/cold-chain-pharma-logistics.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/hajj-umrah-charter-guide.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/international-medical-evacuation-guide.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/remote-airstrips-africa-mining.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/rise-of-cargo-charter-africa.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/how-air-charter-brokerage-works.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/shipping-lithium-batteries-air.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/choosing-right-cargo-aircraft.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/dangerous-goods-cao-charter.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/private-jet-charter-pakistan.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/cpec-aerial-silk-road-gwadar-airport.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/gulf-india-turkey-business-aviation.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/empty-leg-flights-explained.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/cargo-aircraft-charter-guide-asia-africa-middle-east.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
