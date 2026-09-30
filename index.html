@@ -3,45 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ===== PRIMARY META TAGS ===== -->
-  <title>Skylinks Asia Aviation — Commercial Pax & Cargo Aircraft Charter | Asia · Middle East · Africa</title>
+  <title>Commercial Aircraft Charter | Asia, Middle East &amp; Africa | Skylinks</title>
   <meta name="description" content="Charter passenger and cargo aircraft across Asia, Middle East & Africa. Hajj flights, ACMI wet lease, humanitarian & oil/gas cargo — 24/7 charter desk.">
   <meta name="keywords" content="aircraft charter Asia, cargo charter Middle East, passenger charter Africa, Hajj charter flights, Umrah charter, ACMI wet lease, airline sub charter, humanitarian cargo charter, oil and gas charter flights, mining charter Africa, freighter charter, charter flights Dubai, air charter Nairobi, repatriation flights, crew rotation charter, on demand cargo flights, air charter broker, charter plane rental, commercial aircraft charter, group charter flights">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Skylinks Asia Aviation">
-  <meta name="theme-color" content="#0a0f1a">
   <link rel="canonical" href="https://www.skylinks.asia/">
-  
-  <!-- ===== FAVICON ===== -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
-  <!-- ===== NETLIFY IDENTITY WIDGET ===== -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
-
-  <!-- ===== GEO TARGETING ===== -->
   <meta name="geo.region" content="PK">
   <meta name="geo.placename" content="Islamabad">
-  <meta name="geo.position" content="33.5937;73.0679">
-  <meta name="ICBM" content="33.5937, 73.0679">
-  <meta name="language" content="English">
-
-  <!-- ===== OPEN GRAPH / SOCIAL ===== -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Skylinks Asia Aviation — Pax & Cargo Aircraft Charter | Asia · Middle East · Africa">
+  <meta property="og:title" content="Skylinks Asia Aviation — Pax &amp; Cargo Aircraft Charter | Asia · Middle East · Africa">
   <meta property="og:description" content="Charter passenger and cargo aircraft across Asia, the Middle East & Africa. Hajj flights, humanitarian cargo, ACMI wet lease, oil & gas charter — 24/7 support.">
   <meta property="og:url" content="https://www.skylinks.asia/">
   <meta property="og:site_name" content="Skylinks Asia Aviation">
   <meta property="og:image" content="https://www.skylinks.asia/hero-images/home-page.webp">
   <meta property="og:locale" content="en_US">
-
-  <!-- ===== TWITTER CARD ===== -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Skylinks Asia Aviation — Pax & Cargo Aircraft Charter">
+  <meta name="twitter:title" content="Skylinks Asia Aviation — Pax &amp; Cargo Aircraft Charter">
   <meta name="twitter:description" content="Commercial passenger and cargo aircraft charter across Asia, Middle East & Africa. 24/7 charter desk.">
   <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/home-page.webp">
-
-  <!-- ===== TECH / CSS ===== -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,16 +29,14 @@
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script>
     tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { 950:'#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' },
-            teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
-            gold: { 500: '#C8B283', 600: '#B09668', 400: '#D9C89F' }
-          },
-          fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] },
-        }
-      }
+      theme: { extend: {
+        colors: {
+          navy: { 950:'#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' },
+          teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
+          gold: { 500:'#C8B283', 600:'#B09668', 400:'#D9C89F' }
+        },
+        fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] }
+      }}
     }
   </script>
   <style>
@@ -67,185 +45,131 @@
     ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
     html { scroll-behavior: smooth; }
-
     @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
     @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
     @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
-    
     .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
-    .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
-    .delay-100 { animation-delay:0.1s; }
-    .delay-200 { animation-delay:0.2s; }
-    .delay-300 { animation-delay:0.3s; }
-    .delay-600 { animation-delay:0.6s; }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
+    .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .gold-gradient-text { background: linear-gradient(135deg, #D9C89F, #FFFFFF, #C8B283); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
     .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
     .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
-    .aircraft-img { transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); }
-    .group:hover .aircraft-img { transform: scale(1.05); }
-    .toast { animation: fadeInUp 0.4s ease-out forwards; }
     .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
-
+    .gold-glow { box-shadow: 0 0 20px rgba(200,178,131,0.15); }
+    .aircraft-img, .blog-img { transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+    .group:hover .aircraft-img, .group:hover .blog-img { transform: scale(1.05); }
     #mobile-menu { transition: transform 0.3s ease-in-out; }
     .font-display { font-family: 'Playfair Display', serif; }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease-out, padding 0.3s ease;
-    }
-    .faq-item.open .faq-answer {
-      max-height: 600px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
-    .faq-item .faq-chevron {
-      transition: transform 0.3s ease;
-    }
-    .faq-item.open .faq-chevron {
-      transform: rotate(180deg);
-    }
-    
-    /* VIP Luxury Dropdown */
-    .dropdown-menu { 
-      opacity: 0; 
-      visibility: hidden; 
-      transform: translateY(10px);
-      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-    }
-    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { 
-      opacity: 1; 
-      visibility: visible; 
-      transform: translateY(0);
-    }
-
-    /* Date Picker Dark Mode Fix */
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }
+    .faq-item.open .faq-answer { max-height: 600px; padding-top: 16px; padding-bottom: 16px; }
+    .faq-item .faq-chevron { transition: transform 0.3s ease; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
     input[type="date"] { color-scheme: dark; }
-
-    /* Hero Image Visibility Rule */
     .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4KQLDXBT24');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
-  <!-- Header / Navigation -->
   <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
-      <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
-          <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
-              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
-                  <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
-                  <span>WhatsApp: +92 320 5487700</span>
-              </a>
-              <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
-                  <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
-                  <span>charter@skylinks.asia</span>
-              </a>
-          </div>
+    <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+      <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
+          <span>WhatsApp: +92 320 5487700</span>
+        </a>
+        <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
+          <span>charter@skylinks.asia</span>
+        </a>
       </div>
-
-      <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-          <a href="index.html" class="flex items-center gap-3">
-              <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
-                  <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
-              </div>
-              <div class="flex flex-col leading-none">
-                  <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
-                  <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
-              </div>
-          </a>
-          
-          <ul class="hidden lg:flex items-center space-x-8">
-              <li><a href="#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
-              <li><a href="#fleet" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
-              <li><a href="#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
-              <li><a href="#about" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
-              <li><a href="#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
-              
-              <li class="relative dropdown">
-                  <button class="text-[#C8B283] hover:text-[#D9C89F] transition-colors text-sm flex items-center gap-1">
-                      Private Jets 
-                      <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
-                  </button>
-                  <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
-                      <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
-                      <a href="private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Charter
-                      </a>
-                      <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Empty Leg Flights
-                      </a>
-                      <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Fleet
-                      </a>
-                      <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Quote
-                      </a>
-                      <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
-                          <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
-                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
-                          <a href="empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
-                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Africa</a>
-                          <a href="empty-legs.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Europe</a>
-                      </div>
-                  </div>
-              </li>
-
-              <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
-          </ul>
-
-          <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]" aria-label="Open mobile menu">
-              <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+    </div>
+    <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+          <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+        </div>
+        <div class="flex flex-col leading-none">
+          <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+          <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+        </div>
+      </a>
+      <ul class="hidden lg:flex items-center space-x-8">
+        <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
+        <li class="relative dropdown">
+          <button class="text-[#C8B283] hover:text-[#D9C89F] transition-colors text-sm flex items-center gap-1">
+            Private Jets
+            <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
           </button>
-      </nav>
-
-      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
-          <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
-              <li><a href="#services" class="hover:text-teal-500 mobile-link">Services</a></li>
-              <li><a href="#fleet" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
-              <li><a href="#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
-              <li><a href="#about" class="hover:text-teal-500 mobile-link">About</a></li>
-              <li><a href="#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
-              
-              <li class="w-full text-center mt-4">
-                  <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
-                  <div class="flex flex-col space-y-4 mt-4">
-                      <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
-                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
-                      <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
-                      <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
-                  </div>
-              </li>
-              
-              <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
-          </ul>
-      </div>
+          <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
+            <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
+            <a href="private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Charter
+            </a>
+            <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Empty Leg Flights
+            </a>
+            <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Fleet
+            </a>
+            <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Quote
+            </a>
+            <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+              <a href="empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
+              <a href="empty-legs-asia.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
+      </ul>
+      <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]" aria-label="Open mobile menu">
+        <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
+      <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
+        <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 mobile-link">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
+        <li class="w-full text-center mt-4">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
+          <div class="flex flex-col space-y-4 mt-4">
+            <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+            <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+            <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+            <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
+          </div>
+          <div class="flex flex-col space-y-3 mt-6">
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Regional Empty Legs</span>
+            <a href="empty-legs-middle-east.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Middle East</a>
+            <a href="empty-legs-asia.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Asia</a>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
+      </ul>
+    </div>
   </header>
 
   <!-- ===== HERO ===== -->
@@ -263,14 +187,14 @@
         Charter Flights.<br><span class="gradient-text">Any Payload. Any Route.</span>
       </h1>
       <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto fade-in">
-        Passenger charter flights and cargo aircraft charter across emerging markets. From Hajj & Umrah pilgrim flights to urgent humanitarian cargo — we source the right aircraft from certified operators across Asia, the Middle East & Africa.
+        Passenger charter flights and cargo aircraft charter across emerging markets. From Hajj &amp; Umrah pilgrim flights to urgent humanitarian cargo — we source the right aircraft from certified operators across Asia, the Middle East &amp; Africa.
       </p>
       <div class="fade-in flex flex-col sm:flex-row justify-center gap-4 mt-10">
         <a href="contact.html#contact-form" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">REQUEST A QUOTE</a>
-        <a href="#fleet" class="border border-white text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-teal-500 hover:text-teal-500 transition-all duration-300 w-full sm:w-auto text-center">VIEW FLEET</a>
+        <a href="fleet.html" class="border border-white text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-teal-500 hover:text-teal-500 transition-all duration-300 w-full sm:w-auto text-center">VIEW FLEET</a>
       </div>
     </div>
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 fade-in hidden md:flex" style="animation-delay: 0.6s;">
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 fade-in hidden md:flex" style="animation-delay: 0.6s;">
       <span class="text-[10px] tracking-[0.2em] uppercase text-gray-500">Scroll</span>
       <iconify-icon icon="lucide:chevron-down" class="text-gray-500" style="animation: bounce 1s infinite;"></iconify-icon>
     </div>
@@ -291,9 +215,9 @@
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Charter Services</span>
-        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Passenger & Cargo Charter Flights</h2>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Passenger &amp; Cargo Charter Flights</h2>
         <p class="text-sm font-light text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">
-          We arrange commercial passenger charter flights and cargo aircraft charter across Asia, the Middle East & Africa. Whether it's an airline sub-charter, ACMI wet lease, or one-off freighter flight — we source the right aircraft from our network of certified operators.
+          We arrange commercial passenger charter flights and cargo aircraft charter across Asia, the Middle East &amp; Africa. Whether it's an airline sub-charter, ACMI wet lease, or one-off freighter flight — we source the right aircraft from our network of certified operators.
         </p>
       </div>
       <div class="grid md:grid-cols-2 gap-8">
@@ -307,11 +231,11 @@
             <h3 class="text-2xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Commercial Passenger Charter</h3>
             <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">Charter flights for airlines, travel groups, government agencies, and corporate clients across emerging markets. From turboprop to widebody — we source the right passenger aircraft for your route and schedule.</p>
             <ul class="mt-6 space-y-3">
-              <li><a href="hajj-umrah.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Hajj & Umrah Pilgrim Charter Flights</a></li>
-              <li><a href="acmi-wet-lease.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Airline Sub-Charter & ACMI Wet Lease</a></li>
-              <li><a href="group-corporate.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Group & Corporate Travel Charter</a></li>
-              <li><a href="repatriation-government.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Repatriation & Government Flights</a></li>
-              <li><a href="oil-gas.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Crew Rotation & Oil Field Shuttle</a></li>
+              <li><a href="hajj-umrah.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Hajj &amp; Umrah Pilgrim Charter Flights</a></li>
+              <li><a href="acmi-wet-lease.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Airline Sub-Charter &amp; ACMI Wet Lease</a></li>
+              <li><a href="group-corporate.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Group &amp; Corporate Travel Charter</a></li>
+              <li><a href="repatriation-government.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Repatriation &amp; Government Flights</a></li>
+              <li><a href="oil-gas.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Crew Rotation &amp; Oil Field Shuttle</a></li>
             </ul>
             <a href="contact.html#contact-form" class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Get Passenger Charter Quote <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
           </div>
@@ -324,13 +248,13 @@
           </div>
           <div class="p-8">
             <h3 class="text-2xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Cargo Aircraft Charter</h3>
-            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">On-demand freighter charter for time-critical, oversized, and humanitarian cargo across Asia, the Middle East & Africa. We arrange dedicated cargo flights from small turboprop freighters to widebody freighters.</p>
+            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">On-demand freighter charter for time-critical, oversized, and humanitarian cargo across Asia, the Middle East &amp; Africa. We arrange dedicated cargo flights from small turboprop freighters to widebody freighters.</p>
             <ul class="mt-6 space-y-3">
-              <li><a href="urgent-cargo.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Urgent & Time-Critical Air Freight</a></li>
-              <li><a href="humanitarian-cargo.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Humanitarian & Relief Cargo Charter</a></li>
-              <li><a href="oil-gas.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Oil & Gas Equipment Transport</a></li>
+              <li><a href="urgent-cargo.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Urgent &amp; Time-Critical Air Freight</a></li>
+              <li><a href="humanitarian-cargo.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Humanitarian &amp; Relief Cargo Charter</a></li>
+              <li><a href="oil-gas.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Oil &amp; Gas Equipment Transport</a></li>
               <li><a href="dangerous-goods.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Dangerous Goods (DGR) Transport</a></li>
-              <li><a href="cold-chain-pharma.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Perishable & Pharma Cold Chain</a></li>
+              <li><a href="cold-chain-pharma.html" class="flex items-center gap-3 text-sm text-gray-300 hover:text-teal-500 transition-colors duration-150"><iconify-icon icon="lucide:check-circle" class="text-teal-500"></iconify-icon>Perishable &amp; Pharma Cold Chain</a></li>
             </ul>
             <a href="contact.html#contact-form" class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Get Cargo Charter Quote <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
           </div>
@@ -345,7 +269,7 @@
       <div class="text-center mb-16 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Aircraft Available</span>
         <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Charter Fleet</h2>
-        <p class="text-sm font-light text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">We charter aircraft from regional turboprops to widebody freighters through our operator network across Asia, the Middle East & Africa.</p>
+        <p class="text-sm font-light text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">We charter aircraft from regional turboprops to widebody freighters through our operator network across Asia, the Middle East &amp; Africa.</p>
       </div>
       <div class="flex items-center justify-center gap-4 mb-12 fade-in">
         <button onclick="filterFleet('all')" class="fleet-tab active text-xs font-semibold tracking-[0.2em] uppercase px-6 py-3 border border-teal-500 text-teal-500 bg-teal-500/10 transition-all duration-150" data-filter="all">All Aircraft</button>
@@ -370,7 +294,7 @@
           <div class="relative h-48 overflow-hidden"><img src="hero-images/b737-800-hero.webp" alt="Boeing 737-800 Charter" width="600" height="400" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
           <div class="p-6">
             <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 737-800</h3>
-            <p class="text-xs text-gray-500 mt-1">Narrowbody · Sub-charter & Hajj flights</p>
+            <p class="text-xs text-gray-500 mt-1">Narrowbody · Sub-charter &amp; Hajj flights</p>
             <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
               <div><div class="text-sm font-medium text-white">189</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
               <div><div class="text-sm font-medium text-white">5,400 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
@@ -383,7 +307,7 @@
           <div class="relative h-48 overflow-hidden"><img src="images/a330-200-pax.webp" alt="Airbus A330-200 Charter" width="600" height="400" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Pax</span></div>
           <div class="p-6">
             <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Airbus A330-200</h3>
-            <p class="text-xs text-gray-500 mt-1">Widebody · Hajj, Umrah & long-haul group charter</p>
+            <p class="text-xs text-gray-500 mt-1">Widebody · Hajj, Umrah &amp; long-haul group charter</p>
             <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
               <div><div class="text-sm font-medium text-white">280</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Seats</div></div>
               <div><div class="text-sm font-medium text-white">13,450 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
@@ -422,7 +346,7 @@
           <div class="relative h-48 overflow-hidden"><img src="hero-images/cargo-hero-images/b747-200f.webp" alt="Boeing 747-200 Freighter Charter" width="600" height="400" class="w-full h-full object-cover aircraft-img" loading="lazy" /><div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div><span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-white bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Cargo</span></div>
           <div class="p-6">
             <h3 class="text-xl font-display tracking-tight group-hover:text-teal-500 transition-colors duration-150 text-white">Boeing 747-200F</h3>
-            <p class="text-xs text-gray-500 mt-1">Heavy Freighter · Oversize, oil & gas, mining equipment</p>
+            <p class="text-xs text-gray-500 mt-1">Heavy Freighter · Oversize, oil &amp; gas, mining equipment</p>
             <div class="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-white/5">
               <div><div class="text-sm font-medium text-white">113 t</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Payload</div></div>
               <div><div class="text-sm font-medium text-white">8,300 km</div><div class="text-[10px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
@@ -445,12 +369,12 @@
       <div class="text-center mb-16 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Process</span>
         <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">How to Charter an Aircraft</h2>
-        <p class="text-sm font-light text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">From your first enquiry to wheels up — we handle permits, slots, ground handling, and flight watch across Asia, Middle East & Africa.</p>
+        <p class="text-sm font-light text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">From your first enquiry to wheels up — we handle permits, slots, ground handling, and flight watch across Asia, Middle East &amp; Africa.</p>
       </div>
       <div class="grid md:grid-cols-4 gap-8">
         <div class="relative text-center fade-in"><div class="w-16 h-16 border border-teal-500/30 flex items-center justify-center mx-auto"><span class="text-2xl font-display text-teal-500">01</span></div><h3 class="text-lg font-display tracking-tight mt-6 text-white">Submit Enquiry</h3><p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">Tell us your route, dates, number of passengers or cargo weight, and any special requirements.</p><div class="hidden md:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-white/10"></div></div>
         <div class="relative text-center fade-in"><div class="w-16 h-16 border border-teal-500/30 flex items-center justify-center mx-auto"><span class="text-2xl font-display text-teal-500">02</span></div><h3 class="text-lg font-display tracking-tight mt-6 text-white">We Source Aircraft</h3><p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">We query our operator network and return options with competitive pricing — usually within 2 hours.</p><div class="hidden md:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-white/10"></div></div>
-        <div class="relative text-center fade-in"><div class="w-16 h-16 border border-teal-500/30 flex items-center justify-center mx-auto"><span class="text-2xl font-display text-teal-500">03</span></div><h3 class="text-lg font-display tracking-tight mt-6 text-white">Confirm & Contract</h3><p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">Choose the best option. We handle the charter agreement, insurance, overflight permits, and landing slots.</p><div class="hidden md:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-white/10"></div></div>
+        <div class="relative text-center fade-in"><div class="w-16 h-16 border border-teal-500/30 flex items-center justify-center mx-auto"><span class="text-2xl font-display text-teal-500">03</span></div><h3 class="text-lg font-display tracking-tight mt-6 text-white">Confirm &amp; Contract</h3><p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">Choose the best option. We handle the charter agreement, insurance, overflight permits, and landing slots.</p><div class="hidden md:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-white/10"></div></div>
         <div class="text-center fade-in"><div class="w-16 h-16 border border-teal-500/30 flex items-center justify-center mx-auto"><span class="text-2xl font-display text-teal-500">04</span></div><h3 class="text-lg font-display tracking-tight mt-6 text-white">Flight Operates</h3><p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">We coordinate ground handling, fuel, and flight watch. Your passengers or cargo depart on schedule.</p></div>
       </div>
     </div>
@@ -468,7 +392,7 @@
         <div class="fade-in">
           <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Why Skylinks Asia</span>
           <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Charter Broker Built for<br>Emerging Markets</h2>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-6">We are an aircraft charter broker — not an operator. That means our only allegiance is to you. We objectively source the best aircraft for your passenger or cargo charter from certified operators across Asia, the Middle East & Africa.</p>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-6">We are an aircraft charter broker — not an operator. That means our only allegiance is to you. We objectively source the best aircraft for your passenger or cargo charter from certified operators across Asia, the Middle East &amp; Africa.</p>
           <div class="space-y-6 mt-8">
             <div class="flex items-start gap-4"><div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0 mt-0.5"><iconify-icon icon="lucide:shield-check" class="text-teal-500 text-lg"></iconify-icon></div><div><h4 class="text-sm font-medium text-white">Vetted Operators Only</h4><p class="text-sm font-light text-gray-400 mt-1">Every operator in our network is audited — IOSA, ARGUS, or local CAA certification. We only work with carriers that meet our standards.</p></div></div>
             <div class="flex items-start gap-4"><div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0 mt-0.5"><iconify-icon icon="lucide:map" class="text-teal-500 text-lg"></iconify-icon></div><div><h4 class="text-sm font-medium text-white">Regional Expertise</h4><p class="text-sm font-light text-gray-400 mt-1">Deep knowledge of permit requirements, slot constraints, and ground handling across the GCC, South Asia, East Africa, and Southeast Asia.</p></div></div>
@@ -491,7 +415,7 @@
         <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
           <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6"><iconify-icon icon="lucide:landmark" class="text-teal-500 text-xl"></iconify-icon></div>
           <h3 class="text-xl font-display tracking-tight text-white">Middle East</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">Hajj & Umrah charter flights from Saudi Arabia, UAE, Kuwait, Qatar, Oman, and Bahrain. Oil & gas crew rotation, government flights, and cargo charter for the energy sector.</p>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">Hajj &amp; Umrah charter flights from Saudi Arabia, UAE, Kuwait, Qatar, Oman, and Bahrain. Oil &amp; gas crew rotation, government flights, and cargo charter for the energy sector.</p>
           <div class="flex flex-wrap gap-2 mt-6"><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Dubai</span><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Jeddah</span><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Doha</span><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Muscat</span><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Kuwait</span></div>
         </div>
         <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
@@ -503,28 +427,27 @@
         <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
           <div class="w-12 h-12 border border-teal-500/30 flex items-center justify-center mb-6"><iconify-icon icon="lucide:sun" class="text-teal-500 text-xl"></iconify-icon></div>
           <h3 class="text-xl font-display tracking-tight text-white">Africa</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">Mining charter, humanitarian cargo, repatriation flights, and oil & gas logistics across East, West, and Southern Africa. We handle remote airfield operations and permit challenges.</p>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4">Mining charter, humanitarian cargo, repatriation flights, and oil &amp; gas logistics across East, West, and Southern Africa. We handle remote airfield operations and permit challenges.</p>
           <div class="flex flex-wrap gap-2 mt-6"><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Nairobi</span><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Lagos</span><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Johannesburg</span><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Addis Ababa</span><span class="text-[10px] tracking-wider uppercase text-teal-500/70 bg-teal-500/10 px-2 py-1">Accra</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== BLOG/INSIGHTS PREVIEW (UPDATED: NEWEST POST FIRST) ===== -->
+  <!-- ===== BLOG / INSIGHTS ===== -->
   <section id="insights" class="py-24 bg-navy-900">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Aviation Insights</span>
         <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Latest from Our Blog</h2>
-        <p class="text-sm font-light text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">Industry news, charter guides, and updates from the world of aviation across Asia, Middle East & Africa.</p>
+        <p class="text-sm font-light text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">Industry news, charter guides, and updates from the world of aviation across Asia, Middle East &amp; Africa.</p>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
-        
-        <!-- Blog Post 1: DGR Cargo Pakistan (NEW) -->
+
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <a href="dangerous-goods-cargo-pakistan.html" class="block">
             <div class="relative h-48 overflow-hidden">
-              <img src="hero-images/cargo-hero-images/dangerous-goods-cargo-pakistan.webp" alt="Dangerous Goods Cargo Pakistan" width="600" height="400" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+              <img src="hero-images/cargo-hero-images/dangerous-goods-cargo-pakistan.webp" alt="Dangerous Goods Cargo Pakistan" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
             </div>
             <div class="p-6">
               <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Dangerous Goods</span>
@@ -537,11 +460,10 @@
           </div>
         </div>
 
-        <!-- Blog Post 2: ACMI Wet Lease Seasonal Demand -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <a href="acmi-wet-lease-seasonal-demand.html" class="block">
             <div class="relative h-48 overflow-hidden">
-              <img src="hero-images/charter-services-section-cargo.webp" alt="ACMI Wet Lease Seasonal Demand" width="600" height="400" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+              <img src="hero-images/charter-services-section-cargo.webp" alt="ACMI Wet Lease Seasonal Demand" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
             </div>
             <div class="p-6">
               <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">ACMI</span>
@@ -554,15 +476,14 @@
           </div>
         </div>
 
-        <!-- Blog Post 3: Hajj Umrah Charter Guide -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <a href="hajj-umrah-charter-guide.html" class="block">
             <div class="relative h-48 overflow-hidden">
-              <img src="hero-images/b737-800-hero.webp" alt="Hajj Umrah Charter Flight Guide" width="600" height="400" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+              <img src="hero-images/b737-800-hero.webp" alt="Hajj Umrah Charter Flight Guide" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
             </div>
             <div class="p-6">
               <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Passenger</span>
-              <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">The Complete Hajj & Umrah Charter Flight Guide</h3>
+              <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">The Complete Hajj &amp; Umrah Charter Flight Guide</h3>
               <p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">A comprehensive guide to chartering aircraft for Hajj and Umrah pilgrims, covering widebody selection, GACA approvals, and ground handling.</p>
             </div>
           </a>
@@ -585,7 +506,7 @@
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Common Questions</span>
         <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Aircraft Charter FAQ</h2>
         <p class="text-sm font-light text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">
-          Answers to the most common questions about chartering passenger and cargo aircraft across Asia, the Middle East & Africa.
+          Answers to the most common questions about chartering passenger and cargo aircraft across Asia, the Middle East &amp; Africa.
         </p>
       </div>
 
@@ -605,7 +526,7 @@
             <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
           </button>
           <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Passenger charter pricing depends on aircraft type, number of passengers, route, and season. A regional turboprop (ATR 72) for 70 passengers on a short African route may cost <strong class="text-gray-300">$6,000–$10,000 per flight hour</strong>. A narrowbody like the 737-800 for 189 passengers across the Middle East or Asia ranges from <strong class="text-gray-300">$12,000–$20,000 per block hour</strong>. Widebody aircraft for Hajj & Umrah charter flights (A330-300, 440 passengers) are priced per season and typically range from <strong class="text-gray-300">$25,000–$40,000 per block hour</strong>. Seasonal demand, especially during Hajj, affects pricing significantly.
+            Passenger charter pricing depends on aircraft type, number of passengers, route, and season. A regional turboprop (ATR 72) for 70 passengers on a short African route may cost <strong class="text-gray-300">$6,000–$10,000 per flight hour</strong>. A narrowbody like the 737-800 for 189 passengers across the Middle East or Asia ranges from <strong class="text-gray-300">$12,000–$20,000 per block hour</strong>. Widebody aircraft for Hajj &amp; Umrah charter flights (A330-300, 440 passengers) are priced per season and typically range from <strong class="text-gray-300">$25,000–$40,000 per block hour</strong>. Seasonal demand, especially during Hajj, affects pricing significantly.
           </div>
         </div>
         <div class="faq-item border border-navy-700 bg-navy-800 fade-in">
@@ -657,7 +578,7 @@
           <form id="quoteForm" name="charter-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
             <input type="hidden" name="form-name" value="charter-quote" />
             <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
-            
+
             <div class="grid md:grid-cols-2 gap-6">
               <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Charter Type *</label><select name="charterType" required class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150"><option value="">Select type</option><option value="passenger">Passenger Charter</option><option value="cargo">Cargo Charter</option><option value="acmi">ACMI / Wet Lease</option><option value="both">Both / Combined</option></select></div>
               <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Full Name *</label><input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
@@ -676,9 +597,10 @@
             </div>
             <div class="grid md:grid-cols-2 gap-6">
               <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Date *</label><input type="date" name="flightDate" required class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
-              <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Pax Count / Cargo Weight *</label><input type="text" name="details" required placeholder="e.g. 180 pax / 25 tons / 8 pallets" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
+              <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Pax Count / Cargo Weight *</label><input type="text" name="paxCount" required placeholder="e.g. 180 pax / 25 tons / 8 pallets" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
             </div>
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Additional Requirements</label><textarea name="notes" rows="3" placeholder="Cargo type, aircraft preference, one-way / return, budget range, special handling..." class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea></div>
+            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Preferred Aircraft</label><input type="text" name="aircraftPref" placeholder="e.g. A330, 737-800, any widebody, no preference" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
+            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Additional Requirements</label><textarea name="notes" rows="3" placeholder="Cargo type, one-way / return, budget range, special handling..." class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea></div>
             <button type="submit" class="w-full bg-teal-500 text-white text-sm font-semibold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">SUBMIT CHARTER ENQUIRY</button>
             <p class="text-[10px] text-gray-600 text-center">We typically respond within 2 hours. Your information is treated as confidential.</p>
           </form>
@@ -687,205 +609,225 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
-            
-            <div class="md:col-span-2 lg:col-span-1">
-                <a href="index.html" class="flex items-center gap-3 mb-6">
-                    <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
-                      <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
-                    </div>
-                    <div class="flex flex-col leading-none">
-                        <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
-                        <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
-                    </div>
-                </a>
-                <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
+        <div class="md:col-span-2 lg:col-span-1">
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+              <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
             </div>
-
-            <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger & Pilgrim Charter</a></li>
-                    <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo & Freight Charter</a></li>
-                    <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
-                    <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil & Gas Equipment Charter</a></li>
-                    <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
-                    <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma & Cold Chain</a></li>
-                    <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
-                </ul>
+            <div class="flex flex-col leading-none">
+              <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+              <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
             </div>
-
-            <div>
-                <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
-                    <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
-                    <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
-                    <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
-                </ul>
-                <div class="mt-6">
-                    <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
-                        <li><a href="empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
-                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Africa</a></li>
-                        <li><a href="empty-legs.html" class="hover:text-teal-500 transition-colors">Empty Legs Europe</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
-                    <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
-                    <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety & Compliance</a></li>
-                    <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
-                    <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms & Conditions</a></li>
-                    <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
-                <ul class="space-y-4 text-gray-400 text-sm">
-                    <li class="flex items-start gap-3">
-                        <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
-                        <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
-                        <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
-                        <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
-                        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
-                    </li>
-                </ul>
-            </div>
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
         </div>
-
-        <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
-            <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger &amp; Pilgrim Charter</a></li>
+            <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo &amp; Freight Charter</a></li>
+            <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+            <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil &amp; Gas Equipment Charter</a></li>
+            <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li>
+            <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma &amp; Cold Chain</a></li>
+            <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
+          </ul>
         </div>
+        <div>
+          <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
+            <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
+            <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
+            <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
+          </ul>
+          <div class="mt-6">
+            <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><a href="empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+              <li><a href="empty-legs-asia.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+            <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+            <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety &amp; Compliance</a></li>
+            <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+            <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li class="flex items-start gap-3">
+              <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
+              <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+        <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+      </div>
     </div>
   </footer>
 
-  <div id="toastContainer" class="fixed bottom-6 right-6 z-50 space-y-3"></div>
-
   <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
     <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
-        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
-            <div>
-                <h3 class="font-bold text-lg">Chat with us</h3>
-                <p class="text-xs opacity-90">Typically replies instantly</p>
-            </div>
-            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors" aria-label="Close chat">
-                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-            </button>
+      <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+        <div>
+          <h3 class="font-bold text-lg">Chat with us</h3>
+          <p class="text-xs opacity-90">Typically replies instantly</p>
         </div>
-        <div class="p-4 bg-navy-900">
-            <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
-            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
-            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
-                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
-            </a>
-        </div>
+        <button id="wa-close" class="text-white hover:text-gray-200 transition-colors" aria-label="Close chat">
+          <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+        </button>
+      </div>
+      <div class="p-4 bg-navy-900">
+        <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+        <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+        <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+          <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+        </a>
+      </div>
     </div>
   </div>
-  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110">
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110" aria-label="Open chat">
     <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
   </button>
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    let isMenuOpen = false;
+<script>
+  // ===== Mobile Menu =====
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let isMenuOpen = false;
+  function closeMenu() {
+    isMenuOpen = false;
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  }
+  menuToggle.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    } else { closeMenu(); }
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => { closeMenu(); });
+  });
 
-    function closeMenu() {
-        isMenuOpen = false;
-        mobileMenu.classList.add('translate-x-full');
-        mobileMenu.classList.remove('translate-x-0');
-        document.body.style.overflow = '';
-    }
-
-    menuToggle.addEventListener('click', () => {
-        isMenuOpen = !isMenuOpen;
-        if (isMenuOpen) {
-            mobileMenu.classList.remove('translate-x-full');
-            mobileMenu.classList.add('translate-x-0');
-            document.body.style.overflow = 'hidden';
-        } else {
-            closeMenu();
-        }
+  // ===== IntersectionObserver for .fade-in =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); }
     });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            closeMenu();
-        });
-    });
+  // ===== Dynamic Year =====
+  const yearEl = document.getElementById('current-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    function filterFleet(type) {
-      const cards = document.querySelectorAll('.fleet-card');
-      const tabs = document.querySelectorAll('.fleet-tab');
-      tabs.forEach(tab => {
-        if (tab.dataset.filter === type) { tab.classList.add('border-teal-500','text-teal-500','bg-teal-500/10'); tab.classList.remove('border-white/10','text-gray-400'); }
-        else { tab.classList.remove('border-teal-500','text-teal-500','bg-teal-500/10'); tab.classList.add('border-white/10','text-gray-400'); }
-      });
-      cards.forEach(card => {
-        if (type === 'all' || card.dataset.type === type) {
-          card.style.display = '';
-          card.style.opacity = '0'; card.style.transform = 'translateY(10px)';
-          requestAnimationFrame(() => { card.style.transition = 'opacity 0.4s ease, transform 0.4s ease'; card.style.opacity = '1'; card.style.transform = 'translateY(0)'; });
-        } else { card.style.display = 'none'; }
-      });
-    }
-
-    function toggleFaq(button) {
-      const item = button.closest('.faq-item');
-      const wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!wasOpen) item.classList.add('open');
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
-    const waWidget = document.getElementById('wa-widget');
-    const waToggle = document.getElementById('wa-toggle');
-    const waClose = document.getElementById('wa-close');
-    const waMessage = document.getElementById('wa-message');
-    const waSend = document.getElementById('wa-send');
-    
+  // ===== WhatsApp Widget =====
+  const waWidget = document.getElementById('wa-widget');
+  const waToggle = document.getElementById('wa-toggle');
+  const waClose = document.getElementById('wa-close');
+  const waMessage = document.getElementById('wa-message');
+  const waSend = document.getElementById('wa-send');
+  if (waToggle) {
     waToggle.addEventListener('click', () => {
-        waWidget.classList.toggle('hidden');
-        waToggle.classList.toggle('hidden');
+      waWidget.classList.toggle('hidden');
+      waToggle.classList.toggle('hidden');
     });
     waClose.addEventListener('click', () => {
-        waWidget.classList.add('hidden');
-        waToggle.classList.remove('hidden');
+      waWidget.classList.add('hidden');
+      waToggle.classList.remove('hidden');
     });
     waMessage.addEventListener('input', () => {
-        const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
-        waSend.href = 'https://wa.me/923205487700?text=' + msg;
+      const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
+      waSend.href = 'https://wa.me/923205487700?text=' + msg;
     });
-  </script>
+  }
+
+  // ===== Query-String Auto-Fill =====
+  (function prefillFromQuery() {
+    const params = new URLSearchParams(window.location.search);
+    const map = {
+      'departure':   'input[name="departure"]',
+      'destination': 'input[name="destination"]',
+      'flightDate':  'input[name="flightDate"]',
+      'aircraft':    'input[name="aircraftPref"]',
+      'pax':         'input[name="paxCount"]'
+    };
+    Object.keys(map).forEach(key => {
+      const val = params.get(key);
+      if (!val) return;
+      const field = document.querySelector(map[key]);
+      if (!field) return;
+      let decoded = decodeURIComponent(val);
+      if (key === 'pax' && !/pax/i.test(decoded)) decoded = decoded + ' Pax';
+      field.value = decoded;
+    });
+  })();
+
+  // ===== FAQ Toggle =====
+  function toggleFaq(button) {
+    const item = button.closest('.faq-item');
+    if (!item) return;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
+
+  // ===== Fleet Filter =====
+  function filterFleet(type) {
+    const cards = document.querySelectorAll('.fleet-card');
+    if (!cards.length) return;
+    const tabs = document.querySelectorAll('.fleet-tab');
+    tabs.forEach(tab => {
+      if (tab.dataset.filter === type) {
+        tab.classList.add('border-teal-500','text-teal-500','bg-teal-500/10');
+        tab.classList.remove('border-white/10','text-gray-400');
+      } else {
+        tab.classList.remove('border-teal-500','text-teal-500','bg-teal-500/10');
+        tab.classList.add('border-white/10','text-gray-400');
+      }
+    });
+    cards.forEach(card => {
+      if (type === 'all' || card.dataset.type === type) {
+        card.style.display = '';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(10px)';
+        requestAnimationFrame(() => {
+          card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        });
+      } else { card.style.display = 'none'; }
+    });
+  }
+</script>
 </body>
 </html>
