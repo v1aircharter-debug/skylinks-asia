@@ -9,6 +9,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.skylinks.asia/empty-legs-asia.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
   <meta name="geo.region" content="PK">
   <meta name="geo.placename" content="Islamabad">
   <meta property="og:type" content="website">
@@ -154,13 +155,13 @@
               <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
               Private Jet Charter
             </a>
-            <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-              Private Jet Fleet
-            </a>
             <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
               <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
               Empty Leg Flights
+            </a>
+            <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Fleet
             </a>
             <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
               <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
@@ -190,8 +191,8 @@
           <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
           <div class="flex flex-col space-y-4 mt-4">
             <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
-            <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
             <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+            <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
             <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
           </div>
           <div class="flex flex-col space-y-3 mt-6">
@@ -467,6 +468,7 @@
             <a href="private-jet-quote.html?departure=Bali%20(WADD)&destination=Jakarta%20(WIII)&flightDate=2026-10-07&aircraft=King%20Air%20350i&pax=8" class="text-[#C8B283] text-xs font-semibold hover:underline">Enquire Now →</a>
           </div>
         </div>
+
         <!-- Ho Chi Minh City → Singapore -->
         <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
           <div class="flex justify-between items-start mb-4">
@@ -913,6 +915,7 @@
   </button>
 
 <script>
+  // ===== Mobile Menu =====
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   let isMenuOpen = false;
@@ -934,6 +937,7 @@
     link.addEventListener('click', () => { closeMenu(); });
   });
 
+  // ===== IntersectionObserver for .fade-in =====
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) { entry.target.classList.add('visible'); }
@@ -941,9 +945,11 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
+  // ===== Dynamic Year =====
   const yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // ===== WhatsApp Widget =====
   const waWidget = document.getElementById('wa-widget');
   const waToggle = document.getElementById('wa-toggle');
   const waClose = document.getElementById('wa-close');
@@ -964,6 +970,7 @@
     });
   }
 
+  // ===== Query-String Auto-Fill =====
   (function prefillFromQuery() {
     const params = new URLSearchParams(window.location.search);
     const map = {
@@ -984,6 +991,7 @@
     });
   })();
 
+  // ===== FAQ Toggle =====
   function toggleFaq(button) {
     const item = button.closest('.faq-item');
     if (!item) return;
@@ -992,6 +1000,7 @@
     if (!wasOpen) item.classList.add('open');
   }
 
+  // ===== Fleet Filter =====
   function filterFleet(type) {
     const cards = document.querySelectorAll('.fleet-card');
     if (!cards.length) return;
