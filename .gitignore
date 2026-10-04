@@ -1,0 +1,19 @@
+# Windows system junk
+Desktop - Shortcut.lnk
+*.lnk
+Thumbs.db
+
+# macOS junk (future-proofing)
+.DS_Store
+
+# Editor temp files
+~$*
+*.tmp
+*.bak
+
+# Duplicate favicon (already deleted, but in case it returns)
+images/favicon-192x192.png
+
+# Node/editor folders if ever added
+node_modules/
+.vscode/
