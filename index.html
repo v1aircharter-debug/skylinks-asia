@@ -10,7 +10,6 @@
   <link rel="canonical" href="https://www.skylinks.asia/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
-  <link rel="apple-touch-icon" href="favicon-192x192.png">
   <meta name="geo.region" content="PK">
   <meta name="geo.placename" content="Islamabad">
   <meta property="og:type" content="website">
@@ -182,16 +181,16 @@
       <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.4), rgba(10,15,26,0.3));"></div>
     </div>
     <div class="relative z-10 max-w-4xl mx-auto text-center px-6 w-full">
-      <div class="fade-in">
+      <div class="animate-fade-in-up">
         <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Commercial Aircraft Charter — Asia · Middle East · Africa</span>
       </div>
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-normal leading-tight tracking-tight animate-fade-in-up text-white">
         Charter Flights.<br><span class="gradient-text">Any Payload. Any Route.</span>
       </h1>
-      <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto fade-in">
+      <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-8 max-w-2xl mx-auto animate-fade-in-up">
         Passenger charter flights and cargo aircraft charter across emerging markets. From Hajj &amp; Umrah pilgrim flights to urgent humanitarian cargo — we source the right aircraft from certified operators across Asia, the Middle East &amp; Africa.
       </p>
-      <div class="fade-in flex flex-col sm:flex-row justify-center gap-4 mt-10">
+      <div class="animate-fade-in-up flex flex-col sm:flex-row justify-center gap-4 mt-10">
         <a href="contact.html#contact-form" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">REQUEST A QUOTE</a>
         <a href="fleet.html" class="border border-white text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-teal-500 hover:text-teal-500 transition-all duration-300 w-full sm:w-auto text-center">VIEW FLEET</a>
       </div>
@@ -446,6 +445,41 @@
       </div>
       <div class="grid md:grid-cols-3 gap-8">
 
+        <!-- NEW: Charter Cost -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <a href="how-much-does-charter-cost.html" class="block">
+            <div class="relative h-48 overflow-hidden">
+              <img src="hero-images/cargo-hero-images/charter-cost.webp" alt="Private Jet and Cargo Charter Pricing" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Charter Pricing</span>
+              <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">How Much Does It Cost to Charter a Private Jet or Cargo Plane?</h3>
+              <p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">Real 2026 charter pricing by aircraft category, and the fees and factors that actually move the final quote.</p>
+            </div>
+          </a>
+          <div class="px-6 pb-6">
+            <a href="how-much-does-charter-cost.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read More <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- NEW: Outsize Project Cargo -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
+          <a href="outsize-project-cargo-charter.html" class="block">
+            <div class="relative h-48 overflow-hidden">
+              <img src="hero-images/cargo-hero-images/outsize-project-cargo-charter.webp" alt="Outsize Project Cargo Charter An-124" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Heavy-Lift Cargo</span>
+              <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">Outsize &amp; Project Cargo Charter: Moving What Won&rsquo;t Fit</h3>
+              <p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">Which aircraft handle heavy-lift and outsize cargo, how loading works, and what to plan before booking.</p>
+            </div>
+          </a>
+          <div class="px-6 pb-6">
+            <a href="outsize-project-cargo-charter.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read More <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- NEW: DGR Pakistan -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
           <a href="dangerous-goods-cargo-pakistan.html" class="block">
             <div class="relative h-48 overflow-hidden">
@@ -453,44 +487,12 @@
             </div>
             <div class="p-6">
               <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Dangerous Goods</span>
-              <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">DGR Cargo To and From Pakistan: A Shipper's Guide</h3>
+              <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">DGR Cargo To and From Pakistan: A Shipper&rsquo;s Guide</h3>
               <p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">How dangerous goods air cargo moves to and from Pakistan: PCAA oversight, which airports handle DG, and when to charter.</p>
             </div>
           </a>
           <div class="px-6 pb-6">
             <a href="dangerous-goods-cargo-pakistan.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read More <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
-          </div>
-        </div>
-
-        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-          <a href="acmi-wet-lease-seasonal-demand.html" class="block">
-            <div class="relative h-48 overflow-hidden">
-              <img src="hero-images/charter-services-section-cargo.webp" alt="ACMI Wet Lease Seasonal Demand" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">ACMI</span>
-              <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">ACMI Wet Lease: Managing Seasonal Demand in Aviation</h3>
-              <p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">How airlines use ACMI wet leases to scale capacity during Hajj, Umrah, and peak holiday travel without long-term fleet commitments.</p>
-            </div>
-          </a>
-          <div class="px-6 pb-6">
-            <a href="acmi-wet-lease-seasonal-demand.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read More <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
-          </div>
-        </div>
-
-        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in">
-          <a href="hajj-umrah-charter-guide.html" class="block">
-            <div class="relative h-48 overflow-hidden">
-              <img src="hero-images/b737-800-hero.webp" alt="Hajj Umrah Charter Flight Guide" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Passenger</span>
-              <h3 class="text-xl font-display tracking-tight mt-3 group-hover:text-teal-500 transition-colors duration-150 text-white">The Complete Hajj &amp; Umrah Charter Flight Guide</h3>
-              <p class="text-sm font-light text-gray-400 mt-3 leading-relaxed">A comprehensive guide to chartering aircraft for Hajj and Umrah pilgrims, covering widebody selection, GACA approvals, and ground handling.</p>
-            </div>
-          </a>
-          <div class="px-6 pb-6">
-            <a href="hajj-umrah-charter-guide.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read More <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
           </div>
         </div>
 
@@ -562,7 +564,7 @@
     </div>
   </section>
 
-  <!-- ===== QUOTE FORM (NETLIFY READY) ===== -->
+  <!-- ===== QUOTE FORM ===== -->
   <section id="quote" class="py-24 bg-navy-900">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid lg:grid-cols-5 gap-12">
@@ -688,7 +690,7 @@
         </div>
       </div>
       <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
-        <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
       </div>
     </div>
   </footer>
@@ -718,7 +720,6 @@
   </button>
 
 <script>
-  // ===== Mobile Menu =====
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   let isMenuOpen = false;
@@ -740,7 +741,6 @@
     link.addEventListener('click', () => { closeMenu(); });
   });
 
-  // ===== IntersectionObserver for .fade-in =====
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) { entry.target.classList.add('visible'); }
@@ -748,11 +748,9 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // ===== Dynamic Year =====
   const yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ===== WhatsApp Widget =====
   const waWidget = document.getElementById('wa-widget');
   const waToggle = document.getElementById('wa-toggle');
   const waClose = document.getElementById('wa-close');
@@ -773,7 +771,6 @@
     });
   }
 
-  // ===== Query-String Auto-Fill =====
   (function prefillFromQuery() {
     const params = new URLSearchParams(window.location.search);
     const map = {
@@ -794,7 +791,6 @@
     });
   })();
 
-  // ===== FAQ Toggle =====
   function toggleFaq(button) {
     const item = button.closest('.faq-item');
     if (!item) return;
@@ -803,7 +799,6 @@
     if (!wasOpen) item.classList.add('open');
   }
 
-  // ===== Fleet Filter =====
   function filterFleet(type) {
     const cards = document.querySelectorAll('.fleet-card');
     if (!cards.length) return;
