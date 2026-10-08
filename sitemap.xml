@@ -3,7 +3,7 @@
   <!-- CORE PAGES -->
   <url>
     <loc>https://www.skylinks.asia/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,13 +15,13 @@
   </url>
   <url>
     <loc>https://www.skylinks.asia/blog.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/blog-2.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -359,55 +359,55 @@
   </url>
   <url>
     <loc>https://www.skylinks.asia/aircraft-b747-200f.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/aircraft-b747-400.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/aircraft-b757-200f.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/aircraft-b767-300f.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/aircraft-b777-200.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/aircraft-b777-300.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/aircraft-b777.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/aircraft-b787-8.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/aircraft-b787-9.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -419,6 +419,18 @@
   </url>
 
   <!-- BLOG POSTS -->
+  <url>
+    <loc>https://www.skylinks.asia/a321p2f-vs-737-800bcf-main-deck-pallet-capacity-volume.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/how-to-vet-a-charter-broker.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://www.skylinks.asia/perishable-cargo-charter.html</loc>
     <lastmod>2026-10-07</lastmod>

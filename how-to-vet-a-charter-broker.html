@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Vet a Charter Broker: Red Flags to Watch For | Skylinks</title>
+  <meta name="description" content="Charter brokerage is lightly regulated in most markets. Here's how to verify operator credentials and spot the red flags of a broker you shouldn't trust.">
+  <meta name="keywords" content="vet a charter broker, charter broker red flags, verify aircraft operator, AOC verification, charter fraud, charter broker legitimacy">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.skylinks.asia/how-to-vet-a-charter-broker.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Islamabad">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Vet a Charter Broker: Red Flags to Watch For">
+  <meta property="og:description" content="A practical guide to verifying charter operators and spotting fraud before you pay — for both private jet and cargo charter.">
+  <meta property="og:url" content="https://www.skylinks.asia/how-to-vet-a-charter-broker.html">
+  <meta property="og:site_name" content="Skylinks Asia Aviation">
+  <meta property="og:image" content="https://www.skylinks.asia/images/charter-broker.webp">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Vet a Charter Broker: Red Flags to Watch For">
+  <meta name="twitter:description" content="A practical guide to verifying charter operators and spotting fraud before you pay — for both private jet and cargo charter.">
+  <meta name="twitter:image" content="https://www.skylinks.asia/images/charter-broker.webp">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          navy: { 950:'#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' },
+          teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
+          gold: { 500:'#C8B283', 600:'#B09668', 400:'#D9C89F' }
+        },
+        fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] }
+      }}
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0f1a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
+    html { scroll-behavior: smooth; }
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+    .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .gold-gradient-text { background: linear-gradient(135deg, #D9C89F, #FFFFFF, #C8B283); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
+    .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
+    .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
+    .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
+    .gold-glow { box-shadow: 0 0 20px rgba(200,178,131,0.15); }
+    .aircraft-img, .blog-img { transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+    .group:hover .aircraft-img, .group:hover .blog-img { transform: scale(1.05); }
+    #mobile-menu { transition: transform 0.3s ease-in-out; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }
+    .faq-item.open .faq-answer { max-height: 800px; padding-top: 16px; padding-bottom: 16px; }
+    .faq-item .faq-chevron { transition: transform 0.3s ease; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+    input[type="date"] { color-scheme: dark; }
+    .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
+    .article-body p { margin-bottom: 1.25rem; }
+    .article-body ul { margin-bottom: 1.5rem; }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to Vet a Charter Broker: Red Flags to Watch For",
+        "description": "Charter brokerage is lightly regulated in most markets. Here's how to verify an operator's credentials and spot the red flags of a broker or operator you shouldn't trust.",
+        "author": {
+          "@type": "Organization",
+          "name": "Skylinks Asia Aviation"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Skylinks Asia Aviation",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.skylinks.asia/favicon.svg"
+          }
+        },
+        "datePublished": "2026-10-08",
+        "dateModified": "2026-10-08",
+        "mainEntityOfPage": "https://www.skylinks.asia/how-to-vet-a-charter-broker.html"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is charter brokerage a regulated profession?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In most markets, no, or only lightly so. Anyone can describe themselves as a charter broker with no licensing requirement specific to the brokering activity itself. The regulatory weight sits with the operator, who must hold a valid Air Operator's Certificate (AOC)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is an AOC and why does it matter who holds it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An Air Operator's Certificate is issued by a national civil aviation authority and certifies that an operator has met the safety, maintenance, and operational standards required to legally conduct commercial flights. Chartering through an operator without a valid AOC is illegal in most jurisdictions and is likely to void insurance coverage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the single biggest red flag in a charter quote?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A price significantly below what every other broker is quoting for the same route and aircraft class. Charter economics don't allow for dramatic undercutting on a genuine, fully compliant operation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does a broker refusing to name the operator matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Naming the operator and aircraft before payment lets the client verify the AOC, insurance, and safety record independently. Refusal to disclose this information removes that check entirely — a pattern documented in known charter fraud cases."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does working with a broker instead of booking directly with an operator add risk?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not inherently. A broker with an established network and a track record of vetting operators can reduce risk by doing that verification work for the client. The risk comes from working with an unverified broker, not from brokerage as a model."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do if I suspect I've been offered an illegal or fraudulent charter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Don't proceed with payment, and verify the operator's AOC directly with the issuing civil aviation authority before any money changes hands. If money has already been lost, documenting and reporting the case to industry bodies that track bad actors is worth doing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are discounted or below-market charter prices ever legitimate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Occasionally, through genuine empty-leg availability — an aircraft already flying the route anyway with no return booking. A legitimate empty-leg discount still comes with full operator disclosure and documentation; a discount paired with secrecy about the operator is the red flag, not the discount itself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between a broker and an operator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The operator owns or leases the aircraft, employs the crew, and holds the AOC that makes the flight legal. The broker arranges the booking and sources the aircraft on the client's behalf but doesn't itself fly the aircraft or hold aviation safety certification."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-navy-950 text-gray-300 overflow-x-hidden">
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
+    <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+      <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
+          <span>WhatsApp: +92 320 5487700</span>
+        </a>
+        <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
+          <span>charter@skylinks.asia</span>
+        </a>
+      </div>
+    </div>
+    <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+          <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+        </div>
+        <div class="flex flex-col leading-none">
+          <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+          <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+        </div>
+      </a>
+      <ul class="hidden lg:flex items-center space-x-8">
+        <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
+        <li class="relative dropdown">
+          <button class="text-[#C8B283] hover:text-[#D9C89F] transition-colors text-sm flex items-center gap-1">
+            Private Jets
+            <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
+          </button>
+          <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
+            <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
+            <a href="private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Charter
+            </a>
+            <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Empty Leg Flights
+            </a>
+            <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Fleet
+            </a>
+            <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Quote
+            </a>
+            <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+              <a href="empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
+              <a href="empty-legs-asia.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
+      </ul>
+      <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]" aria-label="Open mobile menu">
+        <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
+      <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
+        <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 mobile-link">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
+        <li class="w-full text-center mt-4">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
+          <div class="flex flex-col space-y-4 mt-4">
+            <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+            <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+            <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+            <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
+          </div>
+          <div class="flex flex-col space-y-3 mt-6">
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Regional Empty Legs</span>
+            <a href="empty-legs-middle-east.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Middle East</a>
+            <a href="empty-legs-asia.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Asia</a>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative pt-40 pb-16 md:pt-48 md:pb-20">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img src="images/charter-broker.webp" alt="Charter broker verification and due diligence" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
+      <div class="absolute inset-0 hero-bg"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.5), rgba(10,15,26,0.4));"></div>
+    </div>
+    <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="fade-in">
+        <span class="inline-block bg-gold-500/10 border border-gold-500/30 text-gold-400 px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-6">Charter Brokerage · Buyer's Guide</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+        How to Vet a Charter Broker: <span class="gradient-text">Red Flags to Watch For</span>
+      </h1>
+      <p class="text-sm md:text-base font-light text-gray-400 mt-6 fade-in">
+        By the Skylinks Asia Charter Desk · Reviewed by our Operations Team
+      </p>
+      <p class="text-xs text-gray-500 mt-2 fade-in">
+        Published 8 October 2026 · Approx. 8 min read
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== ARTICLE BODY ===== -->
+  <article class="py-16 bg-navy-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 article-body">
+
+      <!-- TL;DR -->
+      <div class="bg-navy-900 border-l-4 border-gold-500 p-6 md:p-8 rounded-lg mb-12 fade-in">
+        <p class="text-base md:text-lg text-gray-300 leading-relaxed">
+          <strong class="text-gold-400">TL;DR:</strong> Charter brokerage — for both private jet and cargo charter — is lightly regulated in most markets: anyone can call themselves a broker with no licensing requirement. The protection comes from verifying the operator directly, not from trusting the broker's word alone. Before paying for any charter, confirm the operator's name and Air Operator's Certificate (AOC) with the civil aviation authority that issued it, verify insurance coverage directly with the insurer, and treat too-good-to-be-true pricing, pressure for wire transfers to personal accounts, and refusal to name the operator upfront as serious warning signs.
+        </p>
+      </div>
+
+      <!-- H2 1 -->
+      <h2 class="text-2xl md:text-3xl font-display tracking-tight text-white mt-12 mb-6 fade-in">
+        Why does vetting matter when brokerage isn't a safety credential?
+      </h2>
+      <p class="text-base text-gray-400 leading-relaxed fade-in">
+        A charter broker arranges the flight. The broker doesn't fly it, and in most jurisdictions, being a broker doesn't require any license, safety certification, or regulatory oversight at all. The actual safety and legal compliance sits with the operator — the company that holds the Air Operator's Certificate (AOC) and actually owns or leases the aircraft and employs the crew.
+      </p>
+      <p class="text-base text-gray-400 leading-relaxed fade-in">
+        That distinction matters because a broker's reassurance — "don't worry, it's a reputable operator" — isn't itself verification. A legitimate broker should be able and willing to name the operator and provide documentation proving the operator's standing, and should expect you to check that documentation independently rather than take it on faith. If a broker resists that, the resistance itself is the red flag, not an inconvenience to tolerate. For a closer look at how a properly run brokerage relationship is supposed to work, see our guide on <a href="how-air-charter-brokerage-works.html" class="text-teal-500 hover:text-teal-400 underline decoration-teal-500/30">how air charter brokerage works</a>, and for the operational background of our own desk, see <a href="about.html" class="text-teal-500 hover:text-teal-400 underline decoration-teal-500/30">about Skylinks Asia</a>.
+      </p>
+
+      <!-- H2 2 -->
+      <h2 class="text-2xl md:text-3xl font-display tracking-tight text-white mt-12 mb-6 fade-in">
+        What are the red flags to watch for in a charter quote?
+      </h2>
+      <p class="text-base text-gray-400 leading-relaxed fade-in">
+        A short list of warning signs covers most real-world charter fraud and illegal-charter cases, whether the shipment is a passenger flight or cargo:
+      </p>
+      <ul class="space-y-4 text-gray-400 fade-in">
+        <li class="flex gap-3">
+          <iconify-icon icon="lucide:alert-triangle" class="text-gold-500 mt-1 shrink-0 text-lg"></iconify-icon>
+          <span><strong class="text-white">Pricing well below the market rate.</strong> Charter is inherently expensive because it dedicates an entire aircraft, crew, and ground-handling chain to one mission. A quote dramatically undercutting every other broker's number for the same route and aircraft class should raise suspicion, not excitement. For benchmark pricing context, see <a href="how-much-does-charter-cost.html" class="text-teal-500 hover:text-teal-400 underline decoration-teal-500/30">how much it costs to charter an aircraft</a>.</span>
+        </li>
+        <li class="flex gap-3">
+          <iconify-icon icon="lucide:alert-triangle" class="text-gold-500 mt-1 shrink-0 text-lg"></iconify-icon>
+          <span><strong class="text-white">The operator or specific aircraft isn't disclosed upfront.</strong> A legitimate broker names the operator and aircraft registration before asking for payment. Vague answers ("a reputable partner," "a well-known operator") are a documented pattern in fraud cases.</span>
+        </li>
+        <li class="flex gap-3">
+          <iconify-icon icon="lucide:alert-triangle" class="text-gold-500 mt-1 shrink-0 text-lg"></iconify-icon>
+          <span><strong class="text-white">Payment requested to a personal account, or in cryptocurrency, before a formal agreement exists.</strong> Legitimate charter payments go to a business account tied to the operator or a bonded broker trust account, backed by a written charter agreement — not a personal account or an unconventional payment method.</span>
+        </li>
+        <li class="flex gap-3">
+          <iconify-icon icon="lucide:alert-triangle" class="text-gold-500 mt-1 shrink-0 text-lg"></iconify-icon>
+          <span><strong class="text-white">No formal written charter agreement.</strong> A contract specifying the aircraft, operator, route, dates, and cancellation terms is standard practice. Its absence, or reluctance to provide one, is a serious warning sign.</span>
+        </li>
+        <li class="flex gap-3">
+          <iconify-icon icon="lucide:alert-triangle" class="text-gold-500 mt-1 shrink-0 text-lg"></iconify-icon>
+          <span><strong class="text-white">Refusal or inability to provide the operator's AOC number or insurance certificate.</strong> Both should be freely available on request. A genuine operator has nothing to hide here, because this documentation is routinely requested by freight forwarders, cargo shippers, and passengers alike.</span>
+        </li>
+        <li class="flex gap-3">
+          <iconify-icon icon="lucide:alert-triangle" class="text-gold-500 mt-1 shrink-0 text-lg"></iconify-icon>
+          <span><strong class="text-white">Pressure to decide immediately,</strong> paired with urgency language discouraging you from independently verifying the operator or taking time to review the contract.</span>
+        </li>
+        <li class="flex gap-3">
+          <iconify-icon icon="lucide:alert-triangle" class="text-gold-500 mt-1 shrink-0 text-lg"></iconify-icon>
+          <span><strong class="text-white">Vague or unverifiable safety credentials</strong> — claims of "full compliance" or "top safety rating" without a specific, checkable certification (an IOSA registration number, an ARGUS or Wyvern rating) attached.</span>
+        </li>
+      </ul>
+
+      <!-- H2 3 -->
+      <h2 class="text-2xl md:text-3xl font-display tracking-tight text-white mt-12 mb-6 fade-in">
+        How do you actually verify a charter operator?
+      </h2>
+      <p class="text-base text-gray-400 leading-relaxed fade-in">
+        Verification isn't complicated, and a legitimate broker will expect — not resent — these steps:
+      </p>
+      <ol class="space-y-4 text-gray-400 list-decimal pl-6 fade-in">
+        <li>
+          <strong class="text-white">Request a copy of the operator's AOC</strong> and confirm the operator name on it matches who you're actually contracting with. Then verify the AOC directly with the civil aviation authority that issued it. For a Pakistan-registered operator, that's the Pakistan Civil Aviation Authority (PCAA) — the same body that oversees DG training approval, covered in more detail in our guide to <a href="dangerous-goods-cargo-pakistan.html" class="text-teal-500 hover:text-teal-400 underline decoration-teal-500/30">shipping dangerous goods to and from Pakistan</a>. For other countries, their equivalent national authority.
+        </li>
+        <li>
+          <strong class="text-white">Confirm the operator is entitled to perform the specific flight,</strong> not just that it holds an AOC generally. Operators need traffic rights and permits for the specific route and countries involved, and a valid AOC alone doesn't guarantee those are in place for your exact mission.
+        </li>
+        <li>
+          <strong class="text-white">Verify insurance coverage directly with the insurer,</strong> not just by taking the operator's word that coverage exists. A Certificate of Insurance (COI) obtained directly from the insurance provider confirms current, active coverage for the specific aircraft and operation.
+        </li>
+        <li>
+          <strong class="text-white">Check for independent safety-audit registration</strong> — IOSA (IATA Operational Safety Audit) for airlines, or ARGUS and Wyvern ratings in the business aviation world — as a reasonable proxy for operational standards, on top of the AOC itself.
+        </li>
+        <li>
+          <strong class="text-white">Research the operator and broker independently,</strong> including searching the company and principal names alongside terms like "fraud" or "complaint." Documented fraud cases are frequently discoverable this way before you ever pay a deposit.
+        </li>
+        <li>
+          <strong class="text-white">Confirm broker-association membership where relevant</strong> — IATA accreditation for cargo-focused brokers, or membership in an established industry body like The Air Charter Association (BACA) for business aviation — as an additional, though not sole, trust signal.
+        </li>
+      </ol>
+      <p class="text-base text-gray-400 leading-relaxed mt-6 fade-in">
+        The same aircraft-type due diligence applies regardless of mission type — if the operator is putting forward a <a href="aircraft-b737-800.html" class="text-teal-500 hover:text-teal-400 underline decoration-teal-500/30">Boeing 737-800</a> for a group passenger charter, for example, the registration on the aircraft should trace back to the named operator on the AOC. If it doesn't, that's a stop signal.
+      </p>
+
+      <!-- H2 4 -->
+      <h2 class="text-2xl md:text-3xl font-display tracking-tight text-white mt-12 mb-6 fade-in">
+        What will a legitimate charter broker always disclose?
+      </h2>
+      <p class="text-base text-gray-400 leading-relaxed fade-in">
+        Before asking for payment, a broker you can trust will tell you: the operator's name, the aircraft's registration number, the applicable insurance coverage, and the terms of a formal charter agreement. If any of these is missing, vague, or described as "proprietary," that's reason enough to pause and verify independently before proceeding — or to walk away entirely. This same transparency standard applies whether you're arranging a one-off <a href="private-jet-charter.html" class="text-teal-500 hover:text-teal-400 underline decoration-teal-500/30">private jet charter</a> or a multi-sector cargo programme.
+      </p>
+
+      <!-- FAQ -->
+      <section class="mt-16 pt-12 border-t border-navy-800">
+        <div class="mb-10 fade-in">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-gold-500">Frequently Asked Questions</span>
+          <h2 class="text-2xl md:text-3xl font-display tracking-tight mt-4 text-white">Broker Vetting &amp; Verification</h2>
+        </div>
+        <div class="space-y-4">
+
+          <div class="faq-item bg-navy-900 border border-navy-800 rounded-lg fade-in">
+            <button onclick="toggleFaq(this)" class="w-full text-left flex items-start justify-between gap-4 p-6">
+              <h3 class="text-base md:text-lg font-display tracking-tight text-white">Is charter brokerage a regulated profession?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-gold-500 text-xl mt-1 shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer">
+              <p class="text-sm text-gray-400 leading-relaxed px-6 pb-2">In most markets, no — or only lightly so. Anyone can describe themselves as a charter broker with no licensing requirement specific to the brokering activity itself. The regulatory weight sits with the operator, who must hold a valid Air Operator's Certificate (AOC), not with the broker arranging the booking.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 border border-navy-800 rounded-lg fade-in">
+            <button onclick="toggleFaq(this)" class="w-full text-left flex items-start justify-between gap-4 p-6">
+              <h3 class="text-base md:text-lg font-display tracking-tight text-white">What is an AOC and why does it matter who holds it?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-gold-500 text-xl mt-1 shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer">
+              <p class="text-sm text-gray-400 leading-relaxed px-6 pb-2">An Air Operator's Certificate is issued by a national civil aviation authority and certifies that an operator has met the safety, maintenance, and operational standards required to legally conduct commercial flights. Chartering through an operator without a valid AOC is illegal in most jurisdictions, and it's likely to void any insurance coverage on the flight as well.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 border border-navy-800 rounded-lg fade-in">
+            <button onclick="toggleFaq(this)" class="w-full text-left flex items-start justify-between gap-4 p-6">
+              <h3 class="text-base md:text-lg font-display tracking-tight text-white">What's the single biggest red flag in a charter quote?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-gold-500 text-xl mt-1 shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer">
+              <p class="text-sm text-gray-400 leading-relaxed px-6 pb-2">A price significantly below what every other broker is quoting for the same route and aircraft class. Charter economics don't allow for dramatic undercutting on a genuine, fully compliant operation — when a deal looks too good to be true, it usually reflects either an unlicensed operator or an outright scam.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 border border-navy-800 rounded-lg fade-in">
+            <button onclick="toggleFaq(this)" class="w-full text-left flex items-start justify-between gap-4 p-6">
+              <h3 class="text-base md:text-lg font-display tracking-tight text-white">Why does a broker refusing to name the operator matter?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-gold-500 text-xl mt-1 shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer">
+              <p class="text-sm text-gray-400 leading-relaxed px-6 pb-2">Because it removes your ability to verify anything independently. A legitimate broker names the operator and aircraft before taking payment specifically so you can check the AOC, insurance, and safety record yourself — refusal to disclose this information removes that check entirely, which is precisely the pattern documented in known charter fraud cases.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 border border-navy-800 rounded-lg fade-in">
+            <button onclick="toggleFaq(this)" class="w-full text-left flex items-start justify-between gap-4 p-6">
+              <h3 class="text-base md:text-lg font-display tracking-tight text-white">Does working with a broker instead of booking directly with an operator add risk?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-gold-500 text-xl mt-1 shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer">
+              <p class="text-sm text-gray-400 leading-relaxed px-6 pb-2">Not inherently — a broker with an established network and a track record of vetting operators can reduce risk by doing that verification work for you. The risk comes from working with an unverified broker, not from brokerage as a model; see our <a href="how-air-charter-brokerage-works.html" class="text-teal-500 hover:text-teal-400 underline decoration-teal-500/30">brokerage guide</a> for how a properly vetted broker relationship is supposed to work.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 border border-navy-800 rounded-lg fade-in">
+            <button onclick="toggleFaq(this)" class="w-full text-left flex items-start justify-between gap-4 p-6">
+              <h3 class="text-base md:text-lg font-display tracking-tight text-white">What should I do if I suspect I've been offered an illegal or fraudulent charter?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-gold-500 text-xl mt-1 shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer">
+              <p class="text-sm text-gray-400 leading-relaxed px-6 pb-2">Don't proceed with payment, and verify the operator's AOC directly with the issuing civil aviation authority before any money changes hands. If you've already lost money to a fraudulent broker or operator, documenting and reporting the case — including to industry bodies that track known bad actors — is worth doing even after the fact, both for recovery attempts and to protect others.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 border border-navy-800 rounded-lg fade-in">
+            <button onclick="toggleFaq(this)" class="w-full text-left flex items-start justify-between gap-4 p-6">
+              <h3 class="text-base md:text-lg font-display tracking-tight text-white">Are discounted or below-market charter prices ever legitimate?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-gold-500 text-xl mt-1 shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer">
+              <p class="text-sm text-gray-400 leading-relaxed px-6 pb-2">Occasionally, through genuine empty-leg availability — an aircraft already flying your route anyway with no return booking — which can be priced well below a dedicated charter. The distinction is that a legitimate empty-leg discount comes with full operator disclosure and documentation, the same as any other charter; a discount that comes with secrecy about the operator is the red flag, not the discount itself.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 border border-navy-800 rounded-lg fade-in">
+            <button onclick="toggleFaq(this)" class="w-full text-left flex items-start justify-between gap-4 p-6">
+              <h3 class="text-base md:text-lg font-display tracking-tight text-white">What's the difference between a broker and an operator?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-gold-500 text-xl mt-1 shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer">
+              <p class="text-sm text-gray-400 leading-relaxed px-6 pb-2">The operator owns or leases the aircraft, employs the crew, and holds the AOC that makes the flight legal — they're the regulated party. The broker arranges the booking, sources the aircraft, and manages the transaction on the client's behalf, but doesn't itself fly the aircraft or hold aviation safety certification. Verification needs to reach the operator, not stop at the broker's own assurances.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </article>
+
+  <!-- ===== CONTINUE READING ===== -->
+  <section class="py-24 bg-navy-900 border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-gold-500">Related Reading</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Continue Reading</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <a href="how-air-charter-brokerage-works.html" class="card-hover border border-navy-800 bg-navy-950 p-8 fade-in block group">
+          <div class="flex items-center justify-between mb-4">
+            <iconify-icon icon="lucide:handshake" class="text-gold-500 text-2xl"></iconify-icon>
+            <iconify-icon icon="lucide:arrow-right" class="text-gold-500 text-xl transition-transform group-hover:translate-x-1"></iconify-icon>
+          </div>
+          <h3 class="text-lg font-display tracking-tight text-white">How Air Charter Brokerage Works</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-3">What a broker actually does — from operator sourcing to trip support — and where their responsibility begins and ends.</p>
+        </a>
+        <a href="how-much-does-charter-cost.html" class="card-hover border border-navy-800 bg-navy-950 p-8 fade-in block group">
+          <div class="flex items-center justify-between mb-4">
+            <iconify-icon icon="lucide:dollar-sign" class="text-gold-500 text-2xl"></iconify-icon>
+            <iconify-icon icon="lucide:arrow-right" class="text-gold-500 text-xl transition-transform group-hover:translate-x-1"></iconify-icon>
+          </div>
+          <h3 class="text-lg font-display tracking-tight text-white">How Much Does It Cost to Charter an Aircraft?</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-3">Block-hour pricing, repositioning fees, and the cost drivers behind a real charter quote — with benchmark ranges.</p>
+        </a>
+        <a href="dangerous-goods-cargo-pakistan.html" class="card-hover border border-navy-800 bg-navy-950 p-8 fade-in block group">
+          <div class="flex items-center justify-between mb-4">
+            <iconify-icon icon="lucide:shield-alert" class="text-gold-500 text-2xl"></iconify-icon>
+            <iconify-icon icon="lucide:arrow-right" class="text-gold-500 text-xl transition-transform group-hover:translate-x-1"></iconify-icon>
+          </div>
+          <h3 class="text-lg font-display tracking-tight text-white">Shipping Dangerous Goods To and From Pakistan</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-3">PCAA approvals, DG training requirements, and the compliance path for regulated cargo in and out of Pakistan.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="py-24 bg-navy-950 border-t border-navy-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+      <div class="w-16 h-16 mx-auto border border-gold-500/40 rounded-full flex items-center justify-center mb-8 gold-glow">
+        <iconify-icon icon="lucide:shield-check" class="text-gold-500 text-2xl"></iconify-icon>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white">Need a Charter Broker You Can Verify?</h2>
+      <p class="text-sm font-light text-gray-400 mt-6 leading-relaxed">
+        Our team names the operator, the aircraft registration, and the insurance provider on every quote — before any payment is discussed. Talk to our charter desk for a transparent, fully documented quote on your next mission.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+        <a href="contact.html#contact-form" class="bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto">
+          REQUEST A CHARTER QUOTE
+        </a>
+        <a href="private-jet-charter.html" class="border border-gold-500/50 text-gold-400 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-gold-500/10 transition-all duration-300 w-full sm:w-auto">
+          CONTACT CHARTER DESK
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
+        <div class="md:col-span-2 lg:col-span-1">
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+              <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+            </div>
+            <div class="flex flex-col leading-none">
+              <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+              <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+            </div>
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger &amp; Pilgrim Charter</a></li>
+            <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo &amp; Freight Charter</a></li>
+            <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+            <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil &amp; Gas Equipment Charter</a></li>
+            <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li>
+            <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma &amp; Cold Chain</a></li>
+            <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
+            <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
+            <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
+            <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
+          </ul>
+          <div class="mt-6">
+            <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><a href="empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+              <li><a href="empty-legs-asia.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+            <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+            <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety &amp; Compliance</a></li>
+            <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+            <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li class="flex items-start gap-3">
+              <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
+              <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+      <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+        <div>
+          <h3 class="font-bold text-lg">Chat with us</h3>
+          <p class="text-xs opacity-90">Typically replies instantly</p>
+        </div>
+        <button id="wa-close" class="text-white hover:text-gray-200 transition-colors" aria-label="Close chat">
+          <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+        </button>
+      </div>
+      <div class="p-4 bg-navy-900">
+        <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+        <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+        <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+          <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+        </a>
+      </div>
+    </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110" aria-label="Open chat">
+    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
+
+<script>
+  // ===== Mobile Menu =====
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let isMenuOpen = false;
+  function closeMenu() {
+    isMenuOpen = false;
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  }
+  menuToggle.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    } else { closeMenu(); }
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => { closeMenu(); });
+  });
+
+  // ===== IntersectionObserver for .fade-in =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // ===== Dynamic Year =====
+  const yearEl = document.getElementById('current-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // ===== WhatsApp Widget =====
+  const waWidget = document.getElementById('wa-widget');
+  const waToggle = document.getElementById('wa-toggle');
+  const waClose = document.getElementById('wa-close');
+  const waMessage = document.getElementById('wa-message');
+  const waSend = document.getElementById('wa-send');
+  if (waToggle) {
+    waToggle.addEventListener('click', () => {
+      waWidget.classList.toggle('hidden');
+      waToggle.classList.toggle('hidden');
+    });
+    waClose.addEventListener('click', () => {
+      waWidget.classList.add('hidden');
+      waToggle.classList.remove('hidden');
+    });
+    waMessage.addEventListener('input', () => {
+      const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
+      waSend.href = 'https://wa.me/923205487700?text=' + msg;
+    });
+  }
+
+  // ===== Query-String Auto-Fill =====
+  (function prefillFromQuery() {
+    const params = new URLSearchParams(window.location.search);
+    const map = {
+      'departure':   'input[name="departure"]',
+      'destination': 'input[name="destination"]',
+      'flightDate':  'input[name="flightDate"]',
+      'aircraft':    'input[name="aircraftPref"]',
+      'pax':         'input[name="paxCount"]'
+    };
+    Object.keys(map).forEach(key => {
+      const val = params.get(key);
+      if (!val) return;
+      const field = document.querySelector(map[key]);
+      if (!field) return;
+      let decoded = decodeURIComponent(val);
+      if (key === 'pax' && !/pax/i.test(decoded)) decoded = decoded + ' Pax';
+      field.value = decoded;
+    });
+  })();
+
+  // ===== FAQ Toggle =====
+  function toggleFaq(button) {
+    const item = button.closest('.faq-item');
+    if (!item) return;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
+
+  // ===== Fleet Filter =====
+  function filterFleet(type) {
+    const cards = document.querySelectorAll('.fleet-card');
+    if (!cards.length) return;
+    const tabs = document.querySelectorAll('.fleet-tab');
+    tabs.forEach(tab => {
+      if (tab.dataset.filter === type) {
+        tab.classList.add('border-teal-500','text-teal-500','bg-teal-500/10');
+        tab.classList.remove('border-white/10','text-gray-400');
+      } else {
+        tab.classList.remove('border-teal-500','text-teal-500','bg-teal-500/10');
+        tab.classList.add('border-white/10','text-gray-400');
+      }
+    });
+    cards.forEach(card => {
+      if (type === 'all' || card.dataset.type === type) {
+        card.style.display = '';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(10px)';
+        requestAnimationFrame(() => {
+          card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        });
+      } else { card.style.display = 'none'; }
+    });
+  }
+</script>
+</body>
+</html>
