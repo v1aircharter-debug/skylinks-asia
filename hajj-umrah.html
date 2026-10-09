@@ -10,7 +10,6 @@
   <link rel="canonical" href="https://www.skylinks.asia/hajj-umrah.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
-  <link rel="apple-touch-icon" href="favicon-192x192.png">
   <meta name="geo.region" content="PK">
   <meta name="geo.placename" content="Islamabad">
   <meta property="og:type" content="website">
@@ -81,7 +80,6 @@
     gtag('config', 'G-4KQLDXBT24');
   </script>
 
-  <!-- FAQ Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -163,7 +161,6 @@
   }
   </script>
 
-  <!-- Page-specific article typography -->
   <style>
     .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: #cbd5e1; font-weight: 300; }
     .article-body h2 { font-size: 1.875rem; margin-top: 3rem; margin-bottom: 1.5rem; color: white; font-family: 'Playfair Display', serif; border-left: 4px solid #14b8a6; padding-left: 1rem; }
@@ -268,7 +265,6 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
   <section class="relative min-h-[70vh] flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img src="hero-images/hajj-pilgrimage-hero.webp" alt="Hajj and Umrah Pilgrim Charter Flights" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
@@ -292,7 +288,6 @@
     </div>
   </section>
 
-  <!-- ===== ARTICLE BODY ===== -->
   <section class="py-24 bg-navy-950">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -330,42 +325,19 @@
         <p>Pilgrim charter pricing is driven by a different set of factors than cargo or private jet charter: aircraft size and seat count, sector distance, seasonal demand (Hajj-season rates run considerably higher than off-peak Umrah), positioning flights to bring the aircraft to your departure city, ground handling and slot fees at JED or MED, and any additional in-flight service requirements for elderly or medically vulnerable pilgrims. Because Hajj-season capacity is booked months ahead and priced accordingly, requesting a quote early — even provisionally — is the single biggest lever a travel agency or mosque committee has over final cost. For a deeper dive, read our <a href="hajj-umrah-charter-guide.html">Ultimate Guide to Planning a Hajj Charter Flight</a>.</p>
       </div>
 
-      <!-- QUOTE FORM (STANDARD NETLIFY FORM) -->
       <div id="quote" class="mt-16 bg-navy-800 border border-teal-500/30 rounded-2xl p-8 md:p-12 fade-in">
+        <div class="w-16 h-16 border border-teal-500/40 flex items-center justify-center mb-6">
+          <iconify-icon icon="lucide:send" class="text-teal-500 text-3xl"></iconify-icon>
+        </div>
         <h3 class="text-2xl md:text-3xl font-display font-bold text-white mb-4">Request a Pilgrim Charter Quote</h3>
-        <p class="text-gray-400 mb-8 max-w-2xl mx-auto text-sm md:text-base">Organizing pilgrim travel requires advance planning. Provide your group size and preferred dates below, and our team will source the best airliners and coordinate all regional permits.</p>
-
-        <form id="quoteForm" name="charter-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="space-y-6">
-          <input type="hidden" name="form-name" value="charter-quote" />
-          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
-
-          <div class="grid md:grid-cols-2 gap-6">
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Charter Type *</label><select name="charterType" required class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150"><option value="">Select type</option><option value="passenger" selected>Passenger Charter</option><option value="cargo">Cargo Charter</option><option value="acmi">ACMI / Wet Lease</option><option value="both">Both / Combined</option></select></div>
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Full Name *</label><input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Agency / Organization</label><input type="text" name="company" placeholder="Agency / Mosque name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Email *</label><input type="email" name="email" required placeholder="your@email.com" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Phone / WhatsApp *</label><input type="tel" name="phone" required placeholder="+92 xxx xxx xxxx" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Urgency</label><select name="urgency" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150"><option value="planning">Planning Phase (Months Away)</option><option value="upcoming">Upcoming Trip (Weeks Away)</option><option value="immediate">Immediate Requirement</option></select></div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Departure Airport *</label><input type="text" name="departure" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Destination Airport *</label><input type="text" name="destination" required placeholder="JED / MED / City" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Departure Date *</label><input type="date" name="flightDate" required class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
-            <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Passenger Count *</label><input type="text" name="details" required placeholder="e.g. 250 pilgrims" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" /></div>
-          </div>
-          <div><label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Trip Details &amp; Requirements</label><textarea name="notes" rows="3" placeholder="Round-trip dates, aircraft preference, special needs..." class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea></div>
-          <button type="submit" class="w-full bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">SUBMIT PILGRIM ENQUIRY</button>
-          <p class="text-[10px] text-gray-600 text-center">We typically respond within 2 hours. Your information is treated as confidential.</p>
-        </form>
+        <p class="text-gray-400 mb-8 text-sm md:text-base max-w-2xl">Organizing pilgrim travel requires advance planning. Submit your group size and preferred dates through our secure contact form, and our team will source the best airliners and coordinate all regional permits.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contact.html#contact-form" class="bg-teal-500 text-navy-950 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow text-center">SUBMIT PILGRIM ENQUIRY</a>
+          <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="border border-teal-500/40 text-teal-500 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-500/10 transition-all duration-150 text-center">WHATSAPP US</a>
+        </div>
+        <p class="text-[10px] text-gray-600 mt-6">We typically respond within 2 hours. Your information is treated as confidential.</p>
       </div>
 
-      <!-- FAQ SECTION -->
       <div class="mt-16 pt-12 border-t border-navy-800 fade-in">
         <h3 class="text-2xl font-display tracking-tight text-white mb-8">Frequently Asked Questions</h3>
         <div class="space-y-4">
@@ -408,7 +380,6 @@
         </div>
       </div>
 
-      <!-- SIMILAR POSTS (CROSS-LINKING) -->
       <div class="mt-16 pt-12 border-t border-navy-800 fade-in">
         <h3 class="text-2xl font-display tracking-tight text-white mb-8">Similar Aviation Insights</h3>
         <div class="grid md:grid-cols-2 gap-6">
@@ -503,7 +474,7 @@
         </div>
       </div>
       <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
-        <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
       </div>
     </div>
   </footer>

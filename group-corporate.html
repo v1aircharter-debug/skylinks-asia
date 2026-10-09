@@ -10,7 +10,6 @@
   <link rel="canonical" href="https://www.skylinks.asia/group-corporate.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
-  <link rel="apple-touch-icon" href="favicon-192x192.png">
   <meta name="geo.region" content="PK">
   <meta name="geo.placename" content="Islamabad">
   <meta property="og:type" content="website">
@@ -72,7 +71,6 @@
     .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
     input[type="date"] { color-scheme: dark; }
     .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
-    .toast { animation: fadeInUp 0.4s ease-out forwards; }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
   <script>
@@ -82,7 +80,6 @@
     gtag('config', 'G-4KQLDXBT24');
   </script>
 
-  <!-- FAQ Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -249,7 +246,6 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img src="hero-images/corporate-hero.webp" alt="Group and Corporate Travel Charter" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
@@ -270,8 +266,8 @@
       <p class="text-xs text-gray-500 mt-4 fade-in">By the Skylinks Asia Charter Desk · Reviewed by our Operations Team</p>
 
       <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-        <a href="#quote" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
-          GET CORPORATE QUOTE
+        <a href="contact.html#contact-form" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
+          REQUEST A CORPORATE QUOTE
         </a>
         <a href="#capabilities" class="border border-white text-white text-sm font-semibold tracking-wide px-8 py-4 hover:border-teal-500 hover:text-teal-500 transition-all duration-300 w-full sm:w-auto text-center">
           OUR CAPABILITIES
@@ -280,7 +276,6 @@
     </div>
   </section>
 
-  <!-- ===== INTRO & QUICK ANSWER ===== -->
   <section class="py-24 bg-navy-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-3 gap-12 items-center">
@@ -307,7 +302,6 @@
     </div>
   </section>
 
-  <!-- ===== WHICH AIRCRAFT FITS YOUR GROUP ===== -->
   <section class="py-24 bg-navy-900 border-y border-navy-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
@@ -368,7 +362,6 @@
     </div>
   </section>
 
-  <!-- ===== CAPABILITIES ===== -->
   <section id="capabilities" class="py-24 bg-navy-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
@@ -410,7 +403,6 @@
     </div>
   </section>
 
-  <!-- ===== QUOTE FORM (NETLIFY READY) ===== -->
   <section id="quote" class="py-24 bg-navy-900 border-y border-navy-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-5 gap-12">
@@ -418,7 +410,7 @@
           <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Corporate Travel Desk</span>
           <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Request a Corporate Charter Quote</h2>
           <p class="text-sm font-light text-gray-400 leading-relaxed mt-6">
-            Provide your travel requirements below, and our VIP desk will curate tailored aircraft options. We offer full confidentiality and dedicated account management for corporate clients.
+            Provide your travel requirements, and our VIP desk will curate tailored aircraft options. We offer full confidentiality and dedicated account management for corporate clients.
           </p>
           <div class="mt-10 space-y-6">
             <div class="flex items-center gap-4">
@@ -427,7 +419,7 @@
               </div>
               <div>
                 <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">VIP Travel Desk</div>
-                <div class="text-sm text-white mt-0.5">+92 309 777 8000</div>
+                <a href="tel:+923097778000" class="text-sm text-white mt-0.5 hover:text-teal-500 transition block">+92 309 777 8000</a>
               </div>
             </div>
             <div class="flex items-center gap-4">
@@ -436,126 +428,127 @@
               </div>
               <div>
                 <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">Corporate Email</div>
-                <div class="text-sm text-white mt-0.5">charter@skylinks.asia</div>
+                <a href="mailto:charter@skylinks.asia" class="text-sm text-white mt-0.5 hover:text-teal-500 transition block">charter@skylinks.asia</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 border border-teal-500/30 flex items-center justify-center flex-shrink-0">
+                <iconify-icon icon="mdi:whatsapp" class="text-teal-500 text-lg"></iconify-icon>
+              </div>
+              <div>
+                <div class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500">WhatsApp</div>
+                <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="text-sm text-white mt-0.5 hover:text-teal-500 transition block">+92 320 548 7700</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="lg:col-span-3 fade-in">
-          <form id="quoteForm" name="corporate-quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="border border-navy-700 bg-navy-800 p-8 space-y-6">
-            <input type="hidden" name="form-name" value="corporate-quote-request" />
-            <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
-
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Contact Name *</label>
-                <input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Company / Organization *</label>
-                <input type="text" name="company" required placeholder="e.g. Horizon Corp, UN Delegation" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
+          <div class="border border-teal-500/30 bg-navy-800 p-8 md:p-12 h-full flex flex-col justify-center">
+            <div class="w-16 h-16 border border-teal-500/40 flex items-center justify-center mb-6">
+              <iconify-icon icon="lucide:briefcase" class="text-teal-500 text-3xl"></iconify-icon>
             </div>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Email *</label>
-                <input type="email" name="email" required placeholder="your@email.com" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Phone / WhatsApp *</label>
-                <input type="tel" name="phone" required placeholder="+92 xxx xxx xxxx" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
+            <h3 class="text-2xl md:text-3xl font-display text-white mb-4">Submit Your Corporate Enquiry</h3>
+            <p class="text-sm font-light text-gray-400 leading-relaxed mb-8">
+              Our corporate travel desk handles group and executive charter enquiries through our secure contact form. Include origin and destination airports, travel date, passenger count, and any catering or branding requirements so we can match the right aircraft class without delay.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="contact.html#contact-form" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow text-center">SUBMIT CORPORATE ENQUIRY</a>
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="border border-teal-500/40 text-teal-500 text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-500/10 transition-all duration-150 text-center">WHATSAPP US</a>
             </div>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Origin City / Airport *</label>
-                <input type="text" name="departure" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Destination City / Airport *</label>
-                <input type="text" name="destination" required placeholder="City / ICAO / IATA" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Travel Date *</label>
-                <input type="date" name="flightDate" required class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-              <div>
-                <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Passenger Count *</label>
-                <input type="text" name="details" required placeholder="e.g. 12 Executives (One-way / Return)" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150" />
-              </div>
-            </div>
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Urgency Level</label>
-              <select name="urgency" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150">
-                <option value="standard">Planned Travel (Weeks Out)</option>
-                <option value="urgent">Upcoming Trip (Days Out)</option>
-                <option value="emergency">Immediate Travel (ASAP)</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Catering &amp; VIP Requirements</label>
-              <textarea name="notes" rows="3" placeholder="e.g. Specific catering, branded headrests, security requirements, equipment..." class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 resize-none"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-teal-500 text-white text-sm font-semibold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow">
-              SUBMIT CORPORATE ENQUIRY
-            </button>
-            <p class="text-[10px] text-gray-600 text-center">We typically respond within 2 hours. Your information is treated as confidential.</p>
-          </form>
+            <p class="text-[10px] text-gray-600 mt-6 text-center">Your information is treated as confidential.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
   <section id="faq" class="py-24 bg-navy-950">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Answers</span>
         <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Frequently Asked Questions</h2>
       </div>
-      <div class="space-y-6 fade-in">
+      <div class="space-y-4">
 
-        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
-          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What's the difference between a private jet and a VIP airliner for group travel?</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed">A private jet is a purpose-built business aircraft, typically seating up to around 19 passengers. A VIP airliner is a full-size commercial airframe (such as a Boeing BBJ, Airbus ACJ, or converted widebody) reconfigured with a private, non-airline interior, used once group size exceeds what a standard private jet can comfortably carry.</p>
+        <div class="faq-item border border-navy-700 bg-navy-900 rounded-lg overflow-hidden fade-in">
+          <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left px-6 py-5 hover:bg-navy-800 transition-colors">
+            <span class="text-white font-medium pr-4">What's the difference between a private jet and a VIP airliner for group travel?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6">
+            <p class="text-gray-400 text-sm leading-relaxed">A private jet is a purpose-built business aircraft, typically seating up to around 19 passengers. A VIP airliner is a full-size commercial airframe (such as a Boeing BBJ, Airbus ACJ, or converted widebody) reconfigured with a private, non-airline interior, used once group size exceeds what a standard private jet can comfortably carry.</p>
+          </div>
         </div>
 
-        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
-          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How many passengers can a group or corporate charter accommodate?</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed">It ranges from a handful of executives on a light jet up to several hundred on a high-density widebody. VIP-configured narrow-bodies like the BBJ or ACJ typically carry 20 to 50 passengers in a luxury layout, while VIP or high-density widebodies handle 50 to 100+ passengers.</p>
+        <div class="faq-item border border-navy-700 bg-navy-900 rounded-lg overflow-hidden fade-in">
+          <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left px-6 py-5 hover:bg-navy-800 transition-colors">
+            <span class="text-white font-medium pr-4">How many passengers can a group or corporate charter accommodate?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6">
+            <p class="text-gray-400 text-sm leading-relaxed">It ranges from a handful of executives on a light jet up to several hundred on a high-density widebody. VIP-configured narrow-bodies like the BBJ or ACJ typically carry 20 to 50 passengers in a luxury layout, while VIP or high-density widebodies handle 50 to 100+ passengers.</p>
+          </div>
         </div>
 
-        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
-          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">What is MICE travel, and how does charter fit into it?</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed">MICE stands for Meetings, Incentives, Conferences, and Exhibitions — the corporate events sector built around bringing groups together for a shared purpose. Chartering an aircraft for a MICE trip keeps a delegation, sales team, or incentive-winner group traveling together on one schedule rather than splitting across commercial flights.</p>
+        <div class="faq-item border border-navy-700 bg-navy-900 rounded-lg overflow-hidden fade-in">
+          <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left px-6 py-5 hover:bg-navy-800 transition-colors">
+            <span class="text-white font-medium pr-4">What is MICE travel, and how does charter fit into it?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6">
+            <p class="text-gray-400 text-sm leading-relaxed">MICE stands for Meetings, Incentives, Conferences, and Exhibitions — the corporate events sector built around bringing groups together for a shared purpose. Chartering an aircraft for a MICE trip keeps a delegation, sales team, or incentive-winner group traveling together on one schedule rather than splitting across commercial flights.</p>
+          </div>
         </div>
 
-        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
-          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How far in advance should I book a large group charter?</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed">Executive airliners generally need at least 30 days' notice; VIP widebody aircraft and peak-period travel are best booked 60 days or more ahead, since this class of aircraft has a smaller, more heavily booked pool than standard business jets.</p>
+        <div class="faq-item border border-navy-700 bg-navy-900 rounded-lg overflow-hidden fade-in">
+          <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left px-6 py-5 hover:bg-navy-800 transition-colors">
+            <span class="text-white font-medium pr-4">How far in advance should I book a large group charter?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6">
+            <p class="text-gray-400 text-sm leading-relaxed">Executive airliners generally need at least 30 days' notice; VIP widebody aircraft and peak-period travel are best booked 60 days or more ahead, since this class of aircraft has a smaller, more heavily booked pool than standard business jets.</p>
+          </div>
         </div>
 
-        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
-          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Can a group charter accommodate sports team equipment and oversized baggage?</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed">Yes. Sports team and delegation charters are arranged with the necessary hold capacity and handling for equipment, oversized baggage, and any specific dietary or logistical requirements the group needs.</p>
+        <div class="faq-item border border-navy-700 bg-navy-900 rounded-lg overflow-hidden fade-in">
+          <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left px-6 py-5 hover:bg-navy-800 transition-colors">
+            <span class="text-white font-medium pr-4">Can a group charter accommodate sports team equipment and oversized baggage?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6">
+            <p class="text-gray-400 text-sm leading-relaxed">Yes. Sports team and delegation charters are arranged with the necessary hold capacity and handling for equipment, oversized baggage, and any specific dietary or logistical requirements the group needs.</p>
+          </div>
         </div>
 
-        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
-          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Is it cheaper to charter one large aircraft or two smaller jets for the same group?</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed">It depends on group size, route, and departure airports. A single aircraft is often more efficient at scale, but for groups just above one aircraft's capacity, two smaller jets flying in tandem can be more practical when availability on a single larger airframe is tight.</p>
+        <div class="faq-item border border-navy-700 bg-navy-900 rounded-lg overflow-hidden fade-in">
+          <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left px-6 py-5 hover:bg-navy-800 transition-colors">
+            <span class="text-white font-medium pr-4">Is it cheaper to charter one large aircraft or two smaller jets for the same group?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6">
+            <p class="text-gray-400 text-sm leading-relaxed">It depends on group size, route, and departure airports. A single aircraft is often more efficient at scale, but for groups just above one aircraft's capacity, two smaller jets flying in tandem can be more practical when availability on a single larger airframe is tight.</p>
+          </div>
         </div>
 
-        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
-          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">How is corporate group charter different from Hajj or Umrah group charter?</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed">Both move groups on a dedicated schedule, but corporate charter is built around business logistics — branding, catering, confidentiality, MICE scheduling — while pilgrimage charter follows a different booking rhythm tied to religious calendar dates and destination-specific slot coordination. See our Hajj &amp; Umrah charter page for that side of group travel.</p>
+        <div class="faq-item border border-navy-700 bg-navy-900 rounded-lg overflow-hidden fade-in">
+          <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left px-6 py-5 hover:bg-navy-800 transition-colors">
+            <span class="text-white font-medium pr-4">How is corporate group charter different from Hajj or Umrah group charter?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6">
+            <p class="text-gray-400 text-sm leading-relaxed">Both move groups on a dedicated schedule, but corporate charter is built around business logistics — branding, catering, confidentiality, MICE scheduling — while pilgrimage charter follows a different booking rhythm tied to religious calendar dates and destination-specific slot coordination. See our Hajj &amp; Umrah charter page for that side of group travel.</p>
+          </div>
         </div>
 
-        <div class="border border-navy-800 bg-navy-900 p-6 md:p-8">
-          <h3 class="text-lg md:text-xl font-semibold text-white mb-3">Do group charters include catering and branding customization?</h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed">Yes. Corporate and incentive travel charters commonly include tailored catering and company-branded touches as part of the VIP experience — details you can specify directly when requesting a quote.</p>
+        <div class="faq-item border border-navy-700 bg-navy-900 rounded-lg overflow-hidden fade-in">
+          <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center text-left px-6 py-5 hover:bg-navy-800 transition-colors">
+            <span class="text-white font-medium pr-4">Do group charters include catering and branding customization?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6">
+            <p class="text-gray-400 text-sm leading-relaxed">Yes. Corporate and incentive travel charters commonly include tailored catering and company-branded touches as part of the VIP experience — details you can specify directly when requesting a quote.</p>
+          </div>
         </div>
 
       </div>
@@ -639,7 +632,7 @@
         </div>
       </div>
       <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
-        <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
       </div>
     </div>
   </footer>
