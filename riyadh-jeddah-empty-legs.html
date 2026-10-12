@@ -335,44 +335,15 @@
         <p class="text-sm font-light text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">Register your preferred dates for Riyadh or Jeddah, and our concierge team will alert you directly by WhatsApp or email the moment a matching empty leg becomes available.</p>
       </div>
 
-      <form name="route-register-riyadh-jeddah" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="border border-teal-500/20 bg-navy-800 p-8 space-y-6 fade-in rounded-lg">
-        <input type="hidden" name="form-name" value="route-register-riyadh-jeddah" />
-        <input type="hidden" name="route" value="Riyadh ↔ Jeddah Corridor" />
-        <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
-
-        <div class="grid md:grid-cols-2 gap-6">
-          <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Full Name *</label>
-              <input type="text" name="fullName" required placeholder="Your name" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 rounded-lg" />
-          </div>
-          <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Email *</label>
-              <input type="email" name="email" required placeholder="your@email.com" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 rounded-lg" />
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-6">
-          <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Phone / WhatsApp *</label>
-              <input type="tel" name="phone" required placeholder="+92 xxx xxx xxxx" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 placeholder-gray-600 focus:border-teal-500 focus:outline-none transition-colors duration-150 rounded-lg" />
-          </div>
-          <div>
-              <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Preferred Direction</label>
-              <select name="direction" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150 rounded-lg">
-                  <option value="outbound">Departing Riyadh</option>
-                  <option value="inbound">Departing Jeddah</option>
-                  <option value="either">Either (Flexible)</option>
-              </select>
-          </div>
-        </div>
-
-        <div>
-            <label class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 block mb-2">Preferred Date Range</label>
-            <input type="date" name="dateRange" class="w-full bg-navy-900 border border-white/10 text-sm text-white px-4 py-3 focus:border-teal-500 focus:outline-none transition-colors duration-150 rounded-lg" />
-        </div>
-
-        <button type="submit" class="w-full bg-teal-500 text-white text-sm font-bold tracking-wide py-4 hover:bg-teal-600 transition-all duration-150 teal-glow uppercase rounded-lg">REGISTER FOR ALERTS</button>
-      </form>
+      <div class="border border-teal-500/20 bg-navy-800 p-8 md:p-10 text-center fade-in rounded-lg">
+        <iconify-icon icon="ph:bell-ringing-duotone" class="text-teal-500 text-5xl mb-4"></iconify-icon>
+        <h3 class="text-xl font-display text-white mb-3">Set Up Route Alerts</h3>
+        <p class="text-sm text-gray-400 max-w-md mx-auto mb-6 leading-relaxed">Our alert desk tracks inbound and outbound Riyadh &amp; Jeddah empty legs daily. Register your route, aircraft preference, and travel window — we'll notify you before flights go public.</p>
+        <a href="empty-leg-alerts.html" class="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-white text-sm font-bold tracking-wide px-8 py-4 transition-colors rounded-lg teal-glow uppercase">
+          REGISTER FOR ALERTS
+          <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -501,7 +472,7 @@
         </div>
       </div>
       <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
-        <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
       </div>
     </div>
   </footer>

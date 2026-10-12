@@ -221,7 +221,6 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24">
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img src="hero-images/b787-8-hero.webp" alt="Boeing 787-8 Dreamliner Charter Aircraft" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
@@ -249,7 +248,6 @@
     </div>
   </section>
 
-  <!-- ===== SPECS BAR ===== -->
   <section class="border-y border-navy-800 bg-navy-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
       <div class="fade-in">
@@ -271,7 +269,6 @@
     </div>
   </section>
 
-  <!-- ===== OVERVIEW ===== -->
   <section id="overview" class="py-24 bg-navy-950">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Aircraft Overview</span>
@@ -285,7 +282,6 @@
     </div>
   </section>
 
-  <!-- ===== KEY FEATURES ===== -->
   <section class="py-24 bg-navy-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
@@ -351,64 +347,62 @@
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
   <section class="py-24 bg-navy-950">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
         <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Frequently Asked Questions</span>
         <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">787-8 Charter Inquiries</h2>
       </div>
-      <div class="space-y-8">
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
-          <h3 class="text-xl font-display tracking-tight text-white flex items-start gap-3">
-            <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
-            How many passengers can the Boeing 787-8 hold?
-          </h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 pl-8">
+      <div class="space-y-4">
+        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-sm font-medium pr-4 text-white">How many passengers can the Boeing 787-8 hold?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
             In a typical two-class charter configuration, the Boeing 787-8 can comfortably accommodate up to 359 passengers, making it ideal for medium-to-large international groups, corporate MICE events, and sports travel.
-          </p>
+          </div>
         </div>
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
-          <h3 class="text-xl font-display tracking-tight text-white flex items-start gap-3">
-            <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
-            What is the maximum range of a chartered Boeing 787-8?
-          </h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 pl-8">
+        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-sm font-medium pr-4 text-white">What is the maximum range of a chartered Boeing 787-8?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
             The Boeing 787-8 has a maximum range of approximately 13,530 kilometers (7,305 nautical miles), allowing for up to 14 hours of continuous flight. This makes it capable of connecting major intercontinental hubs non-stop.
-          </p>
+          </div>
         </div>
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
-          <h3 class="text-xl font-display tracking-tight text-white flex items-start gap-3">
-            <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
-            What makes the 787-8 Dreamliner more comfortable for passengers?
-          </h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 pl-8">
+        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-sm font-medium pr-4 text-white">What makes the 787-8 Dreamliner more comfortable for passengers?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
             The 787 features a composite airframe that allows for higher cabin humidity and a lower cabin altitude equivalent to 6,000 feet (compared to 8,000 feet on standard airliners). This significantly reduces passenger fatigue, jet lag, and dryness. It also features the largest windows in commercial aviation and advanced mood lighting.
-          </p>
+          </div>
         </div>
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
-          <h3 class="text-xl font-display tracking-tight text-white flex items-start gap-3">
-            <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
-            Can the Boeing 787-8 be configured for VIP or executive travel?
-          </h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 pl-8">
+        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-sm font-medium pr-4 text-white">Can the Boeing 787-8 be configured for VIP or executive travel?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
             Yes, the 787-8 is a highly popular base for Boeing Business Jets (BBJ). In a VIP configuration, the aircraft can be outfitted with luxury lounges, private bedrooms, and meeting rooms to accommodate around 25 to 50 VIP passengers.
-          </p>
+          </div>
         </div>
-        <div class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in">
-          <h3 class="text-xl font-display tracking-tight text-white flex items-start gap-3">
-            <iconify-icon icon="lucide:help-circle" class="text-teal-500 mt-1 shrink-0 text-xl"></iconify-icon>
-            What kind of runways does the 787-8 require for charter flights?
-          </h3>
-          <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 pl-8">
+        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-sm font-medium pr-4 text-white">What kind of runways does the 787-8 require for charter flights?</span>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
             As a commercial widebody jet, the Boeing 787-8 requires paved, standardized runways typically at least 2,500 meters (8,200 feet) in length. However, its composite landing gear and wing design allow it to operate from some regional airports that cannot accommodate larger widebodies like the 747.
-          </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA ===== -->
   <section class="py-24 bg-navy-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
       <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white">Ready to Charter the 787-8?</h2>
@@ -421,7 +415,6 @@
     </div>
   </section>
 
-  <!-- ===== OTHER AIRCRAFT IN OUR NETWORK ===== -->
   <section class="py-24 bg-navy-950 border-t border-navy-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
@@ -602,7 +595,6 @@
   </button>
 
 <script>
-  // ===== Mobile Menu =====
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   let isMenuOpen = false;
@@ -624,7 +616,6 @@
     link.addEventListener('click', () => { closeMenu(); });
   });
 
-  // ===== IntersectionObserver for .fade-in =====
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) { entry.target.classList.add('visible'); }
@@ -632,11 +623,9 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // ===== Dynamic Year =====
   const yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ===== WhatsApp Widget =====
   const waWidget = document.getElementById('wa-widget');
   const waToggle = document.getElementById('wa-toggle');
   const waClose = document.getElementById('wa-close');
@@ -657,7 +646,6 @@
     });
   }
 
-  // ===== Query-String Auto-Fill =====
   (function prefillFromQuery() {
     const params = new URLSearchParams(window.location.search);
     const map = {
@@ -678,7 +666,6 @@
     });
   })();
 
-  // ===== FAQ Toggle =====
   function toggleFaq(button) {
     const item = button.closest('.faq-item');
     if (!item) return;
@@ -687,7 +674,6 @@
     if (!wasOpen) item.classList.add('open');
   }
 
-  // ===== Fleet Filter =====
   function filterFleet(type) {
     const cards = document.querySelectorAll('.fleet-card');
     if (!cards.length) return;
