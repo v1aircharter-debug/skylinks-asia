@@ -173,7 +173,6 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img src="hero-images/fleet-hero.webp" alt="Aviation Industry Insights and News" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
@@ -194,7 +193,6 @@
     </div>
   </section>
 
-  <!-- ===== BLOG GRID ===== -->
   <section class="py-24 bg-navy-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -204,13 +202,53 @@
           <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-2 text-white">Featured Articles</h2>
         </div>
         <div class="hidden md:block">
-          <span class="text-sm font-medium text-gray-400">Total Posts: <span class="text-teal-500 font-bold text-base">25</span></span>
+          <span class="text-sm font-medium text-gray-400">Total Posts: <span class="text-teal-500 font-bold text-base">27</span></span>
         </div>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- 1. Live Animal Charter (NEW Oct 10) -->
+        <!-- 1. NEW — Central Asia / Afghanistan Air Corridor (Oct 13) -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
+          <div class="relative h-52 overflow-hidden">
+            <img src="hero-images/cargo-hero-images/central-asia-air-cargo.webp" alt="Central Asia air cargo corridor — freighter loading freight for landlocked trade routes" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div>
+            <span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Trade Corridors</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Oct 13, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 11 min read</span>
+            </div>
+            <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">Why Landlocked Central Asia &amp; Afghanistan Depend on Air Cargo</h3>
+            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+              The overland megaprojects linking Central Asia to South Asian ports are still years away — here&rsquo;s why air cargo remains the reliable bridge in the meantime.
+            </p>
+            <a href="central-asia-afghanistan-air-corridor.html" aria-label="Read article: Why Landlocked Central Asia and Afghanistan Depend on Air Cargo" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read Article <iconify-icon icon="lucide:arrow-right" class="text-sm"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- 2. NEW — International Charter Documents & Permits (Oct 12) -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
+          <div class="relative h-52 overflow-hidden">
+            <img src="hero-images/cargo-hero-images/international-charter-documents-permits.webp" alt="International charter documents and permits — overflight, landing, ICAO flight plan" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div>
+            <span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Regulatory</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Oct 12, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 10 min read</span>
+            </div>
+            <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">International Charter Documents &amp; Permits: A Complete Guide</h3>
+            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+              Overflight permits, landing slots, ICAO flight plans, and diplomatic clearance &mdash; what every international charter operator needs to know.
+            </p>
+            <a href="international-charter-documents-permits.html" aria-label="Read article: International Charter Documents and Permits — A Complete Guide" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read Article <iconify-icon icon="lucide:arrow-right" class="text-sm"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- 3. Live Animal Charter -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/live-animal-charter-hero.webp" alt="Live animal charter — racehorses and livestock by air" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -230,7 +268,7 @@
           </div>
         </div>
 
-        <!-- 2. Business Aviation Safety Ratings (NEW Oct 10) -->
+        <!-- 4. Business Aviation Safety Ratings -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/business-aviation-safety-hero.webp" alt="Business aviation safety ratings — ARGUS, Wyvern, IS-BAO, IOSA" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -250,7 +288,7 @@
           </div>
         </div>
 
-        <!-- 3. A321P2F vs 737-800BCF -->
+        <!-- 5. A321P2F vs 737-800BCF -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/b737-a321-comparison.webp" alt="A321P2F vs 737-800BCF narrowbody freighter comparison" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -270,7 +308,7 @@
           </div>
         </div>
 
-        <!-- 4. How to Vet a Charter Broker -->
+        <!-- 6. How to Vet a Charter Broker -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="images/charter-broker.webp" alt="How to vet a charter broker — red flags and verification" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -290,7 +328,7 @@
           </div>
         </div>
 
-        <!-- 5. Perishable Cargo Charter -->
+        <!-- 7. Perishable Cargo Charter -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/perishable-cargo.webp" alt="Perishable Cargo Charter — fresh produce, seafood, flowers" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -310,7 +348,7 @@
           </div>
         </div>
 
-        <!-- 6. Charter Cost -->
+        <!-- 8. Charter Cost -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/hmd-charter-cost.webp" alt="Private Jet and Cargo Charter Pricing" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -330,7 +368,7 @@
           </div>
         </div>
 
-        <!-- 7. Outsize Project Cargo -->
+        <!-- 9. Outsize Project Cargo -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/outsized-cargo.webp" alt="Outsize Project Cargo Charter An-124" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -350,7 +388,7 @@
           </div>
         </div>
 
-        <!-- 8. DGR Pakistan -->
+        <!-- 10. DGR Pakistan -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/dangerous-goods-cargo-pakistan.webp" alt="Dangerous Goods Air Cargo Pakistan" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -370,7 +408,7 @@
           </div>
         </div>
 
-        <!-- 9. ACMI Seasonal Demand -->
+        <!-- 11. ACMI Seasonal Demand -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/charter-services-section-cargo.webp" alt="ACMI Wet Lease Seasonal Demand" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -390,7 +428,7 @@
           </div>
         </div>
 
-        <!-- 10. Hajj Umrah Charter Guide -->
+        <!-- 12. Hajj Umrah Charter Guide -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/b737-800-hero.webp" alt="Hajj Umrah Charter Flight Guide" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -410,49 +448,8 @@
           </div>
         </div>
 
-        <!-- 11. International Medical Evacuation -->
-        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
-          <div class="relative h-52 overflow-hidden">
-            <img src="hero-images/cargo-hero-images/b777f.webp" alt="International Medical Evacuation Guide" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div>
-            <span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Medical</span>
-          </div>
-          <div class="p-6 flex-grow flex flex-col">
-            <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 16, 2026</span>
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 9 min read</span>
-            </div>
-            <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">International Medical Evacuation Guide: Air Ambulance Charter</h3>
-            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
-              How to arrange international medical evacuation flights, including air ambulance configurations, medical teams, and cross-border permits.
-            </p>
-            <a href="international-medical-evacuation-guide.html" aria-label="Read article: International Medical Evacuation Guide — Air Ambulance Charter" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read Article <iconify-icon icon="lucide:arrow-right" class="text-sm"></iconify-icon></a>
-          </div>
-        </div>
-
-        <!-- 12. How Air Charter Brokerage Works -->
-        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
-          <div class="relative h-52 overflow-hidden">
-            <img src="hero-images/home-page.webp" alt="How Air Charter Brokerage Works" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div>
-            <span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Industry</span>
-          </div>
-          <div class="p-6 flex-grow flex flex-col">
-            <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 15, 2026</span>
-              <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 9 min read</span>
-            </div>
-            <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">How Air Charter Brokerage Works: A Complete Guide</h3>
-            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
-              Understand the role of air charter brokers, how they source aircraft, and why using a broker saves time and money for passenger and cargo charter flights.
-            </p>
-            <a href="how-air-charter-brokerage-works.html" aria-label="Read article: How Air Charter Brokerage Works — A Complete Guide" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read Article <iconify-icon icon="lucide:arrow-right" class="text-sm"></iconify-icon></a>
-          </div>
-        </div>
-
       </div>
 
-      <!-- PAGINATION COUNTER -->
       <div class="flex justify-center items-center gap-4 mt-16 fade-in">
           <a href="blog.html" class="w-10 h-10 flex items-center justify-center border border-teal-500 text-teal-500 bg-teal-500/10 text-sm font-semibold">1</a>
           <a href="blog-2.html" class="w-10 h-10 flex items-center justify-center border border-navy-700 text-gray-400 hover:border-teal-500 hover:text-teal-500 text-sm font-semibold transition-all">2</a>
@@ -462,7 +459,6 @@
     </div>
   </section>
 
-  <!-- ===== CTA ===== -->
   <section class="py-24 bg-navy-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
       <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white">Need Expert Aviation Advice?</h2>

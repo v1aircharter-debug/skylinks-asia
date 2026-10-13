@@ -173,7 +173,6 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-40 pb-20 md:pt-48 md:pb-24 overflow-hidden">
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img src="hero-images/fleet-hero.webp" alt="Aviation Industry Insights and News" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
@@ -194,7 +193,6 @@
     </div>
   </section>
 
-  <!-- ===== BLOG GRID ===== -->
   <section class="py-24 bg-navy-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -204,13 +202,53 @@
           <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-2 text-white">Featured Articles</h2>
         </div>
         <div class="hidden md:block">
-          <span class="text-sm font-medium text-gray-400">Page 2 of 2 &middot; 13 posts</span>
+          <span class="text-sm font-medium text-gray-400">Page 2 of 2 &middot; 15 posts</span>
         </div>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- 13. Shipping Lithium Batteries (moved from page 1) -->
+        <!-- 1. NEW — International Medical Evacuation (dropped from page 1) -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
+          <div class="relative h-52 overflow-hidden">
+            <img src="hero-images/cargo-hero-images/b777f.webp" alt="International Medical Evacuation Guide" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div>
+            <span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Medical</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 16, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 9 min read</span>
+            </div>
+            <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">International Medical Evacuation Guide: Air Ambulance Charter</h3>
+            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+              How to arrange international medical evacuation flights, including air ambulance configurations, medical teams, and cross-border permits.
+            </p>
+            <a href="international-medical-evacuation-guide.html" aria-label="Read article: International Medical Evacuation Guide — Air Ambulance Charter" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read Article <iconify-icon icon="lucide:arrow-right" class="text-sm"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- 2. NEW — How Air Charter Brokerage Works (dropped from page 1) -->
+        <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
+          <div class="relative h-52 overflow-hidden">
+            <img src="hero-images/home-page.webp" alt="How Air Charter Brokerage Works" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-60"></div>
+            <span class="absolute top-4 right-4 text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500 bg-navy-950/70 px-3 py-1 backdrop-blur-sm">Industry</span>
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <div class="flex items-center gap-4 text-[10px] uppercase tracking-wider text-gray-500 mb-3">
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 15, 2026</span>
+              <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 9 min read</span>
+            </div>
+            <h3 class="text-xl font-display tracking-tight text-white group-hover:text-teal-500 transition-colors duration-150">How Air Charter Brokerage Works: A Complete Guide</h3>
+            <p class="text-sm font-light text-gray-400 leading-relaxed mt-4 flex-grow">
+              Understand the role of air charter brokers, how they source aircraft, and why using a broker saves time and money for passenger and cargo charter flights.
+            </p>
+            <a href="how-air-charter-brokerage-works.html" aria-label="Read article: How Air Charter Brokerage Works — A Complete Guide" class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150">Read Article <iconify-icon icon="lucide:arrow-right" class="text-sm"></iconify-icon></a>
+          </div>
+        </div>
+
+        <!-- 3. Shipping Lithium Batteries -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/lithium-battery-cargo.webp" alt="Shipping Lithium Batteries by Air" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -230,7 +268,7 @@
           </div>
         </div>
 
-        <!-- 14. Choosing Right Cargo Aircraft (moved from page 1) -->
+        <!-- 4. Choosing Right Cargo Aircraft -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/blog-cargo-aircraft-guide.webp" alt="Cargo Aircraft Guide" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -250,7 +288,7 @@
           </div>
         </div>
 
-        <!-- 15. DG CAO -->
+        <!-- 5. DG CAO -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/blog-dg-cao-charter.webp" alt="Dangerous Goods CAO" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -270,7 +308,7 @@
           </div>
         </div>
 
-        <!-- 16. Private Jet Pakistan -->
+        <!-- 6. Private Jet Pakistan -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/blog-private-jet-pakistan.webp" alt="Private Jet Pakistan" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -290,7 +328,7 @@
           </div>
         </div>
 
-        <!-- 17. CPEC -->
+        <!-- 7. CPEC -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/cpec-blog.webp" alt="CPEC Air Corridors" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -310,7 +348,7 @@
           </div>
         </div>
 
-        <!-- 18. Gulf, India, Turkey -->
+        <!-- 8. Gulf, India, Turkey -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/blog-gulf-india-turkey.webp" alt="Private Jet parked on tarmac at sunset" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -330,7 +368,7 @@
           </div>
         </div>
 
-        <!-- 19. Empty Leg Flights Explained -->
+        <!-- 9. Empty Leg Flights Explained -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/bombardier_global_7500.webp" alt="Bombardier Global 7500 Private Jet" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -350,7 +388,7 @@
           </div>
         </div>
 
-        <!-- 20. Remote Airstrips Africa Mining -->
+        <!-- 10. Remote Airstrips Africa Mining -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/mining-africa-airstrip.webp" alt="Mining Cargo Charter in Africa" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -370,7 +408,7 @@
           </div>
         </div>
 
-        <!-- 21. Cold Chain Pharma Logistics -->
+        <!-- 11. Cold Chain Pharma Logistics -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/charter-services-section-cargo.webp" alt="Pharma Cold Chain Cargo" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -390,7 +428,7 @@
           </div>
         </div>
 
-        <!-- 22. Rise of Cargo Charter Africa -->
+        <!-- 12. Rise of Cargo Charter Africa -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-africa.webp" alt="The Rise of Cargo Charter in Africa" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -410,7 +448,7 @@
           </div>
         </div>
 
-        <!-- 23. ACMI vs Dry Lease -->
+        <!-- 13. ACMI vs Dry Lease -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/acmi-vs-dry-lease.webp" alt="ACMI vs Dry Lease" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -430,7 +468,7 @@
           </div>
         </div>
 
-        <!-- 24. Cargo Aircraft Charter Guide (Pillar) -->
+        <!-- 14. Cargo Aircraft Charter Guide (Pillar) -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/blog-cargo-aircraft-guide.webp" alt="Cargo Aircraft Charter Guide Asia Africa Middle East" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -450,7 +488,7 @@
           </div>
         </div>
 
-        <!-- 25. How Cargo Is Loaded on Aircraft -->
+        <!-- 15. How Cargo Is Loaded on Aircraft -->
         <div class="group card-hover border border-navy-700 bg-navy-800 overflow-hidden flex flex-col fade-in">
           <div class="relative h-52 overflow-hidden">
             <img src="hero-images/cargo-hero-images/b747-200f.webp" alt="How Cargo Is Loaded on Aircraft" width="600" height="400" class="w-full h-full object-cover blog-img" loading="lazy" />
@@ -472,7 +510,6 @@
 
       </div>
 
-      <!-- PAGINATION COUNTER -->
       <div class="flex justify-center items-center gap-4 mt-16 fade-in">
         <a href="blog.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-500 hover:gap-3 transition-all duration-150"><iconify-icon icon="lucide:arrow-left" class="text-sm"></iconify-icon> Previous</a>
         <a href="blog.html" class="w-10 h-10 flex items-center justify-center border border-navy-700 text-gray-400 hover:border-teal-500 hover:text-teal-500 text-sm font-semibold transition-all">1</a>
@@ -482,7 +519,6 @@
     </div>
   </section>
 
-  <!-- ===== CTA ===== -->
   <section class="py-24 bg-navy-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
       <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white">Need Expert Aviation Advice?</h2>
