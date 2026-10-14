@@ -150,6 +150,38 @@
               "@type": "Answer",
               "text": "Register your preferred travel dates and departure direction with Skylinks Asia, and our concierge team will alert you directly by WhatsApp or email the moment a matching Singapore empty leg becomes available. Empty legs move fast, and registered clients often receive notifications before flights are listed publicly on our website or other platforms."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How far in advance are Singapore empty legs typically listed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most Singapore empty legs appear 24-72 hours before departure, though some are listed one to three weeks out when a repositioning leg is confirmed in advance. The strongest windows for competitive pricing include Friday evenings for weekend Bali departures and Monday mornings for the Hong Kong corporate corridor. During major events like the Singapore Airshow and F1 Grand Prix, availability tightens dramatically and advance registration for route alerts becomes essential."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I book a Singapore empty leg in either direction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Singapore ↔ Hong Kong and Singapore ↔ Bali corridors are bidirectional, so empty legs appear both Singapore (WSSS) to Hong Kong (VHHH) and Hong Kong to Singapore depending on where the aircraft is repositioning. Direction is set by the operator's schedule, not by passenger preference. Registering both directions with our charter desk widens your options and roughly doubles your chances of catching a match within your travel window."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What documents do I need for a private jet flight from Singapore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All passengers require a valid passport with at least six months validity. Most nationalities receive visa-free entry to Singapore for short stays, though certain nationalities require a visa in advance. For arrivals into Indonesia (Bali), visa-on-arrival is available for many nationalities, and the process should be confirmed by our desk before departure. Skylinks Asia provides a personalised documentation checklist with every confirmed booking and coordinates with the operator on manifest filing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I combine a Singapore empty leg with an onward flight to a third city?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An empty leg itself is a fixed one-way sector and cannot be extended without converting the booking into a standard charter. However, if your final destination is beyond Bali, Hong Kong, or Tokyo — such as Jakarta, Bangkok, or Sydney — the empty leg can be combined with a discounted onward leg priced by our desk. Many clients use this to build a multi-stop trip where the primary trunk sector is heavily discounted and the onward sector is charged at a reduced repositioning rate."
+            }
           }
         ]
       }
@@ -300,7 +332,6 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
 
-        <!-- Flight 1: Kuala Lumpur → Singapore -->
         <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
           <div class="flex justify-between items-start mb-4">
             <div>
@@ -324,7 +355,6 @@
           </div>
         </div>
 
-        <!-- Flight 2: Langkawi → Singapore -->
         <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
           <div class="flex justify-between items-start mb-4">
             <div>
@@ -348,7 +378,6 @@
           </div>
         </div>
 
-        <!-- Flight 3: Hong Kong → Singapore -->
         <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
           <div class="flex justify-between items-start mb-4">
             <div>
@@ -372,7 +401,6 @@
           </div>
         </div>
 
-        <!-- Flight 4: Ho Chi Minh City → Singapore -->
         <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
           <div class="flex justify-between items-start mb-4">
             <div>
@@ -481,69 +509,114 @@
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
-  <section class="py-24 bg-navy-950">
-    <div class="max-w-4xl mx-auto px-6">
+  <section id="faq" class="py-24 bg-navy-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
-        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Common Questions</span>
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Answers</span>
         <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Singapore Empty Leg FAQ</h2>
       </div>
+      <div class="space-y-4 fade-in">
 
-      <div class="space-y-4">
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">What are the most common empty leg routes from Singapore?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">What are the most common empty leg routes from Singapore?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Singapore (WSSS) generates high-volume private jet repositioning traffic across Southeast Asia and beyond. The most frequent empty leg routes connect Singapore to Hong Kong, Bali, Tokyo, Bangkok, Kuala Lumpur, and Jakarta. Long-haul repositioning flights to Dubai, London, and Sydney are also common. The Singapore ↔ Hong Kong corridor is the busiest, driven by heavy corporate banking and finance travel between Asia's two premier financial hubs, while the Singapore ↔ Bali route serves a high volume of luxury leisure and resort traffic.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Singapore (WSSS) generates high-volume private jet repositioning traffic across Southeast Asia and beyond. The most frequent empty leg routes connect Singapore to Hong Kong, Bali, Tokyo, Bangkok, Kuala Lumpur, and Jakarta. Long-haul repositioning flights to Dubai, London, and Sydney are also common. The Singapore ↔ Hong Kong corridor is the busiest, driven by heavy corporate banking and finance travel between Asia's two premier financial hubs, while the Singapore ↔ Bali route serves a high volume of luxury leisure and resort traffic.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">How much can I save on a Singapore empty leg?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">How much can I save on a Singapore empty leg?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Empty leg flights from Singapore typically list at 25-75% below the standard one-way charter rate for the same aircraft. On high-frequency routes like Singapore to Bali or Singapore to Hong Kong, savings of 50-65% are common. The exact discount depends on how close to departure the flight is booked, aircraft availability, and seasonal demand. Empty legs on popular business and leisure corridors often cost less than two first-class commercial tickets while offering complete privacy and schedule flexibility.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Empty leg flights from Singapore typically list at 25-75% below the standard one-way charter rate for the same aircraft. On high-frequency routes like Singapore to Bali or Singapore to Hong Kong, savings of 50-65% are common. The exact discount depends on how close to departure the flight is booked, aircraft availability, and seasonal demand. Empty legs on popular business and leisure corridors often cost less than two first-class commercial tickets while offering complete privacy and schedule flexibility.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">Which airport handles private jets in Singapore?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">Which airport handles private jets in Singapore?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Singapore Changi Airport (WSSS) is the primary gateway for international private aviation, with a dedicated JetQuay VIP terminal and FBO handling. Seletar Airport (XSP) is the main hub for business aviation and private jet operations in Singapore, home to several FBOs and operators, and is often preferred for regional business jet missions. Both airports require advance slot coordination due to heavy commercial traffic, and Skylinks Asia plans slots and parking well in advance.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Singapore Changi Airport (WSSS) is the primary gateway for international private aviation, with a dedicated JetQuay VIP terminal and FBO handling. Seletar Airport (XSP) is the main hub for business aviation and private jet operations in Singapore, home to several FBOs and operators, and is often preferred for regional business jet missions. Both airports require advance slot coordination due to heavy commercial traffic, and Skylinks Asia plans slots and parking well in advance.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">What aircraft are usually available for Singapore empty legs?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">What aircraft are usually available for Singapore empty legs?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Singapore sees a wide range of aircraft for empty legs, from Midsize jets like the Challenger 605, Legacy 600, and Citation XLS+ for regional routes (Bali, Bangkok, Kuala Lumpur) to Ultra Long Range jets like the Global 7500, Gulfstream G650ER, and Global 6000 for intercontinental corridors. Heavy jets such as the Challenger 850 are also common for high-capacity corporate and leisure group travel.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Singapore sees a wide range of aircraft for empty legs, from Midsize jets like the Challenger 605, Legacy 600, and Citation XLS+ for regional routes (Bali, Bangkok, Kuala Lumpur) to Ultra Long Range jets like the Global 7500, Gulfstream G650ER, and Global 6000 for intercontinental corridors. Heavy jets such as the Challenger 850 are also common for high-capacity corporate and leisure group travel.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">Are there slot restrictions for private jets at Singapore airports?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">Are there slot restrictions for private jets at Singapore airports?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Yes. Singapore Changi (WSSS) is a slot-controlled airport and landing slots for private jets must be coordinated in advance through the Changi slot coordination office. Seletar (XSP) is more flexible but has its own operating hours and noise restrictions. Demand spikes occur during major events like the Singapore Airshow, F1 Singapore Grand Prix, and the World Economic Forum. Skylinks Asia secures slots, parking, and ground handling early and can propose alternates like Senai (JHB) or Batam (BTH) if Changi or Seletar are constrained.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Yes. Singapore Changi (WSSS) is a slot-controlled airport and landing slots for private jets must be coordinated in advance through the Changi slot coordination office. Seletar (XSP) is more flexible but has its own operating hours and noise restrictions. Demand spikes occur during major events like the Singapore Airshow, F1 Singapore Grand Prix, and the World Economic Forum. Skylinks Asia secures slots, parking, and ground handling early and can propose alternates like Senai (JHB) or Batam (BTH) if Changi or Seletar are constrained.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">How do I get notified about a new Singapore empty leg?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">How do I get notified about a new Singapore empty leg?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Register your preferred travel dates and departure direction with Skylinks Asia, and our concierge team will alert you directly by WhatsApp or email the moment a matching Singapore empty leg becomes available. Empty legs move fast, and registered clients often receive notifications before flights are listed publicly on our website or other platforms.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Register your preferred travel dates and departure direction with Skylinks Asia, and our concierge team will alert you directly by WhatsApp or email the moment a matching Singapore empty leg becomes available. Empty legs move fast, and registered clients often receive notifications before flights are listed publicly on our website or other platforms.</p>
           </div>
         </div>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">How far in advance are Singapore empty legs typically listed?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Most Singapore empty legs appear 24-72 hours before departure, though some are listed one to three weeks out when a repositioning leg is confirmed in advance. The strongest windows for competitive pricing include Friday evenings for weekend Bali departures and Monday mornings for the Hong Kong corporate corridor. During major events like the Singapore Airshow and F1 Grand Prix, availability tightens dramatically and advance registration for route alerts becomes essential.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">Can I book a Singapore empty leg in either direction?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Yes. The Singapore ↔ Hong Kong and Singapore ↔ Bali corridors are bidirectional, so empty legs appear both Singapore (WSSS) to Hong Kong (VHHH) and Hong Kong to Singapore depending on where the aircraft is repositioning. Direction is set by the operator's schedule, not by passenger preference. Registering both directions with our charter desk widens your options and roughly doubles your chances of catching a match within your travel window.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">What documents do I need for a private jet flight from Singapore?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">All passengers require a valid passport with at least six months validity. Most nationalities receive visa-free entry to Singapore for short stays, though certain nationalities require a visa in advance. For arrivals into Indonesia (Bali), visa-on-arrival is available for many nationalities, and the process should be confirmed by our desk before departure. Skylinks Asia provides a personalised documentation checklist with every confirmed booking and coordinates with the operator on manifest filing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">Can I combine a Singapore empty leg with an onward flight to a third city?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">An empty leg itself is a fixed one-way sector and cannot be extended without converting the booking into a standard charter. However, if your final destination is beyond Bali, Hong Kong, or Tokyo — such as Jakarta, Bangkok, or Sydney — the empty leg can be combined with a discounted onward leg priced by our desk. Many clients use this to build a multi-stop trip where the primary trunk sector is heavily discounted and the onward sector is charged at a reduced repositioning rate.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -625,7 +698,7 @@
         </div>
       </div>
       <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
-        <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
       </div>
     </div>
   </footer>

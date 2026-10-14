@@ -142,6 +142,38 @@
               "@type": "Answer",
               "text": "Register your preferred travel dates and departure direction with Skylinks Asia, and our concierge team will alert you directly by WhatsApp or email the moment a matching Shanghai-Hong Kong empty leg becomes available. Empty legs move fast, and registered clients often receive notifications before flights are listed publicly on our website or other platforms."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How long is the private jet flight from Shanghai to Hong Kong?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The great-circle distance from Shanghai Pudong (ZSPD) to Hong Kong International (VHHH) is approximately 1,256 km / 678 nautical miles. Typical block time is 2 hours 05 minutes to 2 hours 25 minutes depending on jet type and winds aloft. Light and midsize jets such as the Citation XLS+ or Challenger 350 are the natural fit for this distance, offering the best balance of range, cabin comfort, and operating cost."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What documents do I need for a private jet flight between Shanghai and Hong Kong?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All passengers require a valid passport with at least six months validity. For arrivals into mainland China by business jet, the standard visa type is M (business) — tourist visas (L) are not accepted for private jet entry. Hong Kong operates a separate immigration regime and allows visa-free entry for most nationalities for 30-90 days. Crew must hold appropriate C, F, or M visas for China. Skylinks Asia provides a personalised documentation checklist with every confirmed booking and coordinates with the operator on manifest filing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I book a Shanghai-Hong Kong empty leg in either direction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The corridor is bidirectional — empty legs appear both Shanghai (ZSPD) to Hong Kong (VHHH) and Hong Kong to Shanghai depending on where the aircraft is repositioning. Direction is set by the operator's schedule, not by passenger preference. Registering both directions with our charter desk widens your options and roughly doubles your chances of catching a match within your travel window."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I combine a Shanghai-Hong Kong empty leg with an onward flight to a third city?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An empty leg itself is a fixed one-way sector and cannot be extended without converting the booking into a standard charter. However, if your final destination is beyond Hong Kong or Shanghai — Tokyo, Singapore, Bangkok, or Sydney, for example — the empty leg can be combined with a discounted onward leg priced by our desk. Many clients use this to build a multi-stop trip where the primary trunk sector is heavily discounted and the onward sector is charged at a reduced repositioning rate."
+            }
           }
         ]
       }
@@ -292,7 +324,6 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
 
-        <!-- Flight 1: Shanghai ↔ Hong Kong -->
         <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
           <div class="flex justify-between items-start mb-4">
             <div>
@@ -316,7 +347,6 @@
           </div>
         </div>
 
-        <!-- Flight 2: Hong Kong ↔ Shanghai -->
         <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
           <div class="flex justify-between items-start mb-4">
             <div>
@@ -340,7 +370,6 @@
           </div>
         </div>
 
-        <!-- Flight 3: Shanghai ↔ Hong Kong -->
         <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
           <div class="flex justify-between items-start mb-4">
             <div>
@@ -364,7 +393,6 @@
           </div>
         </div>
 
-        <!-- Flight 4: Hong Kong ↔ Shanghai -->
         <div class="border border-navy-700 bg-navy-800 p-6 rounded-lg flex flex-col">
           <div class="flex justify-between items-start mb-4">
             <div>
@@ -473,69 +501,114 @@
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
-  <section class="py-24 bg-navy-950">
-    <div class="max-w-4xl mx-auto px-6">
+  <section id="faq" class="py-24 bg-navy-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 fade-in">
-        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Common Questions</span>
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Answers</span>
         <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Shanghai ↔ Hong Kong FAQ</h2>
       </div>
+      <div class="space-y-4 fade-in">
 
-      <div class="space-y-4">
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">What are the most common empty leg routes on the Shanghai-Hong Kong corridor?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">What are the most common empty leg routes on the Shanghai-Hong Kong corridor?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            The Shanghai ↔ Hong Kong corridor is one of the most heavily utilized VIP air routes in Asia, with repositioning flights running in both directions almost daily. Beyond the core Shanghai (ZSPD) to Hong Kong (VHHH) leg, operators also fly empty on feeder routes such as Hangzhou ↔ Hong Kong, Hong Kong ↔ Tokyo, and Hong Kong ↔ Singapore as part of the same Greater China airline network.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">The Shanghai ↔ Hong Kong corridor is one of the most heavily utilized VIP air routes in Asia, with repositioning flights running in both directions almost daily. Beyond the core Shanghai (ZSPD) to Hong Kong (VHHH) leg, operators also fly empty on feeder routes such as Hangzhou ↔ Hong Kong, Hong Kong ↔ Tokyo, and Hong Kong ↔ Singapore as part of the same Greater China airline network.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">How much can I save on a Shanghai-Hong Kong empty leg?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">How much can I save on a Shanghai-Hong Kong empty leg?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Empty leg flights on the Shanghai-Hong Kong route typically list at 25-75% below the standard one-way charter rate for the same aircraft. On high-frequency corporate corridors like this one, savings of 50-65% are common. The exact discount depends on how close to departure the flight is booked, aircraft availability, and seasonal demand. Empty legs on this route frequently cost less than two first-class commercial tickets while offering complete privacy and schedule flexibility.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Empty leg flights on the Shanghai-Hong Kong route typically list at 25-75% below the standard one-way charter rate for the same aircraft. On high-frequency corporate corridors like this one, savings of 50-65% are common. The exact discount depends on how close to departure the flight is booked, aircraft availability, and seasonal demand. Empty legs on this route frequently cost less than two first-class commercial tickets while offering complete privacy and schedule flexibility.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">What aircraft are usually available for Shanghai-Hong Kong empty legs?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">What aircraft are usually available for Shanghai-Hong Kong empty legs?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            This corridor sees a wide range of aircraft for empty legs, from Midsize jets like the Challenger 605 and Citation XLS+ for regional feeder routes to Ultra Long Range jets like the Global 7500, Global 6000, and Gulfstream G650ER for the main Shanghai-Hong Kong leg. Heavy jets such as the Challenger 850 are also common for high-capacity corporate travel between the two financial capitals.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">This corridor sees a wide range of aircraft for empty legs, from Midsize jets like the Challenger 605 and Citation XLS+ for regional feeder routes to Ultra Long Range jets like the Global 7500, Global 6000, and Gulfstream G650ER for the main Shanghai-Hong Kong leg. Heavy jets such as the Challenger 850 are also common for high-capacity corporate travel between the two financial capitals.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">Are there slot restrictions for private jets at Shanghai and Hong Kong airports?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">Are there slot restrictions for private jets at Shanghai and Hong Kong airports?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Yes, both ends of this corridor are highly slot-controlled. Shanghai Pudong (ZSPD) requires advance CAAC slot coordination, and Hong Kong International (VHHH) requires landing and parking slots booked through the Hong Kong slot coordination office. Peak congestion occurs during the China International Import Expo (CIIE) in Shanghai, Art Basel Hong Kong, and the Chinese New Year travel period. Skylinks Asia plans slots, parking, and alternate airports on both ends well in advance.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Yes, both ends of this corridor are highly slot-controlled. Shanghai Pudong (ZSPD) requires advance CAAC slot coordination, and Hong Kong International (VHHH) requires landing and parking slots booked through the Hong Kong slot coordination office. Peak congestion occurs during the China International Import Expo (CIIE) in Shanghai, Art Basel Hong Kong, and the Chinese New Year travel period. Skylinks Asia plans slots, parking, and alternate airports on both ends well in advance.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">How far in advance are Shanghai-Hong Kong empty legs usually listed?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">How far in advance are Shanghai-Hong Kong empty legs usually listed?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Most are listed 48-72 hours before departure, with some appearing same-day once the operator confirms the original charter's schedule. The most competitive dates are weekends and the days surrounding major financial events in either city. Registered clients often receive notifications before flights are listed publicly.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Most are listed 48-72 hours before departure, with some appearing same-day once the operator confirms the original charter's schedule. The most competitive dates are weekends and the days surrounding major financial events in either city. Registered clients often receive notifications before flights are listed publicly.</p>
           </div>
         </div>
-        <div class="faq-item border border-navy-700 bg-navy-800 fade-in rounded-lg">
-          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-sm font-medium pr-4 text-white">How do I get notified about a new Shanghai-Hong Kong empty leg?</span>
-            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 flex-shrink-0 text-lg"></iconify-icon>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">How do I get notified about a new Shanghai-Hong Kong empty leg?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
           </button>
-          <div class="faq-answer px-6 text-sm font-light text-gray-400 leading-relaxed">
-            Register your preferred travel dates and departure direction with Skylinks Asia, and our concierge team will alert you directly by WhatsApp or email the moment a matching Shanghai-Hong Kong empty leg becomes available. Empty legs move fast, and registered clients often receive notifications before flights are listed publicly on our website or other platforms.
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Register your preferred travel dates and departure direction with Skylinks Asia, and our concierge team will alert you directly by WhatsApp or email the moment a matching Shanghai-Hong Kong empty leg becomes available. Empty legs move fast, and registered clients often receive notifications before flights are listed publicly on our website or other platforms.</p>
           </div>
         </div>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">How long is the private jet flight from Shanghai to Hong Kong?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">The great-circle distance from Shanghai Pudong (ZSPD) to Hong Kong International (VHHH) is approximately 1,256 km / 678 nautical miles. Typical block time is 2 hours 05 minutes to 2 hours 25 minutes depending on jet type and winds aloft. Light and midsize jets such as the Citation XLS+ or Challenger 350 are the natural fit for this distance, offering the best balance of range, cabin comfort, and operating cost.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">What documents do I need for a private jet flight between Shanghai and Hong Kong?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">All passengers require a valid passport with at least six months validity. For arrivals into mainland China by business jet, the standard visa type is M (business) — tourist visas (L) are not accepted for private jet entry. Hong Kong operates a separate immigration regime and allows visa-free entry for most nationalities for 30-90 days. Crew must hold appropriate C, F, or M visas for China. Skylinks Asia provides a personalised documentation checklist with every confirmed booking and coordinates with the operator on manifest filing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">Can I book a Shanghai-Hong Kong empty leg in either direction?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">Yes. The corridor is bidirectional — empty legs appear both Shanghai (ZSPD) to Hong Kong (VHHH) and Hong Kong to Shanghai depending on where the aircraft is repositioning. Direction is set by the operator's schedule, not by passenger preference. Registering both directions with our charter desk widens your options and roughly doubles your chances of catching a match within your travel window.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-navy-800 bg-navy-900">
+          <button type="button" onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 p-6 md:p-8 text-left">
+            <h3 class="text-lg md:text-xl font-semibold text-white">Can I combine a Shanghai-Hong Kong empty leg with an onward flight to a third city?</h3>
+            <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-2xl shrink-0"></iconify-icon>
+          </button>
+          <div class="faq-answer px-6 md:px-8">
+            <p class="text-sm font-light text-gray-400 leading-relaxed">An empty leg itself is a fixed one-way sector and cannot be extended without converting the booking into a standard charter. However, if your final destination is beyond Hong Kong or Shanghai — Tokyo, Singapore, Bangkok, or Sydney, for example — the empty leg can be combined with a discounted onward leg priced by our desk. Many clients use this to build a multi-stop trip where the primary trunk sector is heavily discounted and the onward sector is charged at a reduced repositioning rate.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -617,7 +690,7 @@
         </div>
       </div>
       <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
-        <p class="text-gray-500 text-sm text-center">© <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage — not a direct air carrier.</p>
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
       </div>
     </div>
   </footer>
