@@ -1,0 +1,922 @@
+{
+ "AAN": {
+  "city": "Al Ain",
+  "country": "UAE"
+ },
+ "ABS": {
+  "city": "Abu Simbel",
+  "country": "Egypt"
+ },
+ "ACC": {
+  "city": "Accra",
+  "country": "Ghana"
+ },
+ "ADD": {
+  "city": "Addis Ababa",
+  "country": "Ethiopia"
+ },
+ "ALA": {
+  "city": "Almaty",
+  "country": "Kazakhstan"
+ },
+ "AMM": {
+  "city": "Amman",
+  "country": "Jordan"
+ },
+ "ASB": {
+  "city": "Ashgabat",
+  "country": "Turkmenistan"
+ },
+ "AUH": {
+  "city": "Abu Dhabi",
+  "country": "UAE"
+ },
+ "BAH": {
+  "city": "Bahrain",
+  "country": "Bahrain"
+ },
+ "BEY": {
+  "city": "Beirut",
+  "country": "Lebanon"
+ },
+ "BHK": {
+  "city": "Bukhara",
+  "country": "Uzbekistan"
+ },
+ "BJV": {
+  "city": "Bodrum",
+  "country": "Türkiye"
+ },
+ "BKK": {
+  "city": "Bangkok",
+  "country": "Thailand"
+ },
+ "BLR": {
+  "city": "Bangalore",
+  "country": "India"
+ },
+ "BOM": {
+  "city": "Mumbai",
+  "country": "India"
+ },
+ "BSL": {
+  "city": "Basel",
+  "country": "Switzerland"
+ },
+ "CAI": {
+  "city": "Cairo",
+  "country": "Egypt"
+ },
+ "CAN": {
+  "city": "Guangzhou",
+  "country": "China"
+ },
+ "CGK": {
+  "city": "Jakarta",
+  "country": "Indonesia"
+ },
+ "CMB": {
+  "city": "Colombo",
+  "country": "Sri Lanka"
+ },
+ "CMN": {
+  "city": "Casablanca",
+  "country": "Morocco"
+ },
+ "CPT": {
+  "city": "Cape Town",
+  "country": "South Africa"
+ },
+ "DAC": {
+  "city": "Dhaka",
+  "country": "Bangladesh"
+ },
+ "DAM": {
+  "city": "Damascus",
+  "country": "Syria"
+ },
+ "DAR": {
+  "city": "Dar es Salaam",
+  "country": "Tanzania"
+ },
+ "DEL": {
+  "city": "Delhi",
+  "country": "India"
+ },
+ "DGAA": {
+  "city": "Accra",
+  "country": "Ghana"
+ },
+ "DLM": {
+  "city": "Dalaman",
+  "country": "Türkiye"
+ },
+ "DME": {
+  "city": "Moscow",
+  "country": "Russia"
+ },
+ "DMM": {
+  "city": "Dammam",
+  "country": "Saudi Arabia"
+ },
+ "DNMM": {
+  "city": "Lagos",
+  "country": "Nigeria"
+ },
+ "DOH": {
+  "city": "Doha",
+  "country": "Qatar"
+ },
+ "DPS": {
+  "city": "Bali",
+  "country": "Indonesia"
+ },
+ "DUS": {
+  "city": "Dusseldorf",
+  "country": "Germany"
+ },
+ "DWC": {
+  "city": "Dubai",
+  "country": "UAE"
+ },
+ "DXB": {
+  "city": "Dubai",
+  "country": "UAE"
+ },
+ "DYU": {
+  "city": "Dushanbe",
+  "country": "Tajikistan"
+ },
+ "EDDL": {
+  "city": "Dusseldorf",
+  "country": "Germany"
+ },
+ "EDDM": {
+  "city": "Munich",
+  "country": "Germany"
+ },
+ "EGGW": {
+  "city": "London",
+  "country": "United Kingdom"
+ },
+ "EGKB": {
+  "city": "London",
+  "country": "United Kingdom"
+ },
+ "EGLF": {
+  "city": "London",
+  "country": "United Kingdom"
+ },
+ "EGLL": {
+  "city": "London",
+  "country": "United Kingdom"
+ },
+ "EGTK": {
+  "city": "Oxford",
+  "country": "United Kingdom"
+ },
+ "ESB": {
+  "city": "Ankara",
+  "country": "Türkiye"
+ },
+ "EVN": {
+  "city": "Yerevan",
+  "country": "Armenia"
+ },
+ "FAB": {
+  "city": "London",
+  "country": "United Kingdom"
+ },
+ "FACT": {
+  "city": "Cape Town",
+  "country": "South Africa"
+ },
+ "FAOR": {
+  "city": "Johannesburg",
+  "country": "South Africa"
+ },
+ "FGSL": {
+  "city": "Malabo",
+  "country": "Equatorial Guinea"
+ },
+ "FIMP": {
+  "city": "Mauritius",
+  "country": "Mauritius"
+ },
+ "FMMI": {
+  "city": "Antananarivo",
+  "country": "Madagascar"
+ },
+ "FNLU": {
+  "city": "Luanda",
+  "country": "Angola"
+ },
+ "FRU": {
+  "city": "Bishkek",
+  "country": "Kyrgyzstan"
+ },
+ "FSIA": {
+  "city": "Mahe",
+  "country": "Seychelles"
+ },
+ "FVHA": {
+  "city": "Harare",
+  "country": "Zimbabwe"
+ },
+ "GMMN": {
+  "city": "Casablanca",
+  "country": "Morocco"
+ },
+ "GMP": {
+  "city": "Seoul",
+  "country": "South Korea"
+ },
+ "GYD": {
+  "city": "Baku",
+  "country": "Azerbaijan"
+ },
+ "GZP": {
+  "city": "Gazipasa",
+  "country": "Türkiye"
+ },
+ "HAAB": {
+  "city": "Addis Ababa",
+  "country": "Ethiopia"
+ },
+ "HAN": {
+  "city": "Hanoi",
+  "country": "Vietnam"
+ },
+ "HEAL": {
+  "city": "Al Dabaa",
+  "country": "Egypt"
+ },
+ "HEBL": {
+  "city": "Abu Simbel",
+  "country": "Egypt"
+ },
+ "HECA": {
+  "city": "Cairo",
+  "country": "Egypt"
+ },
+ "HEGN": {
+  "city": "Hurghada",
+  "country": "Egypt"
+ },
+ "HKG": {
+  "city": "Hong Kong",
+  "country": "Hong Kong"
+ },
+ "HKJK": {
+  "city": "Nairobi",
+  "country": "Kenya"
+ },
+ "HKT": {
+  "city": "Phuket",
+  "country": "Thailand"
+ },
+ "HND": {
+  "city": "Tokyo",
+  "country": "Japan"
+ },
+ "HRE": {
+  "city": "Harare",
+  "country": "Zimbabwe"
+ },
+ "HRG": {
+  "city": "Hurghada",
+  "country": "Egypt"
+ },
+ "HTDA": {
+  "city": "Dar es Salaam",
+  "country": "Tanzania"
+ },
+ "HYD": {
+  "city": "Hyderabad",
+  "country": "India"
+ },
+ "ICN": {
+  "city": "Seoul",
+  "country": "South Korea"
+ },
+ "IST": {
+  "city": "Istanbul",
+  "country": "Türkiye"
+ },
+ "ITM": {
+  "city": "Osaka",
+  "country": "Japan"
+ },
+ "JED": {
+  "city": "Jeddah",
+  "country": "Saudi Arabia"
+ },
+ "JNB": {
+  "city": "Johannesburg",
+  "country": "South Africa"
+ },
+ "KHI": {
+  "city": "Karachi",
+  "country": "Pakistan"
+ },
+ "KIX": {
+  "city": "Osaka",
+  "country": "Japan"
+ },
+ "KMIA": {
+  "city": "Miami",
+  "country": "United States"
+ },
+ "KTM": {
+  "city": "Kathmandu",
+  "country": "Nepal"
+ },
+ "KUL": {
+  "city": "Kuala Lumpur",
+  "country": "Malaysia"
+ },
+ "KWI": {
+  "city": "Kuwait City",
+  "country": "Kuwait"
+ },
+ "LAD": {
+  "city": "Luanda",
+  "country": "Angola"
+ },
+ "LBG": {
+  "city": "Paris",
+  "country": "France"
+ },
+ "LCA": {
+  "city": "Larnaca",
+  "country": "Cyprus"
+ },
+ "LCLK": {
+  "city": "Larnaca",
+  "country": "Cyprus"
+ },
+ "LCPH": {
+  "city": "Paphos",
+  "country": "Cyprus"
+ },
+ "LEMD": {
+  "city": "Madrid",
+  "country": "Spain"
+ },
+ "LEPA": {
+  "city": "Palma",
+  "country": "Spain"
+ },
+ "LFMN": {
+  "city": "Nice",
+  "country": "France"
+ },
+ "LFPB": {
+  "city": "Paris",
+  "country": "France"
+ },
+ "LFSB": {
+  "city": "Basel",
+  "country": "Switzerland"
+ },
+ "LHR": {
+  "city": "London",
+  "country": "United Kingdom"
+ },
+ "LKPR": {
+  "city": "Prague",
+  "country": "Czechia"
+ },
+ "LLBG": {
+  "city": "Tel Aviv",
+  "country": "Israel"
+ },
+ "LOS": {
+  "city": "Lagos",
+  "country": "Nigeria"
+ },
+ "LOWW": {
+  "city": "Vienna",
+  "country": "Austria"
+ },
+ "LSZH": {
+  "city": "Zurich",
+  "country": "Switzerland"
+ },
+ "LTAC": {
+  "city": "Ankara",
+  "country": "Türkiye"
+ },
+ "LTBS": {
+  "city": "Dalaman",
+  "country": "Türkiye"
+ },
+ "LTFE": {
+  "city": "Bodrum",
+  "country": "Türkiye"
+ },
+ "LTFG": {
+  "city": "Gazipasa",
+  "country": "Türkiye"
+ },
+ "LTFJ": {
+  "city": "Istanbul",
+  "country": "Türkiye"
+ },
+ "LTFM": {
+  "city": "Istanbul",
+  "country": "Türkiye"
+ },
+ "LTN": {
+  "city": "London",
+  "country": "United Kingdom"
+ },
+ "MAD": {
+  "city": "Madrid",
+  "country": "Spain"
+ },
+ "MCT": {
+  "city": "Muscat",
+  "country": "Oman"
+ },
+ "MIA": {
+  "city": "Miami",
+  "country": "United States"
+ },
+ "MLE": {
+  "city": "Male",
+  "country": "Maldives"
+ },
+ "MNL": {
+  "city": "Manila",
+  "country": "Philippines"
+ },
+ "MRU": {
+  "city": "Mauritius",
+  "country": "Mauritius"
+ },
+ "MUC": {
+  "city": "Munich",
+  "country": "Germany"
+ },
+ "NBO": {
+  "city": "Nairobi",
+  "country": "Kenya"
+ },
+ "NCE": {
+  "city": "Nice",
+  "country": "France"
+ },
+ "NGO": {
+  "city": "Nagoya",
+  "country": "Japan"
+ },
+ "NQZ": {
+  "city": "Astana",
+  "country": "Kazakhstan"
+ },
+ "NRT": {
+  "city": "Tokyo",
+  "country": "Japan"
+ },
+ "OBBI": {
+  "city": "Bahrain",
+  "country": "Bahrain"
+ },
+ "OEAO": {
+  "city": "Al Ula",
+  "country": "Saudi Arabia"
+ },
+ "OEDF": {
+  "city": "Dammam",
+  "country": "Saudi Arabia"
+ },
+ "OEJN": {
+  "city": "Jeddah",
+  "country": "Saudi Arabia"
+ },
+ "OERK": {
+  "city": "Riyadh",
+  "country": "Saudi Arabia"
+ },
+ "OERS": {
+  "city": "Hanak",
+  "country": "Saudi Arabia"
+ },
+ "OJAI": {
+  "city": "Amman",
+  "country": "Jordan"
+ },
+ "OKBK": {
+  "city": "Kuwait City",
+  "country": "Kuwait"
+ },
+ "OLBA": {
+  "city": "Beirut",
+  "country": "Lebanon"
+ },
+ "OMAA": {
+  "city": "Abu Dhabi",
+  "country": "UAE"
+ },
+ "OMAL": {
+  "city": "Al Ain",
+  "country": "UAE"
+ },
+ "OMDB": {
+  "city": "Dubai",
+  "country": "UAE"
+ },
+ "OMDW": {
+  "city": "Dubai",
+  "country": "UAE"
+ },
+ "OMSJ": {
+  "city": "Sharjah",
+  "country": "UAE"
+ },
+ "OOMS": {
+  "city": "Muscat",
+  "country": "Oman"
+ },
+ "OPKC": {
+  "city": "Karachi",
+  "country": "Pakistan"
+ },
+ "OSDI": {
+  "city": "Damascus",
+  "country": "Syria"
+ },
+ "OTBD": {
+  "city": "Doha",
+  "country": "Qatar"
+ },
+ "OTHH": {
+  "city": "Doha",
+  "country": "Qatar"
+ },
+ "OXF": {
+  "city": "Oxford",
+  "country": "United Kingdom"
+ },
+ "PEK": {
+  "city": "Beijing",
+  "country": "China"
+ },
+ "PEN": {
+  "city": "Penang",
+  "country": "Malaysia"
+ },
+ "PFO": {
+  "city": "Paphos",
+  "country": "Cyprus"
+ },
+ "PKX": {
+  "city": "Beijing",
+  "country": "China"
+ },
+ "PMI": {
+  "city": "Palma",
+  "country": "Spain"
+ },
+ "PNH": {
+  "city": "Phnom Penh",
+  "country": "Cambodia"
+ },
+ "PRG": {
+  "city": "Prague",
+  "country": "Czechia"
+ },
+ "PUS": {
+  "city": "Busan",
+  "country": "South Korea"
+ },
+ "PVG": {
+  "city": "Shanghai",
+  "country": "China"
+ },
+ "RCTP": {
+  "city": "Taipei",
+  "country": "Taiwan"
+ },
+ "RGN": {
+  "city": "Yangon",
+  "country": "Myanmar"
+ },
+ "RJAA": {
+  "city": "Tokyo",
+  "country": "Japan"
+ },
+ "RJBB": {
+  "city": "Osaka",
+  "country": "Japan"
+ },
+ "RJGG": {
+  "city": "Nagoya",
+  "country": "Japan"
+ },
+ "RJOO": {
+  "city": "Osaka",
+  "country": "Japan"
+ },
+ "RJTT": {
+  "city": "Tokyo",
+  "country": "Japan"
+ },
+ "RKPK": {
+  "city": "Busan",
+  "country": "South Korea"
+ },
+ "RKSI": {
+  "city": "Seoul",
+  "country": "South Korea"
+ },
+ "RKSS": {
+  "city": "Seoul",
+  "country": "South Korea"
+ },
+ "RPLL": {
+  "city": "Manila",
+  "country": "Philippines"
+ },
+ "RSI": {
+  "city": "Hanak",
+  "country": "Saudi Arabia"
+ },
+ "RUH": {
+  "city": "Riyadh",
+  "country": "Saudi Arabia"
+ },
+ "SAW": {
+  "city": "Istanbul",
+  "country": "Türkiye"
+ },
+ "SCO": {
+  "city": "Aktau",
+  "country": "Kazakhstan"
+ },
+ "SEZ": {
+  "city": "Mahe",
+  "country": "Seychelles"
+ },
+ "SGN": {
+  "city": "Ho Chi Minh City",
+  "country": "Vietnam"
+ },
+ "SHA": {
+  "city": "Shanghai",
+  "country": "China"
+ },
+ "SHJ": {
+  "city": "Sharjah",
+  "country": "UAE"
+ },
+ "SIN": {
+  "city": "Singapore",
+  "country": "Singapore"
+ },
+ "SOQ": {
+  "city": "Sorong",
+  "country": "Indonesia"
+ },
+ "SSG": {
+  "city": "Malabo",
+  "country": "Equatorial Guinea"
+ },
+ "SVO": {
+  "city": "Moscow",
+  "country": "Russia"
+ },
+ "SWQ": {
+  "city": "Sumbawa",
+  "country": "Indonesia"
+ },
+ "SZX": {
+  "city": "Shenzhen",
+  "country": "China"
+ },
+ "TAS": {
+  "city": "Tashkent",
+  "country": "Uzbekistan"
+ },
+ "TBS": {
+  "city": "Tbilisi",
+  "country": "Georgia"
+ },
+ "TLV": {
+  "city": "Tel Aviv",
+  "country": "Israel"
+ },
+ "TNR": {
+  "city": "Antananarivo",
+  "country": "Madagascar"
+ },
+ "TPE": {
+  "city": "Taipei",
+  "country": "Taiwan"
+ },
+ "UAAA": {
+  "city": "Almaty",
+  "country": "Kazakhstan"
+ },
+ "UACC": {
+  "city": "Astana",
+  "country": "Kazakhstan"
+ },
+ "UAFM": {
+  "city": "Bishkek",
+  "country": "Kyrgyzstan"
+ },
+ "UATE": {
+  "city": "Aktau",
+  "country": "Kazakhstan"
+ },
+ "UBBB": {
+  "city": "Baku",
+  "country": "Azerbaijan"
+ },
+ "UDYZ": {
+  "city": "Yerevan",
+  "country": "Armenia"
+ },
+ "UGTB": {
+  "city": "Tbilisi",
+  "country": "Georgia"
+ },
+ "ULH": {
+  "city": "Al Ula",
+  "country": "Saudi Arabia"
+ },
+ "UTAA": {
+  "city": "Ashgabat",
+  "country": "Turkmenistan"
+ },
+ "UTDD": {
+  "city": "Dushanbe",
+  "country": "Tajikistan"
+ },
+ "UTSB": {
+  "city": "Bukhara",
+  "country": "Uzbekistan"
+ },
+ "UTTT": {
+  "city": "Tashkent",
+  "country": "Uzbekistan"
+ },
+ "UUDD": {
+  "city": "Moscow",
+  "country": "Russia"
+ },
+ "UUEE": {
+  "city": "Moscow",
+  "country": "Russia"
+ },
+ "UUWW": {
+  "city": "Moscow",
+  "country": "Russia"
+ },
+ "VABB": {
+  "city": "Mumbai",
+  "country": "India"
+ },
+ "VCBI": {
+  "city": "Colombo",
+  "country": "Sri Lanka"
+ },
+ "VDPP": {
+  "city": "Phnom Penh",
+  "country": "Cambodia"
+ },
+ "VGZR": {
+  "city": "Dhaka",
+  "country": "Bangladesh"
+ },
+ "VHHH": {
+  "city": "Hong Kong",
+  "country": "Hong Kong"
+ },
+ "VIDP": {
+  "city": "Delhi",
+  "country": "India"
+ },
+ "VIE": {
+  "city": "Vienna",
+  "country": "Austria"
+ },
+ "VKO": {
+  "city": "Moscow",
+  "country": "Russia"
+ },
+ "VLVT": {
+  "city": "Vientiane",
+  "country": "Laos"
+ },
+ "VNKT": {
+  "city": "Kathmandu",
+  "country": "Nepal"
+ },
+ "VOBL": {
+  "city": "Bangalore",
+  "country": "India"
+ },
+ "VOHS": {
+  "city": "Hyderabad",
+  "country": "India"
+ },
+ "VOHY": {
+  "city": "Hyderabad",
+  "country": "India"
+ },
+ "VRMM": {
+  "city": "Male",
+  "country": "Maldives"
+ },
+ "VTBS": {
+  "city": "Bangkok",
+  "country": "Thailand"
+ },
+ "VTE": {
+  "city": "Vientiane",
+  "country": "Laos"
+ },
+ "VTSP": {
+  "city": "Phuket",
+  "country": "Thailand"
+ },
+ "VVNB": {
+  "city": "Hanoi",
+  "country": "Vietnam"
+ },
+ "VVTS": {
+  "city": "Ho Chi Minh City",
+  "country": "Vietnam"
+ },
+ "VYYY": {
+  "city": "Yangon",
+  "country": "Myanmar"
+ },
+ "WADB": {
+  "city": "Sumbawa",
+  "country": "Indonesia"
+ },
+ "WADD": {
+  "city": "Bali",
+  "country": "Indonesia"
+ },
+ "WASS": {
+  "city": "Sorong",
+  "country": "Indonesia"
+ },
+ "WIII": {
+  "city": "Jakarta",
+  "country": "Indonesia"
+ },
+ "WMKK": {
+  "city": "Kuala Lumpur",
+  "country": "Malaysia"
+ },
+ "WMKP": {
+  "city": "Penang",
+  "country": "Malaysia"
+ },
+ "WSSS": {
+  "city": "Singapore",
+  "country": "Singapore"
+ },
+ "XIY": {
+  "city": "Xi'an",
+  "country": "China"
+ },
+ "ZBAA": {
+  "city": "Beijing",
+  "country": "China"
+ },
+ "ZBAD": {
+  "city": "Beijing",
+  "country": "China"
+ },
+ "ZGGG": {
+  "city": "Guangzhou",
+  "country": "China"
+ },
+ "ZGSZ": {
+  "city": "Shenzhen",
+  "country": "China"
+ },
+ "ZLXY": {
+  "city": "Xi'an",
+  "country": "China"
+ },
+ "ZRH": {
+  "city": "Zurich",
+  "country": "Switzerland"
+ },
+ "ZSPD": {
+  "city": "Shanghai",
+  "country": "China"
+ },
+ "ZSSS": {
+  "city": "Shanghai",
+  "country": "China"
+ }
+}

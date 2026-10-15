@@ -1,0 +1,780 @@
+{
+ "pages": {
+  "empty-legs.html": {
+   "label": "Empty legs (all regions)",
+   "style": {
+    "card_class": "",
+    "show_price": true,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {}
+     ],
+     "limit": 12
+    }
+   ]
+  },
+  "empty-legs-middle-east.html": {
+   "label": "Middle East",
+   "style": {
+    "card_class": "",
+    "show_price": true,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "any": {
+        "country": [
+         "UAE",
+         "Qatar",
+         "Saudi Arabia",
+         "Bahrain",
+         "Kuwait",
+         "Oman",
+         "Jordan",
+         "Lebanon",
+         "Israel",
+         "Syria"
+        ]
+       }
+      }
+     ],
+     "limit": 40
+    }
+   ],
+   "itemlist": {
+    "name": "Latest Middle East Empty Leg Flights",
+    "count": 5
+   }
+  },
+  "empty-legs-asia.html": {
+   "label": "Asia",
+   "style": {
+    "card_class": "",
+    "show_price": true,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "any": {
+        "country": [
+         "India",
+         "Pakistan",
+         "Sri Lanka",
+         "Bangladesh",
+         "Nepal",
+         "Maldives",
+         "Thailand",
+         "Vietnam",
+         "Cambodia",
+         "Laos",
+         "Myanmar",
+         "Malaysia",
+         "Singapore",
+         "Indonesia",
+         "Philippines",
+         "Hong Kong",
+         "China",
+         "Taiwan",
+         "Japan",
+         "South Korea",
+         "Kazakhstan",
+         "Kyrgyzstan",
+         "Uzbekistan",
+         "Tajikistan",
+         "Turkmenistan"
+        ]
+       }
+      }
+     ],
+     "limit": 40
+    }
+   ],
+   "itemlist": {
+    "name": "Latest Asia Empty Leg Flights",
+    "count": 5
+   }
+  },
+  "dubai-empty-legs.html": {
+   "label": "Dubai hub",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": true,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "out",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Dubai"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "in",
+     "rules": [
+      {
+       "to": {
+        "city": [
+         "Dubai"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "riyadh-empty-legs.html": {
+   "label": "Riyadh hub",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "out",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Riyadh"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "in",
+     "rules": [
+      {
+       "to": {
+        "city": [
+         "Riyadh"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "doha-empty-legs.html": {
+   "label": "Doha hub",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "out",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Doha"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "in",
+     "rules": [
+      {
+       "to": {
+        "city": [
+         "Doha"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "istanbul-empty-legs.html": {
+   "label": "Istanbul hub",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "out",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Istanbul"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "in",
+     "rules": [
+      {
+       "to": {
+        "city": [
+         "Istanbul"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "jeddah-empty-legs.html": {
+   "label": "Jeddah hub",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "out",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Jeddah"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "in",
+     "rules": [
+      {
+       "to": {
+        "city": [
+         "Jeddah"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "dubai-london-empty-legs.html": {
+   "label": "Dubai ↔ London",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "out",
+     "rules": [
+      {
+       "from": {
+        "country": [
+         "UAE"
+        ]
+       },
+       "to": {
+        "city": [
+         "London"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "in",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "London"
+        ]
+       },
+       "to": {
+        "country": [
+         "UAE"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "dubai-riyadh-empty-legs.html": {
+   "label": "Dubai ↔ Riyadh",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Dubai"
+        ]
+       },
+       "to": {
+        "city": [
+         "Riyadh"
+        ]
+       }
+      },
+      {
+       "from": {
+        "city": [
+         "Riyadh"
+        ]
+       },
+       "to": {
+        "city": [
+         "Dubai"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "riyadh-jeddah-empty-legs.html": {
+   "label": "Riyadh ↔ Jeddah",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Riyadh"
+        ]
+       },
+       "to": {
+        "city": [
+         "Jeddah"
+        ]
+       }
+      },
+      {
+       "from": {
+        "city": [
+         "Jeddah"
+        ]
+       },
+       "to": {
+        "city": [
+         "Riyadh"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "istanbul-ankara-empty-legs.html": {
+   "label": "Istanbul ↔ Ankara",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Istanbul"
+        ]
+       },
+       "to": {
+        "city": [
+         "Ankara"
+        ]
+       }
+      },
+      {
+       "from": {
+        "city": [
+         "Ankara"
+        ]
+       },
+       "to": {
+        "city": [
+         "Istanbul"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "istanbul-moscow-empty-legs.html": {
+   "label": "Istanbul ↔ Moscow",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Istanbul"
+        ]
+       },
+       "to": {
+        "city": [
+         "Moscow"
+        ]
+       }
+      },
+      {
+       "from": {
+        "city": [
+         "Moscow"
+        ]
+       },
+       "to": {
+        "city": [
+         "Istanbul"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "istanbul-bodrum-empty-legs.html": {
+   "label": "Türkiye leisure (Bodrum, Dalaman)",
+   "style": {
+    "card_class": "card-hover",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "#notify"
+   },
+   "slots": [
+    {
+     "id": "out",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Bodrum",
+         "Dalaman"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "in",
+     "rules": [
+      {
+       "to": {
+        "city": [
+         "Bodrum",
+         "Dalaman"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "hong-kong-empty-legs.html": {
+   "label": "Hong Kong",
+   "style": {
+    "card_class": "",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "any": {
+        "city": [
+         "Hong Kong"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "singapore-empty-legs.html": {
+   "label": "Singapore",
+   "style": {
+    "card_class": "",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "any": {
+        "city": [
+         "Singapore"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "tokyo-empty-legs.html": {
+   "label": "Tokyo",
+   "style": {
+    "card_class": "",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "any": {
+        "city": [
+         "Tokyo"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "shanghai-empty-legs.html": {
+   "label": "Shanghai",
+   "style": {
+    "card_class": "",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "any": {
+        "city": [
+         "Shanghai"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "hong-kong-singapore-empty-legs.html": {
+   "label": "Hong Kong ↔ Singapore",
+   "style": {
+    "card_class": "",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Hong Kong"
+        ]
+       },
+       "to": {
+        "city": [
+         "Singapore"
+        ]
+       }
+      },
+      {
+       "from": {
+        "city": [
+         "Singapore"
+        ]
+       },
+       "to": {
+        "city": [
+         "Hong Kong"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "shanghai-hong-kong-empty-legs.html": {
+   "label": "Shanghai ↔ Hong Kong",
+   "style": {
+    "card_class": "",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Shanghai"
+        ]
+       },
+       "to": {
+        "city": [
+         "Hong Kong"
+        ]
+       }
+      },
+      {
+       "from": {
+        "city": [
+         "Hong Kong"
+        ]
+       },
+       "to": {
+        "city": [
+         "Shanghai"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "singapore-bali-empty-legs.html": {
+   "label": "Singapore ↔ Bali",
+   "style": {
+    "card_class": "",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Singapore"
+        ]
+       },
+       "to": {
+        "city": [
+         "Bali"
+        ]
+       }
+      },
+      {
+       "from": {
+        "city": [
+         "Bali"
+        ]
+       },
+       "to": {
+        "city": [
+         "Singapore"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "tokyo-seoul-empty-legs.html": {
+   "label": "Tokyo ↔ Seoul",
+   "style": {
+    "card_class": "",
+    "show_price": false,
+    "quote_prefix": "private-jet-quote.html",
+    "empty_href": "empty-leg-alerts.html"
+   },
+   "slots": [
+    {
+     "id": "main",
+     "rules": [
+      {
+       "from": {
+        "city": [
+         "Tokyo"
+        ]
+       },
+       "to": {
+        "city": [
+         "Seoul"
+        ]
+       }
+      },
+      {
+       "from": {
+        "city": [
+         "Seoul"
+        ]
+       },
+       "to": {
+        "city": [
+         "Tokyo"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

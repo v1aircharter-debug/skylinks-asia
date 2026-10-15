@@ -1,0 +1,5 @@
+# Rebuild every flight block from data/flights.json on each deploy.
+# If the script finds a problem it stops, the deploy fails, and the previous site stays live.
+[build]
+  command = "node scripts/build.js"
+  publish = "."

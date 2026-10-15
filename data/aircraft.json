@@ -1,0 +1,189 @@
+{
+ "_note": "Typical seat counts by model. These are estimates used when a listing gives no seat count; cards then read 'Up to N Seats'.",
+ "models": {
+  "Citation Bravo": {
+   "category": "Light",
+   "seats": 7
+  },
+  "Citation XLS+": {
+   "category": "Midsize",
+   "seats": 9
+  },
+  "Citation Latitude": {
+   "category": "Midsize",
+   "seats": 8
+  },
+  "Citation CJ3+": {
+   "category": "Light",
+   "seats": 6
+  },
+  "Citation Sovereign": {
+   "category": "Midsize",
+   "seats": 9
+  },
+  "Phenom 100": {
+   "category": "Very light",
+   "seats": 4
+  },
+  "Phenom 300": {
+   "category": "Light",
+   "seats": 7
+  },
+  "Learjet 45": {
+   "category": "Light",
+   "seats": 7
+  },
+  "Learjet 60": {
+   "category": "Midsize",
+   "seats": 7
+  },
+  "Hawker 800XP": {
+   "category": "Midsize",
+   "seats": 8
+  },
+  "Hawker 900XP": {
+   "category": "Midsize",
+   "seats": 8
+  },
+  "Hawker 4000": {
+   "category": "Super midsize",
+   "seats": 8
+  },
+  "Challenger 300": {
+   "category": "Super midsize",
+   "seats": 9
+  },
+  "Challenger 350": {
+   "category": "Super midsize",
+   "seats": 9
+  },
+  "Challenger 605": {
+   "category": "Large",
+   "seats": 10
+  },
+  "Challenger 650": {
+   "category": "Large",
+   "seats": 12
+  },
+  "Challenger 850": {
+   "category": "Large",
+   "seats": 14
+  },
+  "Legacy 450": {
+   "category": "Midsize",
+   "seats": 8
+  },
+  "Legacy 500": {
+   "category": "Super midsize",
+   "seats": 8
+  },
+  "Legacy 600": {
+   "category": "Large",
+   "seats": 13
+  },
+  "Legacy 650": {
+   "category": "Large",
+   "seats": 13
+  },
+  "Embraer Legacy 600": {
+   "category": "Large",
+   "seats": 13
+  },
+  "Falcon 2000": {
+   "category": "Super midsize",
+   "seats": 10
+  },
+  "Falcon 900DX EASy": {
+   "category": "Large",
+   "seats": 12
+  },
+  "Falcon 900LX": {
+   "category": "Large",
+   "seats": 12
+  },
+  "Falcon 7X": {
+   "category": "Large",
+   "seats": 12
+  },
+  "Falcon 8X": {
+   "category": "Ultra long range",
+   "seats": 12
+  },
+  "Gulfstream G280": {
+   "category": "Super midsize",
+   "seats": 10
+  },
+  "Gulfstream G450": {
+   "category": "Ultra long range",
+   "seats": 14
+  },
+  "Gulfstream GIV-SP": {
+   "category": "Large",
+   "seats": 14
+  },
+  "Gulfstream G550": {
+   "category": "Ultra long range",
+   "seats": 16
+  },
+  "Gulfstream G650": {
+   "category": "Ultra long range",
+   "seats": 14
+  },
+  "Gulfstream G650ER": {
+   "category": "Ultra long range",
+   "seats": 14
+  },
+  "Gulfstream G700": {
+   "category": "Ultra long range",
+   "seats": 16
+  },
+  "Global 5000": {
+   "category": "Ultra long range",
+   "seats": 13
+  },
+  "Global 6000": {
+   "category": "Ultra long range",
+   "seats": 13
+  },
+  "Global 6500": {
+   "category": "Ultra long range",
+   "seats": 13
+  },
+  "Global Express XRS": {
+   "category": "Ultra long range",
+   "seats": 13
+  },
+  "Global 7500": {
+   "category": "Ultra long range",
+   "seats": 14
+  },
+  "Global 8000": {
+   "category": "Ultra long range",
+   "seats": 14
+  },
+  "Airbus ACJ A319": {
+   "category": "VIP airliner",
+   "seats": 19
+  },
+  "Airbus ACJ A320": {
+   "category": "VIP airliner",
+   "seats": 19
+  },
+  "BBJ737": {
+   "category": "VIP airliner",
+   "seats": 19
+  },
+  "Boeing BBJ": {
+   "category": "VIP airliner",
+   "seats": 19
+  },
+  "King Air 350i": {
+   "category": "Turboprop",
+   "seats": 9
+  },
+  "Pilatus PC-12": {
+   "category": "Turboprop",
+   "seats": 8
+  }
+ }
+}

@@ -1,0 +1,2029 @@
+{
+ "updated": "2026-10-10",
+ "flights": [
+  {
+   "id": 1,
+   "date": "2026-10-02",
+   "date_end": "2026-10-04",
+   "from": "OTHH",
+   "to": "VOHS",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 18,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 2,
+   "date": "2026-10-04",
+   "from": "FACT",
+   "to": "FAOR",
+   "aircraft": "Gulfstream G650",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 3,
+   "date": "2026-10-04",
+   "from": "OMDW",
+   "to": "SSG",
+   "aircraft": "Global Express",
+   "seats": 13,
+   "price": 66286,
+   "currency": "USD"
+  },
+  {
+   "id": 4,
+   "date": "2026-10-04",
+   "date_end": "2026-10-05",
+   "from": "OMDW",
+   "to": "NBO",
+   "aircraft": "Legacy 650",
+   "seats": 13,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 5,
+   "date": "2026-10-04",
+   "from": "WIII",
+   "to": "WADD",
+   "aircraft": "King Air 350i",
+   "seats": 8,
+   "price": 9000,
+   "currency": "USD"
+  },
+  {
+   "id": 6,
+   "date": "2026-10-04",
+   "from": "OOMS",
+   "to": "OMAA",
+   "aircraft": "ACJ319",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 7,
+   "date": "2026-10-04",
+   "date_end": "2026-10-05",
+   "from": "VDPP",
+   "to": "ZSPD",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 8,
+   "date": "2026-10-04",
+   "from": "OERK",
+   "to": "OMDW",
+   "aircraft": "Legacy 650",
+   "seats": 13,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 9,
+   "date": "2026-10-04",
+   "from": "VIE",
+   "to": "DLM",
+   "aircraft": "Challenger 350",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 10,
+   "date": "2026-10-04",
+   "from": "UDYZ",
+   "to": "UTAA",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 11,
+   "date": "2026-10-05",
+   "from": "LTFE",
+   "to": "LTAC",
+   "aircraft": "Citation Bravo",
+   "seats": 7,
+   "price": 4683,
+   "currency": "EUR"
+  },
+  {
+   "id": 12,
+   "date": "2026-10-05",
+   "date_end": "2026-10-09",
+   "from": "OMDW",
+   "to": "IST",
+   "aircraft": "Challenger 350",
+   "seats": 9,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 13,
+   "date": "2026-10-05",
+   "from": "OMDW",
+   "to": "EVN",
+   "aircraft": "Challenger 605",
+   "seats": 12,
+   "price": 27373,
+   "currency": "USD"
+  },
+  {
+   "id": 14,
+   "date": "2026-10-05",
+   "from": "VABB",
+   "to": "OMDW",
+   "aircraft": "Gulfstream G550",
+   "seats": 14,
+   "price": 45659,
+   "currency": "USD"
+  },
+  {
+   "id": 15,
+   "date": "2026-10-06",
+   "from": "OMDW",
+   "to": "ALA",
+   "aircraft": "Challenger 605",
+   "seats": 12,
+   "price": 32112,
+   "currency": "USD"
+  },
+  {
+   "id": 16,
+   "date": "2026-10-06",
+   "from": "SEZ",
+   "to": "OMDW",
+   "aircraft": "Gulfstream G600",
+   "seats": 17,
+   "price": 64279,
+   "currency": "USD"
+  },
+  {
+   "id": 17,
+   "date": "2026-10-06",
+   "date_end": "2026-10-08",
+   "from": "RJAA",
+   "to": "WSSS",
+   "aircraft": "Challenger 850",
+   "seats": 12,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 18,
+   "date": "2026-10-07",
+   "from": "OMAA",
+   "to": "OBBI",
+   "aircraft": "Falcon 2000",
+   "seats": 16,
+   "price": 42000,
+   "currency": "USD"
+  },
+  {
+   "id": 19,
+   "date": "2026-10-07",
+   "from": "WADD",
+   "to": "WIII",
+   "aircraft": "King Air 350i",
+   "seats": 8,
+   "price": 9000,
+   "currency": "USD"
+  },
+  {
+   "id": 20,
+   "date": "2026-10-07",
+   "from": "RCTP",
+   "to": "VHHH",
+   "aircraft": "Citation XLS+",
+   "seats": 9,
+   "price": 41000,
+   "currency": "USD"
+  },
+  {
+   "id": 21,
+   "date": "2026-10-08",
+   "from": "OEJN",
+   "to": "OMDW",
+   "aircraft": "Boeing BBJ",
+   "seats": 30,
+   "price": 54300,
+   "currency": "USD"
+  },
+  {
+   "id": 22,
+   "date": "2026-10-08",
+   "from": "FAOR",
+   "to": "HKJK",
+   "aircraft": "Gulfstream G650",
+   "seats": 19,
+   "price": 41000,
+   "currency": "USD"
+  },
+  {
+   "id": 23,
+   "date": "2026-10-08",
+   "from": "VRMM",
+   "to": "VOBL",
+   "aircraft": "ACJ319",
+   "seats": 19,
+   "price": 10000,
+   "currency": "USD"
+  },
+  {
+   "id": 24,
+   "date": "2026-10-09",
+   "from": "VVTS",
+   "to": "WSSS",
+   "aircraft": "Legacy 600",
+   "seats": 13,
+   "price": 44600,
+   "currency": "USD"
+  },
+  {
+   "id": 25,
+   "date": "2026-10-09",
+   "from": "HKJK",
+   "to": "HAAB",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": 62000,
+   "currency": "USD"
+  },
+  {
+   "id": 26,
+   "date": "2026-10-09",
+   "from": "WSSS",
+   "to": "VTBS",
+   "aircraft": "Falcon 7X",
+   "seats": 12,
+   "price": 34342,
+   "currency": "USD"
+  },
+  {
+   "id": 27,
+   "date": "2026-10-10",
+   "from": "OMDW",
+   "to": "OJAI",
+   "aircraft": "Hawker 4000",
+   "seats": 8,
+   "price": 39025,
+   "currency": "USD"
+  },
+  {
+   "id": 28,
+   "date": "2026-10-10",
+   "from": "ZGGG",
+   "to": "RKSI",
+   "aircraft": "Pilatus PC-12",
+   "seats": 9,
+   "price": 19000,
+   "currency": "USD"
+  },
+  {
+   "id": 29,
+   "date": "2026-10-10",
+   "date_end": "2026-10-11",
+   "from": "OOMS",
+   "to": "OMDW",
+   "aircraft": "Global 6500",
+   "seats": 13,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 30,
+   "date": "2026-10-10",
+   "from": "VDPP",
+   "to": "VVNB",
+   "aircraft": "Pilatus PC-12",
+   "seats": 9,
+   "price": 52000,
+   "currency": "USD"
+  },
+  {
+   "id": 31,
+   "date": "2026-10-10",
+   "date_end": "2026-10-11",
+   "from": "ZLXY",
+   "to": "VVTS",
+   "aircraft": "Falcon 2000S",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 32,
+   "date": "2026-10-11",
+   "from": "WIII",
+   "to": "VTBS",
+   "aircraft": "ACJ319",
+   "seats": 19,
+   "price": 60000,
+   "currency": "USD"
+  },
+  {
+   "id": 33,
+   "date": "2026-10-12",
+   "from": "VTBS",
+   "to": "VVTS",
+   "aircraft": "Phenom 300",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 34,
+   "date": "2026-10-12",
+   "date_end": "2026-10-13",
+   "from": "OMDW",
+   "to": "HRG",
+   "aircraft": "Global 5000",
+   "seats": 13,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 35,
+   "date": "2026-10-12",
+   "from": "FNLU",
+   "to": "FAOR",
+   "aircraft": "Global 6000",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 36,
+   "date": "2026-10-13",
+   "from": "VTBS",
+   "to": "WSSS",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": 21000,
+   "currency": "USD"
+  },
+  {
+   "id": 37,
+   "date": "2026-10-13",
+   "from": "OMDW",
+   "to": "VIDP",
+   "aircraft": "Gulfstream G450",
+   "seats": 12,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 38,
+   "date": "2026-10-14",
+   "from": "UTDD",
+   "to": "UTTT",
+   "aircraft": "Falcon 2000",
+   "seats": 16,
+   "price": 20000,
+   "currency": "USD"
+  },
+  {
+   "id": 39,
+   "date": "2026-10-15",
+   "date_end": "2026-10-16",
+   "from": "HRG",
+   "to": "OMDW",
+   "aircraft": "Global 5000",
+   "seats": 13,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 40,
+   "date": "2026-10-15",
+   "from": "VABB",
+   "to": "OPKC",
+   "aircraft": "Citation CJ3+",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 41,
+   "date": "2026-10-15",
+   "from": "LCPH",
+   "to": "LLBG",
+   "aircraft": "Global Express XRS",
+   "seats": 13,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 42,
+   "date": "2026-10-16",
+   "from": "VRMM",
+   "to": "VIDP",
+   "aircraft": "Falcon 2000",
+   "seats": 16,
+   "price": 38000,
+   "currency": "USD"
+  },
+  {
+   "id": 43,
+   "date": "2026-10-17",
+   "from": "OTHH",
+   "to": "OKBK",
+   "aircraft": "Falcon 2000",
+   "seats": 16,
+   "price": 13000,
+   "currency": "USD"
+  },
+  {
+   "id": 44,
+   "date": "2026-10-18",
+   "date_end": "2026-10-20",
+   "from": "OMAL",
+   "to": "OMDW",
+   "aircraft": "Falcon 900LX",
+   "seats": 12,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 45,
+   "date": "2026-10-23",
+   "from": "ZBAA",
+   "to": "RJGG",
+   "aircraft": "Global 6000",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 46,
+   "date": "2026-10-23",
+   "from": "IST",
+   "to": "OMDW",
+   "aircraft": "Legacy 650",
+   "seats": 13,
+   "price": 33115,
+   "currency": "USD"
+  },
+  {
+   "id": 47,
+   "date": "2026-10-24",
+   "from": "UTAA",
+   "to": "UGTB",
+   "aircraft": "Phenom 300",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 48,
+   "date": "2026-10-24",
+   "from": "OTHH",
+   "to": "OMAA",
+   "aircraft": "Airbus ACJ A320",
+   "seats": 30,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 49,
+   "date": "2026-10-25",
+   "from": "RJBB",
+   "to": "ZGGG",
+   "aircraft": "Falcon 2000",
+   "seats": 16,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 50,
+   "date": "2026-10-26",
+   "from": "VOHY",
+   "to": "VCBI",
+   "aircraft": "Gulfstream G650",
+   "seats": 19,
+   "price": 47000,
+   "currency": "USD"
+  },
+  {
+   "id": 51,
+   "date": "2026-10-27",
+   "from": "OJAI",
+   "to": "OLBA",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": 17000,
+   "currency": "USD"
+  },
+  {
+   "id": 52,
+   "date": "2026-10-28",
+   "from": "OMAA",
+   "to": "OTHH",
+   "aircraft": "Airbus ACJ A320",
+   "seats": 30,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 53,
+   "date": "2026-10-28",
+   "from": "VOHY",
+   "to": "VOBL",
+   "aircraft": "Challenger 605",
+   "seats": 16,
+   "price": 25000,
+   "currency": "USD"
+  },
+  {
+   "id": 54,
+   "date": "2026-10-29",
+   "from": "WIII",
+   "to": "WADD",
+   "aircraft": "ACJ319",
+   "seats": 19,
+   "price": 55000,
+   "currency": "USD"
+  },
+  {
+   "id": 55,
+   "date": "2026-10-30",
+   "from": "HAAB",
+   "to": "FACT",
+   "aircraft": "ACJ319",
+   "seats": 19,
+   "price": 25000,
+   "currency": "USD"
+  },
+  {
+   "id": 56,
+   "date": "2026-10-31",
+   "from": "VVTS",
+   "to": "WADD",
+   "aircraft": "Pilatus PC-12",
+   "seats": 9,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 57,
+   "date": "2026-10-31",
+   "date_end": "2026-11-02",
+   "from": "RJOO",
+   "to": "ZSPD",
+   "aircraft": "Gulfstream G450",
+   "seats": 12,
+   "price": 200000,
+   "currency": "CNY"
+  },
+  {
+   "id": 58,
+   "date": "2026-11-02",
+   "from": "VTBS",
+   "to": "VVTS",
+   "aircraft": "Pilatus PC-12",
+   "seats": 9,
+   "price": 24000,
+   "currency": "USD"
+  },
+  {
+   "id": 59,
+   "date": "2026-11-03",
+   "from": "ZSPD",
+   "to": "RKPK",
+   "aircraft": "Phenom 300",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 60,
+   "date": "2026-11-04",
+   "from": "OMAA",
+   "to": "OLBA",
+   "aircraft": "Pilatus PC-12",
+   "seats": 9,
+   "price": 13000,
+   "currency": "USD"
+  },
+  {
+   "id": 61,
+   "date": "2026-11-05",
+   "date_end": "2026-11-06",
+   "from": "OMAA",
+   "to": "OTBD",
+   "aircraft": "Global 7500",
+   "seats": 14,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 62,
+   "date": "2026-11-05",
+   "from": "UACC",
+   "to": "UGTB",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 63,
+   "date": "2026-11-05",
+   "from": "OMDB",
+   "to": "OKBK",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": 23000,
+   "currency": "USD"
+  },
+  {
+   "id": 64,
+   "date": "2026-11-05",
+   "from": "VHHH",
+   "to": "RCTP",
+   "aircraft": "Challenger 350",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 65,
+   "date": "2026-11-05",
+   "from": "OPKC",
+   "to": "VOHY",
+   "aircraft": "Phenom 300",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 66,
+   "date": "2026-11-07",
+   "from": "DNMM",
+   "to": "DGAA",
+   "aircraft": "Pilatus PC-12",
+   "seats": 9,
+   "price": 59000,
+   "currency": "USD"
+  },
+  {
+   "id": 67,
+   "date": "2026-11-09",
+   "from": "WADD",
+   "to": "RPLL",
+   "aircraft": "Global 6000",
+   "seats": 19,
+   "price": 15000,
+   "currency": "USD"
+  },
+  {
+   "id": 68,
+   "date": "2026-11-09",
+   "from": "ZSPD",
+   "to": "RKPK",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 69,
+   "date": "2026-11-11",
+   "from": "OMAA",
+   "to": "OMDB",
+   "aircraft": "Learjet 75",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 70,
+   "date": "2026-11-12",
+   "from": "UDYZ",
+   "to": "UGTB",
+   "aircraft": "Citation CJ3+",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 71,
+   "date": "2026-11-13",
+   "from": "HTDA",
+   "to": "FAOR",
+   "aircraft": "Learjet 60",
+   "seats": 9,
+   "price": 9000,
+   "currency": "USD"
+  },
+  {
+   "id": 72,
+   "date": "2026-11-16",
+   "from": "VRMM",
+   "to": "VCBI",
+   "aircraft": "Challenger 605",
+   "seats": 16,
+   "price": 13000,
+   "currency": "USD"
+  },
+  {
+   "id": 73,
+   "date": "2026-11-16",
+   "from": "VABB",
+   "to": "VGZR",
+   "aircraft": "Gulfstream G650",
+   "seats": 19,
+   "price": 46000,
+   "currency": "USD"
+  },
+  {
+   "id": 74,
+   "date": "2026-11-16",
+   "from": "OERK",
+   "to": "OOMS",
+   "aircraft": "Citation CJ3+",
+   "seats": 8,
+   "price": 53000,
+   "currency": "USD"
+  },
+  {
+   "id": 75,
+   "date": "2026-11-17",
+   "from": "UATE",
+   "to": "UTAA",
+   "aircraft": "Hawker 900XP",
+   "seats": 9,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 76,
+   "date": "2026-11-17",
+   "from": "UAAA",
+   "to": "UTAA",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": 33000,
+   "currency": "USD"
+  },
+  {
+   "id": 77,
+   "date": "2026-11-18",
+   "from": "VHHH",
+   "to": "RJBB",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": 54000,
+   "currency": "USD"
+  },
+  {
+   "id": 78,
+   "date": "2026-11-18",
+   "from": "OKBK",
+   "to": "OTHH",
+   "aircraft": "Challenger 605",
+   "seats": 16,
+   "price": 64000,
+   "currency": "USD"
+  },
+  {
+   "id": 79,
+   "date": "2026-11-18",
+   "from": "FNLU",
+   "to": "DNMM",
+   "aircraft": "Hawker 900XP",
+   "seats": 9,
+   "price": 39000,
+   "currency": "USD"
+  },
+  {
+   "id": 80,
+   "date": "2026-11-19",
+   "from": "VCBI",
+   "to": "VIDP",
+   "aircraft": "Citation XLS+",
+   "seats": 9,
+   "price": 54000,
+   "currency": "USD"
+  },
+  {
+   "id": 81,
+   "date": "2026-11-19",
+   "from": "UTDD",
+   "to": "UBBB",
+   "aircraft": "Pilatus PC-12",
+   "seats": 9,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 82,
+   "date": "2026-11-20",
+   "from": "OLBA",
+   "to": "OEJN",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": 52000,
+   "currency": "USD"
+  },
+  {
+   "id": 83,
+   "date": "2026-11-20",
+   "from": "VNKT",
+   "to": "VGZR",
+   "aircraft": "Global 6000",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 84,
+   "date": "2026-11-20",
+   "from": "UTTT",
+   "to": "UTDD",
+   "aircraft": "Hawker 900XP",
+   "seats": 9,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 85,
+   "date": "2026-11-21",
+   "from": "UAAA",
+   "to": "UBBB",
+   "aircraft": "Citation XLS+",
+   "seats": 9,
+   "price": 29000,
+   "currency": "USD"
+  },
+  {
+   "id": 86,
+   "date": "2026-11-21",
+   "from": "VGZR",
+   "to": "OPKC",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": 23000,
+   "currency": "USD"
+  },
+  {
+   "id": 87,
+   "date": "2026-11-21",
+   "from": "VDPP",
+   "to": "RPLL",
+   "aircraft": "Citation XLS+",
+   "seats": 9,
+   "price": 55000,
+   "currency": "USD"
+  },
+  {
+   "id": 88,
+   "date": "2026-11-23",
+   "from": "GMMN",
+   "to": "FAOR",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": 12000,
+   "currency": "USD"
+  },
+  {
+   "id": 89,
+   "date": "2026-11-23",
+   "from": "VVNB",
+   "to": "VYYY",
+   "aircraft": "Hawker 900XP",
+   "seats": 9,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 90,
+   "date": "2026-11-23",
+   "from": "OOMS",
+   "to": "OMAA",
+   "aircraft": "ACJ319",
+   "seats": 19,
+   "price": 64000,
+   "currency": "USD"
+  },
+  {
+   "id": 91,
+   "date": "2026-12-03",
+   "from": "UGTB",
+   "to": "UBBB",
+   "aircraft": "Falcon 2000",
+   "seats": 16,
+   "price": 58000,
+   "currency": "USD"
+  },
+  {
+   "id": 92,
+   "date": "2026-12-03",
+   "from": "VYYY",
+   "to": "VTBS",
+   "aircraft": "ACJ319",
+   "seats": 19,
+   "price": 62000,
+   "currency": "USD"
+  },
+  {
+   "id": 93,
+   "date": "2026-12-04",
+   "from": "UATE",
+   "to": "UTDD",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": 33000,
+   "currency": "USD"
+  },
+  {
+   "id": 94,
+   "date": "2026-12-04",
+   "from": "OJAI",
+   "to": "OLBA",
+   "aircraft": "Learjet 75",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 95,
+   "date": "2026-12-06",
+   "from": "UDYZ",
+   "to": "UBBB",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 96,
+   "date": "2026-12-07",
+   "from": "OTHH",
+   "to": "OERK",
+   "aircraft": "Hawker 900XP",
+   "seats": 9,
+   "price": 49000,
+   "currency": "USD"
+  },
+  {
+   "id": 97,
+   "date": "2026-12-08",
+   "from": "ZBAA",
+   "to": "RJGG",
+   "aircraft": "Global 6000",
+   "seats": 19,
+   "price": 11000,
+   "currency": "USD"
+  },
+  {
+   "id": 98,
+   "date": "2026-12-08",
+   "from": "ZSPD",
+   "to": "RCTP",
+   "aircraft": "Pilatus PC-12",
+   "seats": 9,
+   "price": 12000,
+   "currency": "USD"
+  },
+  {
+   "id": 99,
+   "date": "2026-12-10",
+   "from": "DNMM",
+   "to": "HAAB",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": 29000,
+   "currency": "USD"
+  },
+  {
+   "id": 100,
+   "date": "2026-12-12",
+   "from": "UAAA",
+   "to": "UAFM",
+   "aircraft": "Challenger 605",
+   "seats": 16,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 101,
+   "date": "2026-12-12",
+   "from": "OJAI",
+   "to": "OLBA",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": 53000,
+   "currency": "USD"
+  },
+  {
+   "id": 102,
+   "date": "2026-12-12",
+   "from": "VYYY",
+   "to": "VDPP",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": 33000,
+   "currency": "USD"
+  },
+  {
+   "id": 103,
+   "date": "2026-12-13",
+   "from": "UTAA",
+   "to": "UACC",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 104,
+   "date": "2026-12-13",
+   "from": "VGZR",
+   "to": "VCBI",
+   "aircraft": "Global 6000",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 105,
+   "date": "2026-12-15",
+   "from": "OBBI",
+   "to": "OJAI",
+   "aircraft": "Challenger 605",
+   "seats": 16,
+   "price": 57000,
+   "currency": "USD"
+  },
+  {
+   "id": 106,
+   "date": "2026-12-15",
+   "from": "GMMN",
+   "to": "DGAA",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 107,
+   "date": "2026-12-15",
+   "from": "VOHY",
+   "to": "VRMM",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": 12000,
+   "currency": "USD"
+  },
+  {
+   "id": 108,
+   "date": "2026-12-17",
+   "from": "RKPK",
+   "to": "VHHH",
+   "aircraft": "Hawker 900XP",
+   "seats": 9,
+   "price": 39000,
+   "currency": "USD"
+  },
+  {
+   "id": 109,
+   "date": "2026-12-17",
+   "from": "VRMM",
+   "to": "VABB",
+   "aircraft": "Falcon 2000",
+   "seats": 16,
+   "price": 60000,
+   "currency": "USD"
+  },
+  {
+   "id": 110,
+   "date": "2026-12-18",
+   "from": "FACT",
+   "to": "HTDA",
+   "aircraft": "Hawker 900XP",
+   "seats": 9,
+   "price": 22000,
+   "currency": "USD"
+  },
+  {
+   "id": 111,
+   "date": "2026-12-18",
+   "from": "WMKK",
+   "to": "VTBS",
+   "aircraft": "Phenom 300",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 112,
+   "date": "2026-12-20",
+   "from": "VDPP",
+   "to": "VVTS",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": 39000,
+   "currency": "USD"
+  },
+  {
+   "id": 113,
+   "date": "2026-12-21",
+   "from": "OEJN",
+   "to": "OLBA",
+   "aircraft": "Gulfstream G450",
+   "seats": 16,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 114,
+   "date": "2026-12-22",
+   "from": "VIDP",
+   "to": "VABB",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 115,
+   "date": "2026-12-22",
+   "from": "UTDD",
+   "to": "UAFM",
+   "aircraft": "Learjet 75",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 116,
+   "date": "2026-12-23",
+   "from": "UACC",
+   "to": "UATE",
+   "aircraft": "Citation CJ3+",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 117,
+   "date": "2026-12-23",
+   "from": "VTBS",
+   "to": "VVTS",
+   "aircraft": "Learjet 75",
+   "seats": 8,
+   "price": 39000,
+   "currency": "USD"
+  },
+  {
+   "id": 118,
+   "date": "2026-12-23",
+   "from": "OMDB",
+   "to": "OEJN",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 119,
+   "date": "2026-12-23",
+   "from": "VNKT",
+   "to": "VOHY",
+   "aircraft": "Challenger 605",
+   "seats": 16,
+   "price": 29000,
+   "currency": "USD"
+  },
+  {
+   "id": 120,
+   "date": "2026-12-24",
+   "from": "VTBS",
+   "to": "RPLL",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": 28000,
+   "currency": "USD"
+  },
+  {
+   "id": 121,
+   "date": "2026-12-25",
+   "from": "UATE",
+   "to": "UGTB",
+   "aircraft": "Challenger 605",
+   "seats": 16,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 122,
+   "date": "2026-12-26",
+   "date_end": "2026-12-27",
+   "from": "OEAO",
+   "to": "OJAI",
+   "aircraft": "Hawker 800XP",
+   "seats": 8,
+   "price": 11000,
+   "currency": "USD"
+  },
+  {
+   "id": 123,
+   "date": "2026-12-26",
+   "date_end": "2026-12-27",
+   "from": "OJAI",
+   "to": "HEBL",
+   "aircraft": "Hawker 800XP",
+   "seats": 8,
+   "price": 11000,
+   "currency": "USD"
+  },
+  {
+   "id": 124,
+   "date": "2026-12-27",
+   "from": "UAFM",
+   "to": "UTTT",
+   "aircraft": "Learjet 75",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 125,
+   "date": "2026-12-27",
+   "from": "VOHY",
+   "to": "VCBI",
+   "aircraft": "Citation XLS+",
+   "seats": 9,
+   "price": 10000,
+   "currency": "USD"
+  },
+  {
+   "id": 126,
+   "date": "2026-12-29",
+   "from": "OMAA",
+   "to": "EGLF",
+   "aircraft": "Praetor 600",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 127,
+   "date": "2026-12-29",
+   "from": "FAOR",
+   "to": "DNMM",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": 55000,
+   "currency": "USD"
+  },
+  {
+   "id": 128,
+   "date": "2026-12-31",
+   "from": "OBBI",
+   "to": "OMAA",
+   "aircraft": "Challenger 605",
+   "seats": 16,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 129,
+   "date": "2026-12-31",
+   "from": "RJBB",
+   "to": "RKPK",
+   "aircraft": "Learjet 60",
+   "seats": 9,
+   "price": 33000,
+   "currency": "USD"
+  },
+  {
+   "id": 130,
+   "date": "2027-01-01",
+   "from": "VGZR",
+   "to": "OPKC",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 131,
+   "date": "2027-01-02",
+   "from": "DGAA",
+   "to": "FAOR",
+   "aircraft": "Global 6000",
+   "seats": 19,
+   "price": 39000,
+   "currency": "USD"
+  },
+  {
+   "id": 132,
+   "date": "2027-01-02",
+   "from": "ZBAA",
+   "to": "VHHH",
+   "aircraft": "Global 6000",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 133,
+   "date": "2027-01-02",
+   "from": "WMKK",
+   "to": "WIII",
+   "aircraft": "Learjet 60",
+   "seats": 9,
+   "price": 38000,
+   "currency": "USD"
+  },
+  {
+   "id": 134,
+   "date": "2027-01-02",
+   "from": "RJTT",
+   "to": "ZBAA",
+   "aircraft": "Learjet 75",
+   "seats": 8,
+   "price": 25000,
+   "currency": "USD"
+  },
+  {
+   "id": 135,
+   "date": "2027-01-04",
+   "from": "HTDA",
+   "to": "DGAA",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 136,
+   "date": "2027-01-05",
+   "from": "ZBAA",
+   "to": "RJGG",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 137,
+   "date": "2027-01-05",
+   "from": "GMMN",
+   "to": "HECA",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": 16000,
+   "currency": "USD"
+  },
+  {
+   "id": 138,
+   "date": "2027-01-05",
+   "from": "OERK",
+   "to": "OKBK",
+   "aircraft": "Phenom 300",
+   "seats": 8,
+   "price": 35000,
+   "currency": "USD"
+  },
+  {
+   "id": 139,
+   "date": "2027-01-06",
+   "from": "ZBAA",
+   "to": "RCTP",
+   "aircraft": "Falcon 7X",
+   "seats": 19,
+   "price": 36000,
+   "currency": "USD"
+  },
+  {
+   "id": 140,
+   "date": "2027-01-06",
+   "from": "EGLF",
+   "to": "OMAA",
+   "aircraft": "Praetor 600",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 141,
+   "date": "2027-01-07",
+   "from": "HECA",
+   "to": "DNMM",
+   "aircraft": "Hawker 900XP",
+   "seats": 9,
+   "price": 24000,
+   "currency": "USD"
+  },
+  {
+   "id": 142,
+   "date": "2027-01-07",
+   "from": "RJTT",
+   "to": "ZBAA",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": 42000,
+   "currency": "USD"
+  },
+  {
+   "id": 143,
+   "date": "2027-01-08",
+   "from": "FACT",
+   "to": "FNLU",
+   "aircraft": "Citation XLS+",
+   "seats": 9,
+   "price": 65000,
+   "currency": "USD"
+  },
+  {
+   "id": 144,
+   "date": "2027-01-08",
+   "from": "OEJN",
+   "to": "OOMS",
+   "aircraft": "Learjet 75",
+   "seats": 8,
+   "price": 41000,
+   "currency": "USD"
+  },
+  {
+   "id": 145,
+   "date": "2027-01-12",
+   "from": "HTDA",
+   "to": "HAAB",
+   "aircraft": "Learjet 60",
+   "seats": 9,
+   "price": 59000,
+   "currency": "USD"
+  },
+  {
+   "id": 146,
+   "date": "2027-01-15",
+   "from": "OMAA",
+   "to": "OERK",
+   "aircraft": "Gulfstream G650",
+   "seats": 19,
+   "price": 6000,
+   "currency": "USD"
+  },
+  {
+   "id": 147,
+   "date": "2027-01-15",
+   "from": "UATE",
+   "to": "UAFM",
+   "aircraft": "Gulfstream G450",
+   "seats": 16,
+   "price": 34000,
+   "currency": "USD"
+  },
+  {
+   "id": 148,
+   "date": "2027-01-15",
+   "from": "OERK",
+   "to": "OEJN",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 149,
+   "date": "2027-01-16",
+   "from": "UATE",
+   "to": "UTDD",
+   "aircraft": "King Air 350i",
+   "seats": 9,
+   "price": 11000,
+   "currency": "USD"
+  },
+  {
+   "id": 150,
+   "date": "2027-01-16",
+   "from": "UGTB",
+   "to": "UACC",
+   "aircraft": "BBJ737",
+   "seats": 19,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 151,
+   "date": "2027-01-18",
+   "from": "VGZR",
+   "to": "VRMM",
+   "aircraft": "Phenom 300",
+   "seats": 8,
+   "price": 44000,
+   "currency": "USD"
+  },
+  {
+   "id": 152,
+   "date": "2027-01-18",
+   "from": "FNLU",
+   "to": "HTDA",
+   "aircraft": "Learjet 75",
+   "seats": 8,
+   "price": null,
+   "currency": null
+  },
+  {
+   "id": 153,
+   "date": "2027-01-20",
+   "from": "VNKT",
+   "to": "VIDP",
+   "aircraft": "Phenom 300",
+   "seats": 8,
+   "price": 15000,
+   "currency": "USD"
+  },
+  {
+   "date": "2026-10-11",
+   "from": "OSDI",
+   "to": "OJAI",
+   "aircraft": "Legacy 650",
+   "seats": 13,
+   "price": 4500,
+   "currency": "USD",
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "WSSS",
+   "to": "OMDW",
+   "aircraft": "Challenger 650",
+   "seats": 12,
+   "price": 61325,
+   "currency": "USD",
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "OERK",
+   "to": "OERS",
+   "aircraft": "Challenger 605",
+   "seats": 10,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "OTHH",
+   "to": "OBBI",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "OERK",
+   "to": "OTHH",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "WIII",
+   "to": "WADB",
+   "aircraft": "Challenger 850",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "WMKK",
+   "to": "WSSS",
+   "aircraft": "Challenger 605",
+   "seats": 10,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "WMKK",
+   "to": "WMKP",
+   "aircraft": "Challenger 350",
+   "seats": 9,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "WADD",
+   "to": "WSSS",
+   "aircraft": "Global 6000",
+   "seats": 13,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "WMKK",
+   "to": "OEJN",
+   "aircraft": "Global 7500",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "WMKK",
+   "to": "WSSS",
+   "aircraft": "Global 8000",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "OTHH",
+   "to": "LTFJ",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "VTSP",
+   "to": "RJTT",
+   "aircraft": "Gulfstream G700",
+   "seats": 16,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-11",
+   "from": "OMDW",
+   "to": "OJAI",
+   "aircraft": "Hawker 4000",
+   "seats": 8,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-12",
+   "from": "LTFG",
+   "to": "LTAC",
+   "aircraft": "Citation Bravo",
+   "seats": 7,
+   "price": 4794,
+   "currency": "EUR",
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-12",
+   "from": "OTHH",
+   "to": "OERK",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-12",
+   "from": "OBBI",
+   "to": "OTHH",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-12",
+   "from": "OERS",
+   "to": "OERK",
+   "aircraft": "Challenger 605",
+   "seats": 10,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-12",
+   "from": "VHHH",
+   "to": "WSSS",
+   "aircraft": "Global 6000",
+   "seats": 13,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-12",
+   "from": "WMKK",
+   "to": "WSSS",
+   "aircraft": "Challenger 605",
+   "seats": 10,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-12",
+   "from": "VHHH",
+   "to": "WSSS",
+   "aircraft": "Challenger 350",
+   "seats": 9,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-13",
+   "from": "OJAI",
+   "to": "OSDI",
+   "aircraft": "Legacy 650",
+   "seats": 13,
+   "price": 4500,
+   "currency": "USD",
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-13",
+   "from": "OTHH",
+   "to": "OMDW",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-13",
+   "from": "OEDF",
+   "to": "OKBK",
+   "aircraft": "Legacy 650",
+   "seats": 13,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-13",
+   "from": "OMDW",
+   "to": "OTHH",
+   "aircraft": "Challenger 605",
+   "seats": 10,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-13",
+   "from": "WASS",
+   "to": "VHHH",
+   "aircraft": "Global 6000",
+   "seats": 13,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-14",
+   "from": "LLBG",
+   "to": "OMDW",
+   "aircraft": "Global 6500",
+   "seats": 13,
+   "price": 37575,
+   "currency": "USD",
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-14",
+   "from": "OTHH",
+   "to": "OBBI",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-14",
+   "from": "VHHH",
+   "to": "OOMS",
+   "aircraft": "Airbus ACJ A319",
+   "seats": 19,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-15",
+   "from": "OMDW",
+   "to": "LTFJ",
+   "aircraft": "Gulfstream GIV-SP",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-15",
+   "from": "OMDW",
+   "to": "LTFJ",
+   "aircraft": "Global 7500",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-15",
+   "from": "OOMS",
+   "to": "OTHH",
+   "aircraft": "Airbus ACJ A319",
+   "seats": 19,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-15",
+   "from": "VTBS",
+   "to": "OMDW",
+   "aircraft": "Falcon 900DX EASy",
+   "seats": 12,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-16",
+   "from": "UBBB",
+   "to": "OMDW",
+   "aircraft": "Challenger 605",
+   "seats": 10,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-17",
+   "from": "UBBB",
+   "to": "LTFJ",
+   "aircraft": "Global Express XRS",
+   "seats": 13,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-18",
+   "from": "OMAA",
+   "to": "OMSJ",
+   "aircraft": "Global 6000",
+   "seats": 13,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-18",
+   "from": "OMDW",
+   "to": "OOMS",
+   "aircraft": "Global 6500",
+   "seats": 13,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-18",
+   "from": "RJTT",
+   "to": "ZBAA",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-19",
+   "from": "OMDW",
+   "to": "OTHH",
+   "aircraft": "Gulfstream G700",
+   "seats": 16,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-19",
+   "from": "VLVT",
+   "to": "RJTT",
+   "aircraft": "Global 7500",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-20",
+   "from": "OTHH",
+   "to": "OMDW",
+   "aircraft": "Global 5000",
+   "seats": 13,
+   "price": 40500,
+   "currency": "USD",
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-21",
+   "from": "OMDW",
+   "to": "OTHH",
+   "aircraft": "Global 5000",
+   "seats": 13,
+   "price": 40500,
+   "currency": "USD",
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-21",
+   "from": "OTHH",
+   "to": "OMDW",
+   "aircraft": "Challenger 350",
+   "seats": 9,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-21",
+   "from": "OTHH",
+   "to": "OMAA",
+   "aircraft": "Gulfstream G650ER",
+   "seats": 14,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-27",
+   "from": "OTHH",
+   "to": "OERK",
+   "aircraft": "Global 5000",
+   "seats": 13,
+   "price": 40500,
+   "currency": "USD",
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-27",
+   "from": "OMAA",
+   "to": "OTHH",
+   "aircraft": "Airbus ACJ A320",
+   "seats": 19,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-28",
+   "from": "OMAA",
+   "to": "OTHH",
+   "aircraft": "Global 5000",
+   "seats": 13,
+   "price": 40500,
+   "currency": "USD",
+   "seats_est": true
+  },
+  {
+   "date": "2026-10-31",
+   "from": "OOMS",
+   "to": "OMDW",
+   "aircraft": "Global 6500",
+   "seats": 13,
+   "price": null,
+   "currency": null,
+   "seats_est": true
+  }
+ ]
+}

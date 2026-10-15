@@ -9,29 +9,25 @@ public_folder: "/assets/images"
 collections:
   - name: "empty_legs"
     label: "Empty Legs"
-    label_singular: "Empty Leg"
-    description: "Add or remove active empty leg flights."
-    delete: true
-    create: true
+    description: "Every flight here is placed automatically on all matching hub, corridor and region pages. For many flights at once, use Flight Intake at /admin/intake.html."
     files:
-      - file: "empty-legs-data.json"
-        name: "empty_legs_data"
-        label: "Empty Legs Data"
+      - file: "data/flights.json"
+        name: "flights"
+        label: "All Flights"
         format: "json"
         fields:
-          - name: "legs"
-            label: "Active Flights"
+          - {label: "Last updated", name: "updated", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false}
+          - name: "flights"
+            label: "Flights"
             widget: "list"
-            summary: "{{fields.aircraft}} - {{fields.dep_code}} to {{fields.arr_code}}"
+            summary: "{{fields.date}} {{fields.from}} to {{fields.to}} ({{fields.aircraft}})"
             fields:
-              - {label: "Date", name: "date", widget: "string", default: "01 Jan 2024"}
-              - {label: "Departure Code", name: "dep_code", widget: "string", default: "DXB"}
-              - {label: "Departure City", name: "dep_city", widget: "string", default: "Dubai"}
-              - {label: "Arrival Code", name: "arr_code", widget: "string", default: "IST"}
-              - {label: "Arrival City", name: "arr_city", widget: "string", default: "Istanbul"}
-              - {label: "Aircraft", name: "aircraft", widget: "string", default: "Challenger 350"}
-              - {label: "Passengers", name: "pax", widget: "string", default: "Up to 8 Pax"}
-              - {label: "Duration", name: "duration", widget: "string", default: "4h 30m Duration"}
-              - {label: "Price Type", name: "price_type", widget: "select", options: ["Price From", "Price"], default: "Price From"}
-              - {label: "Price Amount", name: "price", widget: "string", default: "$18,500", required: false}
-              - {label: "On Request", name: "on_request", widget: "boolean", default: false}
+              - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
+              - {label: "End date (optional)", name: "date_end", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false}
+              - {label: "From (airport code)", name: "from", widget: "string", hint: "Example: OMDW. The build stops and tells you if the code is unknown."}
+              - {label: "To (airport code)", name: "to", widget: "string"}
+              - {label: "Aircraft", name: "aircraft", widget: "string", hint: "Example: Gulfstream G650ER"}
+              - {label: "Seats", name: "seats", widget: "number", value_type: "int", min: 1}
+              - {label: "Seats are an estimate", name: "seats_est", widget: "boolean", default: false, required: false, hint: "Tick if the seat count was assumed from the aircraft type. Cards then read Up to N Seats."}
+              - {label: "Price (leave empty for On Request)", name: "price", widget: "number", value_type: "int", required: false}
+              - {label: "Currency", name: "currency", widget: "select", options: ["USD", "EUR", "GBP", "CNY", "AED", "INR"], default: "USD", required: false}

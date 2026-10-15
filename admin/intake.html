@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Flight Intake | Skylinks Asia</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<style>
+  :root { --bg:#0a0f1a; --card:#111a2c; --line:#22304a; --text:#e8ebf1; --muted:#93a0b6; --gold:#c8b283; --ok:#4fc39b; --warn:#e0a458; --bad:#ee8a84; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; padding:24px 16px 64px; }
+  .wrap { max-width:1180px; margin:0 auto; display:grid; gap:20px; }
+  h1 { font:500 26px/1.2 Georgia,serif; margin:0; }
+  h2 { font:500 17px/1.3 Georgia,serif; margin:0 0 8px; }
+  p { margin:0; color:var(--muted); }
+  a { color:var(--gold); }
+  .top { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:flex-start; }
+  .nav { display:flex; gap:14px; font-size:13px; align-items:center; flex-wrap:wrap; }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:6px; padding:16px; display:grid; gap:12px; min-width:0; }
+  textarea { width:100%; min-height:170px; resize:vertical; background:var(--bg); color:var(--text); border:1px solid var(--line); border-radius:4px; padding:10px; font:13px/1.5 ui-monospace,Menlo,Consolas,monospace; }
+  button { font:inherit; font-weight:500; background:transparent; color:var(--text); border:1px solid var(--line); border-radius:4px; padding:8px 14px; cursor:pointer; }
+  button:hover { border-color:var(--gold); }
+  button.primary { background:var(--gold); color:#0a0f1a; border-color:var(--gold); }
+  button:disabled { opacity:.45; cursor:not-allowed; }
+  :focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .scroll { overflow-x:auto; border:1px solid var(--line); border-radius:4px; }
+  table { border-collapse:collapse; width:100%; min-width:1040px; }
+  th { text-align:left; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:500; padding:8px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  td { padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  tr:last-child td { border-bottom:0; }
+  input[type=text], input[type=number], input[type=date] { width:100%; background:var(--bg); color:var(--text); border:1px solid var(--line); border-radius:3px; padding:5px 6px; font:inherit; min-width:0; }
+  td input.s { width:70px; } td input.c { width:78px; } td input.d { width:132px; } td input.p { width:92px; } td input.ac { width:150px; }
+  .pill { display:inline-block; font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:600; padding:2px 7px; border-radius:3px; border:1px solid; white-space:nowrap; }
+  .ok { color:var(--ok); border-color:var(--ok); } .check { color:var(--warn); border-color:var(--warn); } .review { color:var(--bad); border-color:var(--bad); } .dup { color:var(--muted); border-color:var(--muted); }
+  .small { font-size:12px; color:var(--muted); }
+  .small b { color:var(--text); font-weight:600; }
+  .err { color:var(--bad); font-size:12px; }
+  .where { font-size:12px; color:var(--muted); max-width:300px; }
+  .where b { color:var(--gold); font-weight:600; }
+  .msg { padding:12px; border:1px solid var(--line); border-radius:4px; background:var(--bg); }
+  .msg.good { border-color:var(--ok); } .msg.bad { border-color:var(--bad); }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>Flight Intake</h1>
+      <p>Paste raw flight details. Review the staging table. Add to the site.</p>
+    </div>
+    <div class="nav">
+      <a href="/admin/">Edit flights one by one</a>
+      <span id="who" class="small">Not signed in</span>
+      <button id="loginBtn" type="button">Sign in</button>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>1. Paste raw data</h2>
+    <p>One flight per line works best. Operator emails and WhatsApp text are fine. Anything not recognised is shown, never dropped quietly.</p>
+    <label for="raw" class="hidden">Raw flight text</label>
+    <textarea id="raw" placeholder="Dubai to London | 12 Oct 2026 | Global 7500 | 14 pax | USD 61,000&#10;OERK - OEJN 18 Oct Challenger 605 9 pax on request"></textarea>
+    <div class="row">
+      <button id="parseBtn" class="primary" type="button">Read and stage</button>
+      <button id="clearBtn" type="button">Clear</button>
+    </div>
+    <div id="skipped" class="small"></div>
+  </section>
+
+  <section class="panel" id="stagePanel" hidden>
+    <h2>2. Staging table</h2>
+    <p>Nothing is live yet. Correct any cell. The last column shows every page each flight will appear on.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Add</th><th>Status</th><th>From</th><th>To</th><th>Date</th><th>End date</th><th>Aircraft</th><th>Seats</th><th>Price</th><th>Cur.</th><th>Appears on</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div id="summary" class="small"></div>
+    <div class="row">
+      <label class="small"><input type="checkbox" id="prune" checked> Also remove flights that have already expired</label>
+    </div>
+    <div class="row">
+      <button id="addBtn" class="primary" type="button">Add to site</button>
+      <button id="copyBtn" type="button">Copy updated data file</button>
+    </div>
+    <div id="result"></div>
+  </section>
+</div>
+
+<datalist id="codes"></datalist>
+<datalist id="aircraft"></datalist>
+
+<script src="/scripts/core.js"></script>
+<script src="/scripts/parser.js"></script>
+<script>
+(function () {
+  var $ = function (s) { return document.querySelector(s); };
+  var core, parser, airports, pages, current = { updated: null, flights: [] }, rows = [];
+  var TODAY = SkylinksCore.todayIso();
+
+  function getJson(url) { return fetch(url, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); }); }
+
+  Promise.all([getJson('/data/airports.json'), getJson('/data/pages.json'), getJson('/data/flights.json'), getJson('/data/aircraft.json').catch(function () { return { models: {} }; })]).then(function (v) {
+    airports = v[0]; pages = v[1].pages; current = v[2];
+    core = SkylinksCore.create(airports);
+    parser = SkylinksParser.create(core, airports, { today: TODAY, flights: current.flights, aircraft: v[3] });
+    $('#codes').innerHTML = Object.keys(airports).sort().map(function (k) { return '<option value="' + k + '">' + airports[k].city + '</option>'; }).join('');
+    $('#aircraft').innerHTML = parser.aircraft.map(function (a) { return '<option value="' + a + '">'; }).join('');
+  }).catch(function (e) {
+    $('#skipped').innerHTML = '<span class="err">Could not load site data (' + e.message + '). Open this page from your live site.</span>';
+  });
+
+  // ---------- identity ----------
+  var ni = window.netlifyIdentity;
+  function who() {
+    var u = ni && ni.currentUser();
+    $('#who').textContent = u ? 'Signed in: ' + u.email : 'Not signed in';
+    $('#loginBtn').textContent = u ? 'Sign out' : 'Sign in';
+  }
+  if (ni) {
+    ni.on('init', who); ni.on('login', function () { who(); ni.close(); }); ni.on('logout', who);
+    ni.init();
+  }
+  $('#loginBtn').addEventListener('click', function () {
+    if (!ni) return;
+    if (ni.currentUser()) ni.logout(); else ni.open('login');
+  });
+
+  // ---------- staging ----------
+  function key(r) {
+    return [core.city(r.from), core.city(r.to), r.date, String(r.aircraft).toLowerCase().replace(/[^a-z0-9]/g, '')].join('|');
+  }
+  function existingKeys() {
+    var k = {};
+    current.flights.forEach(function (f) { k[key(f)] = true; });
+    return k;
+  }
+  function errorsFor(r) {
+    var e = [];
+    if (!r.from || !core.resolve(r.from)) e.push('Unknown departure airport.');
+    if (!r.to || !core.resolve(r.to)) e.push('Unknown arrival airport.');
+    if (r.from && r.to && core.resolve(r.from) && core.resolve(r.to) && core.city(r.from) === core.city(r.to)) e.push('Same city both ends.');
+    if (!SkylinksCore.parseIso(r.date)) e.push('Date needed.');
+    if (r.date_end && (!SkylinksCore.parseIso(r.date_end) || r.date_end <= r.date)) e.push('End date must be after start.');
+    if (!r.aircraft) e.push('Aircraft needed.');
+    if (!(r.seats > 0)) e.push('Seats needed.');
+    if (r.price != null && r.price !== '' && !(Number(r.price) > 0)) e.push('Price must be a number.');
+    return e;
+  }
+  function evaluate(r) {
+    r.errors = errorsFor(r);
+    r.dup = !r.errors.length && !!existingKeys()[key(r)];
+    r.live = !r.errors.length && core.isLive(r, TODAY);
+    r.where = [];
+    if (!r.errors.length && r.live) {
+      r.where = core.placements({ id: 0, date: r.date, date_end: r.date_end || null, from: r.from, to: r.to, aircraft: r.aircraft, seats: +r.seats, price: r.price ? +r.price : null }, pages, TODAY);
+    }
+  }
+  function statusOf(r) {
+    if (r.errors.length) return ['review', 'Needs input'];
+    if (r.dup) return ['dup', 'Already on site'];
+    if (!r.live) return ['review', 'Expired'];
+    return r.notes && r.notes.length ? ['check', 'Check'] : ['ok', 'Ready'];
+  }
+  function whereHtml(r) {
+    if (r.errors.length) return '<span class="err">' + r.errors.join(' ') + '</span>';
+    if (!r.live) return 'Date has passed. It would not appear anywhere.';
+    if (!r.where.length) return 'No page matches this route yet. It would only be in the data.';
+    var byPage = {};
+    r.where.forEach(function (w) { (byPage[w.label] = byPage[w.label] || []).push(w.slot); });
+    return '<b>' + Object.keys(byPage).length + ' pages:</b> ' + Object.keys(byPage).join(', ');
+  }
+  function renderRow(r, i) {
+    var st = statusOf(r);
+    return '<tr data-i="' + i + '">' +
+      '<td><input type="checkbox" data-f="use"' + (r.use ? ' checked' : '') + '></td>' +
+      '<td><span class="pill ' + st[0] + '">' + st[1] + '</span>' + (r.notes && r.notes.length ? '<div class="small" style="margin-top:4px;max-width:200px">' + r.notes.join(' ') + '</div>' : '') + '</td>' +
+      '<td><input type="text" class="c" list="codes" data-f="from" value="' + (r.from || '') + '"><div class="small" data-lf>' + (r.from && core.resolve(r.from) ? core.city(r.from) : '') + '</div></td>' +
+      '<td><input type="text" class="c" list="codes" data-f="to" value="' + (r.to || '') + '"><div class="small" data-lt>' + (r.to && core.resolve(r.to) ? core.city(r.to) : '') + '</div></td>' +
+      '<td><input type="date" class="d" data-f="date" value="' + (r.date || '') + '"></td>' +
+      '<td><input type="date" class="d" data-f="date_end" value="' + (r.date_end || '') + '"></td>' +
+      '<td><input type="text" class="ac" list="aircraft" data-f="aircraft" value="' + (r.aircraft || '').replace(/"/g, '&quot;') + '"></td>' +
+      '<td><input type="number" class="s" data-f="seats" min="1" value="' + (r.seats || '') + '"><div class="small" data-se>' + (r.seats_est ? 'estimated' : '') + '</div></td>' +
+      '<td><input type="number" class="p" data-f="price" min="0" step="100" placeholder="On request" value="' + (r.price || '') + '"></td>' +
+      '<td><input type="text" class="c" data-f="currency" value="' + (r.currency || '') + '"></td>' +
+      '<td class="where" data-w>' + whereHtml(r) + '</td></tr>';
+  }
+  function summary() {
+    var use = rows.filter(function (r) { return r.use && !r.errors.length && !r.dup; });
+    var pageSet = {};
+    use.forEach(function (r) { r.where.forEach(function (w) { pageSet[w.label] = 1; }); });
+    var bad = rows.filter(function (r) { return r.use && r.errors.length; }).length;
+    $('#summary').innerHTML = '<b>' + use.length + '</b> flight' + (use.length === 1 ? '' : 's') + ' ready to add, touching <b>' + Object.keys(pageSet).length + '</b> pages.' +
+      (bad ? ' <span class="err">' + bad + ' ticked row' + (bad === 1 ? ' needs' : 's need') + ' input first.</span>' : '');
+    $('#addBtn').disabled = !use.length || bad > 0;
+    $('#copyBtn').disabled = !use.length || bad > 0;
+  }
+  function renderAll() {
+    $('#rows').innerHTML = rows.map(renderRow).join('');
+    $('#stagePanel').hidden = !rows.length;
+    summary();
+  }
+
+  $('#parseBtn').addEventListener('click', function () {
+    if (!parser) return;
+    var out = parser.parse($('#raw').value);
+    rows = out.rows;
+    rows.forEach(function (r) {
+      if (r.price == null) { r.price = ''; }
+      evaluate(r);
+      r.use = !r.errors.length && !r.dup && r.live;
+    });
+    $('#skipped').innerHTML = out.skipped.length
+      ? 'Not recognised as flights (' + out.skipped.length + '): <b>' + out.skipped.map(function (s) { return s.replace(/</g, '&lt;'); }).join(' | ') + '</b>'
+      : (rows.length ? '' : 'No flights found in that text.');
+    $('#result').innerHTML = '';
+    renderAll();
+  });
+  $('#clearBtn').addEventListener('click', function () { $('#raw').value = ''; rows = []; $('#skipped').innerHTML = ''; renderAll(); });
+
+  $('#rows').addEventListener('input', function (e) {
+    var tr = e.target.closest('tr'); if (!tr) return;
+    var r = rows[+tr.dataset.i], f = e.target.dataset.f;
+    if (f === 'use') { r.use = e.target.checked; summary(); return; }
+    var v = e.target.value;
+    if (f === 'from' || f === 'to') v = v.toUpperCase().trim();
+    if (f === 'currency') v = v.toUpperCase().trim();
+    if (f === 'seats') v = v ? +v : null;
+    if (f === 'price') v = v ? +v : '';
+    if (f === 'date_end') v = v || null;
+    r[f] = v;
+    if (f === 'seats') { r.seats_est = false; tr.querySelector('[data-se]').textContent = ''; }
+    if (f === 'price' && v && !r.currency) r.currency = 'USD';
+    r.notes = [];
+    evaluate(r);
+    tr.querySelector('[data-w]').innerHTML = whereHtml(r);
+    tr.querySelector('[data-lf]').textContent = r.from && core.resolve(r.from) ? core.city(r.from) : '';
+    tr.querySelector('[data-lt]').textContent = r.to && core.resolve(r.to) ? core.city(r.to) : '';
+    var st = statusOf(r);
+    tr.querySelector('.pill').className = 'pill ' + st[0];
+    tr.querySelector('.pill').textContent = st[1];
+    summary();
+  });
+
+  // ---------- commit ----------
+  function newFlightsFor(data) {
+    var base = data.flights.reduce(function (m, f) { return Math.max(m, f.id || 0); }, 0);
+    return rows.filter(function (r) { return r.use && !r.errors.length && !r.dup; }).map(function (r, i) {
+      var f = { id: base + i + 1, date: r.date };
+      if (r.date_end) f.date_end = r.date_end;
+      f.from = r.from; f.to = r.to; f.aircraft = r.aircraft; f.seats = +r.seats;
+      if (r.seats_est) f.seats_est = true;
+      f.price = r.price ? +r.price : null;
+      f.currency = r.price ? (r.currency || 'USD') : null;
+      return f;
+    });
+  }
+  function merged(data) {
+    var out = { updated: TODAY, flights: data.flights.slice() };
+    if ($('#prune').checked) out.flights = out.flights.filter(function (f) { return core.isLive(f, TODAY); });
+    out.flights = out.flights.concat(newFlightsFor(data));
+    out.flights.forEach(function (f, i) { f.id = i + 1; });
+    return out;
+  }
+  function b64(str) { var b = new TextEncoder().encode(str), s = ''; b.forEach(function (c) { s += String.fromCharCode(c); }); return btoa(s); }
+  function unb64(s) { var bin = atob(s.replace(/\s/g, '')), a = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) a[i] = bin.charCodeAt(i); return new TextDecoder().decode(a); }
+  function say(cls, html) { $('#result').innerHTML = '<div class="msg ' + cls + '">' + html + '</div>'; }
+
+  $('#addBtn').addEventListener('click', function () {
+    var user = ni && ni.currentUser();
+    if (!user) { say('bad', 'Sign in first, using the button at the top right.'); if (ni) ni.open('login'); return; }
+    $('#addBtn').disabled = true;
+    say('', 'Adding to the site…');
+    var n = rows.filter(function (r) { return r.use && !r.errors.length && !r.dup; }).length;
+    user.jwt().then(function (token) {
+      var url = '/.netlify/git/github/contents/data/flights.json';
+      var headers = { Authorization: 'Bearer ' + token };
+      return fetch(url + '?ref=main', { headers: headers }).then(function (r) {
+        if (!r.ok) throw new Error('Could not read the data file (' + r.status + ').');
+        return r.json();
+      }).then(function (file) {
+        var latest = JSON.parse(unb64(file.content));
+        var next = merged(latest);
+        var problems = core.validate(next.flights);
+        if (problems.length) throw new Error(problems[0]);
+        return fetch(url, {
+          method: 'PUT',
+          headers: Object.assign({ 'Content-Type': 'application/json' }, headers),
+          body: JSON.stringify({ message: 'Add ' + n + ' flight' + (n === 1 ? '' : 's') + ' from intake', content: b64(JSON.stringify(next, null, 1) + '\n'), sha: file.sha, branch: 'main' })
+        });
+      });
+    }).then(function (r) {
+      if (!r.ok) return r.text().then(function (t) { throw new Error('The save was refused (' + r.status + '). ' + t.slice(0, 160)); });
+      say('good', '<b>Saved.</b> ' + n + ' flight' + (n === 1 ? '' : 's') + ' added. Netlify is rebuilding the pages now. Allow about a minute, then check the live site.');
+      rows = []; $('#raw').value = ''; renderAll();
+    }).catch(function (e) {
+      say('bad', '<b>Not saved.</b> ' + e.message + ' Nothing on the live site changed. You can use “Copy updated data file” and paste it into data/flights.json on GitHub instead.');
+      $('#addBtn').disabled = false;
+    });
+  });
+
+  $('#copyBtn').addEventListener('click', function () {
+    var text = JSON.stringify(merged(current), null, 1) + '\n';
+    var done = function () { say('good', 'Copied. Open <b>data/flights.json</b> on GitHub, choose edit, select all, paste, then commit.'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, function () { say('bad', 'The browser blocked copying.'); });
+    else say('bad', 'The browser blocked copying.');
+  });
+})();
+</script>
+</body>
+</html>
