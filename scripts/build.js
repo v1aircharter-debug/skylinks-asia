@@ -41,7 +41,9 @@ var pagesCfg = readJson('data/pages.json').pages;
 var flights = data.flights || [];
 // Ids are internal. Entries added by hand in the editor have none, so number them in file order.
 flights.forEach(function (f, i) { f.id = i + 1; });
-var core = Core.create(airports);
+var geo = fs.existsSync(path.join(ROOT, 'data/cities.json')) ? readJson('data/cities.json').cities : {};
+var aircraftTable = fs.existsSync(path.join(ROOT, 'data/aircraft.json')) ? readJson('data/aircraft.json') : {};
+var core = Core.create(airports, { geo: geo, aircraft: aircraftTable });
 
 var problems = core.validate(flights);
 if (problems.length) fail(problems);

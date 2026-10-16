@@ -27,13 +27,25 @@
   "city": "Ashgabat",
   "country": "Turkmenistan"
  },
+ "ATH": {
+  "city": "Athens",
+  "country": "Greece"
+ },
  "AUH": {
   "city": "Abu Dhabi",
   "country": "UAE"
  },
+ "AYT": {
+  "city": "Antalya",
+  "country": "Türkiye"
+ },
  "BAH": {
   "city": "Bahrain",
   "country": "Bahrain"
+ },
+ "BEG": {
+  "city": "Belgrade",
+  "country": "Serbia"
  },
  "BEY": {
   "city": "Beirut",
@@ -63,6 +75,10 @@
   "city": "Basel",
   "country": "Switzerland"
  },
+ "BZV": {
+  "city": "Brazzaville",
+  "country": "Republic of the Congo"
+ },
  "CAI": {
   "city": "Cairo",
   "country": "Egypt"
@@ -71,9 +87,17 @@
   "city": "Guangzhou",
   "country": "China"
  },
+ "CCU": {
+  "city": "Kolkata",
+  "country": "India"
+ },
  "CGK": {
   "city": "Jakarta",
   "country": "Indonesia"
+ },
+ "CIA": {
+  "city": "Rome",
+  "country": "Italy"
  },
  "CMB": {
   "city": "Colombo",
@@ -83,6 +107,10 @@
   "city": "Casablanca",
   "country": "Morocco"
  },
+ "CND": {
+  "city": "Constanta",
+  "country": "Romania"
+ },
  "CPT": {
   "city": "Cape Town",
   "country": "South Africa"
@@ -90,6 +118,10 @@
  "DAC": {
   "city": "Dhaka",
   "country": "Bangladesh"
+ },
+ "DAD": {
+  "city": "Da Nang",
+  "country": "Vietnam"
  },
  "DAM": {
   "city": "Damascus",
@@ -175,6 +207,14 @@
   "city": "Oxford",
   "country": "United Kingdom"
  },
+ "EKSB": {
+  "city": "Sonderborg",
+  "country": "Denmark"
+ },
+ "EPWA": {
+  "city": "Warsaw",
+  "country": "Poland"
+ },
  "ESB": {
   "city": "Ankara",
   "country": "Türkiye"
@@ -182,6 +222,10 @@
  "EVN": {
   "city": "Yerevan",
   "country": "Armenia"
+ },
+ "EYVI": {
+  "city": "Vilnius",
+  "country": "Lithuania"
  },
  "FAB": {
   "city": "London",
@@ -195,6 +239,14 @@
   "city": "Johannesburg",
   "country": "South Africa"
  },
+ "FCBB": {
+  "city": "Brazzaville",
+  "country": "Republic of the Congo"
+ },
+ "FCO": {
+  "city": "Rome",
+  "country": "Italy"
+ },
  "FGSL": {
   "city": "Malabo",
   "country": "Equatorial Guinea"
@@ -202,6 +254,10 @@
  "FIMP": {
   "city": "Mauritius",
   "country": "Mauritius"
+ },
+ "FLR": {
+  "city": "Florence",
+  "country": "Italy"
  },
  "FMMI": {
   "city": "Antananarivo",
@@ -230,6 +286,10 @@
  "GMP": {
   "city": "Seoul",
   "country": "South Korea"
+ },
+ "GVA": {
+  "city": "Geneva",
+  "country": "Switzerland"
  },
  "GYD": {
   "city": "Baku",
@@ -263,6 +323,14 @@
   "city": "Hurghada",
   "country": "Egypt"
  },
+ "HELX": {
+  "city": "Luxor",
+  "country": "Egypt"
+ },
+ "HER": {
+  "city": "Heraklion",
+  "country": "Greece"
+ },
  "HKG": {
   "city": "Hong Kong",
   "country": "Hong Kong"
@@ -291,6 +359,10 @@
   "city": "Dar es Salaam",
   "country": "Tanzania"
  },
+ "HTKJ": {
+  "city": "Kilimanjaro",
+  "country": "Tanzania"
+ },
  "HYD": {
   "city": "Hyderabad",
   "country": "India"
@@ -314,6 +386,10 @@
  "JNB": {
   "city": "Johannesburg",
   "country": "South Africa"
+ },
+ "JRO": {
+  "city": "Kilimanjaro",
+  "country": "Tanzania"
  },
  "KHI": {
   "city": "Karachi",
@@ -379,9 +455,45 @@
   "city": "Basel",
   "country": "Switzerland"
  },
+ "LGAV": {
+  "city": "Athens",
+  "country": "Greece"
+ },
+ "LGIR": {
+  "city": "Heraklion",
+  "country": "Greece"
+ },
  "LHR": {
   "city": "London",
   "country": "United Kingdom"
+ },
+ "LIMC": {
+  "city": "Milan",
+  "country": "Italy"
+ },
+ "LIML": {
+  "city": "Milan",
+  "country": "Italy"
+ },
+ "LIN": {
+  "city": "Milan",
+  "country": "Italy"
+ },
+ "LIPO": {
+  "city": "Brescia",
+  "country": "Italy"
+ },
+ "LIRA": {
+  "city": "Rome",
+  "country": "Italy"
+ },
+ "LIRF": {
+  "city": "Rome",
+  "country": "Italy"
+ },
+ "LIRQ": {
+  "city": "Florence",
+  "country": "Italy"
  },
  "LKPR": {
   "city": "Prague",
@@ -399,12 +511,28 @@
   "city": "Vienna",
   "country": "Austria"
  },
+ "LPQ": {
+  "city": "Luang Prabang",
+  "country": "Laos"
+ },
+ "LRCK": {
+  "city": "Constanta",
+  "country": "Romania"
+ },
+ "LSGG": {
+  "city": "Geneva",
+  "country": "Switzerland"
+ },
  "LSZH": {
   "city": "Zurich",
   "country": "Switzerland"
  },
  "LTAC": {
   "city": "Ankara",
+  "country": "Türkiye"
+ },
+ "LTAI": {
+  "city": "Antalya",
   "country": "Türkiye"
  },
  "LTBS": {
@@ -430,6 +558,14 @@
  "LTN": {
   "city": "London",
   "country": "United Kingdom"
+ },
+ "LXR": {
+  "city": "Luxor",
+  "country": "Egypt"
+ },
+ "LYBE": {
+  "city": "Belgrade",
+  "country": "Serbia"
  },
  "MAD": {
   "city": "Madrid",
@@ -459,6 +595,10 @@
   "city": "Munich",
   "country": "Germany"
  },
+ "MXP": {
+  "city": "Milan",
+  "country": "Italy"
+ },
  "NBO": {
   "city": "Nairobi",
   "country": "Kenya"
@@ -470,6 +610,10 @@
  "NGO": {
   "city": "Nagoya",
   "country": "Japan"
+ },
+ "NMF": {
+  "city": "Maafaru",
+  "country": "Maldives"
  },
  "NQZ": {
   "city": "Astana",
@@ -559,6 +703,10 @@
   "city": "Oxford",
   "country": "United Kingdom"
  },
+ "PBH": {
+  "city": "Paro",
+  "country": "Bhutan"
+ },
  "PEK": {
   "city": "Beijing",
   "country": "China"
@@ -582,6 +730,10 @@
  "PNH": {
   "city": "Phnom Penh",
   "country": "Cambodia"
+ },
+ "PNQ": {
+  "city": "Pune",
+  "country": "India"
  },
  "PRG": {
   "city": "Prague",
@@ -659,6 +811,10 @@
   "city": "Mahe",
   "country": "Seychelles"
  },
+ "SGD": {
+  "city": "Sonderborg",
+  "country": "Denmark"
+ },
  "SGN": {
   "city": "Ho Chi Minh City",
   "country": "Vietnam"
@@ -707,6 +863,10 @@
   "city": "Tel Aviv",
   "country": "Israel"
  },
+ "TMC": {
+  "city": "Tambolaka",
+  "country": "Indonesia"
+ },
  "TNR": {
   "city": "Antananarivo",
   "country": "Madagascar"
@@ -747,6 +907,14 @@
   "city": "Al Ula",
   "country": "Saudi Arabia"
  },
+ "URC": {
+  "city": "Urumqi",
+  "country": "China"
+ },
+ "USM": {
+  "city": "Koh Samui",
+  "country": "Thailand"
+ },
  "UTAA": {
   "city": "Ashgabat",
   "country": "Turkmenistan"
@@ -779,6 +947,14 @@
   "city": "Mumbai",
   "country": "India"
  },
+ "VAPO": {
+  "city": "Pune",
+  "country": "India"
+ },
+ "VBS": {
+  "city": "Brescia",
+  "country": "Italy"
+ },
  "VCBI": {
   "city": "Colombo",
   "country": "Sri Lanka"
@@ -786,6 +962,10 @@
  "VDPP": {
   "city": "Phnom Penh",
   "country": "Cambodia"
+ },
+ "VECC": {
+  "city": "Kolkata",
+  "country": "India"
  },
  "VGZR": {
   "city": "Dhaka",
@@ -807,6 +987,10 @@
   "city": "Moscow",
   "country": "Russia"
  },
+ "VLLB": {
+  "city": "Luang Prabang",
+  "country": "Laos"
+ },
  "VLVT": {
   "city": "Vientiane",
   "country": "Laos"
@@ -814,6 +998,10 @@
  "VNKT": {
   "city": "Kathmandu",
   "country": "Nepal"
+ },
+ "VNO": {
+  "city": "Vilnius",
+  "country": "Lithuania"
  },
  "VOBL": {
   "city": "Bangalore",
@@ -827,6 +1015,14 @@
   "city": "Hyderabad",
   "country": "India"
  },
+ "VQPR": {
+  "city": "Paro",
+  "country": "Bhutan"
+ },
+ "VRMF": {
+  "city": "Maafaru",
+  "country": "Maldives"
+ },
  "VRMM": {
   "city": "Male",
   "country": "Maldives"
@@ -839,9 +1035,17 @@
   "city": "Vientiane",
   "country": "Laos"
  },
+ "VTSM": {
+  "city": "Koh Samui",
+  "country": "Thailand"
+ },
  "VTSP": {
   "city": "Phuket",
   "country": "Thailand"
+ },
+ "VVDN": {
+  "city": "Da Nang",
+  "country": "Vietnam"
  },
  "VVNB": {
   "city": "Hanoi",
@@ -866,6 +1070,14 @@
  "WASS": {
   "city": "Sorong",
   "country": "Indonesia"
+ },
+ "WATK": {
+  "city": "Tambolaka",
+  "country": "Indonesia"
+ },
+ "WAW": {
+  "city": "Warsaw",
+  "country": "Poland"
  },
  "WIII": {
   "city": "Jakarta",
@@ -917,6 +1129,10 @@
  },
  "ZSSS": {
   "city": "Shanghai",
+  "country": "China"
+ },
+ "ZWWW": {
+  "city": "Urumqi",
   "country": "China"
  }
 }

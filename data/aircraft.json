@@ -184,6 +184,68 @@
   "Pilatus PC-12": {
    "category": "Turboprop",
    "seats": 8
+  },
+  "Hawker 850XP": {
+   "category": "Midsize",
+   "seats": 8
+  },
+  "Airbus ACJ A319 Neo": {
+   "category": "VIP airliner",
+   "seats": 19
+  },
+  "Gulfstream G500": {
+   "category": "Ultra long range",
+   "seats": 14
+  },
+  "Gulfstream G600": {
+   "category": "Ultra long range",
+   "seats": 14
+  },
+  "Falcon 2000LXS": {
+   "category": "Super midsize",
+   "seats": 10
+  },
+  "Falcon 2000EX": {
+   "category": "Super midsize",
+   "seats": 10
+  },
+  "Falcon 900EX": {
+   "category": "Large",
+   "seats": 12
+  },
+  "Challenger 3500": {
+   "category": "Super midsize",
+   "seats": 9
+  },
+  "Challenger 604": {
+   "category": "Large",
+   "seats": 12
+  },
+  "Citation X": {
+   "category": "Super midsize",
+   "seats": 8
+  },
+  "Citation M2": {
+   "category": "Light",
+   "seats": 6
+  },
+  "Lineage 1000": {
+   "category": "VIP airliner",
+   "seats": 19
+  },
+  "Boeing 767 BBJ": {
+   "category": "VIP airliner",
+   "seats": 40
   }
+ },
+ "speeds_kmh": {
+  "Very light": 600,
+  "Light": 700,
+  "Midsize": 750,
+  "Super midsize": 780,
+  "Large": 800,
+  "Ultra long range": 880,
+  "VIP airliner": 800,
+  "Turboprop": 500
  }
 }

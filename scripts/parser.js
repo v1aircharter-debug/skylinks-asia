@@ -19,17 +19,17 @@
     ['Gulfstream G550', /\bg\s?-?550\b/i], ['Gulfstream G450', /\bg\s?-?450\b/i], ['Gulfstream G280', /\bg\s?-?280\b/i],
     ['Global 7500', /\bglobal\s?7500\b/i], ['Global 6500', /\bglobal\s?6500\b/i], ['Global 6000', /\bglobal\s?6000\b/i],
     ['Global 5000', /\bglobal\s?5000\b/i], ['Global 8000', /\bglobal\s?8000\b/i], ['Global Express XRS', /\bglobal\s?express(?:\s?xrs)?\b/i],
-    ['Gulfstream GIV-SP', /\bg\s?-?\s?(?:iv|4)\s?-?\s?sp\b/i], ['Citation Bravo', /\bcitation\s?bravo\b/i], ['Falcon 900DX EASy', /\bfalcon\s?900\s?dx\b/i], ['Challenger 350', /\bchallenger\s?350\b/i], ['Challenger 300', /\bchallenger\s?300\b/i],
+    ['Gulfstream GIV-SP', /\bg\s?-?\s?(?:iv|4)\s?-?\s?sp\b/i], ['Citation Bravo', /\bcitation\s?bravo\b/i], ['Falcon 900DX EASy', /\bfalcon\s?900\s?dx\b/i], ['Challenger 3500', /\bchallenger\s?3500\b/i], ['Challenger 604', /\bchallenger\s?604\b/i], ['Challenger 350', /\bchallenger\s?350\b/i], ['Challenger 300', /\bchallenger\s?300\b/i],
     ['Challenger 605', /\bchallenger\s?605\b/i], ['Challenger 650', /\bchallenger\s?650\b/i], ['Challenger 850', /\bchallenger\s?850\b/i],
     ['Falcon 900LX', /\bfalcon\s?900\s?lx\b/i], ['Falcon 7X', /\bfalcon\s?7x\b/i], ['Falcon 8X', /\bfalcon\s?8x\b/i],
-    ['Falcon 2000', /\bfalcon\s?2000\b/i], ['Legacy 650', /\blegacy\s?650\b/i], ['Legacy 600', /\blegacy\s?600\b/i],
+    ['Falcon 2000LXS', /\bfalcon\s?2000\s?lxs\b/i], ['Falcon 2000EX', /\bfalcon\s?2000\s?ex\b/i], ['Falcon 2000', /\bfalcon\s?2000\b/i], ['Falcon 900EX', /\bfalcon\s?900\s?ex\b/i], ['Legacy 650', /\blegacy\s?650\b/i], ['Legacy 600', /\blegacy\s?600\b/i],
     ['Legacy 500', /\blegacy\s?500\b/i], ['Legacy 450', /\blegacy\s?450\b/i], ['Phenom 300', /\bphenom\s?300\b/i],
     ['Phenom 100', /\bphenom\s?100\b/i], ['Citation XLS+', /\bcitation\s?xls\s?\+?/i], ['Citation Latitude', /\bcitation\s?latitude\b/i],
-    ['Citation CJ3+', /\bcitation\s?cj3\s?\+?/i], ['Citation Sovereign', /\bcitation\s?sovereign\b/i], ['Hawker 4000', /\bhawker\s?4000\b/i],
+    ['Citation CJ3+', /\bcitation\s?cj3\s?\+?/i], ['Citation Sovereign', /\bcitation\s?sovereign\b/i], ['Hawker 850XP', /\bhawker\s?850\s?xp\b/i], ['Citation X', /\bcitation\s?x\b/i], ['Citation M2', /\bcitation\s?m2\b/i], ['Lineage 1000', /\blineage\s?1000\b/i], ['Gulfstream G500', /\bg\s?-?500\b/i], ['Gulfstream G600', /\bg\s?-?600\b/i], ['Hawker 4000', /\bhawker\s?4000\b/i],
     ['Hawker 900XP', /\bhawker\s?900\s?xp\b/i], ['Hawker 800XP', /\bhawker\s?800\s?xp\b/i], ['Learjet 60', /\blear\s?jet\s?60\b/i],
     ['Learjet 45', /\blear\s?jet\s?45\b/i], ['King Air 350i', /\bking\s?air\s?350\s?i?\b/i], ['Pilatus PC-12', /\bpc\s?-?12\b|\bpilatus\b/i],
-    ['Airbus ACJ A319', /\bacj\s?a?319\b|\bacj319\b/i], ['Airbus ACJ A320', /\bacj\s?a?320\b/i], ['BBJ737', /\bbbj\s?-?737\b/i],
-    ['Boeing BBJ', /\bbbj\b/i], ['Embraer Legacy 600', /\bemb(?:raer)?\s?600\b/i]
+    ['Airbus ACJ A319 Neo', /\bacj\s?a?319\s?neo\b/i], ['Airbus ACJ A319', /\bacj\s?a?319\b|\bacj319\b/i], ['Airbus ACJ A320', /\bacj\s?a?320\b/i], ['BBJ737', /\bbbj\s?-?737\b/i],
+    ['Boeing 767 BBJ', /\b(?:boeing\s?)?767(?:\s?-?\s?\d+)?\s?bbj\b|\bbbj\s?767\b/i], ['Boeing BBJ', /\bbbj\b/i], ['Embraer Legacy 600', /\bemb(?:raer)?\s?600\b/i]
   ];
 
   function escRx(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
@@ -223,10 +223,14 @@
     }
     // ---- Table mode (pasted from Excel or Word, or loaded from a file) ----
     var HEAD = [
-      ['date', /^(date|dates|flight date|departure date)$/i], ['route', /^(route|sector|routing|from\s*[\/-]\s*to)$/i],
+      ['date', /^(date|dates|flight date|date of departure|departure date|dep\.? date)$/i],
+      ['end', /^(availability(\s*\/\s*arrival date)?|arrival date|available until|date to|end date)$/i],
+      ['route', /^(route|sector|routing)(\s*\(.*\))?$|^from\s*[\/-]\s*to$/i],
       ['from', /^(from|origin|departure|dep)$/i], ['to', /^(to|destination|arrival|arr)$/i],
-      ['aircraft', /^(aircraft|aircraft type|type|jet|model|aircraft category)$/i], ['seats', /^(seats?|pax|capacity|no\.? of seats|passengers)$/i],
-      ['price', /^(price|fare|cost|rate|price \(.*\))$/i]
+      ['aircraft', /^aircraft(\s*type)?(\s*\/\s*category)?$|^(type|jet|model)$/i],
+      ['seats', /^(seats?|pax|capacity|no\.? of seats|passengers)$/i],
+      ['price', /^(price|fare|cost|rate)(\s*\(.*\))?$/i],
+      ['dur', /^(flight\s*)?duration(\s*\(.*\))?$/i]
     ];
     function mapHeader(cells) {
       var map = {}, hits = 0;
@@ -234,7 +238,7 @@
         var t = String(c).trim();
         for (var k = 0; k < HEAD.length; k++) if (HEAD[k][1].test(t) && map[HEAD[k][0]] == null) { map[HEAD[k][0]] = i; hits++; break; }
       });
-      return (map.date != null && (map.route != null || (map.from != null && map.to != null)) && hits >= 3) ? map : null;
+      return (map.date != null && (map.route != null || (map.from != null && map.to != null)) && map.aircraft != null && hits >= 3) ? map : null;
     }
     function splitCells(line) { return line.indexOf('\t') > -1 ? line.split('\t') : (/\s\|\s/.test(line) || /^\|/.test(line) ? line.replace(/^\||\|$/g, '').split('|') : null); }
     function excelDate(n) { var d = new Date(Math.round((n - 25569) * 86400000)); return iso(d.getUTCFullYear(), d.getUTCMonth() + 1, d.getUTCDate()); }
@@ -249,7 +253,7 @@
       var pl = findPlaces(txt)[0];
       if (!pl) { notes.push(label + ' place not recognised: "' + txt.trim() + '".'); return null; }
       var code = pl.code || defaultAirport(pl.city);
-      if (pl.how === 'city' && multi[pl.city] > 1) (clearDefault(pl.city, code) ? info : notes).push(label + ' airport assumed ' + code + ' for ' + pl.city + ' (the one already used on the site).');
+      if (pl.how === 'city' && multi[pl.city] > 1) if (clearDefault(pl.city, code)) info.push(label + ' airport assumed ' + code + ' for ' + pl.city + ' (the one already used on the site).'); else notes.push(label + ' airport assumed ' + code + ' for ' + pl.city + '. Several airports serve it, so please check.');
       return code;
     }
     function parseTableRow(cells, map, raw) {
@@ -267,6 +271,11 @@
       if (!a || !b) notes.push('Route is incomplete.');
       var d = cellDate(get('date'));
       if (d) { row.date = d.start; row.date_end = d.end; } else notes.push('No valid date: "' + get('date') + '".');
+      if (map.end != null && row.date && get('end')) {
+        var e = cellDate(get('end'));
+        if (e && e.start > row.date) row.date_end = e.start;
+        else if (get('end') && !e) notes.push('Availability date not understood: "' + get('end') + '".');
+      }
       var acTxt = get('aircraft'), ac = findAircraft(acTxt);
       if (ac) row.aircraft = ac.name; else { row.aircraft = acTxt; notes.push('Aircraft not recognised: "' + acTxt + '".'); }
       var sv = get('seats'), sn = /^\d{1,2}$/.test(sv) ? +sv : (findSeats(sv) || {}).n;
@@ -275,19 +284,39 @@
       else notes.push('Seat count not found.');
       var pv = get('price'), pr = /^(n\/?a|-|tba|poa|on request|)$/i.test(pv) ? null : findPrice(pv);
       if (pr && pr.amount) { row.price = pr.amount; row.currency = pr.currency; } else info.push('No price. It will show as On Request.');
+      var dv = get('dur'), dm = /(\d+)\s*h\w*\s*(?:(\d+)\s*m)?/i.exec(dv) || /^(\d+):(\d{2})$/.exec(dv);
+      if (dm) { row.duration_min = +dm[1] * 60 + (+dm[2] || 0); row.duration_est = false; }
+      else if (row.from && row.to && core.estimateMinutes) {
+        var est = core.estimateMinutes({ from: row.from, to: row.to, aircraft: row.aircraft });
+        if (est) { row.duration_min = est; row.duration_est = true; }
+      }
       row.status = (!row.from || !row.to || !row.date || !row.aircraft || !row.seats) ? 'review' : (notes.length ? 'check' : 'ok');
       return row;
     }
+    function rowKey(r) { return [r.from && core.city(r.from), r.to && core.city(r.to), r.date, String(r.aircraft).toLowerCase().replace(/[^a-z0-9]/g, '')].join('|'); }
     function parseTable(rowsOfCells) {
-      var map = null, rows = [], skipped = [];
+      var map = null, everMapped = false, rows = [], skipped = [], seen = {}, merged = 0;
       rowsOfCells.forEach(function (cells) {
         var raw = cells.join(' | ');
-        if (!map) { map = mapHeader(cells); if (!map) skipped.push(raw); return; }
+        var h = mapHeader(cells);
+        if (h) { map = h; everMapped = true; return; }
+        if (!map || cells.length < 3) { skipped.push(raw); return; }
         if (cells.every(function (c) { return !String(c).trim(); })) return;
-        if (mapHeader(cells)) return;
-        rows.push(parseTableRow(cells, map, raw));
+        var row = parseTableRow(cells, map, raw);
+        var k = row.from && row.to && row.date ? rowKey(row) : null;
+        if (k && seen[k]) {
+          var first = seen[k];
+          if (!first.date_end && row.date_end) first.date_end = row.date_end;
+          if (!first.price && row.price) { first.price = row.price; first.currency = row.currency; }
+          if (!first.info) first.info = [];
+          first.info.push('Listed twice in the file. Merged into one.');
+          merged++;
+          return;
+        }
+        if (k) seen[k] = row;
+        rows.push(row);
       });
-      return map ? { rows: rows, skipped: skipped } : null;
+      return everMapped ? { rows: rows, skipped: skipped, merged: merged } : null;
     }
 
     function parse(text) {

@@ -50,8 +50,35 @@
     return d.getUTCFullYear() + '-' + String(d.getUTCMonth() + 1).padStart(2, '0') + '-' + String(d.getUTCDate()).padStart(2, '0');
   }
 
-  function create(airports) {
+  function fmtDuration(min) {
+    if (!min) return '';
+    var h = Math.floor(min / 60), m = min % 60;
+    return h ? h + 'h' + (m ? ' ' + String(m).padStart(2, '0') + 'm' : '') : m + 'm';
+  }
+  function haversine(a, b) {
+    var R = 6371, rad = Math.PI / 180;
+    var dLat = (b[0] - a[0]) * rad, dLon = (b[1] - a[1]) * rad;
+    var x = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(a[0] * rad) * Math.cos(b[0] * rad) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    return 2 * R * Math.asin(Math.sqrt(x));
+  }
+
+  // opts: { geo: {city:[lat,lon]}, aircraft: {models:{name:{category,seats}}, speeds_kmh:{category:kmh}} }
+  function create(airports, opts) {
+    opts = opts || {};
     var api = {};
+
+    // Estimated block time in minutes, rounded to 5. Straight-line distance +4% for routing,
+    // divided by a typical speed for the aircraft class, plus 20 minutes for taxi, climb and descent.
+    api.estimateMinutes = function (f) {
+      var geo = opts.geo || {}, ac = opts.aircraft || {};
+      var a = geo[api.city(f.from)], b = geo[api.city(f.to)];
+      var model = (ac.models || {})[f.aircraft];
+      var speed = model && ac.speeds_kmh ? ac.speeds_kmh[model.category] : null;
+      if (!a || !b || !speed) return null;
+      var hours = haversine(a, b) * 1.04 / speed + 20 / 60;
+      return Math.max(30, Math.round(hours * 12) * 5);
+    };
+    api.duration = function (f) { return f.duration_min || api.estimateMinutes(f); };
 
     api.resolve = function (code) {
       return airports[String(code || '').toUpperCase()] || null;
@@ -146,13 +173,14 @@
         '      <p class="text-gray-500 text-[10px] uppercase tracking-wider">Capacity</p>',
         '      <p class="text-gray-300 text-sm">' + esc(seats) + '</p>',
         '    </div>',
+        (style && style.show_duration && api.duration(f)) ? '    <div>\n      <p class="text-gray-500 text-[10px] uppercase tracking-wider">Est. Flight Time</p>\n      <p class="text-gray-300 text-sm">' + esc(fmtDuration(api.duration(f))) + '</p>\n    </div>' : null,
         '  </div>',
         '  ' + footer.replace(/\n$/, '').split('\n').join('\n  '),
         '    <a href="' + api.quoteUrl(f, style && style.quote_prefix) + '" class="text-[#C8B283] text-xs font-semibold hover:underline">Enquire Now →</a>',
         '  </div>',
         '</div>'
       ];
-      return lines.map(function (l) { return pad + l; }).join('\n');
+      return lines.filter(function (l) { return l !== null; }).map(function (l) { return l.split('\n').map(function (x) { return pad + x; }).join('\n'); }).join('\n');
     };
 
     api.gridHtml = function (list, style, pad) {
@@ -199,5 +227,5 @@
     return api;
   }
 
-  return { create: create, fmtDates: fmtDates, fmtPrice: fmtPrice, longDate: longDate, parseIso: parseIso, todayIso: todayIso, esc: esc, MON: MON };
+  return { create: create, fmtDuration: fmtDuration, fmtDates: fmtDates, fmtPrice: fmtPrice, longDate: longDate, parseIso: parseIso, todayIso: todayIso, esc: esc, MON: MON };
 });

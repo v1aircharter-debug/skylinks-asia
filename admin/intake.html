@@ -32,9 +32,9 @@
   td { padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
   tr:last-child td { border-bottom:0; }
   input[type=text], input[type=number], input[type=date] { width:100%; background:var(--bg); color:var(--text); border:1px solid var(--line); border-radius:3px; padding:5px 6px; font:inherit; min-width:0; }
-  td input.s { width:70px; } td input.c { width:78px; } td input.d { width:132px; } td input.p { width:92px; } td input.ac { width:150px; }
+  td input.s { width:70px; } td input.c { width:78px; } td input.d { width:132px; } td input.p { width:92px; } td input.ac { width:150px; } td input.m { width:70px; }
   .pill { display:inline-block; font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:600; padding:2px 7px; border-radius:3px; border:1px solid; white-space:nowrap; }
-  .ok { color:var(--ok); border-color:var(--ok); } .check { color:var(--warn); border-color:var(--warn); } .review { color:var(--bad); border-color:var(--bad); } .dup { color:var(--muted); border-color:var(--muted); }
+  .ok { color:var(--ok); border-color:var(--ok); } .check { color:var(--warn); border-color:var(--warn); } .review { color:var(--bad); border-color:var(--bad); } .dup { color:var(--muted); border-color:var(--muted); } .hold { color:#9aa7ff; border-color:#9aa7ff; }
   .small { font-size:12px; color:var(--muted); }
   .small b { color:var(--text); font-weight:600; }
   .err { color:var(--bad); font-size:12px; }
@@ -60,8 +60,9 @@
   </div>
 
   <section class="panel">
-    <h2>1. Paste raw data</h2>
-    <p>One flight per line works best. Operator emails and WhatsApp text are fine. Anything not recognised is shown, never dropped quietly.</p>
+    <h2>1. Add raw data</h2>
+    <p>Upload a Word, Excel or CSV listing, or paste text. Tables are read by their column headings. Operator names are ignored. Anything not recognised is shown, never dropped quietly.</p>
+    <div class="row"><label class="small" for="file">Upload a file:</label><input type="file" id="file" accept=".docx,.xlsx,.xls,.csv,.tsv,.txt"><span id="fileMsg" class="small"></span></div>
     <label for="raw" class="hidden">Raw flight text</label>
     <textarea id="raw" placeholder="Dubai to London | 12 Oct 2026 | Global 7500 | 14 pax | USD 61,000&#10;OERK - OEJN 18 Oct Challenger 605 9 pax on request"></textarea>
     <div class="row">
@@ -76,13 +77,16 @@
     <p>Nothing is live yet. Correct any cell. The last column shows every page each flight will appear on.</p>
     <div class="scroll">
       <table>
-        <thead><tr><th>Add</th><th>Status</th><th>From</th><th>To</th><th>Date</th><th>End date</th><th>Aircraft</th><th>Seats</th><th>Price</th><th>Cur.</th><th>Appears on</th></tr></thead>
+        <thead><tr><th>Add</th><th>Status</th><th>From</th><th>To</th><th>Date</th><th>End date</th><th>Aircraft</th><th>Seats</th><th>Est. time (min)</th><th>Price</th><th>Cur.</th><th>Appears on</th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
     </div>
     <div id="summary" class="small"></div>
     <div class="row">
       <label class="small"><input type="checkbox" id="prune" checked> Also remove flights that have already expired</label>
+    </div>
+    <div class="row">
+      <label class="small"><input type="checkbox" id="replace"> Also remove earlier flights that fall inside this listing's dates but are missing from it (they are probably gone)</label>
     </div>
     <div class="row">
       <button id="addBtn" class="primary" type="button">Add to site</button>
@@ -100,14 +104,15 @@
 <script>
 (function () {
   var $ = function (s) { return document.querySelector(s); };
-  var core, parser, airports, pages, current = { updated: null, flights: [] }, rows = [];
+  var core, parser, airports, pages, aircraftTable, current = { updated: null, flights: [] }, rows = [];
   var TODAY = SkylinksCore.todayIso();
 
   function getJson(url) { return fetch(url, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); }); }
 
-  Promise.all([getJson('/data/airports.json'), getJson('/data/pages.json'), getJson('/data/flights.json'), getJson('/data/aircraft.json').catch(function () { return { models: {} }; })]).then(function (v) {
+  Promise.all([getJson('/data/airports.json'), getJson('/data/pages.json'), getJson('/data/flights.json'), getJson('/data/aircraft.json').catch(function () { return { models: {} }; }), getJson('/data/cities.json').catch(function () { return { cities: {} }; })]).then(function (v) {
     airports = v[0]; pages = v[1].pages; current = v[2];
-    core = SkylinksCore.create(airports);
+    aircraftTable = v[3];
+    core = SkylinksCore.create(airports, { geo: v[4].cities, aircraft: v[3] });
     parser = SkylinksParser.create(core, airports, { today: TODAY, flights: current.flights, aircraft: v[3] });
     $('#codes').innerHTML = Object.keys(airports).sort().map(function (k) { return '<option value="' + k + '">' + airports[k].city + '</option>'; }).join('');
     $('#aircraft').innerHTML = parser.aircraft.map(function (a) { return '<option value="' + a + '">'; }).join('');
@@ -157,19 +162,24 @@
     r.dup = !r.errors.length && !!existingKeys()[key(r)];
     r.live = !r.errors.length && core.isLive(r, TODAY);
     r.where = [];
+    r.hold = false;
     if (!r.errors.length && r.live) {
       r.where = core.placements({ id: 0, date: r.date, date_end: r.date_end || null, from: r.from, to: r.to, aircraft: r.aircraft, seats: +r.seats, price: r.price ? +r.price : null }, pages, TODAY);
+      // A flight that only fits the all-regions page has no landing page of its own. It is held back.
+      r.hold = !r.where.some(function (w) { return w.file !== 'empty-legs.html'; });
     }
   }
   function statusOf(r) {
     if (r.errors.length) return ['review', 'Needs input'];
     if (r.dup) return ['dup', 'Already on site'];
     if (!r.live) return ['review', 'Expired'];
+    if (r.hold) return ['hold', 'Held back'];
     return r.notes && r.notes.length ? ['check', 'Check'] : ['ok', 'Ready'];
   }
   function whereHtml(r) {
     if (r.errors.length) return '<span class="err">' + r.errors.join(' ') + '</span>';
     if (!r.live) return 'Date has passed. It would not appear anywhere.';
+    if (r.hold) return 'No landing page covers this route. Held back: it will not appear on any page.';
     if (!r.where.length) return 'No page matches this route yet. It would only be in the data.';
     var byPage = {};
     r.where.forEach(function (w) { (byPage[w.label] = byPage[w.label] || []).push(w.slot); });
@@ -186,6 +196,7 @@
       '<td><input type="date" class="d" data-f="date_end" value="' + (r.date_end || '') + '"></td>' +
       '<td><input type="text" class="ac" list="aircraft" data-f="aircraft" value="' + (r.aircraft || '').replace(/"/g, '&quot;') + '"></td>' +
       '<td><input type="number" class="s" data-f="seats" min="1" value="' + (r.seats || '') + '"><div class="small" data-se>' + (r.seats_est ? 'estimated' : '') + '</div></td>' +
+      '<td><input type="number" class="m" data-f="duration_min" min="10" step="5" value="' + (r.duration_min || '') + '"><div class="small" data-du>' + (r.duration_min ? (r.duration_est ? '~' : '') + SkylinksCore.fmtDuration(r.duration_min) : '') + '</div></td>' +
       '<td><input type="number" class="p" data-f="price" min="0" step="100" placeholder="On request" value="' + (r.price || '') + '"></td>' +
       '<td><input type="text" class="c" data-f="currency" value="' + (r.currency || '') + '"></td>' +
       '<td class="where" data-w>' + whereHtml(r) + '</td></tr>';
@@ -195,7 +206,9 @@
     var pageSet = {};
     use.forEach(function (r) { r.where.forEach(function (w) { pageSet[w.label] = 1; }); });
     var bad = rows.filter(function (r) { return r.use && r.errors.length; }).length;
+    var held = rows.filter(function (r) { return r.hold && !r.dup; }).length;
     $('#summary').innerHTML = '<b>' + use.length + '</b> flight' + (use.length === 1 ? '' : 's') + ' ready to add, touching <b>' + Object.keys(pageSet).length + '</b> pages.' +
+      (held ? ' <b>' + held + '</b> held back (no landing page).' : '') +
       (bad ? ' <span class="err">' + bad + ' ticked row' + (bad === 1 ? ' needs' : 's need') + ' input first.</span>' : '');
     $('#addBtn').disabled = !use.length || bad > 0;
     $('#copyBtn').disabled = !use.length || bad > 0;
@@ -213,14 +226,70 @@
     rows.forEach(function (r) {
       if (r.price == null) { r.price = ''; }
       evaluate(r);
-      r.use = !r.errors.length && !r.dup && r.live;
+      r.use = !r.errors.length && !r.dup && r.live && !r.hold;
     });
     $('#skipped').innerHTML = out.skipped.length
       ? 'Not recognised as flights (' + out.skipped.length + '): <b>' + out.skipped.map(function (s) { return s.replace(/</g, '&lt;'); }).join(' | ') + '</b>'
       : (rows.length ? '' : 'No flights found in that text.');
+    if (out.merged) $('#skipped').innerHTML += (out.skipped.length ? '<br>' : '') + out.merged + ' flight' + (out.merged === 1 ? ' was' : 's were') + ' listed twice in the file and merged into one.';
     $('#result').innerHTML = '';
     renderAll();
   });
+  // ---------- file upload (Word, Excel, CSV) ----------
+  function loadScript(src) {
+    return new Promise(function (ok, no) {
+      var s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = function () { no(new Error('Could not load a helper from ' + src)); };
+      document.head.appendChild(s);
+    });
+  }
+  var W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
+  function docxToText(buf) {
+    return (window.JSZip ? Promise.resolve() : loadScript('https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js')).then(function () {
+      return JSZip.loadAsync(buf);
+    }).then(function (zip) { return zip.file('word/document.xml').async('string'); }).then(function (xml) {
+      var doc = new DOMParser().parseFromString(xml, 'application/xml'), out = [];
+      var textOf = function (el) { return Array.prototype.map.call(el.getElementsByTagNameNS(W, 't'), function (t) { return t.textContent; }).join('').replace(/\s+/g, ' ').trim(); };
+      var body = doc.getElementsByTagNameNS(W, 'body')[0];
+      Array.prototype.forEach.call(body.children, function (el) {
+        if (el.localName === 'p') { var t = textOf(el); if (t) out.push(t); }
+        else if (el.localName === 'tbl') {
+          Array.prototype.forEach.call(el.getElementsByTagNameNS(W, 'tr'), function (tr) {
+            var cells = Array.prototype.filter.call(tr.children, function (c) { return c.localName === 'tc'; }).map(textOf);
+            out.push(cells.join('\t'));
+          });
+        }
+      });
+      return out.join('\n');
+    });
+  }
+  function sheetToText(buf) {
+    return (window.XLSX ? Promise.resolve() : loadScript('https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js')).then(function () {
+      var wb = XLSX.read(buf, { type: 'array', cellDates: true }), out = [];
+      var iso = function (d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+      wb.SheetNames.forEach(function (n) {
+        XLSX.utils.sheet_to_json(wb.Sheets[n], { header: 1, raw: true, defval: '' }).forEach(function (r) {
+          out.push(r.map(function (c) { return c instanceof Date ? iso(c) : String(c).replace(/[\t\r\n]+/g, ' '); }).join('\t'));
+        });
+      });
+      return out.join('\n');
+    });
+  }
+  $('#file').addEventListener('change', function (e) {
+    var file = e.target.files[0]; if (!file) return;
+    var msg = $('#fileMsg'); msg.textContent = 'Reading ' + file.name + '…';
+    var ext = (file.name.split('.').pop() || '').toLowerCase();
+    var fr = new FileReader();
+    fr.onerror = function () { msg.textContent = 'Could not read that file.'; };
+    fr.onload = function () {
+      var job = ext === 'docx' ? docxToText(fr.result) : (ext === 'xlsx' || ext === 'xls') ? sheetToText(fr.result)
+        : Promise.resolve(new TextDecoder().decode(fr.result).replace(/\r/g, '').split('\n').map(function (l) { return ext === 'csv' ? l.replace(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/g, '\t').replace(/"/g, '') : l; }).join('\n'));
+      job.then(function (text) {
+        $('#raw').value = text; msg.textContent = file.name + ' loaded.'; $('#parseBtn').click();
+      }).catch(function (err) { msg.textContent = 'Could not read ' + file.name + '. ' + err.message + ' You can paste the table instead.'; });
+    };
+    fr.readAsArrayBuffer(file);
+  });
+
   $('#clearBtn').addEventListener('click', function () { $('#raw').value = ''; rows = []; $('#skipped').innerHTML = ''; renderAll(); });
 
   $('#rows').addEventListener('input', function (e) {
@@ -235,12 +304,19 @@
     if (f === 'date_end') v = v || null;
     r[f] = v;
     if (f === 'seats') { r.seats_est = false; tr.querySelector('[data-se]').textContent = ''; }
+    if (f === 'duration_min') { v = v ? +v : null; r.duration_min = v; r.duration_est = false; }
+    if (f === 'aircraft' && r.seats_est && aircraftTable.models[v]) { r.seats = aircraftTable.models[v].seats; tr.querySelector('[data-f=seats]').value = r.seats; }
+    if ((f === 'from' || f === 'to' || f === 'aircraft') && r.duration_est !== false && r.from && r.to && core.resolve(r.from) && core.resolve(r.to)) {
+      r.duration_min = core.estimateMinutes({ from: r.from, to: r.to, aircraft: r.aircraft }) || null; r.duration_est = true;
+      tr.querySelector('[data-f=duration_min]').value = r.duration_min || '';
+    }
     if (f === 'price' && v && !r.currency) r.currency = 'USD';
     r.notes = [];
     evaluate(r);
     tr.querySelector('[data-w]').innerHTML = whereHtml(r);
     tr.querySelector('[data-lf]').textContent = r.from && core.resolve(r.from) ? core.city(r.from) : '';
     tr.querySelector('[data-lt]').textContent = r.to && core.resolve(r.to) ? core.city(r.to) : '';
+    tr.querySelector('[data-du]').textContent = r.duration_min ? (r.duration_est ? '~' : '') + SkylinksCore.fmtDuration(r.duration_min) : '';
     var st = statusOf(r);
     tr.querySelector('.pill').className = 'pill ' + st[0];
     tr.querySelector('.pill').textContent = st[1];
@@ -255,6 +331,7 @@
       if (r.date_end) f.date_end = r.date_end;
       f.from = r.from; f.to = r.to; f.aircraft = r.aircraft; f.seats = +r.seats;
       if (r.seats_est) f.seats_est = true;
+      if (r.duration_min) { f.duration_min = +r.duration_min; if (r.duration_est) f.duration_est = true; }
       f.price = r.price ? +r.price : null;
       f.currency = r.price ? (r.currency || 'USD') : null;
       return f;
@@ -263,6 +340,16 @@
   function merged(data) {
     var out = { updated: TODAY, flights: data.flights.slice() };
     if ($('#prune').checked) out.flights = out.flights.filter(function (f) { return core.isLive(f, TODAY); });
+    if ($('#replace').checked) {
+      var inList = {}, lo = null, hi = null;
+      rows.forEach(function (r) {
+        if (r.errors.length) return;
+        inList[key(r)] = true;
+        if (lo === null || r.date < lo) lo = r.date;
+        if (hi === null || r.date > hi) hi = r.date;
+      });
+      if (lo) out.flights = out.flights.filter(function (f) { return f.date < lo || f.date > hi || inList[key(f)]; });
+    }
     out.flights = out.flights.concat(newFlightsFor(data));
     out.flights.forEach(function (f, i) { f.id = i + 1; });
     return out;
