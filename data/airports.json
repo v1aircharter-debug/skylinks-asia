@@ -179,6 +179,10 @@
                 "city":  "Dushanbe",
                 "country":  "Tajikistan"
             },
+    "EDDF":  {
+                 "city":  "Frankfurt",
+                 "country":  "Germany"
+             },
     "EDDL":  {
                  "city":  "Dusseldorf",
                  "country":  "Germany"
@@ -213,6 +217,10 @@
              },
     "EGTK":  {
                  "city":  "Oxford",
+                 "country":  "United Kingdom"
+             },
+    "EGWU":  {
+                 "city":  "London Northolt",
                  "country":  "United Kingdom"
              },
     "EKCH":  {
@@ -1175,6 +1183,10 @@
                 "city":  "Xi\u0027an",
                 "country":  "China"
             },
+    "YBBN":  {
+                 "city":  "Brisbane",
+                 "country":  "Australia"
+             },
     "ZBAA":  {
                  "city":  "Beijing",
                  "country":  "China"

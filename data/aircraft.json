@@ -436,6 +436,10 @@
                    "PREMIER 1A":  {
                                       "category":  "Very light",
                                       "seats":  6
-                                  }
+                                  },
+                   "YAK-40":  {
+                                  "category":  "Light Jet",
+                                  "seats":  32
+                              }
                }
 }
