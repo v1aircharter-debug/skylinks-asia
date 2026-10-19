@@ -85,7 +85,7 @@ Object.keys(pagesCfg).forEach(function (file) {
 
     var body;
     if (list.length) {
-      body = core.gridHtml(list, cfg.style, pad);
+      body = core.gridHtml(list, cfg.style, pad).replace(/fade-in/g, '');
     } else {
       var after = html.slice(b + close.length);
       var m = /^\s*<!--FLIGHTS-EMPTY:([\w-]+)\n([\s\S]*?)\n\s*-->/.exec(after);
