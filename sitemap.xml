@@ -3,7 +3,7 @@
   <!-- CORE PAGES -->
   <url>
     <loc>https://www.skylinks.asia/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,13 +15,13 @@
   </url>
   <url>
     <loc>https://www.skylinks.asia/blog.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/blog-2.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -279,7 +279,7 @@
   </url>
   <url>
     <loc>https://www.skylinks.asia/private-jet-fleet.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -336,6 +336,50 @@
   <url>
     <loc>https://www.skylinks.asia/private-jets/phenom-300.html</loc>
     <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- PRIVATE JETS (SUBFOLDER — MIDSIZE JET FLEET) -->
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/midsize-jets.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/citation-latitude.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/citation-longitude.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/legacy-500.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/hawker-850xp.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/citation-xls.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/learjet-75.html</loc>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -588,12 +632,6 @@
     <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.skylinks.asia/empty-leg-flights-explained.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/remote-airstrips-africa-mining.html</loc>
