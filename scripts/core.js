@@ -1,7 +1,6 @@
 /*
- * Skylinks Asia: shared flight logic.
- * Used by scripts/build.js (Netlify build) and admin/intake.html (browser),
- * so the page rebuild and the staging preview always agree.
+ * Skylinks Asia: shared flight logic. 
+ * 100% ASCII-Safe version (Uses Unicode escapes to prevent ANSI corruption).
  */
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) module.exports = factory();
@@ -12,7 +11,9 @@
   var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var MON_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   var COUNTRY_SHORT = { 'United Kingdom': 'UK', 'United States': 'USA' };
-  var SYMBOL = { USD: '$', EUR: '€', GBP: '£', CNY: '¥', JPY: '¥', INR: '₹' };
+  
+  // ASCII-Safe Symbols (EUR, GBP, CNY, JPY, INR)
+  var SYMBOL = { USD: '$', EUR: '\u20AC', GBP: '\u00A3', CNY: '\u00A5', JPY: '\u00A5', INR: '\u20B9' };
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
@@ -34,10 +35,11 @@
   function fmtDates(f) {
     var a = parseIso(f.date), b = f.date_end ? parseIso(f.date_end) : null;
     if (!a) return f.date;
+    // Using \u2013 for En-Dash
     if (!b) return a.d + ' ' + MON[a.m - 1] + ' ' + a.y;
-    if (a.y === b.y && a.m === b.m) return a.d + '–' + b.d + ' ' + MON[a.m - 1] + ' ' + a.y;
-    if (a.y === b.y) return a.d + ' ' + MON[a.m - 1] + '–' + b.d + ' ' + MON[b.m - 1] + ' ' + a.y;
-    return a.d + ' ' + MON[a.m - 1] + ' ' + a.y + '–' + b.d + ' ' + MON[b.m - 1] + ' ' + b.y;
+    if (a.y === b.y && a.m === b.m) return a.d + '\u2013' + b.d + ' ' + MON[a.m - 1] + ' ' + a.y;
+    if (a.y === b.y) return a.d + ' ' + MON[a.m - 1] + '\u2013' + b.d + ' ' + MON[b.m - 1] + ' ' + a.y;
+    return a.d + ' ' + MON[a.m - 1] + ' ' + a.y + '\u2013' + b.d + ' ' + MON[b.m - 1] + ' ' + b.y;
   }
   function fmtPrice(f) {
     if (!f.price) return 'On Request';
@@ -77,9 +79,7 @@
     };
     api.duration = function (f) { return f.duration_min || api.estimateMinutes(f); };
 
-    api.resolve = function (code) {
-      return airports[String(code || '').toUpperCase()] || null;
-    };
+    api.resolve = function (code) { return airports[String(code || '').toUpperCase()] || null; };
     api.city = function (code) { var a = api.resolve(code); return a ? a.city : String(code); };
     api.country = function (code) { var a = api.resolve(code); return a ? a.country : ''; };
     api.countryShort = function (code) { var c = api.country(code); return COUNTRY_SHORT[c] || c; };
@@ -90,12 +90,10 @@
     };
 
     api.isLive = function (f, today) {
-      // Rule L6: 10-Day Staging Window Guard
       var t = new Date(today);
       var maxDate = new Date(t.getTime());
       maxDate.setDate(maxDate.getDate() + 10);
       var maxIso = maxDate.toISOString().split('T')[0];
-
       if (f.date > maxIso) return false;
       return (f.date_end || f.date) >= today;
     };
@@ -112,9 +110,7 @@
       if (rule.any) return sideMatch(rule.any, f.from) || sideMatch(rule.any, f.to);
       return sideMatch(rule.from, f.from) && sideMatch(rule.to, f.to);
     }
-    api.matches = function (slot, f) {
-      return (slot.rules || [{}]).some(function (r) { return ruleMatch(r, f); });
-    };
+    api.matches = function (slot, f) { return (slot.rules || [{}]).some(function (r) { return ruleMatch(r, f); }); };
     api.slotFlights = function (slot, flights, today) {
       var list = flights.filter(function (f) { return api.isLive(f, today) && api.matches(slot, f); });
       list.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : a.id - b.id; });
@@ -131,11 +127,13 @@
       return out;
     };
 
-    api.route = function (f) { return api.city(f.from) + ' → ' + api.city(f.to); };
+    // ASCII-Safe Arrow (\u2192) and Middle Dot (\u00B7)
+    api.route = function (f) { return api.city(f.from) + ' \u2192 ' + api.city(f.to); };
     api.sub = function (f) {
       var a = api.countryShort(f.from), b = api.countryShort(f.to);
-      return (a === b ? a : a + ' / ' + b) + ' · ' + f.from + ' → ' + f.to;
+      return (a === b ? a : a + ' / ' + b) + ' \u00B7 ' + f.from + ' \u2192 ' + f.to;
     };
+    
     api.quoteUrl = function (f, prefix) {
       var enc = function (s) { return encodeURIComponent(s).replace(/%28/g, '(').replace(/%29/g, ')'); };
       return (prefix || 'private-jet-quote.html') +
@@ -177,7 +175,7 @@
         (style && style.show_duration && api.duration(f)) ? '    <div>\n      <p class="text-gray-500 text-[10px] uppercase tracking-wider">Est. Flight Time</p>\n      <p class="text-gray-300 text-sm">' + esc(fmtDuration(api.duration(f))) + '</p>\n    </div>' : null,
         '  </div>',
         '  ' + footer.replace(/\n$/, '').split('\n').join('\n  '),
-        '    <a href="' + api.quoteUrl(f, style && style.quote_prefix) + '" class="text-[#C8B283] text-xs font-semibold hover:underline">Enquire Now →</a>',
+        '    <a href="' + api.quoteUrl(f, style && style.quote_prefix) + '" class="text-[#C8B283] text-xs font-semibold hover:underline">Enquire Now \u2192</a>',
         '  </div>',
         '</div>'
       ];
@@ -208,9 +206,8 @@
     api.validate = function (flights) {
       var problems = [], seen = {};
       flights.forEach(function (f, i) {
-        var tag = 'Flight ' + (f.id || i + 1) + ' (' + f.from + ' → ' + f.to + ', ' + f.date + ')';
+        var tag = 'Flight ' + (f.id || i + 1) + ' (' + f.from + ' \u2192 ' + f.to + ', ' + f.date + ')';
         
-        // Rule L6: Tel Aviv Guard
         if (f.from === 'TLV' || f.to === 'TLV' || f.from === 'LLBG' || f.to === 'LLBG') {
             problems.push(tag + ': Tel Aviv (TLV/LLBG) is excluded by Rule L6.');
         }
