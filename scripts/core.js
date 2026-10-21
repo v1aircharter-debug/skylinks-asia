@@ -62,13 +62,10 @@
     return 2 * R * Math.asin(Math.sqrt(x));
   }
 
-  // opts: { geo: {city:[lat,lon]}, aircraft: {models:{name:{category,seats}}, speeds_kmh:{category:kmh}} }
   function create(airports, opts) {
     opts = opts || {};
     var api = {};
 
-    // Estimated block time in minutes, rounded to 5. Straight-line distance +4% for routing,
-    // divided by a typical speed for the aircraft class, plus 20 minutes for taxi, climb and descent.
     api.estimateMinutes = function (f) {
       var geo = opts.geo || {}, ac = opts.aircraft || {};
       var a = geo[api.city(f.from)], b = geo[api.city(f.to)];
@@ -93,10 +90,16 @@
     };
 
     api.isLive = function (f, today) {
+      // Rule L6: 10-Day Staging Window Guard
+      var t = new Date(today);
+      var maxDate = new Date(t.getTime());
+      maxDate.setDate(maxDate.getDate() + 10);
+      var maxIso = maxDate.toISOString().split('T')[0];
+
+      if (f.date > maxIso) return false;
       return (f.date_end || f.date) >= today;
     };
 
-    // A side spec is {city:[...], country:[...]}; it matches if either list holds the airport's city or country.
     function sideMatch(spec, code) {
       if (!spec) return true;
       var a = api.resolve(code);
@@ -105,7 +108,6 @@
       if (spec.country && spec.country.indexOf(a.country) > -1) return true;
       return false;
     }
-    // A rule is {from, to} or {any}. Missing side = any airport. {} matches everything.
     function ruleMatch(rule, f) {
       if (rule.any) return sideMatch(rule.any, f.from) || sideMatch(rule.any, f.to);
       return sideMatch(rule.from, f.from) && sideMatch(rule.to, f.to);
@@ -118,7 +120,6 @@
       list.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : a.id - b.id; });
       return slot.limit ? list.slice(0, slot.limit) : list;
     };
-    // Every page slot a flight would appear on (used by the staging preview).
     api.placements = function (f, pages, today) {
       var out = [];
       Object.keys(pages).forEach(function (file) {
@@ -202,14 +203,18 @@
       ].map(function (l) { return pad + l; }).join('\n');
     };
 
-    // Short names used in structured data, e.g. "Tokyo to Singapore - Challenger 850".
     api.listName = function (f) { return api.city(f.from) + ' to ' + api.city(f.to) + ' - ' + f.aircraft; };
 
-    // Returns a list of human-readable problems. An empty list means the data is safe to publish.
     api.validate = function (flights) {
       var problems = [], seen = {};
       flights.forEach(function (f, i) {
         var tag = 'Flight ' + (f.id || i + 1) + ' (' + f.from + ' → ' + f.to + ', ' + f.date + ')';
+        
+        // Rule L6: Tel Aviv Guard
+        if (f.from === 'TLV' || f.to === 'TLV' || f.from === 'LLBG' || f.to === 'LLBG') {
+            problems.push(tag + ': Tel Aviv (TLV/LLBG) is excluded by Rule L6.');
+        }
+
         if (!parseIso(f.date)) problems.push(tag + ': the date is not valid (use YYYY-MM-DD).');
         if (f.date_end && (!parseIso(f.date_end) || f.date_end <= f.date)) problems.push(tag + ': the end date must be after the start date.');
         if (!api.resolve(f.from)) problems.push(tag + ': unknown departure airport "' + f.from + '".');

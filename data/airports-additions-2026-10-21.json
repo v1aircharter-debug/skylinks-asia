@@ -1,0 +1,14 @@
+{
+  "BIKF": { "city": "Reykjavik",       "name": "Keflavik International",         "country": "Iceland" },
+  "EBBR": { "city": "Brussels",        "name": "Brussels Airport",                "country": "Belgium" },
+  "KJFK": { "city": "New York",        "name": "John F. Kennedy International",   "country": "United States" },
+  "LERL": { "city": "Ciudad Real",     "name": "Ciudad Real Central",             "country": "Spain" },
+  "LIMZ": { "city": "Cuneo",           "name": "Cuneo International",             "country": "Italy" },
+  "LROP": { "city": "Bucharest",       "name": "Henri Coanda International",      "country": "Romania" },
+  "OPLA": { "city": "Lahore",          "name": "Allama Iqbal International",      "country": "Pakistan" },
+  "ORER": { "city": "Erbil",           "name": "Erbil International",             "country": "Iraq" },
+  "RJFF": { "city": "Fukuoka",         "name": "Fukuoka Airport",                 "country": "Japan" },
+  "UTSS": { "city": "Samarkand",       "name": "Samarkand International",         "country": "Uzbekistan" },
+  "VMMC": { "city": "Macau",           "name": "Macau International",             "country": "China" },
+  "ZBTJ": { "city": "Tianjin",         "name": "Tianjin Binhai International",    "country": "China" }
+}

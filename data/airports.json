@@ -1222,5 +1222,53 @@
     "ZWWW":  {
                  "city":  "Urumqi",
                  "country":  "China"
+             },
+    "KJFK":  {
+                 "city":  "New York",
+                 "country":  "United States"
+             },
+    "UTSS":  {
+                 "city":  "Samarkand",
+                 "country":  "Uzbekistan"
+             },
+    "ZBTJ":  {
+                 "city":  "Tianjin",
+                 "country":  "China"
+             },
+    "ORER":  {
+                 "city":  "Erbil",
+                 "country":  "Iraq"
+             },
+    "LROP":  {
+                 "city":  "Bucharest",
+                 "country":  "Romania"
+             },
+    "EBBR":  {
+                 "city":  "Brussels",
+                 "country":  "Belgium"
+             },
+    "LERL":  {
+                 "city":  "Ciudad Real",
+                 "country":  "Spain"
+             },
+    "BIKF":  {
+                 "city":  "Reykjavik",
+                 "country":  "Iceland"
+             },
+    "LIMZ":  {
+                 "city":  "Cuneo",
+                 "country":  "Italy"
+             },
+    "OPLA":  {
+                 "city":  "Lahore",
+                 "country":  "Pakistan"
+             },
+    "VMMC":  {
+                 "city":  "Macau",
+                 "country":  "China"
+             },
+    "RJFF":  {
+                 "city":  "Fukuoka",
+                 "country":  "Japan"
              }
 }
