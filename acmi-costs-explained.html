@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACMI Costs Explained: What Airlines Actually Pay for Wet Lease | Skylinks</title>
+  <meta name="description" content="ACMI wet lease rates per flight hour by aircraft type, plus hidden costs, seasonality multipliers, and contract-length pricing. Full 2026 cost breakdown.">
+  <meta name="keywords" content="ACMI cost, ACMI wet lease cost, wet lease rates, aircraft crew maintenance insurance, ACMI pricing, A320 wet lease cost, A330 ACMI, block hour vs flight hour, ACMI contract terms">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.skylinks.asia/acmi-costs-explained.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Islamabad">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ACMI Costs Explained: What Airlines Actually Pay for Wet Lease">
+  <meta property="og:description" content="ACMI wet lease rates per flight hour by aircraft type, plus hidden costs, seasonality multipliers, and contract-length pricing. Full 2026 cost breakdown.">
+  <meta property="og:url" content="https://www.skylinks.asia/acmi-costs-explained.html">
+  <meta property="og:site_name" content="Skylinks Asia Aviation">
+  <meta property="og:image" content="https://www.skylinks.asia/hero-images/acmi-wet-lease.webp">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ACMI Costs Explained: What Airlines Actually Pay for Wet Lease">
+  <meta name="twitter:description" content="ACMI wet lease rates per flight hour by aircraft type, plus hidden costs, seasonality, and contract-length pricing.">
+  <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/acmi-wet-lease.webp">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          navy: { 950:'#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' },
+          teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
+          gold: { 500:'#C8B283', 600:'#B09668', 400:'#D9C89F' }
+        },
+        fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] }
+      }}
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0f1a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
+    html { scroll-behavior: smooth; }
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+    .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .gold-gradient-text { background: linear-gradient(135deg, #D9C89F, #FFFFFF, #C8B283); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
+    .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
+    .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
+    .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
+    .gold-glow { box-shadow: 0 0 20px rgba(200,178,131,0.15); }
+    .aircraft-img, .blog-img { transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+    .group:hover .aircraft-img, .group:hover .blog-img { transform: scale(1.05); }
+    #mobile-menu { transition: transform 0.3s ease-in-out; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }
+    .faq-item.open .faq-answer { max-height: 600px; padding-top: 16px; padding-bottom: 16px; }
+    .faq-item .faq-chevron { transition: transform 0.3s ease; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+    input[type="date"] { color-scheme: dark; }
+    .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "ACMI Costs Explained: What Airlines Actually Pay for Wet Lease",
+        "description": "ACMI wet lease rates per flight hour by aircraft type, plus hidden costs, seasonality multipliers, and contract-length pricing. Full 2026 cost breakdown.",
+        "author": { "@type": "Organization", "name": "Skylinks Asia Aviation" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Skylinks Asia Aviation",
+          "logo": { "@type": "ImageObject", "url": "https://www.skylinks.asia/favicon.svg" }
+        },
+        "datePublished": "2026-10-22",
+        "dateModified": "2026-10-22",
+        "mainEntityOfPage": "https://www.skylinks.asia/acmi-costs-explained.html"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does ACMI stand for — and what does an airline actually pay for?",
+            "acceptedAnswer": { "@type": "Answer", "text": "ACMI stands for Aircraft, Crew, Maintenance, and Insurance. The ACMI rate bundles the aircraft's dry cost, cockpit and cabin crew, maintenance reserves and line support, and hull plus liability insurance into a single per-flight-hour price. It does not cover fuel, ground handling, overflight permits, or airport fees — those sit with the lessee." }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does an ACMI wet lease cost per aircraft type?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Typical 2026 ACMI rates per flight hour, fuel excluded: ATR 72-500/600 $4,500–$7,000; Embraer E190 $6,500–$9,500; A320-200 and 737-800 $8,000–$14,000; A321-200 $10,000–$16,000; A330-200 $15,000–$20,000; A330-300 $17,000–$22,000; 777-200/300 $25,000–$35,000. Rates move 20–50% higher during peak season." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is ACMI priced per block hour or per flight hour?",
+            "acceptedAnswer": { "@type": "Answer", "text": "ACMI is priced per flight hour — wheels up to wheels down — while ad-hoc cargo and passenger charters are usually priced per block hour, which includes taxi time. On short sectors the difference is 10–15 minutes per flight, translating to a 15–20% effective cost difference. Always normalise to the same metric before comparing quotes." }
+          },
+          {
+            "@type": "Question",
+            "name": "What costs are not included in the ACMI rate?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Not covered by the ACMI rate: fuel (typically the largest variable cost — an A320 burns about 2.4 t/hr, an A330 about 5.5 t/hr), airport landing and parking fees, ground handling and catering, overflight permits, crew per diems and hotel (pass-through unless bundled), positioning flights, and insurance deductibles or war-risk top-ups." }
+          },
+          {
+            "@type": "Question",
+            "name": "How does seasonality change ACMI pricing?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Hajj season (Dhul Hijjah, May–June) adds 30–50% to widebody ACMI rates because demand concentrates across multiple regions in the same six-week window. Summer peak (July–August) adds 15–25% on narrowbodies and more on widebodies. Unplanned AOG surges add 20–40% for immediate availability. Booking six to nine months out is the single most effective mitigation." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do ACMI rates vary by region and contract length?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Region: Europe is the highest baseline, the Middle East is competitive on widebody, Asia varies by aircraft class, and Africa carries a premium because fewer ACMI providers exist and positioning distances are longer. Contract length: 1–3 month terms carry a 15–30% premium over 12-month baseline, while 24+ month terms typically earn a 10–20% discount as positioning is amortised." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why route ACMI through a broker instead of going direct?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A broker returns options in 2–4 hours versus 24–48 hours direct, works across 20+ operators rather than one, vets AOC standing and EU/US carrier status, and standardises protective contract clauses. Brokers typically add 3–8% on top of the operator rate. Direct is cheaper if you have existing operator relationships; a broker is usually faster and safer on peak-season or AOG deployments." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-navy-950 text-gray-300 overflow-x-hidden">
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
+    <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+      <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
+          <span>WhatsApp: +92 320 5487700</span>
+        </a>
+        <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
+          <span>charter@skylinks.asia</span>
+        </a>
+      </div>
+    </div>
+    <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+          <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+        </div>
+        <div class="flex flex-col leading-none">
+          <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+          <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+        </div>
+      </a>
+      <ul class="hidden lg:flex items-center space-x-8">
+        <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
+        <li class="relative dropdown">
+          <button class="text-[#C8B283] hover:text-[#D9C89F] transition-colors text-sm flex items-center gap-1">
+            Private Jets
+            <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
+          </button>
+          <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
+            <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
+            <a href="private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Charter
+            </a>
+            <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Empty Leg Flights
+            </a>
+            <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Fleet
+            </a>
+            <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Quote
+            </a>
+            <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+              <a href="empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
+              <a href="empty-legs-asia.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
+      </ul>
+      <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]" aria-label="Open mobile menu">
+        <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
+      <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
+        <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 mobile-link">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
+        <li class="w-full text-center mt-4">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
+          <div class="flex flex-col space-y-4 mt-4">
+            <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+            <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+            <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+            <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
+          </div>
+          <div class="flex flex-col space-y-3 mt-6">
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Regional Empty Legs</span>
+            <a href="empty-legs-middle-east.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Middle East</a>
+            <a href="empty-legs-asia.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Asia</a>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
+    <img src="hero-images/acmi-wet-lease.webp" alt="Widebody aircraft under ACMI wet lease — seasonal capacity deployment" class="absolute inset-0 w-full h-full object-cover hero-img-blur" loading="eager">
+    <div class="absolute inset-0 hero-bg"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-teal-500 transition-colors">Home</a>
+          <span class="mx-2 text-gray-600">/</span>
+          <a href="blog.html" class="hover:text-teal-500 transition-colors">Blog</a>
+          <span class="mx-2 text-gray-600">/</span>
+          <span class="text-gray-300">ACMI Costs Explained</span>
+        </nav>
+        <span class="inline-block text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase mb-4 border border-teal-500/30 px-3 py-1">ACMI &amp; Wet Lease</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl text-white font-display font-bold leading-tight mb-6">ACMI Costs Explained: What Airlines Actually Pay</h1>
+        <div class="flex items-center gap-4 text-sm text-gray-400">
+          <span>Published October 22, 2026</span>
+          <span class="text-gray-600">·</span>
+          <span>10 min read</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <article class="py-16 md:py-20">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+
+        <div class="bg-navy-900 border-l-4 border-teal-500 rounded-r-lg p-6 md:p-8 mb-12">
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-teal-500 mb-3">TL;DR</p>
+          <p class="text-lg text-gray-200 leading-relaxed"><strong>ACMI wet lease pricing is quoted per flight hour — not per block hour — and bundles Aircraft, Crew, Maintenance, and Insurance, but not fuel, ground handling, or overflight permits.</strong> Typical 2026 rates: ATR 72 turboprops $4,500–$7,000 per flight hour; A320-200 and 737-800 $8,000–$14,000 per flight hour; A330-200/300 widebodies $15,000–$22,000 per flight hour; 777 widebodies $25,000–$35,000 per flight hour. Peak seasons — Hajj, summer, AOG surge — push rates 20–50% above baseline. Short-term contracts under 3 months carry a 15–30% premium over 12-month terms.</p>
+        </div>
+
+        <div class="prose prose-lg max-w-none text-gray-300 leading-relaxed">
+          <p class="text-xl text-gray-200 mb-8">Wet-lease pricing is the least transparent corner of commercial aviation. Published rate cards rarely exist, quotes vary by operator on the same route, and the underlying cost structure — what the ACMI rate actually pays for — is often misunderstood by buyers comparing it to a dry lease or an ad-hoc charter. This guide breaks down what an ACMI rate covers, what it does not, and the six variables that move the number 30% in either direction on the same aircraft.</p>
+
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mt-12 mb-4">What does ACMI stand for — and what does an airline actually pay for?</h2>
+          <p class="mb-4"><strong>ACMI stands for Aircraft, Crew, Maintenance, and Insurance — the four cost centres bundled into a single per-flight-hour rate.</strong> Each of the four contributes a materially different share of the total, and understanding that split is what lets a buyer interrogate a quote intelligently.</p>
+          <ul class="list-disc pl-6 mb-6 space-y-2">
+            <li><strong>Aircraft</strong> — the dry-lease equivalent of the airframe and engines, amortised over the contract term. For a narrowbody this typically represents 35–45% of the ACMI rate; for a widebody, 40–50%.</li>
+            <li><strong>Crew</strong> — cockpit and cabin, with the operator maintaining type ratings, recurrent training, and reserve crews. Roughly 20–30% of the rate on a narrowbody.</li>
+            <li><strong>Maintenance</strong> — line maintenance, component support, A-check reserves, and heavy-check provisioning. Typically 20–25% of the rate.</li>
+            <li><strong>Insurance</strong> — hull, third-party liability, passenger liability, and war-risk cover for the operating region. Around 5–10% of the rate, rising sharply for high-risk areas.</li>
+          </ul>
+          <p class="mb-4">That structure is what separates ACMI from a dry lease. A dry lease gives the lessee only the aircraft — the crew, maintenance, and insurance sit with the lessee, who brings them under its own AOC. A dry lease looks cheaper on the headline number, but once crew payroll, maintenance reserves, and insurance premiums are added back, the total cost of a dry lease usually lands within 15% of an ACMI on equivalent utilisation.</p>
+          <p class="mb-6">Where most buyers get burned is assuming the ACMI rate is the whole cost. It is not. See <a href="acmi-wet-lease.html" class="text-teal-500 hover:text-teal-400 underline">our ACMI &amp; wet lease services</a> for the full operational scope — the cost side is only half the picture.</p>
+
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mt-12 mb-4">How much does an ACMI wet lease cost per aircraft type?</h2>
+          <p class="mb-4"><strong>Typical 2026 ACMI rates per flight hour — fuel excluded, direct operator contract, mid-term duration:</strong></p>
+          <div class="overflow-x-auto mb-6">
+            <table class="w-full text-sm border-collapse">
+              <thead>
+                <tr class="bg-navy-900">
+                  <th class="border border-navy-800 px-4 py-3 text-left text-teal-500 font-semibold">Aircraft</th>
+                  <th class="border border-navy-800 px-4 py-3 text-left text-teal-500 font-semibold">Typical ACMI rate</th>
+                  <th class="border border-navy-800 px-4 py-3 text-left text-teal-500 font-semibold">Typical seating</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-navy-800 px-4 py-3">ATR 72-500/600</td>
+                  <td class="border border-navy-800 px-4 py-3">$4,500 – $7,000 / flight hr</td>
+                  <td class="border border-navy-800 px-4 py-3">68–72</td>
+                </tr>
+                <tr class="bg-navy-900/40">
+                  <td class="border border-navy-800 px-4 py-3">Embraer E190</td>
+                  <td class="border border-navy-800 px-4 py-3">$6,500 – $9,500 / flight hr</td>
+                  <td class="border border-navy-800 px-4 py-3">96–100</td>
+                </tr>
+                <tr>
+                  <td class="border border-navy-800 px-4 py-3">Airbus A320-200</td>
+                  <td class="border border-navy-800 px-4 py-3">$8,000 – $14,000 / flight hr</td>
+                  <td class="border border-navy-800 px-4 py-3">180</td>
+                </tr>
+                <tr class="bg-navy-900/40">
+                  <td class="border border-navy-800 px-4 py-3">Boeing 737-800</td>
+                  <td class="border border-navy-800 px-4 py-3">$8,000 – $14,000 / flight hr</td>
+                  <td class="border border-navy-800 px-4 py-3">189</td>
+                </tr>
+                <tr>
+                  <td class="border border-navy-800 px-4 py-3">Airbus A321-200</td>
+                  <td class="border border-navy-800 px-4 py-3">$10,000 – $16,000 / flight hr</td>
+                  <td class="border border-navy-800 px-4 py-3">200–220</td>
+                </tr>
+                <tr class="bg-navy-900/40">
+                  <td class="border border-navy-800 px-4 py-3">Airbus A330-200</td>
+                  <td class="border border-navy-800 px-4 py-3">$15,000 – $20,000 / flight hr</td>
+                  <td class="border border-navy-800 px-4 py-3">260–290</td>
+                </tr>
+                <tr>
+                  <td class="border border-navy-800 px-4 py-3">Airbus A330-300</td>
+                  <td class="border border-navy-800 px-4 py-3">$17,000 – $22,000 / flight hr</td>
+                  <td class="border border-navy-800 px-4 py-3">300–440</td>
+                </tr>
+                <tr class="bg-navy-900/40">
+                  <td class="border border-navy-800 px-4 py-3">Boeing 777-200 / 777-300</td>
+                  <td class="border border-navy-800 px-4 py-3">$25,000 – $35,000 / flight hr</td>
+                  <td class="border border-navy-800 px-4 py-3">300–400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mb-6">These are baseline ranges. A specific quote on a specific route can fall outside them — a fully booked A320 during Hajj season can price at $18,000/hr, while a less-utilised A320 in a soft market can price at $7,500/hr on a 24-month term. For aircraft-specific specifications, see our <a href="aircraft-b737-800.html" class="text-teal-500 hover:text-teal-400 underline">737-800</a> and <a href="aircraft-a320.html" class="text-teal-500 hover:text-teal-400 underline">A320</a> pages.</p>
+
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mt-12 mb-4">Is ACMI priced per block hour or per flight hour?</h2>
+          <p class="mb-4"><strong>ACMI is priced per flight hour — wheels up to wheels down. Ad-hoc charters are usually priced per block hour — engines on to engines off — which includes taxi time.</strong> This distinction is not cosmetic: it is the single most common source of quote confusion.</p>
+          <p class="mb-4">On a typical short-haul sector, taxi-out at origin and taxi-in at destination add 10 to 15 minutes to block time beyond flight time. On a 90-minute flight, that is a 15–20% difference in effective cost per flight hour. If you are comparing a per-flight-hour ACMI quote against a per-block-hour charter quote without normalising, you are comparing two different things.</p>
+          <p class="mb-6">The convention is not universal. Some jurisdictions and some larger operators quote "wet hour" — which in most contracts equals flight hour. A few operators with older contracts still use block hour. Always confirm the metric on the quote — it is a one-line question that avoids a five-figure misunderstanding.</p>
+
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mt-12 mb-4">What costs are not included in the ACMI rate?</h2>
+          <p class="mb-4"><strong>Six cost categories sit outside the ACMI rate and are paid by the lessee:</strong></p>
+          <ul class="list-disc pl-6 mb-6 space-y-2">
+            <li><strong>Fuel</strong> — the largest single variable. An A320 burns roughly 2.4 t/hr; an A330 roughly 5.5 t/hr; a 777 roughly 7.5 t/hr. At $850/t, that is about $2,000/hr for the A320 and about $4,700/hr for the A330 — comparable to or exceeding the ACMI rate itself on narrowbodies.</li>
+            <li><strong>Airport fees</strong> — landing, parking, and air navigation charges, invoiced per movement.</li>
+            <li><strong>Ground handling</strong> — turnaround services, baggage, catering, cleaning, de-icing in winter.</li>
+            <li><strong>Overflight permits</strong> — each country on the routing charges separately, and multi-country corridors accumulate quickly.</li>
+            <li><strong>Crew per diems and hotel</strong> — usually pass-through unless explicitly bundled, and material on long-haul ACMI deployments.</li>
+            <li><strong>Positioning and ferrying</strong> — a one-off ACMI usually absorbs one ferry leg; longer-term contracts rarely do. Short-term wet leases frequently price ferry legs separately.</li>
+          </ul>
+          <p class="mb-6">Two more variables worth watching: <strong>war-risk insurance top-ups</strong> for regions the hull underwriter classes as elevated risk (charged to the lessee in most contracts), and <strong>diversion costs</strong> when an unplanned alternate landing is required. On a 12-month wet lease these are predictable and small; on a single-season deployment they can move the effective rate 5–10%.</p>
+
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mt-12 mb-4">How does seasonality change ACMI pricing?</h2>
+          <p class="mb-4"><strong>Three seasonal multipliers move ACMI pricing, and each is priced differently because the demand is priced differently.</strong></p>
+          <ul class="list-disc pl-6 mb-6 space-y-3">
+            <li><strong>Hajj season (Dhul Hijjah, May–June)</strong> — +30% to +50% on widebody rates. Widebody demand concentrates in the same six-week window across every region, and the available A330 and 777 capacity is finite.</li>
+            <li><strong>Summer peak (July–August)</strong> — +15% to +25% on narrowbodies, more on widebodies. Driven by European and Gulf leisure traffic, plus North American regional demand.</li>
+            <li><strong>AOG surge (unscheduled)</strong> — +20% to +40%. When an operator needs an aircraft within 48–72 hours, they are buying availability, not price.</li>
+          </ul>
+          <p class="mb-6">Booking six to nine months ahead is the single most effective mitigation — it moves the buyer out of the spot market and into the forward schedule, where operators price at committed-utilisation levels rather than peak-demand levels. For a longer view on seasonal capacity, see <a href="acmi-wet-lease-seasonal-demand.html" class="text-teal-500 hover:text-teal-400 underline">How Seasonal Demand Drives ACMI Wet Lease Decisions</a>.</p>
+
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mt-12 mb-4">Why do ACMI rates vary by region and contract length?</h2>
+          <p class="mb-4"><strong>Region determines the operator pool and the positioning cost; contract length determines how much of that cost the operator amortises into the rate.</strong> Both move the number substantially on the same aircraft type.</p>
+          <p class="mb-4">By region, on equivalent aircraft:</p>
+          <ul class="list-disc pl-6 mb-6 space-y-2">
+            <li><strong>Europe</strong> — highest baseline. Mature market, tight regulatory overhead, and the highest crew cost base.</li>
+            <li><strong>Middle East</strong> — competitive on widebody because of large hub carriers with surplus capacity between seasons; narrower margin on narrowbody.</li>
+            <li><strong>Asia</strong> — variable. Cheaper on turboprops and narrowbody; more expensive on widebody, where demand exceeds regional supply.</li>
+            <li><strong>Africa</strong> — highest relative premium. Fewer ACMI providers, longer positioning distances, and permit complexity all add cost.</li>
+          </ul>
+          <p class="mb-6">By contract length, on the same aircraft and route: 1–3 month terms carry a 15–30% premium over baseline; 6–12 month terms typically land at baseline; 24+ month terms earn a 10–20% discount because positioning cost is amortised and utilisation is committed. The pricing curve is steepest at the short end — a 30-day wet lease can cost 40% more per flight hour than the same aircraft on a 24-month term.</p>
+
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mt-12 mb-4">Why route ACMI through a broker instead of going direct?</h2>
+          <p class="mb-4"><strong>A broker returns options in 2–4 hours versus 24–48 hours direct, works across 20+ operators rather than one, and standardises protective contract clauses.</strong> The trade-off is a broker margin — typically 3–8% on top of the operator rate.</p>
+          <p class="mb-4">Four advantages matter most during peak-season or AOG deployments:</p>
+          <ol class="list-decimal pl-6 mb-6 space-y-2">
+            <li><strong>Speed of sourcing.</strong> When three operators are queried in parallel, the fastest viable response is returned within hours rather than the next business day.</li>
+            <li><strong>Compliance vetting.</strong> Brokers pre-verify AOC standing, EU/US carrier status for regulatory access, and insurance limits — the three failure modes that surface late in a direct process.</li>
+            <li><strong>Multi-aircraft capability.</strong> A peak programme requiring four aircraft across three months is substantially easier to close through a broker than through direct negotiation with four operators.</li>
+            <li><strong>Follow-on support.</strong> AOG swaps and mid-contract substitutions are handled inside the broker relationship — the broker has alternates ready because it sourced the original aircraft.</li>
+          </ol>
+          <p class="mb-6">Brokers do not always win on cost. A flag carrier with existing operator relationships and in-house contract capability will often get a better number direct. For first-time buyers, regional operators without procurement teams, or anyone sourcing on a compressed timeline, the broker's 3–8% margin usually saves more than it costs. See <a href="group-corporate.html" class="text-teal-500 hover:text-teal-400 underline">group and corporate charter arrangements</a> for how this plays out on passenger programmes.</p>
+        </div>
+
+        <section class="mt-16 pt-12 border-t border-navy-800">
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mb-8">Frequently Asked Questions</h2>
+          <div class="space-y-4">
+            <div class="faq-item border border-navy-800 rounded-lg overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-4 md:p-5 text-left hover:bg-navy-800/50 transition-colors">
+                <span class="font-semibold text-white pr-4">What does ACMI stand for — and what does an airline actually pay for?</span>
+                <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+              </button>
+              <div class="faq-answer px-4 md:px-5 text-gray-400">
+                <p>ACMI stands for Aircraft, Crew, Maintenance, and Insurance. The ACMI rate bundles the aircraft's dry cost, cockpit and cabin crew, maintenance reserves and line support, and hull plus liability insurance into a single per-flight-hour price. It does not cover fuel, ground handling, overflight permits, or airport fees — those sit with the lessee.</p>
+              </div>
+            </div>
+            <div class="faq-item border border-navy-800 rounded-lg overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-4 md:p-5 text-left hover:bg-navy-800/50 transition-colors">
+                <span class="font-semibold text-white pr-4">How much does an ACMI wet lease cost per aircraft type?</span>
+                <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+              </button>
+              <div class="faq-answer px-4 md:px-5 text-gray-400">
+                <p>Typical 2026 ACMI rates per flight hour, fuel excluded: ATR 72-500/600 $4,500–$7,000; Embraer E190 $6,500–$9,500; A320-200 and 737-800 $8,000–$14,000; A321-200 $10,000–$16,000; A330-200 $15,000–$20,000; A330-300 $17,000–$22,000; 777-200/300 $25,000–$35,000. Rates move 20–50% higher during peak season.</p>
+              </div>
+            </div>
+            <div class="faq-item border border-navy-800 rounded-lg overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-4 md:p-5 text-left hover:bg-navy-800/50 transition-colors">
+                <span class="font-semibold text-white pr-4">Is ACMI priced per block hour or per flight hour?</span>
+                <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+              </button>
+              <div class="faq-answer px-4 md:px-5 text-gray-400">
+                <p>ACMI is priced per flight hour — wheels up to wheels down — while ad-hoc cargo and passenger charters are usually priced per block hour, which includes taxi time. On short sectors the difference is 10–15 minutes per flight, translating to a 15–20% effective cost difference. Always normalise to the same metric before comparing quotes.</p>
+              </div>
+            </div>
+            <div class="faq-item border border-navy-800 rounded-lg overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-4 md:p-5 text-left hover:bg-navy-800/50 transition-colors">
+                <span class="font-semibold text-white pr-4">What costs are not included in the ACMI rate?</span>
+                <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+              </button>
+              <div class="faq-answer px-4 md:px-5 text-gray-400">
+                <p>Not covered by the ACMI rate: fuel (typically the largest variable cost — an A320 burns about 2.4 t/hr, an A330 about 5.5 t/hr), airport landing and parking fees, ground handling and catering, overflight permits, crew per diems and hotel (pass-through unless bundled), positioning flights, and insurance deductibles or war-risk top-ups.</p>
+              </div>
+            </div>
+            <div class="faq-item border border-navy-800 rounded-lg overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-4 md:p-5 text-left hover:bg-navy-800/50 transition-colors">
+                <span class="font-semibold text-white pr-4">How does seasonality change ACMI pricing?</span>
+                <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+              </button>
+              <div class="faq-answer px-4 md:px-5 text-gray-400">
+                <p>Hajj season (Dhul Hijjah, May–June) adds 30–50% to widebody ACMI rates because demand concentrates across multiple regions in the same six-week window. Summer peak (July–August) adds 15–25% on narrowbodies and more on widebodies. Unplanned AOG surges add 20–40% for immediate availability. Booking six to nine months out is the single most effective mitigation.</p>
+              </div>
+            </div>
+            <div class="faq-item border border-navy-800 rounded-lg overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-4 md:p-5 text-left hover:bg-navy-800/50 transition-colors">
+                <span class="font-semibold text-white pr-4">Why do ACMI rates vary by region and contract length?</span>
+                <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+              </button>
+              <div class="faq-answer px-4 md:px-5 text-gray-400">
+                <p>Region: Europe is the highest baseline, the Middle East is competitive on widebody, Asia varies by aircraft class, and Africa carries a premium because fewer ACMI providers exist and positioning distances are longer. Contract length: 1–3 month terms carry a 15–30% premium over 12-month baseline, while 24+ month terms typically earn a 10–20% discount as positioning is amortised.</p>
+              </div>
+            </div>
+            <div class="faq-item border border-navy-800 rounded-lg overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-4 md:p-5 text-left hover:bg-navy-800/50 transition-colors">
+                <span class="font-semibold text-white pr-4">Why route ACMI through a broker instead of going direct?</span>
+                <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
+              </button>
+              <div class="faq-answer px-4 md:px-5 text-gray-400">
+                <p>A broker returns options in 2–4 hours versus 24–48 hours direct, works across 20+ operators rather than one, vets AOC standing and EU/US carrier status, and standardises protective contract clauses. Brokers typically add 3–8% on top of the operator rate. Direct is cheaper if you have existing operator relationships; a broker is usually faster and safer on peak-season or AOG deployments.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-16 bg-navy-900 border border-teal-500/30 rounded-lg p-8 md:p-10 text-center">
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mb-3">Sourcing ACMI capacity?</h2>
+          <p class="text-gray-400 mb-6 max-w-xl mx-auto">Talk to our charter desk for a tailored ACMI quote. Send your aircraft type, route, and contract duration — we will return operator options and a rate comparison within 2 hours during business hours.</p>
+          <a href="contact.html#contact-form" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors">REQUEST AN ACMI QUOTE</a>
+        </section>
+
+        <section class="mt-16">
+          <h2 class="text-2xl md:text-3xl text-white font-display font-bold mb-8">Related Reading</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="acmi-vs-dry-lease.html" class="group block bg-navy-900 border border-navy-800 rounded-lg overflow-hidden card-hover">
+              <div class="aspect-video overflow-hidden bg-navy-800">
+                <img src="hero-images/acmi-wet-lease.webp" alt="ACMI wet lease vs dry lease — comparison of aircraft arrangements" class="w-full h-full object-cover blog-img" loading="lazy">
+              </div>
+              <div class="p-5">
+                <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase">ACMI &amp; Wet Lease</span>
+                <h3 class="text-white font-semibold mt-2 leading-snug">ACMI vs Dry Lease: Which Fits Your Operation?</h3>
+                <span class="text-gold-500 text-sm mt-3 inline-block">Read Article →</span>
+              </div>
+            </a>
+            <a href="acmi-wet-lease-seasonal-demand.html" class="group block bg-navy-900 border border-navy-800 rounded-lg overflow-hidden card-hover">
+              <div class="aspect-video overflow-hidden bg-navy-800">
+                <img src="hero-images/acmi-wet-lease.webp" alt="Seasonal demand and ACMI wet lease decisions" class="w-full h-full object-cover blog-img" loading="lazy">
+              </div>
+              <div class="p-5">
+                <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase">ACMI &amp; Wet Lease</span>
+                <h3 class="text-white font-semibold mt-2 leading-snug">How Seasonal Demand Drives ACMI Wet Lease Decisions</h3>
+                <span class="text-gold-500 text-sm mt-3 inline-block">Read Article →</span>
+              </div>
+            </a>
+            <a href="gaca-approvals-hajj-charter-guide.html" class="group block bg-navy-900 border border-navy-800 rounded-lg overflow-hidden card-hover">
+              <div class="aspect-video overflow-hidden bg-navy-800">
+                <img src="hero-images/hajj-hero.webp" alt="GACA approvals for Hajj charters" class="w-full h-full object-cover blog-img" loading="lazy">
+              </div>
+              <div class="p-5">
+                <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase">Hajj &amp; Umrah</span>
+                <h3 class="text-white font-semibold mt-2 leading-snug">Navigating GACA Approvals for Hajj Charters: A Step-by-Step Guide</h3>
+                <span class="text-gold-500 text-sm mt-3 inline-block">Read Article →</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </article>
+
+  <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
+        <div class="md:col-span-2 lg:col-span-1">
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+              <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+            </div>
+            <div class="flex flex-col leading-none">
+              <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+              <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+            </div>
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger &amp; Pilgrim Charter</a></li>
+            <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo &amp; Freight Charter</a></li>
+            <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+            <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil &amp; Gas Equipment Charter</a></li>
+            <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li>
+            <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma &amp; Cold Chain</a></li>
+            <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
+            <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
+            <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
+            <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
+          </ul>
+          <div class="mt-6">
+            <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><a href="empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+              <li><a href="empty-legs-asia.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+            <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+            <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety &amp; Compliance</a></li>
+            <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+            <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li class="flex items-start gap-3">
+              <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
+              <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+      <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+        <div>
+          <h3 class="font-bold text-lg">Chat with us</h3>
+          <p class="text-xs opacity-90">Typically replies instantly</p>
+        </div>
+        <button id="wa-close" class="text-white hover:text-gray-200 transition-colors" aria-label="Close chat">
+          <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+        </button>
+      </div>
+      <div class="p-4 bg-navy-900">
+        <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+        <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+        <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+          <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+        </a>
+      </div>
+    </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110" aria-label="Open chat">
+    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
+
+<script>
+  // ===== Mobile Menu =====
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let isMenuOpen = false;
+  function closeMenu() {
+    isMenuOpen = false;
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  }
+  menuToggle.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    } else { closeMenu(); }
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => { closeMenu(); });
+  });
+
+  // ===== IntersectionObserver for .fade-in =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // ===== Dynamic Year =====
+  const yearEl = document.getElementById('current-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // ===== WhatsApp Widget =====
+  const waWidget = document.getElementById('wa-widget');
+  const waToggle = document.getElementById('wa-toggle');
+  const waClose = document.getElementById('wa-close');
+  const waMessage = document.getElementById('wa-message');
+  const waSend = document.getElementById('wa-send');
+  if (waToggle) {
+    waToggle.addEventListener('click', () => {
+      waWidget.classList.toggle('hidden');
+      waToggle.classList.toggle('hidden');
+    });
+    waClose.addEventListener('click', () => {
+      waWidget.classList.add('hidden');
+      waToggle.classList.remove('hidden');
+    });
+    waMessage.addEventListener('input', () => {
+      const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
+      waSend.href = 'https://wa.me/923205487700?text=' + msg;
+    });
+  }
+
+  // ===== Query-String Auto-Fill =====
+  (function prefillFromQuery() {
+    const params = new URLSearchParams(window.location.search);
+    const map = {
+      'departure':   'input[name="departure"]',
+      'destination': 'input[name="destination"]',
+      'flightDate':  'input[name="flightDate"]',
+      'aircraft':    'input[name="aircraftPref"]',
+      'pax':         'input[name="paxCount"]'
+    };
+    Object.keys(map).forEach(key => {
+      const val = params.get(key);
+      if (!val) return;
+      const field = document.querySelector(map[key]);
+      if (!field) return;
+      let decoded = decodeURIComponent(val);
+      if (key === 'pax' && !/pax/i.test(decoded)) decoded = decoded + ' Pax';
+      field.value = decoded;
+    });
+  })();
+
+  // ===== FAQ Toggle =====
+  function toggleFaq(button) {
+    const item = button.closest('.faq-item');
+    if (!item) return;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
+
+  // ===== Fleet Filter =====
+  function filterFleet(type) {
+    const cards = document.querySelectorAll('.fleet-card');
+    if (!cards.length) return;
+    const tabs = document.querySelectorAll('.fleet-tab');
+    tabs.forEach(tab => {
+      if (tab.dataset.filter === type) {
+        tab.classList.add('border-teal-500','text-teal-500','bg-teal-500/10');
+        tab.classList.remove('border-white/10','text-gray-400');
+      } else {
+        tab.classList.remove('border-teal-500','text-teal-500','bg-teal-500/10');
+        tab.classList.add('border-white/10','text-gray-400');
+      }
+    });
+    cards.forEach(card => {
+      if (type === 'all' || card.dataset.type === type) {
+        card.style.display = '';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(10px)';
+        requestAnimationFrame(() => {
+          card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        });
+      } else { card.style.display = 'none'; }
+    });
+  }
+</script>
+</body>
+</html>
