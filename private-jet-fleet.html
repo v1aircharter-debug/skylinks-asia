@@ -256,7 +256,7 @@
         <button onclick="filterFleet('all', 'gold')" class="fleet-tab border border-[#C8B283] text-[#C8B283] bg-[#C8B283]/10 text-xs font-semibold tracking-[0.2em] uppercase px-5 py-3 transition-all duration-150" data-filter="all">All Jets</button>
         <button onclick="filterFleet('light', 'gold')" class="fleet-tab border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] text-xs font-semibold tracking-[0.2em] uppercase px-5 py-3 transition-all duration-150" data-filter="light">Light Jets</button>
         <button onclick="filterFleet('midsize', 'gold')" class="fleet-tab border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] text-xs font-semibold tracking-[0.2em] uppercase px-5 py-3 transition-all duration-150" data-filter="midsize">Midsize Jets</button>
-        <button onclick="filterFleet('heavy', 'gold')" class="fleet-tab border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] text-xs font-semibold tracking-[0.2em] uppercase px-5 py-3 transition-all duration-150" data-filter="heavy">Heavy &amp; Ultra-Long Range</button>
+        <button onclick="filterFleet('heavy', 'gold')" class="fleet-tab border border-white/10 text-gray-400 hover:border-[#C8B283]/50 hover:text-[#C8B283] text-xs font-semibold tracking-[0.2em] uppercase px-5 py-3 transition-all duration-150" data-filter="heavy">Heavy Jets</button>
       </div>
 
       <div id="fleetGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -375,7 +375,6 @@
           </div>
         </div>
 
-        <!-- MIDSIZE JETS START -->
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="midsize">
           <div class="relative h-40 overflow-hidden">
             <img src="hero-images/aircraft-citation-longitude.webp" alt="Citation Longitude private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
@@ -489,69 +488,118 @@
             </div>
           </div>
         </div>
-        <!-- MIDSIZE JETS END -->
 
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="heavy">
           <div class="relative h-40 overflow-hidden">
-            <img src="hero-images/heavy-jet.webp" alt="Heavy private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
+            <img src="hero-images/aircraft-challenger-605.webp" alt="Challenger 605 private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-70"></div>
             <span class="absolute top-3 right-3 text-[9px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-navy-950/80 px-2 py-1 backdrop-blur-sm">Heavy Jet</span>
           </div>
           <div class="p-5">
-            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Global 6000</h3>
+            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Challenger 605</h3>
             <div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-white/5">
-              <div><div class="text-sm font-medium text-white">13</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Pax</div></div>
-              <div><div class="text-sm font-medium text-white">6,000 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">12</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Pax</div></div>
+              <div><div class="text-sm font-medium text-white">4,000 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
             </div>
-            <a href="private-jet-quote.html?aircraft=Global%206000" class="mt-5 block text-center bg-[#C8B283]/10 border border-[#C8B283]/30 text-[#C8B283] text-xs font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">REQUEST QUOTE</a>
+            <div class="mt-5 grid grid-cols-2 gap-2">
+              <a href="private-jets/challenger-605.html" class="text-center border border-[#C8B283]/30 text-[#C8B283] text-[10px] font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">VIEW SPECS</a>
+              <a href="private-jet-quote.html?aircraft=Challenger%20605" class="text-center bg-teal-500/10 border border-teal-500/30 text-teal-400 text-[10px] font-semibold tracking-wide py-2.5 hover:bg-teal-500 hover:text-white transition-all duration-150">REQUEST QUOTE</a>
+            </div>
           </div>
         </div>
 
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="heavy">
           <div class="relative h-40 overflow-hidden">
-            <img src="hero-images/heavy-jet.webp" alt="Heavy private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
+            <img src="hero-images/aircraft-challenger-850.webp" alt="Challenger 850 private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-70"></div>
             <span class="absolute top-3 right-3 text-[9px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-navy-950/80 px-2 py-1 backdrop-blur-sm">Heavy Jet</span>
           </div>
           <div class="p-5">
-            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Gulfstream G650ER</h3>
+            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Challenger 850</h3>
             <div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-white/5">
-              <div><div class="text-sm font-medium text-white">19</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Pax</div></div>
-              <div><div class="text-sm font-medium text-white">7,500 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">14</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Pax</div></div>
+              <div><div class="text-sm font-medium text-white">3,400 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
             </div>
-            <a href="private-jet-quote.html?aircraft=Gulfstream%20G650ER" class="mt-5 block text-center bg-[#C8B283]/10 border border-[#C8B283]/30 text-[#C8B283] text-xs font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">REQUEST QUOTE</a>
+            <div class="mt-5 grid grid-cols-2 gap-2">
+              <a href="private-jets/challenger-850.html" class="text-center border border-[#C8B283]/30 text-[#C8B283] text-[10px] font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">VIEW SPECS</a>
+              <a href="private-jet-quote.html?aircraft=Challenger%20850" class="text-center bg-teal-500/10 border border-teal-500/30 text-teal-400 text-[10px] font-semibold tracking-wide py-2.5 hover:bg-teal-500 hover:text-white transition-all duration-150">REQUEST QUOTE</a>
+            </div>
           </div>
         </div>
 
         <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="heavy">
           <div class="relative h-40 overflow-hidden">
-            <img src="hero-images/heavy-jet.webp" alt="Heavy private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
+            <img src="hero-images/aircraft-falcon-7x.webp" alt="Falcon 7X private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-70"></div>
             <span class="absolute top-3 right-3 text-[9px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-navy-950/80 px-2 py-1 backdrop-blur-sm">Heavy Jet</span>
           </div>
           <div class="p-5">
-            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Global 7500</h3>
-            <div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-white/5">
-              <div><div class="text-sm font-medium text-white">19</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Pax</div></div>
-              <div><div class="text-sm font-medium text-white">7,700 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
-            </div>
-            <a href="private-jet-quote.html?aircraft=Global%207500" class="mt-5 block text-center bg-[#C8B283]/10 border border-[#C8B283]/30 text-[#C8B283] text-xs font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">REQUEST QUOTE</a>
-          </div>
-        </div>
-
-        <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="heavy">
-          <div class="relative h-40 overflow-hidden">
-            <img src="hero-images/heavy-jet.webp" alt="Heavy private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-70"></div>
-            <span class="absolute top-3 right-3 text-[9px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-navy-950/80 px-2 py-1 backdrop-blur-sm">Heavy Jet</span>
-          </div>
-          <div class="p-5">
-            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Falcon 8X</h3>
+            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Falcon 7X</h3>
             <div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-white/5">
               <div><div class="text-sm font-medium text-white">16</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Pax</div></div>
-              <div><div class="text-sm font-medium text-white">6,450 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+              <div><div class="text-sm font-medium text-white">5,950 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
             </div>
-            <a href="private-jet-quote.html?aircraft=Falcon%208X" class="mt-5 block text-center bg-[#C8B283]/10 border border-[#C8B283]/30 text-[#C8B283] text-xs font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">REQUEST QUOTE</a>
+            <div class="mt-5 grid grid-cols-2 gap-2">
+              <a href="private-jets/falcon-7x.html" class="text-center border border-[#C8B283]/30 text-[#C8B283] text-[10px] font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">VIEW SPECS</a>
+              <a href="private-jet-quote.html?aircraft=Falcon%207X" class="text-center bg-teal-500/10 border border-teal-500/30 text-teal-400 text-[10px] font-semibold tracking-wide py-2.5 hover:bg-teal-500 hover:text-white transition-all duration-150">REQUEST QUOTE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="heavy">
+          <div class="relative h-40 overflow-hidden">
+            <img src="hero-images/aircraft-falcon-900ex.webp" alt="Falcon 900EX private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-70"></div>
+            <span class="absolute top-3 right-3 text-[9px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-navy-950/80 px-2 py-1 backdrop-blur-sm">Heavy Jet</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Falcon 900EX</h3>
+            <div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">14</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Pax</div></div>
+              <div><div class="text-sm font-medium text-white">4,500 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+            </div>
+            <div class="mt-5 grid grid-cols-2 gap-2">
+              <a href="private-jets/falcon-900ex.html" class="text-center border border-[#C8B283]/30 text-[#C8B283] text-[10px] font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">VIEW SPECS</a>
+              <a href="private-jet-quote.html?aircraft=Falcon%20900EX" class="text-center bg-teal-500/10 border border-teal-500/30 text-teal-400 text-[10px] font-semibold tracking-wide py-2.5 hover:bg-teal-500 hover:text-white transition-all duration-150">REQUEST QUOTE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="heavy">
+          <div class="relative h-40 overflow-hidden">
+            <img src="hero-images/aircraft-gulfstream-g450.webp" alt="Gulfstream G450 private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-70"></div>
+            <span class="absolute top-3 right-3 text-[9px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-navy-950/80 px-2 py-1 backdrop-blur-sm">Heavy Jet</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Gulfstream G450</h3>
+            <div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">16</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Pax</div></div>
+              <div><div class="text-sm font-medium text-white">4,350 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+            </div>
+            <div class="mt-5 grid grid-cols-2 gap-2">
+              <a href="private-jets/gulfstream-g450.html" class="text-center border border-[#C8B283]/30 text-[#C8B283] text-[10px] font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">VIEW SPECS</a>
+              <a href="private-jet-quote.html?aircraft=Gulfstream%20G450" class="text-center bg-teal-500/10 border border-teal-500/30 text-teal-400 text-[10px] font-semibold tracking-wide py-2.5 hover:bg-teal-500 hover:text-white transition-all duration-150">REQUEST QUOTE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card group card-hover border border-navy-700 bg-navy-800 overflow-hidden fade-in" data-type="heavy">
+          <div class="relative h-40 overflow-hidden">
+            <img src="hero-images/aircraft-legacy-600.webp" alt="Legacy 600 private jet" class="w-full h-full object-cover aircraft-img" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-800 to-transparent opacity-70"></div>
+            <span class="absolute top-3 right-3 text-[9px] font-semibold tracking-[0.2em] uppercase text-[#C8B283] bg-navy-950/80 px-2 py-1 backdrop-blur-sm">Heavy Jet</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-display tracking-tight group-hover:text-[#C8B283] transition-colors duration-150 text-white">Legacy 600</h3>
+            <div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-white/5">
+              <div><div class="text-sm font-medium text-white">13</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Pax</div></div>
+              <div><div class="text-sm font-medium text-white">3,400 nm</div><div class="text-[9px] uppercase tracking-wider text-gray-500 mt-0.5">Range</div></div>
+            </div>
+            <div class="mt-5 grid grid-cols-2 gap-2">
+              <a href="private-jets/legacy-600.html" class="text-center border border-[#C8B283]/30 text-[#C8B283] text-[10px] font-semibold tracking-wide py-2.5 hover:bg-[#C8B283] hover:text-black transition-all duration-150">VIEW SPECS</a>
+              <a href="private-jet-quote.html?aircraft=Legacy%20600" class="text-center bg-teal-500/10 border border-teal-500/30 text-teal-400 text-[10px] font-semibold tracking-wide py-2.5 hover:bg-teal-500 hover:text-white transition-all duration-150">REQUEST QUOTE</a>
+            </div>
           </div>
         </div>
 
@@ -845,7 +893,6 @@
     document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
     if (!wasOpen) item.classList.add('open');
   }
-  // ===== Fleet Filter v1.1 — optional color param =====
   function filterFleet(type, color) {
     const cards = document.querySelectorAll('.fleet-card');
     if (!cards.length) return;
