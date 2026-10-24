@@ -55,6 +55,10 @@
                 "city":  "Bukhara",
                 "country":  "Uzbekistan"
             },
+    "BIKF":  {
+                 "city":  "Reykjavik",
+                 "country":  "Iceland"
+             },
     "BJV":  {
                 "city":  "Bodrum",
                 "country":  "Türkiye"
@@ -179,6 +183,10 @@
                 "city":  "Dushanbe",
                 "country":  "Tajikistan"
             },
+    "EBBR":  {
+                 "city":  "Brussels",
+                 "country":  "Belgium"
+             },
     "EDDF":  {
                  "city":  "Frankfurt",
                  "country":  "Germany"
@@ -439,6 +447,10 @@
                 "city":  "Osaka",
                 "country":  "Japan"
             },
+    "KJFK":  {
+                 "city":  "New York",
+                 "country":  "United States"
+             },
     "KMIA":  {
                  "city":  "Miami",
                  "country":  "United States"
@@ -491,6 +503,10 @@
                  "city":  "Palma",
                  "country":  "Spain"
              },
+    "LERL":  {
+                 "city":  "Ciudad Real",
+                 "country":  "Spain"
+             },
     "LFMN":  {
                  "city":  "Nice",
                  "country":  "France"
@@ -529,6 +545,10 @@
              },
     "LIML":  {
                  "city":  "Milan",
+                 "country":  "Italy"
+             },
+    "LIMZ":  {
+                 "city":  "Cuneo",
                  "country":  "Italy"
              },
     "LIN":  {
@@ -585,6 +605,10 @@
             },
     "LRCK":  {
                  "city":  "Constanta",
+                 "country":  "Romania"
+             },
+    "LROP":  {
+                 "city":  "Bucharest",
                  "country":  "Romania"
              },
     "LSGG":  {
@@ -691,6 +715,30 @@
                 "city":  "Maafaru",
                 "country":  "Maldives"
             },
+    "CFU":  {
+                "city":  "Corfu",
+                "country":  "Greece"
+            },
+    "CTS":  {
+                "city":  "Sapporo",
+                "country":  "Japan"
+            },
+    "CXR":  {
+                "city":  "Nha Trang",
+                "country":  "Vietnam"
+            },
+    "ELP":  {
+                "city":  "El Paso",
+                "country":  "United States"
+            },
+    "OGG":  {
+                "city":  "Kahului",
+                "country":  "United States"
+            },
+    "OKA":  {
+                "city":  "Okinawa",
+                "country":  "Japan"
+            },
     "NQZ":  {
                 "city":  "Astana",
                 "country":  "Kazakhstan"
@@ -767,6 +815,14 @@
                  "city":  "Karachi",
                  "country":  "Pakistan"
              },
+    "OPLA":  {
+                 "city":  "Lahore",
+                 "country":  "Pakistan"
+             },
+    "ORER":  {
+                 "city":  "Erbil",
+                 "country":  "Iraq"
+             },
     "OSDI":  {
                  "city":  "Damascus",
                  "country":  "Syria"
@@ -841,6 +897,10 @@
              },
     "RJBB":  {
                  "city":  "Osaka",
+                 "country":  "Japan"
+             },
+    "RJFF":  {
+                 "city":  "Fukuoka",
                  "country":  "Japan"
              },
     "RJGG":  {
@@ -1007,6 +1067,10 @@
                  "city":  "Bukhara",
                  "country":  "Uzbekistan"
              },
+    "UTSS":  {
+                 "city":  "Samarkand",
+                 "country":  "Uzbekistan"
+             },
     "UTTT":  {
                  "city":  "Tashkent",
                  "country":  "Uzbekistan"
@@ -1074,6 +1138,10 @@
     "VLVT":  {
                  "city":  "Vientiane",
                  "country":  "Laos"
+             },
+    "VMMC":  {
+                 "city":  "Macau",
+                 "country":  "China"
              },
     "VNKT":  {
                  "city":  "Kathmandu",
@@ -1195,6 +1263,10 @@
                  "city":  "Beijing",
                  "country":  "China"
              },
+    "ZBTJ":  {
+                 "city":  "Tianjin",
+                 "country":  "China"
+             },
     "ZGGG":  {
                  "city":  "Guangzhou",
                  "country":  "China"
@@ -1222,53 +1294,5 @@
     "ZWWW":  {
                  "city":  "Urumqi",
                  "country":  "China"
-             },
-    "KJFK":  {
-                 "city":  "New York",
-                 "country":  "United States"
-             },
-    "UTSS":  {
-                 "city":  "Samarkand",
-                 "country":  "Uzbekistan"
-             },
-    "ZBTJ":  {
-                 "city":  "Tianjin",
-                 "country":  "China"
-             },
-    "ORER":  {
-                 "city":  "Erbil",
-                 "country":  "Iraq"
-             },
-    "LROP":  {
-                 "city":  "Bucharest",
-                 "country":  "Romania"
-             },
-    "EBBR":  {
-                 "city":  "Brussels",
-                 "country":  "Belgium"
-             },
-    "LERL":  {
-                 "city":  "Ciudad Real",
-                 "country":  "Spain"
-             },
-    "BIKF":  {
-                 "city":  "Reykjavik",
-                 "country":  "Iceland"
-             },
-    "LIMZ":  {
-                 "city":  "Cuneo",
-                 "country":  "Italy"
-             },
-    "OPLA":  {
-                 "city":  "Lahore",
-                 "country":  "Pakistan"
-             },
-    "VMMC":  {
-                 "city":  "Macau",
-                 "country":  "China"
-             },
-    "RJFF":  {
-                 "city":  "Fukuoka",
-                 "country":  "Japan"
              }
 }
