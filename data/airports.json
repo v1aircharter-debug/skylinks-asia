@@ -1291,7 +1291,30 @@
                  "city":  "Shanghai",
                  "country":  "China"
              },
-    "ZWWW":  {
+    "KELP":  {
+                "city":  "El Paso",
+                "country":  "United States"
+            },
+    "LGKR":  {
+                "city":  "Corfu",
+                "country":  "Greece"
+            },
+    "PHOG":  {
+                "city":  "Kahului",
+                "country":  "United States"
+            },
+    "RJCC":  {
+                "city":  "Sapporo",
+                "country":  "Japan"
+            },
+    "ROAH":  {
+                "city":  "Okinawa",
+                "country":  "Japan"
+            },
+    "VVCR":  {
+                "city":  "Nha Trang",
+                "country":  "Vietnam"
+            },    "ZWWW":  {
                  "city":  "Urumqi",
                  "country":  "China"
              }
