@@ -3,7 +3,7 @@
   <!-- CORE PAGES -->
   <url>
     <loc>https://www.skylinks.asia/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,13 +15,13 @@
   </url>
   <url>
     <loc>https://www.skylinks.asia/blog.html</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/blog-2.html</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -384,6 +384,50 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- PRIVATE JETS (SUBFOLDER — HEAVY JET FLEET) -->
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/heavy-jets.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/challenger-605.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/challenger-850.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/falcon-7x.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/falcon-900ex.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/gulfstream-g450.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.skylinks.asia/private-jets/legacy-600.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- AIRCRAFT PAGES -->
   <url>
     <loc>https://www.skylinks.asia/aircraft-a319.html</loc>
@@ -507,6 +551,12 @@
   </url>
 
   <!-- BLOG POSTS -->
+  <url>
+    <loc>https://www.skylinks.asia/iata-dgr-2026-lithium-battery-state-of-charge-guide.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://www.skylinks.asia/gaca-approvals-hajj-charter-guide.html</loc>
     <lastmod>2026-10-22</lastmod>

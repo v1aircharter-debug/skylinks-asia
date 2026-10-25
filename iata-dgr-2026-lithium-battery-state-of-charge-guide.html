@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IATA DGR 2026: Lithium Battery State of Charge Rules for Air Cargo</title>
+  <meta name="description" content="IATA DGR 2026 makes the 30% state of charge limit mandatory for lithium-ion batteries packed with equipment. Here is what changed, which UN numbers are affected, and how shippers comply.">
+  <meta name="keywords" content="IATA DGR 2026 lithium battery, state of charge 30 percent air cargo, UN3480 vs UN3481, cargo aircraft only lithium battery, DGR shipper declaration charter, lithium battery air freight 2026">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.skylinks.asia/iata-dgr-2026-lithium-battery-state-of-charge-guide.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Islamabad">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="IATA DGR 2026: Lithium Battery State of Charge Rules for Air Cargo">
+  <meta property="og:description" content="The 30% state of charge limit is now mandatory for more lithium-ion configurations. Here is the shipper checklist for 2026.">
+  <meta property="og:url" content="https://www.skylinks.asia/iata-dgr-2026-lithium-battery-state-of-charge-guide.html">
+  <meta property="og:site_name" content="Skylinks Asia Aviation">
+  <meta property="og:image" content="https://www.skylinks.asia/hero-images/cargo-hero-images/dangerous-goods-blog.webp">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IATA DGR 2026: Lithium Battery State of Charge Rules for Air Cargo">
+  <meta name="twitter:description" content="The 30% state of charge limit is now mandatory for more lithium-ion configurations. Here is the shipper checklist for 2026.">
+  <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/cargo-hero-images/dangerous-goods-blog.webp">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          navy: { 950:'#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' },
+          teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
+          gold: { 500:'#C8B283', 600:'#B09668', 400:'#D9C89F' }
+        },
+        fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] }
+      }}
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0f1a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
+    html { scroll-behavior: smooth; }
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+    .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .gold-gradient-text { background: linear-gradient(135deg, #D9C89F, #FFFFFF, #C8B283); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
+    .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
+    .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
+    .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
+    .gold-glow { box-shadow: 0 0 20px rgba(200,178,131,0.15); }
+    .aircraft-img, .blog-img { transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+    .group:hover .aircraft-img, .group:hover .blog-img { transform: scale(1.05); }
+    #mobile-menu { transition: transform 0.3s ease-in-out; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }
+    .faq-item.open .faq-answer { max-height: 600px; padding-top: 16px; padding-bottom: 16px; }
+    .faq-item .faq-chevron { transition: transform 0.3s ease; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
+    .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+    input[type="date"] { color-scheme: dark; }
+    .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
+    .tl-dr { background: rgba(15,23,42,0.6); border-left: 3px solid #14b8a6; padding: 1.5rem; margin: 2rem 0; }
+    .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; line-height: 1.3; color: #ffffff; margin-top: 2.5rem; margin-bottom: 1rem; }
+    @media (min-width: 768px) { .article-body h2 { font-size: 1.875rem; } }
+    .article-body p { font-weight: 300; color: #9ca3af; line-height: 1.75; margin-bottom: 1rem; }
+    .article-body ol, .article-body ul { margin: 1rem 0; padding-left: 1.5rem; color: #9ca3af; font-weight: 300; line-height: 1.75; }
+    .article-body ol { list-style: decimal; }
+    .article-body ul { list-style: disc; }
+    .article-body li { margin-bottom: 0.5rem; }
+    .article-body a { color: #14b8a6; text-decoration: underline; text-underline-offset: 3px; }
+    .article-body a:hover { color: #5eead4; }
+    .article-body strong { color: #ffffff; font-weight: 500; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.875rem; }
+    .article-body th { text-align: left; padding: 0.75rem 0.5rem; border-bottom: 1px solid #334155; color: #C8B283; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .article-body td { padding: 0.75rem 0.5rem; border-bottom: 1px solid #1e293b; color: #9ca3af; font-weight: 300; vertical-align: top; }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "IATA DGR 2026: What Changed for Lithium Battery Shippers",
+        "description": "IATA DGR 2026 makes the 30% state of charge limit mandatory for lithium-ion batteries packed with equipment. Here is what changed, which UN numbers are affected, and how shippers comply.",
+        "author": {
+          "@type": "Organization",
+          "name": "Skylinks Asia Aviation"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Skylinks Asia Aviation",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.skylinks.asia/favicon.svg"
+          }
+        },
+        "datePublished": "2026-10-23",
+        "dateModified": "2026-10-23",
+        "mainEntityOfPage": "https://www.skylinks.asia/iata-dgr-2026-lithium-battery-state-of-charge-guide.html"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What changed in IATA DGR 2026 for lithium batteries?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The 30% state of charge limit became mandatory for lithium-ion batteries packed with equipment under PI 966, including Section II shipments above 2.7 Wh. Previously this was recommended, not required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the 30% state of charge rule apply to UN3481?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, if the batteries are packed with equipment under PI 966 and exceed 2.7 Wh. Batteries contained in equipment under PI 967 are not yet mandatory but IATA recommends 30% or less."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can UN3480 lithium-ion batteries fly on passenger aircraft?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. UN3480 standalone lithium-ion batteries are forbidden on passenger aircraft and must move as Cargo Aircraft Only (CAO) with a 30% state of charge limit and specific packaging."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between PI 965, PI 966 and PI 967?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PI 965 covers batteries alone (UN3480), PI 966 covers batteries packed with equipment, and PI 967 covers batteries contained in equipment. Each has different state of charge and packaging rules."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What documents does a DGR air charter require?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Shipper's Declaration for Dangerous Goods (DGD), an air waybill marked Dangerous Goods, a packing list with UN numbers, and UN-certified packaging with correct hazard labels."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is responsible for DGR compliance on a charter flight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The shipper is legally responsible for classification, packaging, marking and the DGD. The operator and broker verify acceptance. A broker should not book a DGR charter without a complete shipper declaration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the penalties for non-compliant DGR shipments?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Civil penalties can exceed $50,000 per violation in the US and EU, and non-compliant cargo can be rejected, offloaded or seized. Repeat violations can affect a shipper's ability to tender cargo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I calculate watt-hours for a lithium battery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Watt-hours equal voltage multiplied by amp-hours. For example, 3.7 V x 2.5 Ah equals 9.25 Wh. The Wh rating determines whether a battery falls under Section I or Section II."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I charter an aircraft for DGR cargo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When scheduled freight cannot accept the commodity, when volume exceeds passenger aircraft limits, when a CAO aircraft is required, or when the shipment is time-critical and requires a dedicated main-deck solution."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Skylinks Asia arrange a DGR charter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Skylinks Asia brokers DGR charter flights through vetted operators. The shipper remains responsible for DGR documentation and packaging; we verify aircraft capability, route approvals and handling."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-navy-950 text-gray-300 overflow-x-hidden">
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
+    <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+      <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
+          <span>WhatsApp: +92 320 5487700</span>
+        </a>
+        <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
+          <span>charter@skylinks.asia</span>
+        </a>
+      </div>
+    </div>
+    <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+          <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+        </div>
+        <div class="flex flex-col leading-none">
+          <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+          <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+        </div>
+      </a>
+      <ul class="hidden lg:flex items-center space-x-8">
+        <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
+        <li class="relative dropdown">
+          <button class="text-[#C8B283] hover:text-[#D9C89F] transition-colors text-sm flex items-center gap-1">
+            Private Jets
+            <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
+          </button>
+          <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
+            <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
+            <a href="private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Charter
+            </a>
+            <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Empty Leg Flights
+            </a>
+            <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Fleet
+            </a>
+            <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Quote
+            </a>
+            <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+              <a href="empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
+              <a href="empty-legs-asia.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
+      </ul>
+      <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]" aria-label="Open mobile menu">
+        <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
+      <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
+        <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 mobile-link">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
+        <li class="w-full text-center mt-4">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
+          <div class="flex flex-col space-y-4 mt-4">
+            <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+            <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+            <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+            <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
+          </div>
+          <div class="flex flex-col space-y-3 mt-6">
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Regional Empty Legs</span>
+            <a href="empty-legs-middle-east.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Middle East</a>
+            <a href="empty-legs-asia.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Asia</a>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative pt-40 pb-16 md:pt-48 md:pb-20 overflow-hidden border-b border-navy-800">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img src="hero-images/cargo-hero-images/dangerous-goods-blog.webp" alt="Dangerous goods cargo charter aircraft loading" width="1920" height="1080" class="w-full h-full object-cover hero-img-blur" fetchpriority="high" />
+      <div class="absolute inset-0 hero-bg"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, #0a0f1a, rgba(10,15,26,0.5), rgba(10,15,26,0.3));"></div>
+    </div>
+    <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="fade-in">
+        <span class="inline-block bg-teal-500/10 border border-teal-500/30 text-teal-500 px-3 py-1 rounded-full text-xs font-semibold mb-6 tracking-wider uppercase">Aviation Insights · Dangerous Goods</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-display font-normal leading-tight tracking-tight fade-in text-white">
+        IATA DGR 2026: What Changed for Lithium Battery Shippers
+      </h1>
+      <p class="text-base md:text-lg font-light leading-relaxed text-gray-300 mt-6 fade-in">
+        The 30% state of charge limit is no longer a recommendation for lithium-ion batteries packed with equipment. From 1 January 2026, it is a condition of carriage. Here is the operational breakdown for shippers, forwarders and charter buyers.
+      </p>
+      <p class="text-xs text-gray-500 mt-6 fade-in">By the Skylinks Asia Charter Desk · Reviewed by our Operations Team · Published October 2026</p>
+    </div>
+  </section>
+
+  <!-- ===== BODY ===== -->
+  <article class="py-16 bg-navy-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 article-body">
+
+      <!-- TL;DR -->
+      <div class="tl-dr fade-in">
+        <p class="text-sm md:text-base !text-gray-200 !mb-0">
+          <strong class="!text-teal-500">TL;DR:</strong> IATA DGR 2026 (67th Edition) extended the mandatory 30% state of charge (SoC) limit to lithium-ion batteries packed with equipment under PI 966, including Section II shipments above 2.7 Wh. Standalone lithium-ion batteries (UN3480) remain Cargo Aircraft Only. Shippers must update packing procedures, train staff and verify the DGD before tendering cargo. Non-compliance penalties can exceed $50,000 per violation.
+        </p>
+      </div>
+
+      <h2>What changed in IATA DGR 2026 for lithium batteries?</h2>
+      <p>The 67th Edition of the IATA Dangerous Goods Regulations, effective 1 January 2026, made the 30% state of charge limit mandatory for lithium-ion batteries packed with equipment under Packing Instruction 966. Previously, this was a recommendation. The change applies to Section I shipments and to Section II shipments where cells or batteries exceed 2.7 Wh. A higher state of charge is only permitted with approval under Special Provision A331 from the State of Origin and the State of Operator.</p>
+      <p>The change is operational, not cosmetic. A battery packed at 50% SoC under the old recommended practice is now non-compliant unless it carries the A331 approval. Consignments prepared under 2025 procedures are already being rejected at acceptance in some markets.</p>
+
+      <h2>What is the 30% state of charge rule and which shipments does it apply to?</h2>
+      <p>State of charge is the remaining energy in a battery as a percentage of its rated capacity. The 30% limit applies to lithium-ion cells and batteries offered for air transport. The table below sets out the 2026 position by packing instruction.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Packing Instruction</th>
+            <th>UN Number</th>
+            <th>Configuration</th>
+            <th>2026 SoC requirement</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PI 965</td>
+            <td>UN3480</td>
+            <td>Batteries alone</td>
+            <td>Mandatory 30% or less; Cargo Aircraft Only</td>
+          </tr>
+          <tr>
+            <td>PI 966</td>
+            <td>UN3481</td>
+            <td>Packed with equipment</td>
+            <td>Mandatory 30% or less (Section I and Section II above 2.7 Wh)</td>
+          </tr>
+          <tr>
+            <td>PI 967</td>
+            <td>UN3481</td>
+            <td>Contained in equipment</td>
+            <td>Not mandatory, but IATA recommends 30% or less</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>The practical effect is that a laptop with an installed battery is treated differently from a spare laptop battery in the same box. The installed battery falls under PI 967. The spare falls under PI 966 and must meet the 30% limit.</p>
+
+      <h2>UN3480 vs UN3481 vs UN3090/3091 — how do shippers classify correctly?</h2>
+      <p>Classification starts with the chemistry and the configuration. Lithium-ion batteries are UN3480 when shipped alone and UN3481 when packed with or contained in equipment. Lithium metal batteries follow the parallel sequence: UN3090 alone, UN3091 with or contained in equipment. Sodium-ion batteries now sit under UN3551 and UN3552.</p>
+      <p>Two classification errors recur in rejected shipments. First, shippers treat a spare battery as part of the device it powers. Second, shippers apply lithium-ion rules to lithium-metal batteries. Both produce a DGD that does not match the package, and acceptance staff are trained to catch the mismatch.</p>
+      <p>Watt-hour calculation is the other gate. Watt-hours equal voltage multiplied by amp-hours. A 3.7 V, 2.5 Ah cell is 9.25 Wh. A 11.1 V, 5 Ah laptop pack is 55.5 Wh. The Wh rating determines whether the shipment falls under Section IA, IB or II, and whether it can move on passenger aircraft at all.</p>
+
+      <h2>When is Cargo Aircraft Only (CAO) mandatory?</h2>
+      <p>Standalone lithium-ion batteries (UN3480) and standalone lithium-metal batteries (UN3090) are forbidden on passenger aircraft. They move as Cargo Aircraft Only. The package must carry the CAO label, and the air waybill must reflect the restriction.</p>
+      <p>For batteries packed with equipment, the CAO requirement depends on the Wh rating and the section. Section IA and IB shipments of UN3481 are generally CAO. Section II shipments may move on passenger aircraft within quantity limits, provided the 30% SoC limit is met where applicable.</p>
+      <p>The distinction matters for charter planning. A passenger-configured freighter or a combi aircraft cannot carry CAO-only cargo in the passenger cabin. The charter must be a dedicated freighter or a passenger aircraft with the cargo in a certified main-deck or lower-deck hold, and the operator must hold the correct dangerous goods approval.</p>
+
+      <h2>What documents does a DGR charter shipment require?</h2>
+      <p>Every DGR air shipment requires three layers of communication: marking on the package, hazard labels, and documentation. For a charter, the documentation pack typically includes:</p>
+      <ul>
+        <li><strong>Shipper's Declaration for Dangerous Goods (DGD):</strong> the IATA form certifying classification, packing, quantity and compliance. It must be signed by trained personnel.</li>
+        <li><strong>Air waybill:</strong> marked with the Dangerous Goods notation and the CAO status where applicable.</li>
+        <li><strong>Packing list:</strong> showing UN numbers, proper shipping names, net quantity and package count.</li>
+        <li><strong>UN-certified packaging:</strong> bearing the UN specification mark, with the correct hazard diamond and lithium battery handling label.</li>
+        <li><strong>Supporting approvals:</strong> A331 approval if the state of charge exceeds 30%, or any state-of-origin or state-of-operator exemption.</li>
+      </ul>
+      <p>For a charter, the broker should receive the DGD before the aircraft is committed. A DGD that arrives after the aircraft is on the ground is a commercial risk, not just a compliance risk. The operator may refuse the cargo, and the charterer still owes the ferry and standby costs.</p>
+
+      <h2>How does a charter broker vet a DGR shipment before booking?</h2>
+      <p>A broker does not replace the shipper's legal responsibility, but a broker that understands DGR prevents expensive mistakes. The vetting sequence is straightforward. First, confirm the UN number and packing instruction from the shipper's DGD. Second, confirm the aircraft type and operator hold the correct dangerous goods approval for the commodity and the configuration. Third, confirm the route states accept the commodity and the CAO status. Fourth, confirm the ground handler at origin and destination can receive and store DGR cargo.</p>
+      <p>The common failure is a broker who books a passenger aircraft for a shipment that requires CAO, or a freighter that cannot physically take the package dimensions. Both are avoidable with a DGD review before the charter is confirmed.</p>
+      <p>Skylinks Asia brokers <a href="dangerous-goods.html">DGR cargo charters</a> through vetted operators. The shipper remains responsible for classification, packaging and the DGD. We verify aircraft capability, route approvals and handling. If the DGD is incomplete, we stop the booking.</p>
+
+      <h2>What are the penalties for non-compliance?</h2>
+      <p>Civil penalties for DGR violations can exceed $50,000 per violation in the United States and the European Union. Beyond fines, non-compliant cargo can be rejected, offloaded or seized. Repeated violations can affect a shipper's ability to tender cargo with certain carriers. In a charter context, a rejected shipment can also trigger aircraft standby charges, crew duty limits and re-planning costs that dwarf the original freight rate.</p>
+      <p>The compliance burden is not hypothetical. IATA estimates that more than 1.25 million dangerous goods shipments move by air annually, and lithium batteries are the fastest-growing category. Regulators have responded by tightening the rules every year since 2016.</p>
+
+      <!-- ===== FAQ ACCORDION ===== -->
+      <div class="mt-16 pt-12 border-t border-navy-800">
+        <h2 class="!mt-0">Frequently Asked Questions</h2>
+        <div class="space-y-3 mt-8">
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">What changed in IATA DGR 2026 for lithium batteries?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">The 30% state of charge limit became mandatory for lithium-ion batteries packed with equipment under PI 966, including Section II shipments above 2.7 Wh. Previously this was recommended, not required.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">Does the 30% state of charge rule apply to UN3481?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">Yes, if the batteries are packed with equipment under PI 966 and exceed 2.7 Wh. Batteries contained in equipment under PI 967 are not yet mandatory but IATA recommends 30% or less.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">Can UN3480 lithium-ion batteries fly on passenger aircraft?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">No. UN3480 standalone lithium-ion batteries are forbidden on passenger aircraft and must move as Cargo Aircraft Only (CAO) with a 30% state of charge limit and specific packaging.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">What is the difference between PI 965, PI 966 and PI 967?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">PI 965 covers batteries alone (UN3480), PI 966 covers batteries packed with equipment, and PI 967 covers batteries contained in equipment. Each has different state of charge and packaging rules.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">What documents does a DGR air charter require?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">A Shipper's Declaration for Dangerous Goods (DGD), an air waybill marked Dangerous Goods, a packing list with UN numbers, and UN-certified packaging with correct hazard labels.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">Who is responsible for DGR compliance on a charter flight?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">The shipper is legally responsible for classification, packaging, marking and the DGD. The operator and broker verify acceptance. A broker should not book a DGR charter without a complete shipper declaration.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">What are the penalties for non-compliant DGR shipments?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">Civil penalties can exceed $50,000 per violation in the US and EU, and non-compliant cargo can be rejected, offloaded or seized. Repeat violations can affect a shipper's ability to tender cargo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">How do I calculate watt-hours for a lithium battery?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">Watt-hours equal voltage multiplied by amp-hours. For example, 3.7 V x 2.5 Ah equals 9.25 Wh. The Wh rating determines whether a battery falls under Section I or Section II.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">When should I charter an aircraft for DGR cargo?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">When scheduled freight cannot accept the commodity, when volume exceeds passenger aircraft limits, when a CAO aircraft is required, or when the shipment is time-critical and requires a dedicated main-deck solution.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-navy-900 rounded-lg border border-navy-800">
+            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center gap-4 px-6 py-5 text-left cursor-pointer group">
+              <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#C8B283] transition-colors pr-4">Can Skylinks Asia arrange a DGR charter?</h3>
+              <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-[#C8B283] text-xl flex-shrink-0"></iconify-icon>
+            </button>
+            <div class="faq-answer px-6">
+              <p class="text-sm font-light text-gray-400 leading-relaxed">Skylinks Asia brokers DGR charter flights through vetted operators. The shipper remains responsible for DGR documentation and packaging; we verify aircraft capability, route approvals and handling.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===== CONTINUE READING ===== -->
+  <section class="py-24 bg-navy-900 border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 fade-in">
+        <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]">Continue Reading</span>
+        <h2 class="text-3xl md:text-4xl font-display tracking-tight mt-4 text-white">Related Articles</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <a href="shipping-lithium-batteries-air.html" class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in block">
+          <iconify-icon icon="lucide:battery-charging" class="text-[#C8B283] text-2xl mb-5"></iconify-icon>
+          <h3 class="text-xl font-display tracking-tight text-white">Shipping Lithium Batteries by Air</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-3">UN numbers, packing instructions, and state of charge requirements for lithium battery air freight — from Section IA through Section II.</p>
+          <span class="inline-flex items-center gap-2 text-[#C8B283] text-xs font-semibold tracking-wide mt-6">READ ARTICLE <iconify-icon icon="lucide:arrow-right"></iconify-icon></span>
+        </a>
+        <a href="dangerous-goods-cao-charter.html" class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in block">
+          <iconify-icon icon="lucide:plane-takeoff" class="text-[#C8B283] text-2xl mb-5"></iconify-icon>
+          <h3 class="text-xl font-display tracking-tight text-white">Cargo Aircraft Only (CAO) Charters</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-3">When scheduled freight cannot take the shipment, and when a dedicated freighter is the right answer for CAO-only cargo.</p>
+          <span class="inline-flex items-center gap-2 text-[#C8B283] text-xs font-semibold tracking-wide mt-6">READ ARTICLE <iconify-icon icon="lucide:arrow-right"></iconify-icon></span>
+        </a>
+        <a href="dangerous-goods-cargo-pakistan.html" class="card-hover border border-navy-700 bg-navy-800 p-8 fade-in block">
+          <iconify-icon icon="lucide:flask-conical" class="text-[#C8B283] text-2xl mb-5"></iconify-icon>
+          <h3 class="text-xl font-display tracking-tight text-white">DGR Cargo To and From Pakistan</h3>
+          <p class="text-sm font-light text-gray-400 leading-relaxed mt-3">How dangerous goods compliance works on the Pakistan lane — regulatory context, operator qualification, and IOSA as a filter for cargo carriers.</p>
+          <span class="inline-flex items-center gap-2 text-[#C8B283] text-xs font-semibold tracking-wide mt-6">READ ARTICLE <iconify-icon icon="lucide:arrow-right"></iconify-icon></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="py-24 bg-navy-950 border-t border-navy-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+      <div class="w-16 h-16 border border-[#C8B283]/40 rounded-full flex items-center justify-center mx-auto mb-8">
+        <iconify-icon icon="lucide:message-circle" class="text-[#C8B283] text-2xl"></iconify-icon>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-display tracking-tight text-white">Talk to Our Charter Desk</h2>
+      <p class="text-sm md:text-base font-light text-gray-400 leading-relaxed mt-4 max-w-xl mx-auto">
+        Skylinks Asia brokers DGR charters through vetted operators. The shipper remains responsible for classification, packaging and the DGD; we verify aircraft capability, route approvals and handling. If the DGD is incomplete, we stop the booking.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+        <a href="contact.html#contact-form" class="bg-teal-500 text-white text-sm font-semibold tracking-wide px-8 py-4 hover:bg-teal-600 transition-all duration-150 teal-glow w-full sm:w-auto text-center">
+          REQUEST A DGR QUOTE
+        </a>
+        <a href="dangerous-goods.html" class="border border-[#C8B283] text-[#C8B283] text-sm font-semibold tracking-wide px-8 py-4 hover:bg-[#C8B283] hover:text-black transition-all duration-150 w-full sm:w-auto text-center">
+          DGR SERVICES
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
+        <div class="md:col-span-2 lg:col-span-1">
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+              <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+            </div>
+            <div class="flex flex-col leading-none">
+              <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+              <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+            </div>
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger &amp; Pilgrim Charter</a></li>
+            <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo &amp; Freight Charter</a></li>
+            <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+            <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil &amp; Gas Equipment Charter</a></li>
+            <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li>
+            <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma &amp; Cold Chain</a></li>
+            <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
+            <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
+            <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
+            <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
+          </ul>
+          <div class="mt-6">
+            <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><a href="empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+              <li><a href="empty-legs-asia.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+            <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+            <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety &amp; Compliance</a></li>
+            <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+            <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li class="flex items-start gap-3">
+              <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
+              <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+      <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+        <div>
+          <h3 class="font-bold text-lg">Chat with us</h3>
+          <p class="text-xs opacity-90">Typically replies instantly</p>
+        </div>
+        <button id="wa-close" class="text-white hover:text-gray-200 transition-colors" aria-label="Close chat">
+          <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+        </button>
+      </div>
+      <div class="p-4 bg-navy-900">
+        <p class="text-gray-400 text-sm mb-4">Hello! 👋 How can we help you with your charter requirements today?</p>
+        <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+        <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+          <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+        </a>
+      </div>
+    </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110" aria-label="Open chat">
+    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
+
+<script>
+  // ===== Mobile Menu =====
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let isMenuOpen = false;
+  function closeMenu() {
+    isMenuOpen = false;
+    mobileMenu.classList.add('translate-x-full');
+    mobileMenu.classList.remove('translate-x-0');
+    document.body.style.overflow = '';
+  }
+  menuToggle.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    } else { closeMenu(); }
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => { closeMenu(); });
+  });
+
+  // ===== IntersectionObserver for .fade-in =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // ===== Dynamic Year =====
+  const yearEl = document.getElementById('current-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // ===== WhatsApp Widget =====
+  const waWidget = document.getElementById('wa-widget');
+  const waToggle = document.getElementById('wa-toggle');
+  const waClose = document.getElementById('wa-close');
+  const waMessage = document.getElementById('wa-message');
+  const waSend = document.getElementById('wa-send');
+  if (waToggle) {
+    waToggle.addEventListener('click', () => {
+      waWidget.classList.toggle('hidden');
+      waToggle.classList.toggle('hidden');
+    });
+    waClose.addEventListener('click', () => {
+      waWidget.classList.add('hidden');
+      waToggle.classList.remove('hidden');
+    });
+    waMessage.addEventListener('input', () => {
+      const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
+      waSend.href = 'https://wa.me/923205487700?text=' + msg;
+    });
+  }
+
+  // ===== Query-String Auto-Fill =====
+  (function prefillFromQuery() {
+    const params = new URLSearchParams(window.location.search);
+    const map = {
+      'departure':   'input[name="departure"]',
+      'destination': 'input[name="destination"]',
+      'flightDate':  'input[name="flightDate"]',
+      'aircraft':    'input[name="aircraftPref"]',
+      'pax':         'input[name="paxCount"]'
+    };
+    Object.keys(map).forEach(key => {
+      const val = params.get(key);
+      if (!val) return;
+      const field = document.querySelector(map[key]);
+      if (!field) return;
+      let decoded = decodeURIComponent(val);
+      if (key === 'pax' && !/pax/i.test(decoded)) decoded = decoded + ' Pax';
+      field.value = decoded;
+    });
+  })();
+
+  // ===== FAQ Toggle =====
+  function toggleFaq(button) {
+    const item = button.closest('.faq-item');
+    if (!item) return;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
+
+  // ===== Fleet Filter =====
+  function filterFleet(type, color) {
+    const cards = document.querySelectorAll('.fleet-card');
+    if (!cards.length) return;
+    const accent = (color === 'gold') ? 'gold' : 'teal';
+    const accentClasses = [
+      'border-teal-500', 'text-teal-500', 'bg-teal-500/10',
+      'border-gold-500', 'text-gold-500', 'bg-gold-500/10',
+      'border-[#C8B283]', 'text-[#C8B283]', 'bg-[#C8B283]/10'
+    ];
+    const tabs = document.querySelectorAll('.fleet-tab');
+    tabs.forEach(tab => {
+      accentClasses.forEach(c => tab.classList.remove(c));
+      if (tab.dataset.filter === type) {
+        tab.classList.add('border-' + accent + '-500', 'text-' + accent + '-500', 'bg-' + accent + '-500/10');
+        tab.classList.remove('border-white/10', 'text-gray-400');
+      } else {
+        tab.classList.add('border-white/10', 'text-gray-400');
+      }
+    });
+    cards.forEach(card => {
+      if (type === 'all' || card.dataset.type === type) {
+        card.style.display = '';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(10px)';
+        requestAnimationFrame(() => {
+          card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        });
+      } else { card.style.display = 'none'; }
+    });
+  }
+</script>
+</body>
+</html>
