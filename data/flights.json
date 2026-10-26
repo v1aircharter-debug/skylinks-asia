@@ -1,116 +1,6 @@
 {
-    "updated":  "2026-10-24",
+    "updated":  "2026-10-26",
     "flights":  [
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "OTHH",
-                        "to":  "OMDB",
-                        "aircraft":  "Gulfstream G700",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "LTFM",
-                        "to":  "OMDB",
-                        "aircraft":  "Gulfstream GIV-SP",
-                        "seats":  14,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "VIDP",
-                        "to":  "OMAA",
-                        "aircraft":  "Legacy 650",
-                        "seats":  13,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "OMDB",
-                        "to":  "LTFM",
-                        "aircraft":  "Global 5000",
-                        "seats":  13,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "OLBA",
-                        "to":  "HTKJ",
-                        "aircraft":  "Legacy 500",
-                        "seats":  12,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "LTAI",
-                        "to":  "OKBK",
-                        "aircraft":  "Legacy 650",
-                        "seats":  13,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "OMDB",
-                        "to":  "NMF",
-                        "aircraft":  "Global 8000",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "RKSI",
-                        "to":  "OMDB",
-                        "aircraft":  "Airbus ACJ A319 Neo",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "VHHH",
-                        "to":  "ROAH",
-                        "aircraft":  "Global 8000",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "WSSS",
-                        "to":  "RJBB",
-                        "aircraft":  "Global 6000",
-                        "seats":  13,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-25",
-                        "from":  "RJCC",
-                        "to":  "PHOG",
-                        "aircraft":  "Gulfstream G650ER",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
                     {
                         "date":  "2026-10-26",
                         "from":  "ORER",
@@ -163,30 +53,10 @@
                     },
                     {
                         "date":  "2026-10-26",
-                        "from":  "FIMP",
-                        "to":  "OTHH",
-                        "aircraft":  "Gulfstream G700",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-26",
                         "from":  "OMDB",
-                        "to":  "NMF",
+                        "to":  "VRDA",
                         "aircraft":  "Global 8000",
                         "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-26",
-                        "from":  "EKSB",
-                        "to":  "OMAA",
-                        "aircraft":  "Falcon 8X",
-                        "seats":  14,
                         "seats_est":  true,
                         "price":  null,
                         "currency":  null
@@ -197,16 +67,6 @@
                         "to":  "LGAV",
                         "aircraft":  "Global 6000",
                         "seats":  13,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-26",
-                        "from":  "KPVD",
-                        "to":  "OJAI",
-                        "aircraft":  "Gulfstream G550",
-                        "seats":  16,
                         "seats_est":  true,
                         "price":  null,
                         "currency":  null
@@ -263,16 +123,6 @@
                     },
                     {
                         "date":  "2026-10-26",
-                        "from":  "EDDM",
-                        "to":  "LTAI",
-                        "aircraft":  "Gulfstream G650ER",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-26",
                         "from":  "RJAA",
                         "to":  "KELP",
                         "aircraft":  "Gulfstream G650ER",
@@ -293,16 +143,6 @@
                     },
                     {
                         "date":  "2026-10-26",
-                        "from":  "VHHH",
-                        "to":  "ZBAA",
-                        "aircraft":  "Global 8000",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-26",
                         "from":  "WSSS",
                         "to":  "VHHH",
                         "aircraft":  "Gulfstream G650ER",
@@ -313,16 +153,6 @@
                     },
                     {
                         "date":  "2026-10-27",
-                        "from":  "VRMM",
-                        "to":  "OMDB",
-                        "aircraft":  "Challenger 650",
-                        "seats":  11,
-                        "seats_est":  true,
-                        "price":  22000,
-                        "currency":  "USD"
-                    },
-                    {
-                        "date":  "2026-10-27",
                         "from":  "OMDB",
                         "to":  "OEJN",
                         "aircraft":  "Challenger 604",
@@ -330,6 +160,16 @@
                         "seats_est":  true,
                         "price":  22144,
                         "currency":  "USD"
+                    },
+                    {
+                        "date":  "2026-10-27",
+                        "from":  "OJAQ",
+                        "to":  "OJAI",
+                        "aircraft":  "Legacy 600",
+                        "seats":  12,
+                        "seats_est":  true,
+                        "price":  null,
+                        "currency":  null
                     },
                     {
                         "date":  "2026-10-27",
@@ -373,33 +213,13 @@
                     },
                     {
                         "date":  "2026-10-27",
-                        "from":  "LCLK",
+                        "from":  "VRMM",
                         "to":  "OMDB",
-                        "aircraft":  "Hawker 800XP",
-                        "seats":  8,
+                        "aircraft":  "Challenger 650",
+                        "seats":  11,
                         "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-27",
-                        "from":  "EPWA",
-                        "to":  "UGTB",
-                        "aircraft":  "Gulfstream G650ER",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-27",
-                        "from":  "VTBS",
-                        "to":  "EKSB",
-                        "aircraft":  "Falcon 7X",
-                        "seats":  12,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
+                        "price":  22000,
+                        "currency":  "USD"
                     },
                     {
                         "date":  "2026-10-27",
@@ -407,6 +227,16 @@
                         "to":  "VABB",
                         "aircraft":  "Challenger 605",
                         "seats":  10,
+                        "seats_est":  true,
+                        "price":  null,
+                        "currency":  null
+                    },
+                    {
+                        "date":  "2026-10-27",
+                        "from":  "RJAA",
+                        "to":  "RKSI",
+                        "aircraft":  "Gulfstream G650ER",
+                        "seats":  19,
                         "seats_est":  true,
                         "price":  null,
                         "currency":  null
@@ -423,10 +253,10 @@
                     },
                     {
                         "date":  "2026-10-27",
-                        "from":  "RJAA",
-                        "to":  "RKSI",
-                        "aircraft":  "Gulfstream G650ER",
-                        "seats":  19,
+                        "from":  "VTBS",
+                        "to":  "EKSB",
+                        "aircraft":  "Falcon 7X",
+                        "seats":  12,
                         "seats_est":  true,
                         "price":  null,
                         "currency":  null
@@ -453,20 +283,10 @@
                     },
                     {
                         "date":  "2026-10-28",
-                        "from":  "HECA",
-                        "to":  "OMDB",
-                        "aircraft":  "Boeing BBJ",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  61325,
-                        "currency":  "USD"
-                    },
-                    {
-                        "date":  "2026-10-28",
-                        "from":  "KMIA",
-                        "to":  "LTFM",
-                        "aircraft":  "Falcon 6X",
-                        "seats":  16,
+                        "from":  "OJAI",
+                        "to":  "OJAQ",
+                        "aircraft":  "Legacy 600",
+                        "seats":  12,
                         "seats_est":  true,
                         "price":  null,
                         "currency":  null
@@ -487,16 +307,6 @@
                         "to":  "OTHH",
                         "aircraft":  "Challenger 350",
                         "seats":  9,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-28",
-                        "from":  "FNLU",
-                        "to":  "OTHH",
-                        "aircraft":  "Global 7500",
-                        "seats":  19,
                         "seats_est":  true,
                         "price":  null,
                         "currency":  null
@@ -563,16 +373,6 @@
                     },
                     {
                         "date":  "2026-10-29",
-                        "from":  "WSSS",
-                        "to":  "OMDB",
-                        "aircraft":  "Global 8000",
-                        "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-29",
                         "from":  "OLBA",
                         "to":  "LIMC",
                         "aircraft":  "Legacy 500",
@@ -602,6 +402,26 @@
                         "currency":  null
                     },
                     {
+                        "date":  "2026-10-29",
+                        "from":  "ZBTJ",
+                        "to":  "VTSM",
+                        "aircraft":  "Gulfstream G650ER",
+                        "seats":  19,
+                        "seats_est":  true,
+                        "price":  null,
+                        "currency":  null
+                    },
+                    {
+                        "date":  "2026-10-29",
+                        "from":  "WSSS",
+                        "to":  "OMDB",
+                        "aircraft":  "Global 8000",
+                        "seats":  19,
+                        "seats_est":  true,
+                        "price":  null,
+                        "currency":  null
+                    },
+                    {
                         "date":  "2026-10-30",
                         "from":  "OMDB",
                         "to":  "VRMM",
@@ -613,16 +433,6 @@
                     },
                     {
                         "date":  "2026-10-30",
-                        "from":  "HKJK",
-                        "to":  "OMDB",
-                        "aircraft":  "Challenger 350",
-                        "seats":  9,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-30",
                         "from":  "LTFM",
                         "to":  "EDDM",
                         "aircraft":  "Global 7500",
@@ -630,6 +440,16 @@
                         "seats_est":  true,
                         "price":  null,
                         "currency":  null
+                    },
+                    {
+                        "date":  "2026-10-31",
+                        "from":  "LTFM",
+                        "to":  "LIRN",
+                        "aircraft":  "Gulfstream G550",
+                        "seats":  16,
+                        "seats_est":  true,
+                        "price":  16500,
+                        "currency":  "EUR"
                     },
                     {
                         "date":  "2026-10-31",
@@ -654,7 +474,7 @@
                     {
                         "date":  "2026-10-31",
                         "from":  "OTHH",
-                        "to":  "NMF",
+                        "to":  "VRDA",
                         "aircraft":  "Gulfstream G700",
                         "seats":  19,
                         "seats_est":  true,
@@ -664,7 +484,7 @@
                     {
                         "date":  "2026-10-31",
                         "from":  "OMDB",
-                        "to":  "NMF",
+                        "to":  "VRDA",
                         "aircraft":  "Gulfstream G700",
                         "seats":  19,
                         "seats_est":  true,
@@ -677,16 +497,6 @@
                         "to":  "FNLU",
                         "aircraft":  "Global 7500",
                         "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-10-31",
-                        "from":  "LKPR",
-                        "to":  "LTAI",
-                        "aircraft":  "Citation Sovereign+",
-                        "seats":  9,
                         "seats_est":  true,
                         "price":  null,
                         "currency":  null
@@ -714,19 +524,9 @@
                     {
                         "date":  "2026-10-31",
                         "from":  "WSSS",
-                        "to":  "NMF",
+                        "to":  "VRDA",
                         "aircraft":  "Gulfstream G650ER",
                         "seats":  19,
-                        "seats_est":  true,
-                        "price":  null,
-                        "currency":  null
-                    },
-                    {
-                        "date":  "2026-11-01",
-                        "from":  "LKPR",
-                        "to":  "OMAA",
-                        "aircraft":  "Global 5000",
-                        "seats":  13,
                         "seats_est":  true,
                         "price":  null,
                         "currency":  null
@@ -736,6 +536,36 @@
                         "from":  "RJAA",
                         "to":  "RKSI",
                         "aircraft":  "Gulfstream G700",
+                        "seats":  19,
+                        "seats_est":  true,
+                        "price":  null,
+                        "currency":  null
+                    },
+                    {
+                        "date":  "2026-11-02",
+                        "from":  "OMDB",
+                        "to":  "VVCR",
+                        "aircraft":  "Airbus ACJ A319",
+                        "seats":  19,
+                        "seats_est":  true,
+                        "price":  null,
+                        "currency":  null
+                    },
+                    {
+                        "date":  "2026-11-02",
+                        "from":  "OTHH",
+                        "to":  "LIRF",
+                        "aircraft":  "Gulfstream G650ER",
+                        "seats":  19,
+                        "seats_est":  true,
+                        "price":  null,
+                        "currency":  null
+                    },
+                    {
+                        "date":  "2026-11-02",
+                        "from":  "LTFM",
+                        "to":  "RJAA",
+                        "aircraft":  "Gulfstream G650ER",
                         "seats":  19,
                         "seats_est":  true,
                         "price":  null,

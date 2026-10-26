@@ -1317,5 +1317,13 @@
             },    "ZWWW":  {
                  "city":  "Urumqi",
                  "country":  "China"
+             },
+    "OJAQ":  {
+                 "city":  "Aqaba",
+                 "country":  "Jordan"
+             },
+    "LIRN":  {
+                 "city":  "Naples",
+                 "country":  "Italy"
              }
 }
