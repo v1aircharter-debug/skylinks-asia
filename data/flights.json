@@ -28,7 +28,7 @@
     { "from": "OMAA", "to": "FIMP", "date": "2026-10-31", "end_date": "2026-11-01", "aircraft": "Falcon 900LX", "seats": 12, "seats_est": true, "price": null, "currency": null },
     { "from": "OTHH", "to": "FNLU", "date": "2026-10-31", "end_date": "2026-11-02", "aircraft": "Global 7500", "seats": 14, "seats_est": true, "price": null, "currency": null },
     { "from": "OEJN", "to": "OTHH", "date": "2026-11-01", "end_date": "2026-11-02", "aircraft": "Gulfstream G650ER", "seats": 14, "seats_est": true, "price": null, "currency": null },
-    { "from": "UDYZ", "to": "LIML", "date": "2026-11-01", "end_date": "2026-11-02", "aircraft": "Learjet 60XR", "seats": 7, "seats_est": true, "price": null, "currency": null },
+    { "from": "UDYZ", "to": "LIML", "date": "2026-11-01", "end_date": "2026-11-02", "aircraft": "Learjet 60", "seats": 7, "seats_est": true, "price": null, "currency": null },
     { "from": "ROAH", "to": "WSSS", "date": "2026-11-01", "end_date": "2026-11-02", "aircraft": "Challenger 605", "seats": 9, "seats_est": true, "price": null, "currency": null },
     { "from": "RJTT", "to": "RKSI", "date": "2026-11-01", "end_date": "2026-11-02", "aircraft": "Gulfstream G700", "seats": 15, "seats_est": true, "price": null, "currency": null },
     { "from": "OMDB", "to": "VVCR", "date": "2026-11-02", "end_date": "2026-11-03", "aircraft": "Airbus ACJ A319", "seats": 19, "seats_est": true, "price": null, "currency": null },
