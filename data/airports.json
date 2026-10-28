@@ -1314,7 +1314,8 @@
     "VVCR":  {
                 "city":  "Nha Trang",
                 "country":  "Vietnam"
-            },    "ZWWW":  {
+            },
+    "ZWWW":  {
                  "city":  "Urumqi",
                  "country":  "China"
              },
@@ -1325,5 +1326,33 @@
     "LIRN":  {
                  "city":  "Naples",
                  "country":  "Italy"
+             },
+    "OENN":  {
+                 "city":  "Neom",
+                 "country":  "Saudi Arabia"
+             },
+    "WAPP":  {
+                 "city":  "Kota Ambon",
+                 "country":  "Indonesia"
+             },
+    "FLLS":  {
+                 "city":  "Lusaka",
+                 "country":  "Zambia"
+             },
+    "VDSA":  {
+                 "city":  "Siem Reap",
+                 "country":  "Cambodia"
+             },
+    "VOMM":  {
+                 "city":  "Chennai",
+                 "country":  "India"
+             },
+    "WARR":  {
+                 "city":  "Surabaya",
+                 "country":  "Indonesia"
+             },
+    "HLLM":  {
+                 "city":  "Tripoli",
+                 "country":  "Libya"
              }
 }
