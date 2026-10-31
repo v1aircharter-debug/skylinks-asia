@@ -1355,7 +1355,34 @@
                  "city":  "Tripoli",
                  "country":  "Libya"
              },
-     "YPPH": { "city": "Perth", 
-               "country": "Australia" }
+    "YPPH": { "city": "Perth", 
+               "country": "Australia" },
+    "EGNT":  {
+                 "city":  "Newcastle Upon Tyne",
+                 "country":  "United Kingdom"
+             },
+    "HTZA":  {
+                 "city":  "Zanzibar",
+                 "country":  "Tanzania"
+             },
+    "ORBI":  {
+                 "city":  "Baghdad",
+                 "country":  "Iraq"
+             },
+    "HESH":  {
+                 "city":  "Sharm El Sheikh",
+                 "country":  "Egypt"
+             },
+    "OEMA":  {
+                 "city":  "Medina",
+                 "country":  "Saudi Arabia"
+             },
+    "VNBW":  {
+                 "city":  "Bhairawa",
+                 "country":  "Nepal"
+             },
+    "VAAH":  {
+                 "city":  "Ahmedabad",
+                 "country":  "India"
              }
-
+}
