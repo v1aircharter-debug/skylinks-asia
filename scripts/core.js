@@ -43,16 +43,7 @@
   }
   
   function fmtPrice(f) {
-    if (!f.price) {
-      // F-07 Fix: Generate a Guide Price Band based on aircraft category if price is null
-      var ac = String(f.aircraft).toLowerCase();
-      if (ac.includes('light') || ac.includes('mustang')) return 'Guide: $8,000 - $12,000 USD';
-      if (ac.includes('midsize') || ac.includes('challenger 350') || ac.includes('citation xls') || ac.includes('hawker')) return 'Guide: $15,000 - $22,000 USD';
-      if (ac.includes('heavy') || ac.includes('challenger 605') || ac.includes('legacy') || ac.includes('falcon') || ac.includes('g450') || ac.includes('g550')) return 'Guide: $25,000 - $35,000 USD';
-      if (ac.includes('ultra') || ac.includes('g650') || ac.includes('g700') || ac.includes('global 6000') || ac.includes('global 7500') || ac.includes('global 8000')) return 'Guide: $40,000 - $60,000 USD';
-      if (ac.includes('airliner') || ac.includes('acj') || ac.includes('737')) return 'Guide: $50,000+ USD';
-      return 'Guide: Request Quote';
-    }
+    if (!f.price) return 'On Request';
     var cur = f.currency || 'USD';
     var sym = SYMBOL[cur] || '';
     return sym + Number(f.price).toLocaleString('en-US') + ' ' + cur;
