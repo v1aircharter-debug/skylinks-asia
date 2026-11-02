@@ -1,6 +1,5 @@
-[build]
-  command = "node scripts/build.js"
-  publish = "."
-
-[build.environment]
-  NODE_VERSION = "18"
+[[redirects]]
+  from = "/*"
+  to = "/:splat.html"
+  status = 301
+  force = true
