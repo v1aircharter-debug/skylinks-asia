@@ -1,4 +1,12 @@
 {
+   "HEGN": { "city": "Hurghada", "country": "Egypt" },
+   "HKJK": { "city": "Nairobi", "country": "Kenya" },
+   "LGAV": { "city": "Athens", "country": "Greece" },
+   "LIMC": { "city": "Milan", "country": "Italy" },
+   "UBBB": { "city": "Baku", "country": "Azerbaijan" },
+   "UZSA": { "city": "Navoi", "country": "Uzbekistan" },
+   "VAPO": { "city": "Pune", "country": "India" },
+   "VTBS": { "city": "Bangkok", "country": "Thailand" },
     "AAN":  { "city":  "Al Ain", "country":  "UAE" },
     "ABS":  { "city":  "Abu Simbel", "country":  "Egypt" },
     "ACC":  { "city":  "Accra", "country":  "Ghana" },
