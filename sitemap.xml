@@ -552,6 +552,12 @@
 
   <!-- BLOG POSTS -->
   <url>
+    <loc>https://www.skylinks.asia/cold-chain-pharma-winter-playbook.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.skylinks.asia/empty-leg-flights-dubai-europe.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
