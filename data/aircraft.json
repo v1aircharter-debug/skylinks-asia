@@ -1,5 +1,5 @@
 {
-    "_note":  "Typical seat counts by model. Keys are UPPERCASE to match the flights.json aircraft field convention (scripts/build.js does case-sensitive lookup). Cards read \u0027Up to N Seats\u0027 from the seats value. Do NOT change keys to title-case without verifying flights.json uses title case.",
+    "_note":  "Typical seat counts by model. Keys accept both UPPERCASE and Title Case forms (build.js lookup is case-insensitive). 11 Title Case variants appended 2026-11-07 to cover Boss-confirmed names. Cards read 'Up to N Seats' from the seats value.",
     "models":  {
                    "AIRBUS ACJ A318":  {
                                            "category":  "VIP airliner",
@@ -440,6 +440,50 @@
                    "YAK-40":  {
                                   "category":  "Light Jet",
                                   "seats":  32
-                              }
+                              },
+                   "Airbus ACJ319":  {
+                                           "category":  "VIP airliner",
+                                           "seats":  19
+                                       },
+                   "Boeing 767-200 BBJ":  {
+                                           "category":  "VIP airliner",
+                                           "seats":  30
+                                       },
+                   "Bombardier Challenger 3500":  {
+                                           "category":  "Super midsize",
+                                           "seats":  9
+                                       },
+                   "Bombardier Global 6500":  {
+                                           "category":  "Ultra long range",
+                                           "seats":  13
+                                       },
+                   "Bombardier Global 8000":  {
+                                           "category":  "Ultra long range",
+                                           "seats":  14
+                                       },
+                   "Bombardier Global Express XRS":  {
+                                           "category":  "Ultra long range",
+                                           "seats":  13
+                                       },
+                   "Cessna Citation CJ3":  {
+                                           "category":  "Light",
+                                           "seats":  7
+                                       },
+                   "Cessna Citation Latitude":  {
+                                           "category":  "Midsize",
+                                           "seats":  8
+                                       },
+                   "Cessna Citation Mustang":  {
+                                           "category":  "Very light",
+                                           "seats":  5
+                                       },
+                   "Dassault Falcon 6X":  {
+                                           "category":  "Ultra long range",
+                                           "seats":  12
+                                       },
+                   "Gulfstream IV-SP":  {
+                                           "category":  "Large",
+                                           "seats":  14
+                                       }
                }
 }
