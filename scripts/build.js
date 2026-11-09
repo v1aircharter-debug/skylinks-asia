@@ -101,6 +101,14 @@ Object.keys(pagesCfg).forEach(function (file) {
   // "Updated 4 October 2026" lines
   html = html.replace(/<!--UPDATED-->[^<]*<!--\/UPDATED-->/g, '<!--UPDATED-->' + updatedText + '<!--/UPDATED-->');
 
+  // Disclaimer text beside the updated label (Boss request 2026-11-09).
+  // Inserted once per page — idempotent via data attribute marker.
+  var DISCLAIMER_MARKER = 'data-skylinks-flight-disclaimer';
+  if (html.indexOf('<!--UPDATED-->') > -1 && html.indexOf(DISCLAIMER_MARKER) === -1) {
+    var disclaimerSpan = '<span class="block text-xs text-gray-500 italic mt-2" ' + DISCLAIMER_MARKER + '>Availability and pricing remain subject to operator confirmation and final aircraft positioning.</span>';
+    html = html.replace(/(<!--UPDATED-->[^<]*<!--\/UPDATED-->)/, '$1' + disclaimerSpan);
+  }
+
   // Structured data list of flights (Asia and Middle East pages).
   // Only the itemListElement array of that one list is replaced; the rest of the block is untouched.
   if (cfg.itemlist) {
