@@ -559,6 +559,12 @@
 
   <!-- BLOG POSTS -->
   <url>
+    <loc>https://www.skylinks.asia/group-charter-flights-moving-200-passengers.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.skylinks.asia/oil-gas-air-cargo-charter.html</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
