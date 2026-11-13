@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- CORE PAGES -->
-  
+
   <url>
     <loc>https://www.skylinks.asia/empty-leg-flights-singapore-price-guide.html</loc>
     <lastmod>2026-11-09</lastmod>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.skylinks.asia/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -22,13 +22,13 @@
   </url>
   <url>
     <loc>https://www.skylinks.asia/blog.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.skylinks.asia/blog-2.html</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -558,6 +558,12 @@
   </url>
 
   <!-- BLOG POSTS -->
+  <url>
+    <loc>https://www.skylinks.asia/dubai-europe-empty-legs-december-availability.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://www.skylinks.asia/group-charter-flights-moving-200-passengers.html</loc>
     <lastmod>2026-11-13</lastmod>
