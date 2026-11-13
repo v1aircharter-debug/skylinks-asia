@@ -21,6 +21,10 @@
                                            "category":  "VIP airliner",
                                            "seats":  25
                                        },
+                   "AIRBUS ACJ A330":  {
+                                           "category":  "VIP airliner",
+                                           "seats":  25
+                                       },
                    "AIRBUS ACJ320NEO":  {
                                             "category":  "VIP airliner",
                                             "seats":  19
@@ -333,6 +337,10 @@
                                         "category":  "Light",
                                         "seats":  7
                                     },
+                   "HAWKER 750":  {
+                                      "category":  "Midsize",
+                                      "seats":  8
+                                  },
                    "HAWKER 800XP":  {
                                         "category":  "Midsize",
                                         "seats":  8
