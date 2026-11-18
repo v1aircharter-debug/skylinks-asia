@@ -378,7 +378,6 @@
     "ZWWW": { "city": "Urumqi", "country": "China" },
     "EGBB": { "city": "Birmingham", "country": "United Kingdom" },
     "LEBL": { "city": "Barcelona", "country": "Spain" },
-    "LMML": { "city": "Malta", "country": "Malta" },
     "ORKK": { "city": "Kirkuk", "country": "Iraq" },
     "KFOK": { "city": "Westhampton Beach", "country": "United States" },
     "YBRM": { "city": "Broome", "country": "Australia" },
@@ -386,5 +385,4 @@
     "WADL": { "city": "Lombok", "country": "Indonesia" },
     "WMKL": { "city": "Langkawi", "country": "Malaysia" },
     "WAMM": { "city": "Manado", "country": "Indonesia" }
-
 }
