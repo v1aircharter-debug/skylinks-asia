@@ -6,6 +6,8 @@
       "date_end": "2026-11-19",
       "origin": "AMM",
       "destination": "BGW",
+      "departure": "AMM",
+      "arrival": "BGW",
       "aircraft": "Challenger 650",
       "seats": 12,
       "price": 12700
@@ -15,6 +17,8 @@
       "date_end": "2026-11-20",
       "origin": "TZX",
       "destination": "MRU",
+      "departure": "TZX",
+      "arrival": "MRU",
       "aircraft": "Global Express XRS",
       "seats": 13,
       "price": ""
@@ -24,6 +28,8 @@
       "date_end": "2026-11-19",
       "origin": "DOH",
       "destination": "DXB",
+      "departure": "DOH",
+      "arrival": "DXB",
       "aircraft": "Challenger 650",
       "seats": 12,
       "price": ""
@@ -33,6 +39,8 @@
       "date_end": "2026-11-19",
       "origin": "DOH",
       "destination": "AAN",
+      "departure": "DOH",
+      "arrival": "AAN",
       "aircraft": "Legacy 650",
       "seats": 13,
       "price": ""
@@ -42,6 +50,8 @@
       "date_end": "2026-11-19",
       "origin": "MCT",
       "destination": "KWI",
+      "departure": "MCT",
+      "arrival": "KWI",
       "aircraft": "Legacy 650",
       "seats": 13,
       "price": ""
@@ -51,6 +61,8 @@
       "date_end": "2026-11-19",
       "origin": "KWI",
       "destination": "AAN",
+      "departure": "KWI",
+      "arrival": "AAN",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -60,6 +72,8 @@
       "date_end": "2026-11-19",
       "origin": "DXB",
       "destination": "AAN",
+      "departure": "DXB",
+      "arrival": "AAN",
       "aircraft": "Legacy 650",
       "seats": 13,
       "price": ""
@@ -69,6 +83,8 @@
       "date_end": "2026-11-19",
       "origin": "ELQ",
       "destination": "MAD",
+      "departure": "ELQ",
+      "arrival": "MAD",
       "aircraft": "Global Express XRS",
       "seats": 13,
       "price": ""
@@ -78,6 +94,8 @@
       "date_end": "2026-11-20",
       "origin": "IST",
       "destination": "EGBB",
+      "departure": "IST",
+      "arrival": "EGBB",
       "aircraft": "Global Express",
       "seats": 13,
       "price": ""
@@ -87,6 +105,8 @@
       "date_end": "2026-11-20",
       "origin": "DXB",
       "destination": "BAH",
+      "departure": "DXB",
+      "arrival": "BAH",
       "aircraft": "Gulfstream G600",
       "seats": 12,
       "price": 28000
@@ -96,6 +116,8 @@
       "date_end": "2026-11-21",
       "origin": "BJV",
       "destination": "MIA",
+      "departure": "BJV",
+      "arrival": "MIA",
       "aircraft": "Falcon 6X",
       "seats": 16,
       "price": ""
@@ -105,6 +127,8 @@
       "date_end": "2026-11-20",
       "origin": "AAN",
       "destination": "KWI",
+      "departure": "AAN",
+      "arrival": "KWI",
       "aircraft": "Legacy 650",
       "seats": 13,
       "price": ""
@@ -114,6 +138,8 @@
       "date_end": "2026-11-20",
       "origin": "DXB",
       "destination": "CAI",
+      "departure": "DXB",
+      "arrival": "CAI",
       "aircraft": "Legacy 650",
       "seats": 13,
       "price": ""
@@ -123,6 +149,8 @@
       "date_end": "2026-11-20",
       "origin": "AAN",
       "destination": "AMM",
+      "departure": "AAN",
+      "arrival": "AMM",
       "aircraft": "Legacy 650",
       "seats": 13,
       "price": ""
@@ -132,6 +160,8 @@
       "date_end": "2026-11-20",
       "origin": "DXB",
       "destination": "MCT",
+      "departure": "DXB",
+      "arrival": "MCT",
       "aircraft": "Legacy 650",
       "seats": 13,
       "price": ""
@@ -141,6 +171,8 @@
       "date_end": "2026-11-21",
       "origin": "SGD",
       "destination": "DXB",
+      "departure": "SGD",
+      "arrival": "DXB",
       "aircraft": "Falcon 7X",
       "seats": 12,
       "price": ""
@@ -150,6 +182,8 @@
       "date_end": "2026-11-23",
       "origin": "RUH",
       "destination": "IST",
+      "departure": "RUH",
+      "arrival": "IST",
       "aircraft": "Gulfstream GIV",
       "seats": 14,
       "price": ""
@@ -159,6 +193,8 @@
       "date_end": "2026-11-20",
       "origin": "DXB",
       "destination": "LEBL",
+      "departure": "DXB",
+      "arrival": "LEBL",
       "aircraft": "Falcon 900LX",
       "seats": 12,
       "price": ""
@@ -168,6 +204,8 @@
       "date_end": "2026-11-20",
       "origin": "DOH",
       "destination": "IST",
+      "departure": "DOH",
+      "arrival": "IST",
       "aircraft": "Airbus ACJ A319",
       "seats": 19,
       "price": ""
@@ -177,6 +215,8 @@
       "date_end": "2026-11-23",
       "origin": "IST",
       "destination": "LHR",
+      "departure": "IST",
+      "arrival": "LHR",
       "aircraft": "Global Express XRS",
       "seats": 13,
       "price": ""
@@ -186,6 +226,8 @@
       "date_end": "2026-11-22",
       "origin": "IST",
       "destination": "LHR",
+      "departure": "IST",
+      "arrival": "LHR",
       "aircraft": "Hawker 750",
       "seats": 9,
       "price": ""
@@ -195,6 +237,8 @@
       "date_end": "2026-11-20",
       "origin": "BLR",
       "destination": "AAN",
+      "departure": "BLR",
+      "arrival": "AAN",
       "aircraft": "Global 8000",
       "seats": 14,
       "price": ""
@@ -204,6 +248,8 @@
       "date_end": "2026-11-22",
       "origin": "SIN",
       "destination": "NBO",
+      "departure": "SIN",
+      "arrival": "NBO",
       "aircraft": "Gulfstream G550",
       "seats": 14,
       "price": ""
@@ -213,6 +259,8 @@
       "date_end": "2026-11-20",
       "origin": "KIX",
       "destination": "KUL",
+      "departure": "KIX",
+      "arrival": "KUL",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -221,6 +269,8 @@
       "date": "2026-11-19",
       "origin": "WATR",
       "destination": "WADL",
+      "departure": "WATR",
+      "arrival": "WADL",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -229,6 +279,8 @@
       "date": "2026-11-20",
       "origin": "AYT",
       "destination": "LBBG",
+      "departure": "AYT",
+      "arrival": "LBBG",
       "aircraft": "Citation XLS+",
       "seats": 8,
       "price": 4683
@@ -238,6 +290,8 @@
       "date_end": "2026-11-21",
       "origin": "BGW",
       "destination": "BAH",
+      "departure": "BGW",
+      "arrival": "BAH",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": 18800
@@ -246,6 +300,8 @@
       "date": "2026-11-20",
       "origin": "DXB",
       "destination": "BAH",
+      "departure": "DXB",
+      "arrival": "BAH",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": 20962
@@ -254,6 +310,8 @@
       "date": "2026-11-20",
       "origin": "BGW",
       "destination": "DXB",
+      "departure": "BGW",
+      "arrival": "DXB",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": 21296
@@ -263,6 +321,8 @@
       "date_end": "2026-11-21",
       "origin": "BAH",
       "destination": "DOH",
+      "departure": "BAH",
+      "arrival": "DOH",
       "aircraft": "Gulfstream G650ER",
       "seats": 14,
       "price": ""
@@ -272,6 +332,8 @@
       "date_end": "2026-11-21",
       "origin": "MCT",
       "destination": "DXB",
+      "departure": "MCT",
+      "arrival": "DXB",
       "aircraft": "Legacy 650",
       "seats": 13,
       "price": ""
@@ -281,6 +343,8 @@
       "date_end": "2026-11-24",
       "origin": "NBO",
       "destination": "DXB",
+      "departure": "NBO",
+      "arrival": "DXB",
       "aircraft": "Gulfstream G200",
       "seats": 8,
       "price": ""
@@ -289,6 +353,8 @@
       "date": "2026-11-20",
       "origin": "HKG",
       "destination": "GYD",
+      "departure": "HKG",
+      "arrival": "GYD",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -298,6 +364,8 @@
       "date_end": "2026-11-21",
       "origin": "GYD",
       "destination": "LHR",
+      "departure": "GYD",
+      "arrival": "LHR",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -307,6 +375,8 @@
       "date_end": "2026-11-21",
       "origin": "IST",
       "destination": "LHR",
+      "departure": "IST",
+      "arrival": "LHR",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -316,6 +386,8 @@
       "date_end": "2026-11-23",
       "origin": "IST",
       "destination": "LHR",
+      "departure": "IST",
+      "arrival": "LHR",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -325,6 +397,8 @@
       "date_end": "2026-11-21",
       "origin": "VDSA",
       "destination": "SEZ",
+      "departure": "VDSA",
+      "arrival": "SEZ",
       "aircraft": "Global 7500",
       "seats": 14,
       "price": ""
@@ -333,6 +407,8 @@
       "date": "2026-11-20",
       "origin": "WMKL",
       "destination": "WAMM",
+      "departure": "WMKL",
+      "arrival": "WAMM",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": ""
@@ -342,6 +418,8 @@
       "date_end": "2026-11-22",
       "origin": "CGK",
       "destination": "SIN",
+      "departure": "CGK",
+      "arrival": "SIN",
       "aircraft": "Gulfstream G450",
       "seats": 14,
       "price": ""
@@ -351,6 +429,8 @@
       "date_end": "2026-11-22",
       "origin": "AMM",
       "destination": "DXB",
+      "departure": "AMM",
+      "arrival": "DXB",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": 21400
@@ -360,6 +440,8 @@
       "date_end": "2026-11-22",
       "origin": "BAH",
       "destination": "DXB",
+      "departure": "BAH",
+      "arrival": "DXB",
       "aircraft": "Gulfstream G600",
       "seats": 12,
       "price": 28000
@@ -369,6 +451,8 @@
       "date_end": "2026-11-22",
       "origin": "BGW",
       "destination": "LMML",
+      "departure": "BGW",
+      "arrival": "LMML",
       "aircraft": "Challenger 650",
       "seats": 12,
       "price": 38650
@@ -378,6 +462,8 @@
       "date_end": "2026-11-22",
       "origin": "MCT",
       "destination": "DXB",
+      "departure": "MCT",
+      "arrival": "DXB",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": ""
@@ -387,6 +473,8 @@
       "date_end": "2026-11-22",
       "origin": "DOH",
       "destination": "KWI",
+      "departure": "DOH",
+      "arrival": "KWI",
       "aircraft": "Gulfstream G650ER",
       "seats": 14,
       "price": ""
@@ -396,6 +484,8 @@
       "date_end": "2026-11-22",
       "origin": "AUH",
       "destination": "AAN",
+      "departure": "AUH",
+      "arrival": "AAN",
       "aircraft": "Global 8000",
       "seats": 14,
       "price": ""
@@ -405,6 +495,8 @@
       "date_end": "2026-11-22",
       "origin": "DXB",
       "destination": "NMF",
+      "departure": "DXB",
+      "arrival": "NMF",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": ""
@@ -414,6 +506,8 @@
       "date_end": "2026-11-22",
       "origin": "JAI",
       "destination": "DXB",
+      "departure": "JAI",
+      "arrival": "DXB",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -422,6 +516,8 @@
       "date": "2026-11-21",
       "origin": "SIN",
       "destination": "CGK",
+      "departure": "SIN",
+      "arrival": "CGK",
       "aircraft": "Gulfstream G450",
       "seats": 14,
       "price": ""
@@ -430,6 +526,8 @@
       "date": "2026-11-21",
       "origin": "WADL",
       "destination": "WAPP",
+      "departure": "WADL",
+      "arrival": "WAPP",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -439,6 +537,8 @@
       "date_end": "2026-11-22",
       "origin": "ICN",
       "destination": "CGK",
+      "departure": "ICN",
+      "arrival": "CGK",
       "aircraft": "Global 8000",
       "seats": 14,
       "price": ""
@@ -448,6 +548,8 @@
       "date_end": "2026-11-23",
       "origin": "DXB",
       "destination": "BGW",
+      "departure": "DXB",
+      "arrival": "BGW",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": 18400
@@ -456,6 +558,8 @@
       "date": "2026-11-22",
       "origin": "DXB",
       "destination": "LFPG",
+      "departure": "DXB",
+      "arrival": "LFPG",
       "aircraft": "Boeing BBJ",
       "seats": 19,
       "price": 100015
@@ -465,6 +569,8 @@
       "date_end": "2026-11-23",
       "origin": "MCT",
       "destination": "DXB",
+      "departure": "MCT",
+      "arrival": "DXB",
       "aircraft": "Global 6500",
       "seats": 14,
       "price": ""
@@ -474,6 +580,8 @@
       "date_end": "2026-11-23",
       "origin": "ELQ",
       "destination": "HRG",
+      "departure": "ELQ",
+      "arrival": "HRG",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -483,6 +591,8 @@
       "date_end": "2026-11-23",
       "origin": "HRG",
       "destination": "KWI",
+      "departure": "HRG",
+      "arrival": "KWI",
       "aircraft": "Global 6000",
       "seats": 14,
       "price": ""
@@ -492,6 +602,8 @@
       "date_end": "2026-11-24",
       "origin": "ZRH",
       "destination": "DOH",
+      "departure": "ZRH",
+      "arrival": "DOH",
       "aircraft": "Gulfstream G650ER",
       "seats": 14,
       "price": ""
@@ -501,6 +613,8 @@
       "date_end": "2026-11-23",
       "origin": "DXB",
       "destination": "LFPG",
+      "departure": "DXB",
+      "arrival": "LFPG",
       "aircraft": "Falcon 900LX",
       "seats": 12,
       "price": ""
@@ -510,6 +624,8 @@
       "date_end": "2026-11-24",
       "origin": "DOH",
       "destination": "FBMN",
+      "departure": "DOH",
+      "arrival": "FBMN",
       "aircraft": "Gulfstream G650ER",
       "seats": 14,
       "price": ""
@@ -519,6 +635,8 @@
       "date_end": "2026-11-23",
       "origin": "LFPG",
       "destination": "IST",
+      "departure": "LFPG",
+      "arrival": "IST",
       "aircraft": "Gulfstream G550",
       "seats": 14,
       "price": ""
@@ -528,6 +646,8 @@
       "date_end": "2026-11-26",
       "origin": "LHR",
       "destination": "IST",
+      "departure": "LHR",
+      "arrival": "IST",
       "aircraft": "Challenger 604",
       "seats": 10,
       "price": ""
@@ -537,6 +657,8 @@
       "date_end": "2026-11-24",
       "origin": "BGW",
       "destination": "ORKK",
+      "departure": "BGW",
+      "arrival": "ORKK",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": 6150
@@ -546,6 +668,8 @@
       "date_end": "2026-11-25",
       "origin": "ORKK",
       "destination": "KWI",
+      "departure": "ORKK",
+      "arrival": "KWI",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": 13750
@@ -555,6 +679,8 @@
       "date_end": "2026-11-24",
       "origin": "MUC",
       "destination": "JAI",
+      "departure": "MUC",
+      "arrival": "JAI",
       "aircraft": "Airbus ACJ A319 Neo",
       "seats": 19,
       "price": ""
@@ -564,6 +690,8 @@
       "date_end": "2026-11-25",
       "origin": "KWI",
       "destination": "AMM",
+      "departure": "KWI",
+      "arrival": "AMM",
       "aircraft": "Challenger 605",
       "seats": 12,
       "price": 16500
@@ -572,6 +700,8 @@
       "date": "2026-11-24",
       "origin": "LFPG",
       "destination": "IST",
+      "departure": "LFPG",
+      "arrival": "IST",
       "aircraft": "Gulfstream G550",
       "seats": 14,
       "price": 33100
@@ -581,6 +711,8 @@
       "date_end": "2026-11-25",
       "origin": "DOH",
       "destination": "IST",
+      "departure": "DOH",
+      "arrival": "IST",
       "aircraft": "Airbus ACJ A320",
       "seats": 19,
       "price": ""
@@ -590,6 +722,8 @@
       "date_end": "2026-11-26",
       "origin": "DOH",
       "destination": "DAM",
+      "departure": "DOH",
+      "arrival": "DAM",
       "aircraft": "Airbus ACJ A319",
       "seats": 19,
       "price": ""
@@ -599,6 +733,8 @@
       "date_end": "2026-11-27",
       "origin": "DOH",
       "destination": "DXB",
+      "departure": "DOH",
+      "arrival": "DXB",
       "aircraft": "Gulfstream G650ER",
       "seats": 14,
       "price": ""
@@ -607,6 +743,8 @@
       "date": "2026-11-25",
       "origin": "SIN",
       "destination": "AMM",
+      "departure": "SIN",
+      "arrival": "AMM",
       "aircraft": "Gulfstream G550",
       "seats": 14,
       "price": ""
@@ -616,6 +754,8 @@
       "date_end": "2026-11-27",
       "origin": "IST",
       "destination": "KFOK",
+      "departure": "IST",
+      "arrival": "KFOK",
       "aircraft": "Global 5000",
       "seats": 13,
       "price": 33082
@@ -625,6 +765,8 @@
       "date_end": "2026-11-28",
       "origin": "VIE",
       "destination": "DXB",
+      "departure": "VIE",
+      "arrival": "DXB",
       "aircraft": "Airbus ACJ A319",
       "seats": 19,
       "price": ""
@@ -634,6 +776,8 @@
       "date_end": "2026-12-01",
       "origin": "IST",
       "destination": "LHR",
+      "departure": "IST",
+      "arrival": "LHR",
       "aircraft": "Challenger 650",
       "seats": 12,
       "price": ""
