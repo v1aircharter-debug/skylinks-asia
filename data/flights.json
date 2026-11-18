@@ -1,61 +1,642 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-18",
   "flights": [
-    { "from": "OXF", "to": "WSSS", "from_city": "Oxford", "to_city": "Singapore", "date": "2026-11-16", "aircraft": "Gulfstream G550", "seats": 16, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "KLAX", "to": "WSSS", "from_city": "Los Angeles", "to_city": "Singapore", "date": "2026-11-16", "date_end": "2026-11-19", "aircraft": "Gulfstream G550", "seats": 16, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "VVDN", "to": "VHHH", "from_city": "Da Nang", "to_city": "Hong Kong", "date": "2026-11-16", "date_end": "2026-11-17", "aircraft": "Challenger 605", "seats": 10, "seats_est": true, "price": 7920, "currency": "USD" },
-    { "from": "VHHH", "to": "WSSS", "from_city": "Hong Kong", "to_city": "Singapore", "date": "2026-11-16", "aircraft": "Challenger 350", "seats": 9, "seats_est": true, "price": 14330, "currency": "USD" },
-    { "from": "OERK", "to": "LTFM", "from_city": "Riyadh", "to_city": "Istanbul", "date": "2026-11-16", "aircraft": "Gulfstream GIV-SP", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "UBBB", "to": "LSZH", "from_city": "Baku", "to_city": "Zurich", "date": "2026-11-16", "aircraft": "Hawker 800XP", "seats": 8, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LTFM", "to": "LIMC", "from_city": "Istanbul", "to_city": "Milan", "date": "2026-11-16", "aircraft": "Citation Latitude", "seats": 8, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LTFM", "to": "LHBP", "from_city": "Istanbul", "to_city": "Budapest", "date": "2026-11-16", "date_end": "2026-11-18", "aircraft": "Challenger 604", "seats": 10, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "EGLL", "to": "LTFM", "from_city": "London", "to_city": "Istanbul", "date": "2026-11-16", "date_end": "2026-11-17", "aircraft": "Global 6000", "seats": 13, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LYBE", "to": "LTAI", "from_city": "Belgrade", "to_city": "Antalya", "date": "2026-11-16", "aircraft": "Citation XLS+", "seats": 9, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "OJAI", "to": "HECA", "from_city": "Amman", "to_city": "Cairo", "date": "2026-11-16", "aircraft": "Challenger 650", "seats": 12, "seats_est": true, "price": 9700, "currency": "USD" },
-    { "from": "EDDM", "to": "OMDB", "from_city": "Munich", "to_city": "Dubai", "date": "2026-11-16", "aircraft": "Gulfstream G600", "seats": 16, "seats_est": true, "price": 74000, "currency": "USD" },
-    { "from": "ZBAA", "to": "OMDB", "from_city": "Beijing", "to_city": "Dubai", "date": "2026-11-16", "date_end": "2026-11-19", "aircraft": "Gulfstream G450", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "FCBB", "to": "OMDB", "from_city": "Brazzaville", "to_city": "Dubai", "date": "2026-11-16", "aircraft": "Boeing 767 BBJ", "seats": 30, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "FSIA", "to": "OMDB", "from_city": "Mahe Island", "to_city": "Dubai", "date": "2026-11-16", "aircraft": "Global 8000", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "HECA", "to": "OJAI", "from_city": "Cairo", "to_city": "Amman", "date": "2026-11-16", "date_end": "2026-11-17", "aircraft": "Challenger 650", "seats": 12, "seats_est": true, "price": 9550, "currency": "USD" },
-    { "from": "LOWW", "to": "LTFM", "from_city": "Vienna", "to_city": "Istanbul", "date": "2026-11-16", "aircraft": "Hawker 750", "seats": 8, "seats_est": true, "price": 10592, "currency": "USD" },
-    { "from": "OMDB", "to": "OKBK", "from_city": "Dubai", "to_city": "Kuwait City", "date": "2026-11-16", "date_end": "2026-11-17", "aircraft": "Challenger 650", "seats": 12, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LERL", "to": "LTBJ", "from_city": "Ciudad Real", "to_city": "Izmir", "date": "2026-11-16", "date_end": "2026-11-19", "aircraft": "Phenom 300", "seats": 7, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "OMDB", "to": "VABB", "from_city": "Dubai", "to_city": "Mumbai", "date": "2026-11-16", "date_end": "2026-11-17", "aircraft": "Legacy 600", "seats": 13, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "RKSI", "to": "UCFL", "from_city": "Seoul", "to_city": "Tamchy", "date": "2026-11-16", "aircraft": "Challenger 605", "seats": 10, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "UTTT", "to": "LCLK", "from_city": "Tashkent", "to_city": "Larnaca", "date": "2026-11-16", "aircraft": "Gulfstream G200", "seats": 8, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LBPD", "to": "UGTB", "from_city": "Plovdiv", "to_city": "Tbilisi", "date": "2026-11-16", "aircraft": "Phenom 300", "seats": 7, "seats_est": true, "price": 8139, "currency": "EUR" },
-    { "from": "YBTL", "to": "WIII", "from_city": "Townsville City", "to_city": "Jakarta", "date": "2026-11-17", "date_end": "2026-11-18", "aircraft": "Challenger 604", "seats": 10, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "VRMM", "to": "OMDB", "from_city": "Male", "to_city": "Dubai", "date": "2026-11-17", "aircraft": "Challenger 605", "seats": 10, "seats_est": true, "price": 35234, "currency": "USD" },
-    { "from": "OMDB", "to": "LGRP", "from_city": "Dubai", "to_city": "Rhodes", "date": "2026-11-17", "aircraft": "Challenger 605", "seats": 10, "seats_est": true, "price": 39749, "currency": "USD" },
-    { "from": "OKBK", "to": "OTHH", "from_city": "Kuwait City", "to_city": "Doha", "date": "2026-11-17", "date_end": "2026-11-18", "aircraft": "Gulfstream G650ER", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "VOCB", "to": "OMDB", "from_city": "Coimbatore", "to_city": "Dubai", "date": "2026-11-17", "date_end": "2026-11-18", "aircraft": "Global 6000", "seats": 13, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "FIMP", "to": "VIDP", "from_city": "Mauritius", "to_city": "New Delhi", "date": "2026-11-17", "date_end": "2026-11-18", "aircraft": "Gulfstream G650ER", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "FMCH", "to": "OMDB", "from_city": "Moroni", "to_city": "Dubai", "date": "2026-11-17", "aircraft": "Boeing BBJ", "seats": 19, "seats_est": true, "price": 97005, "currency": "USD" },
-    { "from": "VVNB", "to": "VTBS", "from_city": "Hanoi", "to_city": "Bangkok", "date": "2026-11-18", "aircraft": "Challenger 350", "seats": 9, "seats_est": true, "price": 8000, "currency": "USD" },
-    { "from": "WIII", "to": "VHHH", "from_city": "Jakarta", "to_city": "Hong Kong", "date": "2026-11-18", "date_end": "2026-11-19", "aircraft": "Challenger 605", "seats": 10, "seats_est": true, "price": 22080, "currency": "USD" },
-    { "from": "OTHH", "to": "OSDI", "from_city": "Doha", "to_city": "Damascus", "date": "2026-11-18", "date_end": "2026-11-19", "aircraft": "Airbus ACJ A319", "seats": 19, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LTFE", "to": "KMIA", "from_city": "Bodrum", "to_city": "Miami", "date": "2026-11-19", "date_end": "2026-11-21", "aircraft": "Falcon 6X", "seats": 12, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LTFM", "to": "EGLL", "from_city": "Istanbul", "to_city": "London", "date": "2026-11-19", "date_end": "2026-11-22", "aircraft": "Hawker 750", "seats": 8, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "RPLL", "to": "VTBS", "from_city": "Manila", "to_city": "Bangkok", "date": "2026-11-20", "aircraft": "Gulfstream G650ER", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "ORBI", "to": "OBBI", "from_city": "Baghdad", "to_city": "Bahrain", "date": "2026-11-20", "aircraft": "Challenger 605", "seats": 10, "seats_est": true, "price": 20962, "currency": "USD" },
-    { "from": "VHHH", "to": "UBBB", "from_city": "Hong Kong", "to_city": "Baku", "date": "2026-11-20", "aircraft": "Global 6000", "seats": 13, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LTFM", "to": "EGLL", "from_city": "Istanbul", "to_city": "London", "date": "2026-11-20", "date_end": "2026-11-23", "aircraft": "Global 6000", "seats": 13, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "UBBB", "to": "EGLL", "from_city": "Baku", "to_city": "London", "date": "2026-11-20", "date_end": "2026-11-21", "aircraft": "Global 6000", "seats": 13, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LTAI", "to": "LYBE", "from_city": "Antalya", "to_city": "Belgrade", "date": "2026-11-20", "date_end": "2026-11-22", "aircraft": "Citation XLS+", "seats": 9, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "RPLL", "to": "RJAA", "from_city": "Manila", "to_city": "Tokyo", "date": "2026-11-21", "date_end": "2026-11-22", "aircraft": "Gulfstream G450", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "RJAA", "to": "LTFE", "from_city": "Tokyo", "to_city": "Bodrum", "date": "2026-11-21", "date_end": "2026-11-22", "aircraft": "Airbus ACJ A330", "seats": 25, "seats_est": true, "price": 489239, "currency": "USD" },
-    { "from": "LYBE", "to": "EVN", "from_city": "Belgrade", "to_city": "Yerevan", "date": "2026-11-21", "aircraft": "Legacy 600", "seats": 13, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "OOMS", "to": "OMDB", "from_city": "Muscat", "to_city": "Dubai", "date": "2026-11-21", "date_end": "2026-11-22", "aircraft": "Global 6500", "seats": 13, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "OTHH", "to": "OKBK", "from_city": "Doha", "to_city": "Kuwait City", "date": "2026-11-21", "date_end": "2026-11-22", "aircraft": "Gulfstream G650ER", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "OMDB", "to": "VRDA", "from_city": "Dubai", "to_city": "Maafaru", "date": "2026-11-21", "date_end": "2026-11-22", "aircraft": "Challenger 650", "seats": 12, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LFPG", "to": "LTFM", "from_city": "Paris", "to_city": "Istanbul", "date": "2026-11-22", "aircraft": "Gulfstream G550", "seats": 16, "seats_est": true, "price": 33100, "currency": "EUR" },
-    { "from": "OBBI", "to": "OTHH", "from_city": "Bahrain", "to_city": "Doha", "date": "2026-11-22", "date_end": "2026-11-23", "aircraft": "Gulfstream G650ER", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "OTHH", "to": "VRMM", "from_city": "Doha", "to_city": "Male", "date": "2026-11-22", "date_end": "2026-11-23", "aircraft": "Gulfstream G650ER", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LHBP", "to": "LTFM", "from_city": "Budapest", "to_city": "Istanbul", "date": "2026-11-22", "date_end": "2026-11-26", "aircraft": "Challenger 604", "seats": 10, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "OTHH", "to": "FBMN", "from_city": "Doha", "to_city": "Maun", "date": "2026-11-22", "date_end": "2026-11-24", "aircraft": "Gulfstream G650ER", "seats": 14, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "LTFM", "to": "EDDM", "from_city": "Istanbul", "to_city": "Munich", "date": "2026-11-23", "date_end": "2026-11-24", "aircraft": "Gulfstream G650", "seats": 14, "seats_est": true, "price": 33586, "currency": "USD" },
-    { "from": "OMDB", "to": "VRMM", "from_city": "Dubai", "to_city": "Male", "date": "2026-11-23", "aircraft": "Challenger 605", "seats": 10, "seats_est": true, "price": 34565, "currency": "USD" },
-    { "from": "EDDM", "to": "VIJP", "from_city": "Munich", "to_city": "Jaipur", "date": "2026-11-23", "date_end": "2026-11-24", "aircraft": "Airbus ACJ A319 NEO", "seats": 19, "seats_est": true, "price": null, "currency": "USD" },
-    { "from": "ZSPD", "to": "VTBS", "from_city": "Shanghai", "to_city": "Bangkok", "date": "2026-11-25", "aircraft": "Gulfstream G450", "seats": 14, "seats_est": true, "price": 250000, "currency": "CNY" }
+    {
+      "date": "2026-11-18",
+      "date_end": "2026-11-19",
+      "origin": "AMM",
+      "destination": "BGW",
+      "aircraft": "Challenger 650",
+      "seats": 12,
+      "price": "USD 12,700.00"
+    },
+    {
+      "date": "2026-11-18",
+      "date_end": "2026-11-20",
+      "origin": "TZX",
+      "destination": "MRU",
+      "aircraft": "Global Express XRS",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-18",
+      "date_end": "2026-11-19",
+      "origin": "DOH",
+      "destination": "DXB",
+      "aircraft": "Challenger 650",
+      "seats": 12,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-18",
+      "date_end": "2026-11-19",
+      "origin": "DOH",
+      "destination": "AAN",
+      "aircraft": "Legacy 650",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-18",
+      "date_end": "2026-11-19",
+      "origin": "MCT",
+      "destination": "KWI",
+      "aircraft": "Legacy 650",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-18",
+      "date_end": "2026-11-19",
+      "origin": "KWI",
+      "destination": "AAN",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-18",
+      "date_end": "2026-11-19",
+      "origin": "DXB",
+      "destination": "AAN",
+      "aircraft": "Legacy 650",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-18",
+      "date_end": "2026-11-19",
+      "origin": "ELQ",
+      "destination": "MAD",
+      "aircraft": "Global Express XRS",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-18",
+      "date_end": "2026-11-20",
+      "origin": "IST",
+      "destination": "EGBB",
+      "aircraft": "Global Express",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-20",
+      "origin": "DXB",
+      "destination": "BAH",
+      "aircraft": "Gulfstream G600",
+      "seats": 12,
+      "price": "USD 28,000.00"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-21",
+      "origin": "BJV",
+      "destination": "MIA",
+      "aircraft": "Falcon 6X",
+      "seats": 16,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-20",
+      "origin": "AAN",
+      "destination": "KWI",
+      "aircraft": "Legacy 650",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-20",
+      "origin": "DXB",
+      "destination": "CAI",
+      "aircraft": "Legacy 650",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-20",
+      "origin": "AAN",
+      "destination": "AMM",
+      "aircraft": "Legacy 650",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-20",
+      "origin": "DXB",
+      "destination": "MCT",
+      "aircraft": "Legacy 650",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-21",
+      "origin": "SGD",
+      "destination": "DXB",
+      "aircraft": "Falcon 7X",
+      "seats": 12,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-23",
+      "origin": "RUH",
+      "destination": "IST",
+      "aircraft": "Gulfstream GIV",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-20",
+      "origin": "DXB",
+      "destination": "LEBL",
+      "aircraft": "Falcon 900LX",
+      "seats": 12,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-20",
+      "origin": "DOH",
+      "destination": "IST",
+      "aircraft": "Airbus ACJ A319",
+      "seats": 19,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-23",
+      "origin": "IST",
+      "destination": "LHR",
+      "aircraft": "Global Express XRS",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-22",
+      "origin": "IST",
+      "destination": "LHR",
+      "aircraft": "Hawker 750",
+      "seats": 9,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-20",
+      "origin": "BLR",
+      "destination": "AAN",
+      "aircraft": "Global 8000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-22",
+      "origin": "SIN",
+      "destination": "NBO",
+      "aircraft": "Gulfstream G550",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "date_end": "2026-11-20",
+      "origin": "KIX",
+      "destination": "KUL",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-19",
+      "origin": "WATR",
+      "destination": "WADL",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "origin": "AYT",
+      "destination": "LBBG",
+      "aircraft": "Citation XLS+",
+      "seats": 8,
+      "price": "EUR 4,683.00"
+    },
+    {
+      "date": "2026-11-20",
+      "date_end": "2026-11-21",
+      "origin": "BGW",
+      "destination": "BAH",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "USD 18,800.00"
+    },
+    {
+      "date": "2026-11-20",
+      "origin": "DXB",
+      "destination": "BAH",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "USD 20,962.00"
+    },
+    {
+      "date": "2026-11-20",
+      "origin": "BGW",
+      "destination": "DXB",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "USD 21,296.00"
+    },
+    {
+      "date": "2026-11-20",
+      "date_end": "2026-11-21",
+      "origin": "BAH",
+      "destination": "DOH",
+      "aircraft": "Gulfstream G650ER",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "date_end": "2026-11-21",
+      "origin": "MCT",
+      "destination": "DXB",
+      "aircraft": "Legacy 650",
+      "seats": 13,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "date_end": "2026-11-24",
+      "origin": "NBO",
+      "destination": "DXB",
+      "aircraft": "Gulfstream G200",
+      "seats": 8,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "origin": "HKG",
+      "destination": "GYD",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "date_end": "2026-11-21",
+      "origin": "GYD",
+      "destination": "LHR",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "date_end": "2026-11-21",
+      "origin": "IST",
+      "destination": "LHR",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "date_end": "2026-11-23",
+      "origin": "IST",
+      "destination": "LHR",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "date_end": "2026-11-21",
+      "origin": "VDSA",
+      "destination": "SEZ",
+      "aircraft": "Global 7500",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "origin": "WMKL",
+      "destination": "WAMM",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-20",
+      "date_end": "2026-11-22",
+      "origin": "CGK",
+      "destination": "SIN",
+      "aircraft": "Gulfstream G450",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-21",
+      "date_end": "2026-11-22",
+      "origin": "AMM",
+      "destination": "DXB",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "USD 21,400.00"
+    },
+    {
+      "date": "2026-11-21",
+      "date_end": "2026-11-22",
+      "origin": "BAH",
+      "destination": "DXB",
+      "aircraft": "Gulfstream G600",
+      "seats": 12,
+      "price": "USD 28,000.00"
+    },
+    {
+      "date": "2026-11-21",
+      "date_end": "2026-11-22",
+      "origin": "BGW",
+      "destination": "LMML",
+      "aircraft": "Challenger 650",
+      "seats": 12,
+      "price": "USD 38,650.00"
+    },
+    {
+      "date": "2026-11-21",
+      "date_end": "2026-11-22",
+      "origin": "MCT",
+      "destination": "DXB",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-21",
+      "date_end": "2026-11-22",
+      "origin": "DOH",
+      "destination": "KWI",
+      "aircraft": "Gulfstream G650ER",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-21",
+      "date_end": "2026-11-22",
+      "origin": "AUH",
+      "destination": "AAN",
+      "aircraft": "Global 8000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-21",
+      "date_end": "2026-11-22",
+      "origin": "DXB",
+      "destination": "NMF",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-21",
+      "date_end": "2026-11-22",
+      "origin": "JAI",
+      "destination": "DXB",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-21",
+      "origin": "SIN",
+      "destination": "CGK",
+      "aircraft": "Gulfstream G450",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-21",
+      "origin": "WADL",
+      "destination": "WAPP",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-21",
+      "date_end": "2026-11-22",
+      "origin": "ICN",
+      "destination": "CGK",
+      "aircraft": "Global 8000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-22",
+      "date_end": "2026-11-23",
+      "origin": "DXB",
+      "destination": "BGW",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "USD 18,400.00"
+    },
+    {
+      "date": "2026-11-22",
+      "origin": "DXB",
+      "destination": "LFPG",
+      "aircraft": "Boeing BBJ",
+      "seats": 19,
+      "price": "USD 100,015.00"
+    },
+    {
+      "date": "2026-11-22",
+      "date_end": "2026-11-23",
+      "origin": "MCT",
+      "destination": "DXB",
+      "aircraft": "Global 6500",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-22",
+      "date_end": "2026-11-23",
+      "origin": "ELQ",
+      "destination": "HRG",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-22",
+      "date_end": "2026-11-23",
+      "origin": "HRG",
+      "destination": "KWI",
+      "aircraft": "Global 6000",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-22",
+      "date_end": "2026-11-24",
+      "origin": "ZRH",
+      "destination": "DOH",
+      "aircraft": "Gulfstream G650ER",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-22",
+      "date_end": "2026-11-23",
+      "origin": "DXB",
+      "destination": "LFPG",
+      "aircraft": "Falcon 900LX",
+      "seats": 12,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-22",
+      "date_end": "2026-11-24",
+      "origin": "DOH",
+      "destination": "FBMN",
+      "aircraft": "Gulfstream G650ER",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-22",
+      "date_end": "2026-11-23",
+      "origin": "LFPG",
+      "destination": "IST",
+      "aircraft": "Gulfstream G550",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-22",
+      "date_end": "2026-11-26",
+      "origin": "LHR",
+      "destination": "IST",
+      "aircraft": "Challenger 604",
+      "seats": 10,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-23",
+      "date_end": "2026-11-24",
+      "origin": "BGW",
+      "destination": "ORKK",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "USD 6,150.00"
+    },
+    {
+      "date": "2026-11-23",
+      "date_end": "2026-11-25",
+      "origin": "ORKK",
+      "destination": "KWI",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "USD 13,750.00"
+    },
+    {
+      "date": "2026-11-23",
+      "date_end": "2026-11-24",
+      "origin": "MUC",
+      "destination": "JAI",
+      "aircraft": "Airbus ACJ A319 Neo",
+      "seats": 19,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-24",
+      "date_end": "2026-11-25",
+      "origin": "KWI",
+      "destination": "AMM",
+      "aircraft": "Challenger 605",
+      "seats": 12,
+      "price": "USD 16,500.00"
+    },
+    {
+      "date": "2026-11-24",
+      "origin": "LFPG",
+      "destination": "IST",
+      "aircraft": "Gulfstream G550",
+      "seats": 14,
+      "price": "EUR 33,100.00"
+    },
+    {
+      "date": "2026-11-24",
+      "date_end": "2026-11-25",
+      "origin": "DOH",
+      "destination": "IST",
+      "aircraft": "Airbus ACJ A320",
+      "seats": 19,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-25",
+      "date_end": "2026-11-26",
+      "origin": "DOH",
+      "destination": "DAM",
+      "aircraft": "Airbus ACJ A319",
+      "seats": 19,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-25",
+      "date_end": "2026-11-27",
+      "origin": "DOH",
+      "destination": "DXB",
+      "aircraft": "Gulfstream G650ER",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-25",
+      "origin": "SIN",
+      "destination": "AMM",
+      "aircraft": "Gulfstream G550",
+      "seats": 14,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-26",
+      "date_end": "2026-11-27",
+      "origin": "IST",
+      "destination": "KFOK",
+      "aircraft": "Global 5000",
+      "seats": 13,
+      "price": "USD 33,082.00"
+    },
+    {
+      "date": "2026-11-27",
+      "date_end": "2026-11-28",
+      "origin": "VIE",
+      "destination": "DXB",
+      "aircraft": "Airbus ACJ A319",
+      "seats": 19,
+      "price": "On request"
+    },
+    {
+      "date": "2026-11-28",
+      "date_end": "2026-12-01",
+      "origin": "IST",
+      "destination": "LHR",
+      "aircraft": "Challenger 650",
+      "seats": 12,
+      "price": "On request"
+    }
   ]
 }
