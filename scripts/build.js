@@ -64,7 +64,9 @@ function dedent(block) {
 var errors = [];
 var outputs = {};
 var summary = [];
-var updatedText = Core.longDate(data.updated || TODAY);
+var updatedParts = Core.parseIso(data.updated || TODAY);
+// Short form, e.g. "22 Nov 2026" (Boss request 2026-11-22).
+var updatedText = updatedParts ? updatedParts.d + ' ' + Core.MON[updatedParts.m - 1] + ' ' + updatedParts.y : (data.updated || TODAY);
 
 Object.keys(pagesCfg).forEach(function (file) {
   var cfg = pagesCfg[file];
@@ -81,6 +83,21 @@ Object.keys(pagesCfg).forEach(function (file) {
     if (a < 0 || b < a) { errors.push(file + ': markers for "' + slot.id + '" are missing or out of order.'); return; }
     var pad = indentOf(html, a);
     var list = core.slotFlights(slot, flights, TODAY);
+    // Main page option (Boss request 2026-11-22): "show_unlisted" adds every live flight that has no
+    // landing page of its own, on top of the normal limit, so such routes are never held back.
+    if (slot.show_unlisted) {
+      var everyLive = core.slotFlights({ rules: slot.rules }, flights, TODAY);
+      var hasOwnPage = function (f) {
+        return Object.keys(pagesCfg).some(function (other) {
+          return other !== file && (pagesCfg[other].slots || []).some(function (s2) { return core.matches(s2, f); });
+        });
+      };
+      var extra = everyLive.filter(function (f) { return !hasOwnPage(f); });
+      var seenId = {};
+      extra.forEach(function (f) { seenId[f.id] = true; });
+      list = list.filter(function (f) { return !seenId[f.id]; }).concat(extra);
+      list.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : a.id - b.id; });
+    }
     counts.push(slot.id + '=' + list.length);
 
     var body;
@@ -97,6 +114,25 @@ Object.keys(pagesCfg).forEach(function (file) {
     }
     html = html.slice(0, a) + open + '\n' + body + '\n' + pad + close + html.slice(b + close.length);
   });
+
+  // Every empty-legs page shows "Updated on 22 Nov 2026" in the text just above the flight cards
+  // (Boss request 2026-11-22). Pages that already have such a line keep it; others get one.
+  html = html.replace(/Updated (?:on )?<!--UPDATED-->/g, 'Updated on <!--UPDATED-->');
+  var firstOpen = html.indexOf('<!--FLIGHTS:' + (cfg.slots[0] || {}).id + '-->');
+  if (firstOpen > -1 && html.indexOf('data-skylinks-updated-top') === -1) {
+    var secAt = html.lastIndexOf('<section', firstOpen);
+    var region = secAt > -1 ? html.slice(secAt, firstOpen) : '';
+    if (region && region.indexOf('<!--UPDATED-->') === -1) {
+      var h2At = region.indexOf('<h2');
+      var endDiv = h2At > -1 ? region.indexOf('</div>', h2At) : -1;
+      if (endDiv > -1) {
+        var at = secAt + endDiv, ind = indentOf(html, at);
+        var line = ind + '  <p class="text-xs text-gray-500 mt-4" data-skylinks-updated-top>Updated on <!--UPDATED-->x<!--/UPDATED--> &middot; Subject to prior sale</p>\n';
+        var ls = html.lastIndexOf('\n', at) + 1;
+        html = html.slice(0, ls) + line + html.slice(ls);
+      }
+    }
+  }
 
   // "Updated 4 October 2026" lines
   html = html.replace(/<!--UPDATED-->[^<]*<!--\/UPDATED-->/g, '<!--UPDATED-->' + updatedText + '<!--/UPDATED-->');

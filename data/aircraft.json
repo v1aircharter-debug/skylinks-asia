@@ -273,6 +273,10 @@
                                               "category":  "Ultra long range",
                                               "seats":  13
                                           },
+                   "GULFSTREAM G100":  {
+                                           "category":  "Light",
+                                           "seats":  6
+                                       },
                    "GULFSTREAM G200":  {
                                            "category":  "Super midsize",
                                            "seats":  8

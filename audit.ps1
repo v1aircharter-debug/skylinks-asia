@@ -182,7 +182,10 @@ foreach ($f in $flights) {
         $ds = ("" + $dt); if ($ds.Length -ge 10) { $ds = $ds.Substring(0,10) }
         if ($null -eq $dateMin -or $ds -lt $dateMin) { $dateMin = $ds }
         if ($null -eq $dateMax -or $ds -gt $dateMax) { $dateMax = $ds }
-        if ($ds -lt $Today) { $issues.PastDate += @{i=$idx;d=$ds} }
+        # A flight is only past once its availability window (date_end, when given) has ended.
+        $de = Get-Field $f @('date_end'); $dend = $ds
+        if ($null -ne $de) { $dend = ("" + $de); if ($dend.Length -ge 10) { $dend = $dend.Substring(0,10) } }
+        if ($dend -lt $Today) { $issues.PastDate += @{i=$idx;d=$ds} }
     }
     if ($null -eq $ac) { $issues.MissAircraft += $idx }
     else {
