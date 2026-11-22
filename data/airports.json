@@ -1545,132 +1545,106 @@
  },
  "EBLG": {
   "city": "Liege",
-  "name": "Liege Airport",
   "country": "Belgium"
  },
  "LGG": {
   "city": "Liege",
-  "name": "Liege Airport",
   "country": "Belgium"
  },
  "KTPA": {
   "city": "Tampa",
-  "name": "Tampa International",
   "country": "United States"
  },
  "TPA": {
   "city": "Tampa",
-  "name": "Tampa International",
   "country": "United States"
  },
  "LZIB": {
   "city": "Bratislava",
-  "name": "M. R. Stefanik",
   "country": "Slovakia"
  },
  "BTS": {
   "city": "Bratislava",
-  "name": "M. R. Stefanik",
   "country": "Slovakia"
  },
  "HESH": {
   "city": "Sharm El Sheikh",
-  "name": "Sharm El Sheikh International",
   "country": "Egypt"
  },
  "SSH": {
   "city": "Sharm El Sheikh",
-  "name": "Sharm El Sheikh International",
   "country": "Egypt"
  },
  "EDVE": {
   "city": "Braunschweig",
-  "name": "Braunschweig-Wolfsburg",
   "country": "Germany"
  },
  "BWE": {
   "city": "Braunschweig",
-  "name": "Braunschweig-Wolfsburg",
   "country": "Germany"
  },
  "EDDB": {
   "city": "Berlin",
-  "name": "Berlin Brandenburg",
   "country": "Germany"
  },
  "BER": {
   "city": "Berlin",
-  "name": "Berlin Brandenburg",
   "country": "Germany"
  },
  "WBKK": {
   "city": "Kota Kinabalu",
-  "name": "Kota Kinabalu International",
   "country": "Malaysia"
  },
  "BKI": {
   "city": "Kota Kinabalu",
-  "name": "Kota Kinabalu International",
   "country": "Malaysia"
  },
  "ZPLJ": {
   "city": "Lijiang",
-  "name": "Lijiang Sanyi",
   "country": "China"
  },
  "LJG": {
   "city": "Lijiang",
-  "name": "Lijiang Sanyi",
   "country": "China"
  },
  "ZSWX": {
   "city": "Wuxi",
-  "name": "Sunan Shuofang",
   "country": "China"
  },
  "WUX": {
   "city": "Wuxi",
-  "name": "Sunan Shuofang",
   "country": "China"
  },
  "ZSAM": {
   "city": "Xiamen",
-  "name": "Xiamen Gaoqi",
   "country": "China"
  },
  "XMN": {
   "city": "Xiamen",
-  "name": "Xiamen Gaoqi",
   "country": "China"
  },
  "HRYR": {
   "city": "Kigali",
-  "name": "Kigali International",
   "country": "Rwanda"
  },
  "KGL": {
   "city": "Kigali",
-  "name": "Kigali International",
   "country": "Rwanda"
  },
  "VOGO": {
   "city": "Goa",
-  "name": "Dabolim",
   "country": "India"
  },
  "GOI": {
   "city": "Goa",
-  "name": "Dabolim",
   "country": "India"
  },
  "VOPB": {
   "city": "Port Blair",
-  "name": "Veer Savarkar International",
   "country": "India"
  },
  "IXZ": {
   "city": "Port Blair",
-  "name": "Veer Savarkar International",
   "country": "India"
  }
 }
