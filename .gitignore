@@ -34,3 +34,6 @@ node_modules/
 # One-off helper scripts — promote to permanent and commit
 # (remove from this list) if you reuse them
 # push-5file-refresh.bat
+
+# Local backup copies of data files (never publish these)
+data/Backup data files/
