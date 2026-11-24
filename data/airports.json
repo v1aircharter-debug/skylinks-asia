@@ -1646,5 +1646,101 @@
  "IXZ": {
   "city": "Port Blair",
   "country": "India"
+ },
+ "EPMO": {
+  "city": "Nowy Dwor Mazowiecki",
+  "country": "Poland"
+ },
+ "WMI": {
+  "city": "Nowy Dwor Mazowiecki",
+  "country": "Poland"
+ },
+ "LPFR": {
+  "city": "Faro",
+  "country": "Portugal"
+ },
+ "FAO": {
+  "city": "Faro",
+  "country": "Portugal"
+ },
+ "EGPH": {
+  "city": "Edinburgh",
+  "country": "United Kingdom"
+ },
+ "EDI": {
+  "city": "Edinburgh",
+  "country": "United Kingdom"
+ },
+ "LKKV": {
+  "city": "Karlovy Vary",
+  "country": "Czechia"
+ },
+ "KLV": {
+  "city": "Karlovy Vary",
+  "country": "Czechia"
+ },
+ "KLU": {
+  "city": "Klagenfurt Am Worthersee",
+  "country": "Austria"
+ },
+ "LKTB": {
+  "city": "Brno",
+  "country": "Czechia"
+ },
+ "BRQ": {
+  "city": "Brno",
+  "country": "Czechia"
+ },
+ "LFLB": {
+  "city": "Chambery",
+  "country": "France"
+ },
+ "CMF": {
+  "city": "Chambery",
+  "country": "France"
+ },
+ "LESA": {
+  "city": "Salamanca",
+  "country": "Spain"
+ },
+ "SLM": {
+  "city": "Salamanca",
+  "country": "Spain"
+ },
+ "MLA": {
+  "city": "Malta",
+  "country": "Malta"
+ },
+ "EINN": {
+  "city": "Shannon",
+  "country": "Ireland"
+ },
+ "SNN": {
+  "city": "Shannon",
+  "country": "Ireland"
+ },
+ "VVPQ": {
+  "city": "Phu Quoc Island",
+  "country": "Vietnam"
+ },
+ "PQC": {
+  "city": "Phu Quoc Island",
+  "country": "Vietnam"
+ },
+ "VOCI": {
+  "city": "Kochi",
+  "country": "India"
+ },
+ "COK": {
+  "city": "Kochi",
+  "country": "India"
+ },
+ "UARR": {
+  "city": "Uralsk",
+  "country": "Kazakhstan"
+ },
+ "URA": {
+  "city": "Uralsk",
+  "country": "Kazakhstan"
  }
 }
