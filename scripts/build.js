@@ -195,4 +195,11 @@ summary.forEach(function (s) { console.log('  ' + (s[0] + '                     
 console.log(changed.length
   ? (CHECK ? 'Out of date: ' : 'Rebuilt: ') + changed.length + ' page(s)'
   : 'All pages already match the data.');
+
+// Related-reading links (scripts/related.js). Never stops the deploy.
+try {
+  var rel = require('./related.js').run({ check: CHECK });
+  rel.notes.forEach(function (n) { console.log(n); });
+} catch (e) { console.log('Related links skipped: ' + e.message); }
+
 if (CHECK && changed.length) process.exit(1);
