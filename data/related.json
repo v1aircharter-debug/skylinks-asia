@@ -11,6 +11,7 @@
   },
   "acmi-costs-explained.html": {
    "links": [
+    "acmi-leasing-market-wet-damp-short-term.html",
     "acmi-vs-dry-lease.html",
     "acmi-wet-lease-seasonal-demand.html",
     "seasonal-charter-demand-calendar-2027.html",
@@ -20,6 +21,7 @@
   },
   "acmi-vs-dry-lease.html": {
    "links": [
+    "acmi-leasing-market-wet-damp-short-term.html",
     "acmi-wet-lease-seasonal-demand.html",
     "seasonal-charter-demand-calendar-2027.html",
     "acmi-costs-explained.html",
@@ -28,6 +30,7 @@
   },
   "acmi-wet-lease-seasonal-demand.html": {
    "links": [
+    "acmi-leasing-market-wet-damp-short-term.html",
     "seasonal-charter-demand-calendar-2027.html",
     "acmi-costs-explained.html",
     "acmi-vs-dry-lease.html",
@@ -487,6 +490,14 @@
     "rise-of-cargo-charter-africa.html",
     "how-air-charter-brokerage-works.html",
     "repatriation-government.html"
+   ]
+  },
+  "acmi-leasing-market-wet-damp-short-term.html": {
+   "links": [
+    "seasonal-charter-demand-calendar-2027.html",
+    "repatriation-government.html",
+    "how-air-charter-brokerage-works.html",
+    "acmi-wet-lease.html"
    ]
   }
  }
