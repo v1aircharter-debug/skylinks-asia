@@ -4,36 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How Cargo Is Loaded on Aircraft: ULD Process Explained (2026)</title>
-  <meta name="description" content="Inside the aircraft cargo hold: how ULDs are built, weighed, and locked down &mdash; plus what charter brokers must know before booking. Full 2026 guide.">
+  <meta name="description" content="How cargo is loaded on aircraft: ULDs, cargo holds, load plans and main-deck limits, plus what changes on a freighter charter. Request a quote from our desk.">
+  <meta name="keywords" content="how cargo is loaded on aircraft, aircraft cargo hold, cargo loading system, ULD, unit load device, freighter loading, air cargo load plan">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.skylinks.asia/how-cargo-is-loaded-on-aircraft.html">
-  
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
-  
-  <!-- Open Graph / Social -->
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Islamabad">
   <meta property="og:type" content="article">
   <meta property="og:title" content="How Cargo Is Loaded on Aircraft: ULD Process Explained (2026)">
-  <meta property="og:description" content="Inside the aircraft cargo hold: how ULDs are built, weighed, and locked down &mdash; plus what charter brokers must know before booking. Full 2026 guide.">
+  <meta property="og:description" content="How cargo is loaded on aircraft: ULDs, cargo holds, load plans and main-deck limits, plus what changes on a freighter charter. Request a quote from our desk.">
   <meta property="og:url" content="https://www.skylinks.asia/how-cargo-is-loaded-on-aircraft.html">
   <meta property="og:site_name" content="Skylinks Asia Aviation">
   <meta property="og:image" content="https://www.skylinks.asia/hero-images/urgentcargo-hero.webp">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Cargo Is Loaded on Aircraft: ULD Process Explained (2026)">
+  <meta name="twitter:description" content="How cargo is loaded on aircraft: ULDs, cargo holds, load plans and main-deck limits, plus what changes on a freighter charter. Request a quote from our desk.">
   <meta name="twitter:image" content="https://www.skylinks.asia/hero-images/urgentcargo-hero.webp">
-
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script>
     tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { 950: '#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' },
-            teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' }
-          },
-          fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] }
-        }
-      }
+      theme: { extend: {
+        colors: {
+          navy: { 950:'#0a0f1a', 900:'#0f172a', 800:'#1e293b', 700:'#334155' },
+          teal: { 500:'#14b8a6', 600:'#0d9488', 700:'#0f766e', 400:'#2dd4bf', 300:'#5eead4' },
+          gold: { 500:'#C8B283', 600:'#B09668', 400:'#D9C89F' }
+        },
+        fontFamily: { sans:['Inter','sans-serif'], display:['Playfair Display','serif'] }
+      }}
     }
   </script>
   <style>
@@ -42,19 +46,40 @@
     ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
     html { scroll-behavior: smooth; }
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
     .gradient-text { background: linear-gradient(135deg, #14b8a6, #5eead4, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .gold-gradient-text { background: linear-gradient(135deg, #D9C89F, #FFFFFF, #C8B283); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .hero-bg { background: linear-gradient(135deg, rgba(10,15,26,0.8) 0%, rgba(10,15,26,0.5) 50%, rgba(10,15,26,0.8) 100%); }
+    .card-hover { transition: all 0.5s cubic-bezier(0.4,0,0.2,1); }
+    .card-hover:hover { border-color: rgba(20,184,166,0.3); transform: translateY(-4px); }
     .teal-glow { box-shadow: 0 0 20px rgba(20,184,166,0.15); }
-    
-    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-
+    .gold-glow { box-shadow: 0 0 20px rgba(200,178,131,0.15); }
+    .aircraft-img, .blog-img { transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+    .group:hover .aircraft-img, .group:hover .blog-img { transform: scale(1.05); }
     #mobile-menu { transition: transform 0.3s ease-in-out; }
     .font-display { font-family: 'Playfair Display', serif; }
-    
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }
+    .faq-item.open .faq-answer { max-height: 600px; padding-top: 16px; padding-bottom: 16px; }
+    .faq-item .faq-chevron { transition: transform 0.3s ease; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
     .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; }
     .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
-
+    input[type="date"] { color-scheme: dark; }
+    .hero-img-blur { filter: none !important; opacity: 0.8 !important; }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4KQLDXBT24');
+  </script>
+  <style>
     /* Article Typography */
     .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: #cbd5e1; font-weight: 300; }
     .article-body h2 { font-size: 1.875rem; margin-top: 3rem; margin-bottom: 1.5rem; color: white; font-family: 'Playfair Display', serif; }
@@ -64,25 +89,7 @@
     .article-body a { color: #14b8a6; text-decoration: underline; transition: color 0.2s; }
     .article-body a:hover { color: #5eead4; }
     .article-body strong { color: white; font-weight: 600; }
-
-    /* FAQ Accordion Styles (Rule L8) */
-    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; }
-    .faq-item.open .faq-answer { max-height: 600px; padding-top: 16px; padding-bottom: 16px; }
-    .faq-item .faq-chevron { transition: transform 0.3s ease; }
-    .faq-item.open .faq-chevron { transform: rotate(180deg); }
   </style>
-  <style>.hero-img-blur { filter: none !important; }</style>
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KQLDXBT24"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4KQLDXBT24');
-  </script>
-
-  <!-- JSON-LD SCHEMA (Article + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,7 +97,7 @@
       {
         "@type": "Article",
         "headline": "How Cargo Is Loaded on Aircraft: ULD Process Explained (2026)",
-        "description": "Inside the aircraft cargo hold: how ULDs are built, weighed, and locked down — plus what charter brokers must know before booking. Full 2026 guide.",
+        "description": "How cargo is loaded on aircraft: ULDs, cargo holds, load plans and main-deck limits, plus what changes on a freighter charter. Request a quote from our desk.",
         "author": {
           "@type": "Organization",
           "name": "Skylinks Asia Aviation"
@@ -103,8 +110,8 @@
             "url": "https://www.skylinks.asia/favicon.svg"
           }
         },
-        "datePublished": "2026-09-05",
-        "dateModified": "2026-11-07",
+        "datePublished": "2026-07-15",
+        "dateModified": "2026-11-25",
         "mainEntityOfPage": "https://www.skylinks.asia/how-cargo-is-loaded-on-aircraft.html"
       },
       {
@@ -115,7 +122,7 @@
             "name": "What is a cargo aircraft?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A cargo aircraft is any airplane used to transport goods instead of passengers — ranging from passenger jets carrying freight in their belly holds to purpose-built freighters that carry nothing but cargo."
+              "text": "A cargo aircraft is any airplane used to transport goods instead of passengers \u2014 ranging from passenger jets carrying freight in their belly holds to purpose-built freighters that carry nothing but cargo."
             }
           },
           {
@@ -131,7 +138,7 @@
             "name": "What is a cargo hold in an aircraft?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A cargo hold is the compartment set aside for freight and baggage — typically the space beneath the passenger cabin on a standard aircraft, or the entire main and lower decks on a freighter."
+              "text": "A cargo hold is the compartment set aside for freight and baggage \u2014 typically the space beneath the passenger cabin on a standard aircraft, or the entire main and lower decks on a freighter."
             }
           },
           {
@@ -198,94 +205,95 @@
 </head>
 <body class="bg-navy-950 text-gray-300 overflow-x-hidden">
 
-  <!-- Header / Navigation -->
   <header class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-navy-800">
-      <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
-          <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
-              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
-                  <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
-                  <span>WhatsApp: +92 320 5487700</span>
-              </a>
-              <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
-                  <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
-                  <span>charter@skylinks.asia</span>
-              </a>
-          </div>
+    <div class="hidden md:block bg-navy-900 border-b border-navy-800 text-xs text-gray-400">
+      <div class="container mx-auto px-6 py-2 flex justify-end items-center space-x-6">
+        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:message-circle" class="text-teal-500"></iconify-icon>
+          <span>WhatsApp: +92 320 5487700</span>
+        </a>
+        <a href="mailto:charter@skylinks.asia" class="flex items-center gap-2 hover:text-teal-500 transition-colors">
+          <iconify-icon icon="lucide:mail" class="text-teal-500"></iconify-icon>
+          <span>charter@skylinks.asia</span>
+        </a>
       </div>
-
-      <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-          <a href="index.html" class="flex items-center gap-3">
-              <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
-                  <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
-              </div>
-              <div class="flex flex-col leading-none">
-                  <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
-                  <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
-              </div>
-          </a>
-          
-          <ul class="hidden lg:flex items-center space-x-8">
-              <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
-              <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
-              <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
-              <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
-              <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
-              
-              <li class="relative dropdown">
-                  <button class="hover:text-teal-500 transition-colors text-sm flex items-center gap-1">
-                      Private Jets 
-                      <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
-                  </button>
-                  <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
-                      <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
-                      <a href="private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Charter
-                      </a>
-                      <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Empty Leg Flights
-                      </a>
-                      <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Fleet
-                      </a>
-                      <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
-                          <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
-                          Private Jet Quote
-                      </a>
-                  </div>
-              </li>
-
-              <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
-          </ul>
-
-          <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]" aria-label="Open mobile menu">
-              <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+    </div>
+    <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+          <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
+        </div>
+        <div class="flex flex-col leading-none">
+          <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+          <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
+        </div>
+      </a>
+      <ul class="hidden lg:flex items-center space-x-8">
+        <li><a href="index.html#services" class="hover:text-teal-500 transition-colors text-sm">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold text-sm">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 transition-colors text-sm">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 transition-colors text-sm">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 transition-colors text-sm">FAQ</a></li>
+        <li class="relative dropdown">
+          <button class="text-[#C8B283] hover:text-[#D9C89F] transition-colors text-sm flex items-center gap-1">
+            Private Jets
+            <iconify-icon icon="lucide:chevron-down" class="text-xs mt-0.5"></iconify-icon>
           </button>
-      </nav>
-
-      <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
-          <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
-              <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
-              <li><a href="fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
-              <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
-              <li><a href="about.html" class="hover:text-teal-500 mobile-link">About</a></li>
-              <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
-              
-              <li class="w-full text-center mt-4">
-                  <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
-                  <div class="flex flex-col space-y-4 mt-4">
-                      <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
-                      <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
-                      <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
-                      <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
-                  </div>
-              </li>
-              
-              <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
-          </ul>
-      </div>
+          <div class="dropdown-menu absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-black border border-[#C8B283]/40 shadow-2xl py-2 z-50">
+            <div class="absolute -top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C8B283] to-transparent"></div>
+            <a href="private-jet-charter.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:plane-tilt-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Charter
+            </a>
+            <a href="empty-legs.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:currency-circle-dollar-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Empty Leg Flights
+            </a>
+            <a href="private-jet-fleet.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:airplane-takeoff-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Fleet
+            </a>
+            <a href="private-jet-quote.html" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-300 hover:bg-[#C8B283]/10 hover:text-[#D9C89F] transition-colors">
+              <iconify-icon icon="ph:file-text-duotone" class="text-[#C8B283] text-lg"></iconify-icon>
+              Private Jet Quote
+            </a>
+            <div class="mt-2 pt-2 border-t border-[#C8B283]/20 px-4">
+              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-teal-500">Regional Empty Legs</span>
+              <a href="empty-legs-middle-east.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Middle East</a>
+              <a href="empty-legs-asia.html" class="block py-1 text-sm text-gray-400 hover:text-teal-500 transition-colors">Empty Legs Asia</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">Get a Quote</a></li>
+      </ul>
+      <button id="menu-toggle" class="lg:hidden text-white text-2xl z-[70]" aria-label="Open mobile menu">
+        <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden fixed top-[68px] left-0 w-full h-screen bg-navy-900 transform translate-x-full z-[60] overflow-y-auto pb-10">
+      <ul class="flex flex-col items-center justify-center h-full space-y-6 text-xl">
+        <li><a href="index.html#services" class="hover:text-teal-500 mobile-link">Services</a></li>
+        <li><a href="fleet.html" class="text-teal-500 font-semibold mobile-link">Fleet</a></li>
+        <li><a href="index.html#how-it-works" class="hover:text-teal-500 mobile-link">How It Works</a></li>
+        <li><a href="about.html" class="hover:text-teal-500 mobile-link">About</a></li>
+        <li><a href="index.html#faq" class="hover:text-teal-500 mobile-link">FAQ</a></li>
+        <li class="w-full text-center mt-4">
+          <span class="text-xs font-semibold tracking-[0.3em] uppercase text-[#C8B283]/70">Private Jets</span>
+          <div class="flex flex-col space-y-4 mt-4">
+            <a href="private-jet-charter.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Charter</a>
+            <a href="empty-legs.html" class="hover:text-[#C8B283] text-lg mobile-link">Empty Leg Flights</a>
+            <a href="private-jet-fleet.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Fleet</a>
+            <a href="private-jet-quote.html" class="hover:text-[#C8B283] text-lg mobile-link">Private Jet Quote</a>
+          </div>
+          <div class="flex flex-col space-y-3 mt-6">
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-teal-500">Regional Empty Legs</span>
+            <a href="empty-legs-middle-east.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Middle East</a>
+            <a href="empty-legs-asia.html" class="hover:text-teal-500 text-base mobile-link">Empty Legs Asia</a>
+          </div>
+        </li>
+        <li><a href="contact.html#contact-form" class="bg-teal-500 text-white px-8 py-4 w-full text-center sm:w-auto mobile-link">Get a Quote</a></li>
+      </ul>
+    </div>
   </header>
 
   <!-- ===== HERO ===== -->
@@ -307,7 +315,7 @@
         A complete guide to cargo holds, freighters, and the ULD process airlines use to load and secure freight.
       </p>
       <div class="flex items-center justify-center gap-4 text-xs uppercase tracking-wider text-gray-500 mt-8 fade-in">
-          <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Sep 05, 2026</span>
+          <span class="flex items-center gap-1"><iconify-icon icon="lucide:calendar" class="text-xs"></iconify-icon> Jul 15, 2026 &middot; Updated Nov 25, 2026</span>
           <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock" class="text-xs"></iconify-icon> 8 min read</span>
       </div>
     </div>
@@ -319,7 +327,9 @@
         
       <div class="article-body">
         
-        <p><strong>Quick answer:</strong> Air cargo is packed into standardized containers or pallets called ULDs (Unit Load Devices), then loaded into an aircraft's cargo hold &mdash; the belly compartment on passenger jets, or both the main and lower decks on a dedicated freighter &mdash; using forklifts and roller-floor loaders, positioned according to a weight-and-balance load plan, and locked in place with rails, straps, or nets before takeoff.</p>
+        <div class="tl-dr bg-navy-800/50 border border-teal-500/30 rounded-lg p-6 mb-8">
+          <p><strong class="text-teal-400">TL;DR:</strong> Air cargo is packed into standard containers or pallets called ULDs (Unit Load Devices) and loaded into the aircraft&rsquo;s cargo hold: the belly compartment on a passenger jet, or both the main and lower decks on a freighter. Ground crews lift each ULD in with loaders, slide it along roller floors, place it exactly where the weight-and-balance load plan says, and lock it with rails, straps or nets. Widebody lower holds take containers about 163 cm high. Narrowbody holds are lower and take loose cargo or small containers. On a freighter charter, the main-deck door and height decide what fits, so exact piece dimensions and weights are needed before an operator can confirm.</p>
+        </div>
         
         <p>Every day, hundreds of thousands of tonnes of goods move around the world by air &mdash; much of it invisible to the passengers sitting a few feet above it. Whether it's a container of smartphones riding beneath a passenger cabin or a dedicated freighter hauling industrial machinery across an ocean, air cargo runs on a surprisingly precise, choreographed system. This guide answers the most common questions people ask about how it all works.</p>
 
@@ -332,15 +342,15 @@
         <p>These aircraft are stripped of everything passenger-related and instead feature reinforced floors, roller and ball-mat systems that let ground crews slide heavy loads into place, and large cargo doors &mdash; sometimes a full nose-door or side-door design &mdash; built for oversized items that would never fit through a standard passenger doorway.</p>
         <p>There are generally three categories worth knowing:</p>
         <ul>
-          <li><strong>Dedicated freighters</strong> &mdash; purpose-built or converted aircraft used solely for cargo, such as the <a href="aircraft-b747-200f.html">Boeing 747-200F</a>, 777F, and Airbus A330-200F. These form the core fleets of carriers like FedEx, UPS, and DHL.</li>
-          <li><strong>Combi aircraft</strong> &mdash; passenger planes modified to carry freight and passengers together, typically on the main deck, split in a rough 60:40 passenger-to-cargo ratio.</li>
-          <li><strong>Converted freighters</strong> &mdash; older passenger aircraft that have had their interiors stripped out and reinforced to carry freight once their passenger-carrying life is over. Common examples in charter fleets include the <a href="aircraft-b737-400f.html">Boeing 737-400F</a>, <a href="aircraft-b757-200f.html">Boeing 757-200F</a>, and <a href="aircraft-b767-300f.html">Boeing 767-300F</a>.</li>
+          <li><strong>Dedicated freighters</strong> &mdash; aircraft built as freighters from new, such as the Boeing 777F, 767-300F and 747-8F and the Airbus A330-200F. These types make up the core long-haul fleets of carriers like FedEx, UPS and DHL. Older models such as the Boeing 747-200F have largely left service.</li>
+          <li><strong>Combi aircraft</strong> &mdash; passenger aircraft that carry freight and passengers together on the main deck, with a partition between the two sections. Few remain in airline service.</li>
+          <li><strong>Converted freighters</strong> &mdash; older passenger aircraft that have had their interiors stripped out and reinforced to carry freight once their passenger-carrying life is over. Common examples on the charter market include the Boeing 737-400F, <a href="aircraft-b757-200f.html">Boeing 757-200F</a>, and <a href="aircraft-b767-300f.html">Boeing 767-300F</a>.</li>
         </ul>
         <p>Some of the largest all-cargo aircraft ever built, like the Antonov An-124, can carry loads well over 100 tonnes. A portion of the global fleet &mdash; mainly Russian-operated aircraft &mdash; has been grounded or stranded by sanctions since 2022, but Ukrainian-operated An-124s (Antonov Airlines) remain in active commercial service today for outsized charter work. For remote and unpaved airstrips, rugged heavy-lifters like the <a href="aircraft-il-76.html">Ilyushin IL-76</a> are frequently utilized.</p>
 
         <h2>What Is a Cargo Hold in an Aircraft?</h2>
         <p>A cargo hold is the enclosed compartment of an airplane set aside for freight and baggage rather than passengers. On a standard passenger aircraft, the cargo hold sits below the passenger cabin, beneath the floor &mdash; commonly split into a forward hold and an aft hold, with the main deck reserved entirely for people.</p>
-        <p>The size and shape of the hold varies by aircraft. On a wide-body jet, the lower hold is tall enough to accept standardized containers and pallets, generally with a height limit somewhere around 160 cm. On narrow-body aircraft, the hold is shorter and typically only accepts loose or "bulk" cargo rather than large containers, since there isn't enough clearance for palletized units.</p>
+        <p>The size and shape of the hold varies by aircraft. On a wide-body jet, the lower hold is tall enough to accept standardized containers and pallets, generally with a height limit somewhere around 160 cm. On narrow-body aircraft the hold is lower. The Boeing 737 takes loose or &ldquo;bulk&rdquo; cargo only, while the Airbus A320 family can take small LD3-45 (AKH) containers. Neither takes full-height pallets in the lower hold.</p>
         <p>On a dedicated freighter, by contrast, there effectively is no passenger cabin &mdash; the entire main deck functions as an additional, much larger cargo hold, on top of the lower-deck hold. That's what allows freighters to carry vastly more volume than a passenger aircraft's belly space alone.</p>
         <p>Cargo holds are also climate- and pressure-controlled to protect sensitive freight, and on aircraft that carry live animals, the hold is heated and ventilated separately to keep conditions safe throughout the flight.</p>
 
@@ -364,6 +374,16 @@
         <p><strong>6. Unloading on arrival.</strong> At the destination, the entire sequence runs in reverse: ULDs are unlocked, offloaded, and moved to a cargo warehouse for breakdown and distribution to the end recipient.</p>
         
         <p>This ULD-based system is what makes modern air freight possible at scale. Rather than airlines handling loose, individually shaped packages under time pressure, cargo is pre-built into standardized units on the ground, then loaded and locked into an aircraft in a fraction of the time it would otherwise take &mdash; all while keeping the aircraft's weight and balance within safe limits throughout the flight.</p>
+
+        <h2>What Changes When You Charter a Freighter?</h2>
+        <p>On a charter, the whole aircraft and its load plan serve one shipper. That changes what can fly and how the job is prepared.</p>
+        <ul>
+          <li><strong>The main-deck door sets the limit.</strong> Narrowbody freighters take standard pallets through a side door. Long or tall pieces need a nose-loading 747 freighter, or a rear-ramp aircraft such as the Ilyushin IL-76.</li>
+          <li><strong>Every piece needs dimensions and weight.</strong> Length, width, height, weight and whether it can be stacked. Without them an operator cannot build a load plan or confirm the aircraft.</li>
+          <li><strong>Dangerous goods are declared at enquiry.</strong> Some classes may only fly on cargo aircraft, and the operator must accept them before the booking is confirmed.</li>
+          <li><strong>Ground handling is part of the timeline.</strong> Build-up, loading equipment and airport slots at both ends are arranged before the aircraft is positioned.</li>
+        </ul>
+        <p>Matching the aircraft to the cargo is the first decision. Our guide to <a href="choosing-right-cargo-aircraft.html">choosing the right cargo aircraft</a> walks through it, and our <a href="urgent-cargo.html">cargo charter service</a> sources freighters at short notice across Asia, the Middle East and Africa.</p>
 
         <!-- FAQ SECTION (Canonical Accordion - Rule L8) -->
         <h2>Frequently Asked Questions</h2>
@@ -465,7 +485,7 @@
               <iconify-icon icon="lucide:chevron-down" class="faq-chevron text-teal-500 text-xl shrink-0"></iconify-icon>
             </button>
             <div class="faq-answer px-4 text-gray-400 text-sm leading-relaxed bg-navy-900/50">
-              Yes, dangerous goods can be loaded on cargo aircraft, but they must strictly comply with IATA Dangerous Goods Regulations (DGR). They require specific packaging, labeling, and separation from other cargo, and some are forbidden entirely.
+              Yes, dangerous goods can be loaded on cargo aircraft, but they must strictly comply with IATA <a href="dangerous-goods.html" class="text-teal-400 hover:underline">Dangerous Goods Regulations (DGR)</a>. They require specific packaging, labeling, and separation from other cargo, and some are forbidden entirely.
             </div>
           </div>
 
@@ -501,132 +521,190 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="bg-navy-950 border-t border-navy-800 pt-12 md:pt-16 pb-8">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
-            
-            <div class="md:col-span-2 lg:col-span-1">
-                <a href="index.html" class="flex items-center gap-3 mb-6">
-                    <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
-                      <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
-                    </div>
-                    <div class="flex flex-col leading-none">
-                        <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
-                        <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
-                    </div>
-                </a>
-                <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
+        <div class="md:col-span-2 lg:col-span-1">
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 border border-teal-500/50 flex items-center justify-center">
+              <iconify-icon icon="lucide:plane" class="text-teal-500 text-xl"></iconify-icon>
             </div>
-
-            <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger &amp; Pilgrim Charter</a></li>
-                    <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo &amp; Freight Charter</a></li>
-                    <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
-                    <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil &amp; Gas Crew Rotation</a></li>
-                    <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li> 
-                    <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma &amp; Cold Chain</a></li>
-                    <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
-                </ul>
+            <div class="flex flex-col leading-none">
+              <span class="text-white font-bold text-lg md:text-xl tracking-wider">SKYLINKS ASIA</span>
+              <span class="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] uppercase">Aviation</span>
             </div>
-
-            <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
-                    <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
-                    <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
-                    <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
-                    <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
-                    <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety &amp; Compliance</a></li>
-                    <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
-                    <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms &amp; Conditions</a></li>
-                    <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
-                <ul class="space-y-4 text-gray-400 text-sm">
-                    <li class="flex items-start gap-3">
-                        <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
-                        <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
-                        <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
-                        <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
-                        <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
-                    </li>
-                </ul>
-            </div>
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for tailored aviation solutions, charter services, and specialized cargo logistics.</p>
         </div>
-
-        <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
-            <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Charter Services</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="hajj-umrah.html" class="hover:text-teal-500 transition-colors">Passenger &amp; Pilgrim Charter</a></li>
+            <li><a href="urgent-cargo.html" class="hover:text-teal-500 transition-colors">Cargo &amp; Freight Charter</a></li>
+            <li><a href="acmi-wet-lease.html" class="hover:text-teal-500 transition-colors">ACMI / Wet Lease</a></li>
+            <li><a href="oil-gas.html" class="hover:text-teal-500 transition-colors">Oil &amp; Gas Equipment Charter</a></li>
+            <li><a href="humanitarian-cargo.html" class="hover:text-teal-500 transition-colors">Humanitarian Relief Flights</a></li>
+            <li><a href="cold-chain-pharma.html" class="hover:text-teal-500 transition-colors">Pharma &amp; Cold Chain</a></li>
+            <li><a href="dangerous-goods.html" class="hover:text-teal-500 transition-colors">Dangerous Goods (DGR)</a></li>
+          </ul>
         </div>
+        <div>
+          <h4 class="text-[#C8B283] font-semibold mb-4 uppercase text-sm tracking-wider">Private Jets</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="private-jet-charter.html" class="hover:text-[#C8B283] transition-colors">Private Jet Charter</a></li>
+            <li><a href="empty-legs.html" class="hover:text-[#C8B283] transition-colors">Empty Leg Flights</a></li>
+            <li><a href="private-jet-fleet.html" class="hover:text-[#C8B283] transition-colors">Private Jet Fleet</a></li>
+            <li><a href="private-jet-quote.html" class="hover:text-[#C8B283] transition-colors">VIP Jet Quote</a></li>
+          </ul>
+          <div class="mt-6">
+            <span class="text-teal-500 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">Regional Empty Legs</span>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><a href="empty-legs-middle-east.html" class="hover:text-teal-500 transition-colors">Empty Legs Middle East</a></li>
+              <li><a href="empty-legs-asia.html" class="hover:text-teal-500 transition-colors">Empty Legs Asia</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Company</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li><a href="about.html" class="hover:text-teal-500 transition-colors">About Us</a></li>
+            <li><a href="fleet.html" class="hover:text-teal-500 transition-colors">Charter Fleet</a></li>
+            <li><a href="safety.html" class="hover:text-teal-500 transition-colors">Safety &amp; Compliance</a></li>
+            <li><a href="blog.html" class="hover:text-teal-500 transition-colors">Aviation Insights</a></li>
+            <li><a href="terms.html" class="hover:text-teal-500 transition-colors">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html" class="hover:text-teal-500 transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Contact Us</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li class="flex items-start gap-3">
+              <iconify-icon icon="lucide:map-pin" class="text-teal-500 mt-1 shrink-0 text-lg"></iconify-icon>
+              <span>1-C Mohammadi Plaza, Jinnah Ave. Islamabad</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:phone" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="tel:+923097778000" class="hover:text-teal-500 transition">+92 309 777 8000</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:mail" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="mailto:charter@skylinks.asia" class="hover:text-teal-500 transition">charter@skylinks.asia</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <iconify-icon icon="lucide:message-circle" class="text-teal-500 shrink-0 text-lg"></iconify-icon>
+              <a href="https://wa.me/923205487700" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">+92 320 548 7700</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+        <p class="text-gray-500 text-sm text-center">&copy; <span id="current-year"></span> Skylinks Asia Aviation. All rights reserved. Aircraft charter brokerage &mdash; not a direct air carrier.</p>
+      </div>
     </div>
   </footer>
 
-  <div id="toastContainer" class="fixed bottom-6 right-6 z-50 space-y-3"></div>
+  <div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
+    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
+      <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
+        <div>
+          <h3 class="font-bold text-lg">Chat with us</h3>
+          <p class="text-xs opacity-90">Typically replies instantly</p>
+        </div>
+        <button id="wa-close" class="text-white hover:text-gray-200 transition-colors" aria-label="Close chat">
+          <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+        </button>
+      </div>
+      <div class="p-4 bg-navy-900">
+        <p class="text-gray-400 text-sm mb-4">Hello! &#128075; How can we help you with your charter requirements today?</p>
+        <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
+        <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
+          <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
+        </a>
+      </div>
+    </div>
+  </div>
+  <button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110" aria-label="Open chat">
+    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
+  </button>
 
   <script>
+    // ===== Mobile Menu =====
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     let isMenuOpen = false;
-
     function closeMenu() {
-        isMenuOpen = false;
-        mobileMenu.classList.add('translate-x-full');
-        mobileMenu.classList.remove('translate-x-0');
-        document.body.style.overflow = '';
+      isMenuOpen = false;
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+    }
+    menuToggle.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      if (isMenuOpen) {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenu.classList.add('translate-x-0');
+        document.body.style.overflow = 'hidden';
+      } else { closeMenu(); }
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => { closeMenu(); });
+    });
+
+    // ===== IntersectionObserver for .fade-in =====
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // ===== Dynamic Year =====
+    const yearEl = document.getElementById('current-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // ===== WhatsApp Widget =====
+    const waWidget = document.getElementById('wa-widget');
+    const waToggle = document.getElementById('wa-toggle');
+    const waClose = document.getElementById('wa-close');
+    const waMessage = document.getElementById('wa-message');
+    const waSend = document.getElementById('wa-send');
+    if (waToggle) {
+      waToggle.addEventListener('click', () => {
+        waWidget.classList.toggle('hidden');
+        waToggle.classList.toggle('hidden');
+      });
+      waClose.addEventListener('click', () => {
+        waWidget.classList.add('hidden');
+        waToggle.classList.remove('hidden');
+      });
+      waMessage.addEventListener('input', () => {
+        const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
+        waSend.href = 'https://wa.me/923205487700?text=' + msg;
+      });
     }
 
-    menuToggle.addEventListener('click', () => {
-        isMenuOpen = !isMenuOpen;
-        if (isMenuOpen) {
-            mobileMenu.classList.remove('translate-x-full');
-            mobileMenu.classList.add('translate-x-0');
-            document.body.style.overflow = 'hidden';
-        } else {
-            closeMenu();
-        }
-    });
+    // ===== Query-String Auto-Fill =====
+    (function prefillFromQuery() {
+      const params = new URLSearchParams(window.location.search);
+      const map = {
+        'departure':   'input[name="departure"]',
+        'destination': 'input[name="destination"]',
+        'flightDate':  'input[name="flightDate"]',
+        'aircraft':    'input[name="aircraftPref"]',
+        'pax':         'input[name="paxCount"]'
+      };
+      Object.keys(map).forEach(key => {
+        const val = params.get(key);
+        if (!val) return;
+        const field = document.querySelector(map[key]);
+        if (!field) return;
+        let decoded = decodeURIComponent(val);
+        if (key === 'pax' && !/pax/i.test(decoded)) decoded = decoded + ' Pax';
+        field.value = decoded;
+      });
+    })();
 
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            closeMenu();
-        });
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
-    // ===== FAQ Toggle (Rule L8) =====
+    // ===== FAQ Toggle =====
     function toggleFaq(button) {
       const item = button.closest('.faq-item');
       if (!item) return;
@@ -634,50 +712,44 @@
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       if (!wasOpen) item.classList.add('open');
     }
-  </script>
 
-<div id="wa-widget" class="fixed bottom-24 right-6 z-[100] hidden">
-    <div class="bg-navy-800 border border-teal-500/30 rounded-lg shadow-2xl w-80 max-w-[calc(100vw-3rem)] overflow-hidden">
-        <div class="bg-teal-500 text-white p-4 flex justify-between items-center">
-            <div>
-                <h3 class="font-bold text-lg">Chat with us</h3>
-                <p class="text-xs opacity-90">Typically replies instantly</p>
-            </div>
-            <button id="wa-close" class="text-white hover:text-gray-200 transition-colors">
-                <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-            </button>
-        </div>
-        <div class="p-4 bg-navy-900">
-            <p class="text-gray-400 text-sm mb-4">Hello! &#128075; How can we help you with your charter requirements today?</p>
-            <textarea id="wa-message" rows="3" class="w-full bg-navy-800 border border-navy-700 text-sm text-white p-2 rounded mb-3 focus:outline-none focus:border-teal-500" placeholder="Type your message..."></textarea>
-            <a id="wa-send" href="https://wa.me/923205487700?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="w-full bg-teal-500 hover:bg-teal-600 text-white text-center font-semibold py-2 rounded transition-colors flex items-center justify-center gap-2">
-                <iconify-icon icon="mdi:whatsapp"></iconify-icon> Send Message
-            </a>
-        </div>
-    </div>
-</div>
-<button id="wa-toggle" class="fixed bottom-6 right-6 z-[101] bg-teal-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-teal-600 transition-transform hover:scale-110" aria-label="Open chat">
-    <iconify-icon icon="mdi:whatsapp" class="text-3xl"></iconify-icon>
-</button>
-<script>
-    const waWidget = document.getElementById('wa-widget');
-    const waToggle = document.getElementById('wa-toggle');
-    const waClose = document.getElementById('wa-close');
-    const waMessage = document.getElementById('wa-message');
-    const waSend = document.getElementById('wa-send');
-    
-    waToggle.addEventListener('click', () => {
-        waWidget.classList.toggle('hidden');
-        waToggle.classList.toggle('hidden');
-    });
-    waClose.addEventListener('click', () => {
-        waWidget.classList.add('hidden');
-        waToggle.classList.remove('hidden');
-    });
-    waMessage.addEventListener('input', () => {
-        const msg = encodeURIComponent(waMessage.value || 'Hello, I would like to get a quote.');
-        waSend.href = 'https://wa.me/923205487700?text=' + msg;
-    });
-</script>
+    // ===== Fleet Filter =====
+    function filterFleet(type, color) {
+      const cards = document.querySelectorAll('.fleet-card');
+      if (!cards.length) return;
+      const accent = (color === 'gold') ? 'gold' : 'teal';
+      const accentClasses = [
+        'border-teal-500', 'text-teal-500', 'bg-teal-500/10',
+        'border-gold-500', 'text-gold-500', 'bg-gold-500/10',
+        'border-[#C8B283]', 'text-[#C8B283]', 'bg-[#C8B283]/10'
+      ];
+      const tabs = document.querySelectorAll('.fleet-tab');
+      tabs.forEach(tab => {
+        accentClasses.forEach(c => tab.classList.remove(c));
+        if (tab.dataset.filter === type) {
+          tab.classList.add(
+            'border-' + accent + '-500',
+            'text-' + accent + '-500',
+            'bg-' + accent + '-500/10'
+          );
+          tab.classList.remove('border-white/10', 'text-gray-400');
+        } else {
+          tab.classList.add('border-white/10', 'text-gray-400');
+        }
+      });
+      cards.forEach(card => {
+        if (type === 'all' || card.dataset.type === type) {
+          card.style.display = '';
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(10px)';
+          requestAnimationFrame(() => {
+            card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          });
+        } else { card.style.display = 'none'; }
+      });
+    }
+  </script>
 </body>
 </html>
