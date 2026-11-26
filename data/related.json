@@ -292,6 +292,7 @@
   },
   "private-jet-charter-asia-complete-guide.html": {
    "links": [
+    "midsize-jet-charter-learjet-45xr-hawker-400xp.html",
     "private-jet-charter-pakistan.html",
     "gulf-india-turkey-business-aviation.html",
     "business-aviation-safety-ratings.html",
@@ -398,6 +399,7 @@
   },
   "private-jets/hawker-400xp.html": {
    "links": [
+    "midsize-jet-charter-learjet-45xr-hawker-400xp.html",
     "private-jets/learjet-45xr.html",
     "private-jets/citation-cj3.html",
     "private-jets/citation-ultra.html",
@@ -414,6 +416,7 @@
   },
   "private-jets/learjet-45xr.html": {
    "links": [
+    "midsize-jet-charter-learjet-45xr-hawker-400xp.html",
     "private-jets/citation-cj3.html",
     "private-jets/citation-ultra.html",
     "private-jets/citation-v.html",
@@ -498,6 +501,14 @@
     "repatriation-government.html",
     "how-air-charter-brokerage-works.html",
     "acmi-wet-lease.html"
+   ]
+  },
+  "midsize-jet-charter-learjet-45xr-hawker-400xp.html": {
+   "links": [
+    "private-jet-charter.html",
+    "gulf-india-turkey-business-aviation.html",
+    "private-jet-charter-pakistan.html",
+    "private-jet-quote.html"
    ]
   }
  }
