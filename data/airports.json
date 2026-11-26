@@ -1742,5 +1742,21 @@
  "URA": {
   "city": "Uralsk",
   "country": "Kazakhstan"
+ },
+ "LGTS": {
+  "city": "Thessaloniki",
+  "country": "Greece"
+ },
+ "SKG": {
+  "city": "Thessaloniki",
+  "country": "Greece"
+ },
+ "OMRK": {
+  "city": "Ras Al Khaimah",
+  "country": "UAE"
+ },
+ "RKT": {
+  "city": "Ras Al Khaimah",
+  "country": "UAE"
  }
 }
