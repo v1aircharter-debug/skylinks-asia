@@ -1758,5 +1758,61 @@
  "RKT": {
   "city": "Ras Al Khaimah",
   "country": "UAE"
+ },
+ "HESX": {
+  "city": "Giza",
+  "country": "Egypt"
+ },
+ "SPX": {
+  "city": "Giza",
+  "country": "Egypt"
+ },
+ "GMMX": {
+  "city": "Marrakech",
+  "country": "Morocco"
+ },
+ "RAK": {
+  "city": "Marrakech",
+  "country": "Morocco"
+ },
+ "LSZS": {
+  "city": "Samedan",
+  "country": "Switzerland"
+ },
+ "SMV": {
+  "city": "Samedan",
+  "country": "Switzerland"
+ },
+ "WAHI": {
+  "city": "Yogyakarta",
+  "country": "Indonesia"
+ },
+ "YIA": {
+  "city": "Yogyakarta",
+  "country": "Indonesia"
+ },
+ "WAHH": {
+  "city": "Yogyakarta",
+  "country": "Indonesia"
+ },
+ "JOG": {
+  "city": "Yogyakarta",
+  "country": "Indonesia"
+ },
+ "VDSV": {
+  "city": "Sihanoukville",
+  "country": "Cambodia"
+ },
+ "KOS": {
+  "city": "Sihanoukville",
+  "country": "Cambodia"
+ },
+ "WIDD": {
+  "city": "Batam",
+  "country": "Indonesia"
+ },
+ "BTH": {
+  "city": "Batam",
+  "country": "Indonesia"
  }
 }
